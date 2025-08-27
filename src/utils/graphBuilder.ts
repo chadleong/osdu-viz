@@ -89,6 +89,7 @@ function extractErdRelationships(
   relationshipType: string
   cardinality?: string
   isConnectable?: boolean
+  groupType?: string
 }> {
   const erdRels: Array<{
     sourceProperty: string
@@ -96,6 +97,7 @@ function extractErdRelationships(
     relationshipType: string
     cardinality?: string
     isConnectable?: boolean
+    groupType?: string
   }> = []
 
   function walkForErd(obj: any, path: string[] = []) {
@@ -106,6 +108,7 @@ function extractErdRelationships(
       for (const r of rs) {
         const propertyName = path[path.length - 1]
         const targetEntity = r.EntityType
+        const groupType = r.GroupType
 
         // Determine relationship type and if it's a connectable
         let relationshipType = "references"
@@ -141,6 +144,7 @@ function extractErdRelationships(
           relationshipType,
           cardinality: obj.type === "array" ? "one-to-many" : "one-to-one",
           isConnectable,
+          groupType,
         })
       }
     }
@@ -259,15 +263,36 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
       let targetSchemaId: string | undefined
 
       if (opts.index) {
-        // Look for schemas that match this entity type
-        const matchKey = Object.keys(opts.index).find(
-          (key) =>
-            key.toLowerCase().includes(erdRel.targetEntity.toLowerCase()) ||
-            key.toLowerCase().includes(erdRel.targetEntity.replace(/([A-Z])/g, "-$1").toLowerCase())
-        )
+        const index = opts.index || {}
+        // Prefer matches scoped to the reported GroupType (e.g., master-data)
+        const indexKeys = Object.keys(index)
+
+        // If an erdRel.groupType exists, prefer keys that contain that segment
+        let candidates = indexKeys
+        if (erdRel.groupType) {
+          const groupSegment = erdRel.groupType.toLowerCase()
+          const filtered = indexKeys.filter(
+            (k) => k.toLowerCase().includes(`/${groupSegment}/`) || k.toLowerCase().includes(groupSegment)
+          )
+          if (filtered.length > 0) {
+            candidates = filtered
+          }
+        }
+
+        // Look for schemas that match this entity type among candidates
+        const matchKey = candidates.find((key) => {
+          const keyLower = key.toLowerCase()
+          const targetLower = erdRel.targetEntity.toLowerCase()
+          const titleMatch = ((index[key] && index[key].title) || "").toLowerCase() === targetLower
+          const idMatch = ((index[key] && index[key].$id) || "").toLowerCase().includes(`--${targetLower}`)
+          const fileMatch =
+            keyLower.includes(targetLower) ||
+            keyLower.includes(erdRel.targetEntity.replace(/([A-Z])/g, "-$1").toLowerCase())
+          return titleMatch || idMatch || fileMatch
+        })
 
         if (matchKey) {
-          targetSchema = opts.index[matchKey]
+          targetSchema = index[matchKey]
           targetProps = collectPropsOnly(targetSchema)
           targetFilePath = matchKey
           targetSchemaId = targetSchema?.$id
