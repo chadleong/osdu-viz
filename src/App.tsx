@@ -7,18 +7,12 @@ export default function App() {
   const [models, setModels] = useState<SchemaModel[]>([])
   const [index, setIndex] = useState<Record<string, any>>({})
   const [selectedModel, setSelectedModel] = useState<SchemaModel | null>(null)
+  const [history, setHistory] = useState<SchemaModel[]>([])
   const [hasAutoSelected, setHasAutoSelected] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [showDropdown, setShowDropdown] = useState(false)
 
-  // Auto-select first model when models load (only once)
-  useEffect(() => {
-    if (models.length > 0 && !selectedModel && !hasAutoSelected) {
-      setSelectedModel(models[0])
-      setSearchTerm(models[0].title)
-      setHasAutoSelected(true)
-    }
-  }, [models, selectedModel, hasAutoSelected])
+  // Do not auto-select any schema on app start
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -101,6 +95,8 @@ export default function App() {
   }, [models, searchTerm])
 
   const handleModelSelect = (model: SchemaModel) => {
+    // Manual selection resets history
+    setHistory([])
     setSelectedModel(model)
     setSearchTerm(model.title)
     setShowDropdown(false)
@@ -116,32 +112,72 @@ export default function App() {
     )
 
     if (targetSchema) {
-      setSelectedModel(targetSchema)
-      setSearchTerm(targetSchema.title)
-      setShowDropdown(false)
+      // Only push to history if navigating to a different schema
+      const isDifferent =
+        !selectedModel || selectedModel.id !== targetSchema.id || selectedModel.path !== targetSchema.path
+
+      if (isDifferent && selectedModel) {
+        setHistory((h) => [...h, selectedModel])
+      }
+
+      if (isDifferent) {
+        setSelectedModel(targetSchema)
+        setSearchTerm(targetSchema.title)
+        setShowDropdown(false)
+      }
     }
+  }
+
+  const handleBack = () => {
+    setHistory((h) => {
+      if (h.length === 0) return h
+      const prev = h[h.length - 1]
+      // apply previous selection and shrink history
+      setSelectedModel(prev)
+      setSearchTerm(prev.title)
+      return h.slice(0, -1)
+    })
   }
 
   return (
     <div className="h-screen bg-gray-50">
       {/* Header with Search and Dropdown */}
-      <div className="bg-white border-b border-gray-200 px-4 py-3" style={{ position: "relative", zIndex: 1000 }}>
-        <div className="flex items-center space-x-4">
+      <div className="bg-white border-b border-gray-200 px-100 py-3" style={{ position: "relative", zIndex: 1000 }}>
+        <div
+          className="flex items-center space-x-4"
+          style={{ paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12 }}
+        >
           <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Visualizer</h1>
 
           {/* Schema Selector with Search */}
           <div className="flex-1 max-w-md relative dropdown-container">
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => {
-                setSearchTerm(e.target.value)
-                setShowDropdown(true)
-              }}
-              onFocus={() => setShowDropdown(true)}
-              placeholder="Search schemas..."
-              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            />
+            <div style={{ position: "relative" }}>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => {
+                  setSearchTerm(e.target.value)
+                  setShowDropdown(true)
+                }}
+                onFocus={() => setShowDropdown(true)}
+                placeholder="Search schemas..."
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-8"
+              />
+              {/* Carat icon */}
+              <span
+                style={{
+                  position: "absolute",
+                  right: 12,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  pointerEvents: "none",
+                  fontSize: 16,
+                  color: "#64748b",
+                }}
+              >
+                ▼
+              </span>
+            </div>
 
             {/* Dropdown Results */}
             {showDropdown && (
@@ -204,6 +240,7 @@ export default function App() {
                 setSelectedModel(null)
                 setSearchTerm("")
                 setShowDropdown(false)
+                setHistory([])
               }}
               className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
             >
@@ -220,7 +257,29 @@ export default function App() {
       {/* Main Content */}
       <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
         {selectedModel && selectedModel.schema ? (
-          <SchemaGraph nodes={nodes} edges={edges} onSchemaSelect={handleSchemaSelect} />
+          <div style={{ position: "relative", height: "100%" }}>
+            <SchemaGraph nodes={nodes} edges={edges} onSchemaSelect={handleSchemaSelect} />
+            {/* Overlay layer to host interactive controls above ReactFlow */}
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                zIndex: 10000,
+                pointerEvents: "none",
+              }}
+            >
+              {history.length > 0 && (
+                <button
+                  onClick={handleBack}
+                  className="absolute top-3 left-3 px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
+                  title="Back"
+                  style={{ pointerEvents: "auto" }}
+                >
+                  ← Back
+                </button>
+              )}
+            </div>
+          </div>
         ) : (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">

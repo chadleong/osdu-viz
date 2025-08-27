@@ -29,20 +29,18 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
         </button>
       </div>
       <div className="tooltip-body">
-        <div className="tooltip-section">
-          <div className="tooltip-section-title">Top-level properties ({topLevel.length})</div>
-          <ul className="list">
-            {topLevel.map((p, idx) => (
-              <li key={idx} className="list-row">
-                <span className="k">{p.name}</span>
-                {p.required && <span className="badge req">required</span>}
-                {p.type && <span className="t">{p.type}</span>}
-                {p.description && <span className="d">{p.description}</span>}
+        {filePath && (
+          <div className="tooltip-section">
+            <div className="tooltip-section-title">Source path</div>
+            <ul className="list">
+              <li className="list-row">
+                <span className="k" style={{ gridColumn: "1 / -1" }}>
+                  {filePath}
+                </span>
               </li>
-            ))}
-            {!topLevel.length && <li className="muted">No top-level properties</li>}
-          </ul>
-        </div>
+            </ul>
+          </div>
+        )}
         <div className="tooltip-section">
           <div className="tooltip-section-title">Actions</div>
           <ul className="list">
@@ -67,12 +65,20 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
                 Copy
               </button>
             </li>
-            {filePath && (
-              <li className="list-row">
-                <span className="k">Source path</span>
-                <span className="d">{filePath}</span>
+          </ul>
+        </div>
+        <div className="tooltip-section">
+          <div className="tooltip-section-title">Top-level properties ({topLevel.length})</div>
+          <ul className="list">
+            {topLevel.map((p, idx) => (
+              <li key={idx} className="list-row">
+                <span className="k">{p.name}</span>
+                {p.required && <span className="badge req">required</span>}
+                {p.type && <span className="t">{p.type}</span>}
+                {p.description && <span className="d">{p.description}</span>}
               </li>
-            )}
+            ))}
+            {!topLevel.length && <li className="muted">No top-level properties</li>}
           </ul>
         </div>
         <div className="tooltip-section">
