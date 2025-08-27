@@ -240,12 +240,23 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   // Create entity nodes for relationships found in the schema
   const entityNodes = new Map<string, Node>()
 
+  function inferCategory(from?: string): string | undefined {
+    if (!from) return undefined
+    const s = from.toLowerCase()
+    if (s.includes("/master-data/") || s.includes("master-data")) return "master-data"
+    if (s.includes("/reference-data/") || s.includes("reference-data")) return "reference-data"
+    if (s.includes("/work-product-component/") || s.includes("work-product-component")) return "work-product-component"
+    return undefined
+  }
+
   for (const erdRel of erdRelationships) {
     const entityId = normalizeId(`entity::${erdRel.targetEntity}`)
     if (!entityNodes.has(entityId)) {
       // Try to find the actual schema for this entity
       let targetSchema: any = null
       let targetProps: Array<{ name: string; type?: string; description?: string }> = []
+      let targetFilePath: string | undefined
+      let targetSchemaId: string | undefined
 
       if (opts.index) {
         // Look for schemas that match this entity type
@@ -258,8 +269,12 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         if (matchKey) {
           targetSchema = opts.index[matchKey]
           targetProps = collectPropsOnly(targetSchema)
+          targetFilePath = matchKey
+          targetSchemaId = targetSchema?.$id
         }
       }
+
+      const category = inferCategory(targetFilePath) || inferCategory(targetSchemaId)
 
       entityNodes.set(entityId, {
         id: entityId,
@@ -271,7 +286,10 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
           relations: [],
           erdRelationships: [],
           schema: targetSchema,
+          filePath: targetFilePath,
+          schemaId: targetSchemaId,
           nodeType: "related-entity",
+          category,
         },
         type: "erd-entity",
       })

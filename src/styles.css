@@ -631,20 +631,23 @@ body {
 
 .tooltip {
   position: absolute;
-  right: 12px;
-  top: 64px;
+  top: 0;
+  right: 0;
+  height: 100%;
   width: 420px;
   background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid var(--line);
+  box-shadow: -4px 0 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
 }
 .tooltip-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 12px 16px;
   border-bottom: 1px solid var(--line);
+  flex: 0 0 auto;
 }
 .tooltip-title {
   font-weight: 700;
@@ -655,7 +658,7 @@ body {
   word-break: break-all;
 }
 .tooltip-section {
-  padding: 8px 12px 12px;
+  padding: 10px 16px 14px;
 }
 .tooltip-section-title {
   color: var(--muted);
@@ -668,8 +671,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 260px;
-  overflow: auto;
+  max-height: none;
 }
 .list-row {
   display: grid;
@@ -714,6 +716,16 @@ body {
 }
 .btn:hover {
   border-color: var(--accent);
+}
+
+/* Panel body scroll */
+.tooltip {
+  overflow: hidden;
+}
+.tooltip-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
 }
 
 /* Improve ReactFlow grid for light theme */

@@ -28,77 +28,79 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
           Close
         </button>
       </div>
-      <div className="tooltip-section">
-        <div className="tooltip-section-title">Top-level properties ({topLevel.length})</div>
-        <ul className="list">
-          {topLevel.map((p, idx) => (
-            <li key={idx} className="list-row">
-              <span className="k">{p.name}</span>
-              {p.required && <span className="badge req">required</span>}
-              {p.type && <span className="t">{p.type}</span>}
-              {p.description && <span className="d">{p.description}</span>}
-            </li>
-          ))}
-          {!topLevel.length && <li className="muted">No top-level properties</li>}
-        </ul>
-      </div>
-      <div className="tooltip-section">
-        <div className="tooltip-section-title">Actions</div>
-        <ul className="list">
-          <li className="list-row">
-            <span className="k">Open JSON</span>
-            <button
-              className="btn"
-              onClick={() => {
-                try {
-                  const blob = new Blob([JSON.stringify(schema ?? {}, null, 2)], { type: "application/json" })
-                  const url = URL.createObjectURL(blob)
-                  window.open(url, "_blank")
-                } catch {}
-              }}
-            >
-              Open
-            </button>
-          </li>
-          <li className="list-row">
-            <span className="k">Copy $id</span>
-            <button className="btn" onClick={() => navigator.clipboard?.writeText(schemaId || "")}>
-              Copy
-            </button>
-          </li>
-          {filePath && (
+      <div className="tooltip-body">
+        <div className="tooltip-section">
+          <div className="tooltip-section-title">Top-level properties ({topLevel.length})</div>
+          <ul className="list">
+            {topLevel.map((p, idx) => (
+              <li key={idx} className="list-row">
+                <span className="k">{p.name}</span>
+                {p.required && <span className="badge req">required</span>}
+                {p.type && <span className="t">{p.type}</span>}
+                {p.description && <span className="d">{p.description}</span>}
+              </li>
+            ))}
+            {!topLevel.length && <li className="muted">No top-level properties</li>}
+          </ul>
+        </div>
+        <div className="tooltip-section">
+          <div className="tooltip-section-title">Actions</div>
+          <ul className="list">
             <li className="list-row">
-              <span className="k">Source path</span>
-              <span className="d">{filePath}</span>
+              <span className="k">Open JSON</span>
+              <button
+                className="btn"
+                onClick={() => {
+                  try {
+                    const blob = new Blob([JSON.stringify(schema ?? {}, null, 2)], { type: "application/json" })
+                    const url = URL.createObjectURL(blob)
+                    window.open(url, "_blank")
+                  } catch {}
+                }}
+              >
+                Open
+              </button>
             </li>
-          )}
-        </ul>
-      </div>
-      <div className="tooltip-section">
-        <div className="tooltip-section-title">Nested properties ({nested.length})</div>
-        <ul className="list">
-          {nested.map((p, idx) => (
-            <li key={idx} className="list-row">
-              <span className="k">{p.name}</span>
-              {p.type && <span className="t">{p.type}</span>}
-              {p.description && <span className="d">{p.description}</span>}
+            <li className="list-row">
+              <span className="k">Copy $id</span>
+              <button className="btn" onClick={() => navigator.clipboard?.writeText(schemaId || "")}>
+                Copy
+              </button>
             </li>
-          ))}
-          {!nested.length && <li className="muted">No nested properties</li>}
-        </ul>
-      </div>
-      <div className="tooltip-section">
-        <div className="tooltip-section-title">Relationships</div>
-        <ul className="list">
-          {rels.map((r, idx) => (
-            <li key={idx} className="list-row">
-              <span className="k">{r.type}</span>
-              <span className="d">{r.kind}</span>
-              <span className="t">→ {r.target}</span>
-            </li>
-          ))}
-          {!rels.length && <li className="muted">No relationships</li>}
-        </ul>
+            {filePath && (
+              <li className="list-row">
+                <span className="k">Source path</span>
+                <span className="d">{filePath}</span>
+              </li>
+            )}
+          </ul>
+        </div>
+        <div className="tooltip-section">
+          <div className="tooltip-section-title">Nested properties ({nested.length})</div>
+          <ul className="list">
+            {nested.map((p, idx) => (
+              <li key={idx} className="list-row">
+                <span className="k">{p.name}</span>
+                {p.type && <span className="t">{p.type}</span>}
+                {p.description && <span className="d">{p.description}</span>}
+              </li>
+            ))}
+            {!nested.length && <li className="muted">No nested properties</li>}
+          </ul>
+        </div>
+        <div className="tooltip-section">
+          <div className="tooltip-section-title">Relationships</div>
+          <ul className="list">
+            {rels.map((r, idx) => (
+              <li key={idx} className="list-row">
+                <span className="k">{r.type}</span>
+                <span className="d">{r.kind}</span>
+                <span className="t">→ {r.target}</span>
+              </li>
+            ))}
+            {!rels.length && <li className="muted">No relationships</li>}
+          </ul>
+        </div>
       </div>
     </div>
   )

@@ -21,6 +21,7 @@ import { PropertyTooltip } from "./Tooltip"
 type Props = {
   nodes: Node[]
   edges: Edge[]
+  onSchemaSelect?: (idOrTerm: string) => void
 }
 
 // Edge validation utility
@@ -63,7 +64,7 @@ function DefaultNode({ data }: any) {
 }
 
 function ErdEntityNode({ data }: any) {
-  const { label, subtitle, properties, erdRelationships, nodeType } = data
+  const { label, subtitle, properties, erdRelationships, nodeType, category } = data
 
   // Limit properties for display (show key properties and relationships)
   const keyProperties = properties?.slice(0, 8) || []
@@ -74,7 +75,18 @@ function ErdEntityNode({ data }: any) {
     "related-entity": "border-green-500 bg-green-50",
     abstract: "border-purple-500 bg-purple-50",
   }
-  const nodeStyle = nodeStyles[nodeType as string] || "border-gray-500 bg-gray-50"
+
+  // Override related-entity style by category when available
+  const categoryBorderBg: Record<string, string> = {
+    "master-data": "border-amber-500 bg-amber-50",
+    "reference-data": "border-emerald-500 bg-emerald-50",
+    "work-product-component": "border-indigo-500 bg-indigo-50",
+  }
+
+  let nodeStyle = nodeStyles[nodeType as string] || "border-gray-500 bg-gray-50"
+  if (nodeType === "related-entity" && category && categoryBorderBg[category]) {
+    nodeStyle = categoryBorderBg[category]
+  }
 
   return (
     <div
@@ -89,7 +101,13 @@ function ErdEntityNode({ data }: any) {
           nodeType === "entity"
             ? "bg-blue-100 text-blue-900"
             : nodeType === "related-entity"
-            ? "bg-green-100 text-green-900"
+            ? category === "master-data"
+              ? "bg-amber-100 text-amber-900"
+              : category === "reference-data"
+              ? "bg-emerald-100 text-emerald-900"
+              : category === "work-product-component"
+              ? "bg-indigo-100 text-indigo-900"
+              : "bg-green-100 text-green-900"
             : "bg-purple-100 text-purple-900"
         }`}
       >
@@ -142,7 +160,7 @@ const nodeTypes: NodeTypes = {
   "erd-entity": ErdEntityNode,
 }
 
-export default function SchemaGraph({ nodes, edges }: Props) {
+export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState([])
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState([])
   const [activeNode, setActiveNode] = useState<Node | null>(null)
@@ -343,12 +361,34 @@ export default function SchemaGraph({ nodes, edges }: Props) {
     setRfEdges((es) => es.map((e) => ({ ...e, style: {} })))
   }, [])
 
+  // Close panel with Escape
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActiveNode(null)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [])
+
+  // Double-click to navigate: entity or abstract schema becomes the main entity
+  const onNodeDoubleClick = useCallback(
+    (_e: any, node: Node) => {
+      const idCandidate = (node?.data as any)?.schemaId || (node?.data as any)?.label || node?.id
+      if (onSchemaSelect && idCandidate) {
+        onSchemaSelect(String(idCandidate))
+      }
+    },
+    [onSchemaSelect]
+  )
+
   return (
     <div
       className="graph-container"
       style={{
         width: "100%",
         height: "100%",
+        position: "relative",
+        paddingRight: activeNode ? 420 : 0,
       }}
     >
       <ReactFlow
@@ -357,6 +397,7 @@ export default function SchemaGraph({ nodes, edges }: Props) {
         onNodesChange={handleNodesChange}
         onEdgesChange={handleEdgesChange}
         onNodeClick={onNodeClick}
+        onNodeDoubleClick={onNodeDoubleClick}
         onPaneClick={onPaneClick}
         nodeTypes={nodeTypes}
         fitView
@@ -387,7 +428,7 @@ export default function SchemaGraph({ nodes, edges }: Props) {
 
       {/* Legend for ERD view */}
       {isErdView && (
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4" style={{ right: activeNode ? 440 : 16 }}>
           <button
             onClick={() => setShowLegend(!showLegend)}
             className="px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
@@ -403,8 +444,20 @@ export default function SchemaGraph({ nodes, edges }: Props) {
                 <span>Main Entity</span>
               </div>
               <div className="flex items-center mb-1">
+                <div className="w-4 h-3 bg-amber-100 border border-amber-500 rounded mr-2"></div>
+                <span>Related: Master Data</span>
+              </div>
+              <div className="flex items-center mb-1">
+                <div className="w-4 h-3 bg-emerald-100 border border-emerald-500 rounded mr-2"></div>
+                <span>Related: Reference Data</span>
+              </div>
+              <div className="flex items-center mb-1">
+                <div className="w-4 h-3 bg-indigo-100 border border-indigo-500 rounded mr-2"></div>
+                <span>Related: Work Product Component</span>
+              </div>
+              <div className="flex items-center mb-3">
                 <div className="w-4 h-3 bg-green-100 border border-green-500 rounded mr-2"></div>
-                <span>Related Entity</span>
+                <span>Related: Other/Unknown</span>
               </div>
               <div className="flex items-center mb-3">
                 <div className="w-4 h-3 bg-purple-100 border border-purple-500 rounded mr-2"></div>
