@@ -136,11 +136,15 @@ function useSchemas() {
 export default function App() {
   const { models, loading, error, index, loadSchemaContent } = useSchemas()
   const [selectedModelId, setSelectedModelId] = useState<string>("")
-  const [query, setQuery] = useState("")
-  const [modelQuery, setModelQuery] = useState("")
-  const [comboOpen, setComboOpen] = useState(false)
-  const [highlight, setHighlight] = useState(0)
   const [loadingSchema, setLoadingSchema] = useState(false)
+  const [erdView, setErdView] = useState(true) // Default to ERD view
+
+  // Auto-select first schema when models are loaded
+  useEffect(() => {
+    if (models.length > 0 && !selectedModelId) {
+      setSelectedModelId(models[0].id)
+    }
+  }, [models, selectedModelId])
 
   const selectedModel: SchemaModel | undefined = useMemo(() => {
     if (!models.length) return undefined
@@ -158,58 +162,25 @@ export default function App() {
     }
   }, [selectedModel, index, loadSchemaContent])
 
-  const filteredModels = useMemo(() => {
-    if (!modelQuery.trim()) return models
-
-    const query = modelQuery.toLowerCase()
-    return models.filter(
-      (model) =>
-        model.title.toLowerCase().includes(query) ||
-        model.id.toLowerCase().includes(query) ||
-        (model.version && model.version.includes(query))
-    )
-  }, [models, modelQuery])
-
   const { nodes, edges } = useMemo(() => {
-    if (!selectedModel) return { nodes: [], edges: [] }
+    console.log("Building graph for selectedModel:", selectedModel?.title)
+    if (!selectedModel) {
+      console.log("No selected model")
+      return { nodes: [], edges: [] }
+    }
 
     const schema = selectedModel.schema || index[selectedModel.path]
-    if (!schema) return { nodes: [], edges: [] }
+    if (!schema) {
+      console.log("No schema found for:", selectedModel.title)
+      return { nodes: [], edges: [] }
+    }
 
+    console.log("Building graph with schema for:", selectedModel.title)
     const modelWithSchema = { ...selectedModel, schema }
-    return buildGraph(modelWithSchema, { index })
-  }, [selectedModel, index])
-
-  const handleModelSelect = async (modelId: string) => {
-    setSelectedModelId(modelId)
-    setComboOpen(false)
-    setModelQuery("")
-
-    const model = models.find((m) => m.id === modelId)
-    if (model && !model.schema && !index[model.path]) {
-      setLoadingSchema(true)
-      await loadSchemaContent(model)
-      setLoadingSchema(false)
-    }
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (!comboOpen) return
-
-    if (e.key === "ArrowDown") {
-      e.preventDefault()
-      setHighlight((prev) => Math.min(prev + 1, filteredModels.length - 1))
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault()
-      setHighlight((prev) => Math.max(prev - 1, 0))
-    } else if (e.key === "Enter" && filteredModels[highlight]) {
-      e.preventDefault()
-      handleModelSelect(filteredModels[highlight].id)
-    } else if (e.key === "Escape") {
-      e.preventDefault()
-      setComboOpen(false)
-    }
-  }
+    const result = buildGraph(modelWithSchema, { index, erdView })
+    console.log("Graph built:", { nodeCount: result.nodes.length, edgeCount: result.edges.length })
+    return result
+  }, [selectedModel, index, erdView])
 
   if (loading) {
     return (
@@ -234,103 +205,27 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b p-4">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">OSDU Schema Visualizer</h1>
-
-          {/* Model Selection Dropdown */}
-          <div className="relative">
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Select Data Model ({models.length} total schemas available)
-            </label>
-            <div className="relative">
-              <input
-                type="text"
-                value={comboOpen ? modelQuery : selectedModel?.title || ""}
-                onChange={(e) => {
-                  setModelQuery(e.target.value)
-                  setHighlight(0)
-                  if (!comboOpen) setComboOpen(true)
-                }}
-                onFocus={() => {
-                  setComboOpen(true)
-                  setModelQuery("")
-                }}
-                onKeyDown={handleKeyDown}
-                placeholder="Search all schemas..."
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              />
-              <button
-                onClick={() => setComboOpen(!comboOpen)}
-                className="absolute right-2 top-2 text-gray-400 hover:text-gray-600"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              {/* Dropdown List */}
-              {comboOpen && (
-                <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
-                  {filteredModels.length === 0 ? (
-                    <div className="px-3 py-2 text-gray-500">No schemas found</div>
-                  ) : (
-                    filteredModels.map((model, index) => (
-                      <button
-                        key={model.id}
-                        onClick={() => handleModelSelect(model.id)}
-                        className={`w-full text-left px-3 py-2 hover:bg-blue-50 ${
-                          index === highlight ? "bg-blue-100" : ""
-                        } ${selectedModel?.id === model.id ? "bg-blue-50 font-medium" : ""}`}
-                      >
-                        <div className="font-medium">{model.title}</div>
-                        {model.version && <div className="text-xs text-gray-500">v{model.version}</div>}
-                      </button>
-                    ))
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Schema Info */}
-          {selectedModel && (
-            <div className="mt-4 p-3 bg-blue-50 rounded-md">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="font-medium text-blue-900">{selectedModel.title}</h3>
-                  {selectedModel.version && <p className="text-sm text-blue-700">Version: {selectedModel.version}</p>}
-                </div>
-                {loadingSchema && (
-                  <div className="flex items-center text-blue-600">
-                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600 mr-2"></div>
-                    <span className="text-sm">Loading schema...</span>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
+    <div className="h-screen bg-gray-50">
+      {/* Debug Info */}
+      <div className="absolute top-4 left-4 z-50 bg-white p-4 rounded shadow text-xs">
+        <div>Models loaded: {models.length}</div>
+        <div>Selected: {selectedModel?.title || 'None'}</div>
+        <div>Schema exists: {selectedModel && (selectedModel.schema || index[selectedModel.path]) ? 'Yes' : 'No'}</div>
+        <div>Nodes: {nodes.length}</div>
+        <div>Edges: {edges.length}</div>
+        <div>Loading: {loadingSchema ? 'Yes' : 'No'}</div>
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 relative">
+      <div className="h-full relative">
         {selectedModel && (selectedModel.schema || index[selectedModel.path]) ? (
           <SchemaGraph nodes={nodes} edges={edges} />
-        ) : selectedModel ? (
+        ) : (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
               <p className="text-gray-600">Loading schema content...</p>
-            </div>
-          </div>
-        ) : (
-          <div className="flex items-center justify-center h-full">
-            <div className="text-center text-gray-500">
-              <p className="text-xl">Select a schema to visualize</p>
-              <p className="mt-2">Choose from {models.length} available OSDU data models</p>
+              {selectedModel && <p className="text-sm text-gray-500 mt-2">Loading: {selectedModel.title}</p>}
             </div>
           </div>
         )}

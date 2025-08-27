@@ -9,4 +9,5 @@ export type SchemaModel = {
 export type GraphBuildOptions = {
   filter?: string
   index?: Record<string, any>
+  erdView?: boolean
 }
