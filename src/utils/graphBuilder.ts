@@ -196,6 +196,7 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   const id = model.id || title
   const mainId = normalizeId(id)
   const erdView = opts.erdView !== false // Default to true
+  console.log("Building graph for:", title, "erdView:", erdView, "opts.erdView:", opts.erdView)
 
   const { properties, relations, refs } = collectFromSchema(model.schema)
   const erdRelationships = extractErdRelationships(model.schema, title)
@@ -211,9 +212,11 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
 
   if (!erdView) {
     // Original view - simple node with relationships as separate nodes
+    console.log("Using original graph builder")
     return buildOriginalGraph(model, opts, filteredProps, filteredRels, refs, mainId, title, id)
   }
 
+  console.log("Using ERD graph builder")
   // ERD view - entities with relationships
   const nodes: Node[] = [
     {
@@ -329,20 +332,24 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   const edges: Edge[] = []
 
   // ERD relationship edges
+  // Ensure unique edge IDs even when multiple properties relate to the same target entity
+  const edgeIdOccurrences = new Map<string, number>()
   for (const erdRel of erdRelationships) {
     const targetEntityId = normalizeId(`entity::${erdRel.targetEntity}`)
     const targetNode = entityNodes.get(targetEntityId)
 
     if (targetNode) {
-      const edgeId = `${mainId}->erd->${targetEntityId}`
+      // Base ID includes source property to avoid collisions across multiple relationships to same target
+      const baseId = `${mainId}->erd->${targetEntityId}::${normalizeId(erdRel.sourceProperty)}`
+      const nextCount = (edgeIdOccurrences.get(baseId) || 0) + 1
+      edgeIdOccurrences.set(baseId, nextCount)
+      const edgeId = nextCount > 1 ? `${baseId}#${nextCount}` : baseId
       const label = erdRel.isConnectable ? `${erdRel.sourceProperty} (connectable)` : `${erdRel.sourceProperty}`
 
       edges.push({
         id: edgeId,
         source: mainId,
         target: targetEntityId,
-        sourceHandle: undefined,
-        targetHandle: undefined,
         data: {
           type: erdRel.isConnectable ? "connectable" : "erd-relationship",
           sourceProperty: erdRel.sourceProperty,
@@ -361,14 +368,72 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
       id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
       source: mainId,
       target: normalizeId(`${mainId}::ref::${r}`),
-      sourceHandle: undefined,
-      targetHandle: undefined,
       data: { type: "inheritance" },
       label: "extends",
     })
   }
 
-  return { nodes, edges }
+  return { nodes, edges: validateEdges(edges, nodes) }
+}
+
+// Validate edges to ensure they don't have undefined handles and valid source/target
+function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
+  const nodeIds = new Set(nodes.map((n) => n.id))
+
+  const validatedEdges = edges
+    .filter((edge) => {
+      // Ensure source and target exist
+      if (!edge.source || !edge.target) {
+        console.warn("Removing edge with missing source/target:", edge.id)
+        return false
+      }
+      if (!nodeIds.has(edge.source) || !nodeIds.has(edge.target)) {
+        console.warn("Removing edge with invalid node reference:", edge.id, {
+          source: edge.source,
+          target: edge.target,
+          availableNodes: Array.from(nodeIds),
+        })
+        return false
+      }
+      return true
+    })
+    .map((edge) => {
+      // Create clean edge without undefined handles
+      const cleanEdge: Edge = {
+        id: edge.id,
+        source: edge.source,
+        target: edge.target,
+        data: edge.data || {},
+      }
+
+      // Only add label if it exists
+      if (edge.label) {
+        cleanEdge.label = edge.label
+      }
+
+      // Only add handles if they are explicitly defined and not undefined
+      if (edge.sourceHandle !== undefined && edge.sourceHandle !== null) {
+        cleanEdge.sourceHandle = edge.sourceHandle
+      }
+      if (edge.targetHandle !== undefined && edge.targetHandle !== null) {
+        cleanEdge.targetHandle = edge.targetHandle
+      }
+
+      // Log edges that have any handle properties for debugging
+      if ("sourceHandle" in edge || "targetHandle" in edge) {
+        console.log("Edge with handles:", edge.id, {
+          originalSourceHandle: edge.sourceHandle,
+          originalTargetHandle: edge.targetHandle,
+          cleanSourceHandle: cleanEdge.sourceHandle,
+          cleanTargetHandle: cleanEdge.targetHandle,
+        })
+      }
+
+      return cleanEdge
+    })
+
+  console.log("Validated edges:", validatedEdges.length, "from original:", edges.length)
+  return validatedEdges
 }
 
 // Original graph building function
@@ -443,8 +508,6 @@ function buildOriginalGraph(
       id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
       source: mainId,
       target: normalizeId(`${mainId}::ref::${r}`),
-      sourceHandle: undefined,
-      targetHandle: undefined,
       data: { type: "ref" },
     })
   }
@@ -463,11 +526,9 @@ function buildOriginalGraph(
       id: `${mainId}-rel-${idx}`,
       source: mainId,
       target: normalizeId(`${mainId}::rel::${k}`),
-      sourceHandle: undefined,
-      targetHandle: undefined,
       data: { type: "relationship", label: k },
     })
   })
 
-  return { nodes, edges }
+  return { nodes, edges: validateEdges(edges, nodes) }
 }

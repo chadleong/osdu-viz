@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react"
+import React, { useCallback, useMemo, useState, useEffect } from "react"
 import ReactFlow, {
   Background,
   Controls,
@@ -9,6 +9,10 @@ import ReactFlow, {
   useEdgesState,
   MarkerType,
   NodeTypes,
+  NodeChange,
+  EdgeChange,
+  Handle,
+  Position,
 } from "reactflow"
 import "reactflow/dist/style.css"
 import { layoutWithDagre } from "../utils/layout"
@@ -19,9 +23,39 @@ type Props = {
   edges: Edge[]
 }
 
+// Edge validation utility
+function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
+  const nodeIds = new Set(nodes.map((n) => n.id))
+
+  return edges
+    .filter((edge) => {
+      // Check if source and target nodes exist
+      if (!nodeIds.has(edge.source) || !nodeIds.has(edge.target)) {
+        console.warn(`Removing invalid edge: ${edge.source} -> ${edge.target}`)
+        return false
+      }
+
+      // Ensure edge has required properties
+      if (!edge.id) {
+        console.warn("Removing edge without id")
+        return false
+      }
+
+      return true
+    })
+    .map((edge) => {
+      // Strip handle keys entirely if present
+      const { sourceHandle, targetHandle, ...clean } = edge as any
+      return clean as Edge
+    })
+}
+
 function DefaultNode({ data }: any) {
   return (
     <div className="node">
+      {/* React Flow handles ensure edges have valid anchors */}
+      <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 8, height: 8 }} />
+      <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 8, height: 8 }} />
       <div className="node-title">{data.label}</div>
       {data.subtitle && <div className="node-sub">{data.subtitle}</div>}
     </div>
@@ -46,6 +80,9 @@ function ErdEntityNode({ data }: any) {
     <div
       className={`erd-entity-node border-2 ${nodeStyle} rounded-lg shadow-lg min-w-200 max-w-280 cursor-move hover:shadow-xl transition-shadow`}
     >
+      {/* React Flow handles ensure edges have valid anchors */}
+      <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
+      <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
       {/* Header */}
       <div
         className={`px-3 py-2 border-b font-bold text-sm ${
@@ -117,34 +154,57 @@ export default function SchemaGraph({ nodes, edges }: Props) {
   // Check if this is ERD view
   const isErdView = nodes.some((n) => n.type === "erd-entity")
 
-  // Custom nodes change handler to track dragging
+  // Custom nodes change handler to track dragging and validate edges
   const handleNodesChange = useCallback(
-    (changes: any[]) => {
-      const dragStart = changes.some((change) => change.type === "drag" && change.dragging)
-      const dragEnd = changes.some((change) => change.type === "drag" && !change.dragging)
+    (changes: NodeChange[]) => {
+      // Check for position changes (dragging)
+      const hasPositionChange = changes.some((change) => change.type === "position")
 
-      if (dragStart) {
-        setIsDragging(true)
-      } else if (dragEnd) {
-        setIsDragging(false)
+      if (hasPositionChange) {
+        // After any position change, re-validate edges to prevent React Flow errors
+        setTimeout(() => {
+          setRfEdges((currentEdges) => validateEdges(currentEdges, rfNodes))
+        }, 50)
       }
 
       onNodesChange(changes)
     },
-    [onNodesChange]
+    [onNodesChange, rfNodes, setRfEdges]
+  )
+
+  // Custom edges change handler to prevent problematic edge updates
+  const handleEdgesChange = useCallback(
+    (changes: EdgeChange[]) => {
+      // Filter out edge changes that might cause issues
+      const safeChanges = changes.filter((change) => {
+        // Allow removal but be cautious about updates
+        if (change.type === "remove") return true
+        if (change.type === "reset") return true
+        // Skip other edge changes that might cause handle errors
+        return false
+      })
+
+      if (safeChanges.length > 0) {
+        onEdgesChange(safeChanges)
+      }
+    },
+    [onEdgesChange]
   )
 
   React.useEffect(() => {
-    // add markers and interaction handlers
+    // Set nodes with dragging enabled
     setRfNodes(
       laidOut.nodes.map((n) => ({
         ...n,
         data: { ...n.data },
-        draggable: true, // Enable dragging for all nodes
+        draggable: true,
       }))
     )
+
+    // Set edges with validation
+    const validatedEdges = validateEdges(laidOut.edges, laidOut.nodes)
     setRfEdges(
-      laidOut.edges.map((e) => {
+      validatedEdges.map((e) => {
         const edgeType = e.data?.type
 
         let edgeStyle: any = {}
@@ -295,7 +355,7 @@ export default function SchemaGraph({ nodes, edges }: Props) {
         nodes={rfNodes}
         edges={rfEdges}
         onNodesChange={handleNodesChange}
-        onEdgesChange={onEdgesChange}
+        onEdgesChange={handleEdgesChange}
         onNodeClick={onNodeClick}
         onPaneClick={onPaneClick}
         nodeTypes={nodeTypes}

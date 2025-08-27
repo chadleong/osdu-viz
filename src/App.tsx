@@ -86,7 +86,7 @@ export default function App() {
     if (!selectedModel || !selectedModel.schema) {
       return { nodes: [], edges: [] }
     }
-    return buildGraph(selectedModel, { index })
+    return buildGraph(selectedModel, { index, erdView: true })
   }, [selectedModel, index])
 
   // Filter models based on search term
@@ -104,6 +104,22 @@ export default function App() {
     setSelectedModel(model)
     setSearchTerm(model.title)
     setShowDropdown(false)
+  }
+
+  const handleSchemaSelect = (schemaId: string) => {
+    // Find schema by ID in the models array
+    const targetSchema = models.find(
+      (model) =>
+        model.id === schemaId ||
+        model.id.includes(schemaId) ||
+        model.title.toLowerCase().includes(schemaId.toLowerCase())
+    )
+
+    if (targetSchema) {
+      setSelectedModel(targetSchema)
+      setSearchTerm(targetSchema.title)
+      setShowDropdown(false)
+    }
   }
 
   return (
@@ -204,7 +220,7 @@ export default function App() {
       {/* Main Content */}
       <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
         {selectedModel && selectedModel.schema ? (
-          <SchemaGraph nodes={nodes} edges={edges} />
+          <SchemaGraph nodes={nodes} edges={edges} onSchemaSelect={handleSchemaSelect} />
         ) : (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
