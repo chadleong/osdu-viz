@@ -99,7 +99,7 @@ function ErdEntityNode({ data }: any) {
     "master-data": { bg: "#fff1f2", border: "#fca5a5", text: "#7f1d1d" }, // red-50 / red-300
     "reference-data": { bg: "#ecfdf5", border: "#34d399", text: "#065f46" }, // emerald-50 / emerald-500
     "work-product-component": { bg: "#fffbeb", border: "#fcd34d", text: "#5c3d00" }, // yellow-50 / yellow-300
-    defaultRelated: { bg: "#ecfdf5", border: "#86efac", text: "#065f46" },
+    defaultRelated: { bg: "#f3f4f6", border: "#9ca3af", text: "#374151" },
   }
 
   let inlineBg = "#ffffff"
@@ -134,7 +134,7 @@ function ErdEntityNode({ data }: any) {
       <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
       <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
       {/* Header */}
-  <div className="px-3 py-2 border-b font-bold text-sm" style={inlineText ? { color: inlineText } : undefined}>
+      <div className="px-3 py-2 border-b font-bold text-sm" style={inlineText ? { color: inlineText } : undefined}>
         <div className="truncate">{label}</div>
         {subtitle && <div className="text-xs opacity-75 truncate">{subtitle}</div>}
       </div>
@@ -464,27 +464,81 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
               <div className="font-semibold mb-2">Entity Types</div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-purple-100 border border-purple-500 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#f5f3ff",
+                    border: "1px solid #7c3aed",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Main Entity</span>
               </div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-red-100 border border-red-300 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#fff1f2",
+                    border: "1px solid #fca5a5",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Related: Master Data</span>
               </div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-emerald-100 border border-emerald-500 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#ecfdf5",
+                    border: "1px solid #34d399",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Related: Reference Data</span>
               </div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-yellow-100 border border-yellow-300 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#fffbeb",
+                    border: "1px solid #fcd34d",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Related: Work Product Component</span>
               </div>
               <div className="flex items-center mb-3">
-                <div className="w-4 h-3 bg-green-100 border border-green-500 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#f3f4f6",
+                    border: "1px solid #9ca3af",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Related: Other/Unknown</span>
               </div>
               <div className="flex items-center mb-3">
-                <div className="w-4 h-3 bg-blue-100 border border-blue-500 rounded mr-2"></div>
+                <div
+                  style={{
+                    width: 16,
+                    height: 12,
+                    backgroundColor: "#eff6ff",
+                    border: "1px solid #3b82f6",
+                    borderRadius: 4,
+                    marginRight: 8,
+                  }}
+                ></div>
                 <span>Abstract Schema</span>
               </div>
 

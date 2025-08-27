@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react"
 import SchemaGraph from "./components/SchemaGraph"
 import { buildGraph } from "./utils/graphBuilder"
 import type { SchemaModel } from "./types"
+import pkg from "../package.json"
 
 export default function App() {
   const [models, setModels] = useState<SchemaModel[]>([])
@@ -142,12 +143,22 @@ export default function App() {
   return (
     <div className="h-screen bg-gray-50">
       {/* Header with Search and Dropdown */}
-      <div className="bg-white border-b border-gray-200 px-100 py-3" style={{ position: "relative", zIndex: 1000 }}>
+      <div
+        className="bg-white border-b border-gray-200 px-100 py-3"
+        style={{ position: "sticky", top: 0, zIndex: 1000, backdropFilter: "saturate(180%) blur(4px)" }}
+      >
         <div
           className="flex items-center space-x-4"
           style={{ paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12 }}
         >
-          <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Visualizer</h1>
+          <div>
+            <div>
+              <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Visualizer</h1>
+              <div className="text-xs text-gray-500" style={{ marginTop: 2 }}>
+                v{(pkg as any).version}
+              </div>
+            </div>
+          </div>
 
           {/* Schema Selector with Search */}
           <div className="flex-1 max-w-md relative dropdown-container">
@@ -177,6 +188,26 @@ export default function App() {
               >
                 ▼
               </span>
+              {/* Selected version badge inside the input */}
+              {selectedModel?.version && (
+                <span
+                  style={{
+                    position: "absolute",
+                    right: 44,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    pointerEvents: "none",
+                    fontSize: 12,
+                    color: "#475569",
+                    background: "#f1f5f9",
+                    padding: "2px 6px",
+                    borderRadius: 6,
+                    border: "1px solid #e2e8f0",
+                  }}
+                >
+                  v{selectedModel.version}
+                </span>
+              )}
             </div>
 
             {/* Dropdown Results */}
@@ -251,6 +282,11 @@ export default function App() {
           {/* Status Info */}
           <div className="text-sm text-gray-600">
             {models.length} schemas loaded | Selected: {selectedModel?.title || "None"}
+            {selectedModel?.version && (
+              <span className="text-xs text-gray-500" style={{ marginLeft: 8 }}>
+                v{selectedModel.version}
+              </span>
+            )}
           </div>
         </div>
       </div>{" "}
