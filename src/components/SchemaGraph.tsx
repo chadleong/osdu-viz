@@ -106,8 +106,6 @@ const nodeTypes: NodeTypes = {
 }
 
 export default function SchemaGraph({ nodes, edges }: Props) {
-  console.log("SchemaGraph received:", { nodeCount: nodes.length, edgeCount: edges.length })
-
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState([])
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState([])
   const [activeNode, setActiveNode] = useState<Node | null>(null)
@@ -137,7 +135,6 @@ export default function SchemaGraph({ nodes, edges }: Props) {
   )
 
   React.useEffect(() => {
-    console.log("Setting nodes and edges:", { nodeCount: laidOut.nodes.length, edgeCount: laidOut.edges.length })
     // add markers and interaction handlers
     setRfNodes(
       laidOut.nodes.map((n) => ({
@@ -146,7 +143,6 @@ export default function SchemaGraph({ nodes, edges }: Props) {
         draggable: true, // Enable dragging for all nodes
       }))
     )
-    console.log("Nodes set to ReactFlow state")
     setRfEdges(
       laidOut.edges.map((e) => {
         const edgeType = e.data?.type
@@ -288,27 +284,45 @@ export default function SchemaGraph({ nodes, edges }: Props) {
   }, [])
 
   return (
-    <div className="graph-container" style={{ width: "100%", height: "100%" }}>
-      {/* Debug info for ReactFlow state */}
-      <div className="absolute top-4 right-4 z-50 bg-white p-2 rounded shadow text-xs">
-        <div>RF Nodes: {rfNodes.length}</div>
-        <div>RF Edges: {rfEdges.length}</div>
-      </div>
-
+    <div
+      className="graph-container"
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <ReactFlow
         nodes={rfNodes}
         edges={rfEdges}
-        nodeTypes={nodeTypes}
         onNodesChange={handleNodesChange}
         onEdgesChange={onEdgesChange}
         onNodeClick={onNodeClick}
         onPaneClick={onPaneClick}
+        nodeTypes={nodeTypes}
         fitView
-        className={isDragging ? "dragging" : ""}
+        fitViewOptions={{ padding: 0.2 }}
+        minZoom={0.1}
+        maxZoom={2}
+        defaultViewport={{ x: 0, y: 0, zoom: 0.8 }}
       >
-        <MiniMap zoomable pannable />
-        <Controls />
         <Background />
+        <Controls />
+        <MiniMap
+          nodeStrokeColor={(n) => {
+            if (n.type === "input") return "#0041d0"
+            if (n.type === "output") return "#ff0072"
+            if (n.type === "default") return "#1a192b"
+            return "#eee"
+          }}
+          nodeColor={(n) => {
+            if (n.type === "input") return "#0041d0"
+            if (n.type === "output") return "#ff0072"
+            if (n.type === "default") return "#1a192b"
+            return "#fff"
+          }}
+          nodeBorderRadius={2}
+          position="bottom-left"
+        />
       </ReactFlow>
 
       {/* Legend for ERD view */}

@@ -1,231 +1,221 @@
-import { useEffect, useMemo, useState } from "react"
+import React, { useState, useEffect, useMemo } from "react"
 import SchemaGraph from "./components/SchemaGraph"
 import { buildGraph } from "./utils/graphBuilder"
-import { SchemaModel } from "./types"
-
-// Load ALL schemas for comprehensive search (content loaded on demand)
-function useSchemas() {
-  const [models, setModels] = useState<SchemaModel[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<unknown>(null)
-  const [index, setIndex] = useState<Record<string, any>>({})
-
-  useEffect(() => {
-    async function loadSchemaIndex() {
-      try {
-        console.log("Loading ALL schemas for comprehensive search...")
-
-        // Load the complete schema index (metadata only)
-        try {
-          const indexResponse = await fetch("/schema-index.json")
-          if (indexResponse.ok) {
-            const schemaIndex = await indexResponse.json()
-            console.log(`Found ${schemaIndex.length} schemas in index`)
-
-            // Create lightweight schema models from ALL schemas in the index
-            const allSchemas: SchemaModel[] = schemaIndex.map((schemaInfo: any) => ({
-              id: schemaInfo.id,
-              title: schemaInfo.title,
-              schema: null, // Will be loaded on demand when selected
-              path: schemaInfo.publicPath,
-              version: schemaInfo.version,
-            }))
-
-            // Sort alphabetically by title for better UX
-            allSchemas.sort((a, b) => a.title.localeCompare(b.title))
-
-            console.log(`Made ALL ${allSchemas.length} schemas available for search!`)
-
-            setModels(allSchemas)
-            setIndex({}) // Start with empty index, populate on demand
-            setLoading(false)
-            return
-          }
-        } catch (e) {
-          console.warn("Failed to load schema index, falling back to curated list")
-        }
-
-        // Fallback: Load a curated set of schemas manually (with content)
-        const curatedSchemas = [
-          "/data/Generated/abstract/AbstractContact.1.0.0.json",
-          "/data/Generated/abstract/AbstractDataset.1.0.0.json",
-          "/data/Generated/abstract/AbstractFile.1.0.0.json",
-          "/data/Generated/master-data/Well.1.0.0.json",
-          "/data/Generated/master-data/Wellbore.1.0.0.json",
-          "/data/Generated/work-product-component/SeismicLine.1.0.0.json",
-          "/data/Generated/work-product-component/Activity.1.0.0.json",
-        ]
-
-        const parsed: SchemaModel[] = []
-        const idx: Record<string, any> = {}
-
-        for (const path of curatedSchemas) {
-          try {
-            const response = await fetch(path)
-            if (response.ok) {
-              const schema = await response.json()
-
-              const isStandard =
-                schema && typeof schema["$schema"] === "string" && /json-schema\.org/.test(schema["$schema"])
-              if (isStandard) {
-                const id = schema["$id"] || path
-                const title = schema["title"] || id
-                const idMatch = typeof id === "string" ? id.match(/:(\d+\.\d+\.\d+)\.json$/) : null
-                const src = schema["x-osdu-schema-source"]
-                const srcMatch = typeof src === "string" ? src.match(/:(\d+\.\d+\.\d+)$/) : null
-                const version = (idMatch && idMatch[1]) || (srcMatch && srcMatch[1]) || undefined
-
-                const model: SchemaModel = { id, title, schema, path, version }
-                parsed.push(model)
-                idx[path] = schema
-              }
-            }
-          } catch (e) {
-            console.warn(`Failed to load ${path}:`, e)
-          }
-        }
-
-        parsed.sort((a, b) => a.title.localeCompare(b.title))
-        setModels(parsed)
-        setIndex(idx)
-        setLoading(false)
-      } catch (e) {
-        console.error("Schema loading error:", e)
-        setError(e)
-        setLoading(false)
-      }
-    }
-
-    loadSchemaIndex()
-  }, [])
-
-  // Function to load schema content on demand
-  const loadSchemaContent = async (model: SchemaModel): Promise<any> => {
-    if (model.schema) {
-      return model.schema // Already loaded
-    }
-
-    if (index[model.path]) {
-      return index[model.path] // Already in index
-    }
-
-    try {
-      console.log(`Loading schema content for: ${model.title}`)
-      const response = await fetch(model.path)
-      if (response.ok) {
-        const schema = await response.json()
-
-        const isStandard = schema && typeof schema["$schema"] === "string" && /json-schema\.org/.test(schema["$schema"])
-        if (isStandard) {
-          // Update the index and model
-          setIndex((prev) => ({ ...prev, [model.path]: schema }))
-          setModels((prev) => prev.map((m) => (m.id === model.id ? { ...m, schema } : m)))
-          return schema
-        }
-      }
-    } catch (e) {
-      console.error(`Failed to load schema content for ${model.title}:`, e)
-    }
-
-    return null
-  }
-
-  return { models, loading, error, index, loadSchemaContent }
-}
+import type { SchemaModel } from "./types"
 
 export default function App() {
-  const { models, loading, error, index, loadSchemaContent } = useSchemas()
-  const [selectedModelId, setSelectedModelId] = useState<string>("")
-  const [loadingSchema, setLoadingSchema] = useState(false)
-  const [erdView, setErdView] = useState(true) // Default to ERD view
+  const [models, setModels] = useState<SchemaModel[]>([])
+  const [index, setIndex] = useState<Record<string, any>>({})
+  const [selectedModel, setSelectedModel] = useState<SchemaModel | null>(null)
+  const [hasAutoSelected, setHasAutoSelected] = useState(false)
+  const [searchTerm, setSearchTerm] = useState("")
+  const [showDropdown, setShowDropdown] = useState(false)
 
-  // Auto-select first schema when models are loaded
+  // Auto-select first model when models load (only once)
   useEffect(() => {
-    if (models.length > 0 && !selectedModelId) {
-      setSelectedModelId(models[0].id)
+    if (models.length > 0 && !selectedModel && !hasAutoSelected) {
+      setSelectedModel(models[0])
+      setSearchTerm(models[0].title)
+      setHasAutoSelected(true)
     }
-  }, [models, selectedModelId])
+  }, [models, selectedModel, hasAutoSelected])
 
-  const selectedModel: SchemaModel | undefined = useMemo(() => {
-    if (!models.length) return undefined
-    const initial = selectedModelId || models[0]?.id
-    return models.find((m) => m.id === initial)
-  }, [models, selectedModelId])
-
-  // Load schema content when a model is selected
+  // Close dropdown when clicking outside
   useEffect(() => {
-    if (selectedModel && !selectedModel.schema && !index[selectedModel.path]) {
-      setLoadingSchema(true)
-      loadSchemaContent(selectedModel).finally(() => {
-        setLoadingSchema(false)
-      })
-    }
-  }, [selectedModel, index, loadSchemaContent])
-
-  const { nodes, edges } = useMemo(() => {
-    console.log("Building graph for selectedModel:", selectedModel?.title)
-    if (!selectedModel) {
-      console.log("No selected model")
-      return { nodes: [], edges: [] }
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (!target.closest(".dropdown-container")) {
+        setShowDropdown(false)
+      }
     }
 
-    const schema = selectedModel.schema || index[selectedModel.path]
-    if (!schema) {
-      console.log("No schema found for:", selectedModel.title)
-      return { nodes: [], edges: [] }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
+
+  // Load schemas
+  useEffect(() => {
+    loadSchemas()
+  }, [])
+
+  async function loadSchemas() {
+    try {
+      const response = await fetch("/schema-index.json")
+      const schemaIndex = await response.json()
+
+      const parsed: SchemaModel[] = []
+      const idx: Record<string, any> = {}
+
+      // schemaIndex is an array of objects with metadata, we need the publicPath
+      for (const schemaInfo of schemaIndex) {
+        // Load ALL schemas
+        try {
+          const path = schemaInfo.publicPath
+          const schemaResponse = await fetch(path)
+          const schema = await schemaResponse.json()
+
+          if (schema && typeof schema === "object" && schema["$schema"]) {
+            const isStandard = schema["$schema"].includes("json-schema.org")
+            if (isStandard) {
+              const id = schema["$id"] || path
+              const title = schema["title"] || schemaInfo.title || id
+              const model: SchemaModel = {
+                id,
+                title,
+                schema,
+                path,
+                version: schemaInfo.version,
+              }
+              parsed.push(model)
+              idx[path] = schema
+            }
+          }
+        } catch (e) {
+          console.warn(`Failed to load ${schemaInfo.publicPath}:`, e)
+        }
+      }
+
+      setModels(parsed)
+      setIndex(idx)
+    } catch (error) {
+      console.error("Failed to load schema index:", error)
     }
-
-    console.log("Building graph with schema for:", selectedModel.title)
-    const modelWithSchema = { ...selectedModel, schema }
-    const result = buildGraph(modelWithSchema, { index, erdView })
-    console.log("Graph built:", { nodeCount: result.nodes.length, edgeCount: result.edges.length })
-    return result
-  }, [selectedModel, index, erdView])
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading OSDU schemas...</p>
-        </div>
-      </div>
-    )
   }
 
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center text-red-600">
-          <p className="text-xl font-semibold mb-2">Error loading schemas</p>
-          <p>{String(error)}</p>
-        </div>
-      </div>
+  const { nodes, edges } = useMemo(() => {
+    if (!selectedModel || !selectedModel.schema) {
+      return { nodes: [], edges: [] }
+    }
+    return buildGraph(selectedModel, { index })
+  }, [selectedModel, index])
+
+  // Filter models based on search term
+  const filteredModels = useMemo(() => {
+    if (!searchTerm) return models
+    return models.filter(
+      (model) =>
+        model.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        model.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (model.version && model.version.includes(searchTerm))
     )
+  }, [models, searchTerm])
+
+  const handleModelSelect = (model: SchemaModel) => {
+    setSelectedModel(model)
+    setSearchTerm(model.title)
+    setShowDropdown(false)
   }
 
   return (
     <div className="h-screen bg-gray-50">
-      {/* Debug Info */}
-      <div className="absolute top-4 left-4 z-50 bg-white p-4 rounded shadow text-xs">
-        <div>Models loaded: {models.length}</div>
-        <div>Selected: {selectedModel?.title || 'None'}</div>
-        <div>Schema exists: {selectedModel && (selectedModel.schema || index[selectedModel.path]) ? 'Yes' : 'No'}</div>
-        <div>Nodes: {nodes.length}</div>
-        <div>Edges: {edges.length}</div>
-        <div>Loading: {loadingSchema ? 'Yes' : 'No'}</div>
-      </div>
+      {/* Header with Search and Dropdown */}
+      <div className="bg-white border-b border-gray-200 px-4 py-3" style={{ position: "relative", zIndex: 1000 }}>
+        <div className="flex items-center space-x-4">
+          <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Visualizer</h1>
 
+          {/* Schema Selector with Search */}
+          <div className="flex-1 max-w-md relative dropdown-container">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value)
+                setShowDropdown(true)
+              }}
+              onFocus={() => setShowDropdown(true)}
+              placeholder="Search schemas..."
+              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
+
+            {/* Dropdown Results */}
+            {showDropdown && (
+              <div
+                className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-50"
+                style={{
+                  maxHeight: "min(400px, calc(100vh - 200px))",
+                  overflowY: "auto",
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "#cbd5e0 #f7fafc",
+                }}
+              >
+                {filteredModels.length > 0 ? (
+                  <>
+                    {/* Results count header */}
+                    <div className="px-3 py-2 bg-gray-50 border-b border-gray-200 text-xs text-gray-600 font-medium sticky top-0">
+                      {filteredModels.length} schema{filteredModels.length !== 1 ? "s" : ""} found
+                    </div>
+
+                    {/* Scrollable results */}
+                    <div className="max-h-80 overflow-y-auto">
+                      {filteredModels.map((model, index) => (
+                        <div
+                          key={model.path}
+                          onClick={() => handleModelSelect(model)}
+                          className="px-3 py-2 hover:bg-blue-50 cursor-pointer border-b border-gray-100 last:border-b-0 transition-colors duration-150"
+                          style={{
+                            borderLeft:
+                              selectedModel?.path === model.path ? "3px solid #3b82f6" : "3px solid transparent",
+                          }}
+                        >
+                          <div className="font-medium text-sm text-gray-900">{model.title}</div>
+                          {model.version && <div className="text-xs text-gray-500">Version {model.version}</div>}
+                          <div className="text-xs text-gray-400 truncate">{model.id}</div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Scroll indicator for many results */}
+                    {filteredModels.length > 10 && (
+                      <div className="px-3 py-1 bg-gray-50 border-t border-gray-200 text-xs text-gray-500 text-center sticky bottom-0">
+                        Scroll to see more results
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <div className="px-3 py-4 text-gray-500 text-sm text-center">
+                    <div className="mb-1">No schemas found</div>
+                    <div className="text-xs">Try a different search term</div>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Clear button */}
+          {selectedModel && (
+            <button
+              onClick={() => {
+                setSelectedModel(null)
+                setSearchTerm("")
+                setShowDropdown(false)
+              }}
+              className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+            >
+              Clear
+            </button>
+          )}
+
+          {/* Status Info */}
+          <div className="text-sm text-gray-600">
+            {models.length} schemas loaded | Selected: {selectedModel?.title || "None"}
+          </div>
+        </div>
+      </div>{" "}
       {/* Main Content */}
-      <div className="h-full relative">
-        {selectedModel && (selectedModel.schema || index[selectedModel.path]) ? (
+      <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
+        {selectedModel && selectedModel.schema ? (
           <SchemaGraph nodes={nodes} edges={edges} />
         ) : (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
-              <p className="text-gray-600">Loading schema content...</p>
-              {selectedModel && <p className="text-sm text-gray-500 mt-2">Loading: {selectedModel.title}</p>}
+              {models.length === 0 ? (
+                <>
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                  <p className="text-gray-600">Loading schemas...</p>
+                </>
+              ) : (
+                <p className="text-gray-600">Please select a schema from the dropdown above</p>
+              )}
             </div>
           </div>
         )}

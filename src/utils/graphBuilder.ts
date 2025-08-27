@@ -341,8 +341,8 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         id: edgeId,
         source: mainId,
         target: targetEntityId,
-        sourceHandle: null,
-        targetHandle: null,
+        sourceHandle: undefined,
+        targetHandle: undefined,
         data: {
           type: erdRel.isConnectable ? "connectable" : "erd-relationship",
           sourceProperty: erdRel.sourceProperty,
@@ -361,8 +361,8 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
       id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
       source: mainId,
       target: normalizeId(`${mainId}::ref::${r}`),
-      sourceHandle: null,
-      targetHandle: null,
+      sourceHandle: undefined,
+      targetHandle: undefined,
       data: { type: "inheritance" },
       label: "extends",
     })
@@ -443,8 +443,8 @@ function buildOriginalGraph(
       id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
       source: mainId,
       target: normalizeId(`${mainId}::ref::${r}`),
-      sourceHandle: null,
-      targetHandle: null,
+      sourceHandle: undefined,
+      targetHandle: undefined,
       data: { type: "ref" },
     })
   }
@@ -463,8 +463,8 @@ function buildOriginalGraph(
       id: `${mainId}-rel-${idx}`,
       source: mainId,
       target: normalizeId(`${mainId}::rel::${k}`),
-      sourceHandle: null,
-      targetHandle: null,
+      sourceHandle: undefined,
+      targetHandle: undefined,
       data: { type: "relationship", label: k },
     })
   })
