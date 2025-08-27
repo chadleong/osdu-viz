@@ -71,46 +71,70 @@ function ErdEntityNode({ data }: any) {
   const hasMoreProps = properties?.length > 8
 
   const nodeStyles: Record<string, string> = {
-    entity: "border-blue-500 bg-blue-50",
+    entity: "border-purple-500 bg-purple-50",
     "related-entity": "border-green-500 bg-green-50",
-    abstract: "border-purple-500 bg-purple-50",
+    abstract: "border-blue-500 bg-blue-50",
   }
 
   // Override related-entity style by category when available
   const categoryBorderBg: Record<string, string> = {
-    "master-data": "border-amber-500 bg-amber-50",
+    "master-data": "border-red-300 bg-red-50",
     "reference-data": "border-emerald-500 bg-emerald-50",
-    "work-product-component": "border-indigo-500 bg-indigo-50",
+    "work-product-component": "border-yellow-300 bg-yellow-50",
   }
 
   let nodeStyle = nodeStyles[nodeType as string] || "border-gray-500 bg-gray-50"
-  if (nodeType === "related-entity" && category && categoryBorderBg[category]) {
-    nodeStyle = categoryBorderBg[category]
+  if (nodeType === "related-entity") {
+    if (category && categoryBorderBg[category]) {
+      nodeStyle = categoryBorderBg[category]
+    } else {
+      // fallback for related-entity with no category
+      nodeStyle = "border-green-300 bg-green-50"
+    }
+  }
+  // Provide explicit inline colors so dynamic classes don't fail when CSS is purged
+  const colorMap: Record<string, { bg: string; border: string; text?: string }> = {
+    entity: { bg: "#f5f3ff", border: "#7c3aed", text: "#451a7a" }, // purple-50 / purple-500
+    abstract: { bg: "#eff6ff", border: "#3b82f6", text: "#1e40af" }, // blue-50 / blue-500
+    "master-data": { bg: "#fff1f2", border: "#fca5a5", text: "#7f1d1d" }, // red-50 / red-300
+    "reference-data": { bg: "#ecfdf5", border: "#34d399", text: "#065f46" }, // emerald-50 / emerald-500
+    "work-product-component": { bg: "#fffbeb", border: "#fcd34d", text: "#5c3d00" }, // yellow-50 / yellow-300
+    defaultRelated: { bg: "#ecfdf5", border: "#86efac", text: "#065f46" },
   }
 
+  let inlineBg = "#ffffff"
+  let inlineBorder = "#e5e7eb"
+  let inlineText = undefined as string | undefined
+
+  if (nodeType === "entity") {
+    inlineBg = colorMap.entity.bg
+    inlineBorder = colorMap.entity.border
+    inlineText = colorMap.entity.text
+  } else if (nodeType === "abstract") {
+    inlineBg = colorMap.abstract.bg
+    inlineBorder = colorMap.abstract.border
+    inlineText = colorMap.abstract.text
+  } else if (nodeType === "related-entity") {
+    if (category && (colorMap as any)[category]) {
+      inlineBg = (colorMap as any)[category].bg
+      inlineBorder = (colorMap as any)[category].border
+      inlineText = (colorMap as any)[category].text
+    } else {
+      inlineBg = colorMap.defaultRelated.bg
+      inlineBorder = colorMap.defaultRelated.border
+      inlineText = colorMap.defaultRelated.text
+    }
+  }
   return (
     <div
       className={`erd-entity-node border-2 ${nodeStyle} rounded-lg shadow-lg min-w-200 max-w-280 cursor-move hover:shadow-xl transition-shadow`}
+      style={{ backgroundColor: inlineBg, borderColor: inlineBorder }}
     >
       {/* React Flow handles ensure edges have valid anchors */}
       <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
       <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
       {/* Header */}
-      <div
-        className={`px-3 py-2 border-b font-bold text-sm ${
-          nodeType === "entity"
-            ? "bg-blue-100 text-blue-900"
-            : nodeType === "related-entity"
-            ? category === "master-data"
-              ? "bg-amber-100 text-amber-900"
-              : category === "reference-data"
-              ? "bg-emerald-100 text-emerald-900"
-              : category === "work-product-component"
-              ? "bg-indigo-100 text-indigo-900"
-              : "bg-green-100 text-green-900"
-            : "bg-purple-100 text-purple-900"
-        }`}
-      >
+  <div className="px-3 py-2 border-b font-bold text-sm" style={inlineText ? { color: inlineText } : undefined}>
         <div className="truncate">{label}</div>
         {subtitle && <div className="text-xs opacity-75 truncate">{subtitle}</div>}
       </div>
@@ -440,11 +464,11 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
               <div className="font-semibold mb-2">Entity Types</div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-blue-100 border border-blue-500 rounded mr-2"></div>
+                <div className="w-4 h-3 bg-purple-100 border border-purple-500 rounded mr-2"></div>
                 <span>Main Entity</span>
               </div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-amber-100 border border-amber-500 rounded mr-2"></div>
+                <div className="w-4 h-3 bg-red-100 border border-red-300 rounded mr-2"></div>
                 <span>Related: Master Data</span>
               </div>
               <div className="flex items-center mb-1">
@@ -452,7 +476,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
                 <span>Related: Reference Data</span>
               </div>
               <div className="flex items-center mb-1">
-                <div className="w-4 h-3 bg-indigo-100 border border-indigo-500 rounded mr-2"></div>
+                <div className="w-4 h-3 bg-yellow-100 border border-yellow-300 rounded mr-2"></div>
                 <span>Related: Work Product Component</span>
               </div>
               <div className="flex items-center mb-3">
@@ -460,7 +484,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
                 <span>Related: Other/Unknown</span>
               </div>
               <div className="flex items-center mb-3">
-                <div className="w-4 h-3 bg-purple-100 border border-purple-500 rounded mr-2"></div>
+                <div className="w-4 h-3 bg-blue-100 border border-blue-500 rounded mr-2"></div>
                 <span>Abstract Schema</span>
               </div>
 
@@ -475,7 +499,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
               </div>
               <div className="flex items-center">
                 <div
-                  className="w-6 h-1 bg-purple-600 mr-2"
+                  className="w-6 h-1 bg-blue-600 mr-2"
                   style={{ borderRadius: "1px", borderBottom: "1px dashed" }}
                 ></div>
                 <span>Inheritance</span>
