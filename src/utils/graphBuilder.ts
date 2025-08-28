@@ -357,8 +357,10 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
     const label = r.split("/").slice(-1)[0]?.replace(".json", "") || r
     const subtitle = "Abstract Schema"
 
+    // Use stable ref ids (don't include mainId) so refs remain consistent across schema loads
+    const refId = normalizeId(`ref::${r}`)
     return {
-      id: normalizeId(`${mainId}::ref::${r}`),
+      id: refId,
       position: { x: -400, y: i * 150 + 100 },
       data: {
         label,
@@ -412,10 +414,11 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
 
   // $ref edges (inheritance/composition)
   for (const r of new Set(refs)) {
+    const refId = normalizeId(`ref::${r}`)
     edges.push({
-      id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
+      id: `${mainId}->${refId}`,
       source: mainId,
-      target: normalizeId(`${mainId}::ref::${r}`),
+      target: refId,
       data: { type: "inheritance" },
       label: "extends",
     })
@@ -539,8 +542,9 @@ function buildOriginalGraph(
     }
     const label = r.split("/").slice(-1)[0] || r
     const subtitle = r
+    const refId = normalizeId(`ref::${r}`)
     return {
-      id: normalizeId(`${mainId}::ref::${r}`),
+      id: refId,
       position: { x: 0, y: i * 100 + 100 },
       data: { label, subtitle, properties: refProps, relations: [], filePath, schemaId, schema },
       type: "default",
@@ -552,10 +556,11 @@ function buildOriginalGraph(
   const edges: Edge[] = []
   // $ref edges
   for (const r of new Set(refs)) {
+    const refId = normalizeId(`ref::${r}`)
     edges.push({
-      id: `${mainId}->${normalizeId(`${mainId}::ref::${r}`)}`,
+      id: `${mainId}->${refId}`,
       source: mainId,
-      target: normalizeId(`${mainId}::ref::${r}`),
+      target: refId,
       data: { type: "ref" },
     })
   }

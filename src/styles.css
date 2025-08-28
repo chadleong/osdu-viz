@@ -18,6 +18,8 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Prevent the browser from showing a page-level scrollbar; internal panels should scroll instead */
+  overflow: hidden;
 }
 
 * {
@@ -510,12 +512,15 @@ html,
 body,
 #root {
   height: 100%;
+  overflow: hidden;
 }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+  /* Prevent flicker/overscroll on touch devices */
+  overscroll-behavior: none;
 }
 
 .app {
@@ -588,6 +593,10 @@ body {
 .canvas {
   flex: 1;
   position: relative;
+}
+.canvas {
+  /* ensure the canvas itself doesn't create page scroll; internal elements can scroll */
+  overflow: hidden;
 }
 .graph-container {
   position: absolute;

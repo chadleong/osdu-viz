@@ -27,31 +27,87 @@ type Props = {
 // Edge validation utility
 function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
   const nodeIds = new Set(nodes.map((n) => n.id))
+  const mainNode = nodes.find((n) => (n as any).data?.nodeType === "entity")
+  const mainNodeId = mainNode?.id
+  // Build a quick alias map for ref-like ids to actual node ids
+  const aliasMap = new Map<string, string>()
+  for (const n of nodes) {
+    const id = n.id
+    // If this node is an abstract with schema/file info, create aliases that may appear in edges
+    const d: any = (n as any).data || {}
+    if (d.nodeType === "abstract") {
+      const last =
+        String(d.schemaId || d.filePath || d.label || id)
+          .split("/")
+          .pop() || ""
+      const normLast = last.replace(/[^a-zA-Z0-9_.-]/g, "_")
+      aliasMap.set(`ref::${normLast}`, id)
+      aliasMap.set(normLast, id)
+    }
+  }
 
-  return edges
-    .filter((edge) => {
-      // Check if source and target nodes exist
-      if (!nodeIds.has(edge.source) || !nodeIds.has(edge.target)) {
-        console.warn(`Removing invalid edge: ${edge.source} -> ${edge.target}`)
-        return false
+  // helper to try to resolve an id that doesn't directly exist by fuzzy-matching
+  const findMatchingNodeId = (rawId: string | undefined) => {
+    if (!rawId) return undefined
+    if (nodeIds.has(rawId)) return rawId
+    const lastSegment = String(rawId).split("::").pop() || rawId
+    const compact = String(lastSegment)
+      .replace(/[^a-zA-Z0-9]/g, "")
+      .toLowerCase()
+    for (const n of nodes) {
+      const compNode = String(n.id)
+        .replace(/[^a-zA-Z0-9]/g, "")
+        .toLowerCase()
+      if (!compact) continue
+      if (compNode.endsWith(compact) || compNode.includes(compact)) {
+        console.log(`Resolved missing id '${rawId}' -> '${n.id}' via fuzzy match`)
+        return n.id
+      }
+    }
+    return undefined
+  }
+
+  const remapped = edges
+    .map((edge) => {
+      // If source/target are missing, try to resolve via fuzzy match
+      let source = edge.source
+      let target = edge.target
+
+      if (!nodeIds.has(source)) {
+        const resolved = findMatchingNodeId(source)
+        if (resolved) source = resolved
+        else if (mainNodeId) source = mainNodeId
+      }
+      if (!nodeIds.has(target)) {
+        const resolved = findMatchingNodeId(target)
+        if (resolved) target = resolved
+        else if (aliasMap.has(target)) target = aliasMap.get(target) as string
       }
 
-      // Ensure edge has required properties
+      if (!source || !target || !nodeIds.has(source) || !nodeIds.has(target) || source === target) {
+        console.warn(`Removing invalid edge: ${edge.source} -> ${edge.target}`)
+        return null
+      }
+
       if (!edge.id) {
         console.warn("Removing edge without id")
-        return false
+        return null
       }
 
-      return true
+      return { ...edge, source, target } as Edge | null
     })
-    .map((edge) => {
-      // Preserve handle keys (sourceHandle/targetHandle) if present so anchors remain stable
-      const { sourceHandle, targetHandle, ...rest } = edge as any
-      const preserved: any = { ...rest }
-      if (typeof sourceHandle !== "undefined") preserved.sourceHandle = sourceHandle
-      if (typeof targetHandle !== "undefined") preserved.targetHandle = targetHandle
-      return preserved as Edge
-    })
+    .filter(Boolean) as Edge[]
+
+  const preserved = remapped.map((edge) => {
+    // Preserve handle keys (sourceHandle/targetHandle) if present so anchors remain stable
+    const { sourceHandle, targetHandle, ...rest } = edge as any
+    const preserved: any = { ...rest }
+    if (typeof sourceHandle !== "undefined") preserved.sourceHandle = sourceHandle
+    if (typeof targetHandle !== "undefined") preserved.targetHandle = targetHandle
+    return preserved as Edge
+  })
+
+  return preserved
 }
 
 function DefaultNode({ data }: any) {
@@ -214,19 +270,9 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   // Custom nodes change handler to track dragging and validate edges
   const handleNodesChange = useCallback(
     (changes: NodeChange[]) => {
-      // Check for position changes (dragging)
-      const hasPositionChange = changes.some((change) => change.type === "position")
-
-      if (hasPositionChange) {
-        // After any position change, re-validate edges to prevent React Flow errors
-        setTimeout(() => {
-          setRfEdges((currentEdges) => validateEdges(currentEdges, rfNodes))
-        }, 50)
-      }
-
       onNodesChange(changes)
     },
-    [onNodesChange, rfNodes, setRfEdges]
+    [onNodesChange]
   )
 
   // Custom edges change handler to prevent problematic edge updates
@@ -430,12 +476,24 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   // Double-click to navigate: entity or abstract schema becomes the main entity
   const onNodeDoubleClick = useCallback(
     (_e: any, node: Node) => {
-      const idCandidate = (node?.data as any)?.schemaId || (node?.data as any)?.label || node?.id
+      const d: any = node?.data || {}
+      // Prefer filePath (index key) like the dropdown does; fallback to schemaId, then label, then id
+      let idCandidate = d.filePath || d.schemaId || d.label || node?.id
+      // If still not an index key and looks like $id, try to find a node that has filePath for the same schema
+      if (!d.filePath && d.schemaId) {
+        const compact = String(d.schemaId).split("/").slice(-1)[0]?.toLowerCase()
+        const match = (laidOut.nodes || []).find((n: any) =>
+          String(n?.data?.filePath || "")
+            .toLowerCase()
+            .endsWith(compact || "")
+        )
+        if (match?.data?.filePath) idCandidate = match.data.filePath
+      }
       if (onSchemaSelect && idCandidate) {
         onSchemaSelect(String(idCandidate))
       }
     },
-    [onSchemaSelect]
+    [onSchemaSelect, laidOut]
   )
 
   // Close tooltip when the incoming main schema/node changes (e.g., user switched schema)

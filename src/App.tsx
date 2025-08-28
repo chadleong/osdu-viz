@@ -104,13 +104,22 @@ export default function App() {
   }
 
   const handleSchemaSelect = (schemaId: string) => {
-    // Find schema by ID in the models array
-    const targetSchema = models.find(
-      (model) =>
-        model.id === schemaId ||
-        model.id.includes(schemaId) ||
-        model.title.toLowerCase().includes(schemaId.toLowerCase())
-    )
+    // Accept id, partial id, title, or file path
+    const key = schemaId || ""
+    const keyLower = key.toLowerCase()
+    const lastSeg = key.split("/").pop() || key
+    const targetSchema = models.find((model) => {
+      const idLower = model.id.toLowerCase()
+      const titleLower = model.title.toLowerCase()
+      const pathLower = (model.path || "").toLowerCase()
+      return (
+        model.id === key ||
+        idLower.includes(keyLower) ||
+        titleLower.includes(keyLower) ||
+        pathLower === keyLower ||
+        pathLower.endsWith((lastSeg || "").toLowerCase())
+      )
+    })
 
     if (targetSchema) {
       // Only push to history if navigating to a different schema
