@@ -107,8 +107,8 @@ function extractErdRelationships(
       const rs = obj["x-osdu-relationship"] as Array<{ GroupType: string; EntityType: string }>
       for (const r of rs) {
         const propertyName = path[path.length - 1]
-        const targetEntity = r.EntityType
-        const groupType = r.GroupType
+        const targetEntity = (r.EntityType as string) || ""
+        const groupType = (r.GroupType as string) || undefined
 
         // Determine relationship type and if it's a connectable
         let relationshipType = "references"
@@ -161,12 +161,15 @@ function extractErdRelationships(
         if (obj.items["x-osdu-relationship"]) {
           const rs = obj.items["x-osdu-relationship"] as Array<{ GroupType: string; EntityType: string }>
           for (const r of rs) {
+            const targetEntity = (r.EntityType as string) || ""
+            const groupType = (r.GroupType as string) || undefined
             erdRels.push({
               sourceProperty: propertyName,
-              targetEntity: r.EntityType,
+              targetEntity,
               relationshipType: "contains",
               cardinality: "one-to-many",
               isConnectable: true,
+              groupType,
             })
           }
         }
@@ -254,7 +257,9 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   }
 
   for (const erdRel of erdRelationships) {
-    const entityId = normalizeId(`entity::${erdRel.targetEntity}`)
+    const targetEntityName = erdRel.targetEntity || ""
+    if (!targetEntityName) continue // skip empty/unnamed relationships (GroupType-only entries)
+    const entityId = normalizeId(`entity::${targetEntityName}`)
     if (!entityNodes.has(entityId)) {
       // Try to find the actual schema for this entity
       let targetSchema: any = null
@@ -270,7 +275,7 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         // If an erdRel.groupType exists, prefer keys that contain that segment
         let candidates = indexKeys
         if (erdRel.groupType) {
-          const groupSegment = erdRel.groupType.toLowerCase()
+          const groupSegment = (erdRel.groupType || "").toLowerCase()
           const filtered = indexKeys.filter(
             (k) => k.toLowerCase().includes(`/${groupSegment}/`) || k.toLowerCase().includes(groupSegment)
           )
@@ -282,7 +287,7 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         // Look for schemas that match this entity type among candidates
         const matchKey = candidates.find((key) => {
           const keyLower = key.toLowerCase()
-          const targetLower = erdRel.targetEntity.toLowerCase()
+          const targetLower = (erdRel.targetEntity || "").toLowerCase()
           const titleMatch = ((index[key] && index[key].title) || "").toLowerCase() === targetLower
           const idMatch = ((index[key] && index[key].$id) || "").toLowerCase().includes(`--${targetLower}`)
           const fileMatch =

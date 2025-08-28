@@ -45,9 +45,12 @@ function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
       return true
     })
     .map((edge) => {
-      // Strip handle keys entirely if present
-      const { sourceHandle, targetHandle, ...clean } = edge as any
-      return clean as Edge
+      // Preserve handle keys (sourceHandle/targetHandle) if present so anchors remain stable
+      const { sourceHandle, targetHandle, ...rest } = edge as any
+      const preserved: any = { ...rest }
+      if (typeof sourceHandle !== "undefined") preserved.sourceHandle = sourceHandle
+      if (typeof targetHandle !== "undefined") preserved.targetHandle = targetHandle
+      return preserved as Edge
     })
 }
 
@@ -55,8 +58,12 @@ function DefaultNode({ data }: any) {
   return (
     <div className="node">
       {/* React Flow handles ensure edges have valid anchors */}
-      <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 8, height: 8 }} />
-      <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 8, height: 8 }} />
+      {/* left: keep existing target handle and add a source handle so edges can originate on the left */}
+      <Handle type="target" id="left-target" position={Position.Left} style={{ opacity: 0, width: 8, height: 8 }} />
+      <Handle type="source" id="left" position={Position.Left} style={{ opacity: 0, width: 8, height: 8 }} />
+      {/* right: keep existing source handle and add a target handle for incoming edges on the right */}
+      <Handle type="source" id="right-source" position={Position.Right} style={{ opacity: 0, width: 8, height: 8 }} />
+      <Handle type="target" id="right" position={Position.Right} style={{ opacity: 0, width: 8, height: 8 }} />
       <div className="node-title">{data.label}</div>
       {data.subtitle && <div className="node-sub">{data.subtitle}</div>}
     </div>
@@ -67,8 +74,14 @@ function ErdEntityNode({ data }: any) {
   const { label, subtitle, properties, erdRelationships, nodeType, category } = data
 
   // Limit properties for display (show key properties and relationships)
-  const keyProperties = properties?.slice(0, 8) || []
-  const hasMoreProps = properties?.length > 8
+  // For related-entity nodes prefer properties defined under the `data` block (data.*)
+  const allProps = properties || []
+  let dataProps = allProps.filter((p: any) => typeof p.name === "string" && p.name.startsWith("data."))
+  // If no data.* props found, fall back to top-level props
+  if (!dataProps.length) dataProps = allProps
+
+  const keyProperties = dataProps.slice(0, 8) || []
+  const hasMoreProps = dataProps.length > 8
 
   const nodeStyles: Record<string, string> = {
     entity: "border-purple-500 bg-purple-50",
@@ -131,8 +144,10 @@ function ErdEntityNode({ data }: any) {
       style={{ backgroundColor: inlineBg, borderColor: inlineBorder }}
     >
       {/* React Flow handles ensure edges have valid anchors */}
-      <Handle type="target" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
-      <Handle type="source" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
+      <Handle type="target" id="left-target" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
+      <Handle type="source" id="left" position={Position.Left} style={{ opacity: 0, width: 10, height: 10 }} />
+      <Handle type="source" id="right-source" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
+      <Handle type="target" id="right" position={Position.Right} style={{ opacity: 0, width: 10, height: 10 }} />
       {/* Header */}
       <div className="px-3 py-2 border-b font-bold text-sm" style={inlineText ? { color: inlineText } : undefined}>
         <div className="truncate">{label}</div>
@@ -152,7 +167,7 @@ function ErdEntityNode({ data }: any) {
               <span className="text-gray-500 text-xs ml-2 truncate">{prop.type || "any"}</span>
             </div>
           ))}
-          {hasMoreProps && <div className="text-xs text-gray-500 mt-1">... +{properties.length - 8} more</div>}
+          {hasMoreProps && <div className="text-xs text-gray-500 mt-1">... +{dataProps.length - 8} more</div>}
         </div>
       )}
 
@@ -290,8 +305,26 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             }
             markerColor = "#0891b2"
         }
+        // if this edge links main entity -> abstract, force left->right anchors
+        const sourceNode = (laidOut.nodes || []).find((n) => n.id === e.source)
+        const targetNode = (laidOut.nodes || []).find((n) => n.id === e.target)
+
+        const isMainToAbstract =
+          (sourceNode as any)?.data?.nodeType === "entity" && (targetNode as any)?.data?.nodeType === "abstract"
+
+        const isMainToRelated =
+          (sourceNode as any)?.data?.nodeType === "entity" && (targetNode as any)?.data?.nodeType === "related-entity"
+
+        // prefer related mapping first for clear right-side connection, else abstract left-side mapping
+        const handleProps = isMainToRelated
+          ? { sourceHandle: "right-source", targetHandle: "left-target" }
+          : isMainToAbstract
+          ? { sourceHandle: "left", targetHandle: "right" }
+          : {}
+
         return {
           ...e,
+          ...handleProps,
           label,
           labelStyle: {
             fill: "#374151",
@@ -404,6 +437,23 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
     },
     [onSchemaSelect]
   )
+
+  // Close tooltip when the incoming main schema/node changes (e.g., user switched schema)
+  const mainSchemaKey = useMemo(() => {
+    const mainNode = nodes.find((n) => (n as any).data?.nodeType === "entity") || nodes[0]
+    return `${mainNode?.id || ""}::${(mainNode as any)?.data?.schemaId || ""}`
+  }, [nodes])
+
+  useEffect(() => {
+    // Update tooltip to show the main entity node when the main schema changes
+    const mainNode =
+      (laidOut.nodes || []).find((n) => (n as any).data?.nodeType === "entity") || (laidOut.nodes || [])[0]
+    if (mainNode) {
+      setActiveNode(mainNode as Node)
+    } else {
+      setActiveNode(null)
+    }
+  }, [mainSchemaKey])
 
   return (
     <div

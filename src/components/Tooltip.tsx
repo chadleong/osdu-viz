@@ -16,6 +16,7 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
   const filePath = (node?.data?.filePath as string | undefined) || ""
   const schemaId = (node?.data?.schemaId as string | undefined) || ""
   const schema = node?.data?.schema as any
+  const nodeDescription = (node?.data?.description as string | undefined) || (schema?.description as string | undefined)
 
   return (
     <div className="tooltip">
@@ -23,6 +24,7 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
         <div>
           <div className="tooltip-title">{node?.data?.label}</div>
           {node?.data?.subtitle && <div className="tooltip-sub">{node?.data?.subtitle}</div>}
+          {nodeDescription && <div className="tooltip-desc">{nodeDescription}</div>}
         </div>
         <button className="btn" onClick={onClose}>
           Close
