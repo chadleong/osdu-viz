@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useMemo } from "react"
+import React, { useState, useEffect, useMemo, useRef } from "react"
+import { createPortal } from "react-dom"
 import SchemaGraph from "./components/SchemaGraph"
 import { buildGraph } from "./utils/graphBuilder"
 import type { SchemaModel } from "./types"
@@ -9,24 +10,75 @@ export default function App() {
   const [index, setIndex] = useState<Record<string, any>>({})
   const [selectedModel, setSelectedModel] = useState<SchemaModel | null>(null)
   const [history, setHistory] = useState<SchemaModel[]>([])
-  const [hasAutoSelected, setHasAutoSelected] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [showDropdown, setShowDropdown] = useState(false)
+  const inputRef = useRef<HTMLDivElement | null>(null)
+  const portalRef = useRef<HTMLDivElement | null>(null)
+  const [portalStyle, setPortalStyle] = useState<{ top: number; left: number; width: number } | null>(null)
 
-  // Do not auto-select any schema on app start
-
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside — attach a capture-phase pointerdown listener while dropdown is open
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement
-      if (!target.closest(".dropdown-container")) {
-        setShowDropdown(false)
+    if (!showDropdown) return
+
+    const handlePointerDown = (event: Event) => {
+      const target = event.target as Node
+      // If click is inside input container or inside the portal dropdown, ignore
+      if (
+        (inputRef.current && inputRef.current.contains(target)) ||
+        (portalRef.current && portalRef.current.contains(target))
+      ) {
+        return
       }
+      setShowDropdown(false)
     }
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+    document.addEventListener("pointerdown", handlePointerDown, true)
+    return () => document.removeEventListener("pointerdown", handlePointerDown, true)
+  }, [showDropdown])
+
+  // Recalculate portal position when opening, and on scroll/resize
+  useEffect(() => {
+    if (!showDropdown) return
+    function recalc() {
+      const el = inputRef.current
+      if (!el) return
+      const r = el.getBoundingClientRect()
+      setPortalStyle({ top: r.bottom + window.scrollY, left: r.left + window.scrollX, width: r.width })
+    }
+
+    recalc()
+    window.addEventListener("resize", recalc)
+    window.addEventListener("scroll", recalc, { passive: true })
+    return () => {
+      window.removeEventListener("resize", recalc)
+      window.removeEventListener("scroll", recalc)
+    }
+  }, [showDropdown])
+
+  // Small internal component to render the dropdown via portal
+  function DropdownPortal({ children }: { children: React.ReactNode }) {
+    if (!portalStyle) return null
+    return createPortal(
+      <div
+        ref={portalRef}
+        className="bg-white border border-gray-300 rounded-md shadow-lg"
+        style={{
+          position: "absolute",
+          top: `${portalStyle.top}px`,
+          left: `${portalStyle.left}px`,
+          width: portalStyle.width,
+          maxHeight: "min(400px, calc(100vh - 200px))",
+          overflowY: "auto",
+          zIndex: 20000,
+          scrollbarWidth: "thin",
+          scrollbarColor: "#cbd5e0 #f7fafc",
+        }}
+      >
+        {children}
+      </div>,
+      document.body
+    )
+  }
 
   // Load schemas
   useEffect(() => {
@@ -83,6 +135,47 @@ export default function App() {
     }
     return buildGraph(selectedModel, { index, erdView: true })
   }, [selectedModel, index])
+
+  // Map a schema model to a text color that matches the node rendering in SchemaGraph
+  const getColorForModel = (model: SchemaModel | null) => {
+    if (!model) return "#374151" // neutral gray
+    // try to find a node that corresponds to this model
+    const match = nodes.find((n: any) => {
+      const d = n?.data || {}
+      if (d?.filePath && d.filePath === model.path) return true
+      if (d?.schemaId && d.schemaId === model.id) return true
+      if (
+        String(n.id || "")
+          .toLowerCase()
+          .includes(
+            String(model.title || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9]/gi, "")
+          )
+      )
+        return true
+      return false
+    })
+
+    // colors align with SchemaGraph's ErdEntityNode colorMap.text values
+    const defaultColor = "#374151"
+    if (!match) return defaultColor
+
+    const d = match.data || {}
+    const nodeType = d.nodeType
+    const category = d.category
+
+    if (nodeType === "entity") return "#451a7a" // purple main
+    if (nodeType === "abstract") return "#1e40af" // blue
+    if (nodeType === "related-entity") {
+      if (category === "master-data") return "#7f1d1d"
+      if (category === "reference-data") return "#065f46"
+      if (category === "work-product-component") return "#5c3d00"
+      return "#374151"
+    }
+
+    return defaultColor
+  }
 
   // Filter models based on search term
   const filteredModels = useMemo(() => {
@@ -149,6 +242,19 @@ export default function App() {
     })
   }
 
+  function handleBreadcrumbJump(index: number) {
+    // index refers to the history index: 0..history.length-1
+    // The breadcrumb shows [...history, selected]; clicking an item in history jumps to it
+    setHistory((h) => {
+      if (index < 0 || index >= h.length) return h
+      const target = h[index]
+      setSelectedModel(target)
+      setSearchTerm(target.title)
+      // keep only items before the clicked index
+      return h.slice(0, index)
+    })
+  }
+
   return (
     <div className="h-screen bg-gray-50">
       {/* Header with Search and Dropdown */}
@@ -171,7 +277,7 @@ export default function App() {
 
           {/* Schema Selector with Search */}
           <div className="flex-1 max-w-md relative dropdown-container">
-            <div style={{ position: "relative" }}>
+            <div style={{ position: "relative" }} ref={inputRef}>
               <input
                 type="text"
                 value={searchTerm}
@@ -219,17 +325,9 @@ export default function App() {
               )}
             </div>
 
-            {/* Dropdown Results */}
-            {showDropdown && (
-              <div
-                className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-50"
-                style={{
-                  maxHeight: "min(400px, calc(100vh - 200px))",
-                  overflowY: "auto",
-                  scrollbarWidth: "thin",
-                  scrollbarColor: "#cbd5e0 #f7fafc",
-                }}
-              >
+            {/* Dropdown Results rendered via portal so it can overlay breadcrumb */}
+            {showDropdown && portalStyle && (
+              <DropdownPortal>
                 {filteredModels.length > 0 ? (
                   <>
                     {/* Results count header */}
@@ -269,7 +367,7 @@ export default function App() {
                     <div className="text-xs">Try a different search term</div>
                   </div>
                 )}
-              </div>
+              </DropdownPortal>
             )}
           </div>
 
@@ -314,14 +412,34 @@ export default function App() {
               }}
             >
               {history.length > 0 && (
-                <button
-                  onClick={handleBack}
-                  className="absolute top-3 left-3 px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
-                  title="Back"
-                  style={{ pointerEvents: "auto" }}
+                <nav
+                  aria-label="Breadcrumb"
+                  className="absolute top-3 left-3 px-3 py-2 text-sm max-w-[70vw] overflow-x-auto whitespace-nowrap"
+                  style={{ pointerEvents: "auto", background: "transparent" }}
                 >
-                  ← Back
-                </button>
+                  {/* Show history items then the current selected */}
+                  {history.map((m, i) => (
+                    <span key={m.path}>
+                      <button
+                        onClick={() => handleBreadcrumbJump(i)}
+                        className="hover:underline text-gray-700"
+                        title={m.id}
+                      >
+                        {m.title}
+                      </button>
+                      <span className="mx-2 text-gray-400 text-sm">›</span>
+                    </span>
+                  ))}
+                  {selectedModel && (
+                    <span
+                      className="font-medium ml-2 text-sm"
+                      title={selectedModel.id}
+                      style={{ color: getColorForModel(selectedModel) }}
+                    >
+                      {selectedModel.title}
+                    </span>
+                  )}
+                </nav>
               )}
             </div>
           </div>

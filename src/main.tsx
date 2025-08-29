@@ -4,8 +4,6 @@ import App from "./App"
 import "./styles.css"
 
 const rootElement = document.getElementById("root")
-console.log("Root element:", rootElement)
-
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
