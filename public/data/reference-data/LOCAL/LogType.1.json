@@ -1,0 +1,141 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--LogType:Raw",
+      "kind": "osdu:wks:reference-data--LogType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Raw",
+        "Description": "As acquired from Field.",
+        "Code": "Raw",
+        "Source": "Workbook ReferenceValues/Published/LogType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LogType:Edited",
+      "kind": "osdu:wks:reference-data--LogType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Edited",
+        "Description": "Logs, which have undergone depth shift, merge and other operations.",
+        "Code": "Edited",
+        "Source": "Workbook ReferenceValues/Published/LogType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LogType:Composite",
+      "kind": "osdu:wks:reference-data--LogType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Composite",
+        "Description": "A single log created by splicing together two logs of the same type run at different times in the well; or by splicing two different types of log run at the same time.",
+        "Code": "Composite",
+        "Source": "Workbook ReferenceValues/Published/LogType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LogType:Interpreted",
+      "kind": "osdu:wks:reference-data--LogType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Interpreted",
+        "Description": "An interpreted log.",
+        "Code": "Interpreted",
+        "(COMPANY: insert comment)": "Removed the synonymous \"Evaluated\".",
+        "Source": "Workbook ReferenceValues/Published/LogType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LogType:Corrected",
+      "kind": "osdu:wks:reference-data--LogType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected",
+        "Description": "A log, which has been environmentally corrected.",
+        "Code": "Corrected",
+        "Source": "Workbook ReferenceValues/Published/LogType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

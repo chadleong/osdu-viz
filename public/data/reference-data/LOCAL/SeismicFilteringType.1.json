@@ -1,0 +1,356 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:LowCut",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low Cut",
+        "Description": "Lower frequencies filtered out (aka High pass)",
+        "Code": "LowCut",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:HighCut",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Cut",
+        "Description": "Upper frequencies filtered out (aka Low pass)",
+        "Code": "HighCut",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:Decon",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spiking Deconvolution",
+        "Description": "Time-domain, least squares prediction of flat spectrum..",
+        "Code": "Decon",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:Demultiple",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Multiple Elimination",
+        "Description": "General class of multiple removal.",
+        "Code": "Demultiple",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:Notch",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Notch",
+        "Description": "Specific, narrow band of frequencies filtered out.",
+        "Code": "Notch",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:PredDecon",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Predictive Deconvolution",
+        "Description": "Time domain, least squares prediction and removal of time shifted signal.",
+        "Code": "PredDecon",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:Wiener",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wiener",
+        "Description": "General class least-squares filtering using wiener-levinson method.",
+        "Code": "Wiener",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:MaxEntropy",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Maximum Entropy",
+        "Description": "Signal prediction with maximum uncertainty using burg method.",
+        "Code": "MaxEntropy",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:MinEntropy",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Minimum Entropy",
+        "Description": "Signal prediction maximizing spikiness.",
+        "Code": "MinEntropy",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:FK",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "F-K",
+        "Description": "Signal removal in frequency-wavenumber space.",
+        "Code": "FK",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:TauP",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tau-P",
+        "Description": "Signal removal in ray parameter-intercept time space.",
+        "Code": "TauP",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:KL",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "K-L",
+        "Description": "Karhunen\u2013Lo\u00e8ve filter.",
+        "Code": "KL",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicFilteringType:Bandpass",
+      "kind": "osdu:wks:reference-data--SeismicFilteringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bandpass",
+        "Description": "Lower and upper frequencies filtered out.",
+        "Code": "Bandpass",
+        "Source": "Workbook ReferenceValues/Published/SeismicFilteringType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

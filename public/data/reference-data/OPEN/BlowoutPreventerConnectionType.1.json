@@ -1,0 +1,129 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlowoutPreventerConnectionType:FlangedConnection",
+      "kind": "osdu:wks:reference-data--BlowoutPreventerConnectionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flanged Connection",
+        "ID": "FlangedConnection",
+        "Description": "Connects components through a bolted connection, commonly used in high-pressure applications.",
+        "Code": "FlangedConnection",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "The OSDU Data Platform",
+        "AttributionRevision": "Evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlowoutPreventerConnectionType.1.xlsx; commit SHA ffaf3dc4.",
+        "CommitDate": "2024-09-27T17:20:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlowoutPreventerConnectionType:HubConnection",
+      "kind": "osdu:wks:reference-data--BlowoutPreventerConnectionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hub Connection",
+        "ID": "HubConnection",
+        "Description": "Connects components with a clamp to secure the connection. ",
+        "Code": "HubConnection",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "The OSDU Data Platform",
+        "AttributionRevision": "Evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlowoutPreventerConnectionType.1.xlsx; commit SHA ffaf3dc4.",
+        "CommitDate": "2024-09-27T17:20:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlowoutPreventerConnectionType:ThreadedConnection",
+      "kind": "osdu:wks:reference-data--BlowoutPreventerConnectionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Threaded Connection",
+        "ID": "ThreadedConnection",
+        "Description": "Connects components through threading, typically used for smaller components.",
+        "Code": "ThreadedConnection",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "The OSDU Data Platform",
+        "AttributionRevision": "Evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlowoutPreventerConnectionType.1.xlsx; commit SHA ffaf3dc4.",
+        "CommitDate": "2024-09-27T17:20:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlowoutPreventerConnectionType:HydraulicConnection",
+      "kind": "osdu:wks:reference-data--BlowoutPreventerConnectionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydraulic Connection",
+        "ID": "HydraulicConnection",
+        "Description": "Used in subsea systems to connect hydraulic lines. ",
+        "Code": "HydraulicConnection",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "The OSDU Data Platform",
+        "AttributionRevision": "Evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlowoutPreventerConnectionType.1.xlsx; commit SHA ffaf3dc4.",
+        "CommitDate": "2024-09-27T17:20:23+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Filtered",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filtered",
+        "Description": "Applies to PPFG Dataset that has been filtered",
+        "Code": "Filtered",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Smoothed",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Smoothed",
+        "Description": "Applies to PPFG Dataset that has been smoothed",
+        "Code": "Smoothed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Interpolated",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Interpolated",
+        "Description": "Applies to PPFG Dataset that has been interpolated",
+        "Code": "Interpolated",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Transformed",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Transformed",
+        "Description": "Applies to PPFG Dataset that has been transformed",
+        "Code": "Transformed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Calibrated",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calibrated",
+        "Description": "Applies to PPFG Dataset that has been calibrated",
+        "Code": "Calibrated",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Interpreted",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Interpreted",
+        "Description": "Applies to PPFG Dataset that has been interpreted",
+        "Code": "Interpreted",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Corrected",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected",
+        "Description": "Applies to PPFG Dataset that has been corrected",
+        "Code": "Corrected",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveProcessingType:Normalized",
+      "kind": "osdu:wks:reference-data--PPFGCurveProcessingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normalized",
+        "Description": "Applies to PPFG Dataset that has been normalized",
+        "Code": "Normalized",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveProcessingType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

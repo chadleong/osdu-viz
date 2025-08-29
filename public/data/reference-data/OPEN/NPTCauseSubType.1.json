@@ -1,0 +1,1925 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHCL",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Casing/Liner (Operator)",
+        "ID": "BHCL",
+        "InactiveIndicator": false,
+        "Description": "Borehole Casing/Liner. Operator responsible.",
+        "Code": "BHCL",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHDD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Directional Drilling (Operator)",
+        "ID": "BHDD",
+        "InactiveIndicator": false,
+        "Description": "Borehole Directional Drilling. Operator responsible.",
+        "Code": "BHDD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHLC",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Lost Circulation (Operator)",
+        "ID": "BHLC",
+        "InactiveIndicator": false,
+        "Description": "Borehole Lost Circulation. Operator responsible.",
+        "Code": "BHLC",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHLCO",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Lower Completion (Operator)",
+        "ID": "BHLCO",
+        "InactiveIndicator": false,
+        "Description": "Borehole Lower Completion. Operator responsible.",
+        "Code": "BHLCO",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHLG",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole E/Line CT (Operator)",
+        "ID": "BHLG",
+        "InactiveIndicator": false,
+        "Description": "Borehole Electric Line & Coiled Tubing. Operator responsible.",
+        "Code": "BHLG",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHMB",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Mechanical Borehole Issues (Operator)",
+        "ID": "BHMB",
+        "InactiveIndicator": false,
+        "Description": "Borehole Mechanical Borehole Issues. Operator responsible.",
+        "Code": "BHMB",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHSP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Stuck Pipe (Operator)",
+        "ID": "BHSP",
+        "InactiveIndicator": false,
+        "Description": "Borehole Stuck Pipe. Operator responsible.",
+        "Code": "BHSP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BHST",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole Sidetrack due to Fish (Operator)",
+        "ID": "BHST",
+        "InactiveIndicator": false,
+        "Description": "Borehole Sidetrack due to Fish. Operator responsible.",
+        "Code": "BHST",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:BOP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BOP & Pressure Control Equipment",
+        "ID": "BOP",
+        "InactiveIndicator": false,
+        "Description": "Blowout Preventer & Pressure Control Equipment",
+        "Code": "BOP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CLUP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Clean-up for Completion",
+        "ID": "CLUP",
+        "InactiveIndicator": false,
+        "Description": "Clean-up for Completion",
+        "Code": "CLUP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CMTEQP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement Equipment",
+        "ID": "CMTEQP",
+        "InactiveIndicator": false,
+        "Description": "Cement Equipment",
+        "Code": "CMTEQP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CMTFS",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement Flash Set",
+        "ID": "CMTFS",
+        "InactiveIndicator": false,
+        "Description": "Cement Flash Set",
+        "Code": "CMTFS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CMTNP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement No Plug",
+        "ID": "CMTNP",
+        "InactiveIndicator": false,
+        "Description": "Cement No Plug",
+        "Code": "CMTNP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CMTSQZ",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement Squeeze",
+        "ID": "CMTSQZ",
+        "InactiveIndicator": false,
+        "Description": "Cement Squeeze",
+        "Code": "CMTSQZ",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CMTTBP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement Tie Back Packer",
+        "ID": "CMTTBP",
+        "InactiveIndicator": false,
+        "Description": "Cement Tie Back Packer",
+        "Code": "CMTTBP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:COMP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Install Completion",
+        "ID": "COMP",
+        "InactiveIndicator": false,
+        "Description": "Install Completion",
+        "Code": "COMP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CSG",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Casing/Liner/Hanger",
+        "ID": "CSG",
+        "InactiveIndicator": false,
+        "Description": "Casing/Liner/Hanger",
+        "Code": "CSG",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:CV19",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COVID-19",
+        "ID": "CV19",
+        "InactiveIndicator": false,
+        "Description": "COVID-19",
+        "Code": "CV19",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:DB",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drill Bits",
+        "ID": "DB",
+        "InactiveIndicator": false,
+        "Description": "Drill Bits",
+        "Code": "DB",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:DS",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drillstring / DP, HWDP, DC, Jars",
+        "ID": "DS",
+        "InactiveIndicator": false,
+        "Description": "Drillstring / DP, HWDP, DC, Jars",
+        "Code": "DS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:DSS",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Directional (MWD Measurement While Drilling/Gyro)",
+        "ID": "DSS",
+        "InactiveIndicator": false,
+        "Description": "Directional (MWD Measurement While Drilling/Gyro)",
+        "Code": "DSS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:DST",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Directional (Motors/Tools)",
+        "ID": "DST",
+        "InactiveIndicator": false,
+        "Description": "Directional (Motors/Tools)",
+        "Code": "DST",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:EVWL",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coiled Tubing / Wireline (Evaluation)",
+        "ID": "EVWL",
+        "InactiveIndicator": false,
+        "Description": "Coiled Tubing / Wireline (Evaluation)",
+        "Code": "EVWL",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:LWD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Logging While Drilling Evaluation (LWD)",
+        "ID": "LWD",
+        "InactiveIndicator": false,
+        "Description": "Logging While Drilling Evaluation (LWD)",
+        "Code": "LWD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:MPD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MPD Equipment/Operations",
+        "ID": "MPD",
+        "InactiveIndicator": false,
+        "Description": "Managed Pressure Drilling Equipment/Operations",
+        "Code": "MPD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:MUD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Related Trouble (Misc)",
+        "ID": "MUD",
+        "InactiveIndicator": false,
+        "Description": "Mud Related Trouble (Misc)",
+        "Code": "MUD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:OTHR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "No Applicable Code",
+        "ID": "OTHR",
+        "InactiveIndicator": false,
+        "Description": "No Applicable Code",
+        "Code": "OTHR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PERF",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Perforation",
+        "ID": "PERF",
+        "InactiveIndicator": false,
+        "Description": "Perforation",
+        "Code": "PERF",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PSFR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production string Formation Related",
+        "ID": "PSFR",
+        "InactiveIndicator": false,
+        "Description": "Production string Formation Related",
+        "Code": "PSFR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PSGR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production string Geophones Related",
+        "ID": "PSGR",
+        "InactiveIndicator": false,
+        "Description": "Production string Geophones Related",
+        "Code": "PSGR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PSIR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production string Injection Related",
+        "ID": "PSIR",
+        "InactiveIndicator": false,
+        "Description": "Production string Injection Related",
+        "Code": "PSIR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PSMR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production string Mechanical Related",
+        "ID": "PSMR",
+        "InactiveIndicator": false,
+        "Description": "Production string Mechanical Related",
+        "Code": "PSMR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:PSWR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production string Well-intervention Related",
+        "ID": "PSWR",
+        "InactiveIndicator": false,
+        "Description": "Production string Well-intervention Related",
+        "Code": "PSWR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:RENT",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surface Rental Equipment (3rd party)",
+        "ID": "RENT",
+        "InactiveIndicator": false,
+        "Description": "Surface Rental Equipment (3rd party)",
+        "Code": "RENT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:RISR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Riser (Subsea Operations)",
+        "ID": "RISR",
+        "InactiveIndicator": false,
+        "Description": "Riser (Subsea Operations)",
+        "Code": "RISR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:ROV",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ROV Operations",
+        "ID": "ROV",
+        "InactiveIndicator": false,
+        "Description": "Remote Operated Vehicle Operations",
+        "Code": "ROV",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:SAND",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sand Control",
+        "ID": "SAND",
+        "InactiveIndicator": false,
+        "Description": "Sand Control",
+        "Code": "SAND",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:SRWD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steerable Ream While Drilling",
+        "ID": "SRWD",
+        "InactiveIndicator": false,
+        "Description": "Steerable Ream While Drilling",
+        "Code": "SRWD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:STIM",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stimulation",
+        "ID": "STIM",
+        "InactiveIndicator": false,
+        "Description": "Stimulation",
+        "Code": "STIM",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:UR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Under-Reamers",
+        "ID": "UR",
+        "InactiveIndicator": false,
+        "Description": "Under-Reamers",
+        "Code": "UR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WC",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Control",
+        "ID": "WC",
+        "InactiveIndicator": false,
+        "Description": "Well Control",
+        "Code": "WC",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOA",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Incident/Accident",
+        "ID": "WOA",
+        "InactiveIndicator": false,
+        "Description": "Wait On Incident/Accident",
+        "Code": "WOA",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOC",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Cranes",
+        "ID": "WOC",
+        "InactiveIndicator": false,
+        "Description": "Wait On Cranes",
+        "Code": "WOC",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOCY",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Community / Noise Restriction",
+        "ID": "WOCY",
+        "InactiveIndicator": false,
+        "Description": "Wait On Community / Noise Restriction",
+        "Code": "WOCY",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOD",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Decision",
+        "ID": "WOD",
+        "InactiveIndicator": false,
+        "Description": "Wait On Decision",
+        "Code": "WOD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOE",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Equipment/Materials",
+        "ID": "WOE",
+        "InactiveIndicator": false,
+        "Description": "Wait On Equipment/Materials",
+        "Code": "WOE",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOF",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Fluid Supply",
+        "ID": "WOF",
+        "InactiveIndicator": false,
+        "Description": "Wait On Fluid Supply",
+        "Code": "WOF",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOFM",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Force Majeure",
+        "ID": "WOFM",
+        "InactiveIndicator": false,
+        "Description": "Wait On Force Majeure",
+        "Code": "WOFM",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOH",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Helicopter",
+        "ID": "WOH",
+        "InactiveIndicator": false,
+        "Description": "Wait On Helicopter",
+        "Code": "WOH",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOL",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Daylight",
+        "ID": "WOL",
+        "InactiveIndicator": false,
+        "Description": "Wait On Daylight",
+        "Code": "WOL",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOLG",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Transport Logistics -Boat / Helicopter / Truck",
+        "ID": "WOLG",
+        "InactiveIndicator": false,
+        "Description": "Wait On Transport Logistics -Boat / Helicopter / Truck",
+        "Code": "WOLG",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOO",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Other",
+        "ID": "WOO",
+        "InactiveIndicator": false,
+        "Description": "Wait On Other",
+        "Code": "WOO",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOP",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Personnel",
+        "ID": "WOP",
+        "InactiveIndicator": false,
+        "Description": "Wait On Personnel",
+        "Code": "WOP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOPF",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Platform/Plant/Location Issues",
+        "ID": "WOPF",
+        "InactiveIndicator": false,
+        "Description": "Wait On Platform/Plant/Location Issues",
+        "Code": "WOPF",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOPM",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Permit",
+        "ID": "WOPM",
+        "InactiveIndicator": false,
+        "Description": "Wait On Permit",
+        "Code": "WOPM",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOPO",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Production Operations",
+        "ID": "WOPO",
+        "InactiveIndicator": false,
+        "Description": "Wait On Production Operations",
+        "Code": "WOPO",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Religious Break",
+        "ID": "WOR",
+        "InactiveIndicator": false,
+        "Description": "Religious Break",
+        "Code": "WOR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOT",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Truck",
+        "ID": "WOT",
+        "InactiveIndicator": false,
+        "Description": "Wait On Truck",
+        "Code": "WOT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WOW",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wait On Weather",
+        "ID": "WOW",
+        "InactiveIndicator": false,
+        "Description": "Wait On Weather",
+        "Code": "WOW",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WSF",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellhead (Surface)",
+        "ID": "WSF",
+        "InactiveIndicator": false,
+        "Description": "Wellhead (Surface)",
+        "Code": "WSF",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WSR",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completions and Well Interventions Remedial Work",
+        "ID": "WSR",
+        "InactiveIndicator": false,
+        "Description": "Completions and Well Interventions Remedial Work",
+        "Code": "WSR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WSS",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellhead (Subsea)",
+        "ID": "WSS",
+        "InactiveIndicator": false,
+        "Description": "Wellhead (Subsea)",
+        "Code": "WSS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WTEST",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Testing",
+        "ID": "WTEST",
+        "InactiveIndicator": false,
+        "Description": "Well Testing",
+        "Code": "WTEST",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTCauseSubType:WU",
+      "kind": "osdu:wks:reference-data--NPTCauseSubType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rig/Work Unit Misc",
+        "ID": "WU",
+        "InactiveIndicator": false,
+        "Description": "Rig/Work Unit Misc",
+        "Code": "WU",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTCauseSubType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

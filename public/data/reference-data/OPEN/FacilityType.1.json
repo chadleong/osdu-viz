@@ -1,0 +1,175 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:Well",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well",
+        "Description": "A Well is a permitted or actual drilled hole in the ground designed to exchange (or facilitate the exchange of) fluids between a subsurface reservoir and the surface (or another reservoir), or to enable the detection and measurement of rock properties.",
+        "Code": "Well",
+        "AttributionAuthority": "PPDM",
+        "AttributionPublication": "https://whatisawell.ppdm.org/components",
+        "Source": "Workbook ReferenceValues/Published/FacilityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:Wellbore",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellbore",
+        "Description": "A Wellbore is a path of drilled footage, from the Well (top/start) to a terminating point (bottom/end).",
+        "Code": "Wellbore",
+        "AttributionAuthority": "PPDM",
+        "AttributionPublication": "https://whatisawell.ppdm.org/components",
+        "Source": "Workbook ReferenceValues/Published/FacilityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:Rig",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rig",
+        "Description": "The facility or machine used to drill a wellbore. In onshore operations, the rig includes virtually everything except living quarters. Major components of the rig include the mud tanks, the mud pumps, the derrick or mast, the drawworks, the rotary table or topdrive, the drillstring, the power generation equipment and auxiliary equipment. Offshore, the rig includes the same components as onshore, but not those of the vessel or drilling platform itself. The rig is sometimes referred to as the drilling package, particularly offshore.",
+        "Code": "Rig",
+        "AttributionAuthority": "Schlumberger",
+        "AttributionPublication": "https://glossary.oilfield.slb.com/en/terms/r/rig",
+        "Source": "Workbook Published/FacilityType.1.0.0.xlsx; commit SHA 52aa3710."
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:Heliport",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Heliport",
+        "Description": "An airport or take-off and landing place for helicopters.",
+        "Code": "Heliport",
+        "AttributionAuthority": "Wikipedia",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Heliport",
+        "Source": "Workbook Published/FacilityType.1.0.0.xlsx; commit SHA 52aa3710."
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:Storage",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Storage",
+        "Description": "A facility to store artefacts, e.g. rock samples from cores or outcrops. ",
+        "Code": "Storage",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityType:IsolatedInterval",
+      "kind": "osdu:wks:reference-data--FacilityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IsolatedInterval",
+        "Description": "An isolated interval, aka. completion,  in one or more Wellbores that functions to produce or inject fluids. The isolated interval must be capable of isolating a fluid flow for continuous measurement.",
+        "Code": "IsolatedInterval",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

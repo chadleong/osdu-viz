@@ -1,0 +1,873 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131000",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131000",
+        "Description": "Well fracturing services",
+        "Code": "71131000",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131001",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131001",
+        "Description": "Acid based fluid well fracturing services",
+        "Code": "71131001",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131002",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131002",
+        "Description": "Emulsion based fluid well fracturing services",
+        "Code": "71131002",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131003",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131003",
+        "Description": "Foam based fluid well fracturing services",
+        "Code": "71131003",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131004",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131004",
+        "Description": "Oil well fracturing services",
+        "Code": "71131004",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131005",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131005",
+        "Description": "Oil well scale control services",
+        "Code": "71131005",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131006",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131006",
+        "Description": "Well fracture testing services",
+        "Code": "71131006",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131007",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131007",
+        "Description": "Well fracturing downhole evaluation services",
+        "Code": "71131007",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131008",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131008",
+        "Description": "Well fracturing height control services",
+        "Code": "71131008",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131009",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131009",
+        "Description": "Well fracturing monitoring services",
+        "Code": "71131009",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131010",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131010",
+        "Description": "Well fracturing service design services",
+        "Code": "71131010",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131011",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131011",
+        "Description": "Well fracturing service evaluation services",
+        "Code": "71131011",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131012",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131012",
+        "Description": "Well fracturing surface evaluation services",
+        "Code": "71131012",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131013",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131013",
+        "Description": "Well fracturing treatment quality control services",
+        "Code": "71131013",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131014",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131014",
+        "Description": "Oil based fluid well fracturing services",
+        "Code": "71131014",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131015",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131015",
+        "Description": "Other well fracturing services",
+        "Code": "71131015",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131016",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131016",
+        "Description": "Well fracturing stress management services",
+        "Code": "71131016",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131018",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131018",
+        "Description": "Water based linear fluid well fracturing services",
+        "Code": "71131018",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131019",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131019",
+        "Description": "Water based cross linked fluid well fracturing services",
+        "Code": "71131019",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131100",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131100",
+        "Description": "Matrix stimulation services",
+        "Code": "71131100",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131101",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131101",
+        "Description": "Acid based matrix stimulation services",
+        "Code": "71131101",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131102",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131102",
+        "Description": "Formation sealer matrix stimulation services",
+        "Code": "71131102",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131103",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131103",
+        "Description": "Matrix organic cleanup services",
+        "Code": "71131103",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131104",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131104",
+        "Description": "Matrix organic inhibition services",
+        "Code": "71131104",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131105",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131105",
+        "Description": "Matrix scale cleanup services",
+        "Code": "71131105",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131106",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131106",
+        "Description": "Matrix scale inhibition services",
+        "Code": "71131106",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131107",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131107",
+        "Description": "Matrix treatment design services",
+        "Code": "71131107",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131108",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131108",
+        "Description": "Matrix treatment diversion services",
+        "Code": "71131108",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131109",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131109",
+        "Description": "Matrix treatment evaluation services",
+        "Code": "71131109",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131110",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131110",
+        "Description": "Matrix treatment quality control services",
+        "Code": "71131110",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StimPIDXCommodityCode:71131111",
+      "kind": "osdu:wks:reference-data--StimPIDXCommodityCode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "71131111",
+        "Description": "Non acid based matrix stimulation services",
+        "Code": "71131111",
+        "AttributionAuthority": "PIDX",
+        "Source": "Workbook ReferenceValues/Authoring/StimPIDXCommodityCode.1.xlsx; commit SHA 23186085.",
+        "CommitDate": "2024-03-06T09:18:25+00:00"
+      }
+    }
+  ]
+}

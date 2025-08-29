@@ -1,0 +1,234 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:Borehole",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Borehole",
+        "Code": "Borehole",
+        "Description": "Receivers and/or energy sources in wellbore(s).",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:2D",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "2D",
+        "Code": "2D",
+        "Description": "Receivers and energy sources roughly colinear in single line near Earth's surface.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:3D",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3D",
+        "Code": "3D",
+        "Description": "In three-dimensional (3D) reflection seismic surveying the sound detectors (numbering up to a thousand or more) are spread out over an area and the sound source is moved from location to location through the area. 3D seismic programs are generally a uniform and evenly spaced grid of lines.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:3D.ParallelGeometry",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Parallel geometry",
+        "Code": "3D.ParallelGeometry",
+        "Description": "3D acquisition where the ship sails a series of parallel lines.",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Acquisition",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:3D.NarrowAzimuth",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Narrow azimuth",
+        "Code": "3D.NarrowAzimuth",
+        "Description": "3D acquisition where one ship tows streamers and deploys airguns.",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Acquisition",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:3D.MultiAzimuth",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Multi azimuth",
+        "Code": "3D.MultiAzimuth",
+        "Description": "3D acquisition with a design involving at least 3 narrow azimuth surveys that cover the same survey area. The data is then combined during processing.",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Acquisition",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:3D.WideAzimuth",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wide azimuth",
+        "Code": "3D.WideAzimuth",
+        "Description": "3D acquisition with at least two source ships and one receiver ship are used, where one will tow streamers and one deploys the airguns. The goal is to increase the range of offsets for each source-receiver pair. This technique is commonly used for sub-salt imaging.",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Acquisition",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicGeometryType:4D",
+      "kind": "osdu:wks:reference-data--SeismicGeometryType:1.0.2",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4D",
+        "Code": "4D",
+        "InactiveIndicator": true,
+        "Description": "Recorded intentionally with time lapse.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:22:36+00:00"
+      }
+    }
+  ]
+}

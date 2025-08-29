@@ -1,0 +1,175 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnValidityAreaType:global",
+      "kind": "osdu:wks:reference-data--StratigraphicColumnValidityAreaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "global",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Stratigraphic Column which is valid globally, for example the international chronostratigraphic column.",
+        "Code": "global",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/StratigraphicColumnValidityAreaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnValidityAreaType:basin",
+      "kind": "osdu:wks:reference-data--StratigraphicColumnValidityAreaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "basin",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Stratigraphic Column which is valid within a basin.",
+        "Code": "basin",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/StratigraphicColumnValidityAreaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnValidityAreaType:sub-basin",
+      "kind": "osdu:wks:reference-data--StratigraphicColumnValidityAreaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "sub-basin",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Stratigraphic Column which is valid within a sub-basin.",
+        "Code": "sub-basin",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/StratigraphicColumnValidityAreaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnValidityAreaType:field",
+      "kind": "osdu:wks:reference-data--StratigraphicColumnValidityAreaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "field",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Stratigraphic Column which is valid within a field.",
+        "Code": "field",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/StratigraphicColumnValidityAreaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnValidityAreaType:field-segment",
+      "kind": "osdu:wks:reference-data--StratigraphicColumnValidityAreaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "field-segment",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Stratigraphic Column which is valid within a field-segment.",
+        "Code": "field-segment",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/StratigraphicColumnValidityAreaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

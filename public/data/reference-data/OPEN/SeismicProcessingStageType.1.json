@@ -1,0 +1,322 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Deconvolution",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deconvolution",
+        "Code": "Deconvolution",
+        "Description": "A process designed to restore a waveshape to the form it had before it underwent a linear filtering action (convolution)",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Demultiple",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Demultiple",
+        "Code": "Demultiple",
+        "Description": "Corrections applied to seismic data to compensate for the effects of multiple reflections",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Demultiplex",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Demultiplex",
+        "Code": "Demultiplex",
+        "Description": "Corrections applied to seismic data to compensate for the effects of\nvariations in elevation, near-surface low-velocity-layer (weathering)\nthickness, weathering velocity, and/or reference to a datumTo separate the individual component channels that have been multiplexed.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Field",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Field",
+        "Code": "Field",
+        "Description": "Processing performed at the time of data acquisition site.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Inversion",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Inversion",
+        "Code": "Inversion",
+        "Description": "Deriving from field data a model to describe the subsurface that is consistent with the data; determining the cause from observation of effects.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Migration",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Migration",
+        "Code": "Migration",
+        "Description": "An inversion operation involving rearrangement of seismic information elements so that reflections and diffractions are plotted at their true locations.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:PhaseRotation",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Phase rotation",
+        "Code": "PhaseRotation",
+        "Description": "Phase distortion imposed on the received seismic signal by the data-acquisition system must be accounted for and corrected.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Stack",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stack",
+        "Code": "Stack",
+        "Description": "A composite record made by combining traces from different records.",
+        "AttributionPublication": "SEG Wiki",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:Statics",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Statics",
+        "Code": "Statics",
+        "Description": "Often called statics, a bulk shift of a seismic trace in time during seismic processing. A common static correction is the weathering correction, which compensates for a layer of low seismic velocity material near the surface of the Earth.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:ModelingResult",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Modeling result",
+        "Code": "ModelingResult",
+        "InactiveIndicator": true,
+        "Description": "Indicates that the Seismic processing is at the Modeling Result stage",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicProcessingStageType:SyntheticModel",
+      "kind": "osdu:wks:reference-data--SeismicProcessingStageType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Synthetic model",
+        "Code": "SyntheticModel",
+        "InactiveIndicator": true,
+        "Description": "Indicates that the Seismic processing is at the Synthetic modeling stage",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:58:52+00:00"
+      }
+    }
+  ]
+}

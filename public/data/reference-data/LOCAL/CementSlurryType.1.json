@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:EngineeredBlend",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Engineered Blend",
+        "Description": "Engineered Blend",
+        "Code": "EngineeredBlend",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:MidTierSlurry",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mid-Tier Slurry",
+        "Description": "Mid-Tier Slurry",
+        "Code": "MidTierSlurry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:NeatSlurry",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Neat Slurry",
+        "Description": "Neat Slurry",
+        "Code": "NeatSlurry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:PlugSlurry",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plug Slurry",
+        "Description": "Any slurry used to perform a plug job",
+        "Code": "PlugSlurry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:ProductionSlurry",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Slurry",
+        "Description": "Production Slurry",
+        "Code": "ProductionSlurry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CementSlurryType:LCMSqueezeSlurry",
+      "kind": "osdu:wks:reference-data--CementSlurryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LCM/Squeeze Slurry",
+        "Description": "LCM/Squeeze Slurry used for remedial cement job",
+        "Code": "LCMSqueezeSlurry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/CementSlurryType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

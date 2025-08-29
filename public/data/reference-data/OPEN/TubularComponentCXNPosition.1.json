@@ -1,0 +1,153 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularComponentCXNPosition:Both",
+      "kind": "osdu:wks:reference-data--TubularComponentCXNPosition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Both",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Both",
+        "InactiveIndicator": false,
+        "Description": "Same Connection type is positioned at both top and bottom of the tubular component",
+        "Code": "Both",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.TubularComponentConnection.ConnectionPosition",
+        "AttributionRevision": "WITSML V2.1",
+        "Source": "Workbook Published/TubularComponentCXNPosition.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularComponentCXNPosition:Bottom",
+      "kind": "osdu:wks:reference-data--TubularComponentCXNPosition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bottom",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Bottom",
+        "InactiveIndicator": false,
+        "Description": "Connection is position at bottom of the tubular component",
+        "Code": "Bottom",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.TubularComponentConnection.ConnectionPosition",
+        "AttributionRevision": "WITSML V2.1",
+        "Source": "Workbook Published/TubularComponentCXNPosition.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularComponentCXNPosition:Top",
+      "kind": "osdu:wks:reference-data--TubularComponentCXNPosition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Top",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Top",
+        "InactiveIndicator": false,
+        "Description": "Connection is position at top of the tubular component",
+        "Code": "Top",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.TubularComponentConnection.ConnectionPosition",
+        "AttributionRevision": "WITSML V2.1",
+        "Source": "Workbook Published/TubularComponentCXNPosition.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularComponentCXNPosition:Unknown",
+      "kind": "osdu:wks:reference-data--TubularComponentCXNPosition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unknown",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Unknown",
+        "InactiveIndicator": false,
+        "Description": "Connection position is not known/not recorded",
+        "Code": "Unknown",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.TubularComponentConnection.ConnectionPosition",
+        "AttributionRevision": "WITSML V2.1",
+        "Source": "Workbook Published/TubularComponentCXNPosition.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

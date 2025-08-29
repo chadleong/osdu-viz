@@ -1,0 +1,291 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Loading",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Loading",
+        "Description": "When the ingestion process received a request to create a resource and loading is in progress. This lifecycle stage is applicable to all group-types.",
+        "Code": "Loading",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Ordered",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ordered",
+        "Description": "The content related to a work-product-component is unavailable for consumption but ordered. This status is applicable to a number scenarios like 1) content uploads for large datasets, 2) content replication via, e.g., from connected data sources, or 3) commercial transactions, where data delivery has not been completed.",
+        "Code": "Ordered",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Received",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Received",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Completed\" with Name=\"Completed\" instead. After 'Received', the resource records are created and the content file is placed into storage. This lifecycle stage is applicable only to work-product-component group-type records.",
+        "Code": "Received",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Completed",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completed",
+        "Description": "When the ingestion process has completed successfully and any associated content is ready for consumption. This status is applicable to all group-type records.",
+        "Code": "Completed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Optimized",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Optimized",
+        "Description": "The content has been placed in optimized storage, i.e., in Domain Data Management Services (DDMS). This status is applicable to work-product-component group-type records.",
+        "Code": "Optimized",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:Rescinded",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rescinded",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: This status is never documented because 'soft' deletes remove the record from the index which means that the  deleted record is no longer discoverable. Records removed with the purge operation will be removed completely, i.e., not discoverable. Previous definition: When a resource is logically deleted from the data platform.\u00a0 This means that the data, metadata, and content (e.g. file(s) and/or DDMS content) should not be used. ",
+        "Code": "Rescinded",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:LOADING",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LOADING",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Loading\" with Name=\"Loading\" instead. When the ingestion process received a request to create a resource.",
+        "Code": "LOADING",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:RECIEVED",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RECIEVED",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Received\" with Name=\"Received\" instead. After RECEIVED, the resource records are created and the content file is placed into storage. ",
+        "Code": "RECIEVED",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:ACCEPTED",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ACCEPTED",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Completed\" with Name=\"Completed\" instead. When the ingestion process has completed successfully.",
+        "Code": "ACCEPTED",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceLifecycleStatus:RESCINDED",
+      "kind": "osdu:wks:reference-data--ResourceLifecycleStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESCINDED",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Rescinded\" with Name=\"Rescinded\" instead. When a resource is logically deleted from the data platform.\u00a0 This means that the data, metadata, and content file(s) should not be used. ",
+        "Code": "RESCINDED",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ResourceLifecycleStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

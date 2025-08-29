@@ -1,0 +1,4019 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:EXPLORATION.ExplorationGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXPLORATION.ExplorationGeneral",
+        "ID": "EXPLORATION.ExplorationGeneral",
+        "Description": "Catch-all category for Exploration discipline",
+        "Code": "EXPLORATION.ExplorationGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:EXPLORATION.ExplorationOpportunity",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXPLORATION.ExplorationOpportunity",
+        "ID": "EXPLORATION.ExplorationOpportunity",
+        "Description": "Exploration opportunity files",
+        "Code": "EXPLORATION.ExplorationOpportunity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:EXPLORATION.ProspectEvaluation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXPLORATION.ProspectEvaluation",
+        "ID": "EXPLORATION.ProspectEvaluation",
+        "Description": "Exploration Prospect Evaluations",
+        "Code": "EXPLORATION.ProspectEvaluation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:EXPLORATION.RegionalAndBasinEvaluation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXPLORATION.RegionalAndBasinEvaluation",
+        "ID": "EXPLORATION.RegionalAndBasinEvaluation",
+        "Description": "Exploration Regional and Basin Evaluation",
+        "Code": "EXPLORATION.RegionalAndBasinEvaluation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.Catalogue",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.Catalogue",
+        "ID": "GENERIC.Catalogue",
+        "Description": "Catalogs sub-domain catch-all",
+        "Code": "GENERIC.Catalogue",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.DataQuality",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.DataQuality",
+        "ID": "GENERIC.DataQuality",
+        "Description": "Data quality sub-domain catch-all",
+        "Code": "GENERIC.DataQuality",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.Entitlements",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.Entitlements",
+        "ID": "GENERIC.Entitlements",
+        "Description": "Entitlements sub-domain catch-all",
+        "Code": "GENERIC.Entitlements",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.Environment",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.Environment",
+        "ID": "GENERIC.Environment",
+        "Description": "Environment sub-domain catch-all",
+        "Code": "GENERIC.Environment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.LegalAgreement",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.LegalAgreement",
+        "ID": "GENERIC.LegalAgreement",
+        "Description": "Legal agreement sub-domain catch-all",
+        "Code": "GENERIC.LegalAgreement",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.Location",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.Location",
+        "ID": "GENERIC.Location",
+        "Description": "Location sub-domain catch-all",
+        "Code": "GENERIC.Location",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.Organisation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.Organisation",
+        "ID": "GENERIC.Organisation",
+        "Description": "Organisation sub-domain catch-all",
+        "Code": "GENERIC.Organisation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.ProcessSafety",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.ProcessSafety",
+        "ID": "GENERIC.ProcessSafety",
+        "Description": "Process Safety sub-domain catch-all",
+        "Code": "GENERIC.ProcessSafety",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GENERIC.ProjectActivityStudyLifecycle",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GENERIC.ProjectActivityStudyLifecycle",
+        "ID": "GENERIC.ProjectActivityStudyLifecycle",
+        "Description": "Project/Activity/Study Lifecycle sub-domain catch-all",
+        "Code": "GENERIC.ProjectActivityStudyLifecycle",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.AnaloguesAndStandardGeologicalModels",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.AnaloguesAndStandardGeologicalModels",
+        "ID": "GEOLOGY.AnaloguesAndStandardGeologicalModels",
+        "Description": "Widely accepted regional models, or models of similar depositional systems.\nAnalogues and standard geological models are broader than the field-specific static reservoir models. Standard models are often produced by universities and reflect the consensus geological view of the depositional environment in question. Analogues are models from different areas with similar depositional environments to the one in question - they can come from anywhere in the world - and are used for comparison purposes.",
+        "Code": "GEOLOGY.AnaloguesAndStandardGeologicalModels",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.BoreholeBreakoutAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.BoreholeBreakoutAnalysis",
+        "ID": "GEOLOGY.BoreholeBreakoutAnalysis",
+        "Description": "Borehole breakouts are hole enlargements (whilst drilling) caused by horizontal stresses in the rock formation. The hole becomes more oval than round. Analysis is carried out to determine the extent of the breakout and to plan how to continue the safe drilling of the hole. Often dealing with mud weight issues, borehole stress calculations,and analysis of caliper logs (which tell the shape of the borehole)",
+        "Code": "GEOLOGY.BoreholeBreakoutAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.BoreholeImageAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.BoreholeImageAnalysis",
+        "ID": "GEOLOGY.BoreholeImageAnalysis",
+        "Description": "Report which interprets borehole image logs. Tool names can include Formation MicroImager (FMI), Ultrasonic Imaging Tool (USIT), Ultrasonic Borehole Imager (UBI), Acoustic borehole image (borehole televiewer),Electrical MicroImager (EMI). In open-hole, these are used to identify fractures, breakouts and other borehole features. In cased hole, they are used to identify internal corrosion. Report will generally show detailed analysis of a section or sections of interest along the well.OR - Report from logging contractor/processing company detailing the processing undertaken to create a borehole image from raw measurements. May also include some basic interpretation",
+        "Code": "GEOLOGY.BoreholeImageAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CoreAndSampleInventory",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CoreAndSampleInventory",
+        "ID": "GEOLOGY.CoreAndSampleInventory",
+        "Description": "Records of physical samples held",
+        "Code": "GEOLOGY.CoreAndSampleInventory",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CoreDescriptionsAndLogReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CoreDescriptionsAndLogReport",
+        "ID": "GEOLOGY.CoreDescriptionsAndLogReport",
+        "Description": "Geological description of the slabbed core including lithology, hydrocarbon shows, palaeontological indices and environments and key stratal surfaces. No analysis, no interpretation, no experiments",
+        "Code": "GEOLOGY.CoreDescriptionsAndLogReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CoreImagesAndPhotos",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CoreImagesAndPhotos",
+        "ID": "GEOLOGY.CoreImagesAndPhotos",
+        "Description": "Photos of slabbed cores, thin sections, etc",
+        "Code": "GEOLOGY.CoreImagesAndPhotos",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CoringOperation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CoringOperation",
+        "ID": "GEOLOGY.CoringOperation",
+        "Description": "Reports detailing the acquisition aspect of a coring operation. May also include sidewall samples aquired using wireline methods. Does not contain detailed data regarding the core recovered. May discuss matters such as mud type, recovery rate, and any problems encountered during coring operations.",
+        "Code": "GEOLOGY.CoringOperation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CoringPlanning",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CoringPlanning",
+        "ID": "GEOLOGY.CoringPlanning",
+        "Description": "Proposal to core a well/sidetrack. Programme of operations to perform coring.  Supplemental information to guide, on requirements of the coring acquisition. Contains operational procedures, objectives, core barrel type, selection of coring point, minimum core length and criteria for coring. Also, core handling and Sampling procedures",
+        "Code": "GEOLOGY.CoringPlanning",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.CuttingsDescriptionSheet",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.CuttingsDescriptionSheet",
+        "ID": "GEOLOGY.CuttingsDescriptionSheet",
+        "Description": "Documents describing the cuttings recovered during the drilling of a well",
+        "Code": "GEOLOGY.CuttingsDescriptionSheet",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.DepositionalEvaluationsAndModels",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.DepositionalEvaluationsAndModels",
+        "ID": "GEOLOGY.DepositionalEvaluationsAndModels",
+        "Description": "Documents describing or hypothesizing a particular depositional environment",
+        "Code": "GEOLOGY.DepositionalEvaluationsAndModels",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.DipmeterInterpretationReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.DipmeterInterpretationReport",
+        "ID": "GEOLOGY.DipmeterInterpretationReport",
+        "Description": "All dipmeter reports and interpretations",
+        "Code": "GEOLOGY.DipmeterInterpretationReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.EndOfWellReportGeological",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.EndOfWellReportGeological",
+        "ID": "GEOLOGY.EndOfWellReportGeological",
+        "Description": "Report that gathers together detailed geological data obtained whilst drilling the well including coring acquisition, formation evaluation, log data, reservoir properties and hydrocarbon types, formation tops and lessons learned.",
+        "Code": "GEOLOGY.EndOfWellReportGeological",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.ExplorationOpportunityAssessment",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.ExplorationOpportunityAssessment",
+        "ID": "GEOLOGY.ExplorationOpportunityAssessment",
+        "Description": "Document produced before well proposal, often associated with licensing rounds. Will mention a block or area of seabed",
+        "Code": "GEOLOGY.ExplorationOpportunityAssessment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.FieldCorrelationReportAndCrossSection",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.FieldCorrelationReportAndCrossSection",
+        "ID": "GEOLOGY.FieldCorrelationReportAndCrossSection",
+        "Description": "Documents which extrapolate data from individual wells and seismic to create and overall model of the field\nWill contain a diagram of a vertical section through a field, as opposed to the surface, bird's eye or plan view of a map. Cross sections are useful for displaying the types and orientations of subsurface structures and formations. Will often be concerned with the connectivity between the various reservoir units. Will contain Correlation Panels (charts showing a number of wells side by side, and attempting to interpret the geology ofthe area between the wells.\n",
+        "Code": "GEOLOGY.FieldCorrelationReportAndCrossSection",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.FieldFaultInterpretationStudiesAndModels",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.FieldFaultInterpretationStudiesAndModels",
+        "ID": "GEOLOGY.FieldFaultInterpretationStudiesAndModels",
+        "Description": "Reports concerned with the fault structure of a field",
+        "Code": "GEOLOGY.FieldFaultInterpretationStudiesAndModels",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.FluidAnalysisReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.FluidAnalysisReport",
+        "ID": "GEOLOGY.FluidAnalysisReport",
+        "Description": "Report on the analysis of the fluids that have been obtained from the borehole",
+        "Code": "GEOLOGY.FluidAnalysisReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeochemicalEvaluationReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeochemicalEvaluationReport",
+        "ID": "GEOLOGY.GeochemicalEvaluationReport",
+        "Description": "Report on the geochemical analysis of hydrocarbons including geochemical parameters, analytical data, results and discussions. Keyword - Geochemical",
+        "Code": "GEOLOGY.GeochemicalEvaluationReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalFieldStudy",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalFieldStudy",
+        "ID": "GEOLOGY.GeologicalFieldStudy",
+        "Description": "Geological field-specific discipline study/evaluation/report. Field mentioned in title. Does not mention wellbores in title, though can contain data from multiple wells.",
+        "Code": "GEOLOGY.GeologicalFieldStudy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalGeneral",
+        "ID": "GEOLOGY.GeologicalGeneral",
+        "Description": "Catch-all category for Geology discipline",
+        "Code": "GEOLOGY.GeologicalGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalStandardsAndReferences",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalStandardsAndReferences",
+        "ID": "GEOLOGY.GeologicalStandardsAndReferences",
+        "Description": "Technical standards and associated procedures for the Geology discipline",
+        "Code": "GEOLOGY.GeologicalStandardsAndReferences",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalStaticReservoirModel",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalStaticReservoirModel",
+        "ID": "GEOLOGY.GeologicalStaticReservoirModel",
+        "Description": "Static reservoir models and reports pertaining to these",
+        "Code": "GEOLOGY.GeologicalStaticReservoirModel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalWellPlan",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalWellPlan",
+        "ID": "GEOLOGY.GeologicalWellPlan",
+        "Description": "Produced before the drilling programme, covering  the geological aspects of a planned well, such as target identification, reservoir quality and prognosed lithology.",
+        "Code": "GEOLOGY.GeologicalWellPlan",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalWellPrognosis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalWellPrognosis",
+        "ID": "GEOLOGY.GeologicalWellPrognosis",
+        "Description": "A detailed description of the likely geological sequence",
+        "Code": "GEOLOGY.GeologicalWellPrognosis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.GeologicalWellReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.GeologicalWellReport",
+        "ID": "GEOLOGY.GeologicalWellReport",
+        "Description": "Other reports pertaining to the geology of a well/bore",
+        "Code": "GEOLOGY.GeologicalWellReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.MineralogyAndDiagenesis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.MineralogyAndDiagenesis",
+        "ID": "GEOLOGY.MineralogyAndDiagenesis",
+        "Description": "Diagenesis / Reservoir Quality\nFluid Inclusions (including Fluid Inclusion Stratigraphy)\nMineral Geochemistry\nMineralogy Petrography (including cuttings)",
+        "Code": "GEOLOGY.MineralogyAndDiagenesis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.MudLog",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.MudLog",
+        "ID": "GEOLOGY.MudLog",
+        "Description": "Mud logging is the creation of a detailed record (well log) of a borehole by examining the cuttings of rock brought to the surface by the circulating drilling mud.",
+        "Code": "GEOLOGY.MudLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.MudloggingEndOfWellReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.MudloggingEndOfWellReport",
+        "ID": "GEOLOGY.MudloggingEndOfWellReport",
+        "Description": "Final report evaluating the mud logging as to provide assistance in optimising drilling costs and helping to ensure safety during drilling includes pressure evaluation, mud report and geology and shows",
+        "Code": "GEOLOGY.MudloggingEndOfWellReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.PorePressurePrediction",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.PorePressurePrediction",
+        "ID": "GEOLOGY.PorePressurePrediction",
+        "Description": "The pore pressure prediction report summarises the work done for the critical activity of Pore Pressure Prediction for a single well or for a multi-well drilling programme",
+        "Code": "GEOLOGY.PorePressurePrediction",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.SedimentologicalReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.SedimentologicalReport",
+        "ID": "GEOLOGY.SedimentologicalReport",
+        "Description": "Geological/Sedimentological core descriptions (Sed Note). Detailed or quick look descriptions. Geological formation boundary identification",
+        "Code": "GEOLOGY.SedimentologicalReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.StratigraphicReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.StratigraphicReport",
+        "ID": "GEOLOGY.StratigraphicReport",
+        "Description": "Biostratigraphy, lithostratigraphy, chronostratigraphy, magnetostratigraphy, chemostratigraphy, sequence stratigraphy\n",
+        "Code": "GEOLOGY.StratigraphicReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.StructuralGeology",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.StructuralGeology",
+        "ID": "GEOLOGY.StructuralGeology",
+        "Description": "Structural Analysis (fault network, deformation chronology)\nFractures Analysis\nLog Imagery (structural features) / Dips Analysis\nFault Sealing",
+        "Code": "GEOLOGY.StructuralGeology",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.VolumetricDetermination",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.VolumetricDetermination",
+        "ID": "GEOLOGY.VolumetricDetermination",
+        "Description": "Discusses reservoir height, permeability, volume, net-to-gross ratio,grain-size, pore-space, connectivity etc",
+        "Code": "GEOLOGY.VolumetricDetermination",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOLOGY.WellCompositeLog",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOLOGY.WellCompositeLog",
+        "ID": "GEOLOGY.WellCompositeLog",
+        "Description": "This is a log containing all the primary measurements in a wellbore.",
+        "Code": "GEOLOGY.WellCompositeLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMATICS.DrillingHazard",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMATICS.DrillingHazard",
+        "ID": "GEOMATICS.DrillingHazard",
+        "Description": "Drilling hazards",
+        "Code": "GEOMATICS.DrillingHazard",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMATICS.GeomaticsGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMATICS.GeomaticsGeneral",
+        "ID": "GEOMATICS.GeomaticsGeneral",
+        "Description": "Catch-all category for Geomatics discipline",
+        "Code": "GEOMATICS.GeomaticsGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMATICS.Map",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMATICS.Map",
+        "ID": "GEOMATICS.Map",
+        "Description": "Maps",
+        "Code": "GEOMATICS.Map",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMATICS.WellsiteSurveysAndReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMATICS.WellsiteSurveysAndReport",
+        "ID": "GEOMATICS.WellsiteSurveysAndReport",
+        "Description": "Wellsite surveys and reports",
+        "Code": "GEOMATICS.WellsiteSurveysAndReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.FieldSubsidenceReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.FieldSubsidenceReport",
+        "ID": "GEOMECHANICS.FieldSubsidenceReport",
+        "Description": "Plans for subsidence measuring campaigns",
+        "Code": "GEOMECHANICS.FieldSubsidenceReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.GeomechanicsGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.GeomechanicsGeneral",
+        "ID": "GEOMECHANICS.GeomechanicsGeneral",
+        "Description": "Catch-all category for Geomechanics discipline",
+        "Code": "GEOMECHANICS.GeomechanicsGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.SubsidenceLevelingAndAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.SubsidenceLevelingAndAnalysis",
+        "ID": "GEOMECHANICS.SubsidenceLevelingAndAnalysis",
+        "Description": "Subsidence measuring reports",
+        "Code": "GEOMECHANICS.SubsidenceLevelingAndAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.SubsidencePrognosis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.SubsidencePrognosis",
+        "ID": "GEOMECHANICS.SubsidencePrognosis",
+        "Description": "Concise model concerning subsidence in a particular area",
+        "Code": "GEOMECHANICS.SubsidencePrognosis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.SubsidenceSurvey",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.SubsidenceSurvey",
+        "ID": "GEOMECHANICS.SubsidenceSurvey",
+        "Description": "This is a measurement describing all content from the Subsidence measurement campaign",
+        "Code": "GEOMECHANICS.SubsidenceSurvey",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOMECHANICS.WellboreStabilityReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOMECHANICS.WellboreStabilityReport",
+        "ID": "GEOMECHANICS.WellboreStabilityReport",
+        "Description": "Report detailing the problem, investigation and solution to some geomechanical issue. Examples include wellbore stability reports, rock compaction studies, rock strength studies etc",
+        "Code": "GEOMECHANICS.WellboreStabilityReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.CheckshotSurveysAndData",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.CheckshotSurveysAndData",
+        "ID": "GEOPHYSICS.CheckshotSurveysAndData",
+        "Description": "Reports and documents pertaining to check-shot surveys, checkshot raw data, calibrated sonic logs",
+        "Code": "GEOPHYSICS.CheckshotSurveysAndData",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.DepthConversionReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.DepthConversionReport",
+        "ID": "GEOPHYSICS.DepthConversionReport",
+        "Description": "Output document from meetings concerning depth conversion",
+        "Code": "GEOPHYSICS.DepthConversionReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.GeophysicalGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.GeophysicalGeneral",
+        "ID": "GEOPHYSICS.GeophysicalGeneral",
+        "Description": "Catch-all category for Petrophysics discipline",
+        "Code": "GEOPHYSICS.GeophysicalGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.GeophysicalStandardsAndReferences",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.GeophysicalStandardsAndReferences",
+        "ID": "GEOPHYSICS.GeophysicalStandardsAndReferences",
+        "Description": "Reference material and applicable standards for the Geophysics discipline",
+        "Code": "GEOPHYSICS.GeophysicalStandardsAndReferences",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.NonSeismic",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.NonSeismic",
+        "ID": "GEOPHYSICS.NonSeismic",
+        "Description": "Gravimetry, Magnetometry and Electric Resistivity (Acquisition and Interpretation)\nProposal Tender related to Potential Field methods ",
+        "Code": "GEOPHYSICS.NonSeismic",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicInterpretation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicInterpretation",
+        "ID": "GEOPHYSICS.SeismicInterpretation",
+        "Description": "Interpretation of seismic survey data (both field level and borehole) in order to determine sequence stratigraphy of the source rock",
+        "Code": "GEOPHYSICS.SeismicInterpretation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicInversion",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicInversion",
+        "ID": "GEOPHYSICS.SeismicInversion",
+        "Description": "Reports covering the creation of seismic inversions and quantitative interpretations",
+        "Code": "GEOPHYSICS.SeismicInversion",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicProcessingReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicProcessingReport",
+        "ID": "GEOPHYSICS.SeismicProcessingReport",
+        "Description": "Report detailing the data processing for a seismic survey",
+        "Code": "GEOPHYSICS.SeismicProcessingReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicSurveyAcquisitionReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicSurveyAcquisitionReport",
+        "ID": "GEOPHYSICS.SeismicSurveyAcquisitionReport",
+        "Description": "Report detailing the acquisition process for a seismic survey. Refer to the `SeismicAcquisitionDocuments` schema and the `data.SeismicAcquisitionReport` property",
+        "Code": "GEOPHYSICS.SeismicSurveyAcquisitionReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicVelocityAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicVelocityAnalysis",
+        "ID": "GEOPHYSICS.SeismicVelocityAnalysis",
+        "Description": "Reports dealing with the speed of transmission of seismic waves through various types of rock",
+        "Code": "GEOPHYSICS.SeismicVelocityAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.VerticalSeismicProfiling",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.VerticalSeismicProfiling",
+        "ID": "GEOPHYSICS.VerticalSeismicProfiling",
+        "Description": "All VSP documentation, and borehole seismic survey documents",
+        "Code": "GEOPHYSICS.VerticalSeismicProfiling",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:MULTI_DISCIPLINARY.FieldDevelopmentPlan",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MULTI_DISCIPLINARY.FieldDevelopmentPlan",
+        "ID": "MULTI_DISCIPLINARY.FieldDevelopmentPlan",
+        "Description": "Field development plan",
+        "Code": "MULTI_DISCIPLINARY.FieldDevelopmentPlan",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:MULTI_DISCIPLINARY.WellReview",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MULTI_DISCIPLINARY.WellReview",
+        "ID": "MULTI_DISCIPLINARY.WellReview",
+        "Description": "Well review",
+        "Code": "MULTI_DISCIPLINARY.WellReview",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:MULTI_DISCIPLINARY.WellTrajectorySession",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MULTI_DISCIPLINARY.WellTrajectorySession",
+        "ID": "MULTI_DISCIPLINARY.WellTrajectorySession",
+        "Description": "Well trajectory session",
+        "Code": "MULTI_DISCIPLINARY.WellTrajectorySession",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.BoreholeBreakoutAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.BoreholeBreakoutAnalysis",
+        "ID": "PETROPHYSICS.BoreholeBreakoutAnalysis",
+        "Description": "Report dealing with borehole breakout (hole enlargement whilst drilling)",
+        "Code": "PETROPHYSICS.BoreholeBreakoutAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.CasedHoleLogInterpretation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.CasedHoleLogInterpretation",
+        "ID": "PETROPHYSICS.CasedHoleLogInterpretation",
+        "Description": "Reports which interpret the data from a single or suite of cased-hole logs",
+        "Code": "PETROPHYSICS.CasedHoleLogInterpretation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.ConventionalCoreAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.ConventionalCoreAnalysis",
+        "NameAlias": [
+          {
+            "AliasName": "PETROPHYSICS.RoutineCoreAnalysis",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "PETROPHYSICS.ConventionalCoreAnalysis",
+        "Description": "Core analysis covering only porosity, permeability and grain density",
+        "Code": "PETROPHYSICS.ConventionalCoreAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.FluidTransitionAndContactAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.FluidTransitionAndContactAnalysis",
+        "ID": "PETROPHYSICS.FluidTransitionAndContactAnalysis",
+        "Description": "Reports dealing with oil/water/gas contacts in a well or reservoir",
+        "Code": "PETROPHYSICS.FluidTransitionAndContactAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.FormationPressureWhileDrilling",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.FormationPressureWhileDrilling",
+        "ID": "PETROPHYSICS.FormationPressureWhileDrilling",
+        "Description": "Reports dealing with acquisition and interpretation of formation pressures captured whilst drilling",
+        "Code": "PETROPHYSICS.FormationPressureWhileDrilling",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.LoggingProgrammesAndPlans",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.LoggingProgrammesAndPlans",
+        "ID": "PETROPHYSICS.LoggingProgrammesAndPlans",
+        "Description": "Programme detailing logs to be run on a wellbore",
+        "Code": "PETROPHYSICS.LoggingProgrammesAndPlans",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.LoggingSummariesAndListings",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.LoggingSummariesAndListings",
+        "ID": "PETROPHYSICS.LoggingSummariesAndListings",
+        "Description": "Logging summaries and listings",
+        "Code": "PETROPHYSICS.LoggingSummariesAndListings",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.LogProcessingQI",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.LogProcessingQI",
+        "ID": "PETROPHYSICS.LogProcessingQI",
+        "Description": "Log processing quantitative interpretation",
+        "Code": "PETROPHYSICS.LogProcessingQI",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.LogQCAssessment",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.LogQCAssessment",
+        "ID": "PETROPHYSICS.LogQCAssessment",
+        "Description": "Output document from meeting between Operator and Logging Contractor re logging quality",
+        "Code": "PETROPHYSICS.LogQCAssessment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalFieldStudy",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalFieldStudy",
+        "ID": "PETROPHYSICS.PetrophysicalFieldStudy",
+        "Description": "Petrophysical field-specific discipline study/evaluation/report. Field mentioned in title. Does not mention wellbores in title, though can contain data from multiple wells.",
+        "Code": "PETROPHYSICS.PetrophysicalFieldStudy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalGeneral",
+        "ID": "PETROPHYSICS.PetrophysicalGeneral",
+        "Description": "Catch-all category forPetrophysics discipline",
+        "Code": "PETROPHYSICS.PetrophysicalGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalLogImage",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalLogImage",
+        "ID": "PETROPHYSICS.PetrophysicalLogImage",
+        "Description": "Petrophysical log image",
+        "Code": "PETROPHYSICS.PetrophysicalLogImage",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalLogInterpretation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalLogInterpretation",
+        "ID": "PETROPHYSICS.PetrophysicalLogInterpretation",
+        "Description": "Reports which interpret the data from a log/suite of open-hole logs",
+        "Code": "PETROPHYSICS.PetrophysicalLogInterpretation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalMiniplotsAndQuicklook",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalMiniplotsAndQuicklook",
+        "ID": "PETROPHYSICS.PetrophysicalMiniplotsAndQuicklook",
+        "Description": "Single page graphical petrophysical well summary",
+        "Code": "PETROPHYSICS.PetrophysicalMiniplotsAndQuicklook",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalStandardsAndReferences",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalStandardsAndReferences",
+        "ID": "PETROPHYSICS.PetrophysicalStandardsAndReferences",
+        "Description": "Reference material and applicable standards for the Petrophysics discipline",
+        "Code": "PETROPHYSICS.PetrophysicalStandardsAndReferences",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicalWellfile",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicalWellFile",
+        "ID": "PETROPHYSICS.PetrophysicalWellfile",
+        "Description": "Petrophysical associated well-specific discipline documentation, which cannot accurately be classed as a study/evaluation/report",
+        "Code": "PETROPHYSICS.PetrophysicalWellfile",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.PetrophysicsSynthesis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.PetrophysicsSynthesis",
+        "ID": "PETROPHYSICS.PetrophysicsSynthesis",
+        "Description": "Petrophysics Synthesis\nRock Typing (electrofacies)",
+        "Code": "PETROPHYSICS.PetrophysicsSynthesis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PETROPHYSICS.SpecialCoreAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PETROPHYSICS.SpecialCoreAnalysis",
+        "NameAlias": [
+          {
+            "AliasName": "PETROPHYSICS.SCAL",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "PETROPHYSICS.SpecialCoreAnalysis",
+        "Description": "Core analyses above and beyond conventional core analysis",
+        "Code": "PETROPHYSICS.SpecialCoreAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.GeochemicalCoreAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.GeochemicalCoreAnalysis",
+        "ID": "GEOCHEMISTRY.GeochemicalCoreAnalysis",
+        "Description": "Geochemical core analysis reports",
+        "Code": "GEOCHEMISTRY.GeochemicalCoreAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.GeochemicalEvaluation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.GeochemicalEvaluation",
+        "ID": "GEOCHEMISTRY.GeochemicalEvaluation",
+        "Description": "Geochemical evaluations reports and analysis",
+        "Code": "GEOCHEMISTRY.GeochemicalEvaluation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.GeochemicalFluidAnalysis",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.GeochemicalFluidAnalysis",
+        "ID": "GEOCHEMISTRY.GeochemicalFluidAnalysis",
+        "Description": "Geochemical fluid analysis reports",
+        "Code": "GEOCHEMISTRY.GeochemicalFluidAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.H2S",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.H2S",
+        "ID": "GEOCHEMISTRY.H2S",
+        "Description": "H2S reports and analysis",
+        "Code": "GEOCHEMISTRY.H2S",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.ProductionChemistryGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.ProductionChemistryGeneral",
+        "ID": "GEOCHEMISTRY.ProductionChemistryGeneral",
+        "Description": "Catch-all category for Production Chemistry discipline",
+        "Code": "GEOCHEMISTRY.ProductionChemistryGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOCHEMISTRY.PVTBlackOil",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOCHEMISTRY.PVTBlackOil",
+        "ID": "GEOCHEMISTRY.PVTBlackOil",
+        "Description": "PVT Black oil reports and analysis",
+        "Code": "GEOCHEMISTRY.PVTBlackOil",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.AnnulusPressure",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.AnnulusPressure",
+        "ID": "PRODUCTION_ENGINEERING.AnnulusPressure",
+        "Description": "Reports and documents concerning the Annulus of a well",
+        "Code": "PRODUCTION_ENGINEERING.AnnulusPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.ProductionEngineeringGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.ProductionEngineeringGeneral",
+        "ID": "PRODUCTION_ENGINEERING.ProductionEngineeringGeneral",
+        "Description": "Catch-all category for Production Technology/ Engineering discipline",
+        "Code": "PRODUCTION_ENGINEERING.ProductionEngineeringGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.ProductionTechnologyTechnicalPaper",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.ProductionTechnologyTechnicalPaper",
+        "ID": "PRODUCTION_ENGINEERING.ProductionTechnologyTechnicalPaper",
+        "Description": "Production Technology non asset-specific discipline technical document/study/report",
+        "Code": "PRODUCTION_ENGINEERING.ProductionTechnologyTechnicalPaper",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.ProductionTechnologyWellEvaluation",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.ProductionTechnologyWellEvaluation",
+        "ID": "PRODUCTION_ENGINEERING.ProductionTechnologyWellEvaluation",
+        "Description": "Production Technology well(s)-specific discipline study/evaluation/report. Wellbore(s) mentioned in title.",
+        "Code": "PRODUCTION_ENGINEERING.ProductionTechnologyWellEvaluation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.ProductionTechnologyWellfile",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.ProductionTechnologyWellfile",
+        "ID": "PRODUCTION_ENGINEERING.ProductionTechnologyWellfile",
+        "Description": "Production Technology associated well-specific discipline documentation ,which cannot accurately be classed as a study/evaluation/report. Notes for file.",
+        "Code": "PRODUCTION_ENGINEERING.ProductionTechnologyWellfile",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.WellBarrierDiagram",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.WellBarrierDiagram",
+        "ID": "PRODUCTION_ENGINEERING.WellBarrierDiagram",
+        "Description": "Well schematic for barrier activity",
+        "Code": "PRODUCTION_ENGINEERING.WellBarrierDiagram",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.WellCompletionOrStatusDiagram",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.WellCompletionOrStatusDiagram",
+        "ID": "PRODUCTION_ENGINEERING.WellCompletionOrStatusDiagram",
+        "Description": "Well schematic for a given point in time, usually produced after a well operation or intervention.",
+        "Code": "PRODUCTION_ENGINEERING.WellCompletionOrStatusDiagram",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.WellIntegrity",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.WellIntegrity",
+        "ID": "PRODUCTION_ENGINEERING.WellIntegrity",
+        "Description": "Well integrity information",
+        "Code": "PRODUCTION_ENGINEERING.WellIntegrity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.WellProposal",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.WellProposal",
+        "ID": "PRODUCTION_ENGINEERING.WellProposal",
+        "Description": "Proposals for new wells, and for interventions on existing wells.",
+        "Code": "PRODUCTION_ENGINEERING.WellProposal",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:PRODUCTION_ENGINEERING.WellTestReportAndData",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRODUCTION_ENGINEERING.WellTestReportAndData",
+        "ID": "PRODUCTION_ENGINEERING.WellTestReportAndData",
+        "Description": "All well test documentation",
+        "Code": "PRODUCTION_ENGINEERING.WellTestReportAndData",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.CarbonCaptureAndStorage",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.CarbonCaptureAndStorage",
+        "ID": "RESERVOIR_ENGINEERING.CarbonCaptureAndStorage",
+        "Description": "Reports concerned with reservoir properties pertaining to CCS",
+        "Code": "RESERVOIR_ENGINEERING.CarbonCaptureAndStorage",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.FieldEnhancedRecoveryStudy",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.FieldEnhancedRecoveryStudy",
+        "ID": "RESERVOIR_ENGINEERING.FieldEnhancedRecoveryStudy",
+        "Description": "Documents concerned with advanced methods to maximise field production",
+        "Code": "RESERVOIR_ENGINEERING.FieldEnhancedRecoveryStudy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.FormationPressureInterpretationsAndReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.FormationPressureInterpretationsAndReport",
+        "ID": "RESERVOIR_ENGINEERING.FormationPressureInterpretationsAndReport",
+        "Description": "Reports interpreting formation pressures",
+        "Code": "RESERVOIR_ENGINEERING.FormationPressureInterpretationsAndReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ProductionDeclineCurveOrMaterialBalanceAnalysisReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ProductionDeclineCurveOrMaterialBalanceAnalysisReport",
+        "ID": "RESERVOIR_ENGINEERING.ProductionDeclineCurveOrMaterialBalanceAnalysisReport",
+        "Description": "Material balance analysis is used to cross check the fluid volumes in place derived from the static analysis and quantify the relative magnitude of the natural drive mechanisms in each of the producing reservoir",
+        "Code": "RESERVOIR_ENGINEERING.ProductionDeclineCurveOrMaterialBalanceAnalysisReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ProductionForecastReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ProductionForecastReport",
+        "ID": "RESERVOIR_ENGINEERING.ProductionForecastReport",
+        "Description": "Reports detailing anticipated production from wells and fields",
+        "Code": "RESERVOIR_ENGINEERING.ProductionForecastReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.PVTReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.PVTReport",
+        "ID": "RESERVOIR_ENGINEERING.PVTReport",
+        "Description": "The reservoir fluid composition is obtained by recombining the field separator fluids in the lab. These are then subjected to various experiments including various depletion, the results are then recorded in the PVT report",
+        "Code": "RESERVOIR_ENGINEERING.PVTReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ReservoirEngineeringGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ReservoirEngineeringGeneral",
+        "ID": "RESERVOIR_ENGINEERING.ReservoirEngineeringGeneral",
+        "Description": "Catch-all category for Reservoir Engineering discipline",
+        "Code": "RESERVOIR_ENGINEERING.ReservoirEngineeringGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ReservoirModellingReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ReservoirModellingReport",
+        "ID": "RESERVOIR_ENGINEERING.ReservoirModellingReport",
+        "Description": "Report describing the creation of a dynamic reservoir model",
+        "Code": "RESERVOIR_ENGINEERING.ReservoirModellingReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ReservoirMonitoring",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ReservoirMonitoring",
+        "ID": "RESERVOIR_ENGINEERING.ReservoirMonitoring",
+        "Description": "Reservoir Monitoring (Metering, Performance,Strategy, Tracer\u2026)\nWell and Flowlines Monitoring (including Strategy and Feasibility)",
+        "Code": "RESERVOIR_ENGINEERING.ReservoirMonitoring",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.ReservoirReview",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.ReservoirReview",
+        "ID": "RESERVOIR_ENGINEERING.ReservoirReview",
+        "Description": "Output documents from holistic reservoir review meetings",
+        "Code": "RESERVOIR_ENGINEERING.ReservoirReview",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.WellPerformance",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESERVOIR_ENGINEERING.WellPerformance",
+        "ID": "RESERVOIR_ENGINEERING.WellPerformance",
+        "Description": "INFLOW (Productivity, Sand Control,Stimulation\u2026)\nOUTFLOW (Well Head Pressure / Temperature,Artificial Lift, Tubing Size, Vertical Lift Performance\u2026)\nWELL (Ramp-Up, Operating Limits,Worst Discharge, Dynamic Kill\u2026)",
+        "Code": "RESERVOIR_ENGINEERING.WellPerformance",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.DailyReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.DailyReport",
+        "ID": "WELL_ENGINEERING.DailyReport",
+        "Description": "Daily drilling report",
+        "Code": "WELL_ENGINEERING.DailyReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.DrillingAndSidetrackProgrammes",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.DrillingAndSidetrackProgrammes",
+        "ID": "WELL_ENGINEERING.DrillingAndSidetrackProgrammes",
+        "Description": "Programming detailing the drilling of a new well or sidetrack",
+        "Code": "WELL_ENGINEERING.DrillingAndSidetrackProgrammes",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.DrillingDataAcquisitionReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.DrillingDataAcquisitionReport",
+        "ID": "WELL_ENGINEERING.DrillingDataAcquisitionReport",
+        "Description": "Drilling data acquisition report",
+        "Code": "WELL_ENGINEERING.DrillingDataAcquisitionReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.DrillingFluids",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.DrillingFluids",
+        "ID": "WELL_ENGINEERING.DrillingFluids",
+        "Description": "Information about drilling fluids used while drilling a well",
+        "Code": "WELL_ENGINEERING.DrillingFluids",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.DrillingGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.DrillingGeneral",
+        "ID": "WELL_ENGINEERING.DrillingGeneral",
+        "Description": "Catch-all category for Well Drilling related information",
+        "Code": "WELL_ENGINEERING.DrillingGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.HSSEWellProgramme",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.HSSEWellProgramme",
+        "ID": "WELL_ENGINEERING.HSSEWellProgramme",
+        "Description": "Documents pertaining to Health, Safety, Security, and Environment (HSSE) aspects of Wells work",
+        "Code": "WELL_ENGINEERING.HSSEWellProgramme",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellAbandonmentOrSuspensionProgrammes",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellAbandonmentOrSuspensionProgrammes",
+        "ID": "WELL_ENGINEERING.WellAbandonmentOrSuspensionProgrammes",
+        "Description": "Programme outlining well abandonment or suspension operations. May include several amendments or revisions. Programme detailing what they intend to do to abandon the well may include recipes, drilling regulations and barriers",
+        "Code": "WELL_ENGINEERING.WellAbandonmentOrSuspensionProgrammes",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellAbandonmentReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellAbandonmentReport",
+        "ID": "WELL_ENGINEERING.WellAbandonmentReport",
+        "Description": "Reports pertaining to well abandonment operations not covered by other Product Types",
+        "Code": "WELL_ENGINEERING.WellAbandonmentReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellCompletionProgramme",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellCompletionProgramme",
+        "ID": "WELL_ENGINEERING.WellCompletionProgramme",
+        "Description": "Programme detailing the planned completion of a well",
+        "Code": "WELL_ENGINEERING.WellCompletionProgramme",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellDrillingOperations",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellDrillingOperations",
+        "ID": "WELL_ENGINEERING.WellDrillingOperations",
+        "Description": "Reports pertaining to well drilling operations not covered by other Product Types",
+        "Code": "WELL_ENGINEERING.WellDrillingOperations",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellEngineeringGeneral",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellEngineeringGeneral",
+        "ID": "WELL_ENGINEERING.WellEngineeringGeneral",
+        "Description": "Catch-all category for Well Engineering discipline",
+        "Code": "WELL_ENGINEERING.WellEngineeringGeneral",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellFunctionalSpecifications",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellFunctionalSpecifications",
+        "ID": "WELL_ENGINEERING.WellFunctionalSpecifications",
+        "Description": "Specification detailing the technical reasons behind the construction of a well, and the purpose of that well in relation to Field Development. For example might contain reasons behind why a well is a water injector or a oil producer",
+        "Code": "WELL_ENGINEERING.WellFunctionalSpecifications",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellHandover",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellHandover",
+        "ID": "WELL_ENGINEERING.WellHandover",
+        "Description": "Documents formalising the handover of a wellbore between Well Engineering and Development Engineering",
+        "Code": "WELL_ENGINEERING.WellHandover",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellInterventionOperationsReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellInterventionOperationsReport",
+        "ID": "WELL_ENGINEERING.WellInterventionOperationsReport",
+        "Description": "Reports pertaining to well intervention operations not covered by other Product Types",
+        "Code": "WELL_ENGINEERING.WellInterventionOperationsReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellInterventionProgrammesAndProposals",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellInterventionProgrammesAndProposals",
+        "ID": "WELL_ENGINEERING.WellInterventionProgrammesAndProposals",
+        "Description": "Programme/proposal outlining well intervention",
+        "Code": "WELL_ENGINEERING.WellInterventionProgrammesAndProposals",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellProposal",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellProposal",
+        "ID": "WELL_ENGINEERING.WellProposal",
+        "Description": "Well proposal",
+        "Code": "WELL_ENGINEERING.WellProposal",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.WellsAfterActionReview",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.WellsAfterActionReview",
+        "ID": "WELL_ENGINEERING.WellsAfterActionReview",
+        "Description": "Post-event reviews of well engineering jobs. Covering topics such as lessons learned rather than detailing the sequence of events",
+        "Code": "WELL_ENGINEERING.WellsAfterActionReview",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:WELL_ENGINEERING.EndOfWellReport",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_ENGINEERING.EndOfWellReport",
+        "ID": "WELL_ENGINEERING.EndOfWellReport",
+        "Description": "End of well report pertaining to wells operations",
+        "Code": "WELL_ENGINEERING.EndOfWellReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA 73447506.",
+        "CommitDate": "2024-09-13T02:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicObserverLog",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicObserverLog",
+        "ID": "GEOPHYSICS.SeismicObserverLog",
+        "Description": "Documents produced during acquisition containing reports on acquisition activities and progress. Refer to the `SeismicAcquisitionDocuments` schema and the `data.ObserverLogIDs` property",
+        "Code": "GEOPHYSICS.SeismicObserverLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicLineLog",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicLineLog",
+        "ID": "GEOPHYSICS.SeismicLineLog",
+        "Description": "Documents produced at the end of each seismic line during acquisition, including information on shotpoint ranges, tapes, and files. Refer to the `SeismicAcquisitionDocuments` schema and the `data.LineLogIDs` property",
+        "Code": "GEOPHYSICS.SeismicLineLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicReceiverLog",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicReceiverLog",
+        "ID": "GEOPHYSICS.SeismicReceiverLog",
+        "Description": "Documents produced during acquisition, including parameters, along with recording QC for each shot. Refer to the `SeismicAcquisitionDocuments` and the `data.ReceiverLogIDs` property",
+        "Code": "GEOPHYSICS.SeismicReceiverLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicReceiverInformationTable",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicReceiverInformationTable",
+        "ID": "GEOPHYSICS.SeismicReceiverInformationTable",
+        "Description": "Documents collected during acquisition which include a format description and attribute properties. Typically rows are collected for each line and shotpoint with information on receivers. Refer to the `SeismicAcquisitionDocuments` schema and the `data.ReceiverInformationTableIDs` property",
+        "Code": "GEOPHYSICS.SeismicReceiverInformationTable",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentTaxonomy:GEOPHYSICS.SeismicSourceInformationTable",
+      "kind": "osdu:wks:reference-data--DocumentTaxonomy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GEOPHYSICS.SeismicSourceInformationTable",
+        "ID": "GEOPHYSICS.SeismicSourceInformationTable",
+        "Description": "Documents collected during acquisition which include a format description and attribute properties. Typically rows are collected for each line and shotpoint with information on sources, like volume, depth, and timing errors. Refer to the `SeismicAcquisitionDocuments` schema and the `data.SourceInformationTableIDs` property",
+        "Code": "GEOPHYSICS.SeismicSourceInformationTable",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DocumentTaxonomy.1.xlsx; commit SHA db686bad.",
+        "CommitDate": "2025-05-01T09:33:28+00:00"
+      }
+    }
+  ]
+}

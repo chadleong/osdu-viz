@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SaturationMeasurementLocation:EndFace",
+      "kind": "osdu:wks:reference-data--SaturationMeasurementLocation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "End Face",
+        "ID": "EndFace",
+        "Description": "Refers to the measurement of fluid saturation at the ends of a sample. This method typically involves analyzing the saturation at the very surface or boundary of the core.",
+        "Code": "EndFace",
+        "Source": "Workbook ReferenceValues/Published/SaturationMeasurementLocation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SaturationMeasurementLocation:Average",
+      "kind": "osdu:wks:reference-data--SaturationMeasurementLocation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Average",
+        "ID": "Average",
+        "Description": "Average saturation refers to the overall or mean saturation level throughout the entire volume or a specified section of the sample. This measurement provides a holistic view of the fluid distribution within the sample, averaging out the local variations to give a more general understanding of the saturation state.",
+        "Code": "Average",
+        "Source": "Workbook ReferenceValues/Published/SaturationMeasurementLocation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

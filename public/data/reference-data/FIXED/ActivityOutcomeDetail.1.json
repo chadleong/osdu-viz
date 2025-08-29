@@ -1,0 +1,257 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:injury",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Injury",
+        "Description": "Personnel injury in connection with drilling and/or drilling \nrelated operations.",
+        "Code": "injury",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:operation%20failed",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Operation Failed",
+        "Description": "Operation failed to achieve objective.",
+        "Code": "operation failed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:kick",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Kick",
+        "Description": "Formation fluid invading the wellbore.",
+        "Code": "kick",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:circulation%20loss",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Circulation Loss",
+        "Description": "Circulation lost to the formation.",
+        "Code": "circulation loss",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:mud%20loss",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Loss",
+        "Description": "Circulation impossible due to plugging or failure of equipment.",
+        "Code": "mud loss",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:stuck%20equipment",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stuck Equipment",
+        "Description": "Equipment got stuck in the hole.",
+        "Code": "stuck equipment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:equipment%20failure",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equipment Failure",
+        "Description": "Equipment failure occurred.",
+        "Code": "equipment failure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:equipment%20hang",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equipment Hang",
+        "Description": "Operations had to be aborted due to an equipment issue",
+        "Code": "equipment hang",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ActivityOutcomeDetail:success",
+      "kind": "osdu:wks:reference-data--ActivityOutcomeDetail:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Success",
+        "Description": "Operation achieved  the objective.",
+        "Code": "success",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ActivityOutcomeDetail.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConductivityMeasurementMethod:BipolarElectrode",
+      "kind": "osdu:wks:reference-data--ConductivityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bipolar Electrode",
+        "ID": "BipolarElectrode",
+        "Description": "The bipolar electrode method involves placing two electrodes on the rock sample and applying an electrical current between them. This method measures the resulting voltage drop across the sample to determine its electrical conductivity.",
+        "Code": "BipolarElectrode",
+        "Source": "Workbook ReferenceValues/Published/ConductivityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConductivityMeasurementMethod:ElectromagneticInduction",
+      "kind": "osdu:wks:reference-data--ConductivityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Electromagnetic Induction",
+        "ID": "ElectromagneticInduction",
+        "Description": "Electromagnetic induction measures conductivity by inducing an electromagnetic field in the rock sample and observing the resulting eddy currents. This non-invasive technique is useful for assessing the bulk conductivity of the sample.",
+        "Code": "ElectromagneticInduction",
+        "Source": "Workbook ReferenceValues/Published/ConductivityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

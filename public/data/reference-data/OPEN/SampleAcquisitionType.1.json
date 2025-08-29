@@ -1,0 +1,315 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:DownholeSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Downhole Sample Acquisition",
+        "ID": "DownholeSampleAcquisition",
+        "Description": "This references the acquisition event type for a sample acquired from a downhole location within a completed  (perforated or openhole interval) wellbore.",
+        "Code": "DownholeSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "PRODML",
+        "AttributionRevision": "2.2",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:FacilitySampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Facility Sample Acquisition",
+        "ID": "FacilitySampleAcquisition",
+        "Description": "This references the acquisition event type for a sample acquired from a flow port or  Equipment within a Facility.",
+        "Code": "FacilitySampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "PRODML",
+        "AttributionRevision": "2.2",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:WellheadSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellhead Sample Acquisition",
+        "ID": "WellheadSampleAcquisition",
+        "Description": "This references the acquisition event type for a sample acquired at the wellhead location of a completed wellbore. The sample stream could come from a single wellbore opening downhole or could be comingled with contributions from multiple wellbore openings.",
+        "Code": "WellheadSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "PRODML",
+        "AttributionRevision": "2.2",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:SeparatorSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Separator Sample Acquisition",
+        "ID": "SeparatorSampleAcquisition",
+        "Description": "This references the acquisition event type for a sample is acquired from a test Separator.",
+        "Code": "SeparatorSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "PRODML",
+        "AttributionRevision": "2.2",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:FormationSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Sample Acquisition",
+        "ID": "FormationSampleAcquisition",
+        "Description": "This references the acquisition event type for a sample acquired from a downhole location within the subsurface during a formation testing event. ",
+        "Code": "FormationSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "PRODML",
+        "AttributionRevision": "2.2",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:OutcropSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Outcrop Sample Acquisition",
+        "ID": "OutcropSampleAcquisition",
+        "Description": "This references the surface acquisition event type for a sample acquired from an outcrop",
+        "Code": "OutcropSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "1.0.0",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:SidewallCoringSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidewall Coring Sample Acquisition",
+        "ID": "SidewallCoringSampleAcquisition",
+        "Description": "This references the downhole acquisition event type for a  sidewall core sample acquired from a coring operation.",
+        "Code": "SidewallCoringSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "1.0.0",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:ConventionalCoringSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Coring Sample Acquisition",
+        "ID": "ConventionalCoringSampleAcquisition",
+        "Description": "This references the downhole acquisition event type for a  conventional core sample acquired from a coring operation.",
+        "Code": "ConventionalCoringSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "1.0.0",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:CuttingsSampleAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cuttings Sample Acquisition",
+        "ID": "CuttingsSampleAcquisition",
+        "Description": "This references the downhole acquisition event type for a  cuttings acquired during drilling operations.",
+        "Code": "CuttingsSampleAcquisition",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "1.0.0",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionType:SurfaceSedimentAcquisition",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surface Sediment Acquisition",
+        "ID": "SurfaceSedimentAcquisition",
+        "Description": " Involves the collection and analysis of sediment samples from the top layer of the seabed or other water bodies to study the composition, characteristics, and environmental conditions of the sediment",
+        "AttributionAuthority": "OpenGroup",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "1.0.0",
+        "Code": "Surface Sediment Acquisition",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

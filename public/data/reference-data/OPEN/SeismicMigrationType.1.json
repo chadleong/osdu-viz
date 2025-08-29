@@ -1,0 +1,461 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PoststackDepth",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Poststack depth",
+        "Code": "PoststackDepth",
+        "Description": "Imaging with lateral velocity gradients applied to stacked traces",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PoststackDepthKirchhoff",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Poststack depth - Kirchhoff",
+        "Code": "PoststackDepthKirchhoff",
+        "Description": "Imaging with lateral velocity gradients applied to stacked traces using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PoststackTime",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Poststack time",
+        "Code": "PoststackTime",
+        "Description": "Imaging with approximately flat earth assumption applied to stacked traces",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PoststackTimeKirchhoff",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Poststack time - Kirchhoff",
+        "Code": "PoststackTimeKirchhoff",
+        "Description": "Imaging with approximately flat earth assumption applied to stacked traces using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PrestackDepth",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Prestack depth",
+        "Code": "PrestackDepth",
+        "Description": "Imaging with lateral velocity gradients applied to gathers",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PrestackDepthKirchhoff",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Prestack depth - Kirchhoff",
+        "Code": "PrestackDepthKirchhoff",
+        "Description": "Imaging with lateral velocity gradients applied to gathers  using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PrestackTime",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Prestack time",
+        "Code": "PrestackTime",
+        "Description": "Imaging with approximately flat earth assumption applied to gathers",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PrestackTimeKirchhoff",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Prestack time - Kirchhoff",
+        "Code": "PrestackTimeKirchhoff",
+        "Description": "Imaging with approximately flat earth assumption applied to gathers using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:DepthMig",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepthMig",
+        "Code": "DepthMig",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PoststackDepth\" with Name=\"Poststack depth\" instead. Imaging with lateral velocity gradients applied to stacked traces",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:DepthMig-Kirch",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepthMig-Kirch",
+        "Code": "DepthMig-Kirch",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PoststackDepthKirchhoff\" with Name=\"Poststack depth - Kirchhoff\" instead. Imaging with lateral velocity gradients applied to stacked traces using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PSDM",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PSDM",
+        "Code": "PSDM",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PrestackDepth\" with Name=\"Prestack depth\" instead. Imaging with lateral velocity gradients applied to gathers",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PSDM-Kirch",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PSDM-Kirch",
+        "Code": "PSDM-Kirch",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PrestackDepthKirchhoff\" with Name=\"Prestack depth - Kirchhoff\" instead. Imaging with lateral velocity gradients applied to gathers  using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PSTM",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PSTM",
+        "Code": "PSTM",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PrestackTime\" with Name=\"Prestack time\" instead. Imaging with approximately flat earth assumption applied to gathers",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:PSTM-Kirch",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PSTM-Kirch",
+        "Code": "PSTM-Kirch",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PrestackTimeKirchhoff\" with Name=\"Prestack time - Kirchhoff\" instead. Imaging with approximately flat earth assumption applied to gathers using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:TimeMig",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TimeMig",
+        "Code": "TimeMig",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PoststackTime\" with Name=\"Poststack time\" instead. Imaging with approximately flat earth assumption applied to stacked traces",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicMigrationType:TimeMig-Kirch",
+      "kind": "osdu:wks:reference-data--SeismicMigrationType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TimeMig-Kirch",
+        "Code": "TimeMig-Kirch",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"PoststackTimeKirchhoff\" with Name=\"Poststack time - Kirchhoff\" instead. Imaging with approximately flat earth assumption applied to stacked traces using Kirchhoff algorithm",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:57:04+00:00"
+      }
+    }
+  ]
+}

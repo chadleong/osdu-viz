@@ -1,0 +1,168 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:FreeWaterContact",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Free Water Contact",
+        "Description": "Water, lower level.",
+        "Code": "FreeWaterContact",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:GasOilContact",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Oil Contact",
+        "Description": "The separation level between gas and oil.",
+        "Code": "GasOilContact",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:OilWaterContact",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil Water Contact",
+        "Description": "The separation level between oil and water.",
+        "Code": "OilWaterContact",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:GasWaterContact",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Water Contact",
+        "Description": "The separation level between water and gas.",
+        "Code": "GasWaterContact",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:Seal",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Seal",
+        "Description": "The sealing level.",
+        "Code": "Seal",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidContactType:WaterOilContact",
+      "kind": "osdu:wks:reference-data--FluidContactType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water Oil Contact",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"OilWaterContact\" with Name=\"Oil Water Contact\" instead. The separation level between water and oil.",
+        "Code": "WaterOilContact",
+        "Source": "Workbook ReferenceValues/Published/FluidContactType.1.xlsx; commit SHA 50429bc0.",
+        "CommitDate": "2024-02-13T07:24:24+00:00"
+      }
+    }
+  ]
+}

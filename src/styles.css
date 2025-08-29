@@ -707,14 +707,18 @@ body {
   font-size: 11px;
 }
 .badge.req {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
+  line-height: 1;
   color: #b91c1c; /* red-700 */
   background: #fee2e2; /* red-100 */
   border: 1px solid #fecaca; /* red-200 */
-  padding: 1px 5px;
+  padding: 2px 8px;
   border-radius: 999px;
-  margin-left: 7px;
+  min-height: 18px;
+  white-space: nowrap;
 }
 .muted {
   color: var(--muted);
@@ -741,7 +745,9 @@ body {
 .tooltip-body {
   flex: 1 1 auto;
   min-height: 0;
-  overflow: auto;
+  /* Only vertical scroll; hide horizontal */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Improve ReactFlow grid for light theme */
@@ -809,4 +815,27 @@ body {
 
 .dragging .react-flow__node {
   cursor: grabbing !important;
+}
+
+/* --- Tooltip wrapping to avoid horizontal scroll --- */
+.tooltip,
+.tooltip-header,
+.tooltip-section,
+.list {
+  max-width: 100%;
+}
+/* Ensure grid children can shrink and wrap instead of forcing overflow */
+.list-row > * {
+  min-width: 0;
+}
+/* Wrap long tokens like property names, types, descriptions, file paths */
+.k,
+.t,
+.d,
+.tooltip-title,
+.tooltip-sub,
+.tooltip-desc {
+  overflow-wrap: anywhere; /* allow breaks anywhere to avoid overflow */
+  word-break: break-word; /* legacy support */
+  white-space: normal; /* allow wrapping */
 }

@@ -1,0 +1,150 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--AliasNameTypeClass:StandardIdentifier",
+      "kind": "osdu:wks:reference-data--AliasNameTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Standard Identifier",
+        "ID": "StandardIdentifier",
+        "Description": "General purpose type for standard identifier.",
+        "Code": "StandardIdentifier",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/AliasNameTypeClass.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AliasNameTypeClass:SystemIdentifier",
+      "kind": "osdu:wks:reference-data--AliasNameTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "System Identifier",
+        "ID": "SystemIdentifier",
+        "Description": "General purpose type for System Identifier.",
+        "Code": "SystemIdentifier",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/AliasNameTypeClass.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AliasNameTypeClass:Moniker",
+      "kind": "osdu:wks:reference-data--AliasNameTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Moniker",
+        "ID": "Moniker",
+        "Description": "A nickname or an informal label, often drawing attention to a particular attribute.",
+        "AttributionAuthority": "OSDU",
+        "Code": "Moniker",
+        "Source": "Workbook ReferenceValues/Published/AliasNameTypeClass.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AliasNameTypeClass:Acronym",
+      "kind": "osdu:wks:reference-data--AliasNameTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acronym",
+        "ID": "Acronym",
+        "Description": "An abbreviation formed from the initial letters of the full name and pronounced as a word.",
+        "AttributionAuthority": "OSDU",
+        "Code": "Acronym",
+        "Source": "Workbook ReferenceValues/Published/AliasNameTypeClass.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AliasNameTypeClass:Abbreviation",
+      "kind": "osdu:wks:reference-data--AliasNameTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Abbreviation",
+        "ID": "Abbreviation",
+        "Description": "A shortened form of a word or phrase.",
+        "AttributionAuthority": "OSDU",
+        "Code": "Abbreviation",
+        "Source": "Workbook ReferenceValues/Published/AliasNameTypeClass.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

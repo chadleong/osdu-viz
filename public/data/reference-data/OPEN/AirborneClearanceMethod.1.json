@@ -1,0 +1,63 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--AirborneClearanceMethod:Constant",
+      "kind": "osdu:wks:reference-data--AirborneClearanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant",
+        "ID": "Constant",
+        "Description": "Constant height relative to a datum such as mean sea level ",
+        "Code": "Constant",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/AirborneClearanceMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AirborneClearanceMethod:Drape",
+      "kind": "osdu:wks:reference-data--AirborneClearanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drape",
+        "ID": "Drape",
+        "Description": "Flying height relative to the topography",
+        "Code": "Drape",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/AirborneClearanceMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

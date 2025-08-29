@@ -259,6 +259,10 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState([])
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState([])
   const [activeNode, setActiveNode] = useState<Node | null>(null)
+  // Track node opened via hover so we can auto-close on leave without affecting clicked/pinned selections
+  const [hoverNodeId, setHoverNodeId] = useState<string | null>(null)
+  // Track a pinned selection (from clicks). When pinned, disable hover behavior.
+  const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null)
   const [showLegend, setShowLegend] = useState(false)
   const [isDragging, setIsDragging] = useState(false)
 
@@ -403,6 +407,8 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   const onNodeClick = useCallback(
     (_e: any, node: Node) => {
       setActiveNode(node)
+      setHoverNodeId(null)
+      setPinnedNodeId(node.id)
       // emphasize neighborhood
       setRfNodes((ns) =>
         ns.map((n) => ({
@@ -460,6 +466,8 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
 
   const onPaneClick = useCallback(() => {
     setActiveNode(null)
+    setHoverNodeId(null)
+    setPinnedNodeId(null)
     setRfNodes((ns) => ns.map((n) => ({ ...n, style: {} })))
     setRfEdges((es) => es.map((e) => ({ ...e, style: {} })))
   }, [])
@@ -467,7 +475,10 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   // Close panel with Escape
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setActiveNode(null)
+      if (e.key === "Escape") {
+        setActiveNode(null)
+        setPinnedNodeId(null)
+      }
     }
     window.addEventListener("keydown", onKey)
     return () => window.removeEventListener("keydown", onKey)
@@ -503,15 +514,11 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
   }, [nodes])
 
   useEffect(() => {
-    // Update tooltip to show the main entity node when the main schema changes
-    const mainNode =
-      (laidOut.nodes || []).find((n) => (n as any).data?.nodeType === "entity") || (laidOut.nodes || [])[0]
-    if (mainNode) {
-      setActiveNode(mainNode as Node)
-    } else {
+    // When schema changes and nothing is selected, keep tooltip closed until user hovers
+    if (!pinnedNodeId) {
       setActiveNode(null)
     }
-  }, [mainSchemaKey])
+  }, [mainSchemaKey, pinnedNodeId])
 
   return (
     <div
@@ -531,6 +538,24 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
         onNodeClick={onNodeClick}
         onNodeDoubleClick={onNodeDoubleClick}
         onPaneClick={onPaneClick}
+        onNodeMouseEnter={(_e, node) => {
+          if (pinnedNodeId) return // disable hover while a node is selected
+          const d: any = node?.data || {}
+          // Open tooltip on hover for any ERD node, including the main entity, when not pinned
+          if (d?.nodeType === "entity" || d?.nodeType === "related-entity" || d?.nodeType === "abstract") {
+            setActiveNode(node)
+            setHoverNodeId(node.id)
+          }
+        }}
+        onNodeMouseLeave={(_e, node) => {
+          if (hoverNodeId && hoverNodeId === node.id) {
+            setHoverNodeId(null)
+            // If nothing is pinned, close tooltip when leaving node
+            if (!pinnedNodeId) {
+              setActiveNode((curr) => (curr && curr.id === node.id ? null : curr))
+            }
+          }
+        }}
         nodeTypes={nodeTypes}
         fitView
         fitViewOptions={{ padding: 0.2 }}

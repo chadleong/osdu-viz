@@ -1,0 +1,227 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:MeasuredDepth",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Measured depth",
+        "NameAlias": [
+          {
+            "AliasName": "MD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "MeasuredDepth",
+        "Description": "Measured depth is the measured distance along a wellbore path from the reference point. Unless the wellbore is perfectly aligned to the vertical plane, measured depth is not strictly a vertical measurement.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Depth_in_a_well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:TrueVerticalDepth",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True vertical depth",
+        "NameAlias": [
+          {
+            "AliasName": "TVD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "TrueVerticalDepth",
+        "Description": "True vertical depth is the distance in the vertical plane from the horizontal plane of the reference datum to a point within a wellbore. TVD is not reported for wells that are deemed to be vertical and/or have no wellbore directional survey.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Depth_in_a_well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:TrueVerticalHeight",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True vertical height",
+        "NameAlias": [
+          {
+            "AliasName": "ELEV",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Elevation",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "TrueVerticalHeight",
+        "Description": "True vertical height is the distance (upwards positive) in the vertical plane above the horizontal plane of the reference datum.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:ELEV",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Elevation",
+        "NameAlias": [
+          {
+            "AliasName": "ELEV",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "ELEV",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"TrueVerticalHeight\" with Name=\"True vertical height\" instead. Measurement is in the positive vertical direction and therefore represents an elevation",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:MD",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Measured depth",
+        "NameAlias": [
+          {
+            "AliasName": "MD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "MD",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"MeasuredDepth\" with Name=\"Measured depth\" instead. Measured depth is the measured distance along a wellbore path from the reference point. Unless the wellbore is perfectly aligned to the vertical plane, measured depth is not strictly a vertical measurement.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Depth_in_a_well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VerticalMeasurementPath:TVD",
+      "kind": "osdu:wks:reference-data--VerticalMeasurementPath:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True vertical depth",
+        "NameAlias": [
+          {
+            "AliasName": "TVD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "TVD",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"TrueVerticalDepth\" with Name=\"True vertical depth\" instead. True vertical depth is the distance in the vertical plane from the horizontal plane of the reference datum to a point within a wellbore. TVD is not reported for wells that are deemed to be vertical and/or have no wellbore directional survey.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Depth_in_a_well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-24T21:51:24+00:00"
+      }
+    }
+  ]
+}

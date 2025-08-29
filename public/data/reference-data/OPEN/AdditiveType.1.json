@@ -1,0 +1,1603 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Acid",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acid",
+        "Code": "Acid",
+        "Description": "A reactive liquid with a low pH.",
+        "AttributionPublication": "https://ihsmarkit.com/products/oil-gas-reference-materials.html",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Alcohol",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alcohol",
+        "Code": "Alcohol",
+        "Description": "A type of organic compound with at least one hydroxyl functional group (\u2212OH) bound to a saturated carbon atom.",
+        "AttributionPublication": "https://ihsmarkit.com/products/oil-gas-reference-materials.html",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Cement",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement",
+        "Code": "Cement",
+        "Description": "A manufactured substance used to form a solid binder and sealer.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Detergent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Detergent",
+        "Code": "Detergent",
+        "Description": "A surfactant with cleansing properties.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Dye",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dye",
+        "Code": "Dye",
+        "Description": "A colored substance that chemically bonds to the substrate to which it is applied.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Fiber",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiber",
+        "Code": "Fiber",
+        "Description": "A natural or manufactured substance that is significantly longer than it is wide.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:HydrofluoricAcid",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydrofluoric acid",
+        "Code": "HydrofluoricAcid",
+        "Description": "A mixture of hydrogen fluoride and water. It reacts with clays.",
+        "AttributionPublication": "https://ihsmarkit.com/products/oil-gas-reference-materials.html",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:LiquidCo2",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Liquid CO2",
+        "Code": "LiquidCo2",
+        "Description": "Carbon dioxide under pressure in the liquid phase.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:MethaneSulfonicAcid",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Methane sulfonic acid",
+        "Code": "MethaneSulfonicAcid",
+        "Description": "An acid for treating the matrix of carbonate reservoirs.",
+        "AttributionPublication": "https://ihsmarkit.com/products/oil-gas-reference-materials.html",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Polymer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Polymer",
+        "Code": "Polymer",
+        "Description": "A synthetic gelling agent.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Solvent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solvent",
+        "Code": "Solvent",
+        "Description": "A substance that will dissolve a solid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Accelerator",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Accelerator",
+        "Code": "Accelerator",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Accelerator\" with Name=\"Accelerator\" instead. A chemical that speeds up the rate of a reaction, especially in cement.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Anti%20Foam",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Anti Foam",
+        "Code": "Anti Foam",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Antifoam\" with Name=\"Antifoam\" instead. A material that destabilizes a foam.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Anti%20Gelation",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Anti gelation",
+        "Code": "Anti Gelation",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:AntiGelation\" with Name=\"AntiGelation\" instead. A substance that prevents or retards the formation of a gel.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Anti%20Settling",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Anti settling",
+        "Code": "Anti Settling",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:AntiSettling\" with Name=\"AntiSettling\" instead. A substance that prevents or retards the gravity separation of a solid from a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Anti%20Static",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Anti static",
+        "Code": "Anti Static",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Antistatic\" with Name=\"Antistatic\" instead. A substance that reduces or eliminates the buildup of static electricity.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Antifoam",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Antifoam",
+        "Code": "Antifoam",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Antifoam\" with Name=\"Antifoam\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Bactericide",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bactericide",
+        "Code": "Bactericide",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Biocide\" with Name=\"Biocide\" instead. A product that kills bacteria in the water or on the surface of the pipe.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Bond%20Accelerator",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bond accelerator",
+        "Code": "Bond Accelerator",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:BondAccelerator\" with Name=\"BondAccelerator\" instead. A substance that reduces the reaction time for materials to bond together, especially in cement.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Bonding%20Agent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bonding agent",
+        "Code": "Bonding Agent",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:BondingAgent\" with Name=\"BondingAgent\" instead. A substance that induces materials to bond together, especially in cement.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Corrosion%20Inhibitor",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrosion inhibitor",
+        "Code": "Corrosion Inhibitor",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:CorrosionInhibitor\" with Name=\"CorrosionInhibitor\" instead. A substance to prevent or slow down the reaction of a metal with a fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Defoamer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Defoamer",
+        "Code": "Defoamer",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Defoamer\" with Name=\"Defoamer\" instead. A chemical that reduces the stability of the bubble skin in a foam and cause the foam to break.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Dispenser",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dispenser",
+        "Code": "Dispenser",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Dispersant\" with Name=\"Dispersant\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Dispersant",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dispersant",
+        "Code": "Dispersant",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Dispersant\" with Name=\"Dispersant\" instead. A substance that aids in breaking up a mass of particles, bubbles or droplets.",
+        "AttributionPublication": "https://petrowiki.spe.org/Glossary:Dispersant",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Emulsifier",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Emulsifier",
+        "Code": "Emulsifier",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Emulsifier\" with Name=\"Emulsifier\" instead. A substance that creates or stabilizes an emulsion.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Expansion",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Expansion",
+        "Code": "Expansion",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Expansion\" with Name=\"Expansion\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Extender",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Extender",
+        "Code": "Extender",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Extender\" with Name=\"Extender\" instead. A substance that decreasing the density of a cement slurry.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Fe%20sequestering",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fe sequestering",
+        "Code": "Fe sequestering",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Chelant\" with Name=\"Chelant\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Flow%20Enhancer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flow enhancer",
+        "Code": "Flow Enhancer",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FlowEnhancer\" with Name=\"FlowEnhancer\" instead. A substance that improves the rate of flow of a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Fluid%20Loss",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fluid loss",
+        "Code": "Fluid Loss",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FluidLoss\" with Name=\"FluidLoss\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Foaming%20Agent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Foaming agent",
+        "Code": "Foaming Agent",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FoamingAgent\" with Name=\"FoamingAgent\" instead. A substance that encourages an emulsion, being the suspension of a gas in a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Formation%20Sealer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation sealer",
+        "Code": "Formation Sealer",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FormationSealer\" with Name=\"FormationSealer\" instead. A substance that improves the ability of a fluid to close a formation zone, thereby preventing lost circulation or improving zone abandonment.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Free%20Water",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Free water",
+        "Code": "Free Water",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FreeWaterControl\" with Name=\"FreeWaterControl\" instead. Water that is not in an emulsion or not chemically bonded.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Free%20Water%20Ctrl",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Free water ctrl",
+        "Code": "Free Water Ctrl",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FreeWaterControl\" with Name=\"FreeWaterControl\" instead. An additive to the cement slurry to address the potential problem of particle sedimentation.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Friction%20Reducing",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Friction reducing",
+        "Code": "Friction Reducing",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:FrictionReducer\" with Name=\"FrictionReducer\" instead. A material, usually a polymer that reduces the friction of flowing fluid in a conduit",
+        "AttributionPublication": "https://petrowiki.spe.org/Glossary:Friction_reducer",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Gas%20Migration",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas migration",
+        "Code": "Gas Migration",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:GasMigration\" with Name=\"GasMigration\" instead. Primarily used as an additive in a cement slurry",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Gelling%20Agent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gelling agent",
+        "Code": "Gelling Agent",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Gellant\" with Name=\"Gellant\" instead. A substance that increases the viscosity of a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Light%20Weight",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Light Weight",
+        "Code": "Light Weight",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Lightweight\" with Name=\"Lightweight\" instead. A substance that decreasing the density of a cement slurry.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Liquid%20Extender",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Liquid extender",
+        "Code": "Liquid Extender",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:LiquidExtender\" with Name=\"LiquidExtender\" instead. A substance that decreasing the density of a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Lost%20circulation",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lost circulation",
+        "Code": "Lost circulation",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:LostCirculation\" with Name=\"LostCirculation\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Mixing%20Fluid",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mixing fluid",
+        "Code": "Mixing Fluid",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:MixingFluid\" with Name=\"MixingFluid\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Mutual%20Solvent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mutual solvent",
+        "Code": "Mutual Solvent",
+        "InactiveIndicator": true,
+        "Description": "A chemical that have some common solvency for both water and oil materials.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Preflush",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Preflush",
+        "Code": "Preflush",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Preflush\" with Name=\"Preflush\" instead. A substance to dissolve carbonate or to displace and isolate incompatible formation fluids.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Retarder",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Retarder",
+        "Code": "Retarder",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Retarder\" with Name=\"Retarder\" instead. A chemical that slows a reaction, such as the set time of cement.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Retarder%20Acc",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Retarder acc",
+        "Code": "Retarder Acc",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Retarder\" with Name=\"Retarder\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Scale%20Inhibitor",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Scale inhibitor",
+        "Code": "Scale Inhibitor",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:ScaleInhibitor\" with Name=\"ScaleInhibitor\" instead. A substance that prevents the formation of iron scale.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Spacer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spacer",
+        "Code": "Spacer",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Spacer\" with Name=\"Spacer\" instead. In the context of pumping, a spacer is a fluid used between two fluids to prevent contamination.",
+        "AttributionPublication": "https://petrowiki.spe.org/Glossary:Spacer",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Stabilizer",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stabilizer",
+        "Code": "Stabilizer",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Stabilizer\" with Name=\"Stabilizer\" instead. A chemical or physical effect that prevents separation of two or more, normally immiscible phases.",
+        "AttributionPublication": "https://petrowiki.spe.org/Glossary:Emulsion_stabilizer",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Strength",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Strength",
+        "Code": "Strength",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Surfactant",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surfactant",
+        "NameAlias": [
+          {
+            "AliasName": "Foaming Agent",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Surfactant",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Surfactant\" with Name=\"Surfactant\" instead. A chemical that modifies the surface tension of a liquid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Suspending%20Agent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Suspending agent",
+        "Code": "Suspending Agent",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:SuspendingAgent\" with Name=\"SuspendingAgent\" instead. A surfactant used in acid-treating solutions and fracturing fluids to suspend insoluble fines.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Thixotropic",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Thixotropic",
+        "Code": "Thixotropic",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Thixotropic\" with Name=\"Thixotropic\" instead. A substance that changes the thixotropic property of a fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Viscosifier",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Viscosifier",
+        "Code": "Viscosifier",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:Viscosifier\" with Name=\"Viscosifier\" instead. A substance that increases the viscosity of a fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Water%20sensitive",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water sensitive",
+        "Code": "Water sensitive",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:ClayStabilizer\" with Name=\"ClayStabilizer\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AdditiveType:Weighting%20agent",
+      "kind": "osdu:wks:reference-data--AdditiveType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Weighting agent",
+        "Code": "Weighting agent",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"AdditiveRole:WeightingAgent\" with Name=\"WeightingAgent\" instead. A substance that increases the density of a fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-08-13T19:15:31+00:00"
+      }
+    }
+  ]
+}

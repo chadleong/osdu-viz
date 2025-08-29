@@ -1,0 +1,418 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:AccidentalSidetrack",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Accidental sidetrack",
+        "Code": "AccidentalSidetrack",
+        "Description": "Wellbore was accidentally drilled from parent wellbore - unintentional sidetrack",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:Bypass",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bypass",
+        "Code": "Bypass",
+        "Description": "Recover the original trajectory",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:CollisionRisk",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Collision risk",
+        "Code": "CollisionRisk",
+        "Description": "Wellbore drilled to address anti-collision risk of previous wellbore. Redirected to avoid collision with an existing wellbore.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:DeviationControl",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deviation control",
+        "Code": "DeviationControl",
+        "Description": "Wellbore constructed to resolve wellbore trajectory problem e.g. off plan",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:HoleCondition",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hole condition",
+        "Code": "HoleCondition",
+        "Description": "Wellbore constructed due to hole condition issues in previous wellbore",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:LateralLeg",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lateral Leg",
+        "Code": "LateralLeg",
+        "Description": "Wellbore constructed as a leg in a multi-lateral well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:LocatorHole",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Locator hole",
+        "Code": "LocatorHole",
+        "Description": "Wellbore drilled as subsurface locator",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:MainWellbore",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Main wellbore",
+        "Code": "MainWellbore",
+        "Description": "Initial Wellbore planned for the Well",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:NewTarget",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "New target",
+        "Code": "NewTarget",
+        "Description": "Wellbore constructed to drill to changed/new subsurface target location",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:PilotHole",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pilot Hole",
+        "Code": "PilotHole",
+        "Description": "Wellbore drilled as a small diameter pilot hole",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:ProgramChange",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Program change",
+        "NameAlias": [
+          {
+            "AliasName": "Programme change",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "ProgramChange",
+        "Description": "Wellbore constructed due to change in well programme",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:Respud",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Respud",
+        "Code": "Respud",
+        "Description": "Initial wellbore for re-spudded well e.g. previous well lost due to surface hole problem",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:SidetrackDueToFish",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidetrack due to fish",
+        "NameAlias": [
+          {
+            "AliasName": "Bypass due to fish",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "SidetrackDueToFish",
+        "Description": "Wellbore drilled due to previous wellbore being lost due to equipment left in hole.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreReason:Unspecified",
+      "kind": "osdu:wks:reference-data--WellboreReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified",
+        "NameAlias": [
+          {
+            "AliasName": "Unknown",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Unspecified",
+        "Description": "Reason for Wellbore not known",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:21:07+00:00"
+      }
+    }
+  ]
+}

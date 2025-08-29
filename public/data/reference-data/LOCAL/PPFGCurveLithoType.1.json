@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Sand",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sand",
+        "Description": "Curve associated to a sand dominant lithology",
+        "Code": "Sand",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Shale",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shale",
+        "Description": "Curve associated to a shale dominant lithology",
+        "Code": "Shale",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Carbonate",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbonate",
+        "Description": "Curve associated to a carbonate dominant lithology",
+        "Code": "Carbonate",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Salt",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Salt",
+        "Description": "Curve associated to a salt dominant lithology",
+        "Code": "Salt",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Igneous",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Igneous",
+        "Description": "Curve associated to a igneous rock dominant lithology",
+        "Code": "Igneous",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveLithoType:Composite",
+      "kind": "osdu:wks:reference-data--PPFGCurveLithoType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Composite",
+        "Description": "Curve associated to a composite lithology",
+        "Code": "Composite",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveLithoType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

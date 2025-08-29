@@ -1,0 +1,3224 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:AbnormalTendencyChanges",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Abnormal Tendency Changes",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to abnormal tendency changes",
+        "Code": "AbnormalTendencyChanges",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Asset",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Asset",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to asset",
+        "Code": "Asset",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Automotive",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Automotive",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to automotive",
+        "Code": "Automotive",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Ballooning",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ballooning",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to ballooning",
+        "Code": "Ballooning",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:BedParallel",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bed Parallel",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to bed parallel",
+        "Code": "BedParallel",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:BhaChangeForDirectional",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bha Change For Directional",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to BHA change for directional",
+        "Code": "BhaChangeForDirectional",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:BitBalling",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bit Balling",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to bit balling",
+        "Code": "BitBalling",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:BitOrBhaPerformance",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bit Or Bha Performance",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to bit or BHA performance",
+        "Code": "BitOrBhaPerformance",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:BlowOutPreventerEvents",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Blow Out Preventer Events",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to blow out preventer events",
+        "Code": "BlowOutPreventerEvents",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Breakouts",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Breakouts",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to breakouts",
+        "Code": "Breakouts",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Broaching",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Broaching",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to broaching",
+        "Code": "Broaching",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CasingCollapse",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Casing Collapse",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Casing:",
+        "Description": "Use to categorize a risk as related to casing collapse",
+        "Code": "CasingCollapse",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CasingRotationOrReciprocationRequired",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Casing Rotation Or Reciprocation Required",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Casing:",
+        "Description": "Use to categorize a risk as related to casing rotation or reciprocation required.",
+        "Code": "CasingRotationOrReciprocationRequired",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CasingSurgeLosses",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Casing Surge Losses",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Casing:",
+        "Description": "Use to categorize a risk as related to casing surge losses",
+        "Code": "CasingSurgeLosses",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CirculatingEquipmentFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Circulating Equipment Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to circulating equipment failure",
+        "Code": "CirculatingEquipmentFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CompletionEquipmentFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completion Equipment Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Completion:",
+        "Description": "Use to categorize a risk as related to completion equipment failure",
+        "Code": "CompletionEquipmentFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:CompletionOrCasing",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completion Or Casing",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Completion:",
+        "Description": "Use to categorize a risk as related to completion or casing",
+        "Code": "CompletionOrCasing",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DelayDueToPoliticalUnrest",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Delay Due To Political Unrest",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to delay due to political unrest",
+        "Code": "DelayDueToPoliticalUnrest",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DownholeTool",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Downhole Tool",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to downhole tool",
+        "Code": "DownholeTool",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DrillingGreaterThan1000Feet%2FDay",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drilling Greater Than 1000 Feet/Day",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to drilling greater than 1000 feet/day",
+        "Code": "DrillingGreaterThan1000Feet/Day",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DrillingGreaterThan2000Feet%2FDay",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drilling Greater Than 2000 Feet/Day",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to drilling greater than 2000 feet/day",
+        "Code": "DrillingGreaterThan2000Feet/Day",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DrillingLessThan20Feet%2FDay",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drilling Less Than 20 Feet/Day",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to drilling less than 20 feet/day",
+        "Code": "DrillingLessThan20Feet/Day",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:DrillingOptimization",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drilling Optimization",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to drilling optimization",
+        "Code": "DrillingOptimization",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:EarlyCementSetup",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Early Cement Setup",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to early cement setup",
+        "Code": "EarlyCementSetup",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ElectricalSystemFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Electrical System Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to electrical system failure",
+        "Code": "ElectricalSystemFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Environmental",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Environmental",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:HealthSafetyAndEnvironment:",
+        "Description": "Use to categorize a risk as related to environmental",
+        "Code": "Environmental",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveBitWearOrGauge",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Bit Wear Or Gauge",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to excessive bit wear or gauge",
+        "Code": "ExcessiveBitWearOrGauge",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveCasingWearOrCuttings",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Casing Wear Or Cuttings",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Casing:",
+        "Description": "Use to categorize a risk as related to excessive casing wear or cuttings",
+        "Code": "ExcessiveCasingWearOrCuttings",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveCirculation",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Circulation",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to excessive circulation",
+        "Code": "ExcessiveCirculation",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveDoglegs",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Doglegs",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to excessive doglegs",
+        "Code": "ExcessiveDoglegs",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveDrag",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Drag",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to excessive drag",
+        "Code": "ExcessiveDrag",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveFormationDamageOrSkin",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Formation Damage Or Skin",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to excessive formation damage or skin",
+        "Code": "ExcessiveFormationDamageOrSkin",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessivePipeCementScaling",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Pipe Cement Scaling",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to excessive pipe cement scaling",
+        "Code": "ExcessivePipeCementScaling",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveTimeForBhaMakeup",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Time For Bha Makeup",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to excessive time for BHA makeup",
+        "Code": "ExcessiveTimeForBhaMakeup",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ExcessiveTorque",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Excessive Torque",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to excessive torque",
+        "Code": "ExcessiveTorque",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:FailedInspectionsOrFatigueWear",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Failed Inspections Or Fatigue Wear",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to failed inspections or fatigue wear",
+        "Code": "FailedInspectionsOrFatigueWear",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Fishing",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fishing",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to fishing",
+        "Code": "Fishing",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:FormationIntegrityTest",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Integrity Test",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to formation integrity test",
+        "Code": "FormationIntegrityTest",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:FractureProblems",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Problems",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to fracture problems",
+        "Code": "FractureProblems",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:GasHydrates",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Hydrates",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to gas hydrates",
+        "Code": "GasHydrates",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:GasKick",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Kick",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to the occurrence of a gas kick",
+        "Code": "GasKick",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Geosteering",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Geosteering",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to geosteering",
+        "Code": "Geosteering",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:GoodHoleCleaningAtHighRop",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Good Hole Cleaning At High Rop",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to good hole cleaning at high ROP",
+        "Code": "GoodHoleCleaningAtHighRop",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:GumboProblems",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gumbo Problems",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to gumbo problems",
+        "Code": "GumboProblems",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:HighEcd-RheologyRelated",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Ecd - Rheology Related",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to high ECD rheology related",
+        "Code": "HighEcd-RheologyRelated",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:HighMudWeight",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Mud Weight",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to high mud weight",
+        "Code": "HighMudWeight",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:HighRateOfBitPenetration",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Rate Of Bit Penetration",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to high rate of bit penetration",
+        "Code": "HighRateOfBitPenetration",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:HoistingEquipmentFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hoisting Equipment Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to hoisting equipment failure",
+        "Code": "HoistingEquipmentFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:HealthSafetyAndEnvironment",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Health Safety and Environment",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:HealthSafetyAndEnvironment:",
+        "Description": "Use to categorize a risk as related to HSE",
+        "Code": "HealthSafetyAndEnvironment",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:In-FieldReferencing-Ifr-Actions",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In-Field Referencing (Ifr) Actions",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to in-field referencing (IFR) actions",
+        "Code": "In-FieldReferencing-Ifr-Actions",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Information",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Information",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to information",
+        "Code": "Information",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:JunkInHole",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Junk In Hole",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to junk in hole",
+        "Code": "JunkInHole",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Leak-OffTest",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Leak-Off Test",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to leak-off test",
+        "Code": "Leak-OffTest",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:LossCirculation",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Loss Circulation",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to the occurrence of lost circulation",
+        "Code": "LossCirculation",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:LostConesOrBrokenCutters",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lost Cones Or Broken Cutters",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to lost cones or broken cutters",
+        "Code": "LostConesOrBrokenCutters",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:LowRateOfBitPenetration",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low Rate Of Bit Penetration",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to low rate of bit penetration",
+        "Code": "LowRateOfBitPenetration",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Mechanical",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mechanical",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to mechanical",
+        "Code": "Mechanical",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Milling",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Milling",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to milling",
+        "Code": "Milling",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:MiscellaneousRigEquipment",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Miscellaneous Rig Equipment",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to miscellaneous rig equipment",
+        "Code": "MiscellaneousRigEquipment",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:MotorOrRotarySteerableSystemFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Motor Or Rotary Steerable System Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to motor or rotary steerable system failure",
+        "Code": "MotorOrRotarySteerableSystemFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:MudStabilityProblems",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Stability Problems",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to mud stability problems",
+        "Code": "MudStabilityProblems",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:MudWeightChange",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Weight Change",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to mud weight change",
+        "Code": "MudWeightChange",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Other",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Other",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to other",
+        "Code": "Other",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:OtherInfluxOrKicks",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Other Influx Or Kicks",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to the occurrence of other influx or kicks",
+        "Code": "OtherInfluxOrKicks",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:PendingAnalysis",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pending Analysis",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to pending analysis",
+        "Code": "PendingAnalysis",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:PerformingAKill",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Performing A Kill",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to performing a well kill",
+        "Code": "PerformingAKill",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Personnel",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Personnel",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to personnel",
+        "Code": "Personnel",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:PitGainOrLoss",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pit Gain Or Loss",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to pit gain or loss",
+        "Code": "PitGainOrLoss",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:PoorHoleCleaning",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Poor Hole Cleaning",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to the occurrence of poor hole cleaning",
+        "Code": "PoorHoleCleaning",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:PorePressure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to pore pressure",
+        "Code": "PorePressure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ReamingGreaterThan2Hours",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reaming Greater Than 2 Hours",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to reaming greater than 2 hours",
+        "Code": "ReamingGreaterThan2Hours",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Resurveying",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Resurveying",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to resurveying",
+        "Code": "Resurveying",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:RigCommunications",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rig Communications",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to rig communications",
+        "Code": "RigCommunications",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:RigMove",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rig Move",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to rig move",
+        "Code": "RigMove",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:RiserDisconnect",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Riser Disconnect",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to riser disconnect",
+        "Code": "RiserDisconnect",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ShallowGasFlow",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shallow Gas Flow",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to shallow gas flow",
+        "Code": "ShallowGasFlow",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ShallowWaterInflux",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shallow Water Influx",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to the occurrence of a shallow water influx",
+        "Code": "ShallowWaterInflux",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ShoeFailures",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shoe Failures",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to shoe failures",
+        "Code": "ShoeFailures",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Sidetrack",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidetrack",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to sidetrack",
+        "Code": "Sidetrack",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:SloughingOrPackoffs",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sloughing Or Packoffs",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Hydraulics:",
+        "Description": "Use to categorize a risk as related to sloughing or packoffs",
+        "Code": "SloughingOrPackoffs",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:SpecialAdditivesNeeded",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Special Additives Needed",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to the need for special fluid additives",
+        "Code": "SpecialAdditivesNeeded",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:SqueezeJobs",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Squeeze Jobs",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to squeeze jobs",
+        "Code": "SqueezeJobs",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:StickAndSlip",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stick And Slip",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to stick and slip",
+        "Code": "StickAndSlip",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Stratigraphy",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stratigraphy",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Other:",
+        "Description": "Use to categorize a risk as related to stratigraphy",
+        "Code": "Stratigraphy",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:StuckCasingOrCompletion",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stuck Casing Or Completion",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to stuck casing or completion",
+        "Code": "StuckCasingOrCompletion",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:StuckPipe",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stuck Pipe",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to stuck pipe",
+        "Code": "StuckPipe",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:SurfaceInstrumentationProblems",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surface Instrumentation Problems",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to surface instrumentation problems",
+        "Code": "SurfaceInstrumentationProblems",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:SurfaceSystem",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surface System",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to surface system",
+        "Code": "SurfaceSystem",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Tectonics",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tectonics",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to tectonics",
+        "Code": "Tectonics",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:TightHoleOrOverpull",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tight Hole Or Overpull",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to tight hole or overpull",
+        "Code": "TightHoleOrOverpull",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Time",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Time",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to time",
+        "Code": "Time",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:ToolOrEquipmentFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tool Or Equipment Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to tool or equipment failure",
+        "Code": "ToolOrEquipmentFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:TopdriveFailure",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Topdrive Failure",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to topdrive failure",
+        "Code": "TopdriveFailure",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:TripsGreaterThan24Hours",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trips Greater Than 24 Hours",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to trips greater than 24 hours",
+        "Code": "TripsGreaterThan24Hours",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:TwistOff",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Twist Off",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to twist off",
+        "Code": "TwistOff",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:UnevenWearOfBha",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Uneven Wear Of Bha",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to uneven wear of BHA",
+        "Code": "UnevenWearOfBha",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:UnevenWearOfDrillstring",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Uneven Wear Of Drillstring",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to uneven wear of drillstring",
+        "Code": "UnevenWearOfDrillstring",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:UnstableZones",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unstable Zones",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to unstable zones",
+        "Code": "UnstableZones",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Vibration-Axial",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vibration - Axial",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to vibration - axial",
+        "Code": "Vibration-Axial",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Vibration-Torsional",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vibration - Torsional",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to vibration - torsional",
+        "Code": "Vibration-Torsional",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Vibration-Transverse",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vibration - Transverse",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to vibration - transverse",
+        "Code": "Vibration-Transverse",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:VibrationUnknownOrRoughDrilling",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vibration Unknown Or Rough Drilling",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to vibration unknown or rough drilling",
+        "Code": "VibrationUnknownOrRoughDrilling",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WaitingOnDecisions",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Waiting On Decisions",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to waiting on decisions",
+        "Code": "WaitingOnDecisions",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WaitingOnTools",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Waiting On Tools",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to waiting on tools",
+        "Code": "WaitingOnTools",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WaitingOnWeather",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Waiting On Weather",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:TimeRelated:",
+        "Description": "Use to categorize a risk as related to waiting on weather",
+        "Code": "WaitingOnWeather",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:Washouts",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Washouts",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:EquipmentFailure:",
+        "Description": "Use to categorize a risk as related to washouts",
+        "Code": "Washouts",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WellCollision-Actual",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Collision - Actual",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to well collision - actual",
+        "Code": "WellCollision-Actual",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WellCollision-Technical",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Collision - Technical",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:DirectionalDrilling:",
+        "Description": "Use to categorize a risk as related to well collision - technical",
+        "Code": "WellCollision-Technical",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WellboreStability",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellbore Stability",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:WellboreStability:",
+        "Description": "Use to categorize a risk as related to wellbore stability",
+        "Code": "WellboreStability",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WirelineStuckInHole",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wireline Stuck In Hole",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Mechanical:",
+        "Description": "Use to categorize a risk as related to wireline stuck in hole",
+        "Code": "WirelineStuckInHole",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RiskSubCategory:WrongTotalFlowArea",
+      "kind": "osdu:wks:reference-data--RiskSubCategory:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wrong Total Flow Area",
+        "RiskCategoryID": "{{NAMESPACE}}:reference-data--RiskCategory:Bit:",
+        "Description": "Use to categorize a risk as related to wrong total flow area",
+        "Code": "WrongTotalFlowArea",
+        "AttributionAuthority": "WITSML",
+        "Source": "Workbook ReferenceValues/Published/RiskSubCategory.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

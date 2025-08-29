@@ -1,0 +1,167 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:I_MINUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "I_MINUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the descending I direction",
+        "Code": "I_MINUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:I_PLUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "I_PLUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the ascending I direction",
+        "Code": "I_PLUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:J_MINUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "J_MINUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the descending J direction",
+        "Code": "J_MINUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:J_PLUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "J_PLUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the ascending J direction",
+        "Code": "J_PLUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:K_MINUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "K_MINUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the descending K direction",
+        "Code": "K_MINUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IjkCellFace:K_PLUS",
+      "kind": "osdu:wks:reference-data--IjkCellFace:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "K_PLUS",
+        "Description": "The face of the IJK cell (hexahedron) which is on the ascending K direction",
+        "Code": "K_PLUS",
+        "Source": "Workbook ReferenceValues/Published/IjkCellFace.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

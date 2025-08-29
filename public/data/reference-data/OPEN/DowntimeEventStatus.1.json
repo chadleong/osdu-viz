@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:Suspended",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Suspended",
+        "ID": "Suspended",
+        "Code": "Suspended",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:Complete",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Complete",
+        "ID": "Complete",
+        "Code": "Complete",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:Evaluation",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Evaluation",
+        "ID": "Evaluation",
+        "Code": "Evaluation",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:Open",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Open",
+        "ID": "Open",
+        "Code": "Open",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:ShutIn",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shut In",
+        "ID": "ShutIn",
+        "Code": "ShutIn",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeEventStatus:Testing",
+      "kind": "osdu:wks:reference-data--DowntimeEventStatus:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Testing",
+        "ID": "Testing",
+        "Code": "Testing",
+        "AttributionAuthority": "HAL",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeEventStatus.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

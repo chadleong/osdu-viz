@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GrainDensityMeasurementType:BoylesLaw",
+      "kind": "osdu:wks:reference-data--GrainDensityMeasurementType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Boyles law",
+        "Code": "BoylesLaw",
+        "Description": "Grain density is calculated by using the expansion of gas and Boyle's law to determine the grain volume and a scale for mass.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:20:22+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GrainDensityMeasurementType:Buoyancy",
+      "kind": "osdu:wks:reference-data--GrainDensityMeasurementType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Buoyancy",
+        "Code": "Buoyancy",
+        "Description": "A technique for measuring the\u00a0bulk volume\u00a0of a\u00a0core\u00a0sample by submerging it in a bath of mercury or other liquid and observing the increase in weight of the bath, following Archimedes principle.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-11-09T16:20:22+00:00"
+      }
+    }
+  ]
+}

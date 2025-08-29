@@ -1,0 +1,4289 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC2",
+        "ID": "nc2",
+        "Description": "C2 normal alkane (ethane)",
+        "Code": "nc2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC3",
+        "ID": "nc3",
+        "Description": "Normal propane",
+        "Code": "nc3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic4",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC4",
+        "ID": "ic4",
+        "Description": "iso-Butane",
+        "Code": "ic4",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc4",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC4",
+        "ID": "nc4",
+        "Description": "Normal butane",
+        "Code": "nc4",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic5",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC5",
+        "ID": "ic5",
+        "Description": "iso-Pentane",
+        "Code": "ic5",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc5",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC5",
+        "ID": "nc5",
+        "Description": "Normal pentane",
+        "Code": "nc5",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmb22",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMB22",
+        "ID": "dmb22",
+        "Description": "2,2-dimethylbutane",
+        "Code": "dmb22",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:cp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CP",
+        "ID": "cp",
+        "Description": "Cyclopentane",
+        "Code": "cp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmb23cp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMB23CP",
+        "ID": "dmb23cp",
+        "Description": "2,3-dimethylbutane + Cyclopentane",
+        "Code": "dmb23cp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmb23",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMB23",
+        "ID": "dmb23",
+        "Description": "2,3-dimethylbutane",
+        "Code": "dmb23",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mp2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MP2",
+        "ID": "mp2",
+        "Description": "2-methylphenanthrene",
+        "Code": "mp2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mp3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MP3",
+        "ID": "mp3",
+        "Description": "3-methylphenanthrene",
+        "Code": "mp3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc6",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC6",
+        "ID": "nc6",
+        "Description": "Normal hexane",
+        "Code": "nc6",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmp22",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMP22",
+        "ID": "dmp22",
+        "Description": "2,2-dimethylpentane",
+        "Code": "dmp22",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MCP",
+        "ID": "mcp",
+        "Description": "Methylcyclopentane",
+        "Code": "mcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmp24",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMP24",
+        "ID": "dmp24",
+        "Description": "2,4-dimethylpentane",
+        "Code": "dmp24",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tmb223",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TMB223",
+        "ID": "tmb223",
+        "Description": "2,2,3-trimethylbutane",
+        "Code": "tmb223",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:benz",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BENZ",
+        "ID": "benz",
+        "Description": "Benzene",
+        "Code": "benz",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmp33",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMP33",
+        "ID": "dmp33",
+        "Description": "3,3-dimethylpentane",
+        "Code": "dmp33",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ch",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CH",
+        "ID": "ch",
+        "Description": "Cyclohexane",
+        "Code": "ch",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mh2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MH2",
+        "ID": "mh2",
+        "Description": "2-methylhexane",
+        "Code": "mh2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmp23",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMP23",
+        "ID": "dmp23",
+        "Description": "2,3-dimethylpentane",
+        "Code": "dmp23",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmcp11",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMCP11",
+        "ID": "dmcp11",
+        "Description": "1,1-dimethylcyclopentane",
+        "Code": "dmcp11",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mh3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MH3",
+        "ID": "mh3",
+        "Description": "3-methylhexane",
+        "Code": "mh3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:cis13dmcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CIS13DMCP",
+        "ID": "cis13dmcp",
+        "Description": "cis-1,3-dimethylcyclopentane",
+        "Code": "cis13dmcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:trans13dmcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TRANS13DMCP",
+        "ID": "trans13dmcp",
+        "Description": "trans-1,3-dimethylcyclopentane",
+        "Code": "trans13dmcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ep3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EP3",
+        "ID": "ep3",
+        "Description": "3-ethylpentane",
+        "Code": "ep3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:trans12dmcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TRANS12DMCP",
+        "ID": "trans12dmcp",
+        "Description": "trans-1,2-dimethylcyclopentane",
+        "Code": "trans12dmcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc7",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC7",
+        "ID": "nc7",
+        "Description": "Normal heptane",
+        "Code": "nc7",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mch",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MCH",
+        "ID": "mch",
+        "Description": "Methylcyclohexane",
+        "Code": "mch",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tmcp113",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TMCP113",
+        "ID": "tmcp113",
+        "Description": "1,1,3-trimethylcyclopentane",
+        "Code": "tmcp113",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ecp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ECP",
+        "ID": "ecp",
+        "Description": "Ethylcyclopentane",
+        "Code": "ecp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tmcp124",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TMCP124",
+        "ID": "tmcp124",
+        "Description": "1,2,4-trimethylcyclopentane",
+        "Code": "tmcp124",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tmcp123",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TMCP123",
+        "ID": "tmcp123",
+        "Description": "1,2,3-trimethylcyclopentane",
+        "Code": "tmcp123",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tol",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TOL",
+        "ID": "tol",
+        "Description": "Toluene",
+        "Code": "tol",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mc72",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MC72",
+        "ID": "mc72",
+        "Description": "2-methylheptane",
+        "Code": "mc72",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mc7312mp3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MC7312MP3",
+        "ID": "mc7312mp3",
+        "Description": "3-methylheptane + 1,2-3-methylcyclopentane",
+        "Code": "mc7312mp3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc8",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC8",
+        "ID": "nc8",
+        "Description": "Normal octane",
+        "Code": "nc8",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:npcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NPCP",
+        "ID": "npcp",
+        "Description": "n-Propylcyclopentane",
+        "Code": "npcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:cis12dmch",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CIS12DMCH",
+        "ID": "cis12dmch",
+        "Description": "cis-1,2-dimethylcyclohexane",
+        "Code": "cis12dmch",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tmch113",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TMCH113",
+        "ID": "tmch113",
+        "Description": "1,1,3-trimethylcyclohexane",
+        "Code": "tmch113",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:eb",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EB",
+        "ID": "eb",
+        "Description": "Ethylbenzene",
+        "Code": "eb",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic9",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC9",
+        "ID": "ic9",
+        "Description": "Iso Nonane",
+        "Code": "ic9",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:pmxyl",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PMXYL",
+        "ID": "pmxyl",
+        "Description": "Para/Meta-xylene",
+        "Code": "pmxyl",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mo24",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MO24",
+        "ID": "mo24",
+        "Description": "2 + 4-Methyloctane",
+        "Code": "mo24",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mo3",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MO3",
+        "ID": "mo3",
+        "Description": "3-methyloctane",
+        "Code": "mo3",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:xyl",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "XYL",
+        "ID": "xyl",
+        "Description": "Xylene",
+        "Code": "xyl",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mxyl",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MXYL",
+        "ID": "mxyl",
+        "Description": "Meta-xylene",
+        "Code": "mxyl",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:pxyl",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PXYL",
+        "ID": "pxyl",
+        "Description": "Para-xylene",
+        "Code": "pxyl",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:oxyl",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OXYL",
+        "ID": "oxyl",
+        "Description": "Ortho-xylene",
+        "Code": "oxyl",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc9",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC9",
+        "ID": "nc9",
+        "Description": "C9 normal alkane",
+        "Code": "nc9",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:tbcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TBCP",
+        "ID": "tbcp",
+        "Description": "Tertbutylcyclopentane",
+        "Code": "tbcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:sbcp",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SBCP",
+        "ID": "sbcp",
+        "Description": "Secbutylcyclopentane",
+        "Code": "sbcp",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:npch",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NPCH",
+        "ID": "npch",
+        "Description": "n-Propylcyclohexane",
+        "Code": "npch",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mn2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MN2",
+        "ID": "mn2",
+        "Description": "2-methylnonane",
+        "Code": "mn2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:oee",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OEE",
+        "ID": "oee",
+        "Description": "Ortho-ethyl-toluene",
+        "Code": "oee",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dmo36",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DMO36",
+        "ID": "dmo36",
+        "Description": "3,6-dimethyloctane",
+        "Code": "dmo36",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic10",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC10",
+        "ID": "ic10",
+        "Description": "C1 isoprenoid",
+        "Code": "ic10",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc10",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC10",
+        "ID": "nc10",
+        "Description": "Normal Alkane C1",
+        "Code": "nc10",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:md4",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MD4",
+        "ID": "md4",
+        "Description": "4-methyldecane",
+        "Code": "md4",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic11",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC11",
+        "ID": "ic11",
+        "Description": "C11 isoprenoid",
+        "Code": "ic11",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc11",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC11",
+        "ID": "nc11",
+        "Description": "Normal Alkane C11",
+        "Code": "nc11",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:mu4",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MU4",
+        "ID": "mu4",
+        "Description": "4-methylundecane",
+        "Code": "mu4",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ip12",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IP12",
+        "ID": "ip12",
+        "Description": "C12 isoprenoid",
+        "Code": "ip12",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc12",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC12",
+        "ID": "nc12",
+        "Description": "C12 normal alkane",
+        "Code": "nc12",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic13",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC13",
+        "ID": "ic13",
+        "Description": "C13 isoprenoid",
+        "Code": "ic13",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic14",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC14",
+        "ID": "ic14",
+        "Description": "C14 isoprenoid",
+        "Code": "ic14",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc13",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC13",
+        "ID": "nc13",
+        "Description": "Normal Alkane C13",
+        "Code": "nc13",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic15",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC15",
+        "ID": "ic15",
+        "Description": "C15 isoprenoid",
+        "Code": "ic15",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc14",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC14",
+        "ID": "nc14",
+        "Description": "C14 normal alkane",
+        "Code": "nc14",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic16",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC16",
+        "ID": "ic16",
+        "Description": "C16 isoprenoid",
+        "Code": "ic16",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc15",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC15",
+        "ID": "nc15",
+        "Description": "Normal Alkane C15",
+        "Code": "nc15",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc16",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC16",
+        "ID": "nc16",
+        "Description": "C16 normal alkane",
+        "Code": "nc16",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:ic18",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IC18",
+        "ID": "ic18",
+        "Description": "C18 isoprenoid",
+        "Code": "ic18",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc17",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC17",
+        "ID": "nc17",
+        "Description": "C17 normal alkane",
+        "Code": "nc17",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:pristane",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRISTANE",
+        "ID": "pristane",
+        "Description": "C19 isoprenoid (pristane)",
+        "Code": "pristane",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:phen",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PHEN",
+        "ID": "phen",
+        "Description": "Phenanthrene",
+        "Code": "phen",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc18",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC18",
+        "ID": "nc18",
+        "Description": "C18 normal alkane",
+        "Code": "nc18",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:phytane",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PHYTANE",
+        "ID": "phytane",
+        "Description": "C2 isoprenoid (phytane)",
+        "Code": "phytane",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc19",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC19",
+        "ID": "nc19",
+        "Description": "C19 normal alkane",
+        "Code": "nc19",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc20",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC20",
+        "ID": "nc20",
+        "Description": "C2 normal alkane",
+        "Code": "nc20",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc21",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC21",
+        "ID": "nc21",
+        "Description": "C21 normal alkane",
+        "Code": "nc21",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:c25hbi",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C25HBI",
+        "ID": "c25hbi",
+        "Description": "Highly branched isoprenoid C25",
+        "Code": "c25hbi",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc22",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC22",
+        "ID": "nc22",
+        "Description": "C22 normal alkane",
+        "Code": "nc22",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc23",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC23",
+        "ID": "nc23",
+        "Description": "C23 normal alkane",
+        "Code": "nc23",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc24",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC24",
+        "ID": "nc24",
+        "Description": "C24 normal alkane",
+        "Code": "nc24",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc25",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC25",
+        "ID": "nc25",
+        "Description": "C25 normal alkane",
+        "Code": "nc25",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc26",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC26",
+        "ID": "nc26",
+        "Description": "C26 normal alkane",
+        "Code": "nc26",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc27",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC27",
+        "ID": "nc27",
+        "Description": "C27 normal alkane",
+        "Code": "nc27",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc28",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC28",
+        "ID": "nc28",
+        "Description": "C28 normal alkane",
+        "Code": "nc28",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc29",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC29",
+        "ID": "nc29",
+        "Description": "C29 normal alkane",
+        "Code": "nc29",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc30",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC30",
+        "ID": "nc30",
+        "Description": "C3 normal alkane",
+        "Code": "nc30",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc31",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC31",
+        "ID": "nc31",
+        "Description": "C31 normal alkane",
+        "Code": "nc31",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc32",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC32",
+        "ID": "nc32",
+        "Description": "C32 normal alkane",
+        "Code": "nc32",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc33",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC33",
+        "ID": "nc33",
+        "Description": "C33 normal alkane",
+        "Code": "nc33",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc34",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC34",
+        "ID": "nc34",
+        "Description": "C34 normal alkane",
+        "Code": "nc34",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc35",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC35",
+        "ID": "nc35",
+        "Description": "C35 normal alkane",
+        "Code": "nc35",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc36",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC36",
+        "ID": "nc36",
+        "Description": "C36 normal alkane",
+        "Code": "nc36",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc37",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC37",
+        "ID": "nc37",
+        "Description": "C37 normal alkane",
+        "Code": "nc37",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc38",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC38",
+        "ID": "nc38",
+        "Description": "C38 normal alkane",
+        "Code": "nc38",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc39",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC39",
+        "ID": "nc39",
+        "Description": "C39 normal alkane",
+        "Code": "nc39",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc40",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC40",
+        "ID": "nc40",
+        "Description": "C4 normal alkane",
+        "Code": "nc40",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:nc41",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NC41",
+        "ID": "nc41",
+        "Description": "C41 normal alkane",
+        "Code": "nc41",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:t20",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "T20",
+        "ID": "t20",
+        "Description": "C20 tricyclic terpane",
+        "Code": "t20",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:t21",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "T21",
+        "ID": "t21",
+        "Description": "C21 tricyclic terpane",
+        "Code": "t21",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:t23",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "T23",
+        "ID": "t23",
+        "Description": "C23 tricyclic terpane",
+        "Code": "t23",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h29",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H29",
+        "ID": "h29",
+        "Description": "C29 norhopane",
+        "Code": "h29",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h30",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H30",
+        "ID": "h30",
+        "Description": "C30 hopane",
+        "Code": "h30",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h31s",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H31S",
+        "ID": "h31s",
+        "Description": "C31S hopane",
+        "Code": "h31s",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h31r",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H31R",
+        "ID": "h31r",
+        "Description": "C31R hopane",
+        "Code": "h31r",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:g",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "G",
+        "ID": "g",
+        "Description": "Gammacerane",
+        "Code": "g",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h32s",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H32S",
+        "ID": "h32s",
+        "Description": "C32S hopane",
+        "Code": "h32s",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h32r",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H32R",
+        "ID": "h32r",
+        "Description": "C32R hopane",
+        "Code": "h32r",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h33s",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H33S",
+        "ID": "h33s",
+        "Description": "C33S hopane",
+        "Code": "h33s",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h33r",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H33R",
+        "ID": "h33r",
+        "Description": "C33R hopane",
+        "Code": "h33r",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h34s",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H34S",
+        "ID": "h34s",
+        "Description": "C34S hopane",
+        "Code": "h34s",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h34r",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H34R",
+        "ID": "h34r",
+        "Description": "C34R hopane",
+        "Code": "h34r",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h35s",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H35S",
+        "ID": "h35s",
+        "Description": "C35S hopane",
+        "Code": "h35s",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:h35r",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H35R",
+        "ID": "h35r",
+        "Description": "C35R hopane",
+        "Code": "h35r",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:s27",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "S27",
+        "ID": "s27",
+        "Description": "C27 Sterane",
+        "Code": "s27",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:s28",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "S28",
+        "ID": "s28",
+        "Description": "C28 Sterane",
+        "Code": "s28",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:s29",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "S29",
+        "ID": "s29",
+        "Description": "C29 Sterane",
+        "Code": "s29",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:s30",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "S30",
+        "ID": "s30",
+        "Description": "C30 Sterane",
+        "Code": "s30",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:bt1m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BT1M",
+        "ID": "bt1m",
+        "Description": "1-Methyl Benzothiophene (BT)",
+        "Code": "bt1m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:bt2m1",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BT2M1",
+        "ID": "bt2m1",
+        "Description": "2-Methyl Benzothiophene (BT)",
+        "Code": "bt2m1",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:bt2m2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BT2M2",
+        "ID": "bt2m2",
+        "Description": "2-Methyl Benzothiophene (BT)",
+        "Code": "bt2m2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:bt3m1",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BT3M1",
+        "ID": "bt3m1",
+        "Description": "3-Methyl Benzothiophene (BT)",
+        "Code": "bt3m1",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:bt3m2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BT3M2",
+        "ID": "bt3m2",
+        "Description": "3-Methyl Benzothiophene (BT)",
+        "Code": "bt3m2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT",
+        "ID": "dbt",
+        "Description": "Dibenzothiophene (DBT)",
+        "Code": "dbt",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt1m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT1M",
+        "ID": "dbt1m",
+        "Description": "1-Methyl Dibenzothiophene (DBT)",
+        "Code": "dbt1m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt23m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT23M",
+        "ID": "dbt23m",
+        "Description": "2 & 3-Methyl Dibenzothiophene (DBT)",
+        "Code": "dbt23m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt3m1",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT3M1",
+        "ID": "dbt3m1",
+        "Description": "3-Methyl Dibenzothiophene (DBT)",
+        "Code": "dbt3m1",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt3m2",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT3M2",
+        "ID": "dbt3m2",
+        "Description": "3-Methyl Dibenzothiophene (DBT)",
+        "Code": "dbt3m2",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt4m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT4M",
+        "ID": "dbt4m",
+        "Description": "4-Methyl Dibenzothiophene (DBT)",
+        "Code": "dbt4m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt4e",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT4E",
+        "ID": "dbt4e",
+        "Description": "4-Ethyl Dibenzothiophene (DBT)",
+        "Code": "dbt4e",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt46dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT46DM",
+        "ID": "dbt46dm",
+        "Description": "4,6-Dimethyl Dibenzothiophene (DBT)",
+        "Code": "dbt46dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:dbt2636dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT2636DM",
+        "ID": "dbt2636dm",
+        "Description": "2,6 & 3,6-Dimethyl Dibenzothiophene (DBT)",
+        "Code": "dbt2636dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE",
+        "ID": "adamantane",
+        "Description": "Adamantane",
+        "Code": "adamantane",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane1m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE1M",
+        "ID": "adamantane1m",
+        "Description": "1-Methyl Adamantane",
+        "Code": "adamantane1m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane13dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE13DM",
+        "ID": "adamantane13dm",
+        "Description": "1,3-Dimethyl Adamantane",
+        "Code": "adamantane13dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane135tm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE135TM",
+        "ID": "adamantane135tm",
+        "Description": "1,3,5-Trimethyl Adamantane",
+        "Code": "adamantane135tm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane2m",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE2M",
+        "ID": "adamantane2m",
+        "Description": "2-Methyl Adamantane",
+        "Code": "adamantane2m",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantanecis14dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANECIS14DM",
+        "ID": "adamantanecis14dm",
+        "Description": "cis 1,4-Dimethyl Adamantane",
+        "Code": "adamantanecis14dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantanet14dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANET14DM",
+        "ID": "adamantanet14dm",
+        "Description": "trans 1,4-Dimethyl Adamantane",
+        "Code": "adamantanet14dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane136tm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE136TM",
+        "ID": "adamantane136tm",
+        "Description": "1,3,6-Trimethyl Adamantane",
+        "Code": "adamantane136tm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane12dm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE12DM",
+        "ID": "adamantane12dm",
+        "Description": "1,2-Dimethyl Adamantane",
+        "Code": "adamantane12dm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantanecis134tm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANECIS134TM",
+        "ID": "adamantanecis134tm",
+        "Description": "cis 1,3,4-Trimethyl Adamantane",
+        "Code": "adamantanecis134tm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantanet134tm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANET134TM",
+        "ID": "adamantanet134tm",
+        "Description": "trans 1,3,4-Trimethyl Adamantane",
+        "Code": "adamantanet134tm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:adamantane1257tetm",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ADAMANTANE1257TETM",
+        "ID": "adamantane1257tetm",
+        "Description": "1,2,5,7-Tetramethyl Adamantane",
+        "Code": "adamantane1257tetm",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:benzene",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BENZENE",
+        "ID": "benzene",
+        "Description": "Benzene",
+        "Code": "benzene",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:toluene",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TOLUENE",
+        "ID": "toluene",
+        "Description": "Toluene",
+        "Code": "toluene",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:m2c5",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "M2C5",
+        "ID": "m2c5",
+        "Description": "2-Methylpentane",
+        "Code": "m2c5",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompoundSpecificIsotopeComponents:m3c5",
+      "kind": "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "M3C5",
+        "ID": "m3c5",
+        "Description": "3-Methylpentane",
+        "Code": "m3c5",
+        "Source": "Workbook ReferenceValues/Published/CompoundSpecificIsotopeComponents.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

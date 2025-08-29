@@ -1,0 +1,145 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicInterpretationType:BiostratigraphicZones",
+      "kind": "osdu:wks:reference-data--BiostratigraphicInterpretationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BiostratigraphicZones",
+        "Description": "Interpretation of intervals defined by the fossils within the samples analysed for that interval. Usually there are biozone schemas for each Biostratigraphic Discipline. There may be an age attribute for some Biozones.",
+        "Code": "BiostratigraphicZones",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicInterpretationType.1.xlsx; commit SHA 1845eb40.",
+        "CommitDate": "2025-04-02T09:48:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicInterpretationType:SequenceStratigraphy",
+      "kind": "osdu:wks:reference-data--BiostratigraphicInterpretationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SequenceStratigraphy",
+        "Description": "Definitions for depositional packages. Intervals can be grouped into systems tracts and within these can be multiple single surface picks. Globally defined sequences have an age attribute.",
+        "Code": "SequenceStratigraphy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicInterpretationType.1.xlsx; commit SHA 1845eb40.",
+        "CommitDate": "2025-04-02T09:48:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicInterpretationType:BiostratigraphicEvents",
+      "kind": "osdu:wks:reference-data--BiostratigraphicInterpretationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BiostratigraphicEvents",
+        "Description": "Marker/important fossil occurrence, range or change in abundance. Usually events have an age attribute. ",
+        "Code": "BiostratigraphicEvents",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicInterpretationType.1.xlsx; commit SHA 1845eb40.",
+        "CommitDate": "2025-04-02T09:48:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicInterpretationType:PaleoEnvironment",
+      "kind": "osdu:wks:reference-data--BiostratigraphicInterpretationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PaleoEnvironment",
+        "Description": "Interpretation of fossils in respect to paleogeographic location and/or depositional environment",
+        "Code": "PaleoEnvironment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicInterpretationType.1.xlsx; commit SHA 1845eb40.",
+        "CommitDate": "2025-04-02T09:48:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicInterpretationType:BiostratigraphicComments",
+      "kind": "osdu:wks:reference-data--BiostratigraphicInterpretationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BiostratigraphicComments",
+        "Description": "General description of fossil occurrences",
+        "Code": "BiostratigraphicComments",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicInterpretationType.1.xlsx; commit SHA 1845eb40.",
+        "CommitDate": "2025-04-02T09:48:45+00:00"
+      }
+    }
+  ]
+}

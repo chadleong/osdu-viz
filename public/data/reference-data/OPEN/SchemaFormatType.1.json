@@ -1,0 +1,809 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:UKOOA%20P1%2F84",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UKOOA P1/84",
+        "NameAlias": [
+          {
+            "AliasName": "P1/84"
+          }
+        ],
+        "Description": "Seismic line navigation format P1/84.",
+        "Code": "UKOOA P1/84",
+        "AttributionAuthority": "UKOOA",
+        "AttributionPublication": "http://www.iogp.org/wp-content/uploads/2016/12/UKOOA_P184.pdf",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:UKOOA%20P1%2F90",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UKOOA P1/90",
+        "NameAlias": [
+          {
+            "AliasName": "P1/90"
+          }
+        ],
+        "Description": "Seismic line navigation format P1/90.",
+        "Code": "UKOOA P1/90",
+        "AttributionAuthority": "UKOOA",
+        "AttributionPublication": "https://www.iogp.org/wp-content/uploads/2016/12/P1.pdf",
+        "AttributionRevision": "1990-06-28 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:IOGP%20P1%2F11",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IOGP P1/11",
+        "NameAlias": [
+          {
+            "AliasName": "P1/11"
+          }
+        ],
+        "Description": "Seismic line navigation format P1/11.",
+        "Code": "IOGP P1/11",
+        "AttributionAuthority": "IOGP",
+        "AttributionPublication": "https://www.iogp.org/bookstore/product/ogp-p111-geophysical-position-data-exchange-format/",
+        "AttributionRevision": "2012-11-01 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:IOGP%20P6%2F11",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IOGP P6/11",
+        "NameAlias": [
+          {
+            "AliasName": "P6/11"
+          }
+        ],
+        "Description": "Seismic bin grid exchange format.",
+        "Code": "IOGP P6/11",
+        "AttributionAuthority": "IOGP",
+        "AttributionPublication": "https://www.iogp.org/bookstore/product/ogp-p611-seismic-bin-grid-data-exchange-format/",
+        "AttributionRevision": "2017-07-01 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:CWLS%20LAS2",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CWLS LAS2",
+        "NameAlias": [
+          {
+            "AliasName": "LAS 2"
+          }
+        ],
+        "Description": "Log ASCII Standard version 2.0",
+        "Code": "CWLS LAS2",
+        "AttributionAuthority": "CWLS",
+        "AttributionPublication": "https://www.cwls.org/wp-content/uploads/2014/09/LAS_20_Update_Jan2014.pdf",
+        "AttributionRevision": "2014-01-01 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:CWLS%20LAS3",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CWLS LAS3",
+        "NameAlias": [
+          {
+            "AliasName": "LAS 3"
+          }
+        ],
+        "Description": "Log ASCII Standard version 3.0",
+        "Code": "CWLS LAS3",
+        "AttributionAuthority": "CWLS",
+        "AttributionPublication": "https://www.cwls.org/wp-content/uploads/2014/09/LAS_3_File_Structure.pdf",
+        "AttributionRevision": "2000-06-06 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Esri.ShapeFile",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Esri Shapefile",
+        "Description": "The format specification for Esri shape files, a vector data format for geographic information systems.",
+        "Code": "Esri.ShapeFile",
+        "AttributionAuthority": "Esri",
+        "AttributionPublication": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+        "AttributionRevision": "ESRI Shapefile Technical Description, July 1998",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:GeoJSON.FeatureCollection",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GeoJSON.FeatureCollection",
+        "Description": "The format definition for GeoJSON FeatureCollection as JSON schema for draft-07: https://geojson.org/schema/FeatureCollection.json.",
+        "Code": "GeoJSON.FeatureCollection",
+        "AttributionAuthority": "geojson.org",
+        "AttributionPublication": "https://geojson.org/schema/FeatureCollection.json",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Image.TIFF",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TIFF Image",
+        "NameAlias": [
+          {
+            "AliasName": "tif"
+          },
+          {
+            "AliasName": "tiff"
+          },
+          {
+            "AliasName": "TIF"
+          },
+          {
+            "AliasName": "TIFF"
+          }
+        ],
+        "Description": "The format of a tagged image file (TIFF).",
+        "Code": "Image.TIFF",
+        "AttributionPublication": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000022.shtml",
+        "AttributionRevision": "TIFF Revision 6.0, 1992-06-03",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Image.OGC.TIFF",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OGC TIFF Image",
+        "Description": "The tagged image file format (TIFF), which includes embedded OGC standard metadata for the geo-reference. OGC GeoTIFF is the OSDU preferred format for GeoTIFF.",
+        "Code": "Image.OGC.TIFF",
+        "AttributionAuthority": "OGC",
+        "AttributionPublication": "https://www.ogc.org/standards/geotiff",
+        "AttributionRevision": "OGC GeoTIFF 1.1 2019-09-14",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Image.JPEG",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "JPEG Image",
+        "NameAlias": [
+          {
+            "AliasName": "jpg"
+          },
+          {
+            "AliasName": "JPG"
+          },
+          {
+            "AliasName": "jpeg"
+          },
+          {
+            "AliasName": "JPEG"
+          },
+          {
+            "AliasName": "jif"
+          },
+          {
+            "AliasName": "JIF"
+          }
+        ],
+        "Description": "The most widely used digital image format using a lossy compression method introduced by the Joint Photography Experts Group in 1992.",
+        "Code": "Image.JPEG",
+        "AttributionPublication": "http://www.jpeg.org/jpeg/",
+        "AttributionRevision": "JPEG 1, 1994",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Image.PNG",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PNG Image",
+        "NameAlias": [
+          {
+            "AliasName": "png"
+          },
+          {
+            "AliasName": "PNG"
+          }
+        ],
+        "Description": "PNG, portable network graphics, is a raster-graphics file format that supports lossless data compression. PNG was developed as an improved, non-patented replacement for Graphics Interchange Format (GIF).",
+        "Code": "Image.PNG",
+        "AttributionPublication": "https://www.rfc-editor.org/info/rfc2083",
+        "AttributionRevision": "PNG Version 1.0, 1997-06",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:PDF",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Portable Document Format",
+        "NameAlias": [
+          {
+            "AliasName": "PDF"
+          },
+          {
+            "AliasName": "pdf"
+          }
+        ],
+        "Description": "Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1993 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems.",
+        "Code": "PDF",
+        "AttributionAuthority": "Adobe",
+        "AttributionPublication": "www.iso.org/standard/75839.html",
+        "AttributionRevision": "ISO 32000-2:2020, December 2020",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Energistics.WITSML.v1.3",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Energistics WITSML v1.3",
+        "NameAlias": [
+          {
+            "AliasName": "WITSML v1.3.x"
+          },
+          {
+            "AliasName": "WITSML v1.3.1.1"
+          },
+          {
+            "AliasName": "WITSML 1.3"
+          },
+          {
+            "AliasName": "WITSML 1.3.1.1"
+          }
+        ],
+        "Description": "Energistics WITSML Standard version 1.3.x for specifying and exchanging data for wells and well-related operations and objects, such as drilling, logging and mud logging",
+        "Code": "Energistics.WITSML.v1.3",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Version 1.3.1 is deprecated and no longer published.",
+        "AttributionRevision": "v1.3 2007",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Energistics.WITSML.v1.4",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Energistics WITSML v1.4",
+        "NameAlias": [
+          {
+            "AliasName": "WITSML v1.4.x"
+          },
+          {
+            "AliasName": "WITSML v1.4.1.1"
+          },
+          {
+            "AliasName": "WITSML 1.4"
+          },
+          {
+            "AliasName": "WITSML 1.4.1.1"
+          }
+        ],
+        "Description": "Energistics WITSML Standard version 1.4.x for specifying and exchanging data for wells and well-related operations and objects, such as drilling, logging and mud logging",
+        "Code": "Energistics.WITSML.v1.4",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "https://energistics.org/sites/default/files/witsml_data_schema_overview.html https://publications.opengroup.org/standards/energistics-standards/v230b",
+        "AttributionRevision": "v1.4 2014",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Energistics.WITSML.v2.0",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Energistics WITSML v2.0",
+        "NameAlias": [
+          {
+            "AliasName": "WITSML v2.0"
+          },
+          {
+            "AliasName": "WITSML 2.0"
+          }
+        ],
+        "Description": "Energistics WITSML Standard version 2.0 for specifying and exchanging data for wells and well-related operations and objects, such as drilling, logging and mud logging",
+        "Code": "Energistics.WITSML.v2.0",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "https://publications.opengroup.org/standards/energistics-standards/v230a",
+        "AttributionRevision": "v2.0 2016",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:Energistics.WITSML.v2.1",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Energistics WITSML v2.1",
+        "NameAlias": [
+          {
+            "AliasName": "WITSML v2.1"
+          },
+          {
+            "AliasName": "WITSML 2.1"
+          }
+        ],
+        "Description": "Energistics WITSML Standard version 2.1 for specifying and exchanging data for wells and well-related operations and objects, such as drilling, logging and mud logging",
+        "Code": "Energistics.WITSML.v2.1",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "https://publications.opengroup.org/standards/energistics-standards/v230",
+        "AttributionRevision": "Not published yet.",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:SEG-Y",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEG-Y",
+        "NameAlias": [
+          {
+            "AliasName": "SEGY"
+          }
+        ],
+        "Description": "The SEG-Y file format is one of several standards developed by the Society of Exploration Geophysicists (SEG) for storing geophysical data. It is an open standard, and is controlled by the SEG Technical Standards Committee, a non-profit organization. The value SEG-Y does not imply a specific revision of the SEG-Y standard.",
+        "Code": "SEG-Y",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://library.seg.org/seg-technical-standards",
+        "AttributionRevision": "1975-",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:SEG-D",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEG-D",
+        "NameAlias": [
+          {
+            "AliasName": "SEGD"
+          }
+        ],
+        "Description": "A digital field tape format developed by the Society of Exploration Geophysicists (SEG). It is an open standard, and is controlled by the SEG Technical Standards Committee, a non-profit organization. The value SEG-D does not imply a specific revision of the SEG-D standard.",
+        "Code": "SEG-D",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://library.seg.org/seg-technical-standards",
+        "AttributionRevision": "1975-",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:SEG-A",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEG-A",
+        "NameAlias": [
+          {
+            "AliasName": "SEGA"
+          }
+        ],
+        "Description": "A historical field tape format developed by the Society of Exploration Geophysicists (SEG). It is an open standard.",
+        "Code": "SEG-A",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://library.seg.org/pb-assets/technical-standards/seg_a_b_ex-1686080980667.pdf",
+        "AttributionRevision": "1967-",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:SEG-B",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEG-B",
+        "NameAlias": [
+          {
+            "AliasName": "SEGB"
+          }
+        ],
+        "Description": "A historical field tape format developed by the Society of Exploration Geophysicists (SEG). It is an open standard.",
+        "Code": "SEG-B",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://library.seg.org/pb-assets/technical-standards/seg_a_b_ex-1686080980667.pdf",
+        "AttributionRevision": "1967-",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaFormatType:SEG-C",
+      "kind": "osdu:wks:reference-data--SchemaFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEG-C",
+        "NameAlias": [
+          {
+            "AliasName": "SEGC"
+          }
+        ],
+        "Description": "A historical field tape format developed by the Society of Exploration Geophysicists (SEG). It is an open standard.",
+        "Code": "SEG-C",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://library.seg.org/pb-assets/technical-standards/seg_c-1686080980790.pdf",
+        "AttributionRevision": "1972-",
+        "Source": "Workbook ReferenceValues/Published/SchemaFormatType.1.xlsx; commit SHA 960cd764.",
+        "CommitDate": "2024-03-25T09:13:40+00:00"
+      }
+    }
+  ]
+}

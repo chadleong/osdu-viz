@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTUnplannedEventType:EN",
+      "kind": "osdu:wks:reference-data--NPTUnplannedEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NPT with Equipment Failure",
+        "ID": "EN",
+        "InactiveIndicator": false,
+        "Description": "Non-Productive Time caused by an Equipment Failure",
+        "Code": "EN",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTUnplannedEventType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTUnplannedEventType:N",
+      "kind": "osdu:wks:reference-data--NPTUnplannedEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NPT without Equipment Failure",
+        "ID": "N",
+        "InactiveIndicator": false,
+        "Description": "Non-Productive Time not caused by an Equipment Failure",
+        "Code": "N",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTUnplannedEventType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTUnplannedEventType:E",
+      "kind": "osdu:wks:reference-data--NPTUnplannedEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equipment Failure only",
+        "ID": "E",
+        "InactiveIndicator": false,
+        "Description": "Equipment Failure only (not NPT)",
+        "Code": "E",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTUnplannedEventType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

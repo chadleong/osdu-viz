@@ -1,0 +1,122 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidDensityMeasurementMethod:MixingTubDensitometer",
+      "kind": "osdu:wks:reference-data--FluidDensityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mixing Tub Densitometer",
+        "Description": "Mixing Tub Densitometer",
+        "Code": "MixingTubDensitometer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidDensityMeasurementMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidDensityMeasurementMethod:PressurizedMudBalance",
+      "kind": "osdu:wks:reference-data--FluidDensityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressurized Mud Balance",
+        "Description": "Pressurized Mud Balance",
+        "Code": "PressurizedMudBalance",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidDensityMeasurementMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidDensityMeasurementMethod:DownholeDensitometer",
+      "kind": "osdu:wks:reference-data--FluidDensityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Downhole Densitometer",
+        "Description": "Downhole Densitometer",
+        "Code": "DownholeDensitometer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidDensityMeasurementMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidDensityMeasurementMethod:NonPressurizedMudBalance",
+      "kind": "osdu:wks:reference-data--FluidDensityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Non-Pressurized Mud Balance",
+        "NameAlias": [
+          {
+            "AliasName": "Mud Balance"
+          }
+        ],
+        "Description": "Non-Pressurized Mud Balance",
+        "Code": "NonPressurizedMudBalance",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidDensityMeasurementMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

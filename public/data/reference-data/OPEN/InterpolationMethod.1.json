@@ -1,0 +1,221 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:LinearInSpace",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Linear In Space",
+        "Description": "Linear interpolation between 3D references points (X;Y;Z)",
+        "Code": "LinearInSpace",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:BicubicSpline",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bicubic Spline",
+        "Description": "Double Surface based interpolation piecewise defined from 3rd degrees polynomials.",
+        "Code": "BicubicSpline",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:LinearInTime",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Linear In Time",
+        "Description": "Linear interpolation between multiple 'time locations'.",
+        "Code": "LinearInTime",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:Trilinear",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trilinear",
+        "Description": "3D interpolation built from three dependent 1D equations.",
+        "Code": "Trilinear",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:HorizonBased",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Horizon Based",
+        "Description": "Seismic Horizon steered/constrained type of interpolation",
+        "Code": "HorizonBased",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:ConstantVerticallyUp",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Vertically Up",
+        "Description": "Same constant applied vertically, Upward",
+        "Code": "ConstantVerticallyUp",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:ConstantVerticallyDown",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Vertically Down",
+        "Description": "Same constant applied vertically, Downward",
+        "Code": "ConstantVerticallyDown",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InterpolationMethod:ConstantVerticallyMidway",
+      "kind": "osdu:wks:reference-data--InterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Vertically Midway",
+        "Description": "Same constant applied vertically, Midway",
+        "Code": "ConstantVerticallyMidway",
+        "Source": "Workbook ReferenceValues/Published/InterpolationMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

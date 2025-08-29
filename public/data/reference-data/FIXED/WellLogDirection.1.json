@@ -1,0 +1,99 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellLogDirection:Ascending",
+      "kind": "osdu:wks:reference-data--WellLogDirection:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ascending",
+        "NameAlias": [
+          {
+            "AliasName": "Upward"
+          }
+        ],
+        "Description": "The well log is recorded while the logging tool is moving upwards.",
+        "Code": "Ascending",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/WellLogDirection.1.xlsx; commit SHA 7ba976cd.",
+        "CommitDate": "2024-07-17T08:46:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellLogDirection:Descending",
+      "kind": "osdu:wks:reference-data--WellLogDirection:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Descending",
+        "NameAlias": [
+          {
+            "AliasName": "Downward"
+          }
+        ],
+        "Description": "The well log is recorded while the logging tool is moving downwards.",
+        "Code": "Descending",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/WellLogDirection.1.xlsx; commit SHA 7ba976cd.",
+        "CommitDate": "2024-07-17T08:46:31+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellLogDirection:Stationary",
+      "kind": "osdu:wks:reference-data--WellLogDirection:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stationary",
+        "Description": "The well log is recorded without any movement of the logging tool.",
+        "Code": "Stationary",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/WellLogDirection.1.xlsx; commit SHA 7ba976cd.",
+        "CommitDate": "2024-07-17T08:46:31+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1272 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:DrillStem_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DrillStem Tests",
+        "NameAlias": [
+          {
+            "AliasName": "DST"
+          }
+        ],
+        "ID": "DrillStem_Tests",
+        "Description": "Drillstem Tests (DST) are tests that are conducted through the drillstem taken by means of special testing equipment attached to the drillstem to determine if fluid components in commercial quantities have been encountered in a wellbore. Although the drillstem test is a temporary well completion, it is not necessary to set casing or to remove the drilling fluid from the wellbore to conduct the test. Therefore, DST tests gather data on the potential productivity of a formation. DSTs are usually carried out as part of drilling operations to determine the economic and technical viability of a productive completion. A DST test is a test that temporarily completes a recently drilled well to the formation in order to determine the actual flow of a potential reservoir. It is used to calculate formation pressure, permeability, and the amount of formation damage. This is done because logs are indirect and can be misleading. The Society of Petroleum Engineers requires that the commercial productivity of reserves be supported by actual production or formation tests. They can be open holed or cased holed and must be done for a particular time period from 20 minutes to three days. Important measurements are initial/final hydrostatic pressure, flow pressure, and shut-in pressure. The test is recorded on a pressure-buildup curve. There are four stages: initial flow, initial shut-in, final flow, final shut-in. Flow rates are controlled by an adjustable choke. Samples are collected and sent to a separator where gas is metered and liquids gauged. If the fluid does not flow to the surface, the height of the liquid is measured in the drillstem. Back-Pressure can be applied by filling the formation with a cushion, such as water.",
+        "Code": "DrillStem_Tests",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Drawdown_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drawdown Tests",
+        "ID": "Drawdown_Tests",
+        "Description": "Drawdown tests evaluate the limits of a reservoir and the production and bottomhole pressure reduction of a well on the neighboring wells to determine the extent of the reservoir.",
+        "Code": "Drawdown_Tests",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BuildUp_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BuildUp Tests",
+        "NameAlias": [
+          {
+            "AliasName": "BU"
+          }
+        ],
+        "ID": "BuildUp_Tests",
+        "Description": "Build-up tests are used to determine the effective drainage radius of a well and obtain information about the permeability of the producing formation. The well is shut in for a period of time after it has flowed at a constant rate, and the rise of bottomhole pressure is recorded. This test can be determined whether skin or borehole damage exists.",
+        "Code": "BuildUp_Tests",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:ShutIn_Stand_Pipe_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ShutIn Stand Pipe Tests",
+        "ID": "ShutIn_Stand_Pipe_Tests",
+        "Code": "ShutIn_Stand_Pipe_Tests",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:MiniFrac",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MiniFrac",
+        "ID": "MiniFrac",
+        "Code": "MiniFrac",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:MiniDST",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MiniDST",
+        "ID": "MiniDST",
+        "Code": "MiniDST",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Sampling",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sampling",
+        "ID": "Sampling",
+        "Code": "Sampling",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Pressure_Transient_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressure Transient Tests",
+        "ID": "Pressure_Transient_Tests",
+        "Description": "Pressure transient tests usually involve changing the rate that formation fluids enter the borehole and recording the resulting downhole pressure versus time. These tests are carried out in a well for the purpose of deriving information about the characteristics of the earth surrounding the interval being tested. During this procedure, measurements are made relating to the production or injection of fluids from or into a well for a given length of time for an established set of conditions. These measurements are made to assist in the estimation or prediction of production or injection capability. A well transient pressure test usually consists of causing sequences of rate stabilization and fluctuation in a controlled manner, including terminating flow, and monitoring the variation in pressures that result. These activities may occur in a single well or in multiple wells simultaneously. Furthermore, they are used to determine the effect that a change in pressure in one well may have on other wells in the same field.",
+        "Code": "Pressure_Transient_Tests",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Production_Log_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Log Test",
+        "NameAlias": [
+          {
+            "AliasName": "PLT"
+          }
+        ],
+        "ID": "Production_Log_Test",
+        "Code": "Production_Log_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Injection_Log_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Injection Log Test",
+        "NameAlias": [
+          {
+            "AliasName": "ILT"
+          }
+        ],
+        "ID": "Injection_Log_Test",
+        "Code": "Injection_Log_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Swab_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Swab Test",
+        "ID": "Swab_Test",
+        "Code": "Swab_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Flow_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flow Test",
+        "ID": "Flow_Test",
+        "Description": "A flow measurement captured for a discrete period using a test measurement vessel or other measurement device (well test separator, wellhead MPFM, etc.) to obtain individual flow rates. During the testing period pressure, temperature, and fluid samples may be obtained so that an estimated 24-hour flow rate at standard conditions can be calculated. This theoretical volume will typically be used for hydrocarbon allocation and well surveillance purposes.\nThose tests can also be run as multi-point tests when the well is not shut-in, but it is flowed at many (unlimited) different rates to plot delta-p or delta-p-squared vs. rate.\nTests can be run either for water, gas and oil and can be used for integrity or well performance, damage",
+        "Code": "Flow_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:MultiWell_Interference_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MultiWell Interference Test",
+        "NameAlias": [
+          {
+            "AliasName": "Interference Test"
+          }
+        ],
+        "ID": "MultiWell_Interference_Test",
+        "Description": "Interference test are like buildup/drawdown tests. You change the pressure on one well in order to see what happens to another well. They measure the pressure variation with time recorded in observation wells resulting from changes in rates in production or injection wells. In commercially viable reservoirs, it usually takes considerable time for production at one well to measurably affect the pressure at an adjacent well. Consequently, interference testing has been uncommon because of the cost and the difficulty in maintaining fixed flow rates over an extended time period. With the increasing number of permanent gauge installations, interference testing may become more common than in the past. [Oilfield Review]",
+        "Code": "MultiWell_Interference_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:MultiWell_Pulse_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MultiWell Pulse Test",
+        "ID": "MultiWell_Pulse_Test",
+        "Code": "MultiWell_Pulse_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Initial_Production_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Initial Production Test",
+        "NameAlias": [
+          {
+            "AliasName": "IP"
+          }
+        ],
+        "ID": "Initial_Production_Test",
+        "Description": "Initial potential tests are used to determine the maximum rate at which fluids may be injected into or produced from a well when the well is first completed. It is also repeated periodically during the life of the well, especially after work-overs.",
+        "Code": "Initial_Production_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:FallOff_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FallOff Test",
+        "ID": "FallOff_Test",
+        "Description": "Falloff tests are like buildup tests, but they are conducted on injection wells. The injection rate is held constant, the well is shut in, and the decrease of bottomhole pressure is recorded.",
+        "Code": "FallOff_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Formation_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Test",
+        "ID": "Formation_Test",
+        "Description": "Formation tests are used to evaluate possible producing zones encountered in a well. They are used to obtain fluid flow and reservoir pressure data. They are less expensive than DSTs. They are usually performed in a mud-filled open hole, after the total-depth is reached, but before running casing, on an electrical-conducting wireline test tool. They use a rubber packer seal, probe to go into formation, pressure builds up. These tests are repeated at successive locations providing a measure of reservoir pressure versus depth. Multiple zones can be tested on a single run into the hole. Types of tools used for formation test are formation tester, repeat formation tester, formation interval tester, modular formation dynamics tester, formation multi tester, and sequential formation tester tool. ",
+        "Code": "Formation_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Repeat_Formation_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Repeat Formation Test",
+        "NameAlias": [
+          {
+            "AliasName": "RFT"
+          }
+        ],
+        "ID": "Repeat_Formation_Test",
+        "Description": "Repeat formation tests (RFT) measure the pressures at specific depths. The tester is a tool that the crew runs into the well on a conductor line. The tool perforates one or two holes in the casing. A valve opens a testing chamber to let in fluid and records its pressure. Finally, a sample chamber opens and draws in a few gallons or liters of formation fluid to bring to the surface. This test is good for quick readings of pressures, confirming porosity and permeability data from other logs, and predicting general productivity. (Can get up to 2 samples, but many different pressure readings).",
+        "Code": "Repeat_Formation_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Modular_Formation_Dynamics_Tests",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Modular Formation Dynamics Tests",
+        "NameAlias": [
+          {
+            "AliasName": "MDT"
+          }
+        ],
+        "ID": "Modular_Formation_Dynamics_Tests",
+        "Description": "Modular formation dynamics tests (MDT) offer multiple sampling during a single wireline run and rapid pressure measurements. MDT tests comprise a number of modules, and they can be configured to collect many different kinds of data",
+        "Code": "Modular_Formation_Dynamics_Tests",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Closed_Chamber_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Closed Chamber Test",
+        "ID": "Closed_Chamber_Test",
+        "Code": "Closed_Chamber_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Injection_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Injection Test",
+        "ID": "Injection_Test",
+        "Description": "Injection tests are like drawdown tests, but they are conducted on injection wells.",
+        "Code": "Injection_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Annular_Build_Up_Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Annular Build Up Test",
+        "ID": "Annular_Build_Up_Test",
+        "Code": "Annular_Build_Up_Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Potential%20and%20Productivity%20Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Potential and Productivity Test",
+        "ID": "Potential and Productivity Test",
+        "InactiveIndicator": true,
+        "Description": "Potential or productivity tests are used to determine the maximum rate at which fluids may be injected into or produced from a well. It is the first dependable indication of the likely productivity of the well. It marks the change of the well from a drilling status to a production or other kind of status. These tests may be conducted over a series of rates with the intention of extrapolating to a maximum rate, or with all surface control valves wide open to measure the maximum rate. Measures produce oil, water, gas, tubing pressure, choke size, etc. If the well is artificially lifted, the specifications of the lift equipment are included.",
+        "Code": "Potential and Productivity Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Production%20Test",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Test",
+        "ID": "Production Test",
+        "InactiveIndicator": true,
+        "Description": "Production tests help determine how much and how fast a well will produce. The company representative may run production tests before or after setting casing, cementing, and perforating. Each test reveals certain information about a particular well and its reservoir. Accuracy is, of course, very important, and the data form these tests form the case history of a well. Production tests measure oil production rates, water production, gas/oil ratio, oil cut, API gravity, casing and tubing pressure, choke size, and separator pressure and temperature. They are used to determine wellbore damage and reservoir pressure in the well drainage. Therefore, the tests must be run long enough to compute these values.",
+        "Code": "Production Test",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BottomHolePressure.ClosedIn",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Closed In Bottom Hole Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "CIBHP"
+          }
+        ],
+        "ID": "BottomHolePressure.ClosedIn",
+        "Description": "Gradient well test where bottom hole pressure is measured with the well closed in.",
+        "Code": "BottomHolePressure.ClosedIn",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BottomHolePressure.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowing Bottom Hole Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FBHP"
+          }
+        ],
+        "ID": "BottomHolePressure.Flowing",
+        "Description": "Gradient well test were bottom hole pressure is measured while well is flowing,  in combination with production logging.",
+        "Code": "BottomHolePressure.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BuildUp.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowing Build Up",
+        "NameAlias": [
+          {
+            "AliasName": "FBU"
+          }
+        ],
+        "ID": "BuildUp.Flowing",
+        "Description": "Flowing Build-Up",
+        "Code": "BuildUp.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BuildUp.LongTerm",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Long Term Build Up",
+        "NameAlias": [
+          {
+            "AliasName": "LTBU"
+          }
+        ],
+        "ID": "BuildUp.LongTerm",
+        "Description": "Long Term Build-Up",
+        "Code": "BuildUp.LongTerm",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:BuildUp.Single",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Single Build Up",
+        "NameAlias": [
+          {
+            "AliasName": "PBU"
+          }
+        ],
+        "ID": "BuildUp.Single",
+        "Description": "Pressure build-up - single rate",
+        "Code": "BuildUp.Single",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:Echo",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Echo",
+        "NameAlias": [
+          {
+            "AliasName": "ECHO"
+          }
+        ],
+        "ID": "Echo",
+        "Description": "Gradient well test of a depleted oil well whereby the depth of the static fluid level in the well is determined by acoustic echo sounding.",
+        "Code": "Echo",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:LongTermMemoryGauge",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Long Term Memory Gauge",
+        "NameAlias": [
+          {
+            "AliasName": "LTMG"
+          }
+        ],
+        "ID": "LongTermMemoryGauge",
+        "Description": "Unqualified gradient well test using long term memory gauge.",
+        "Code": "LongTermMemoryGauge",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PermanentDownHoleGauge",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Permanent Down Hole Gauge",
+        "NameAlias": [
+          {
+            "AliasName": "PDHG"
+          }
+        ],
+        "ID": "PermanentDownHoleGauge",
+        "Description": "Transient well test with permanent downhole gauge and an electrical submersible pump.",
+        "Code": "PermanentDownHoleGauge",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureGradient.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowing Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FPG"
+          }
+        ],
+        "ID": "PressureGradient.Flowing",
+        "Description": "Well test where the pressure gradient in the wellbore is measured while flowing.",
+        "Code": "PressureGradient.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureGradient.Static",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Static Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "SPG"
+          }
+        ],
+        "ID": "PressureGradient.Static",
+        "Description": "Gradient well test measuring pressure under static conditions.",
+        "Code": "PressureGradient.Static",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureTemperateGradient.Static",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Static Pressure Temperate Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "SPTG"
+          }
+        ],
+        "ID": "PressureTemperateGradient.Static",
+        "Description": "Gradient well test well test whereby  the pressure and temperature gradient is measured under static conditions.",
+        "Code": "PressureTemperateGradient.Static",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureTemperatureGradient.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowin Pressure Temperature Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FPTG"
+          }
+        ],
+        "ID": "PressureTemperatureGradient.Flowing",
+        "Description": "Gradient well test where pressure and temperature gradient are measured while well is flowing.",
+        "Code": "PressureTemperatureGradient.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureWhileDrilling",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressure While Drilling",
+        "NameAlias": [
+          {
+            "AliasName": "PWD"
+          }
+        ],
+        "ID": "PressureWhileDrilling",
+        "Description": "Pressure While Drilling",
+        "Code": "PressureWhileDrilling",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:PressureWhileDrilling.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowing Pressure While Drilling",
+        "NameAlias": [
+          {
+            "AliasName": "FPWD"
+          }
+        ],
+        "ID": "PressureWhileDrilling.Flowing",
+        "Description": "Generic term also covering Formation Pressure While Drilling, Formation Testing While Drilling, Logging While Drilling Formation-Pressure Testing or Logging While Drilling Formation Tester",
+        "Code": "PressureWhileDrilling.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:RepeatFormationTest.CasedHole",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cased Hole Repeat Formation Test",
+        "NameAlias": [
+          {
+            "AliasName": "CHRFT"
+          }
+        ],
+        "ID": "RepeatFormationTest.CasedHole",
+        "Description": "Cased-hole RFT",
+        "Code": "RepeatFormationTest.CasedHole",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:TubingHeadPressure.ClosedIn",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Closed In Tubing Head Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "CITHP"
+          }
+        ],
+        "ID": "TubingHeadPressure.ClosedIn",
+        "Description": "Gradient well test where tubing head pressure is measured with well closed in.",
+        "Code": "TubingHeadPressure.ClosedIn",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureDetailedTestCategory:TubingHeadPressure.Flowing",
+      "kind": "osdu:wks:reference-data--WellPressureDetailedTestCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flowing Tubing Head Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FTHP"
+          }
+        ],
+        "ID": "TubingHeadPressure.Flowing",
+        "Description": "Flowing Tubing Head Pressure",
+        "Code": "TubingHeadPressure.Flowing",
+        "Source": "Workbook ReferenceValues/Authoring/WellPressureDetailedTestCategory.1.xlsx; commit SHA 3071b281.",
+        "CommitDate": "2024-11-15T07:25:12+00:00"
+      }
+    }
+  ]
+}

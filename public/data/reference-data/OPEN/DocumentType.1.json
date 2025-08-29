@@ -1,0 +1,806 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Affidavit",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Affidavit",
+        "Code": "Affidavit",
+        "Description": "A statement reduced to writing and sworn or affirmed before someone who is authorized to administer an oath.",
+        "AttributionPublication": "https://caplacanada.org/wp-content/uploads/2015/02/CAPLA-Glossary-of-Land-Terms-2016.pdf",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Assignment",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Assignment",
+        "Code": "Assignment",
+        "Description": "A document outlining the transfer of interest between various parties.",
+        "AttributionPublication": "https://caplacanada.org/wp-content/uploads/2015/02/CAPLA-Glossary-of-Land-Terms-2016.pdf",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:AuthorityForExpenditure",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Authority For Expenditure",
+        "NameAlias": [
+          {
+            "AliasName": "AFE",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "AuthorityForExpenditure",
+        "Description": "Proposed expenses for a particular project.",
+        "AttributionPublication": "https://caplacanada.org/wp-content/uploads/2015/02/CAPLA-Glossary-of-Land-Terms-2016.pdf",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:CompletionReport",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "End of Drilling Report",
+        "NameAlias": [
+          {
+            "AliasName": "Completion Report",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "CompletionReport",
+        "Description": "A completion report is written at the conclusion of specified operations in constructing a well. Regulatory and regional differences impact the details included, but often describe the lithology of the well, the steps taken to construct a wellbore, the results of various analysis and the outcome of the operation.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Contract",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Contract",
+        "Code": "Contract",
+        "Description": "Documentation agreement between parties",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:CorePhotograph",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Core Photograph",
+        "Code": "CorePhotograph",
+        "Description": "High resolution photographs are used as pictorial evidence of the rock structure in a core section.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Correspondence",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Correspondence",
+        "Code": "Correspondence",
+        "Description": "Communications between two parties, emails, written documents",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:DataDump",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Data Dump",
+        "Code": "DataDump",
+        "Description": "Typically logs from tapes, job runs, and other necessary printouts",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:DrillingReport",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Daily Drilling Report",
+        "NameAlias": [
+          {
+            "AliasName": "Drilling Report",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "DDR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "DrillingReport",
+        "Description": "Drilling reports are created by field operatives while a well is being drilled. They usually contain details about the equipment in use, the crew on duty, the lithology encountered, and materials used.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:EmergencyResponsePlan",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Emergency Response Plan",
+        "NameAlias": [
+          {
+            "AliasName": "ERP",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "EmergencyResponsePlan",
+        "Description": "A document that lays out the plans for emergency response to an physical or environmental incident.  Usually lays out communications, activities, notifications and lines of authority.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:EquipmentSpecifications",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equipment Specifications",
+        "Code": "EquipmentSpecifications",
+        "Description": "Equipment specifications are written documents or manuals that describe of production capacity, mechanical tolerances, sizes, power requirement, fabrication methods and other details of the equipment.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:FieldNotes",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Field Notes",
+        "Code": "FieldNotes",
+        "Description": "Field notes are usually organized by time and may be taken during any field operations, and often provide informal descriptions about activities, materials and events.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:FinancialReport",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Financial Report",
+        "Code": "FinancialReport",
+        "Description": "Report of financial activities of particular projects, entities, or businesses",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Instrument",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Instrument",
+        "Code": "Instrument",
+        "Description": "A legal term for any formally executed written document that...expresses a legally enforceable act, process, or contractual duty, obligation, or right...Examples include deed, lease, contract, legislative act.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Legal_instrument",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Invoice",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Invoice",
+        "Code": "Invoice",
+        "Description": "A request for payment for a product or service.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Legislation",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Legislation",
+        "Code": "Legislation",
+        "Description": "Legislation, often called Acts, are passed by governments to describe what must or must not be done.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:ObserverLog",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Observers log",
+        "NameAlias": [
+          {
+            "AliasName": "Observer Log",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "ObserverLog",
+        "Description": "The observers log is a document completed during seismic field work.  It records conditions for each energy source (shot point), the recording(s) made and other pertinent information.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:ProductCatalog",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Product Catalog",
+        "Code": "ProductCatalog",
+        "Description": "A list and description of products, usually from a specific vendor.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:QuitClaim",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Quit Claim",
+        "Code": "QuitClaim",
+        "Description": "Document or notice under an agreement that relinquishes to other parties any rights or interests that a party may have in a property. No monetary compensation is involved.",
+        "AttributionPublication": "https://caplacanada.org/wp-content/uploads/2015/02/CAPLA-Glossary-of-Land-Terms-2016.pdf",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Regulations",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Regulations",
+        "Code": "Regulations",
+        "Description": "Regulations are laws that control the way that a business can operate, or a group of laws considered together. Regulations specify how legislation or Acts are enacted.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:RegulatoryGuide",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Regulatory Guide",
+        "Code": "RegulatoryGuide",
+        "Description": "Regulatory guides are developed by regulators to assist in consistent fulfillment of regulations using structured or organized methods.  Regulatory guides usually provide the most detailed descriptions of regulatory requirements.  These are based on current legislation and are subject to change.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Report",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Report",
+        "Code": "Report",
+        "Description": "Processing, interpretation, geological reports",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:SafetyMeetingReport",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Safety Meeting Report",
+        "Code": "SafetyMeetingReport",
+        "Description": "A report about a daily or weekly safety meeting that covers attendance, schedules, current events or incidents, and action items.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:SampleAnalysisReport",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sample Analysis Report",
+        "Code": "SampleAnalysisReport",
+        "Description": "Laboratory analysis of solid, liquid or gaseous materials are provided in a report describing methods and results. The data may be presented as lists or charts and may be in proprietary format or PDF.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:ServiceCatalog",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Service Catalog",
+        "Code": "ServiceCatalog",
+        "Description": "A list and description of services, usually from a specific vendor.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:ShippingRecord",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shipping Record",
+        "Code": "ShippingRecord",
+        "Description": "Shipping transmittal, courier documents",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DocumentType:Workflow",
+      "kind": "osdu:wks:reference-data--DocumentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Workflow",
+        "Code": "Workflow",
+        "Description": "Processing workflow",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-10-19T15:56:50+00:00"
+      }
+    }
+  ]
+}

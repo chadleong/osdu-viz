@@ -1,0 +1,305 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Input",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Input",
+        "Description": "The related object is an input to the activity where is unknown if the type is direct, indirect, or reference. ",
+        "Code": "Input",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:InputDirect",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Input Direct",
+        "Description": "The related object is a direct input to the activity",
+        "Code": "InputDirect",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:InputIndirect",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Input Indirect",
+        "Description": "The related object is a indirect input to the activity",
+        "Code": "InputIndirect",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:InputReference",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Input Reference",
+        "Description": "The related object is a reference used as input to the activity",
+        "Code": "InputReference",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Output",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Output",
+        "Description": "The related object is an output to the activity.",
+        "Code": "Output",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Control",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Control",
+        "Description": "The related object 'controls' the activity.",
+        "Code": "Control",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Constraint",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constraint",
+        "Description": "The related object 'constrains' the activity.",
+        "Code": "Constraint",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Agent",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Agent",
+        "Description": "The related object is an agent to the activity.",
+        "Code": "Agent",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Predecessor",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Predecessor",
+        "Description": "The related object is a predecessor to the activity.",
+        "Code": "Predecessor",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ParameterRole:Successor",
+      "kind": "osdu:wks:reference-data--ParameterRole:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Successor",
+        "Description": "The related object is a successor to the activity.",
+        "Code": "Successor",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "evergreen",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ParameterRole.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

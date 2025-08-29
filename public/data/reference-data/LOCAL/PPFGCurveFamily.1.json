@@ -1,0 +1,3206 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:TrueVerticalDepth",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True Vertical Depth",
+        "NameAlias": [
+          {
+            "AliasName": "TVD"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : True Vertical Depth",
+        "Code": "TrueVerticalDepth",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeasuredDepth",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Measured Depth",
+        "NameAlias": [
+          {
+            "AliasName": "MD"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Measured Depth",
+        "Code": "MeasuredDepth",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:TwoWayTime",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Two Way Time",
+        "NameAlias": [
+          {
+            "AliasName": "TWT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Two Way Time",
+        "Code": "TwoWayTime",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalHydrostaticPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Hydrostatic Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "PNORM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Hydrostatic Pressure",
+        "Code": "NormalHydrostaticPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore  Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "PP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore  Pressure",
+        "Code": "PorePressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromLog",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Log",
+        "NameAlias": [
+          {
+            "AliasName": "PP LOG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Log",
+        "Code": "PorePressureEstimatedFromLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromDrillingParameter",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Drilling Parameter",
+        "NameAlias": [
+          {
+            "AliasName": "PP DP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Drilling Parameter",
+        "Code": "PorePressureEstimatedFromDrillingParameter",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromConnectionGas",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Connection Gas ",
+        "NameAlias": [
+          {
+            "AliasName": "PP CG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Connection Gas ",
+        "Code": "PorePressureEstimatedFromConnectionGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromDrillGas",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Drill Gas ",
+        "NameAlias": [
+          {
+            "AliasName": "PP DG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Drill Gas ",
+        "Code": "PorePressureEstimatedFromDrillGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromSonic",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Sonic",
+        "NameAlias": [
+          {
+            "AliasName": "PP DT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Sonic",
+        "Code": "PorePressureEstimatedFromSonic",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromResistivity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Resistivity",
+        "NameAlias": [
+          {
+            "AliasName": "PP RES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Resistivity",
+        "Code": "PorePressureEstimatedFromResistivity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromDensity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Density",
+        "NameAlias": [
+          {
+            "AliasName": "PP RHOB"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Density",
+        "Code": "PorePressureEstimatedFromDensity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromTotalPorosity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Total Porosity",
+        "NameAlias": [
+          {
+            "AliasName": "PP PHIT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Total Porosity",
+        "Code": "PorePressureEstimatedFromTotalPorosity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureFromCorrectedDrillingExponent",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure from Corrected Drilling Exponent",
+        "NameAlias": [
+          {
+            "AliasName": "PP DXC"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure from Corrected Drilling Exponent",
+        "Code": "PorePressureFromCorrectedDrillingExponent",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureFromMechanicalSpecificEnergy",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure from Mechanical Specific Energy",
+        "NameAlias": [
+          {
+            "AliasName": "PP MSE"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure from Mechanical Specific Energy",
+        "Code": "PorePressureFromMechanicalSpecificEnergy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureFromBasinModel",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure from Basin Model",
+        "NameAlias": [
+          {
+            "AliasName": "PP BM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure from Basin Model",
+        "Code": "PorePressureFromBasinModel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureEstimatedFromSeismicVelocity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Estimated from Seismic Velocity ",
+        "NameAlias": [
+          {
+            "AliasName": "PP VSEIS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Estimated from Seismic Velocity ",
+        "Code": "PorePressureEstimatedFromSeismicVelocity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:StructurallyAdjustedPorePressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Structurally Adjusted Pore Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "PP ZADJ"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Structurally Adjusted Pore Pressure",
+        "Code": "StructurallyAdjustedPorePressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeasuredFormationPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Measured Formation Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "PP MEAS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Measured Formation Pressure",
+        "Code": "MeasuredFormationPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FracturePressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Pressure",
+        "Code": "FracturePressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureInitiationPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Initiation Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FIP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Initiation Pressure",
+        "Code": "FractureInitiationPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FracturePropagationPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Propagation Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FPP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Propagation Pressure",
+        "Code": "FracturePropagationPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureBreakdownPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Breakdown Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FBP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Breakdown Pressure",
+        "Code": "FractureBreakdownPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureClosurePressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Closure Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "FCP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Closure Pressure",
+        "Code": "FractureClosurePressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:LeastPrincipleStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Least Principle Stress",
+        "NameAlias": [
+          {
+            "AliasName": "LPS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Least Principle Stress",
+        "Code": "LeastPrincipleStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:IntermediatePrincipleStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Intermediate Principle Stress",
+        "NameAlias": [
+          {
+            "AliasName": "IPS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Intermediate Principle Stress",
+        "Code": "IntermediatePrincipleStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MaximumPrincipleStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Maximum Principle Stress",
+        "NameAlias": [
+          {
+            "AliasName": "MPS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Maximum Principle Stress",
+        "Code": "MaximumPrincipleStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MaxHorizontalStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Max Horizontal Stress",
+        "NameAlias": [
+          {
+            "AliasName": "SHmax"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Max Horizontal Stress",
+        "Code": "MaxHorizontalStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MinimumHorizontalStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Minimum Horizontal Stress",
+        "NameAlias": [
+          {
+            "AliasName": "Shmin"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Minimum Horizontal Stress",
+        "Code": "MinimumHorizontalStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:VerticalStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical Stress",
+        "NameAlias": [
+          {
+            "AliasName": "SV"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Vertical Stress",
+        "Code": "VerticalStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeanStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mean Stress",
+        "NameAlias": [
+          {
+            "AliasName": "MS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Mean Stress",
+        "Code": "MeanStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:OverburdenPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Overburden Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "OB"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Overburden Pressure",
+        "Code": "OverburdenPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MaximumHorizontalStressAzimuth",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Maximum Horizontal Stress Azimuth",
+        "NameAlias": [
+          {
+            "AliasName": "SHAZ"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Maximum Horizontal Stress Azimuth",
+        "Code": "MaximumHorizontalStressAzimuth",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:EffectiveStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Effective Stress",
+        "NameAlias": [
+          {
+            "AliasName": "ES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Effective Stress",
+        "Code": "EffectiveStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalEffectiveStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Effective Stress",
+        "NameAlias": [
+          {
+            "AliasName": "ESN"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Effective Stress",
+        "Code": "NormalEffectiveStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:VerticalEffectiveStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical Effective Stress",
+        "NameAlias": [
+          {
+            "AliasName": "VES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Vertical Effective Stress",
+        "Code": "VerticalEffectiveStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeanEffectiveStress",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mean Effective Stress",
+        "NameAlias": [
+          {
+            "AliasName": "MES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Mean Effective Stress",
+        "Code": "MeanEffectiveStress",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:Overpressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Overpressure",
+        "NameAlias": [
+          {
+            "AliasName": "OP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Overpressure",
+        "Code": "Overpressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:SubnormalPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Subnormal Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "PSNORM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Subnormal Pressure",
+        "Code": "SubnormalPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:BreakoutWidthInDegreesAngle",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Breakout width, in degrees (angle)",
+        "NameAlias": [
+          {
+            "AliasName": "BOAngle"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Breakout width, in degrees (angle)",
+        "Code": "BreakoutWidthInDegreesAngle",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:ShearFailurePressureCollapsePressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shear Failure Pressure (Collapse Pressure)",
+        "NameAlias": [
+          {
+            "AliasName": "SFP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Shear Failure Pressure (Collapse Pressure)",
+        "Code": "ShearFailurePressureCollapsePressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:ShearFailurePressureGradientCollapsePressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shear Failure Pressure Gradient (Collapse Pressure Gradient)",
+        "NameAlias": [
+          {
+            "AliasName": "SFPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Shear Failure Pressure Gradient (Collapse Pressure Gradient)",
+        "Code": "ShearFailurePressureGradientCollapsePressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FrictionAngleFailureCriteria",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Friction Angle (Failure Criteria)",
+        "NameAlias": [
+          {
+            "AliasName": "FA"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Friction Angle (Failure Criteria)",
+        "Code": "FrictionAngleFailureCriteria",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:UnconfinedCompressiveStrength",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unconfined Compressive Strength    ",
+        "NameAlias": [
+          {
+            "AliasName": "UCS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Unconfined Compressive Strength    ",
+        "Code": "UnconfinedCompressiveStrength",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalHydrostaticPressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Hydrostatic Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "PNORMG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Hydrostatic Pressure Gradient",
+        "Code": "NormalHydrostaticPressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "PPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient",
+        "Code": "PorePressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromLog",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Log",
+        "NameAlias": [
+          {
+            "AliasName": "PPG EST"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Log",
+        "Code": "PorePressureGradientEstimatedFromLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromDrillingParameter",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Drilling Parameter",
+        "NameAlias": [
+          {
+            "AliasName": "PPG DP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Drilling Parameter",
+        "Code": "PorePressureGradientEstimatedFromDrillingParameter",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromDrillGas",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Drill Gas ",
+        "NameAlias": [
+          {
+            "AliasName": "PPG DG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Drill Gas ",
+        "Code": "PorePressureGradientEstimatedFromDrillGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromConnectionGas",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Connection Gas",
+        "NameAlias": [
+          {
+            "AliasName": "PPG CG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Connection Gas",
+        "Code": "PorePressureGradientEstimatedFromConnectionGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromSonic",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Sonic",
+        "NameAlias": [
+          {
+            "AliasName": "PPG DT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Sonic",
+        "Code": "PorePressureGradientEstimatedFromSonic",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromResistivity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Resistivity",
+        "NameAlias": [
+          {
+            "AliasName": "PPG RES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Resistivity",
+        "Code": "PorePressureGradientEstimatedFromResistivity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromDensity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Density",
+        "NameAlias": [
+          {
+            "AliasName": "PPG RHOB"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Density",
+        "Code": "PorePressureGradientEstimatedFromDensity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromTotalPorosity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Total Porosity",
+        "NameAlias": [
+          {
+            "AliasName": "PPG PHIT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Total Porosity",
+        "Code": "PorePressureGradientEstimatedFromTotalPorosity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientFromCorrectedDrillingExponent",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient from Corrected Drilling Exponent",
+        "NameAlias": [
+          {
+            "AliasName": "PPG DxC"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient from Corrected Drilling Exponent",
+        "Code": "PorePressureGradientFromCorrectedDrillingExponent",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientFromMechanicalSpecificEnergy",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient from Mechanical Specific Energy",
+        "NameAlias": [
+          {
+            "AliasName": "PPG MSE"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient from Mechanical Specific Energy",
+        "Code": "PorePressureGradientFromMechanicalSpecificEnergy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientEstimatedFromSeismicVelocity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient Estimated from Seismic Velocity ",
+        "NameAlias": [
+          {
+            "AliasName": "PPG VSEIS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient Estimated from Seismic Velocity ",
+        "Code": "PorePressureGradientEstimatedFromSeismicVelocity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PorePressureGradientFromBasinModel",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore Pressure Gradient from Basin Model",
+        "NameAlias": [
+          {
+            "AliasName": "PPG BM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore Pressure Gradient from Basin Model",
+        "Code": "PorePressureGradientFromBasinModel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:StructurallyAdjustedPorePressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Structurally Adjusted Pore Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "PPG ZADJ"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Structurally Adjusted Pore Pressure Gradient",
+        "Code": "StructurallyAdjustedPorePressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeasuredFormationPressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Measured Formation Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "PPG MEAS"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Measured Formation Pressure Gradient",
+        "Code": "MeasuredFormationPressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Gradient",
+        "Code": "FractureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureInitiationPressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Initiation Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FIPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Initiation Pressure Gradient",
+        "Code": "FractureInitiationPressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FracturePropagationPressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Propagation Pressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FPPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Propagation Pressure Gradient",
+        "Code": "FracturePropagationPressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureBreakdownGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Breakdown Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FBPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Breakdown Gradient",
+        "Code": "FractureBreakdownGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FractureClosureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fracture Closure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FCPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Fracture Closure Gradient",
+        "Code": "FractureClosureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:AchievableFractureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Achievable Fracture Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FG ACHIV"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Achievable Fracture Gradient",
+        "Code": "AchievableFractureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:StrengthenedFractureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Strengthened Fracture Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FG STREN"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Strengthened Fracture Gradient",
+        "Code": "StrengthenedFractureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:ModeledFractureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Modeled Fracture Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "FG BM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Modeled Fracture Gradient",
+        "Code": "ModeledFractureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:LeastPrincipleStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Least Principle Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "LPSG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Least Principle Stress Gradient",
+        "Code": "LeastPrincipleStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:IntermediatePrincipleStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Intermediate Principle Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "IPSG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Intermediate Principle Stress Gradient",
+        "Code": "IntermediatePrincipleStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MaximumPrincipleStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Maximum Principle Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "MPSG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Maximum Principle Stress Gradient",
+        "Code": "MaximumPrincipleStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MaxHorizontalStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Max Horizontal Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "SHmaxG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Max Horizontal Stress Gradient",
+        "Code": "MaxHorizontalStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MinimumHorizontalStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Minimum Horizontal Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "ShminG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Minimum Horizontal Stress Gradient",
+        "Code": "MinimumHorizontalStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:VerticalStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "SVG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Vertical Stress Gradient",
+        "Code": "VerticalStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeanStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mean Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "MSG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Mean Stress Gradient",
+        "Code": "MeanStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:OverburdenGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Overburden Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "OBG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Overburden Gradient",
+        "Code": "OverburdenGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:EffectiveStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Effective Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "ESG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Effective Stress Gradient",
+        "Code": "EffectiveStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalEffectiveStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Effective Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "NESG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Effective Stress Gradient",
+        "Code": "NormalEffectiveStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:VerticalEffectiveStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical Effective Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "VESG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Vertical Effective Stress Gradient",
+        "Code": "VerticalEffectiveStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MeanEffectiveStressGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mean Effective Stress Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "MESG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Mean Effective Stress Gradient",
+        "Code": "MeanEffectiveStressGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:OverpressureGradient",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Overpressure Gradient",
+        "NameAlias": [
+          {
+            "AliasName": "OPG"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Overpressure Gradient",
+        "Code": "OverpressureGradient",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendline",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline ",
+        "NameAlias": [
+          {
+            "AliasName": "NCT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline ",
+        "Code": "NormalCompactionTrendline",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineSonic",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Sonic",
+        "NameAlias": [
+          {
+            "AliasName": "NCT DT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Sonic",
+        "Code": "NormalCompactionTrendlineSonic",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineResistivity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Resistivity",
+        "NameAlias": [
+          {
+            "AliasName": "NCT RES"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Resistivity",
+        "Code": "NormalCompactionTrendlineResistivity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineDensity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Density",
+        "NameAlias": [
+          {
+            "AliasName": "NCT RHOB"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Density",
+        "Code": "NormalCompactionTrendlineDensity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineCorrectedDrillingExponent",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Corrected Drilling Exponent",
+        "NameAlias": [
+          {
+            "AliasName": "NCT DXC"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Corrected Drilling Exponent",
+        "Code": "NormalCompactionTrendlineCorrectedDrillingExponent",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineMechanicalSpecificEnergy",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Mechanical Specific Energy",
+        "NameAlias": [
+          {
+            "AliasName": "NCT MSE"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Mechanical Specific Energy",
+        "Code": "NormalCompactionTrendlineMechanicalSpecificEnergy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:NormalCompactionTrendlineTotalPorosity",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal Compaction Trendline - Total Porosity",
+        "NameAlias": [
+          {
+            "AliasName": "NCT PHIT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Normal Compaction Trendline - Total Porosity",
+        "Code": "NormalCompactionTrendlineTotalPorosity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:PoreFracWindow",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pore-Frac Window",
+        "NameAlias": [
+          {
+            "AliasName": "PFW"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Pore-Frac Window",
+        "Code": "PoreFracWindow",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:Margin",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Margin",
+        "NameAlias": [
+          {
+            "AliasName": "MRGN"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Margin",
+        "Code": "Margin",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:SafeDrillingMargin",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Safe Drilling Margin",
+        "NameAlias": [
+          {
+            "AliasName": "SDM"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Safe Drilling Margin",
+        "Code": "SafeDrillingMargin",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:MPDBackPressure",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MPD Back Pressure",
+        "NameAlias": [
+          {
+            "AliasName": "MPD BP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : MPD Back Pressure",
+        "Code": "MPDBackPressure",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:TemperatureBHA",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature BHA ",
+        "NameAlias": [
+          {
+            "AliasName": "TEMP BHA"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Temperature BHA ",
+        "Code": "TemperatureBHA",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:TemperatureAnnular",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Annular ",
+        "NameAlias": [
+          {
+            "AliasName": "TEMP A"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Temperature Annular ",
+        "Code": "TemperatureAnnular",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:FormationTemperature",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Temperature",
+        "NameAlias": [
+          {
+            "AliasName": "FTEMP"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Formation Temperature",
+        "Code": "FormationTemperature",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:CorrectedTemperature",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected Temperature",
+        "NameAlias": [
+          {
+            "AliasName": "TEMP C"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Corrected Temperature",
+        "Code": "CorrectedTemperature",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PPFGCurveFamily:SedimentationRate",
+      "kind": "osdu:wks:reference-data--PPFGCurveFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sedimentation Rate",
+        "NameAlias": [
+          {
+            "AliasName": "SEDRT"
+          }
+        ],
+        "Description": "PPFG Curve representing the physical quantity of an analysis from the type : Sedimentation Rate",
+        "Code": "SedimentationRate",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/PPFGCurveFamily.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

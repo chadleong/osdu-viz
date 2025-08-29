@@ -1,0 +1,285 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:UnalteredIndigenous",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unaltered Indigenous",
+        "ID": "UnalteredIndigenous",
+        "Description": "This population type represents vitrinite that has not undergone significant thermal alteration. It retains its original texture, color, and structure. The reflectance values for unaltered indigenous vitrinite are relatively low, indicating lower thermal maturity.",
+        "Code": "UnalteredIndigenous",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:PartiallyAlteredIndigenous",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Partially Altered Indigenous",
+        "ID": "PartiallyAlteredIndigenous",
+        "Description": "This population includes vitrinite that has experienced some degree of thermal alteration but remains recognizable in terms of its texture and structure. Reflectance values for partially altered indigenous vitrinite are higher than those for unaltered vitrinite but lower than fully matured vitrinite.",
+        "Code": "PartiallyAlteredIndigenous",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:HighlyAlteredIndigenous",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Highly Altered Indigenous",
+        "ID": "HighlyAlteredIndigenous",
+        "Description": "This category comprises vitrinite that has undergone extensive thermal alteration. It often appears as amorphous material and may have lost its original texture and structure. Reflectance values for highly altered indigenous vitrinite are relatively high, indicating advanced thermal maturity.",
+        "Code": "HighlyAlteredIndigenous",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:SolidBitumen",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solid Bitumen",
+        "ID": "SolidBitumen",
+        "Description": "Solid bitumen is a form of bitumen that has a solid or semi-solid consistency at standard temperature and pressure. It can occur as discrete inclusions within sedimentary rocks. Solid bitumen can have a wide range of reflectance values, depending on its thermal history. Less mature solid bitumen may have lower reflectance values, while highly matured solid bitumen may have higher values.",
+        "Code": "SolidBitumen",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:MaturedBitumen",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Matured Bitumen",
+        "ID": "MaturedBitumen",
+        "Description": "Bitumen can evolve over time, undergoing thermal maturation processes similar to organic matter. As it matures, it may become more fluid and migrate through the rock. Matured bitumen can be associated with higher vitrinite reflectance values, indicating the advanced thermal maturity of both the bitumen and the surrounding organic material.",
+        "Code": "MaturedBitumen",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:Bitumen",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bitumen",
+        "ID": "Bitumen",
+        "Description": "Medium Reflectance Vitrinite (Bituminous)",
+        "Code": "Bitumen",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:Indigenous",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Indigenous",
+        "ID": "Indigenous",
+        "Description": "Indigenous vitrinite refers to organic particles that originated and were deposited in their current geological setting, reflecting the thermal history of that specific location.",
+        "Code": "Indigenous",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:Reworked",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reworked",
+        "ID": "Reworked",
+        "Description": "The reworked population is eroded from a more mature provenance and deposited with the indigenous organic matter of this sample.",
+        "Code": "Reworked",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:Caved",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Caved",
+        "ID": "Caved",
+        "Description": "Caved vitrinite refers to particles that have fallen into the sediment from overlying strata, possibly leading to mixed or misleading reflectance readings due to differing thermal histories.",
+        "Code": "Caved",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--VitriniteReflectancePopulationType:LowReflecting",
+      "kind": "osdu:wks:reference-data--VitriniteReflectancePopulationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low Reflecting",
+        "ID": "LowReflecting",
+        "Description": "Low reflectance vitrinite is usually associated with less thermally mature organic matter.",
+        "Code": "LowReflecting",
+        "Source": "Workbook ReferenceValues/Published/VitriniteReflectancePopulationType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicPolarity:PositiveSEG",
+      "kind": "osdu:wks:reference-data--SeismicPolarity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PositiveSEG",
+        "Description": "For a positive reflection, the seismic response to a boundary across which there is an increase in acoustic impedance, a\u00a0minimum-phase\u00a0wavelet  begins with a down-kick; the center of a positive symmetrical (zero-phase) wavelet  is a peak.",
+        "Code": "PositiveSEG",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Phase_and_polarity_assessment_of_seismic_data#Polarity:_Assessment_and_examples",
+        "Source": "Workbook ReferenceValues/Published/SeismicPolarity.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicPolarity:NegativeSEG",
+      "kind": "osdu:wks:reference-data--SeismicPolarity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NegativeSEG",
+        "Description": "For a positive reflection, the seismic response to a boundary across which there is an increase in acoustic impedance, a\u00a0minimum-phase\u00a0wavelet  begins with an up-kick; the center of a positive symmetrical (zero-phase) wavelet  is a trough.",
+        "Code": "NegativeSEG",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Phase_and_polarity_assessment_of_seismic_data#Polarity:_Assessment_and_examples",
+        "Source": "Workbook ReferenceValues/Published/SeismicPolarity.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicPolarity:PositiveEU",
+      "kind": "osdu:wks:reference-data--SeismicPolarity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PositiveEU",
+        "Description": "For a positive reflection, the seismic response to a boundary across which there is an increase in acoustic impedance, a\u00a0minimum-phase\u00a0wavelet  begins with an up-kick; the center of a positive symmetrical (zero-phase) wavelet  is a trough.",
+        "Code": "PositiveEU",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Phase_and_polarity_assessment_of_seismic_data#Polarity:_Assessment_and_examples",
+        "Source": "Workbook ReferenceValues/Published/SeismicPolarity.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicPolarity:NegativeEU",
+      "kind": "osdu:wks:reference-data--SeismicPolarity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NegativeEU",
+        "Description": "For a positive reflection, the seismic response to a boundary across which there is an increase in acoustic impedance, a\u00a0minimum-phase\u00a0wavelet  begins with a down-kick; the center of a positive symmetrical (zero-phase) wavelet  is a peak.",
+        "Code": "NegativeEU",
+        "AttributionPublication": "https://wiki.seg.org/wiki/Phase_and_polarity_assessment_of_seismic_data#Polarity:_Assessment_and_examples",
+        "Source": "Workbook ReferenceValues/Published/SeismicPolarity.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

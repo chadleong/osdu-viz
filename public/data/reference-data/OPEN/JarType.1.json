@@ -1,0 +1,116 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--JarType:Mechanical",
+      "kind": "osdu:wks:reference-data--JarType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mechanical",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Mechanical",
+        "InactiveIndicator": false,
+        "Description": "Mechanically activated jar (Axial force)",
+        "Code": "Mechanical",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.Jar.JarType",
+        "AttributionRevision": "v2.1",
+        "Source": "Workbook Published/JarType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--JarType:Hydraulic",
+      "kind": "osdu:wks:reference-data--JarType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydraulic",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Hydraulic",
+        "InactiveIndicator": false,
+        "Description": "Hydraulically activated jar (Pressure force)",
+        "Code": "Hydraulic",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.Jar.JarType",
+        "AttributionRevision": "v2.1",
+        "Source": "Workbook Published/JarType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--JarType:HydroMechanical",
+      "kind": "osdu:wks:reference-data--JarType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydro Mechanical",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "HydroMechanical",
+        "InactiveIndicator": false,
+        "Description": "Hydro-mechanically activated jar",
+        "Code": "HydroMechanical",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "Tubular.Jar.JarType",
+        "AttributionRevision": "v2.1",
+        "Source": "Workbook Published/JarType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

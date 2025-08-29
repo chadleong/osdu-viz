@@ -1,0 +1,375 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Sheet",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sheet",
+        "NameAlias": [
+          {
+            "AliasName": "sheet",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Flat-shaped rocks",
+        "Code": "Sheet",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Dyke",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dyke",
+        "NameAlias": [
+          {
+            "AliasName": "dyke",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Sheet of rock that is formed in a fracture of a pre-existing rock body.",
+        "Code": "Dyke",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Dome",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dome",
+        "NameAlias": [
+          {
+            "AliasName": "dome",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Curved rock formation or structure",
+        "Code": "Dome",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Mushroom",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mushroom",
+        "NameAlias": [
+          {
+            "AliasName": "mushroom",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Naturally occurring rock whose shape, as its name implies, resembles a mushroom",
+        "Code": "Mushroom",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Channel",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Channel",
+        "NameAlias": [
+          {
+            "AliasName": "channel",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "A linear, commonly concave-based depression through which water and sediment flow and into which sediment can be deposited in distinctive, often elongated bodies",
+        "Code": "Channel",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Delta",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Delta",
+        "NameAlias": [
+          {
+            "AliasName": "delta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Fan-shaped area at the mouth, or lower end, of a river, formed by eroded material that has been carried downstream and dropped in quantities that can not be carried off by tides or currents.",
+        "Code": "Delta",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Dune",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dune",
+        "NameAlias": [
+          {
+            "AliasName": "dune",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Landform composed of wind- or water-driven sand. It typically takes the form of a mound, ridge, or hill",
+        "Code": "Dune",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Fan",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fan",
+        "NameAlias": [
+          {
+            "AliasName": "fan",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Triangle-shaped deposit of gravel, sand, and even smaller pieces of sediment, such as silt",
+        "Code": "Fan",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Reef",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reef",
+        "NameAlias": [
+          {
+            "AliasName": "reef",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Ridge or shoal of rock, coral or similar relatively stable material, lying beneath the surface of a natural body of water",
+        "Code": "Reef",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeologicUnitShapeType:Wedge",
+      "kind": "osdu:wks:reference-data--GeologicUnitShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wedge",
+        "NameAlias": [
+          {
+            "AliasName": "wedge",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:Energistics%20RESQML%20201:"
+          }
+        ],
+        "Description": "Prism-shaped mass of sediments and rock fragments which has accumulated where a downgoing oceanic plate meets an overriding plate at a subduction zone",
+        "Code": "Wedge",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "RESQML",
+        "AttributionRevision": "2",
+        "Source": "Workbook ReferenceValues/Published/GeologicUnitShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

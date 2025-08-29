@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrainageCondition:Drained",
+      "kind": "osdu:wks:reference-data--DrainageCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drained",
+        "ID": "Drained",
+        "Description": "The sample has been drained.",
+        "Code": "Drained",
+        "Source": "Workbook ReferenceValues/Published/DrainageCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrainageCondition:ConsolidatedUndrained",
+      "kind": "osdu:wks:reference-data--DrainageCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Consolidated Undrained",
+        "ID": "ConsolidatedUndrained",
+        "Description": "The sample is consolidated but has not been drained.",
+        "Code": "ConsolidatedUndrained",
+        "Source": "Workbook ReferenceValues/Published/DrainageCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

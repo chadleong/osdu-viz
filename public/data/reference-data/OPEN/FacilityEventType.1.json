@@ -1,0 +1,761 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Abandon",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Abandon",
+        "Description": "Date of abandoning the facility.",
+        "Code": "Abandon",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Decomissioned",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decomissioned",
+        "Description": "Date of decomissioning the facility.",
+        "Code": "Decomissioned",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Plugged",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plugged",
+        "Description": "Date of plugging activity.",
+        "Code": "Plugged",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Cancel",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cancel",
+        "Description": "This is the Cancellation event",
+        "Code": "Cancel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Closeout",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Closeout",
+        "Description": "Date data collected.",
+        "Code": "Closeout",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Completion",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completion",
+        "Description": "Date of completion.",
+        "Code": "Completion",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:CompletionReport",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Completion Report",
+        "Description": "Date of completion report of the wellbore (latest if there are re-completions).",
+        "Code": "CompletionReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:EndOfWellReport",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "End of Well Report",
+        "Description": "Date of end of well report for the wellbore.",
+        "Code": "EndOfWellReport",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ConfidentialityRemove",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Confidentiality Remove",
+        "Description": "Date that confidential information about the facility can be released outside the organisation. ",
+        "Code": "ConfidentialityRemove",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ContractDate",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Contract Date",
+        "Description": "Date that the contract was agreed for drilling the wellbore.",
+        "Code": "ContractDate",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:LastCompletion",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Last Completion",
+        "Description": "Date of installing the final completion in the wellbore.",
+        "Code": "LastCompletion",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:OnInjection",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "On Injection",
+        "Description": "Date when the wellbore first reported injection.",
+        "Code": "OnInjection",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:OnProduction",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "On Production",
+        "Description": "Date the wellbore first went on production accounting hydrocarbons.",
+        "Code": "OnProduction",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Permit",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Permit",
+        "Description": "Date that the permit was issued.",
+        "Code": "Permit",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ProductionFinish",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Finish",
+        "Description": "Date of Production Finish",
+        "Code": "ProductionFinish",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ProductionStart",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Start",
+        "Description": "Date of Production Start. When the well is flowing, but not on line. ",
+        "Code": "ProductionStart",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:PublicRelease",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Public Release",
+        "Description": "Date that  the wellbore data was released to the public.",
+        "Code": "PublicRelease",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Reentry",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reentry",
+        "Description": "Date of re-entry of the wellbore with a drilling rig.",
+        "Code": "Reentry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ReportToGovernment",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Report to Government",
+        "Description": "Date that the end of wellbore report was filed with the government.",
+        "Code": "ReportToGovernment",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Resume",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Resume",
+        "Description": "Date of resuming activities after suspension.",
+        "Code": "Resume",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:RigRelease",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rig Release",
+        "Description": "Date of release of the drilling or workover rig following well operations. ",
+        "Code": "RigRelease",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Spud",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spud",
+        "Description": "Date the drillbit first penetrates the earth's surface for a new well which may coincide with the drilling start of the well's first wellbore.",
+        "Code": "Spud",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:Suspension",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Suspension",
+        "Description": "Date that the wellbore activities were suspended.",
+        "Code": "Suspension",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:TDReached",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TD Reached",
+        "Description": "Date of reaching the total depth of the wellbore.",
+        "Code": "TDReached",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:WorkoverStart",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Workover Start",
+        "Description": "Start date of a workover event",
+        "Code": "WorkoverStart",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:WorkoverFinish",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Workover Finish",
+        "Description": "End date of a workover event",
+        "Code": "WorkoverFinish",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FacilityEventType:ShutIn",
+      "kind": "osdu:wks:reference-data--FacilityEventType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shut-in",
+        "Description": "Date when well was temporarily closed to stop production.",
+        "Code": "ShutIn",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FacilityEventType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

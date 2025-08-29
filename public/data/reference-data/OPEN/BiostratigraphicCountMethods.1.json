@@ -1,0 +1,59 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicCountMethods:StandardPaly200",
+      "kind": "osdu:wks:reference-data--BiostratigraphicCountMethods:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Standard (paly - 200)",
+        "Description": "This method requires a 200 count of all palynomorphs (Dinocysts, Miospores, Algae, Acritarchs, other) and any further species counted post the 200 count are entered as outside of the count",
+        "Code": "StandardPaly200",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicCountMethods.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicCountMethods:StandardPaly300",
+      "kind": "osdu:wks:reference-data--BiostratigraphicCountMethods:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Standard (paly - 300)",
+        "Description": "This method requires a 300 count of all palynomorphs (Dinocysts, Miospores, Algae, Acritarchs, other) and any further species counted post the 300 count are entered as outside of the count",
+        "Code": "StandardPaly300",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicCountMethods.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

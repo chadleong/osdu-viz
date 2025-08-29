@@ -1,0 +1,295 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:BuildUp",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Build Up",
+        "ID": "BuildUp",
+        "Description": "A period during which the well is shut in after a period of production or injection, allowing pressure to build up in the wellbore and reservoir.",
+        "Code": "BuildUp",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:ClosedIn",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Closed In",
+        "ID": "ClosedIn",
+        "Description": "A phase where the well is completely shut in, with no production or injection occurring, to monitor pressure stabilization.",
+        "Code": "ClosedIn",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:ConstantRateDrawdown",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Rate Drawdown",
+        "ID": "ConstantRateDrawdown",
+        "Description": "A test period where the well is produced at a constant rate to observe the pressure decline over time.",
+        "Code": "Drawdown.ConstantRate",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:VariableRateDrawdown",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Variable Rate Drawdown",
+        "ID": "VariableRateDrawdown",
+        "Description": "A test period where the well is produced at varying rates to analyze the pressure response under different flow conditions.",
+        "Code": "Drawdown.VariableRate",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:FallOff",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fall Off",
+        "ID": "FallOff",
+        "Description": "A period following an injection phase where the well is shut in, allowing the pressure to fall off and stabilize.",
+        "Code": "FallOff",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:ConstantRateInjection",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Rate Injection",
+        "ID": "ConstantRateInjection",
+        "Description": "A test period where fluids are injected into the well at a constant rate to observe the pressure increase and reservoir response.",
+        "Code": "Injection.ConstantRate",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:VariableRateInjection",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Variable Rate Injection",
+        "ID": "VariableRateInjection",
+        "Description": "A test period where fluids are injected at varying rates to study the pressure response under different injection conditions.",
+        "Code": "Injection.VariableRate",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:PostTest",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Post Test",
+        "NameAlias": [
+          {
+            "AliasName": "Pull out of Hole"
+          }
+        ],
+        "ID": "PostTest",
+        "Description": "The phase after the completion of a test where the testing equipment is removed from the wellbore.",
+        "Code": "PostTest",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:PreTest",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pre Test",
+        "NameAlias": [
+          {
+            "AliasName": "Run in Hole"
+          }
+        ],
+        "ID": "PreTest",
+        "Description": "The phase before the start of a test where the testing equipment is run into the wellbore and positioned for testing.",
+        "Code": "PreTest",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellPressureTestMeasurementPeriodKind:ProductionTest",
+      "kind": "osdu:wks:reference-data--WellPressureTestMeasurementPeriodKind:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Production Test",
+        "ID": "ProductionTest",
+        "Description": "A phase where the well is producing that evaluates the performance, reservoir characteristics, and pressure behavior.",
+        "Code": "ProductionTest",
+        "Source": "Workbook Published/WellPressureTestMeasurementPeriodKind.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

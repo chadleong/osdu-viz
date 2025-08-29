@@ -1,0 +1,121 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleTestCondition:CurrentReservoir",
+      "kind": "osdu:wks:reference-data--SampleTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Current Reservoir",
+        "ID": "CurrentReservoir",
+        "Description": "Indicates that the sample test environment conditions are intended to match the current reservoir conditions.",
+        "Code": "CurrentReservoir",
+        "AttributionAuthority": "CurrentReservoir",
+        "Source": "Workbook ReferenceValues/Published/SampleTestCondition.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleTestCondition:InitialReservoir",
+      "kind": "osdu:wks:reference-data--SampleTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Initial Reservoir",
+        "ID": "InitialReservoir",
+        "Description": "Indicates that the sample test environment conditions are intended to match the initial reservoir conditions.",
+        "Code": "InitialReservoir",
+        "AttributionAuthority": "InitialReservoir",
+        "Source": "Workbook ReferenceValues/Published/SampleTestCondition.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleTestCondition:InitialSaturation",
+      "kind": "osdu:wks:reference-data--SampleTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Initial Saturation Conditions",
+        "ID": "InitialSaturation",
+        "Description": "Indicates that the sample test environment conditions are intended to match the initial saturation conditions.",
+        "Code": "InitialSaturationConditions",
+        "AttributionAuthority": "InitialSaturationConditions",
+        "Source": "Workbook ReferenceValues/Published/SampleTestCondition.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleTestCondition:StockTank",
+      "kind": "osdu:wks:reference-data--SampleTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stock Tank",
+        "ID": "StockTank",
+        "Description": "Indicates that the sample test environment conditions are intended to match the stock tank conditions.",
+        "Code": "StockTank",
+        "AttributionAuthority": "StockTank",
+        "Source": "Workbook ReferenceValues/Published/SampleTestCondition.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    }
+  ]
+}

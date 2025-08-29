@@ -1,0 +1,496 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:text%2Fcsv",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "text/csv",
+        "NameAlias": [
+          {
+            "AliasName": "CSV"
+          }
+        ],
+        "Description": "Text with comma-separated values.",
+        "Code": "text/csv",
+        "AttributionAuthority": "IANA",
+        "AttributionPublication": "https://tools.ietf.org/html/rfc4180",
+        "AttributionRevision": "RFC 4180, October 2005",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:text%2Fmarkdown",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "text/markdown",
+        "NameAlias": [
+          {
+            "AliasName": "MD"
+          }
+        ],
+        "Description": "Text as markdown.",
+        "Code": "text/markdown",
+        "AttributionPublication": "https://tools.ietf.org/html/rfc7763",
+        "AttributionRevision": "RFC 7763, March 2016",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:text%2Fxml",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "text/xml",
+        "NameAlias": [
+          {
+            "AliasName": "XML"
+          }
+        ],
+        "Description": "Text as Extensible Markup Language (XML).",
+        "Code": "text/xml",
+        "AttributionPublication": "https://tools.ietf.org/html/rfc7303",
+        "AttributionRevision": "RFC 7303, July 2014",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "NameAlias": [
+          {
+            "AliasName": "XLSX"
+          }
+        ],
+        "Description": "Excel or OpenOffice spreadsheets.",
+        "Code": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "AttributionAuthority": "IANA",
+        "AttributionPublication": "https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "AttributionRevision": "MURATA Makoto, 2011-03-16",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:x-gis%2Fx-shapefile",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "x-gis/x-shapefile",
+        "NameAlias": [
+          {
+            "AliasName": "shapefile"
+          }
+        ],
+        "Description": "The media type for Esri shapefiles, a vector data format for geographic information systems.",
+        "Code": "x-gis/x-shapefile",
+        "AttributionAuthority": "Esri",
+        "AttributionPublication": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+        "AttributionRevision": "ESRI Shapefile Technical Description, July 1998",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fgeo%2Bjson",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/geo+json",
+        "NameAlias": [
+          {
+            "AliasName": "GeoJSON"
+          }
+        ],
+        "Description": "GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format.",
+        "Code": "application/geo+json",
+        "AttributionAuthority": "geojson.org",
+        "AttributionPublication": "https://datatracker.ietf.org/doc/html/rfc7946",
+        "AttributionRevision": "RFC 7946, August 2016 (with errata)",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:image%2Ftiff",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "image/tiff",
+        "NameAlias": [
+          {
+            "AliasName": "tif"
+          },
+          {
+            "AliasName": "tiff"
+          },
+          {
+            "AliasName": "TIF"
+          },
+          {
+            "AliasName": "TIFF"
+          }
+        ],
+        "Description": "Media type for TIFF (Tag Image File Format) Revision 6.0 is defined in detail by  Adobe.  The documentation can be obtained from Adobe at http://partners.adobe.com/asn/developer/PDFS/TN/TIFF6.pdf.",
+        "Code": "image/tiff",
+        "AttributionAuthority": "IANA",
+        "AttributionPublication": "https://www.rfc-editor.org/rfc/rfc3302.html",
+        "AttributionRevision": "RFC 3302, September 2002",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:image%2Fjpeg",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "image/jpeg",
+        "NameAlias": [
+          {
+            "AliasName": "jpg"
+          },
+          {
+            "AliasName": "JPG"
+          },
+          {
+            "AliasName": "jpeg"
+          },
+          {
+            "AliasName": "JPEG"
+          },
+          {
+            "AliasName": "jif"
+          },
+          {
+            "AliasName": "JIF"
+          }
+        ],
+        "Description": "Media type (previously mime type) for JPEG images.",
+        "Code": "image/jpeg",
+        "AttributionAuthority": "IANA",
+        "AttributionPublication": "https://www.rfc-editor.org/rfc/rfc2046.html",
+        "AttributionRevision": "RFC 2046, November 1996",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:image%2Fpng",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "image/png",
+        "NameAlias": [
+          {
+            "AliasName": "png"
+          },
+          {
+            "AliasName": "PNG"
+          }
+        ],
+        "Description": "Media type for portable network graphic images.",
+        "Code": "image/png",
+        "AttributionAuthority": "W3C",
+        "AttributionPublication": "https://www.w3.org/TR/PNG/#A-Media-type",
+        "AttributionRevision": "PNG Specification W3C, Recommendation 10 November 2003",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fpdf",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/pdf",
+        "NameAlias": [
+          {
+            "AliasName": "pdf"
+          },
+          {
+            "AliasName": "PDF"
+          }
+        ],
+        "Description": "Media type for portable document format (PDF).",
+        "Code": "application/pdf",
+        "AttributionAuthority": "IANA",
+        "AttributionPublication": "https://www.rfc-editor.org/rfc/rfc8118.html",
+        "AttributionRevision": "RFC 8118, March 2017",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fjson",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/json",
+        "NameAlias": [
+          {
+            "AliasName": "json"
+          },
+          {
+            "AliasName": "JSON"
+          }
+        ],
+        "Description": "Media type for JSON (JavaScript Object Notation), usually text based.",
+        "Code": "application/json",
+        "AttributionAuthority": "IETF",
+        "AttributionPublication": "https://www.rfc-editor.org/rfc/rfc8259.html",
+        "AttributionRevision": "RFC 8259 December 2017",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fx-hdf5",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/x-hdf5",
+        "NameAlias": [
+          {
+            "AliasName": "hdf5"
+          },
+          {
+            "AliasName": "HDF5"
+          }
+        ],
+        "Description": "HDF5 is a data model, library, and file format for storing and managing data. It supports an unlimited variety of data types, and is designed for flexible and efficient I/O and for high volume and complex data. HDF5 is portable and is extensible, allowing applications to evolve in their use of HDF5. The HDF5 Technology suite includes tools and applications for managing, manipulating, viewing, and analyzing data in the HDF5 format. It is used in various domains as for Energistics RESQML.",
+        "Code": "application/x-hdf5",
+        "AttributionAuthority": "HDF Group",
+        "AttributionPublication": "https://www.hdfgroup.org/solutions/hdf5/",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EncodingFormatType:application%2Fx-epc%2Bzip",
+      "kind": "osdu:wks:reference-data--EncodingFormatType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "application/x-epc+zip",
+        "NameAlias": [
+          {
+            "AliasName": "epc"
+          },
+          {
+            "AliasName": "EPC"
+          }
+        ],
+        "Description": "Energistics Packaging Conventions (EPC) is a file packaging convention based on the Open Packaging Conventions (OPC), a widely used container-file technology that allows multiple types of files (mainly Energistics ones in practice) to be bundled together into a single package. Built on the widely used ZIP file structure and originally created by Microsoft, OPC is now an open standard supported by two standards organizations.",
+        "Code": "application/x-epc+zip",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "https://docs.energistics.org/#EPC/EPC_TOPICS/EPC-000-000-titlepage.html",
+        "AttributionRevision": "Version 1.0, November 2016",
+        "Source": "Workbook ReferenceValues/Published/EncodingFormatType.1.xlsx; commit SHA 3636b9ca.",
+        "CommitDate": "2024-04-07T11:34:40+00:00"
+      }
+    }
+  ]
+}

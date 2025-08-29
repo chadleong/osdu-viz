@@ -1,0 +1,150 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CellShapeType:tetrahedral",
+      "kind": "osdu:wks:reference-data--CellShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "tetrahedral",
+        "Description": "A cell composed of 4 triangular faces.",
+        "Code": "tetrahedral",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/CellShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CellShapeType:pyramidal",
+      "kind": "osdu:wks:reference-data--CellShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "pyramidal",
+        "Description": "A cell composed of one quadrilateral and 4 triangular faces.",
+        "Code": "pyramidal",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/CellShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CellShapeType:prism",
+      "kind": "osdu:wks:reference-data--CellShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "prism",
+        "Description": "A cell composed of 3 quadrilateral and 2 triangular faces",
+        "Code": "prism",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/CellShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CellShapeType:hexahedral",
+      "kind": "osdu:wks:reference-data--CellShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "hexahedral",
+        "Description": "A cell composed of 6 quadrilateral faces",
+        "Code": "hexahedral",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/CellShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CellShapeType:polyhedral",
+      "kind": "osdu:wks:reference-data--CellShapeType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "polyhedral",
+        "Description": "A cell which is not tetrahedral, pyramidal, prism, neither hexahedral",
+        "Code": "polyhedral",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/CellShapeType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

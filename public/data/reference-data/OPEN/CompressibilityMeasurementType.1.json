@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompressibilityMeasurementType:Hydrostatic",
+      "kind": "osdu:wks:reference-data--CompressibilityMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydrostatic",
+        "ID": "Hydrostatic",
+        "Description": "Hydrostatic compressibility measures the change in volume of a material under isotropic pressure conditions, where the pressure is applied uniformly in all directions.",
+        "Code": "Hydrostatic",
+        "Source": "Workbook ReferenceValues/Published/CompressibilityMeasurementType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CompressibilityMeasurementType:Uniaxial",
+      "kind": "osdu:wks:reference-data--CompressibilityMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Uniaxial",
+        "ID": "Uniaxial",
+        "Description": "Uniaxial compressibility measures the volume change of a material when pressure is applied in only one direction, typically simulating conditions like mechanical loading or stress from a single direction.",
+        "Code": "Uniaxial",
+        "Source": "Workbook ReferenceValues/Published/CompressibilityMeasurementType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

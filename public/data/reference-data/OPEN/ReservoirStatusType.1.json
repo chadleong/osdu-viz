@@ -1,0 +1,150 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirStatusType:Active",
+      "kind": "osdu:wks:reference-data--ReservoirStatusType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Active",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use AbstractGenericReservoirUnit.data.IsActiveCondition boolean property instead; The Reservoir is Active",
+        "Code": "Active",
+        "Source": "Workbook ReferenceValues/Published/ReservoirStatusType.1.xlsx; commit SHA 22bc4823.",
+        "CommitDate": "2024-11-07T13:05:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirStatusType:Abandoned",
+      "kind": "osdu:wks:reference-data--ReservoirStatusType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Abandoned",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"ReservoirLifeCycleStatus:Abandoned\" with Name=\"Abandoned\" instead. The Reservoir has been abandoned",
+        "Code": "Abandoned",
+        "Source": "Workbook ReferenceValues/Published/ReservoirStatusType.1.xlsx; commit SHA 22bc4823.",
+        "CommitDate": "2024-11-07T13:05:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirStatusType:FirstProduction",
+      "kind": "osdu:wks:reference-data--ReservoirStatusType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FirstProduction",
+        "NameAlias": [
+          {
+            "AliasName": "ProductionStarted"
+          }
+        ],
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"ReservoirLifeCycleStatus:Developing.Producing\" with Name=\"Producing\" instead. Use in combination with the property AbstractGenericReservoirUnit.data.FirstProductionDate; The First Production has happened",
+        "Code": "FirstProduction",
+        "Source": "Workbook ReferenceValues/Published/ReservoirStatusType.1.xlsx; commit SHA 22bc4823.",
+        "CommitDate": "2024-11-07T13:05:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirStatusType:Discovery",
+      "kind": "osdu:wks:reference-data--ReservoirStatusType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Discovery",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"ReservoirLifeCycleStatus:Appraising\" with Name=\"Appraising\" instead. The Reservoir has been discovered",
+        "Code": "Discovery",
+        "Source": "Workbook ReferenceValues/Published/ReservoirStatusType.1.xlsx; commit SHA 22bc4823.",
+        "CommitDate": "2024-11-07T13:05:52+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirStatusType:FirstInjection",
+      "kind": "osdu:wks:reference-data--ReservoirStatusType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FirstInjection",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"ReservoirLifeCycleStatus:Developing.Producing\" with Name=\"Producing\" instead. Use in combination with the property AbstractGenericReservoirUnit.data.FirstCO2StorageInjectionDate property instead; The First Injection has happened",
+        "Code": "FirstInjection",
+        "Source": "Workbook ReferenceValues/Published/ReservoirStatusType.1.xlsx; commit SHA 22bc4823.",
+        "CommitDate": "2024-11-07T13:05:52+00:00"
+      }
+    }
+  ]
+}

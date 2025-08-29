@@ -1,0 +1,830 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:ConventionalCore",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConventionalCore",
+        "NameAlias": [
+          {
+            "AliasName": "Core"
+          }
+        ],
+        "Description": "A whole, slabbed or preserved recovered cylindrical sample of rock. Conventional cores are typically 2.375 to 5.5 inch [6 to 14 cm] in diameter and cut in 6 or 9 metre barrel lengths. The sample length (see RockSample data.SampleLength) and diameter (see RockSample data.SampleDiameter) should be captured if possible. The IsCoreSlabbed flag and sample preservation status (see RockSample data.PreservationTypeID) should be completed if applicable. \nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "ConventionalCore",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:ConventionalCoring.Chip",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConventionalCore.Chip",
+        "NameAlias": [
+          {
+            "AliasName": "Chips"
+          }
+        ],
+        "Description": "Small fragments of rock chips or pieces broken from a conventional core sample (see ConventionalCore). The sample interval (see RockSample data.SampleInterval) and weight (see RockSample data.SampleWeight) should be captured if possible.\nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "ConventionalCoring.Chip",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:ConventionalCoring.Crushed",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConventionalCore.Crushed",
+        "NameAlias": [
+          {
+            "AliasName": "Crushings"
+          }
+        ],
+        "Description": "Crushed rock taken from a conventional core sample (see ConventionalCore). The sample interval (see RockSample data.SampleInterval) and weight (see RockSample data.SampleWeight) should be captured if possible. Crushed samples can be generated to various levels of granularity and are commonly used for particle size analysis, geochemistry, fluid typing or clay typing.\nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "ConventionalCoring.Crushed",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:CorePlug",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CorePlug",
+        "NameAlias": [
+          {
+            "AliasName": "Plug"
+          }
+        ],
+        "Description": "A small cylindrical rock sample cut or drilled from a conventional core (see ConventionalCore). Core plugs are typically, but not limited to 1 to 1-1/2 inch [2.5 to 3.8 cm] in diameter and 1 to 2 inch. [2.5 to 5 cm] in length. The core plug orientation (see RockSample data.SampleOrientationID), length (see RockSample data.SampleLength) and diameter (see RockSample data.SampleDiameter) should be captured if possible. If analyzed complete the RockSample data.IsPlugCleaned flag.\nCore plugs are typically packaged to prevent grain loss in nickel foil, aluminium foil, teflon tape with stainless steel screens. \nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "CorePlug",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:CorePlug.MicroPlug",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CorePlug.MicroPlug",
+        "NameAlias": [
+          {
+            "AliasName": "Microplug"
+          }
+        ],
+        "Description": "A small cylindrical rock sample cut or drilled from the core plug sample (see CorePlug). Micro plugs are typically 1 to 3mm in diameter and 20mm in length and used for micro CT measurements. The plug orientation (see RockSample data.SampleOrientationID), length (see RockSample data.SampleLength) and diameter (see RockSample data.SampleDiameter) should be captured if possible.\nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "CorePlug.MicroPlug",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:CorePlug.Trim",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CorePlug.Trim",
+        "NameAlias": [
+          {
+            "AliasName": "Offcut"
+          }
+        ],
+        "Description": "A small portion of rock cut from a core plug sample (see CorePlug). Trims are typically used for generating slides, destructive testing, or analysis that doesn't require a regularly shaped sample. Also known as a offcut or a slice. The sample weight (see RockSample data.SampleWeight) should be captured if possible.\nIf a Coring record is related to this rock sample, the related Coring must be of type ConventionalCoring.",
+        "Code": "CorePlug.Trim",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Cuttings",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cuttings",
+        "NameAlias": [
+          {
+            "AliasName": "Ditch Cuttings"
+          }
+        ],
+        "Description": "Small pieces of rock broken away due to the action of the bit teeth during drilling. Cuttings can be washed and dried, unwashed (see RockSample data.AreCuttingsWashedAndDried flag) and collected in trays for lithological descriptions (see Cuttings.SampleTray). The cuttings interval (see RockSample data.SampleInterval) and weight (see RockSample data.SampleWeight) should be captured if possible.\nCuttings are screened out of the liquid mud system at the  shakers and are monitored for composition, size, shape, color, texture, hydrocarbon content and other properties by the mud engineer at the rig site.",
+        "Code": "Cuttings",
+        "AttributionAuthority": "OSDU Petrophysics | SLB Oilfield Glossary",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Cuttings.Crushed",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cuttings.Crushed",
+        "Description": "Crushed rock taken from cutting samples (see Cuttings). The sample interval (see RockSample data.SampleInterval) and weight (see RockSample data.SampleWeight) should be captured if possible. Depending upon the purpose of the sample, crushed cuttings may be from either washed and dried or unwashed samples. Samples are commonly used for particle size analysis, geochemistry, fluid typing or clay typing.",
+        "Code": "Cuttings.Crushed",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Cuttings.SampleTray",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cuttings.SampleTray",
+        "NameAlias": [
+          {
+            "AliasName": "Samplex"
+          }
+        ],
+        "Description": "Cutting samples (see Cuttings) that are specially collected in a tray and typically used for lithology and hydrocarbon fluorescence descriptions.",
+        "Code": "Cuttings.SampleTray",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:SidewallCore",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SidewallCore",
+        "NameAlias": [
+          {
+            "AliasName": "SWC"
+          }
+        ],
+        "Description": "A cylindrical sample of rock taken from the side of the borehole, usually by a wireline tool. Sidewall cores may be taken using percussion or mechanical methods (see SidewallCoreType).  The sample length (see RockSample data.SampleLength) and diameter (see RockSample data.SampleDiameter) should be captured if possible. Sample preservation status (see RockSample data.PreservationTypeID) should be completed if applicable. \nIf a Coring record is related to this rock sample, the related Coring must be of type SidewallCoring",
+        "Code": "SidewallCore",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:SidewallCore.Crushed",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SidewallCore.Crushed",
+        "Description": "Crushed rock taken from a Sidewall Core sample (see SidewallCore).  The sample interval (see RockSample data.SampleInterval) and weight (see RockSample data.SampleWeight) should be captured if possible. Crushed samples can be generated to various levels of granularity, and is commonly used for particle size analysis, geochemistry, fluid typing or clay typing.\nIf a Coring record is related to this rock sample, the related Coring must be of type SidewallCoring.",
+        "Code": "SidewallCore.Crushed",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:SidewallCore.Trim",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SidewallCore.Trim",
+        "NameAlias": [
+          {
+            "AliasName": "Offcut"
+          }
+        ],
+        "Description": "A portion of rock cut from a Sidewall Core sample (see SidewallCore) and typically used for generating slides, destructive testing, or analysis that doesn't require a regularly shaped sample. Also known as an offcut or a slice. The sample weight (see RockSample data.SampleWeight) should be captured if possible.\nIf a Coring record is related to this rock sample, the related Coring must be of type SidewallCoring.",
+        "Code": "SidewallCore.Trim",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Slide.Palaeontological",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide.Palaeontological",
+        "NameAlias": [
+          {
+            "AliasName": "Palaeo"
+          }
+        ],
+        "Description": "Slide sample prepared for paleontological studies from a biostrat sample. Prepared to evaluate the fauna.",
+        "Code": "Slide.Palaeontological",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Slide.Palynological",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide.Palynological",
+        "NameAlias": [
+          {
+            "AliasName": "Paly"
+          }
+        ],
+        "Description": "Slide sample prepared for palynological studies from a biostrat sample. Prepared to evaluate the flora.",
+        "Code": "Slide.Palynological",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Slide.PolishedSection",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide.PolishedSection",
+        "Description": "Slide sample prepared as a polished section for Scanning Electron Microscopy (SEM).",
+        "Code": "Slide.PolishedSection",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Slide.ThinSection",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide.ThinSection",
+        "Description": "Optically transparent flat slivers of rock mounted on a microscope slide for analysis.",
+        "Code": "Slide.ThinSection",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Outcrop",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Outcrop",
+        "Description": "A sample taken from an outcrop. The sample length (see RockSample data.SampleLength), diameter (see RockSample data.SampleDiameter), weight (see RockSample data.SampleWeight) and sample preservation status (see RockSample data.PreservationTypeID) should be captured if applicable. Outcrop will have a surface location instead of wellbore.",
+        "Code": "Outcrop",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Slide",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide",
+        "NameAlias": [
+          {
+            "AliasName": "Slide"
+          }
+        ],
+        "Description": "Rock sample fixed to a glass slide to view under a microscope. ",
+        "Code": "Slide",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Crushed",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Crushed",
+        "NameAlias": [
+          {
+            "AliasName": "Crushed"
+          }
+        ],
+        "Description": "Sample of crushed rock from an unidentified sample. This reference value is only to be used when the parent rock sample type (Conventional vs Sidewall vs Cuttings, e.g.) is unknown. If it is known, use the other appropriate reference value.",
+        "Code": "Crushed",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:ConventionalCoring.SlabPreservation",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConventionalCore.SlabPreservation",
+        "Description": "Wholebore core is cut lengthwise. This is commonly 1/3 and 2/3 split, but this proportion may vary. SlabPreservation identifies the piece intended for preservation and viewing as opposed to further sub-sampling (although rarely it may also be sub-sampled). When slabbing produces a smaller and larger piece, SlabPreservation refers to the smaller piece.",
+        "Code": "ConventionalCoring.SlabPreservation",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:ConventionalCoring.SlabWorking",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConventionalCore.SlabWorking",
+        "NameAlias": [
+          {
+            "AliasName": "Butt"
+          }
+        ],
+        "Description": "Wholebore core is cut lengthwise. This is commonly 1/3 and 2/3 split, but this proportion may vary. SlabWorking identifies the piece intended for sub-sampling to common shapes for additional lab measurements. When slabbing produces a smaller and larger piece, SlabWorking refers to the larger piece.",
+        "Code": "ConventionalCoring.SlabWorking",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Trim",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trim",
+        "Description": "Sample of a plug end trim from an unidentified sample. This reference value is only to be used when the parent rock sample type (Conventional vs Sidewall, e.g.) is unknown. If it is known, use the other appropriate reference value. ",
+        "Code": "Trim",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Plug",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plug",
+        "Description": "Sample of a plug from an unidentified sample. This reference value is only to be used when the parent rock sample type (Conventional vs Sidewall, e.g.) is unknown. If it is known, use the other appropriate reference value.",
+        "Code": "Plug",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:Chip",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Chip",
+        "Description": "Sample of a chip from an unidentified sample. This reference value is only to be used when the parent rock sample type (Conventional vs Sidewall, e.g.) is unknown. If it is known, use the other appropriate reference value. ",
+        "Code": "Chip",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockSampleType:MicroPlug",
+      "kind": "osdu:wks:reference-data--RockSampleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MicroPlug",
+        "Description": "Sample of a microplug from an unidentified sample. This reference value is only to be used when the parent rock sample type (Conventional vs Sidewall, e.g.) is unknown. If it is known, use the other appropriate reference value. ",
+        "Code": "MicroPlug",
+        "AttributionAuthority": "OSDU Petrophysics",
+        "AttributionPublication": "OSDU reference-values repository",
+        "AttributionRevision": "OSDU M12 0.15",
+        "Source": "Workbook ReferenceValues/Published/RockSampleType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

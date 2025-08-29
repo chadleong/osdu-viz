@@ -1,0 +1,3224 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:3RD_PARTY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3RD_PARTY",
+        "ID": "3RD_PARTY",
+        "Description": "Contractor / 3rd Party",
+        "Code": "3RD_PARTY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ABRASIVES",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ABRASIVES",
+        "ID": "ABRASIVES",
+        "Description": "Abrasives",
+        "Code": "ABRASIVES",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ACCIDENTAL_ESD",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ACCIDENTAL_ESD",
+        "ID": "ACCIDENTAL_ESD",
+        "Description": "Accidental / Unintentional ESD Shutdown",
+        "Code": "ACCIDENTAL_ESD",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ANT_WELL_COMMUN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ANT_WELL_COMMUN",
+        "ID": "ANT_WELL_COMMUN",
+        "Description": "Anticipated Well Comm.",
+        "Code": "ANT_WELL_COMMUN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ART_LIFT_INSTALL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ART_LIFT_INSTALL",
+        "ID": "ART_LIFT_INSTALL",
+        "Description": "Artificial Lift (New Installation)",
+        "Code": "ART_LIFT_INSTALL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ART_LIFT_SURFACE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ART_LIFT_SURFACE",
+        "ID": "ART_LIFT_SURFACE",
+        "Description": "Artificial Lift System - Pumping Wells",
+        "Code": "ART_LIFT_SURFACE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:BULK_TREAT_EQP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BULK_TREAT_EQP",
+        "ID": "BULK_TREAT_EQP",
+        "Description": "Bulk Separation System (Equipment or Process Design)",
+        "Code": "BULK_TREAT_EQP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CALIPER_RESTRICT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CALIPER_RESTRICT",
+        "ID": "CALIPER_RESTRICT",
+        "Description": "Caliper / Corrosion / Restrictions",
+        "Code": "CALIPER_RESTRICT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CAPACITY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CAPACITY",
+        "ID": "CAPACITY",
+        "Description": "Capacity Change",
+        "Code": "CAPACITY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CEMENT_BOND",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CEMENT_BOND",
+        "ID": "CEMENT_BOND",
+        "Description": "Cement Bond",
+        "Code": "CEMENT_BOND",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CHEM_TREAT_EQP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CHEM_TREAT_EQP",
+        "ID": "CHEM_TREAT_EQP",
+        "Description": "Chemical / Chem. Treating System (Equip. /Process Design)",
+        "Code": "CHEM_TREAT_EQP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:COLLAPSE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COLLAPSE",
+        "ID": "COLLAPSE",
+        "Description": "Collapse",
+        "Code": "COLLAPSE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:COMMUNITY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COMMUNITY",
+        "ID": "COMMUNITY",
+        "Description": "Community",
+        "Code": "COMMUNITY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:COMPLY_TEST",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COMPLY_TEST",
+        "ID": "COMPLY_TEST",
+        "Description": "Compliance Testing",
+        "Code": "COMPLY_TEST",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CONFORM_INJ",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CONFORM_INJ",
+        "ID": "CONFORM_INJ",
+        "Description": "Conformance - Injector",
+        "Code": "CONFORM_INJ",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CONFORM_PROD",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CONFORM_PROD",
+        "ID": "CONFORM_PROD",
+        "Description": "Conformance - Producer",
+        "Code": "CONFORM_PROD",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CONSTRUCT_SIMOPS",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CONSTRUCT_SIMOPS",
+        "ID": "CONSTRUCT_SIMOPS",
+        "Description": "Construction Activity (Simops)",
+        "Code": "CONSTRUCT_SIMOPS",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CONTRACT_MARKET",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CONTRACT_MARKET",
+        "ID": "CONTRACT_MARKET",
+        "Description": "Contractual / Market",
+        "Code": "CONTRACT_MARKET",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CORROSION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CORROSION",
+        "ID": "CORROSION",
+        "Description": "Corrosion",
+        "Code": "CORROSION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:CO_LABOR",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CO_LABOR",
+        "ID": "CO_LABOR",
+        "Description": "Company Labor",
+        "Code": "CO_LABOR",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:DIAG_SURVEY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DIAG_SURVEY",
+        "ID": "DIAG_SURVEY",
+        "Description": "Other Diagnostics / Surveys",
+        "Code": "DIAG_SURVEY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ELECTRICAL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ELECTRICAL",
+        "ID": "ELECTRICAL",
+        "Description": "Electrical",
+        "Code": "ELECTRICAL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ENVIRONMENT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ENVIRONMENT",
+        "ID": "ENVIRONMENT",
+        "Description": "Environment",
+        "Code": "ENVIRONMENT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:EQUIP_INSPECT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EQUIP_INSPECT",
+        "ID": "EQUIP_INSPECT",
+        "Description": "Proactive Equip Inspection / Replacement",
+        "Code": "EQUIP_INSPECT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ESD",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ESD",
+        "ID": "ESD",
+        "Description": "Emergency Shut Down (ESD)",
+        "Code": "ESD",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:EXCESS_CONTAM",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXCESS_CONTAM",
+        "ID": "EXCESS_CONTAM",
+        "Description": " Excess contaminant levels (CO2, H2S, Hg)",
+        "Code": "EXCESS_CONTAM",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:EXPORT_STORAGE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EXPORT_STORAGE",
+        "ID": "EXPORT_STORAGE",
+        "Description": "Export & Storage System - Pumps, Pipelines, Tanks",
+        "Code": "EXPORT_STORAGE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:FILL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FILL",
+        "ID": "FILL",
+        "Description": "Depth / Fill",
+        "Code": "FILL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:FISH",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FISH",
+        "ID": "FISH",
+        "Description": "Fish",
+        "Code": "FISH",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:FLOWBACKS",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FLOWBACKS",
+        "ID": "FLOWBACKS",
+        "Description": " Flowbacks",
+        "Code": "FLOWBACKS",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:FLUID_LOADED",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FLUID_LOADED",
+        "ID": "FLUID_LOADED",
+        "Description": "Fluid Loaded / Water Breakthrough",
+        "Code": "FLUID_LOADED",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_INJECTION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_INJECTION",
+        "ID": "GAS_INJECTION",
+        "Description": "Gas Injection System (Equipment)",
+        "Code": "GAS_INJECTION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_LIFT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_LIFT",
+        "ID": "GAS_LIFT",
+        "Description": "Gas Lift System (Equipment)",
+        "Code": "GAS_LIFT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_SHUTOFF",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_SHUTOFF",
+        "ID": "GAS_SHUTOFF",
+        "Description": "Gas shut-off",
+        "Code": "GAS_SHUTOFF",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_SUPPLY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_SUPPLY",
+        "ID": "GAS_SUPPLY",
+        "Description": "Gas Supply",
+        "Code": "GAS_SUPPLY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_TREAT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_TREAT",
+        "ID": "GAS_TREAT",
+        "Description": "Gas Treating System",
+        "Code": "GAS_TREAT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GAS_TREAT_EQP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GAS_TREAT_EQP",
+        "ID": "GAS_TREAT_EQP",
+        "Description": "Gas Treating System (Equipment or Process Design)",
+        "Code": "GAS_TREAT_EQP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GATHER_TRANSPORT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GATHER_TRANSPORT",
+        "ID": "GATHER_TRANSPORT",
+        "Description": "Gathering and Transport System",
+        "Code": "GATHER_TRANSPORT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GOR_REGULATORY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GOR_REGULATORY",
+        "ID": "GOR_REGULATORY",
+        "Description": "GOR - High - Regulatory Max GOR",
+        "Code": "GOR_REGULATORY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:GOR_RSVR_MGMT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GOR_RSVR_MGMT",
+        "ID": "GOR_RSVR_MGMT",
+        "Description": "GOR - High - Voluntary - Rsvr Mgmt",
+        "Code": "GOR_RSVR_MGMT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:H2S",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "H2S",
+        "ID": "H2S",
+        "Description": "H2S",
+        "Code": "H2S",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:HIGH_LEVEL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HIGH_LEVEL",
+        "ID": "HIGH_LEVEL",
+        "Description": "High level",
+        "Code": "HIGH_LEVEL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:HIGH_PRESS",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HIGH_PRESS",
+        "ID": "HIGH_PRESS",
+        "Description": "High pressure",
+        "Code": "HIGH_PRESS",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:HUMAN_ERROR",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HUMAN_ERROR",
+        "ID": "HUMAN_ERROR",
+        "Description": "Human Error / Procedural Deviation",
+        "Code": "HUMAN_ERROR",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:HYDRATES",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HYDRATES",
+        "ID": "HYDRATES",
+        "Description": "Hydrates",
+        "Code": "HYDRATES",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:INJECTIVITY",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "INJECTIVITY",
+        "ID": "INJECTIVITY",
+        "Description": "Injectivity Problems",
+        "Code": "INJECTIVITY",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:INTEGRITY_TEST",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "INTEGRITY_TEST",
+        "ID": "INTEGRITY_TEST",
+        "Description": "Integrity Testing",
+        "Code": "INTEGRITY_TEST",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:INTEG_PRESV",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "INTEG_PRESV",
+        "ID": "INTEG_PRESV",
+        "Description": "Integrity Preservation",
+        "Code": "INTEG_PRESV",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:LAND_MOVEMENT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LAND_MOVEMENT",
+        "ID": "LAND_MOVEMENT",
+        "Description": "Earthquake / Mudslide",
+        "Code": "LAND_MOVEMENT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:LIGHTNING",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LIGHTNING",
+        "ID": "LIGHTNING",
+        "Description": "Lightning",
+        "Code": "LIGHTNING",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:LOG_OTHER",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LOG_OTHER",
+        "ID": "LOG_OTHER",
+        "Description": "Other Log or Survey",
+        "Code": "LOG_OTHER",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:LOW_LEVEL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LOW_LEVEL",
+        "ID": "LOW_LEVEL",
+        "Description": "Low level",
+        "Code": "LOW_LEVEL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:MECHANICAL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MECHANICAL",
+        "ID": "MECHANICAL",
+        "Description": "Mechanical",
+        "Code": "MECHANICAL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:MECHANICAL_PART",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MECHANICAL_PART",
+        "ID": "MECHANICAL_PART",
+        "Description": "Mechanical / Part",
+        "Code": "MECHANICAL_PART",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:MOD_UPGRADE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MOD_UPGRADE",
+        "ID": "MOD_UPGRADE",
+        "Description": "Modifications / Upgrade",
+        "Code": "MOD_UPGRADE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:NEWINSTALL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NEWINSTALL",
+        "ID": "NEWINSTALL",
+        "Description": "New Installation",
+        "Code": "NEWINSTALL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:NON_WEATHER",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NON_WEATHER",
+        "ID": "NON_WEATHER",
+        "Description": "Non weather related outage",
+        "Code": "NON_WEATHER",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:OIL_TREAT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OIL_TREAT",
+        "ID": "OIL_TREAT",
+        "Description": "Oil Treating System",
+        "Code": "OIL_TREAT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:OIL_TREAT_EQP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OIL_TREAT_EQP",
+        "ID": "OIL_TREAT_EQP",
+        "Description": "Oil Treating System (Equipment or Process Design)",
+        "Code": "OIL_TREAT_EQP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:OPEC",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OPEC",
+        "ID": "OPEC",
+        "Description": "OPEC",
+        "Code": "OPEC",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PARAFFIN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PARAFFIN",
+        "ID": "PARAFFIN",
+        "Description": "Paraffin",
+        "Code": "PARAFFIN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PERFS_ADD",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PERFS_ADD",
+        "ID": "PERFS_ADD",
+        "Description": "Add Perfs, Add zone",
+        "Code": "PERFS_ADD",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PIGGING",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PIGGING",
+        "ID": "PIGGING",
+        "Description": "Pigging",
+        "Code": "PIGGING",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PIG_STUCK",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PIG_STUCK",
+        "ID": "PIG_STUCK",
+        "Description": "\\",
+        "Code": "PIG_STUCK",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PLC",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PLC",
+        "ID": "PLC",
+        "Description": "PLC ",
+        "Code": "PLC",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PLT_TEMP_TRACER",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PLT_TEMP_TRACER",
+        "ID": "PLT_TEMP_TRACER",
+        "Description": "PLT / Temperature / Tracer",
+        "Code": "PLT_TEMP_TRACER",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PRESSURE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PRESSURE",
+        "ID": "PRESSURE",
+        "Description": "Pressure",
+        "Code": "PRESSURE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PROD_SPEC_DEV",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PROD_SPEC_DEV",
+        "ID": "PROD_SPEC_DEV",
+        "Description": "Product spec deviation",
+        "Code": "PROD_SPEC_DEV",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PROJECT_DESIGN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PROJECT_DESIGN",
+        "ID": "PROJECT_DESIGN",
+        "Description": "Project Design",
+        "Code": "PROJECT_DESIGN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:PSV_ACT_FAIL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PSV_ACT_FAIL",
+        "ID": "PSV_ACT_FAIL",
+        "Description": "PSV activation or failure",
+        "Code": "PSV_ACT_FAIL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:REDESIGN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "REDESIGN",
+        "ID": "REDESIGN",
+        "Description": "Re-design",
+        "Code": "REDESIGN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:REDUCED_FLOW",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "REDUCED_FLOW",
+        "ID": "REDUCED_FLOW",
+        "Description": "Emulsion / Water Block / Fluid Damage",
+        "Code": "REDUCED_FLOW",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:REG_CHANGE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "REG_CHANGE",
+        "ID": "REG_CHANGE",
+        "Description": "Regulatory Change / Other",
+        "Code": "REG_CHANGE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:REG_FLARE_MAX",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "REG_FLARE_MAX",
+        "ID": "REG_FLARE_MAX",
+        "Description": "Regulatory - Flare Limit (Max Volume)",
+        "Code": "REG_FLARE_MAX",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:REG_WATER_MAX",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "REG_WATER_MAX",
+        "ID": "REG_WATER_MAX",
+        "Description": "Regulatory - Water Discharge Limits",
+        "Code": "REG_WATER_MAX",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:RIG_SIMOPS",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RIG_SIMOPS",
+        "ID": "RIG_SIMOPS",
+        "Description": "Rig Activity (Simops)",
+        "Code": "RIG_SIMOPS",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ROAD_CONDITIONS",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ROAD_CONDITIONS",
+        "ID": "ROAD_CONDITIONS",
+        "Description": "Road conditions",
+        "Code": "ROAD_CONDITIONS",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:ROD_ADJUST",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ROD_ADJUST",
+        "ID": "ROD_ADJUST",
+        "Description": "Rod Spacing / Adjustments",
+        "Code": "ROD_ADJUST",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SAFETY_PROACTIVE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SAFETY_PROACTIVE",
+        "ID": "SAFETY_PROACTIVE",
+        "Description": "Safety & Safety Systems",
+        "Code": "SAFETY_PROACTIVE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SAFETY_REACTIVE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SAFETY_REACTIVE",
+        "ID": "SAFETY_REACTIVE",
+        "Description": "Safety & Safety Systems",
+        "Code": "SAFETY_REACTIVE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SALT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SALT",
+        "ID": "SALT",
+        "Description": "Salt",
+        "Code": "SALT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SATURATION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SATURATION",
+        "ID": "SATURATION",
+        "Description": "Saturation",
+        "Code": "SATURATION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SCALE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SCALE",
+        "ID": "SCALE",
+        "Description": "Scale",
+        "Code": "SCALE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SEA_WAVES",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEA_WAVES",
+        "ID": "SEA_WAVES",
+        "Description": "Seas / Waves",
+        "Code": "SEA_WAVES",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SEPERATION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SEPERATION",
+        "ID": "SEPERATION",
+        "Description": "Bulk Oil/Water/Gas Separation System",
+        "Code": "SEPERATION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SOLIDS_PLUG",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SOLIDS_PLUG",
+        "ID": "SOLIDS_PLUG",
+        "Description": "Solids / Debris / Plug",
+        "Code": "SOLIDS_PLUG",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:STIMULATE_ACID",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "STIMULATE_ACID",
+        "ID": "STIMULATE_ACID",
+        "Description": "Stimulation - Matrix Acid",
+        "Code": "STIMULATE_ACID",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:STIMULATE_FRAC",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "STIMULATE_FRAC",
+        "ID": "STIMULATE_FRAC",
+        "Description": "Stimulation - Fracture",
+        "Code": "STIMULATE_FRAC",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:STIMULATE_THERM",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "STIMULATE_THERM",
+        "ID": "STIMULATE_THERM",
+        "Description": "Stimulation - Thermal",
+        "Code": "STIMULATE_THERM",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:SWAB_BUILD",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SWAB_BUILD",
+        "ID": "SWAB_BUILD",
+        "Description": "Swab/Build up/N2 lift",
+        "Code": "SWAB_BUILD",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TANKER",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TANKER",
+        "ID": "TANKER",
+        "Description": "Export tanker delays",
+        "Code": "TANKER",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:THEFT_VANDAL",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "THEFT_VANDAL",
+        "ID": "THEFT_VANDAL",
+        "Description": "Theft / Vandalism / Sabotage",
+        "Code": "THEFT_VANDAL",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TREAT_CORROSION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TREAT_CORROSION",
+        "ID": "TREAT_CORROSION",
+        "Description": "Corrosion Treatment",
+        "Code": "TREAT_CORROSION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TREAT_EMULSION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TREAT_EMULSION",
+        "ID": "TREAT_EMULSION",
+        "Description": "Treating - Emulsion",
+        "Code": "TREAT_EMULSION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TREAT_HYDRATES",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TREAT_HYDRATES",
+        "ID": "TREAT_HYDRATES",
+        "Description": "Treating - Hydrates",
+        "Code": "TREAT_HYDRATES",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TREAT_PARAFFIN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TREAT_PARAFFIN",
+        "ID": "TREAT_PARAFFIN",
+        "Description": "Treating - Paraffin",
+        "Code": "TREAT_PARAFFIN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TREAT_SCALE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TREAT_SCALE",
+        "ID": "TREAT_SCALE",
+        "Description": "Treating - Scale",
+        "Code": "TREAT_SCALE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:TURNAROUND",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TURNAROUND",
+        "ID": "TURNAROUND",
+        "Description": "Turnaround",
+        "Code": "TURNAROUND",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:UNECON_RATE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UNECON_RATE",
+        "ID": "UNECON_RATE",
+        "Description": "Pressure Depleted / Low or Uneconomic Production Rate",
+        "Code": "UNECON_RATE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:UNECON_WOR",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UNECON_WOR",
+        "ID": "UNECON_WOR",
+        "Description": "Water Cut - High - Uneconomic",
+        "Code": "UNECON_WOR",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:UPSIZE_DOWNSIZE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UPSIZE_DOWNSIZE",
+        "ID": "UPSIZE_DOWNSIZE",
+        "Description": "Upsize / Downsize",
+        "Code": "UPSIZE_DOWNSIZE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:VIBRATION",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "VIBRATION",
+        "ID": "VIBRATION",
+        "Description": "Vibration",
+        "Code": "VIBRATION",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:VSP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "VSP",
+        "ID": "VSP",
+        "Description": "VSP",
+        "Code": "VSP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WATER_INJ",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WATER_INJ",
+        "ID": "WATER_INJ",
+        "Description": "Water Injection/Disposal System",
+        "Code": "WATER_INJ",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WATER_SHUTOFF",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WATER_SHUTOFF",
+        "ID": "WATER_SHUTOFF",
+        "Description": "Water shut-off (producer only)",
+        "Code": "WATER_SHUTOFF",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WATER_TREAT",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WATER_TREAT",
+        "ID": "WATER_TREAT",
+        "Description": "Water Treating System",
+        "Code": "WATER_TREAT",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WATER_TREAT_EQP",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WATER_TREAT_EQP",
+        "ID": "WATER_TREAT_EQP",
+        "Description": "Water Treating System (Equipment or Process Design)",
+        "Code": "WATER_TREAT_EQP",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WEATHER",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WEATHER",
+        "ID": "WEATHER",
+        "Description": "Weather / Storms / Floods",
+        "Code": "WEATHER",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WELL_COMMUN",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_COMMUN",
+        "ID": "WELL_COMMUN",
+        "Description": "Well Communication",
+        "Code": "WELL_COMMUN",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WELL_TEST",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WELL_TEST",
+        "ID": "WELL_TEST",
+        "Description": "Well Test (Shared Flowline)",
+        "Code": "WELL_TEST",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DowntimeReasonDetailType:WILD_FIRE",
+      "kind": "osdu:wks:reference-data--DowntimeReasonDetailType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WILD_FIRE",
+        "ID": "WILD_FIRE",
+        "Description": "Wild Fires",
+        "Code": "WILD_FIRE",
+        "AttributionAuthority": "Chevron",
+        "Source": "Workbook ReferenceValues/Authoring/DowntimeReasonDetailType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

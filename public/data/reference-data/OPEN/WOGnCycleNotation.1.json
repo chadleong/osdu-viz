@@ -1,0 +1,677 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CDI1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Decreasing Oil, Increasing Gas, Phase 1",
+        "ID": "CDI1",
+        "Description": "Constant Water, Decreasing Oil, Increasing Gas, Phase 1",
+        "Code": "CDI1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CID1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Increasing Oil, Decreasing Gas, Phase 1",
+        "ID": "CID1",
+        "Description": "Constant Water, Increasing Oil, Decreasing Gas, Phase 1",
+        "Code": "CID1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DCI1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Constant Oil, Increasing Gas, Phase 1",
+        "ID": "DCI1",
+        "Description": "Decreasing Water, Constant Oil, Increasing Gas, Phase 1",
+        "Code": "DCI1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DIC1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Increasing Oil, Constant Gas, Phase 1",
+        "ID": "DIC1",
+        "Description": "Decreasing Water, Increasing Oil, Constant Gas, Phase 1",
+        "Code": "DIC1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:ICD1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Constant Oil, Decreasing Gas, Phase 1",
+        "ID": "ICD1",
+        "Description": "Increasing Water, Constant Oil, Decreasing Gas, Phase 1",
+        "Code": "ICD1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:IDC1",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Decreasing Oil, Constant Gas, Phase 1",
+        "ID": "IDC1",
+        "Description": "Increasing Water, Decreasing Oil, Constant Gas, Phase 1",
+        "Code": "IDC1",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CDI2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Decreasing Oil, Increasing Gas, Phase 2",
+        "ID": "CDI2",
+        "Description": "Constant Water, Decreasing Oil, Increasing Gas, Phase 2",
+        "Code": "CDI2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CID2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Increasing Oil, Decreasing Gas, Phase 2",
+        "ID": "CID2",
+        "Description": "Constant Water, Increasing Oil, Decreasing Gas, Phase 2",
+        "Code": "CID2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DCI2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Constant Oil, Increasing Gas, Phase 2",
+        "ID": "DCI2",
+        "Description": "Decreasing Water, Constant Oil, Increasing Gas, Phase 2",
+        "Code": "DCI2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DIC2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Increasing Oil, Constant Gas, Phase 2",
+        "ID": "DIC2",
+        "Description": "Decreasing Water, Increasing Oil, Constant Gas, Phase 2",
+        "Code": "DIC2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:ICD2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Constant Oil, Decreasing Gas, Phase 2",
+        "ID": "ICD2",
+        "Description": "Increasing Water, Constant Oil, Decreasing Gas, Phase 2",
+        "Code": "ICD2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:IDC2",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Decreasing Oil, Constant Gas, Phase 2",
+        "ID": "IDC2",
+        "Description": "Increasing Water, Decreasing Oil, Constant Gas, Phase 2",
+        "Code": "IDC2",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CDI3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Decreasing Oil, Increasing Gas, Phase 3",
+        "ID": "CDI3",
+        "Description": "Constant Water, Decreasing Oil, Increasing Gas, Phase 3",
+        "Code": "CDI3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CID3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Increasing Oil, Decreasing Gas, Phase 3",
+        "ID": "CID3",
+        "Description": "Constant Water, Increasing Oil, Decreasing Gas, Phase 3",
+        "Code": "CID3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DCI3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Constant Oil, Increasing Gas, Phase 3",
+        "ID": "DCI3",
+        "Description": "Decreasing Water, Constant Oil, Increasing Gas, Phase 3",
+        "Code": "DCI3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DIC3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Increasing Oil, Constant Gas, Phase 3",
+        "ID": "DIC3",
+        "Description": "Decreasing Water, Increasing Oil, Constant Gas, Phase 3",
+        "Code": "DIC3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:ICD3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Constant Oil, Decreasing Gas, Phase 3",
+        "ID": "ICD3",
+        "Description": "Increasing Water, Constant Oil, Decreasing Gas, Phase 3",
+        "Code": "ICD3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:IDC3",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Decreasing Oil, Constant Gas, Phase 3",
+        "ID": "IDC3",
+        "Description": "Increasing Water, Decreasing Oil, Constant Gas, Phase 3",
+        "Code": "IDC3",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CDI4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Decreasing Oil, Increasing Gas, Phase 4",
+        "ID": "CDI4",
+        "Description": "Constant Water, Decreasing Oil, Increasing Gas, Phase 4",
+        "Code": "CDI4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:CID4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Water, Increasing Oil, Decreasing Gas, Phase 4",
+        "ID": "CID4",
+        "Description": "Constant Water, Increasing Oil, Decreasing Gas, Phase 4",
+        "Code": "CID4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DCI4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Constant Oil, Increasing Gas, Phase 4",
+        "ID": "DCI4",
+        "Description": "Decreasing Water, Constant Oil, Increasing Gas, Phase 4",
+        "Code": "DCI4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:DIC4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decreasing Water, Increasing Oil, Constant Gas, Phase 4",
+        "ID": "DIC4",
+        "Description": "Decreasing Water, Increasing Oil, Constant Gas, Phase 4",
+        "Code": "DIC4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:ICD4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Constant Oil, Decreasing Gas, Phase 4",
+        "ID": "ICD4",
+        "Description": "Increasing Water, Constant Oil, Decreasing Gas, Phase 4",
+        "Code": "ICD4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WOGnCycleNotation:IDC4",
+      "kind": "osdu:wks:reference-data--WOGnCycleNotation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Increasing Water, Decreasing Oil, Constant Gas, Phase 4",
+        "ID": "IDC4",
+        "Description": "Increasing Water, Decreasing Oil, Constant Gas, Phase 4",
+        "Code": "IDC4",
+        "Source": "Workbook ReferenceValues/Published/WOGnCycleNotation.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

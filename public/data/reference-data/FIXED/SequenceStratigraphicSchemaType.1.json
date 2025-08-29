@@ -1,0 +1,209 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:GeneticSequence",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GeneticSequence",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Genetic Sequence stratigraphy as defined by  Frazier 1974, Galloway 1989",
+        "Code": "GeneticSequence",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:TR-Sequence",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TR-Sequence",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "TR-Sequence stratigraphy as defined by Johnson & Murphy 1984, Embry and Johannessen 1992",
+        "Code": "TR-Sequence",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:DepositionalSequence1",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepositionalSequence1",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Depositional Sequence stratigraphy (seismic stratigraphy) as defined by Mitchum et al 1977",
+        "Code": "DepositionalSequence1",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:DepositionalSequence2",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepositionalSequence2",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Depositional Sequence stratigraphy as defined by Haq et al 1987, Posamentier 1988",
+        "Code": "DepositionalSequence2",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:DepositionalSequence3",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepositionalSequence3",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Depositional Sequence stratigraphy as defined by Van Wagoner et al 1988, 1990, and Christie-Blick 1991",
+        "Code": "DepositionalSequence3",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SequenceStratigraphicSchemaType:DepositionalSequence4",
+      "kind": "osdu:wks:reference-data--SequenceStratigraphicSchemaType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DepositionalSequence4",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:EQN:"
+          }
+        ],
+        "Description": "Depositional Sequence stratigraphy as defined by Hunt&Tucker 1992, 1995, and Helland-Hansen and Gjelberg 1994",
+        "Code": "DepositionalSequence4",
+        "AttributionRevision": "1",
+        "(COMPANY: insert comment)": "EQN",
+        "Source": "Workbook ReferenceValues/Published/SequenceStratigraphicSchemaType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

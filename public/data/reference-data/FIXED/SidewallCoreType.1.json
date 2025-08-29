@@ -1,0 +1,168 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SidewallCoreType:Percussion",
+      "kind": "osdu:wks:reference-data--SidewallCoreType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percussion",
+        "NameAlias": [
+          {
+            "AliasName": "PSWC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Percussion",
+        "Description": "A hollow, retrievable, cylindrical bullet is shot into the borehole wall and retrieved with the rock sample inside.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-12-16T06:25:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SidewallCoreType:Rotary",
+      "kind": "osdu:wks:reference-data--SidewallCoreType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rotary",
+        "NameAlias": [
+          {
+            "AliasName": "RSWC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Rotary",
+        "Description": "A diamond-tipped drill cuts a plug from the borehole wall. The drill and sample are retracted into the body of the tool.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-12-16T06:25:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SidewallCoreType:Pressurized",
+      "kind": "osdu:wks:reference-data--SidewallCoreType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressurized",
+        "Code": "Pressurized",
+        "Description": "A rotary sidewall core brought to surface at reservoir pressure.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-12-16T06:25:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SidewallCoreType:PercussionSidewallCore",
+      "kind": "osdu:wks:reference-data--SidewallCoreType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percussion sidewall core",
+        "NameAlias": [
+          {
+            "AliasName": "PSWC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "PercussionSidewallCore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Percussion\" with Name=\"Percussion\" instead. Cylindrical sidewall core acquired using a wireline logging tool.  Cores are explosively cut and thus generally more damaged.  Cores are typically up to 4.5cm long and 2.5cm wide.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-12-16T06:25:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SidewallCoreType:RotarySidewallCore",
+      "kind": "osdu:wks:reference-data--SidewallCoreType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rotary sidewall core",
+        "Code": "RotarySidewallCore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Rotary\" with Name=\"Rotary\" instead. Cylindrical sidewall core acquired using a wireline logging tool.  Cores are mechanically extracted and thus generally less damaged.  Cores are typically up to 5cm long and 2.5cm wide.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2023-12-16T06:25:43+00:00"
+      }
+    }
+  ]
+}
