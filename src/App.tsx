@@ -15,6 +15,9 @@ export default function App() {
   const inputRef = useRef<HTMLDivElement | null>(null)
   const portalRef = useRef<HTMLDivElement | null>(null)
   const [portalStyle, setPortalStyle] = useState<{ top: number; left: number; width: number } | null>(null)
+  // Loading progress (initial schema load)
+  const [loadTotal, setLoadTotal] = useState(0)
+  const [loadDone, setLoadDone] = useState(0)
 
   // Close dropdown when clicking outside — attach a capture-phase pointerdown listener while dropdown is open
   useEffect(() => {
@@ -93,7 +96,13 @@ export default function App() {
       const parsed: SchemaModel[] = []
       const idx: Record<string, any> = {}
 
+      // setup progress counters
+      const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
+      setLoadTotal(total)
+      setLoadDone(0)
+
       // schemaIndex is an array of objects with metadata, we need the publicPath
+      let completed = 0
       for (const schemaInfo of schemaIndex) {
         // Load ALL schemas
         try {
@@ -120,6 +129,9 @@ export default function App() {
         } catch (e) {
           console.warn(`Failed to load ${schemaInfo.publicPath}:`, e)
         }
+        // update progress regardless of success/failure for this item
+        completed += 1
+        setLoadDone(completed)
       }
 
       setModels(parsed)
@@ -444,12 +456,39 @@ export default function App() {
             </div>
           </div>
         ) : (
-          <div className="flex items-center justify-center h-full">
-            <div className="text-center">
+          <div className="h-full">
+            <div className="text-center" style={{ marginTop: 64 }}>
               {models.length === 0 ? (
                 <>
-                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                  <div className="spinner mx-auto mb-4"></div>
                   <p className="text-gray-600">Loading schemas...</p>
+                  {/* Progress bar + percent */}
+                  {loadTotal > 0 && (
+                    <div className="mt-3" style={{ width: 260, marginLeft: "auto", marginRight: "auto" }}>
+                      <div
+                        style={{
+                          height: 8,
+                          background: "#e5e7eb",
+                          borderRadius: 9999,
+                          overflow: "hidden",
+                          boxShadow: "inset 0 1px 2px rgba(0,0,0,0.05)",
+                        }}
+                        aria-label="Loading progress"
+                      >
+                        <div
+                          style={{
+                            width: `${Math.round((loadDone / Math.max(loadTotal, 1)) * 100)}%`,
+                            height: "100%",
+                            background: "linear-gradient(90deg,#3b82f6,#06b6d4)",
+                            transition: "width 200ms ease",
+                          }}
+                        />
+                      </div>
+                      <div className="text-xs text-gray-600 mt-1">
+                        {Math.round((loadDone / Math.max(loadTotal, 1)) * 100)}% · {loadDone}/{loadTotal}
+                      </div>
+                    </div>
+                  )}
                 </>
               ) : (
                 <p className="text-gray-600">Please select a schema from the dropdown above</p>

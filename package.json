@@ -1,6 +1,6 @@
 {
   "name": "osdu-viz",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -28,6 +28,7 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
+    "@vitest/coverage-v8": "^2.1.9",
     "jsdom": "^25.0.1",
     "typescript": "^5.9.2",
     "vite": "^7.1.3",
