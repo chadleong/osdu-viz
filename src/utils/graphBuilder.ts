@@ -1,4 +1,4 @@
-import type { Edge, Node } from "reactflow"
+import type { Edge, Node } from "@xyflow/react"
 import { GraphBuildOptions, SchemaModel } from "../types"
 
 function normalizeId(id: string) {
@@ -203,7 +203,7 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   const id = model.id || title
   const mainId = normalizeId(id)
   const erdView = opts.erdView !== false // Default to true
-  console.log("Building graph for:", title, "erdView:", erdView, "opts.erdView:", opts.erdView)
+  //   console.log("Building graph for:", title, "erdView:", erdView, "opts.erdView:", opts.erdView)
 
   const { properties, relations, refs } = collectFromSchema(model.schema)
   const erdRelationships = extractErdRelationships(model.schema, title)
@@ -219,11 +219,11 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
 
   if (!erdView) {
     // Original view - simple node with relationships as separate nodes
-    console.log("Using original graph builder")
+    // console.log("Using original graph builder")
     return buildOriginalGraph(model, opts, filteredProps, filteredRels, refs, mainId, title, id)
   }
 
-  console.log("Using ERD graph builder")
+  //   console.log("Using ERD graph builder")
   // ERD view - entities with relationships
   const nodes: Node[] = [
     {
@@ -471,19 +471,19 @@ function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
       }
 
       // Log edges that have any handle properties for debugging
-      if ("sourceHandle" in edge || "targetHandle" in edge) {
-        console.log("Edge with handles:", edge.id, {
-          originalSourceHandle: edge.sourceHandle,
-          originalTargetHandle: edge.targetHandle,
-          cleanSourceHandle: cleanEdge.sourceHandle,
-          cleanTargetHandle: cleanEdge.targetHandle,
-        })
-      }
+      //   if ("sourceHandle" in edge || "targetHandle" in edge) {
+      //     // // console.log("Edge with handles:", edge.id, {
+      //     //   originalSourceHandle: edge.sourceHandle,
+      //     //   originalTargetHandle: edge.targetHandle,
+      //     //   cleanSourceHandle: cleanEdge.sourceHandle,
+      //     //   cleanTargetHandle: cleanEdge.targetHandle,
+      //     // })
+      //   }
 
       return cleanEdge
     })
 
-  console.log("Validated edges:", validatedEdges.length, "from original:", edges.length)
+  //   console.log("Validated edges:", validatedEdges.length, "from original:", edges.length)
   return validatedEdges
 }
 

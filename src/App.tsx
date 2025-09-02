@@ -413,7 +413,12 @@ export default function App() {
       <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
         {selectedModel && selectedModel.schema ? (
           <div style={{ position: "relative", height: "100%" }}>
-            <SchemaGraph nodes={nodes} edges={edges} onSchemaSelect={handleSchemaSelect} />
+            <SchemaGraph
+              key={selectedModel.id || selectedModel.path}
+              nodes={nodes}
+              edges={edges}
+              onSchemaSelect={handleSchemaSelect}
+            />
             {/* Overlay layer to host interactive controls above ReactFlow */}
             <div
               style={{

@@ -1,5 +1,5 @@
-import dagre from "dagre"
-import type { Edge, Node, XYPosition } from "reactflow"
+import dagre from "@dagrejs/dagre"
+import type { Edge, Node, XYPosition } from "@xyflow/react"
 
 const erdNodeWidth = 300
 const erdNodeHeight = 180

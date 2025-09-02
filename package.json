@@ -15,10 +15,11 @@
     "scan": "node scripts/scan-schemas.cjs"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.1.5",
+    "@xyflow/react": "^12.8.4",
     "dagre": "^0.8.5",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "reactflow": "^11.11.4"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.8.0",

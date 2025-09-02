@@ -1,4 +1,4 @@
-import type { NodeTypes, EdgeTypes } from "reactflow"
+import type { NodeTypes, EdgeTypes } from "@xyflow/react"
 import { DefaultNode, ErdEntityNode } from "./nodes"
 
 export const NODE_TYPES: NodeTypes = Object.freeze({

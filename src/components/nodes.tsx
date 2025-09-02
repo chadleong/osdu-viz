@@ -1,5 +1,5 @@
 import React from "react"
-import { Handle, Position } from "reactflow"
+import { Handle, Position } from "@xyflow/react"
 
 export const DefaultNode = React.memo(function DefaultNode({ data }: any) {
   return (

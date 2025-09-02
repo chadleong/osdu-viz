@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react"
-import { Node } from "reactflow"
+import { Node } from "@xyflow/react"
+import { ReactNode } from "react"
+
+// Define explicit type for node data
+interface TooltipNodeData {
+  label: ReactNode
+  subtitle?: ReactNode
+}
 
 export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => void }) {
   const props = (node?.data?.properties ?? []) as Array<{
@@ -124,8 +131,8 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
     <div className="tooltip">
       <div className="tooltip-header">
         <div>
-          <div className="tooltip-title">{node?.data?.label}</div>
-          {node?.data?.subtitle && <div className="tooltip-sub">{node?.data?.subtitle}</div>}
+          <div className="tooltip-title">{node?.data?.label as ReactNode}</div>
+          {node?.data?.subtitle && <div className="tooltip-sub">{node?.data?.subtitle as ReactNode}</div>}
           {nodeDescription && <div className="tooltip-desc">{nodeDescription}</div>}
         </div>
         <button className="btn" onClick={onClose}>

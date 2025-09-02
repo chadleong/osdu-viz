@@ -1,24 +1,40 @@
-import React, { useCallback, useMemo, useState, useEffect, useRef } from "react"
-import ReactFlow, {
+import React, { useCallback, useMemo, useState, useEffect } from "react"
+import {
   Background,
   Controls,
   MiniMap,
   Node,
   Edge,
+  XYPosition,
+  Position,
   useNodesState,
   useEdgesState,
   MarkerType,
-  NodeTypes,
-  EdgeTypes,
   NodeChange,
   EdgeChange,
-  Handle,
-  Position,
-} from "reactflow"
-import "reactflow/dist/style.css"
+  useReactFlow,
+  ReactFlowProvider,
+  ReactFlow,
+} from "@xyflow/react"
+import "@xyflow/react/dist/style.css"
 import { layoutWithDagre } from "../utils/layout"
 import { PropertyTooltip } from "./Tooltip"
-import { NODE_TYPES as EXPORTED_NODE_TYPES, EDGE_TYPES as EXPORTED_EDGE_TYPES } from "./reactflowTypes"
+import { nodeTypes, edgeTypes } from "./rf-configs"
+
+// Define explicit types for nodes and edges with required properties
+interface CustomNodeData {
+  [key: string]: unknown
+  label: string
+  subtitle?: string
+}
+
+interface CustomEdgeData {
+  [key: string]: unknown
+  type: string
+}
+
+type CustomNode = Node<CustomNodeData>
+type CustomEdge = Edge<CustomEdgeData>
 
 type Props = {
   nodes: Node[]
@@ -112,28 +128,208 @@ function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
   return preserved
 }
 
-// Memoized node types to keep a stable reference for React Flow
-// Use the exported stable maps so HMR and remounts never change the identity
-
 export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
-  const [rfNodes, setRfNodes, onNodesChange] = useNodesState([])
-  const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState([])
   const [activeNode, setActiveNode] = useState<Node | null>(null)
-  // Track node opened via hover so we can auto-close on leave without affecting clicked/pinned selections
-  const [hoverNodeId, setHoverNodeId] = useState<string | null>(null)
-  // Track a pinned selection (from clicks). When pinned, disable hover behavior.
   const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null)
   const [showLegend, setShowLegend] = useState(false)
-  const [isDragging, setIsDragging] = useState(false)
 
   const laidOut = useMemo(() => layoutWithDagre(nodes, edges), [nodes, edges])
 
   // Check if this is ERD view
   const isErdView = nodes.some((n) => n.type === "erd-entity")
 
+  // Close panel with Escape
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setActiveNode(null)
+        setPinnedNodeId(null)
+      }
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [])
+
+  // Close tooltip when the incoming main schema/node changes (e.g., user switched schema)
+  const mainSchemaKey = useMemo(() => {
+    const mainNode = nodes.find((n) => (n as any).data?.nodeType === "entity") || nodes[0]
+    return `${mainNode?.id || ""}::${(mainNode as any)?.data?.schemaId || ""}`
+  }, [nodes])
+
+  useEffect(() => {
+    // When schema changes and nothing is selected, keep tooltip closed until user hovers
+    if (!pinnedNodeId) {
+      setActiveNode(null)
+    }
+  }, [mainSchemaKey, pinnedNodeId])
+
+  return (
+    <ReactFlowProvider>
+      <div
+        className="graph-container"
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          paddingRight: activeNode ? 420 : 0,
+        }}
+      >
+        <GraphRenderer
+          nodes={laidOut.nodes}
+          edges={laidOut.edges}
+          onSchemaSelect={onSchemaSelect}
+          setActiveNode={setActiveNode}
+          setPinnedNodeId={setPinnedNodeId}
+          activeNode={activeNode}
+          pinnedNodeId={pinnedNodeId}
+        />
+
+        {/* Legend for ERD view */}
+        {isErdView && (
+          <div className="absolute top-4" style={{ right: activeNode ? 440 : 16 }}>
+            <button
+              onClick={() => setShowLegend(!showLegend)}
+              className="px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
+            >
+              {showLegend ? "Hide Legend" : "Show Legend"}
+            </button>
+
+            {showLegend && (
+              <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
+                <div className="font-semibold mb-2">Entity Types</div>
+                <div className="flex items-center mb-1">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#f5f3ff",
+                      border: "1px solid #7c3aed",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Main Entity</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#fff1f2",
+                      border: "1px solid #fca5a5",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Related: Master Data</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#ecfdf5",
+                      border: "1px solid #34d399",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Related: Reference Data</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#fffbeb",
+                      border: "1px solid #fcd34d",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Related: Work Product Component</span>
+                </div>
+                <div className="flex items-center mb-3">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#f3f4f6",
+                      border: "1px solid #9ca3af",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Related: Other/Unknown</span>
+                </div>
+                <div className="flex items-center mb-3">
+                  <div
+                    style={{
+                      width: 16,
+                      height: 12,
+                      backgroundColor: "#eff6ff",
+                      border: "1px solid #3b82f6",
+                      borderRadius: 4,
+                      marginRight: 8,
+                    }}
+                  ></div>
+                  <span>Abstract Schema</span>
+                </div>
+
+                <div className="font-semibold mb-2">Relationship Types</div>
+                <div className="flex items-center mb-1">
+                  <div className="w-6 h-1 bg-orange-500 mr-2" style={{ borderRadius: "1px" }}></div>
+                  <span>🔗 Connectable</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div className="w-6 h-1 bg-green-600 mr-2" style={{ borderRadius: "1px" }}></div>
+                  <span>Relationship</span>
+                </div>
+                <div className="flex items-center">
+                  <div
+                    className="w-6 h-1 bg-blue-600 mr-2"
+                    style={{ borderRadius: "1px", borderBottom: "1px dashed" }}
+                  ></div>
+                  <span>Inheritance</span>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeNode && <PropertyTooltip node={activeNode} onClose={() => setActiveNode(null)} />}
+      </div>
+    </ReactFlowProvider>
+  )
+}
+
+type GraphRendererProps = {
+  nodes: Node[]
+  edges: Edge[]
+  onSchemaSelect?: (idOrTerm: string) => void
+  activeNode: Node | null
+  pinnedNodeId: string | null
+  setActiveNode: (node: Node | null) => void
+  setPinnedNodeId: (id: string | null) => void
+}
+
+function GraphRenderer({
+  nodes,
+  edges,
+  onSchemaSelect,
+  activeNode,
+  pinnedNodeId,
+  setActiveNode,
+  setPinnedNodeId,
+}: GraphRendererProps) {
+  const [rfNodes, setRfNodes, onNodesChange] = useNodesState<Node<CustomNodeData>>([])
+  const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState<Edge<CustomEdgeData>>([])
+  const [hoverNodeId, setHoverNodeId] = useState<string | null>(null)
+  const { fitView } = useReactFlow()
+
   // Custom nodes change handler to track dragging and validate edges
   const handleNodesChange = useCallback(
-    (changes: NodeChange[]) => {
+    (changes: NodeChange<any>[]) => {
       onNodesChange(changes)
     },
     [onNodesChange]
@@ -141,12 +337,11 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
 
   // Custom edges change handler to prevent problematic edge updates
   const handleEdgesChange = useCallback(
-    (changes: EdgeChange[]) => {
+    (changes: EdgeChange<any>[]) => {
       // Filter out edge changes that might cause issues
       const safeChanges = changes.filter((change) => {
         // Allow removal but be cautious about updates
         if (change.type === "remove") return true
-        if (change.type === "reset") return true
         // Skip other edge changes that might cause handle errors
         return false
       })
@@ -158,18 +353,18 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
     [onEdgesChange]
   )
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Set nodes with dragging enabled
     setRfNodes(
-      laidOut.nodes.map((n) => ({
+      nodes.map((n) => ({
         ...n,
-        data: { ...n.data },
+        data: { ...n.data, label: n.data?.label || "" } as CustomNodeData,
         draggable: true,
       }))
     )
 
     // Set edges with validation
-    const validatedEdges = validateEdges(laidOut.edges, laidOut.nodes)
+    const validatedEdges = validateEdges(edges, nodes)
     setRfEdges(
       validatedEdges.map((e) => {
         const edgeType = e.data?.type
@@ -207,7 +402,10 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             markerColor = "#7c3aed"
             break
           default:
-            label = e.data?.label || e.data?.type || "references"
+            label =
+              (typeof e.data?.label === "string" ? e.data.label : "") ||
+              (typeof e.data?.type === "string" ? e.data.type : "") ||
+              "references"
             edgeStyle = {
               stroke: "#0891b2", // cyan for references
               strokeWidth: 2,
@@ -216,8 +414,8 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             markerColor = "#0891b2"
         }
         // if this edge links main entity -> abstract, force left->right anchors
-        const sourceNode = (laidOut.nodes || []).find((n) => n.id === e.source)
-        const targetNode = (laidOut.nodes || []).find((n) => n.id === e.target)
+        const sourceNode = (nodes || []).find((n) => n.id === e.source)
+        const targetNode = (nodes || []).find((n) => n.id === e.target)
 
         const isMainToAbstract =
           (sourceNode as any)?.data?.nodeType === "entity" && (targetNode as any)?.data?.nodeType === "abstract"
@@ -259,10 +457,12 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
           },
           animated: edgeType === "erd-relationship",
           style: edgeStyle,
+          data: { ...e.data, type: edgeType || "references" } as CustomEdgeData,
         }
       })
     )
-  }, [laidOut, setRfNodes, setRfEdges])
+    fitView({ padding: 0.2 })
+  }, [nodes, edges, setRfNodes, setRfEdges, fitView])
 
   const onNodeClick = useCallback(
     (_e: any, node: Node) => {
@@ -321,7 +521,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
         })
       )
     },
-    [setRfNodes, setRfEdges]
+    [setRfNodes, setRfEdges, setActiveNode, setPinnedNodeId]
   )
 
   const onPaneClick = useCallback(() => {
@@ -330,19 +530,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
     setPinnedNodeId(null)
     setRfNodes((ns) => ns.map((n) => ({ ...n, style: {} })))
     setRfEdges((es) => es.map((e) => ({ ...e, style: {} })))
-  }, [])
-
-  // Close panel with Escape
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setActiveNode(null)
-        setPinnedNodeId(null)
-      }
-    }
-    window.addEventListener("keydown", onKey)
-    return () => window.removeEventListener("keydown", onKey)
-  }, [])
+  }, [setRfNodes, setRfEdges, setActiveNode, setPinnedNodeId])
 
   // Double-click to navigate: entity or abstract schema becomes the main entity
   const onNodeDoubleClick = useCallback(
@@ -353,7 +541,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
       // If still not an index key and looks like $id, try to find a node that has filePath for the same schema
       if (!d.filePath && d.schemaId) {
         const compact = String(d.schemaId).split("/").slice(-1)[0]?.toLowerCase()
-        const match = (laidOut.nodes || []).find((n: any) =>
+        const match = (nodes || []).find((n: any) =>
           String(n?.data?.filePath || "")
             .toLowerCase()
             .endsWith(compact || "")
@@ -364,200 +552,62 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
         onSchemaSelect(String(idCandidate))
       }
     },
-    [onSchemaSelect, laidOut]
+    [onSchemaSelect, nodes]
   )
 
-  // Close tooltip when the incoming main schema/node changes (e.g., user switched schema)
-  const mainSchemaKey = useMemo(() => {
-    const mainNode = nodes.find((n) => (n as any).data?.nodeType === "entity") || nodes[0]
-    return `${mainNode?.id || ""}::${(mainNode as any)?.data?.schemaId || ""}`
-  }, [nodes])
-
-  useEffect(() => {
-    // When schema changes and nothing is selected, keep tooltip closed until user hovers
-    if (!pinnedNodeId) {
-      setActiveNode(null)
-    }
-  }, [mainSchemaKey, pinnedNodeId])
-
   return (
-    <div
-      className="graph-container"
-      style={{
-        width: "100%",
-        height: "100%",
-        position: "relative",
-        paddingRight: activeNode ? 420 : 0,
+    <ReactFlow
+      nodes={rfNodes}
+      edges={rfEdges}
+      onNodesChange={handleNodesChange}
+      onEdgesChange={handleEdgesChange}
+      onNodeClick={onNodeClick}
+      onNodeDoubleClick={onNodeDoubleClick}
+      onPaneClick={onPaneClick}
+      onNodeMouseEnter={(_e: React.MouseEvent, node: CustomNode) => {
+        if (pinnedNodeId) return // disable hover while a node is selected
+        const d: any = node?.data || {}
+        // Open tooltip on hover for any ERD node, including the main entity, when not pinned
+        if (d?.nodeType === "entity" || d?.nodeType === "related-entity" || d?.nodeType === "abstract") {
+          setActiveNode(node)
+          setHoverNodeId(node.id)
+        }
       }}
+      onNodeMouseLeave={(_e: React.MouseEvent, node: CustomNode) => {
+        if (hoverNodeId && hoverNodeId === node.id) {
+          setHoverNodeId(null)
+          // If nothing is pinned, close tooltip when leaving node
+          if (!pinnedNodeId) {
+            setActiveNode(null)
+          }
+        }
+      }}
+      nodeTypes={nodeTypes}
+      edgeTypes={edgeTypes}
+      fitView
+      fitViewOptions={{ padding: 0.2 }}
+      minZoom={0.1}
+      maxZoom={2}
+      defaultViewport={{ x: 0, y: 0, zoom: 0.8 }}
     >
-      <ReactFlow
-        nodes={rfNodes}
-        edges={rfEdges}
-        onNodesChange={handleNodesChange}
-        onEdgesChange={handleEdgesChange}
-        onNodeClick={onNodeClick}
-        onNodeDoubleClick={onNodeDoubleClick}
-        onPaneClick={onPaneClick}
-        onNodeMouseEnter={(_e, node) => {
-          if (pinnedNodeId) return // disable hover while a node is selected
-          const d: any = node?.data || {}
-          // Open tooltip on hover for any ERD node, including the main entity, when not pinned
-          if (d?.nodeType === "entity" || d?.nodeType === "related-entity" || d?.nodeType === "abstract") {
-            setActiveNode(node)
-            setHoverNodeId(node.id)
-          }
+      <Background />
+      <Controls />
+      <MiniMap
+        nodeStrokeColor={(n) => {
+          if (n.type === "input") return "#0041d0"
+          if (n.type === "output") return "#ff0072"
+          if (n.type === "default") return "#1a192b"
+          return "#eee"
         }}
-        onNodeMouseLeave={(_e, node) => {
-          if (hoverNodeId && hoverNodeId === node.id) {
-            setHoverNodeId(null)
-            // If nothing is pinned, close tooltip when leaving node
-            if (!pinnedNodeId) {
-              setActiveNode((curr) => (curr && curr.id === node.id ? null : curr))
-            }
-          }
+        nodeColor={(n) => {
+          if (n.type === "input") return "#0041d0"
+          if (n.type === "output") return "#ff0072"
+          if (n.type === "default") return "#1a192b"
+          return "#fff"
         }}
-        nodeTypes={EXPORTED_NODE_TYPES}
-        edgeTypes={EXPORTED_EDGE_TYPES}
-        fitView
-        fitViewOptions={{ padding: 0.2 }}
-        minZoom={0.1}
-        maxZoom={2}
-        defaultViewport={{ x: 0, y: 0, zoom: 0.8 }}
-      >
-        <Background />
-        <Controls />
-        <MiniMap
-          nodeStrokeColor={(n) => {
-            if (n.type === "input") return "#0041d0"
-            if (n.type === "output") return "#ff0072"
-            if (n.type === "default") return "#1a192b"
-            return "#eee"
-          }}
-          nodeColor={(n) => {
-            if (n.type === "input") return "#0041d0"
-            if (n.type === "output") return "#ff0072"
-            if (n.type === "default") return "#1a192b"
-            return "#fff"
-          }}
-          nodeBorderRadius={2}
-          position="bottom-left"
-        />
-      </ReactFlow>
-
-      {/* Legend for ERD view */}
-      {isErdView && (
-        <div className="absolute top-4" style={{ right: activeNode ? 440 : 16 }}>
-          <button
-            onClick={() => setShowLegend(!showLegend)}
-            className="px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
-          >
-            {showLegend ? "Hide Legend" : "Show Legend"}
-          </button>
-
-          {showLegend && (
-            <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
-              <div className="font-semibold mb-2">Entity Types</div>
-              <div className="flex items-center mb-1">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#f5f3ff",
-                    border: "1px solid #7c3aed",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Main Entity</span>
-              </div>
-              <div className="flex items-center mb-1">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#fff1f2",
-                    border: "1px solid #fca5a5",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Related: Master Data</span>
-              </div>
-              <div className="flex items-center mb-1">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#ecfdf5",
-                    border: "1px solid #34d399",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Related: Reference Data</span>
-              </div>
-              <div className="flex items-center mb-1">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#fffbeb",
-                    border: "1px solid #fcd34d",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Related: Work Product Component</span>
-              </div>
-              <div className="flex items-center mb-3">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#f3f4f6",
-                    border: "1px solid #9ca3af",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Related: Other/Unknown</span>
-              </div>
-              <div className="flex items-center mb-3">
-                <div
-                  style={{
-                    width: 16,
-                    height: 12,
-                    backgroundColor: "#eff6ff",
-                    border: "1px solid #3b82f6",
-                    borderRadius: 4,
-                    marginRight: 8,
-                  }}
-                ></div>
-                <span>Abstract Schema</span>
-              </div>
-
-              <div className="font-semibold mb-2">Relationship Types</div>
-              <div className="flex items-center mb-1">
-                <div className="w-6 h-1 bg-orange-500 mr-2" style={{ borderRadius: "1px" }}></div>
-                <span>🔗 Connectable</span>
-              </div>
-              <div className="flex items-center mb-1">
-                <div className="w-6 h-1 bg-green-600 mr-2" style={{ borderRadius: "1px" }}></div>
-                <span>Relationship</span>
-              </div>
-              <div className="flex items-center">
-                <div
-                  className="w-6 h-1 bg-blue-600 mr-2"
-                  style={{ borderRadius: "1px", borderBottom: "1px dashed" }}
-                ></div>
-                <span>Inheritance</span>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-
-      {activeNode && <PropertyTooltip node={activeNode} onClose={() => setActiveNode(null)} />}
-    </div>
+        nodeBorderRadius={2}
+        position="bottom-left"
+      />
+    </ReactFlow>
   )
 }
