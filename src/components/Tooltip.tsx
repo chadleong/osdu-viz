@@ -25,6 +25,7 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
   const schemaId = (node?.data?.schemaId as string | undefined) || ""
   const schema = node?.data?.schema as any
   const nodeDescription = (node?.data?.description as string | undefined) || (schema?.description as string | undefined)
+  const subtitle = node?.data?.subtitle as ReactNode | undefined
 
   // Reference values loading (for reference-data related entities)
   const isReferenceData = (node?.data as any)?.category === "reference-data" || /reference-data--/i.test(schemaId || "")
@@ -70,24 +71,34 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
 
       const sets = ["OPEN", "LOCAL", "FIXED"]
       const versions = ["1", "2", "3"]
+      // prefer the .min.json variants in this codebase; fall back to .json
+      const suffixes = [".min.json", ".json"]
       let found: any = null
       let sourcePath: string | null = null
 
       for (const scope of sets) {
         for (const v of versions) {
-          const candidate = `/data/reference-data/${scope}/${encodeURIComponent(base)}.${v}.json`
-          try {
-            const res = await fetch(candidate)
-            if (!res.ok) continue
-            const json = await res.json()
-            if (json && Array.isArray(json.ReferenceData)) {
-              found = json
-              sourcePath = candidate
-              break
+          for (const suffix of suffixes) {
+            // try both encoded and raw base (some filenames are encoded, many are plain)
+            const candidates = [encodeURIComponent(base), base]
+            for (const b of candidates) {
+              const candidate = `/data/reference-data/${scope}/${b}.${v}${suffix}`
+              try {
+                const res = await fetch(candidate)
+                if (!res.ok) continue
+                const json = await res.json()
+                if (json && Array.isArray(json.ReferenceData)) {
+                  found = json
+                  sourcePath = candidate
+                  break
+                }
+              } catch {
+                // ignore and try next
+              }
             }
-          } catch {
-            // ignore and try next
+            if (found) break
           }
+          if (found) break
         }
         if (found) break
       }
@@ -132,7 +143,7 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
       <div className="tooltip-header">
         <div>
           <div className="tooltip-title">{node?.data?.label as ReactNode}</div>
-          {node?.data?.subtitle && <div className="tooltip-sub">{node?.data?.subtitle as ReactNode}</div>}
+          {subtitle && <div className="tooltip-sub">{subtitle}</div>}
           {nodeDescription && <div className="tooltip-desc">{nodeDescription}</div>}
         </div>
         <button className="btn" onClick={onClose}>

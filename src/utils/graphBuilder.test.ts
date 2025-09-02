@@ -24,6 +24,8 @@ const model = {
   title: sampleSchema.title,
   schema: sampleSchema,
   path: "/data/Generated/master-data/Well.json",
+  // use the minified filename variant if available
+  // ...existing code...
 }
 
 describe("buildGraph", () => {

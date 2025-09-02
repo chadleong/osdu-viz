@@ -18,6 +18,14 @@ export default function App() {
   // Loading progress (initial schema load)
   const [loadTotal, setLoadTotal] = useState(0)
   const [loadDone, setLoadDone] = useState(0)
+  // GitLab load & cache state
+  const [loadingFromGit, setLoadingFromGit] = useState(false)
+  const [gitLoadTotal, setGitLoadTotal] = useState(0)
+  const [gitLoadDone, setGitLoadDone] = useState(0)
+  // Local folder load state
+  const [loadingLocal, setLoadingLocal] = useState(false)
+  const [localLoadTotal, setLocalLoadTotal] = useState(0)
+  const [localLoadDone, setLocalLoadDone] = useState(0)
 
   // Close dropdown when clicking outside — attach a capture-phase pointerdown listener while dropdown is open
   useEffect(() => {
@@ -49,6 +57,7 @@ export default function App() {
       setPortalStyle({ top: r.bottom + window.scrollY, left: r.left + window.scrollX, width: r.width })
     }
 
+    // run an initial recalc to lock the portal width/position
     recalc()
     window.addEventListener("resize", recalc)
     window.addEventListener("scroll", recalc, { passive: true })
@@ -70,22 +79,93 @@ export default function App() {
           top: `${portalStyle.top}px`,
           left: `${portalStyle.left}px`,
           width: portalStyle.width,
-          maxHeight: "min(400px, calc(100vh - 200px))",
-          overflowY: "auto",
+          maxHeight: 320,
+          overflow: "hidden",
+          boxSizing: "border-box",
           zIndex: 20000,
           scrollbarWidth: "thin",
-          scrollbarColor: "#cbd5e0 #f7fafc",
         }}
       >
-        {children}
+        <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>{children}</div>
       </div>,
       document.body
     )
   }
 
-  // Load schemas
+  // Move loadSchemas here so it's defined before useEffect to avoid any callable/type confusion
+
+  // Load schemas on mount (inline to avoid callable-type issues)
   useEffect(() => {
-    loadSchemas()
+    ;(async () => {
+      const parsed: SchemaModel[] = []
+      const idx: Record<string, any> = {}
+      try {
+        const response = await fetch("/schema-index.json")
+        const schemaIndex = await response.json()
+
+        // setup progress counters
+        const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
+        setLoadTotal(total)
+        setLoadDone(0)
+
+        let completed = 0
+        for (const schemaInfo of schemaIndex) {
+          try {
+            const path = schemaInfo.publicPath
+            const schemaResponse = await fetch(path)
+            const schema = await schemaResponse.json()
+
+            if (schema && typeof schema === "object" && schema["$schema"]) {
+              const isStandard = schema["$schema"].includes("json-schema.org")
+              if (isStandard) {
+                const id = schema["$id"] || path
+                const title = schema["title"] || schemaInfo.title || id
+                const model: SchemaModel = {
+                  id,
+                  title,
+                  schema,
+                  path,
+                  version: schemaInfo.version,
+                }
+                parsed.push(model)
+                idx[path] = schema
+              }
+            }
+          } catch (e) {
+            console.warn(`Failed to load ${schemaInfo.publicPath}:`, e)
+          }
+          completed += 1
+          setLoadDone(completed)
+        }
+
+        setModels(parsed)
+        setIndex(idx)
+      } catch (error) {
+        console.error("Failed to load schema index:", error)
+      }
+
+      // try to load any cached schemas from IndexedDB so users can resume offline
+      // NOTE: do NOT merge cache into freshly fetched results. Use cache only as a fallback
+      // when the network fetch produced zero schemas (offline resume scenario).
+      try {
+        const cached = await idbGetAll()
+        if (cached && cached.length > 0 && parsed.length === 0) {
+          const cachedModels: SchemaModel[] = cached.map((it: any) => ({
+            id: it.id || it.path,
+            title: it.title || it.id || it.path,
+            schema: it.schema,
+            path: it.path,
+            version: it.version,
+          }))
+          const cachedIndex: Record<string, any> = {}
+          for (const it of cached) cachedIndex[it.path] = it.schema
+          setModels(cachedModels)
+          setIndex(cachedIndex)
+        }
+      } catch (e) {
+        // ignore cache errors
+      }
+    })()
   }, [])
 
   async function loadSchemas() {
@@ -138,6 +218,216 @@ export default function App() {
       setIndex(idx)
     } catch (error) {
       console.error("Failed to load schema index:", error)
+    }
+  }
+
+  // --- IndexedDB helpers (very small wrapper) ---
+  const DB_NAME = "osdu-viz-cache"
+  const STORE = "schemas"
+
+  function openDB(): Promise<IDBDatabase> {
+    return new Promise((resolve, reject) => {
+      const req = indexedDB.open(DB_NAME, 1)
+      req.onupgradeneeded = () => {
+        const db = req.result
+        if (!db.objectStoreNames.contains(STORE)) db.createObjectStore(STORE, { keyPath: "path" })
+      }
+      req.onsuccess = () => resolve(req.result)
+      req.onerror = () => reject(req.error)
+    })
+  }
+
+  async function idbPut(item: {
+    path: string
+    schema: any
+    id?: string
+    title?: string
+    version?: string
+    fetchedAt?: number
+  }) {
+    const db = await openDB()
+    return new Promise<void>((resolve, reject) => {
+      const tx = db.transaction(STORE, "readwrite")
+      const store = tx.objectStore(STORE)
+      const req = store.put(item)
+      req.onsuccess = () => resolve()
+      req.onerror = () => reject(req.error)
+    })
+  }
+
+  async function idbGetAll(): Promise<Array<any>> {
+    const db = await openDB()
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE, "readonly")
+      const store = tx.objectStore(STORE)
+      const req = store.getAll()
+      req.onsuccess = () => resolve(req.result)
+      req.onerror = () => reject(req.error)
+    })
+  }
+
+  // Load schemas directly from the community GitLab raw tree and cache them in IndexedDB
+  async function loadFromGitLab() {
+    if (loadingFromGit) return
+    setLoadingFromGit(true)
+    try {
+      // use local schema-index.json to know which files to fetch, but point to raw GitLab URLs
+      const resp = await fetch("/schema-index.json")
+      const schemaIndex = await resp.json()
+      const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
+      setGitLoadTotal(total)
+      setGitLoadDone(0)
+
+      const parsed: SchemaModel[] = []
+      const idx: Record<string, any> = {}
+
+      let completed = 0
+      // Use a dev proxy when running on localhost to avoid CORS during local development
+      const isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+      const base = isLocal
+        ? "/gitlab/Generated/"
+        : "https://community.opengroup.org/osdu/data/data-definitions/-/raw/master/Generated/"
+
+      for (const schemaInfo of schemaIndex) {
+        try {
+          const rel = schemaInfo.relativePath || schemaInfo.fileName
+          const url = base + rel
+          const r = await fetch(url)
+          if (!r.ok) throw new Error(`HTTP ${r.status}`)
+          const schema = await r.json()
+          if (schema && typeof schema === "object" && schema["$schema"]) {
+            const isStandard = String(schema["$schema"]).includes("json-schema.org")
+            if (isStandard) {
+              const id = schema["$id"] || url
+              const title = schema["title"] || schemaInfo.title || id
+              const model: SchemaModel = {
+                id,
+                title,
+                schema,
+                path: url,
+                version: schemaInfo.version,
+              }
+              parsed.push(model)
+              idx[url] = schema
+
+              // cache into IndexedDB with key = relative path so we can reuse
+              try {
+                await idbPut({ path: rel, schema, id, title, version: schemaInfo.version, fetchedAt: Date.now() })
+              } catch (e) {
+                // non-fatal caching error
+                console.warn("Failed to cache schema in IndexedDB:", e)
+              }
+            }
+          }
+        } catch (e) {
+          console.warn(`Failed to load ${schemaInfo.publicPath} from GitLab:`, e)
+        }
+        completed += 1
+        setGitLoadDone(completed)
+      }
+
+      // Replace current models/index with the GitLab-loaded set
+      setModels(parsed)
+      setIndex(idx)
+    } catch (e) {
+      console.error("Failed to load from GitLab:", e)
+    } finally {
+      setLoadingFromGit(false)
+    }
+  }
+
+  // --- Local folder loading (File System Access API or webkitdirectory fallback) ---
+  async function selectLocalFolder() {
+    if (loadingLocal) return
+    setLoadingLocal(true)
+    try {
+      let files: Array<{ path: string; file: File }> = []
+
+      if ((window as any).showDirectoryPicker) {
+        // modern API: recursively iterate directory handle
+        const dir = await (window as any).showDirectoryPicker()
+
+        async function traverse(handle: any, base: string) {
+          for await (const [name, child] of handle.entries()) {
+            if (child.kind === "file") {
+              const f = await child.getFile()
+              files.push({ path: base + name, file: f })
+            } else if (child.kind === "directory") {
+              await traverse(child, base + name + "/")
+            }
+          }
+        }
+
+        await traverse(dir, "")
+      } else {
+        // fallback: input with webkitdirectory
+        await new Promise<void>((resolve) => {
+          const input = document.createElement("input")
+          input.type = "file"
+          ;(input as any).webkitdirectory = true
+          input.multiple = true
+          input.onchange = () => {
+            const list = Array.from(input.files || [])
+            for (const f of list) {
+              const rel = (f as any).webkitRelativePath || f.name
+              files.push({ path: rel, file: f })
+            }
+            resolve()
+          }
+          input.click()
+        })
+      }
+
+      // Filter JSON files and process
+      const jsonFiles = files.filter((x) => x.path.toLowerCase().endsWith(".json"))
+      setLocalLoadTotal(jsonFiles.length)
+      setLocalLoadDone(0)
+
+      const parsed: SchemaModel[] = []
+      const idx: Record<string, any> = {}
+      let completed = 0
+
+      for (const it of jsonFiles) {
+        try {
+          const text = await it.file.text()
+          const schema = JSON.parse(text)
+          if (
+            schema &&
+            typeof schema === "object" &&
+            schema["$schema"] &&
+            String(schema["$schema"]).includes("json-schema.org")
+          ) {
+            const id = schema["$id"] || it.path
+            const title = schema["title"] || it.path
+            const model: SchemaModel = { id, title, schema, path: it.path, version: undefined }
+            parsed.push(model)
+            idx[it.path] = schema
+            try {
+              await idbPut({ path: it.path, schema, id, title, fetchedAt: Date.now() })
+            } catch (e) {
+              console.warn("Failed to cache local schema:", e)
+            }
+          }
+        } catch (e) {
+          console.warn("Failed to read/parse local file", it.path, e)
+        }
+        completed += 1
+        setLocalLoadDone(completed)
+      }
+
+      // Merge local-loaded schemas into current models/index (local takes precedence)
+      setIndex((prev) => ({ ...prev, ...idx }))
+      setModels((prev) => {
+        // create map from path to model for easy merge
+        const map = new Map<string, SchemaModel>()
+        for (const m of prev) map.set(m.path, m)
+        for (const m of parsed) map.set(m.path, m)
+        return Array.from(map.values())
+      })
+    } catch (e) {
+      console.error("Local folder load failed:", e)
+    } finally {
+      setLoadingLocal(false)
     }
   }
 
@@ -279,16 +569,14 @@ export default function App() {
           style={{ paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12 }}
         >
           <div>
-            <div>
-              <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Visualizer</h1>
-              <div className="text-xs text-gray-500" style={{ marginTop: 2 }}>
-                v{(pkg as any).version}
-              </div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+              <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Viz</h1>
+              <span className="text-xs text-gray-500">v{(pkg as any).version}</span>
             </div>
           </div>
 
           {/* Schema Selector with Search */}
-          <div className="flex-1 max-w-md relative dropdown-container">
+          <div className="relative dropdown-container" style={{ width: 720, flex: "none" }}>
             <div style={{ position: "relative" }} ref={inputRef}>
               <input
                 type="text"
@@ -299,7 +587,8 @@ export default function App() {
                 }}
                 onFocus={() => setShowDropdown(true)}
                 placeholder="Search schemas..."
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-8"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-24"
+                style={{ boxSizing: "border-box" }}
               />
               {/* Carat icon */}
               <span
@@ -330,6 +619,8 @@ export default function App() {
                     padding: "2px 6px",
                     borderRadius: 6,
                     border: "1px solid #e2e8f0",
+                    width: 60,
+                    textAlign: "center",
                   }}
                 >
                   v{selectedModel.version}
@@ -348,7 +639,7 @@ export default function App() {
                     </div>
 
                     {/* Scrollable results */}
-                    <div className="max-h-80 overflow-y-auto">
+                    <div style={{ height: 240, overflowY: "auto" }}>
                       {filteredModels.map((model, index) => (
                         <div
                           key={model.path}
@@ -368,7 +659,10 @@ export default function App() {
 
                     {/* Scroll indicator for many results */}
                     {filteredModels.length > 10 && (
-                      <div className="px-3 py-1 bg-gray-50 border-t border-gray-200 text-xs text-gray-500 text-center sticky bottom-0">
+                      <div
+                        className="px-3 py-1 bg-gray-50 border-t border-gray-200 text-xs text-gray-500 text-center"
+                        style={{ position: "sticky", bottom: 0 }}
+                      >
                         Scroll to see more results
                       </div>
                     )}
@@ -397,6 +691,8 @@ export default function App() {
               Clear
             </button>
           )}
+
+          {/* Load from GitLab button removed - GitLab loading disabled in UI */}
 
           {/* Status Info */}
           <div className="text-sm text-gray-600">

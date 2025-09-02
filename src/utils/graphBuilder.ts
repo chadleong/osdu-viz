@@ -354,7 +354,12 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
       }
     }
 
-    const label = r.split("/").slice(-1)[0]?.replace(".json", "") || r
+    // strip both .json and .min.json suffixes when creating a short label
+    const label =
+      r
+        .split("/")
+        .slice(-1)[0]
+        ?.replace(/(\.min)?\.json$/i, "") || r
     const subtitle = "Abstract Schema"
 
     // Use stable ref ids (don't include mainId) so refs remain consistent across schema loads

@@ -9,7 +9,7 @@ const nodeBase: any = {
     subtitle: "Entity subtitle",
     properties: [
       { name: "id", type: "string", required: true, depth: 1 },
-      { name: "refProp", type: "$ref:../abstract/SomeRef.json", depth: 2 },
+      { name: "refProp", type: "$ref:../abstract/SomeRef.min.json", depth: 2 },
     ],
     relations: [],
     schema: { $id: "osdu:wks:master-data--Entity:1.0.0" },

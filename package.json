@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "scan": "node scripts/scan-schemas.cjs"
+    "scan": "node scripts/scan-schemas.cjs",
+    "minify-json": "node scripts/minify-and-compress.cjs minify",
+    "prepare-static": "node scripts/minify-and-compress.cjs minify"
   },
   "dependencies": {
     "@dagrejs/dagre": "^1.1.5",
