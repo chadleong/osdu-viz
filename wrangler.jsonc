@@ -1,0 +1,26 @@
+{
+  // Wrangler configuration (JSONC) for publishing the static `dist/` site to Cloudflare.
+  // Replace placeholders below (account_id, zone_id, route) before publishing.
+
+  "name": "osdu-viz",
+  "account_id": "0bd07a0e9475cf94f53a414912ecce2e",
+  "compatibility_date": "2025-09-03",
+  // When true, deploys a workers.dev subdomain. Set to false for custom domain/production.
+  "workers_dev": false,
+
+  // If you want to publish to a specific route on a zone, set these values:
+  // "route": "osdu-viz.blog.chadleong.com/*",
+  // "zone_id": "YOUR_ZONE_ID",
+
+  // Use the `site` block to point Wrangler at your static build output.
+  "site": {
+    // The folder produced by `npm run build` (Vite default for this project is `dist`).
+    "bucket": "./dist"
+    // No entry-point: this JSONC is used only to point Wrangler at the static `dist` directory.
+  },
+
+  // Build command executed by Wrangler (optional). It mirrors the CI command used in this repo.
+  "build": {
+    "command": "npm run build -- --base \"/osdu-viz/\""
+  }
+}
