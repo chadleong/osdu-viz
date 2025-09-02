@@ -48,6 +48,14 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
     return null
   }
 
+  const publicUrl = (p: string) => {
+    if (/^https?:\/\//i.test(p)) return p
+    const base = (import.meta.env.BASE_URL as string) || "/"
+    const b = base.endsWith("/") ? base.slice(0, -1) : base
+    const r = p.startsWith("/") ? p.slice(1) : p
+    return `${b}/${r}`
+  }
+
   useEffect(() => {
     let aborted = false
     async function loadRefValues() {
@@ -84,7 +92,7 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
             for (const b of candidates) {
               const candidate = `/data/reference-data/${scope}/${b}.${v}${suffix}`
               try {
-                const res = await fetch(candidate)
+                const res = await fetch(publicUrl(candidate))
                 if (!res.ok) continue
                 const json = await res.json()
                 if (json && Array.isArray(json.ReferenceData)) {

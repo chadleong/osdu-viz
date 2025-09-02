@@ -18,10 +18,6 @@ export default function App() {
   // Loading progress (initial schema load)
   const [loadTotal, setLoadTotal] = useState(0)
   const [loadDone, setLoadDone] = useState(0)
-  // GitLab load & cache state
-  const [loadingFromGit, setLoadingFromGit] = useState(false)
-  const [gitLoadTotal, setGitLoadTotal] = useState(0)
-  const [gitLoadDone, setGitLoadDone] = useState(0)
   // Local folder load state
   const [loadingLocal, setLoadingLocal] = useState(false)
   const [localLoadTotal, setLocalLoadTotal] = useState(0)
@@ -93,6 +89,14 @@ export default function App() {
   }
 
   // Move loadSchemas here so it's defined before useEffect to avoid any callable/type confusion
+  // Helper to resolve public asset URLs under a subpath deployment
+  const publicUrl = (p: string) => {
+    if (/^https?:\/\//i.test(p)) return p
+    const base = (import.meta.env.BASE_URL as string) || "/"
+    const b = base.endsWith("/") ? base.slice(0, -1) : base
+    const r = p.startsWith("/") ? p.slice(1) : p
+    return `${b}/${r}`
+  }
 
   // Load schemas on mount (inline to avoid callable-type issues)
   useEffect(() => {
@@ -100,7 +104,7 @@ export default function App() {
       const parsed: SchemaModel[] = []
       const idx: Record<string, any> = {}
       try {
-        const response = await fetch("/schema-index.json")
+  const response = await fetch(publicUrl("/schema-index.json"))
         const schemaIndex = await response.json()
 
         // setup progress counters
@@ -112,7 +116,7 @@ export default function App() {
         for (const schemaInfo of schemaIndex) {
           try {
             const path = schemaInfo.publicPath
-            const schemaResponse = await fetch(path)
+            const schemaResponse = await fetch(publicUrl(path))
             const schema = await schemaResponse.json()
 
             if (schema && typeof schema === "object" && schema["$schema"]) {
@@ -168,58 +172,7 @@ export default function App() {
     })()
   }, [])
 
-  async function loadSchemas() {
-    try {
-      const response = await fetch("/schema-index.json")
-      const schemaIndex = await response.json()
-
-      const parsed: SchemaModel[] = []
-      const idx: Record<string, any> = {}
-
-      // setup progress counters
-      const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
-      setLoadTotal(total)
-      setLoadDone(0)
-
-      // schemaIndex is an array of objects with metadata, we need the publicPath
-      let completed = 0
-      for (const schemaInfo of schemaIndex) {
-        // Load ALL schemas
-        try {
-          const path = schemaInfo.publicPath
-          const schemaResponse = await fetch(path)
-          const schema = await schemaResponse.json()
-
-          if (schema && typeof schema === "object" && schema["$schema"]) {
-            const isStandard = schema["$schema"].includes("json-schema.org")
-            if (isStandard) {
-              const id = schema["$id"] || path
-              const title = schema["title"] || schemaInfo.title || id
-              const model: SchemaModel = {
-                id,
-                title,
-                schema,
-                path,
-                version: schemaInfo.version,
-              }
-              parsed.push(model)
-              idx[path] = schema
-            }
-          }
-        } catch (e) {
-          console.warn(`Failed to load ${schemaInfo.publicPath}:`, e)
-        }
-        // update progress regardless of success/failure for this item
-        completed += 1
-        setLoadDone(completed)
-      }
-
-      setModels(parsed)
-      setIndex(idx)
-    } catch (error) {
-      console.error("Failed to load schema index:", error)
-    }
-  }
+  // (removed unused loadSchemas helper)
 
   // --- IndexedDB helpers (very small wrapper) ---
   const DB_NAME = "osdu-viz-cache"
@@ -266,75 +219,6 @@ export default function App() {
     })
   }
 
-  // Load schemas directly from the community GitLab raw tree and cache them in IndexedDB
-  async function loadFromGitLab() {
-    if (loadingFromGit) return
-    setLoadingFromGit(true)
-    try {
-      // use local schema-index.json to know which files to fetch, but point to raw GitLab URLs
-      const resp = await fetch("/schema-index.json")
-      const schemaIndex = await resp.json()
-      const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
-      setGitLoadTotal(total)
-      setGitLoadDone(0)
-
-      const parsed: SchemaModel[] = []
-      const idx: Record<string, any> = {}
-
-      let completed = 0
-      // Use a dev proxy when running on localhost to avoid CORS during local development
-      const isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1"
-      const base = isLocal
-        ? "/gitlab/Generated/"
-        : "https://community.opengroup.org/osdu/data/data-definitions/-/raw/master/Generated/"
-
-      for (const schemaInfo of schemaIndex) {
-        try {
-          const rel = schemaInfo.relativePath || schemaInfo.fileName
-          const url = base + rel
-          const r = await fetch(url)
-          if (!r.ok) throw new Error(`HTTP ${r.status}`)
-          const schema = await r.json()
-          if (schema && typeof schema === "object" && schema["$schema"]) {
-            const isStandard = String(schema["$schema"]).includes("json-schema.org")
-            if (isStandard) {
-              const id = schema["$id"] || url
-              const title = schema["title"] || schemaInfo.title || id
-              const model: SchemaModel = {
-                id,
-                title,
-                schema,
-                path: url,
-                version: schemaInfo.version,
-              }
-              parsed.push(model)
-              idx[url] = schema
-
-              // cache into IndexedDB with key = relative path so we can reuse
-              try {
-                await idbPut({ path: rel, schema, id, title, version: schemaInfo.version, fetchedAt: Date.now() })
-              } catch (e) {
-                // non-fatal caching error
-                console.warn("Failed to cache schema in IndexedDB:", e)
-              }
-            }
-          }
-        } catch (e) {
-          console.warn(`Failed to load ${schemaInfo.publicPath} from GitLab:`, e)
-        }
-        completed += 1
-        setGitLoadDone(completed)
-      }
-
-      // Replace current models/index with the GitLab-loaded set
-      setModels(parsed)
-      setIndex(idx)
-    } catch (e) {
-      console.error("Failed to load from GitLab:", e)
-    } finally {
-      setLoadingFromGit(false)
-    }
-  }
 
   // --- Local folder loading (File System Access API or webkitdirectory fallback) ---
   async function selectLocalFolder() {

@@ -1,13 +1,13 @@
-# OSDU Schema Visualizer
+# OSDU Schema Viz
 
-A React + Vite app using React Flow to visualize OSDU JSON Schemas and relationships.
+A React + Vite app (React Flow) to explore and visualize OSDU JSON Schemas and their relationships.
 
-Features
+Quick features
 
-- Dropdown to select any schema found under `data/**/.json`
-- Search/filter by property name and description
-- Clickable nodes highlight relationships
-- Tooltip panel shows properties and relationships for the selected node
+- Dropdown search to find and select any schema found under `public/data/**/*.(min.)json`.
+- Fast text search / filter by schema title, $id or version.
+- Clickable graph nodes with styled relationship edges and tooltip details.
+- Tooltip shows properties, relationships and (for reference-data types) loads reference values from disk.
 
 Development
 
@@ -27,8 +27,8 @@ npm run build
 npm run preview
 ```
 
-Notes
+Tests
 
-- Schemas are loaded with Vite `import.meta.glob` from `/data/**/*.json` at build time. Ensure the `data` folder is at the project root.
-- Relationship visualization includes `$ref` edges to referenced schemas and nodes for logical relationship kinds (`x-osdu-relationship`).
-- Layout uses dagre.
+```pwsh
+npm test
+```
