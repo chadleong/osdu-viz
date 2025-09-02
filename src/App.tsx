@@ -104,7 +104,7 @@ export default function App() {
       const parsed: SchemaModel[] = []
       const idx: Record<string, any> = {}
       try {
-  const response = await fetch(publicUrl("/schema-index.json"))
+        const response = await fetch(publicUrl("/schema-index.json"))
         const schemaIndex = await response.json()
 
         // setup progress counters
@@ -218,7 +218,6 @@ export default function App() {
       req.onerror = () => reject(req.error)
     })
   }
-
 
   // --- Local folder loading (File System Access API or webkitdirectory fallback) ---
   async function selectLocalFolder() {
