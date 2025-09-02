@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Build and Deploy (upload-artifact v4 + gh-pages)
 
 on:
   push:
@@ -6,12 +6,13 @@ on:
       - main
 
 permissions:
-  contents: read
-  pages: write
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact-name: dist
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,14 +36,24 @@ jobs:
       - name: Build (Vite)
         run: npm run build -- --base "/osdu-viz/"
 
-      - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload dist artifact (actions/upload-artifact@v4)
+        uses: actions/upload-artifact@v4
         with:
+          name: dist
           path: ./dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+
+      - name: Deploy to gh-pages (peaceiris)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false
