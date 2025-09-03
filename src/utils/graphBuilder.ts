@@ -336,15 +336,24 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
     let schema: any | undefined
 
     if (opts.index) {
-      const matchKey = Object.keys(opts.index).find(
-        (k) =>
-          k.endsWith(
-            r
-              .replace(/^\.\//, "")
-              .replace(/^\//, "")
-              .replace(/^[.]{2}\//, "")
-          ) || k.endsWith("/" + r.split("/").pop()!)
-      )
+      // Normalize the ref and try both .json and .min.json variants when matching against the index keys
+      const refClean = String(r)
+        .replace(/^\.\//, "")
+        .replace(/^\//, "")
+        .replace(/^[.]{2}\//, "")
+      const refMin = refClean.replace(/\.json$/i, ".min.json")
+      const lastSeg = refClean.split("/").pop() || refClean
+      const lastSegMin = lastSeg.replace(/\.json$/i, ".min.json")
+
+      const matchKey = Object.keys(opts.index).find((k) => {
+        const key = String(k)
+        return (
+          key.endsWith(refClean) ||
+          key.endsWith(refMin) ||
+          key.endsWith("/" + lastSeg) ||
+          key.endsWith("/" + lastSegMin)
+        )
+      })
       const targetSchema = matchKey ? opts.index[matchKey] : undefined
       if (targetSchema) {
         refProps = collectPropsOnly(targetSchema)
