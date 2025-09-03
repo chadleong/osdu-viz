@@ -1,5 +1,6 @@
 import { NodeTypes, EdgeTypes } from "@xyflow/react"
 import { DefaultNode, ErdEntityNode } from "./nodes"
+import StackedEdge from "./StackedEdge"
 
 // By defining nodeTypes and edgeTypes in a separate file, we ensure they have a
 // stable identity that doesn't get reset by Vite's Hot Module Replacement (HMR)
@@ -11,4 +12,6 @@ export const nodeTypes: NodeTypes = Object.freeze({
   "erd-entity": ErdEntityNode,
 })
 
-export const edgeTypes: EdgeTypes = Object.freeze({})
+export const edgeTypes: EdgeTypes = Object.freeze({
+  stacked: StackedEdge,
+})

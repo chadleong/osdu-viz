@@ -646,6 +646,10 @@ export default function App() {
                 <>
                   <div className="spinner mx-auto mb-4"></div>
                   <p className="text-gray-600">Loading schemas...</p>
+                  <p className="text-xs text-blue-600 mt-2">
+                    First time loading may take a while as all schemas are being fetched and processed. Please be
+                    patient! 😊
+                  </p>
                   {/* Progress bar + percent */}
                   {loadTotal > 0 && (
                     <div className="mt-3" style={{ width: 260, marginLeft: "auto", marginRight: "auto" }}>

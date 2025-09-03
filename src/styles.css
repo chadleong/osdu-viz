@@ -518,6 +518,36 @@ button:hover {
   background-color: #f3f4f6;
 }
 
+/* Highlighted property inside tooltip */
+.list-row {
+  position: relative; /* container for highlight pseudo-element */
+}
+
+.list-row > * {
+  position: relative;
+  z-index: 1; /* keep content above highlight */
+}
+
+/* Highlighted property: draw boxed highlight behind the row without affecting layout */
+.prop-highlight {
+  border-bottom: none; /* hide divider when highlighted */
+}
+.prop-highlight::before {
+  content: "";
+  position: absolute;
+  /* expand slightly beyond the content area so the box looks full-width */
+  left: -8px;
+  right: -8px;
+  top: -4px;
+  bottom: -4px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  z-index: 0;
+  pointer-events: none;
+}
+
 html,
 body,
 #root {

@@ -8,7 +8,17 @@ interface TooltipNodeData {
   subtitle?: ReactNode
 }
 
-export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => void }) {
+export function PropertyTooltip({
+  node,
+  onClose,
+  onHoverProperty,
+  onLeaveProperty,
+}: {
+  node: Node
+  onClose: () => void
+  onHoverProperty?: (payload: { name?: string; ref?: string } | null) => void
+  onLeaveProperty?: () => void
+}) {
   const props = (node?.data?.properties ?? []) as Array<{
     name: string
     type?: string
@@ -27,8 +37,14 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
   const nodeDescription = (node?.data?.description as string | undefined) || (schema?.description as string | undefined)
   const subtitle = node?.data?.subtitle as ReactNode | undefined
 
+  const [hoveredPropName, setHoveredPropName] = useState<string | null>(null)
+
   // Reference values loading (for reference-data related entities)
-  const isReferenceData = (node?.data as any)?.category === "reference-data" || /reference-data--/i.test(schemaId || "")
+  // Detect reference-data by explicit category, by file path or by schemaId containing "reference-data"
+  const isReferenceData =
+    (node?.data as any)?.category === "reference-data" ||
+    /reference-data/i.test(schemaId || "") ||
+    /reference-data/i.test(filePath || "")
   const [refValues, setRefValues] = useState<Array<{ name: string; code?: string; description?: string; id?: string }>>(
     []
   )
@@ -39,13 +55,23 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
   function extractRefType(): string | null {
     const d: any = node?.data || {}
     const sid: string = d.schemaId || ""
-    // Prefer parsing from schemaId like osdu:wks:reference-data--RigType:1.0.0
-    const m = sid.match(/reference-data--([^:]+):/i)
-    if (m && m[1]) return m[1]
-    // Fallback to node label (target entity name)
-    const label = String(d.label || "").trim()
-    if (label) return label
-    return null
+    // Common schemaId forms:
+    // - osdu:wks:reference-data--RigType:1.0.0
+    // - https://.../json/reference-data/RigType.1.0.0.json
+    // - file path hints like /data/reference-data/OPEN/RigType.1.min.json
+    // Try reference-data--NAME:VERSION pattern first
+    const m1 = sid.match(/reference-data--([^:]+):/i)
+    if (m1 && m1[1]) return m1[1]
+
+    // Try to extract last path segment from schemaId or filePath and strip version and suffixes
+    const candidate = (sid || filePath || String(d.label || "")).split("/").pop() || ""
+    if (!candidate) return null
+    // remove .min.json or .json suffix
+    let name = candidate.replace(/(\.min)?\.json$/i, "")
+    // remove trailing version segments like .1 or .1.0.0
+    name = name.replace(/\.[0-9]+(\.[0-9]+)*$/i, "")
+    name = name.trim()
+    return name || null
   }
 
   const publicUrl = (p: string) => {
@@ -71,6 +97,28 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
         setRefError("Unknown reference type")
         setRefSourcePath(null)
         return
+      }
+      // If the currently-loaded schema itself contains ReferenceData (e.g., when a reference-data
+      // JSON file is opened as the main entity), use it directly instead of fetching external files.
+      if (schema && Array.isArray((schema as any).ReferenceData)) {
+        try {
+          const rows = (schema as any).ReferenceData.map((entry: any) => {
+            const d = entry?.data || {}
+            return {
+              id: entry?.id,
+              name: String(d.Name ?? d.Code ?? "").trim(),
+              code: d.Code,
+              description: d.Description,
+            }
+          })
+          setRefValues(rows)
+          setRefSourcePath(filePath || null)
+          setRefLoading(false)
+          setRefError(null)
+          return
+        } catch (e) {
+          // fall through to normal loading
+        }
       }
       setRefLoading(true)
       setRefError(null)
@@ -241,7 +289,21 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
               const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
               const refPath = isRef ? String(p.type).slice(5) : null
               return (
-                <li key={idx} className="list-row">
+                <li
+                  key={idx}
+                  className={`list-row ${
+                    hoveredPropName === (p.name.split(".").slice(-1)[0] || "") ? "prop-highlight" : ""
+                  }`}
+                  onMouseEnter={() => {
+                    const nm = p.name.split(".").slice(-1)[0]
+                    setHoveredPropName(nm)
+                    onHoverProperty?.({ name: nm, ref: refPath || undefined })
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredPropName(null)
+                    onLeaveProperty?.()
+                  }}
+                >
                   {/* Left column: property name + required pill */}
                   <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
                     <span className="k">{p.name}</span>
@@ -274,7 +336,21 @@ export function PropertyTooltip({ node, onClose }: { node: Node; onClose: () => 
               const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
               const refPath = isRef ? String(p.type).slice(5) : null
               return (
-                <li key={idx} className="list-row">
+                <li
+                  key={idx}
+                  className={`list-row ${
+                    hoveredPropName === (p.name.split(".").slice(-1)[0] || "") ? "prop-highlight" : ""
+                  }`}
+                  onMouseEnter={() => {
+                    const nm = p.name.split(".").slice(-1)[0]
+                    setHoveredPropName(nm)
+                    onHoverProperty?.({ name: nm, ref: refPath || undefined })
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredPropName(null)
+                    onLeaveProperty?.()
+                  }}
+                >
                   {/* Left column: property name + required pill (if present) */}
                   <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
                     <span className="k">{p.name}</span>

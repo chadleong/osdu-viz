@@ -329,11 +329,15 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
   nodes.push(...Array.from(entityNodes.values()))
 
   // Create nodes for referenced schemas (by $ref)
-  const refNodes = Array.from(new Set(refs)).map((r, i) => {
+  // Build ref nodes, but if a ref resolves to a reference-data schema, present it as a related-entity
+  const refToNodeId = new Map<string, string>()
+  const refNodes: Node[] = Array.from(new Set(refs)).map((r, i) => {
     let refProps: Array<{ name: string; type?: string; description?: string }> = []
     let filePath: string | undefined
     let schemaId: string | undefined
     let schema: any | undefined
+    let nodeType: string = "abstract"
+    let category: string | undefined = undefined
 
     if (opts.index) {
       // Normalize the ref and try both .json and .min.json variants when matching against the index keys
@@ -360,6 +364,10 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         filePath = matchKey
         schemaId = targetSchema?.$id
         schema = targetSchema
+        category = inferCategory(filePath) || inferCategory(schemaId)
+        if (category === "reference-data") {
+          nodeType = "related-entity"
+        }
       }
     }
 
@@ -369,15 +377,17 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         .split("/")
         .slice(-1)[0]
         ?.replace(/(\.min)?\.json$/i, "") || r
-    const subtitle = "Abstract Schema"
+    const subtitle = nodeType === "related-entity" ? "Reference Value" : "Abstract Schema"
 
-    // Use stable ref ids (don't include mainId) so refs remain consistent across schema loads
-    const refId = normalizeId(`ref::${r}`)
+    // Determine stable node id: use entity id for related-entity to align with other related nodes
+    const nodeId = nodeType === "related-entity" ? normalizeId(`entity::${label}`) : normalizeId(`ref::${r}`)
+    refToNodeId.set(r, nodeId)
+
     return {
-      id: refId,
-      position: { x: -400, y: i * 150 + 100 },
+      id: nodeId,
+      position: { x: nodeType === "related-entity" ? 400 : -400, y: i * 150 + 100 },
       data: {
-        label,
+        label: nodeType === "related-entity" && schema?.title ? schema.title : label,
         subtitle,
         properties: refProps,
         relations: [],
@@ -385,7 +395,8 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         filePath,
         schemaId,
         schema,
-        nodeType: "abstract",
+        nodeType,
+        category,
       },
       type: "erd-entity",
     }
@@ -426,16 +437,32 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
     }
   }
 
-  // $ref edges (inheritance/composition)
+  // $ref edges: link main entity -> ref node. If we mapped the ref to a related-entity (reference-data),
+  // create an ERD relationship edge so reference values display like related entities.
   for (const r of new Set(refs)) {
-    const refId = normalizeId(`ref::${r}`)
-    edges.push({
-      id: `${mainId}->${refId}`,
-      source: mainId,
-      target: refId,
-      data: { type: "inheritance" },
-      label: "extends",
-    })
+    const mappedId = refToNodeId.get(r) || normalizeId(`ref::${r}`)
+    const node = (nodes as any).find((n: any) => n.id === mappedId)
+    if (node && node.data && node.data.nodeType === "related-entity") {
+      // ERD relationship edge
+      const edgeId = `${mainId}->erd->${mappedId}::${normalizeId(String(r))}`
+      edges.push({
+        id: edgeId,
+        source: mainId,
+        target: mappedId,
+        data: { type: "erd-relationship", sourceProperty: String(r) },
+        label: String(r).split("/").slice(-1)[0],
+      })
+    } else {
+      // Preserve previous behavior for abstract refs
+      const refId = mappedId
+      edges.push({
+        id: `${mainId}->${refId}`,
+        source: mainId,
+        target: refId,
+        data: { type: "inheritance" },
+        label: "extends",
+      })
+    }
   }
 
   return { nodes, edges: validateEdges(edges, nodes) }

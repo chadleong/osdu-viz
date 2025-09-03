@@ -297,7 +297,18 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
           </div>
         )}
 
-        {activeNode && <PropertyTooltip node={activeNode} onClose={() => setActiveNode(null)} />}
+        {activeNode && (
+          <PropertyTooltip
+            node={activeNode}
+            onClose={() => setActiveNode(null)}
+            onHoverProperty={(payload) => {
+              // delegate to GraphRenderer via custom event on window so inner component can react
+              const e = new CustomEvent("osdu:tooltip:prophover", { detail: payload })
+              window.dispatchEvent(e)
+            }}
+            onLeaveProperty={() => window.dispatchEvent(new CustomEvent("osdu:tooltip:propleave"))}
+          />
+        )}
       </div>
     </ReactFlowProvider>
   )
@@ -325,6 +336,7 @@ function GraphRenderer({
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState<Node<CustomNodeData>>([])
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState<Edge<CustomEdgeData>>([])
   const [hoverNodeId, setHoverNodeId] = useState<string | null>(null)
+  const [hoveredProp, setHoveredProp] = useState<{ name?: string; ref?: string } | null>(null)
   const { fitView } = useReactFlow()
 
   // Custom nodes change handler to track dragging and validate edges
@@ -354,7 +366,66 @@ function GraphRenderer({
   )
 
   useEffect(() => {
-    // Set nodes with dragging enabled
+    function onPropHover(e: any) {
+      setHoveredProp(e?.detail || null)
+    }
+    function onPropLeave() {
+      setHoveredProp(null)
+    }
+
+    window.addEventListener("osdu:tooltip:prophover", onPropHover as EventListener)
+    window.addEventListener("osdu:tooltip:propleave", onPropLeave as EventListener)
+    return () => {
+      window.removeEventListener("osdu:tooltip:prophover", onPropHover as EventListener)
+      window.removeEventListener("osdu:tooltip:propleave", onPropLeave as EventListener)
+    }
+  }, [])
+
+  // Whenever hoveredProp changes, update edges styles to highlight matching edges
+  useEffect(() => {
+    if (!hoveredProp) {
+      // clear any highlight
+      setRfEdges(
+        (es) =>
+          es.map((e) => ({ ...e, style: (e.data as any)?.__baseStyle || e.style })) as unknown as Edge<CustomEdgeData>[]
+      )
+      return
+    }
+
+    // compute highlight: match by sourceProperty label or by ref path
+    const targetName = hoveredProp.name?.toString().toLowerCase()
+    const targetRef = hoveredProp.ref?.toString()
+
+    setRfEdges(
+      (es) =>
+        es.map((e) => {
+          const baseStyle = (e.data as any)?.__baseStyle || e.style || {}
+          const srcProp = String((e.data as any)?.sourceProperty || "").toLowerCase()
+          const label = String(e.label || "").toLowerCase()
+          const matchesName = targetName && (srcProp.includes(targetName) || label.includes(targetName))
+          const matchesRef =
+            targetRef &&
+            (String(e.source).includes(targetRef) ||
+              String(e.target).includes(targetRef) ||
+              String(e.id).includes(targetRef))
+          const newData = {
+            ...(e.data as any),
+            __baseStyle: baseStyle,
+            type: String((e.data as any)?.type || "references"),
+          }
+          if (matchesName || matchesRef) {
+            return {
+              ...e,
+              data: newData as any,
+              style: { ...(baseStyle || {}), strokeWidth: 4, filter: "drop-shadow(0 0 8px rgba(59,130,246,0.9))" },
+            }
+          }
+          return { ...e, data: newData as any, style: { ...(baseStyle || {}), opacity: 0.15 } }
+        }) as unknown as Edge<CustomEdgeData>[]
+    )
+  }, [hoveredProp])
+  // Set nodes with dragging enabled and edges with validation
+  useEffect(() => {
     setRfNodes(
       nodes.map((n) => ({
         ...n,
@@ -363,10 +434,25 @@ function GraphRenderer({
       }))
     )
 
-    // Set edges with validation
     const validatedEdges = validateEdges(edges, nodes)
+
+    // Group edges by source->target so we can stagger label offsets when multiple edges share same connector
+    const validated = validatedEdges as Edge<CustomEdgeData>[]
+    const groups = new Map<string, Edge<CustomEdgeData>[]>()
+    for (const e of validated) {
+      const key = `${e.source}-->${e.target}`
+      const arr = groups.get(key) || []
+      arr.push(e)
+      groups.set(key, arr)
+    }
+
     setRfEdges(
-      validatedEdges.map((e) => {
+      validated.map((e) => {
+        // compute index within group and total count
+        const key = `${e.source}-->${e.target}`
+        const arr = groups.get(key) || []
+        const idx = arr.findIndex((x) => x.id === e.id)
+        const total = arr.length
         const edgeType = e.data?.type
 
         let edgeStyle: any = {}
@@ -375,18 +461,18 @@ function GraphRenderer({
 
         switch (edgeType) {
           case "connectable":
-            label = e.data?.sourceProperty ? `🔗 ${e.data.sourceProperty}` : "connectable"
+            label = (e.data as any)?.sourceProperty ? `🔗 ${(e.data as any).sourceProperty}` : "connectable"
             edgeStyle = {
-              stroke: "#f97316", // orange for connectables
+              stroke: "#f97316",
               strokeWidth: 3,
               strokeDasharray: "8,4",
             }
             markerColor = "#f97316"
             break
           case "erd-relationship":
-            label = e.data?.sourceProperty ? `${e.data.sourceProperty}` : "relates to"
+            label = (e.data as any)?.sourceProperty ? `${(e.data as any).sourceProperty}` : "relates to"
             edgeStyle = {
-              stroke: "#059669", // green for relationships
+              stroke: "#059669",
               strokeWidth: 2,
               strokeDasharray: "none",
             }
@@ -395,7 +481,7 @@ function GraphRenderer({
           case "inheritance":
             label = "extends"
             edgeStyle = {
-              stroke: "#7c3aed", // purple for inheritance
+              stroke: "#7c3aed",
               strokeWidth: 2,
               strokeDasharray: "5,5",
             }
@@ -403,17 +489,17 @@ function GraphRenderer({
             break
           default:
             label =
-              (typeof e.data?.label === "string" ? e.data.label : "") ||
-              (typeof e.data?.type === "string" ? e.data.type : "") ||
+              (typeof (e.data as any)?.label === "string" ? (e.data as any).label : "") ||
+              (typeof (e.data as any)?.type === "string" ? (e.data as any).type : "") ||
               "references"
             edgeStyle = {
-              stroke: "#0891b2", // cyan for references
+              stroke: "#475569",
               strokeWidth: 2,
               strokeDasharray: "none",
             }
-            markerColor = "#0891b2"
+            markerColor = "#475569"
         }
-        // if this edge links main entity -> abstract, force left->right anchors
+
         const sourceNode = (nodes || []).find((n) => n.id === e.source)
         const targetNode = (nodes || []).find((n) => n.id === e.target)
 
@@ -423,16 +509,20 @@ function GraphRenderer({
         const isMainToRelated =
           (sourceNode as any)?.data?.nodeType === "entity" && (targetNode as any)?.data?.nodeType === "related-entity"
 
-        // prefer related mapping first for clear right-side connection, else abstract left-side mapping
         const handleProps = isMainToRelated
           ? { sourceHandle: "right-source", targetHandle: "left-target" }
           : isMainToAbstract
           ? { sourceHandle: "left", targetHandle: "right" }
           : {}
 
+        // compute label vertical offset so labels are spaced when multiple edges share same path
+        const labelYOffset = total > 1 ? Math.round((idx - (total - 1) / 2) * 14) : 0
+
         return {
           ...e,
           ...handleProps,
+          // use the custom stacked edge renderer so we can position labels without overlap
+          type: "stacked",
           label,
           labelStyle: {
             fill: "#374151",
@@ -442,6 +532,8 @@ function GraphRenderer({
             padding: "2px 6px",
             borderRadius: "4px",
             border: "1px solid #d1d5db",
+            // keep this for fallback, actual SVG label positioning is handled by StackedEdge
+            transform: `translateY(${labelYOffset}px)`,
           },
           labelBgStyle: {
             fill: "white",
@@ -457,23 +549,68 @@ function GraphRenderer({
           },
           animated: edgeType === "erd-relationship",
           style: edgeStyle,
-          data: { ...e.data, type: edgeType || "references" } as CustomEdgeData,
+          data: { ...(e.data as any), type: edgeType || "references", labelOffsetY: labelYOffset } as CustomEdgeData,
         }
-      })
+      }) as unknown as Edge<CustomEdgeData>[]
     )
     fitView({ padding: 0.2 })
   }, [nodes, edges, setRfNodes, setRfEdges, fitView])
+
+  // recolor connectors based on selection state without rebuilding/fitView to avoid layout jumps
+  useEffect(() => {
+    if (hoveredProp) return // let hover highlighting take precedence
+
+    const deriveBorderColorForNode = (n: any) => {
+      if (!n || !n.data) return undefined
+      const d = n.data || {}
+      const nodeType = d.nodeType
+      const category = d.category
+      if (nodeType === "entity") return "#7c3aed"
+      if (nodeType === "abstract") return "#3b82f6"
+      if (nodeType === "related-entity") {
+        if (category === "master-data") return "#fca5a5"
+        if (category === "reference-data") return "#34d399"
+        if (category === "work-product-component") return "#fcd34d"
+        return "#9ca3af"
+      }
+      return undefined
+    }
+
+    const defaultConnectorColor = "#6b7280"
+
+    setRfEdges(
+      (es) =>
+        es.map((e) => {
+          const base = (e.data as any)?.__baseStyle || e.style || {}
+          let stroke = defaultConnectorColor
+          if (activeNode) {
+            const targetNode = (nodes || []).find((n) => n.id === e.target)
+            const downstreamColor = deriveBorderColorForNode(targetNode)
+            if (downstreamColor) stroke = downstreamColor
+          }
+          const markerEnd = (e as any).markerEnd ? { ...(e as any).markerEnd, color: stroke } : undefined
+          return { ...e, style: { ...base, stroke }, ...(markerEnd ? { markerEnd } : {}) }
+        }) as unknown as Edge<CustomEdgeData>[]
+    )
+  }, [activeNode, hoveredProp, nodes, setRfEdges])
 
   const onNodeClick = useCallback(
     (_e: any, node: Node) => {
       setActiveNode(node)
       setHoverNodeId(null)
       setPinnedNodeId(node.id)
-      // emphasize neighborhood
+      // emphasize selected node with a thicker border and glow, keep others normal
       setRfNodes((ns) =>
         ns.map((n) => ({
           ...n,
-          style: node.id === n.id ? { boxShadow: "0 0 0 3px #2563eb" } : {},
+          style:
+            node.id === n.id
+              ? {
+                  boxShadow: "0 0 0 6px rgba(99,102,241,0.25)",
+                  outline: "3px solid rgba(124,58,237,0.9)",
+                  outlineOffset: "-2px",
+                }
+              : {},
         }))
       )
       setRfEdges((es) =>
@@ -505,7 +642,7 @@ function GraphRenderer({
               break
             default:
               baseStyle = {
-                stroke: "#0891b2",
+                stroke: "#c3c5c5ff",
                 strokeWidth: 2,
                 strokeDasharray: "none",
               }
