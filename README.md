@@ -1,6 +1,8 @@
 # OSDU Schema Viz
 
-A React + Vite app (React Flow) to explore and visualize OSDU JSON Schemas and their relationships.
+A React + Vite app using React Flow to explore and visualize OSDU JSON Schemas and their relationships.
+
+Check out the live demo [here](https://osdu-viz.netlify.app/).
 
 Quick features
 
@@ -38,19 +40,6 @@ npm run dev
 
 1. Open the app in your browser (usually `http://localhost:5173`)
 
-Build for production:
-
-```pwsh
-npm run build
-npm run preview
-```
-
-Run tests:
-
-```pwsh
-npm test
-```
-
 ## Notes for deployment
 
 - The app prefers minified JSON assets in `public/data` (`*.min.json`). The build script scans `public/data/Generated` and writes `public/schema-index.json` which the app consumes at runtime.
@@ -67,8 +56,6 @@ npm test
 
 - If reference values are not visible in tooltips, check the Network tab for attempted candidate paths like `/data/reference-data/OPEN/RigType.1.min.json`.
 - To inspect the IndexedDB cache in Chrome: DevTools → Application → IndexedDB → `osdu-viz-cache` → `schemas`.
-
-If you want me to add deployment scripts (CloudFront/Cloudflare), CI/CD steps, or a build-time merged reference index, tell me which provider and I’ll add a recommended setup.
 
 Development
 
