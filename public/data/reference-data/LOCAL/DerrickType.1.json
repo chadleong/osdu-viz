@@ -1,0 +1,369 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Double",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Double",
+        "ID": "Double",
+        "Description": "2-stand capacity derrick.",
+        "Code": "Double",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "WITSML",
+        "AttributionRevision": "2.1",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Quadruple",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Quadruple",
+        "ID": "Quadruple",
+        "Description": "4-stand capacity derrick.",
+        "Code": "Quadruple",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "WITSML",
+        "AttributionRevision": "2.1",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Slant",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slant",
+        "ID": "Slant",
+        "Description": "Slant derrick for directional drilling applications",
+        "Code": "Slant",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "WITSML",
+        "AttributionRevision": "2.1",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Triple",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Triple",
+        "ID": "Triple",
+        "Description": "3-stand capacity derrick.",
+        "Code": "Triple",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "WITSML",
+        "AttributionRevision": "2.1",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Tower",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tower",
+        "ID": "Tower",
+        "Description": "A space-frame structure with four vertical edges, often used offshore for high stability.",
+        "Code": "Tower",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:TypeA",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type A",
+        "ID": "TypeA",
+        "Description": "\u201cA\u201d-shaped frame with lattice or tubular legs, offering high bearing capacity and visibility.",
+        "Code": "TypeA",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Mast",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mast",
+        "ID": "Mast",
+        "Description": "Common on workover rigs; can be telescopic or non-telescopic, slightly inclined toward the well for stability.",
+        "Code": "Mast",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Basket",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Basket",
+        "ID": "Basket",
+        "Description": "Compact design for specific rig configurations.",
+        "Code": "Basket",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Brest",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brest",
+        "ID": "Brest",
+        "Description": "Traditional design with two main legs and bracing.",
+        "Code": "Brest",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:GinPole",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gin Pole",
+        "ID": "GinPole",
+        "Description": "Simple lifting structure, often temporary.",
+        "Code": "GinPole",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Guy",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Guy",
+        "ID": "Guy",
+        "Description": "Supported by guy wires for stability.",
+        "Code": "Guy",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DerrickType:Stiffleg",
+      "kind": "osdu:wks:reference-data--DerrickType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stiffleg",
+        "ID": "Stiffleg",
+        "Description": "Uses rigid legs instead of guy wires for support.",
+        "Code": "Stiffleg",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/DerrickType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    }
+  ]
+}

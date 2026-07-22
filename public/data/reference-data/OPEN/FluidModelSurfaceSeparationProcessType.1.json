@@ -1,0 +1,155 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSurfaceSeparationProcessType:KValues",
+      "kind": "osdu:wks:reference-data--FluidModelSurfaceSeparationProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "K Values",
+        "ID": "KValues",
+        "Description": "The K-factor of a component is the ratio of the mole fraction of that component in the gas phase to the liquid phase (e.g. in the stock tank). ",
+        "Code": "KValues",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSurfaceSeparationProcessType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSurfaceSeparationProcessType:RecoveryFactors",
+      "kind": "osdu:wks:reference-data--FluidModelSurfaceSeparationProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Recovery Factors",
+        "ID": "RecoveryFactors",
+        "Description": "The oil recovery factor of a component is the ratio of the mass amount of that component in the  liquid phase (e.g., in the stock tank), to the amount in the feed.",
+        "Code": "RecoveryFactors",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSurfaceSeparationProcessType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSurfaceSeparationProcessType:SingleStageFlash",
+      "kind": "osdu:wks:reference-data--FluidModelSurfaceSeparationProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Single Stage Flash",
+        "ID": "SingleStageFlash",
+        "Description": "Single Stage Flash is a surface separation process where a high-pressure hydrocarbon fluid is abruptly reduced in pressure, causing lighter components to vaporize (flash) and separate from the liquid phase in a single step.",
+        "Code": "SingleStageFlash",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSurfaceSeparationProcessType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSurfaceSeparationProcessType:StandardSeparatorTrain",
+      "kind": "osdu:wks:reference-data--FluidModelSurfaceSeparationProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Standard Separator Train",
+        "ID": "StandardSeparatorTrain",
+        "Description": "This involves the liquid from one stage in the train moving to the next set of stages until it gets to the stock tank with the gas liberated at each stage all mixed together.",
+        "Code": "StandardSeparatorTrain",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSurfaceSeparationProcessType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSurfaceSeparationProcessType:NonStandardSeparation",
+      "kind": "osdu:wks:reference-data--FluidModelSurfaceSeparationProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Non-Standard Separation",
+        "ID": "NonStandardSeparation",
+        "Description": "This involves the liquid from one stage in the train moving to the next set of stages until it gets to the stock tank with the gas liberated at each stage subject to separate / intermediate processes (e.g., compression and cooling, etc.) prior to its path to the stock tank.",
+        "Code": "NonStandardSeparation",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSurfaceSeparationProcessType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

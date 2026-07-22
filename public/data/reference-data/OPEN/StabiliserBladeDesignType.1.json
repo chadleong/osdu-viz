@@ -1,0 +1,110 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--StabiliserBladeDesignType:StraightBlade",
+      "kind": "osdu:wks:reference-data--StabiliserBladeDesignType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Straight Blade",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "StraightBlade",
+        "InactiveIndicator": false,
+        "Description": "The stabilisers have straight vertical blades attached to the mandrel",
+        "Code": "StraightBlade",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/StabiliserBladeDesignType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StabiliserBladeDesignType:SpiralBlade",
+      "kind": "osdu:wks:reference-data--StabiliserBladeDesignType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spiral Blade",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "SpiralBlade",
+        "InactiveIndicator": false,
+        "Description": "The spiral blade stabilisers have their blades at an angle rather than being coaxial with the body of the stabiliser.",
+        "Code": "SpiralBlade",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/StabiliserBladeDesignType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--StabiliserBladeDesignType:Melon",
+      "kind": "osdu:wks:reference-data--StabiliserBladeDesignType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Melon Blade",
+        "NameAlias": [
+          {
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Melon",
+        "InactiveIndicator": false,
+        "Description": "Design is tapered at both the front and rear of the stabiliser blade",
+        "Code": "Melon",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/StabiliserBladeDesignType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:AbrasiveJet",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Abrasive Jet",
+        "NameAlias": [
+          {
+            "AliasName": "AJ"
+          }
+        ],
+        "Description": "Abrasive Jet (Coiled Tubing deployed)",
+        "Code": "AbrasiveJet",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:CasingDeployedPerforation",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Casing Deployed Perforation",
+        "NameAlias": [
+          {
+            "AliasName": "CDPF"
+          }
+        ],
+        "Description": "Perforation guns deployed with casing/liner assembly",
+        "Code": "CasingDeployedPerforation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:PumpDownPlugPerf",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pump down, Plug & Perf ",
+        "NameAlias": [
+          {
+            "AliasName": "PDPP"
+          }
+        ],
+        "Description": "Pump down perforating guns run with leading plug. Usually performed on conjunction with a fracking operation. Plug can be sealed through a ball drop.",
+        "Code": "PumpDownPlugPerf ",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:TubingConveyedPerforation",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tubing Conveyed Perforation",
+        "NameAlias": [
+          {
+            "AliasName": "TCP"
+          }
+        ],
+        "Description": "Perforating guns run on tubing and/or drill pipe.",
+        "Code": "TubingConveyedPerforation",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:SlidingSleeve",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sliding Sleeve",
+        "NameAlias": [
+          {
+            "AliasName": "SS"
+          }
+        ],
+        "Description": "Sliding Sleeves create flow path through control of completion string annulus",
+        "Code": "SlidingSleeve",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:Other",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Other",
+        "NameAlias": [
+          {
+            "AliasName": "OTHR"
+          }
+        ],
+        "Description": "Other - should be specified",
+        "Code": "Other",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsolatedIntervalZoneAccessMechanism:Barefoot",
+      "kind": "osdu:wks:reference-data--IsolatedIntervalZoneAccessMechanism:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Barefoot",
+        "NameAlias": [
+          {
+            "AliasName": "BRFT"
+          }
+        ],
+        "Description": "Barefoot open hole, no additional operation required to create flow path",
+        "Code": "Barefoot",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/IsolatedIntervalZoneAccessMechanism.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

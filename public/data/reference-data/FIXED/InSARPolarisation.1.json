@@ -1,0 +1,137 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARPolarisation:VV",
+      "kind": "osdu:wks:reference-data--InSARPolarisation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "VV",
+        "NameAlias": [
+          {
+            "AliasName": "Vertical Vertical"
+          }
+        ],
+        "Description": "Vertically transmitted waves that are received back at the sensor vertically",
+        "Code": "VV",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARPolarisation.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARPolarisation:VH",
+      "kind": "osdu:wks:reference-data--InSARPolarisation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "VH",
+        "NameAlias": [
+          {
+            "AliasName": "Vertical Horizonal"
+          }
+        ],
+        "Description": "Vertically transmitted waves that are received back at the sensor horizontally",
+        "Code": "VH",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARPolarisation.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARPolarisation:HH",
+      "kind": "osdu:wks:reference-data--InSARPolarisation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HH",
+        "NameAlias": [
+          {
+            "AliasName": "Horizonal Horizonal"
+          }
+        ],
+        "Description": "Horizontally transmitted waves that are received back at the sensor horizontally",
+        "Code": "HH",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARPolarisation.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARPolarisation:HV",
+      "kind": "osdu:wks:reference-data--InSARPolarisation:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HV",
+        "NameAlias": [
+          {
+            "AliasName": "Horizonal Vertical"
+          }
+        ],
+        "Description": "Horizontally transmitted waves that are received back at the sensor vertically",
+        "Code": "HV",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARPolarisation.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

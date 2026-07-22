@@ -1,0 +1,475 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:AcidFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acid fracturing",
+        "Code": "AcidFracturing",
+        "Description": "A fracturing treatment using acid to etch channels in the walls of fractures and to dissolve carbonate material.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:AcidSqueeze",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acid squeeze",
+        "Code": "AcidSqueeze",
+        "Description": "Pump pressure (below fracture pressure) forces acid into the formation near the wellbore, to enhance flow or repair damage.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:AcidWash",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acid wash",
+        "NameAlias": [
+          {
+            "AliasName": "Cleanout",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "AcidWash",
+        "Description": "Acid is used to clean scale, rust or debris from the wellbore equipment.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:BinaryFoamFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Binary foam fracturing",
+        "Code": "BinaryFoamFracturing",
+        "Description": "Binary foam fracturing fluids combine nitrogen (N2) and carbon dioxide (CO2) for the gaseous internal phase, mixed with water-based fluids for the liquid external phase.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:CO2AssistFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CO2 assist fracturing",
+        "NameAlias": [
+          {
+            "AliasName": "CO2 energized fracturing",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "CO2AssistFracturing",
+        "Description": "A reservoir fracturing treatment that adds carbon dioxide to the water phase of the fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:CO2FoamedFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CO2 foam fracturing",
+        "Code": "CO2FoamedFracturing",
+        "Description": "A hydraulic fracturing treatment using carbon dioxide gas and a liquid medium mixed downhole at high pressure to form a foam.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:C02Fracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon dioxide fracturing",
+        "NameAlias": [
+          {
+            "AliasName": "CO2 fracturing",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "C02Fracturing",
+        "Description": "A hydraulic fracturing treatment using carbon dioxide instead of water as the fracturing fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:HydraulicFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydraulic fracturing",
+        "Code": "HydraulicFracturing",
+        "Description": "A reservoir treatment in which water or other fluid is injected at high pressure into the formation, creating fractures to enhance productivity.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:MatrixAcidizing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Matrix acidizing",
+        "Code": "MatrixAcidizing",
+        "Description": "Acid is injected into a reservoir below fracture pressure to improve productivity by removing drilling damage or enlarging the flow paths.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:N2AssistFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "N2 assist fracturing",
+        "NameAlias": [
+          {
+            "AliasName": "N2 energized fracturing",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "N2AssistFracturing",
+        "Description": "A reservoir fracturing treatment that adds nitrogen to the water phase of the fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:N2FoamedFracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "N2 foam fracturing",
+        "Code": "N2FoamedFracturing",
+        "Description": "A hydraulic fracturing treatment using nitrogen gas and a liquid medium mixed downhole at high pressure to form a foam.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:N2Fracturing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitrogen fracturing",
+        "NameAlias": [
+          {
+            "AliasName": "N2 fracturing",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "LN2",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "N2Fracturing",
+        "Description": "A hydraulic fracturing treatment using liquid nitrogen (LN2) instead of water as the fracturing fluid.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:NitroglycerineExplosion",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitroglycerine explosion",
+        "NameAlias": [
+          {
+            "AliasName": "Nitro shot",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "NitroglycerineExplosion",
+        "Description": "An old stimulation process that involved lowering nitroglycerine canisters into a well and detonating.",
+        "AttributionPublication": "https://petrowiki.spe.org/Glossary:Nitro_shot",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:Acidizing",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Acidizing",
+        "Code": "Acidizing",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"MatrixAcidizing\" with Name=\"Matrix acidizing\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellTreatmentType:NitroglycerinExplosives",
+      "kind": "osdu:wks:reference-data--WellTreatmentType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitroglycerin Explosives",
+        "Code": "NitroglycerinExplosives",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"NitroglycerineExplosion\" with Name=\"Nitroglycerine explosion\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-06T16:42:24+00:00"
+      }
+    }
+  ]
+}

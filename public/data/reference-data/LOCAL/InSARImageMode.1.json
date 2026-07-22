@@ -1,0 +1,89 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARImageMode:Stripmap",
+      "kind": "osdu:wks:reference-data--InSARImageMode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stripmap",
+        "Description": "An imaging mode where the radar has fixed pointing direction and creates a continuous image over the flight line of the satellite. Typically medium resolution",
+        "Code": "Stripmap",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARImageMode.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARImageMode:Spotlight",
+      "kind": "osdu:wks:reference-data--InSARImageMode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spotlight",
+        "Description": "An imaging mode where the he radar beam is steered to increase the illumination time over the required scene area. Typically high resolution and smaller image area.\n",
+        "Code": "Spotlight",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARImageMode.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--InSARImageMode:ScanSAR",
+      "kind": "osdu:wks:reference-data--InSARImageMode:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ScanSAR",
+        "Description": "An imaging mode which collects adjacent, slightly overlapping coverage at different ranges and then processes these into one image or scene. Typically low resolution and wide image area.",
+        "Code": "ScanSAR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/InSARImageMode.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyActivityType:RunTubular",
+      "kind": "osdu:wks:reference-data--TubularAssemblyActivityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Run Tubular",
+        "Description": "Pick up casing/liner joints, make it up to a string and run in hole. Includes casing, liner, tie back string, centre pillar and production tubing Does not include drillstring or coiled tubing.",
+        "Code": "RunTubular",
+        "AttributionAuthority": "POSC",
+        "AttributionPublication": "http://w3.energistics.org/archive/Epicentre/Epicentre_v3.0/DataModel/LogicalDictionary/StandardValues/activity_class.html",
+        "AttributionRevision": "2.2.2",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyActivityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyActivityType:PullTubular",
+      "kind": "osdu:wks:reference-data--TubularAssemblyActivityType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pull Tubular",
+        "Description": "Pull tubular (casing, liner, production tubing or tie back string) out of hole and lay down joints. A tubular normally includes drillstring, but drillstring is not included in this activity, nor coiled tubing.",
+        "Code": "PullTubular",
+        "AttributionAuthority": "POSC",
+        "AttributionPublication": "http://w3.energistics.org/archive/Epicentre/Epicentre_v3.0/DataModel/LogicalDictionary/StandardValues/activity_class.html",
+        "AttributionRevision": "2.2.2",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyActivityType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

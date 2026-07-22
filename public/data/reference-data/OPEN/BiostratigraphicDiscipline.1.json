@@ -1,0 +1,133 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology",
+      "kind": "osdu:wks:reference-data--BiostratigraphicDiscipline:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nannopalaeontology",
+        "NameAlias": [
+          {
+            "AliasName": "Nanno"
+          }
+        ],
+        "Description": "Nannopalaeontology is a branch of paleontology that focuses on the study of microscopic fossils of marine organisms called nannoplankton. Specifically, it involves the identification, classification, and interpretation of the remains of these tiny planktonic organisms, including coccolithophores, foraminifera, and dinoflagellates, that are preserved in sedimentary rocks. ",
+        "Code": "Nannopalaeontology",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicDiscipline.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Micropalaeontology",
+      "kind": "osdu:wks:reference-data--BiostratigraphicDiscipline:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Micropalaeontology",
+        "NameAlias": [
+          {
+            "AliasName": "Micro"
+          }
+        ],
+        "Description": "Micropalaeontology is a branch of paleontology that deals with the study of microscopic fossils of various organisms, including but not limited to, foraminifera, radiolarians, diatoms and ostracods.",
+        "Code": "Micropalaeontology",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicDiscipline.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Palynology",
+      "kind": "osdu:wks:reference-data--BiostratigraphicDiscipline:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Palynology",
+        "NameAlias": [
+          {
+            "AliasName": "Paly"
+          }
+        ],
+        "Description": "Palynology is the study of organic-walled microfossils called palynomorphs, which are produced by plants, protists, and fungi. These microfossils include pollen grains, spores, dinoflagellate cysts, and other organic particles that are found in sedimentary rocks, soils, and archaeological materials.",
+        "Code": "Palynology",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicDiscipline.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Macropalaeontology",
+      "kind": "osdu:wks:reference-data--BiostratigraphicDiscipline:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Macropalaeontology",
+        "NameAlias": [
+          {
+            "AliasName": "Macro"
+          }
+        ],
+        "Description": "Macropalaeontology, also known as macrofossil paleontology, is the branch of paleontology that deals with the study of fossils that are visible to the naked eye or with minimal magnification, such as bones, shells, teeth, and wood. These fossils are typically larger than those studied in micropalaeontology and nannopalaeontology, and they are often preserved in sedimentary rocks or other types of geological formations.",
+        "Code": "Macropalaeontology",
+        "Source": "Workbook ReferenceValues/Published/BiostratigraphicDiscipline.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

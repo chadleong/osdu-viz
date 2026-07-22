@@ -1,0 +1,121 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftType:CoreToWellLog",
+      "kind": "osdu:wks:reference-data--DepthShiftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Core To Well Log",
+        "ID": "CoreToWellLog",
+        "Description": "Depth shift intended to shift core samples to a reference well log. ",
+        "Code": "CoreToWellLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftType.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftType:WellLogToCore",
+      "kind": "osdu:wks:reference-data--DepthShiftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Log To Core",
+        "ID": "WellLogToCore",
+        "Description": "Depth shift intended to shift the depth values of a specified well log  to align with a set of core sample depths.",
+        "Code": "WellLogToCore",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftType.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftType:WellLogToWellLog",
+      "kind": "osdu:wks:reference-data--DepthShiftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Well Log To Well Log",
+        "ID": "WellLogToWellLog",
+        "Description": "Depth shift intended to shift the depth values of a specified well log to align with a reference well log. Common use cases include aligning multiple runs of the same well log, and aligning well logs captured with different downhole logging tool assemblies.",
+        "Code": "WellLogToWellLog",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftType.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftType:WellLogElapsedTimeToDepth",
+      "kind": "osdu:wks:reference-data--DepthShiftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Elapsed Time To Depth",
+        "ID": "WellLogElapsedTimeToDepth",
+        "Description": "Depth shift intended to shift a specified well log indexed in elapsed time to a depth indexed referenced dataset. Common use cases include shifting time-based drilling logs to a wireline-captured well log indexed in measured depth.",
+        "Code": "WellLogElapsedTimeToDepth",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftType.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:BlackOil",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Black Oil",
+        "ID": "BlackOil",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationFluidModel",
+        "Description": "The Black Oil Fluid Model is a simplified approach to modeling reservoir fluids, commonly used for reservoirs containing primarily oil and associated gas and works well when fluid compositions change relatively little during production. This model assumes that oil, gas, and water exist as distinct phases, each described by a few key properties. Includes empirical correlations (GOR, Rs, etc.)",
+        "Code": "BlackOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Compositional",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional",
+        "ID": "Compositional",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationFluidModel",
+        "Description": "The Compositional Fluid Model is a more detailed approach to modeling reservoir fluids. It explicitly represents fluid composition using individual hydrocarbon components (e.g., methane, ethane, propane, etc.) and other components like CO2, N2, and water. This model accounts for changes in fluid composition and phase behavior during production, injection, and depletion. Includes thermodynamics-based Equations-of-State with full composition modeling.",
+        "Code": "Compositional",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Thermal",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Thermal",
+        "ID": "Thermal",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationFluidModel",
+        "Description": "The Thermal Compositional Fluid Model is a compositional model that also accounts for the effect of temperature on key fluid properties like viscosity, density, and phase equilibria. It is used for scenarios where heat transfer and thermal effects significantly influence fluid behavior, such as in heavy oil recovery, steam injection, or thermal enhanced oil recovery (EOR) processes. ",
+        "Code": "Thermal",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:DualPorosity",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dual Porosity",
+        "ID": "DualPorosity",
+        "ReservoirSimulationTypeTagCategoryIDs": "NaturallyFracturedReservoirModel",
+        "Description": "A reservoir modeling approach that represents two distinct storage systems: the rock matrix (high storage, low permeability) and fractures (low storage, high permeability). Common in naturally fractured reservoirs.",
+        "Code": "DualPorosity",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:DualPermeability",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dual Permeability",
+        "ID": "DualPermeability",
+        "ReservoirSimulationTypeTagCategoryIDs": "NaturallyFracturedReservoirModel",
+        "Description": "Similar to dual porosity but allows fluid flow within both matrix and fracture systems, improving accuracy for fracture-dominated flow.",
+        "Code": "DualPermeability",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:TriplePorosity",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Triple Porosity",
+        "ID": "TriplePorosity",
+        "ReservoirSimulationTypeTagCategoryIDs": "NaturallyFracturedReservoirModel",
+        "Description": "Extends dual porosity by adding a third system (e.g., vugs or micro-fractures), used for highly complex carbonate reservoirs.",
+        "Code": "TriplePorosity",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:SectorModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sector Model",
+        "ID": "SectorModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelResolution",
+        "Description": "A smaller portion of the full reservoir model used for detailed studies or sensitivity analysis without simulating the entire field.",
+        "Code": "SectorModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:FullFieldModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Full Field Model",
+        "ID": "FullFieldModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelResolution",
+        "Description": "Represents the entire reservoir system, including all wells and boundaries, for comprehensive forecasting and optimization.",
+        "Code": "FullFieldModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:MaterialBalanceModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Material Balance Model",
+        "ID": "MaterialBalanceModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelResolution",
+        "Description": "Analytical approach using reservoir pressure and production data to estimate hydrocarbons in place and predict performance without detailed spatial simulation.",
+        "Code": "MaterialBalanceModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:DeclineCurveAnalysisModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decline Curve Analysis Model",
+        "ID": "DeclineCurveAnalysisModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelResolution",
+        "Description": "Empirical or analytical method that uses historical production trends to forecast future performance, often applied when data is limited.",
+        "Code": "DeclineCurveAnalysisModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:MultiFieldModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Multi Field Model ",
+        "NameAlias": [
+          {
+            "AliasName": "Multi Reservoir Model"
+          }
+        ],
+        "ID": "MultiFieldModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelResolution",
+        "Description": "Integrates multiple reservoirs or fields into one simulation for shared infrastructure or combined optimization.",
+        "Code": "MultiFieldModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:CoupledReservoirModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coupled Reservoir Model",
+        "NameAlias": [
+          {
+            "AliasName": "Multi Physics Model"
+          }
+        ],
+        "ID": "CoupledReservoirModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "IntegratedAssetModel",
+        "Description": "Links reservoir simulation with other physics (e.g., thermal, geomechanics) for more realistic predictions.",
+        "Code": "CoupledReservoirModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:CoupledReservoirNetworkModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coupled Reservoir-Network Model",
+        "ID": "CoupledReservoirNetworkModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "IntegratedAssetModel",
+        "Description": "Combines reservoir simulation with surface network modeling to optimize flow from reservoir to processing facilities (e.g., GAP, ENS).",
+        "Code": "CoupledReservoirNetworkModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:ReservoirFlowSimulationModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reservoir Flow Simulation Model",
+        "ID": "ReservoirFlowSimulationModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelType",
+        "Description": "Dynamic model that simulates fluid flow in porous media based on pressure, saturation, and rock/fluid properties.",
+        "Code": "ReservoirFlowSimulationModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:ReservoirGeomechanicsSimulationModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reservoir Geomechanics Simulation Model",
+        "ID": "ReservoirGeomechanicsSimulationModel",
+        "ReservoirSimulationTypeTagCategoryIDs": "ReservoirSimulationModelType",
+        "Description": "Incorporates rock deformation and stress changes into reservoir simulation, critical for subsidence, fracture propagation, and well integrity.",
+        "Code": "ReservoirGeomechanicsSimulationModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Polymer",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Polymer",
+        "ID": "Polymer",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of water mixed with polymer molecules to increase water viscosity and improve sweep efficiency by reducing water mobility. ",
+        "Code": "Polymer",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Surfactant",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surfactant",
+        "ID": "Surfactant",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of chemicals that reduce interfacial tension (IFT) between phases, improving recovery.",
+        "Code": "Surfactant",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Alkaline",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alkaline",
+        "ID": "Alkaline",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of alkaline chemicals to react with acidic components in crude oil, forming in-situ soaps to improve recovery.",
+        "Code": "Alkaline",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Steam",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steam",
+        "ID": "Steam",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of high-temperature steam into the reservoir to improve recovery. ",
+        "Code": "Steam",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:SAGD",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SAGD",
+        "ID": "SAGD",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Steam-Assisted Gravity Drainage is a thermal recovery process where at least two horizontal wells are used: steam is injected in an upper well, and oil drains to a lower producer by gravity. ",
+        "Code": "SAGD",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:MiscibleGasInjection",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Miscible Gas Injection",
+        "ID": "MiscibleGasInjection",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of gas at pressures where it becomes miscible with reservoir oil, reducing interfacial tension and improving displacement efficiency. ",
+        "Code": "MiscibleGasInjection",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Combustion",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Combustion",
+        "ID": "Combustion",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "A thermal method where part of the reservoir oil is burned to generate heat and improve recovery. ",
+        "Code": "Combustion",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:Waterflooding",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Waterflooding",
+        "ID": "Waterflooding",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of water to maintain pressure and displace oil toward producers. ",
+        "Code": "Waterflooding",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:LowSalinityWaterflooding",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low-salinity Waterflooding",
+        "ID": "LowSalinityWaterflooding",
+        "ReservoirSimulationTypeTagCategoryIDs": "EnhancedOilRecoveryProcesses",
+        "Description": "Injection of low-salinity water to alter wettability and improve oil recovery. ",
+        "Code": "LowSalinityWaterflooding",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:CarbonStorage",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon Storage",
+        "ID": "CarbonStorage",
+        "ReservoirSimulationTypeTagCategoryIDs": "AdditionalCharacteristics",
+        "Description": "Injection of CO2 into reservoirs for long-term storage. ",
+        "Code": "CarbonStorage",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTag:GasStorage",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTag:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Storage",
+        "ID": "GasStorage",
+        "ReservoirSimulationTypeTagCategoryIDs": "AdditionalCharacteristics",
+        "Description": "Injection of gas into depleted reservoirs or aquifers for seasonal storage. ",
+        "Code": "GasStorage",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTag.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1110 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.UndersaturatedOil",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.UndersaturatedOil",
+        "ID": "BlackOil.UndersaturatedOil",
+        "Description": "Specifies the properties of a live oil fluid model, where properties of the undersaturated oil are explicitly provided. Live oil contains dissolved natural gas.",
+        "Code": "BlackOil.UndersaturatedOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.SaturatedOil",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.SaturatedOil",
+        "ID": "BlackOil.SaturatedOil",
+        "Description": "Specifies the properties of a live oil fluid model in compressibility form, where undersaturated oil properties are not explicitly provided but are calculated from saturated properties with compressibilities. Live oil contains dissolved natural gas.",
+        "Code": "BlackOil.SaturatedOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA fa40b5ae.",
+        "CommitDate": "2025-11-13T14:45:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.DeadOil",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.DeadOil",
+        "ID": "BlackOil.DeadOil",
+        "Description": "Specifies the properties of a dead oil fluid model. In the context of fluid modeling, this means that the table defines a single hydrocarbon phase (usually oil). In this context, the oil defined is only \"dead\" in the sense that it won't drop below the saturation pressure (that is, bubble point or dew point) in the reservoir.",
+        "Code": "BlackOil.DeadOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.DryGas",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.DryGas",
+        "ID": "BlackOil.DryGas",
+        "Description": "Specifies the properties of a dry gas fluid model. Dry gas does not contain condensable hydrocarbons.",
+        "Code": "BlackOil.DryGas",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.WetGas",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.WetGas",
+        "ID": "BlackOil.WetGas",
+        "Description": "Specifies the properties of a wet gas fluid model. Wet gas contains condensable hydrocarbons.",
+        "Code": "BlackOil.WetGas",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.SimulatedLiberation",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.SimulatedLiberation",
+        "ID": "BlackOil.SimulatedLiberation",
+        "Description": "Represents a live fluid model simulated according to a particular flash mechanism. Contrasting with other methods, usually this formulation method has a single table containing descriptions of all the phases rather than multiple tables for that purpose, and is used in practical applications other than reservoir simulation.",
+        "Code": "BlackOil.SimulatedLiberation",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.WaterCompressibilities",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.WaterCompressibilities",
+        "ID": "BlackOil.WaterCompressibilities",
+        "Description": "Specifies the properties of water in compressibility form, where water properties are not explicitly provided but are calculated from reference properties (i.e. density and viscosity), given at the reference pressure, with compressibilities.",
+        "Code": "BlackOil.WaterCompressibilities",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA fa40b5ae.",
+        "CommitDate": "2025-11-13T14:45:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.WaterTable",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.WaterTable",
+        "ID": "BlackOil.WaterTable",
+        "Description": "Specifies the properties of water, where properties of the water are explicitly provided at different pressures. ",
+        "Code": "BlackOil.WaterTable",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:BlackOil.MiscibleFluidModel",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BlackOil.MiscibleFluidModel",
+        "ID": "BlackOil.MiscibleFluidModel",
+        "Description": "The miscible fluid model is an implementation of the empirical treatment suggested by M. Todd and W. Longstaff, which contains four tables - two representing a typical black oil model (with a table for oil and one for gas), a third representing injection gas, and a fourth that contains parameters for miscibility.",
+        "Code": "BlackOil.MiscibleFluidModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.PengRobinson",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.PengRobinson",
+        "NameAlias": [
+          {
+            "AliasName": "PR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.PengRobinson",
+        "Description": "Using the Peng-Robinson (original 1976) EoS to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.PengRobinson",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.PengRobinson-3PR",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.PengRobinson-3PR",
+        "NameAlias": [
+          {
+            "AliasName": "PR-3PR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.PengRobinson-3PR",
+        "Description": "Using the Peng-Robinson (original 1976) EoS, extended to use volume-shift as a third parameter, to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.PengRobinson-3PR",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.PengRobinson78",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.PengRobinson78",
+        "NameAlias": [
+          {
+            "AliasName": "PR78",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.PengRobinson78",
+        "Description": "Using the Peng-Robinson 1978 EoS to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.PengRobinson78",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.PengRobinson78-3PR",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.PengRobinson78-3PR",
+        "NameAlias": [
+          {
+            "AliasName": "PR78-3PR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.PengRobinson78-3PR",
+        "Description": "Using the Peng-Robinson 1978 EoS, extended to use volume-shift as a third parameter, to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.PengRobinson78-3PR",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.SoaveRedlichKwong",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.SoaveRedlichKwong",
+        "NameAlias": [
+          {
+            "AliasName": "SRK",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.SoaveRedlichKwong",
+        "Description": "Using the Soave-Redlich-Kwong EoS to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.SoaveRedlichKwong",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.SoaveRedlichKwong-3PR",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.SoaveRedlichKwong-3PR",
+        "NameAlias": [
+          {
+            "AliasName": "SRK-3PR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.SoaveRedlichKwong-3PR",
+        "Description": "Using the Soave-Redlich-Kwong EoS, extended to use volume-shift as a third parameter to determine phase equilibria (presence, amount, and physical properties of phases). This is a cubic EoS.",
+        "Code": "Compositional.SoaveRedlichKwong-3PR",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.CubicPlusAssociations",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.CubicPlusAssociations",
+        "NameAlias": [
+          {
+            "AliasName": "CPA",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.CubicPlusAssociations",
+        "Description": "Using the Cubic Plus Associations EoS to determine phase equilibria (presence, amount, and physical properties of phases). This adds terms to a cubic EoS to model systems with associating molecules. This is a non-cubic, multi-parameter EoS.",
+        "Code": "Compositional.CubicPlusAssociations",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.BenedictWebbRubin",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.BenedictWebbRubin",
+        "NameAlias": [
+          {
+            "AliasName": "BWR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.BenedictWebbRubin",
+        "Description": "Using the Benedict-Webb-Rubin EoS to determine phase equilibria (presence, amount, and physical properties of phases). This is a non-cubic, multi-parameter EoS.",
+        "Code": "Compositional.BenedictWebbRubin",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.PerturbedChainVersionOfStatisticalAssociatingFluidTheory",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.PerturbedChainVersionOfStatisticalAssociatingFluidTheory",
+        "NameAlias": [
+          {
+            "AliasName": "PC-SAFT",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "ID": "Compositional.PerturbedChainVersionOfStatisticalAssociatingFluidTheory",
+        "Description": "Using the Perturbed Chain Version Of Statistical Associating Fluid Theory EoS to determine phase equilibria (presence, amount, and physical properties of phases). This is a molecular-based EoS, extended to chain-like and associating molecules. This is a non-cubic, multi-parameter EoS.",
+        "Code": "Compositional.PerturbedChainVersionOfStatisticalAssociatingFluidTheory",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.KValueCorrelation",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.KValueCorrelation",
+        "ID": "Compositional.KValueCorrelation",
+        "Description": "Using a correlation (e.g., Antonie or Crookston) to calculate K-value.",
+        "Code": "Compositional.KValueCorrelation",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.KValueTables",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.KValueTables",
+        "ID": "Compositional.KValueTables",
+        "Description": "Using K-values that are provided in tables as a function of pressure, temperature, or both.",
+        "Code": "Compositional.KValueTables",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.ComponentSolubilityInWaterTable",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.ComponentSolubilityInWaterTable",
+        "ID": "Compositional.ComponentSolubilityInWaterTable",
+        "Description": "Using the function for modeling component solubility in the aqueous phase as a table, where discrete solubility values (e.g., gas-water ratio values) at specific pressures and/or temperatures are explicitly provided.",
+        "Code": "Compositional.ComponentSolubilityInWaterTable",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Description Hussein found: \"Component solubility in the aqueous phase This option (also known as 'component solubility in water' and abbreviated to CSIW) enables the simulation of a three-phase equilibrium of aqueous, liquid, and vapor phases for non-thermal and thermal compositional models. You can use this functionality to simulate CO2 storage in saline aquifers or depleted reservoirs. When combined with solids and reactions, the impact of processes such as mineralization and salt precipitation can also be included in the simulation. If a CSIW case has more than one water-soluble hydrocarbon component, it is assumed that the aqueous solubility of the hydrocarbon component is not affected by the existence of other hydrocarbon components in the aqueous phase.\"",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.ComponentSolubilityInWaterCorrelation",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.ComponentSolubilityInWaterCorrelation",
+        "ID": "Compositional.ComponentSolubilityInWaterCorrelation",
+        "Description": "Using the function for modeling component solubility in the aqueous phase as a correlation, where solubility values (e.g., gas-water ratio values) are not explicitly provided but are calculated from reference properties or parameters such as temperature, pressure, and component interaction coefficients.",
+        "Code": "Compositional.ComponentSolubilityInWaterCorrelation",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.ChainOfRotator",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.ChainOfRotator",
+        "ID": "Compositional.ChainOfRotator",
+        "Description": "Using the Chain of Rotator model to calculate density of phases. This model represents fluid molecules as a chain of rotating units connected by bonds.",
+        "Code": "Compositional.ChainOfRotator",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.Compressibility",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.Compressibility",
+        "ID": "Compositional.Compressibility",
+        "Description": "A table of components in both liquid and vapor phases using a reference value and with compressibility and/or expansivity, with their compositional data (in conjunction with a mixing rule). This is used to calculate density and is often used in thermal compositional models.",
+        "Code": "Compositional.Compressibility",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.CSPedersen84",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.CSPedersen84",
+        "ID": "Compositional.CSPedersen84",
+        "Description": "Using the Corresponding State Pedersen 1984 compositional viscosity model. (Model requires individual component property input.)",
+        "Code": "Compositional.CSPedersen84",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.CSPedersen87",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.CSPedersen87",
+        "ID": "Compositional.CSPedersen87",
+        "Description": "Using the Corresponding State Pedersen 1987 compositional viscosity model. (Model requires individual component property input.) This is an extension of Pedersen's 1984 model, designed to handle heavier oils.",
+        "Code": "Compositional.CSPedersen87",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.LohrenzBrayClark",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.LohrenzBrayClark",
+        "ID": "Compositional.LohrenzBrayClark",
+        "Description": "Using the Lohrenz-Bray-Clark (LBC) compositional viscosity model. (Model requires individual component property input.) ",
+        "Code": "Compositional.LohrenzBrayClark",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.LohrenzBrayClarkExponential",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.LohrenzBrayClarkExponential",
+        "ID": "Compositional.LohrenzBrayClarkExponential",
+        "Description": "Using the Lohrenz-Bray-Clark Exponential compositional viscosity model. (Model requires individual component property input.) This is a refined version of the LBC model, incorporating an exponential function.",
+        "Code": "Compositional.LohrenzBrayClarkExponential",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.FrictionTheory",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.FrictionTheory",
+        "ID": "Compositional.FrictionTheory",
+        "Description": "Using the Friction Theory compositional viscosity model. (Model requires individual component property input.)",
+        "Code": "Compositional.FrictionTheory",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.Andrade",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.Andrade",
+        "ID": "Compositional.Andrade",
+        "Description": "Using the Andrade compositional viscosity model. (Model requires individual component property input.)",
+        "Code": "Compositional.Andrade",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.LeeGonzalezEakin66",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.LeeGonzalezEakin66",
+        "ID": "Compositional.LeeGonzalezEakin66",
+        "Description": "Using the Lee-Gonzalez-Eakin (1966) correlation method to calculate vapor-phase viscosity.",
+        "Code": "Compositional.LeeGonzalezEakin66",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.CarrKobayashiBurrows54",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.CarrKobayashiBurrows54 ",
+        "ID": "Compositional.CarrKobayashiBurrows54 ",
+        "Description": "Using the Carr-Kobayashi-Burrows (1954) correlation method to calculate vapor-phase viscosity.",
+        "Code": "Compositional.CarrKobayashiBurrows54 ",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.HeatCapacities",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.HeatCapacities",
+        "ID": "Compositional.HeatCapacities",
+        "Description": "Defines four or more coefficients of component ideal gas heat capacity as part of a polynomial correlation. For the purpose of calculating vapor and liquid enthalpy, the model may also require vaporization heat and the reference temperature.",
+        "Code": "Compositional.HeatCapacities",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.EnthalpyTable",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.EnthalpyTable",
+        "ID": "Compositional.EnthalpyTable",
+        "Description": "Component enthalpy values are provided in table format, usually as a function of temperature, but possibly pressure.",
+        "Code": "Compositional.EnthalpyTable",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyFormulationMethod:Compositional.WaterThermalModel",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyFormulationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional.WaterThermalModel",
+        "ID": "Compositional.WaterThermalModel",
+        "Description": "Manages different models for water and steam properties in thermal simulations. These include liquid and vapor densities, viscosities, and enthalpies.",
+        "Code": "Compositional.WaterThermalModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyFormulationMethod.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

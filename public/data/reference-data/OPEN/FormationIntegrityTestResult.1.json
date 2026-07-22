@@ -1,0 +1,150 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FormationIntegrityTestResult:NoInjection",
+      "kind": "osdu:wks:reference-data--FormationIntegrityTestResult:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "No Injection",
+        "Description": "No injection occurred.",
+        "Code": "NoInjection",
+        "AttributionAuthority": "XOM",
+        "(COMPANY: insert comment)": "XOM",
+        "Source": "Workbook ReferenceValues/Published/FormationIntegrityTestResult.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FormationIntegrityTestResult:Injection",
+      "kind": "osdu:wks:reference-data--FormationIntegrityTestResult:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Injection",
+        "Description": "Injection occurred during test (lost volume) in matrix mode",
+        "Code": "Injection",
+        "AttributionAuthority": "XOM",
+        "(COMPANY: insert comment)": "XOM",
+        "Source": "Workbook ReferenceValues/Published/FormationIntegrityTestResult.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FormationIntegrityTestResult:LeakedOff",
+      "kind": "osdu:wks:reference-data--FormationIntegrityTestResult:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Leaked off",
+        "Description": "Fracture initiated during test",
+        "Code": "LeakedOff",
+        "AttributionAuthority": "XOM",
+        "(COMPANY: insert comment)": "XOM",
+        "Source": "Workbook ReferenceValues/Published/FormationIntegrityTestResult.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FormationIntegrityTestResult:BrokenDown",
+      "kind": "osdu:wks:reference-data--FormationIntegrityTestResult:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Broken Down",
+        "Description": "Formation broken down during test",
+        "Code": "BrokenDown",
+        "AttributionAuthority": "XOM",
+        "(COMPANY: insert comment)": "XOM",
+        "Source": "Workbook ReferenceValues/Published/FormationIntegrityTestResult.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FormationIntegrityTestResult:Propagated",
+      "kind": "osdu:wks:reference-data--FormationIntegrityTestResult:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Propagated",
+        "Description": "Fracture propagated beyond breakdown",
+        "Code": "Propagated",
+        "AttributionAuthority": "XOM",
+        "(COMPANY: insert comment)": "XOM",
+        "Source": "Workbook ReferenceValues/Published/FormationIntegrityTestResult.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

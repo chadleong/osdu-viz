@@ -1,0 +1,3085 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C28 sterane composition",
+        "ID": "c28_sterane",
+        "Description": "% C28 sterane composition: S28aaaR/(S27aaaR+S28aaaR+S29aaaR) (m/z 217)",
+        "Code": "c28_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane_isomerisation",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 steroid isomerisation",
+        "ID": "c29_sterane_isomerisation",
+        "Description": "C29 steroid isomerisation: S29aaaS/(S29aaaS+S29aaaR) (m/z 217)",
+        "Code": "c29_sterane_isomerisation",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane_c27_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 to C27 normal steranes",
+        "ID": "c29_sterane_c27_sterane",
+        "Description": "C29 to C27 normal steranes: S29aaaR/(S29aaaR+S27aaaR) (m/z 217)",
+        "Code": "c29_sterane_c27_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c27_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C27 sterane composition",
+        "ID": "c27_sterane",
+        "Description": "% C27 sterane composition: S27aaaR/(S27aaaR+S28aaaR+S29aaaR) (m/z 217)",
+        "Code": "c27_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c27_sterane_abun",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C27 5a(H)14a(H)17a(H) 20R cholestane relative abundance",
+        "ID": "c27_sterane_abun",
+        "Description": "C27 5a(H)14a(H)17a(H) 20R cholestane relative abundance (S27aaaR * standard concentration/standard peak height/area)",
+        "Code": "c27_sterane_abun",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_sterane_abun",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C28 24-methyl-5a(H)14a(H)17a(H) 20R cholestane relative abundance",
+        "ID": "c28_sterane_abun",
+        "Description": "C28 24-methyl-5a(H)14a(H)17a(H) 20R cholestane relative abundance (S28aaaR * standard concentration/standard peak height/area)",
+        "Code": "c28_sterane_abun",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 sterane composition",
+        "ID": "c29_sterane",
+        "Description": "% C29 sterane composition: S29aaaR/(S27aaaR+S28aaaR+S29aaaR) (m/z 217)",
+        "Code": "c29_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane_abun",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 24-ethyl-5a(H)14a(H)17a(H) 20R cholestane relative abundance",
+        "ID": "c29_sterane_abun",
+        "Description": "C29 24-ethyl-5a(H)14a(H)17a(H) 20R cholestane relative abundance (S29aaaR * standard concentration/standard peak height/area))",
+        "Code": "c29_sterane_abun",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c27_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C27 isosterane composition",
+        "ID": "c27_isosterane",
+        "Description": "% C27 isosterane composition: S27abbS&R / (S27abbS&R + S28abbS&R + S29abbS&R) (m/z 218)",
+        "Code": "c27_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C28 isosterane composition",
+        "ID": "c28_isosterane",
+        "Description": "% C28 isosterane composition: S28abbS&R / (S27abbS&R + S28abbS&R + S29abbS&R) (m/z 218)",
+        "Code": "c28_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 isosterane composition",
+        "ID": "c29_isosterane",
+        "Description": "% C29 isosterane composition: S29abbS&R / (S27abbS&R + S28abbS&R + S29abbS&R) (m/z 218)",
+        "Code": "c29_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane_isosterane_abun",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 24-ethyl-steranes, isosteranes relative abundance",
+        "ID": "c29_sterane_isosterane_abun",
+        "Description": "C29 24-ethyl-steranes, isosteranes relative abundance (s29aaaS&R + s29abbS&R) * standard concentration/standard peak height/area)",
+        "Code": "c29_sterane_isosterane_abun",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_isosterane_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 isosterane to sterane ratio",
+        "ID": "c29_isosterane_sterane",
+        "Description": "C29 isosterane to sterane ratio: (s29abbS&R)/(s29aaaS&R + s29abbS&R) (m/z 217)",
+        "Code": "c29_isosterane_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_isosterane_c27_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 to C27 isosteranes",
+        "ID": "c29_isosterane_c27_isosterane",
+        "Description": "C29 to C27 isosteranes: s29abbR/s29abbR+s27abbR (m/z 218)",
+        "Code": "c29_isosterane_c27_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c21_c22_ster_c29_ster_isoster",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C21 C22 sterane C29 sterane isosterane",
+        "ID": "c21_c22_ster_c29_ster_isoster",
+        "Description": "C21aa sterane+C21bb sterane+C22 aa sterane+C22 bb sterane/(C21aa sterane+C21bb sterane+C22 aa sterane+C22 bb sterane+C29aaaR sterane+c29aaaS sterane+C29 abbR isosterane+C29 abbS isosterane (m/z 217)",
+        "Code": "c21_c22_ster_c29_ster_isoster",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_ster_isoster_diaster",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 sterane to sterane + isosterane + diasterane composition",
+        "ID": "c29_ster_isoster_diaster",
+        "Description": "% C29 sterane / sterane + isosterane + diasterane composition: (s29aaaS&R) / (s29aaaS&R + s29abbS&R + dia27abS&R) (m/z 217)",
+        "Code": "c29_ster_isoster_diaster",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_isoster_ster_diaster",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 isosterane to sterane + isosterane + diasterane composition",
+        "ID": "c29_isoster_ster_diaster",
+        "Description": "% C29 isosterane / sterane + isosterane + diasterane composition: (s29abbS&R) / (s29aaaS&R + s29abbS&R + dia27abS&R) (m/z 217)",
+        "Code": "c29_isoster_ster_diaster",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_diaster_ster_isoster",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 diasterane to sterane + isosterane + diasterane composition",
+        "ID": "c29_diaster_ster_isoster",
+        "Description": "% C29 diasterane / sterane + isosterane + diasterane composition: (dia27abS&R) / (s29aaaS&R + s29abbS&R + dia27abS&R) (m/z 217)",
+        "Code": "c29_diaster_ster_isoster",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:sterane_isosterane_hopane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 Steranes to hopanes ratio",
+        "ID": "sterane_isosterane_hopane",
+        "Description": "C29 Steranes to hopanes ratio: s29aaaS&R + s29abbS&R (m/z 217) / (s29aaaS&R + s29abbS&R + H29 + H30 + H31 + H32 + H33 (m/z 191))",
+        "Code": "sterane_isosterane_hopane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:hopane_sterane_isosterane_1",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hopanes to C29 steranes ratio-1",
+        "ID": "hopane_sterane_isosterane_1",
+        "Description": "Hopanes to C29 steranes ratio-1: H30 (m/z 191) / H30 (m/z 191) + s29aaaS&R + s29abbS&R (m/z 217)",
+        "Code": "hopane_sterane_isosterane_1",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:hopane_sterane_isosterane_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hopanes to C29 steranes ratio-2",
+        "ID": "hopane_sterane_isosterane_2",
+        "Description": "Hopanes to C29 steranes ratio-2: H30 (m/z 191) / s29aaaS&R + s29abbS&R (m/z 217)",
+        "Code": "hopane_sterane_isosterane_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c27_diasterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C27 diasterane composition",
+        "ID": "c27_diasterane",
+        "Description": "% C27 diasterane composition: (dia27abS&R) / (dia27abS&R + dia28abS&R + dia29abS&R) (m/z 259)",
+        "Code": "c27_diasterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_diasterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C28 diasterane composition",
+        "ID": "c28_diasterane",
+        "Description": "% C28 diasterane composition: (dia28abS&R) / (dia27abS&R + dia28abS&R + dia29abS&R) (m/z 259)",
+        "Code": "c28_diasterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_diasterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 diasterane composition",
+        "ID": "c29_diasterane",
+        "Description": "% C29 diasterane composition: (dia29abS&R) / (dia27abS&R + dia28abS&R + dia29abS&R) (m/z 259)",
+        "Code": "c29_diasterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c27_diaster_c27_ster_isoster",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C27 diasterane to C27 diasterane + C27 sterane + C27 isosterane",
+        "ID": "c27_diaster_c27_ster_isoster",
+        "Description": "C27 diasterane / C27 diasterane + C27 sterane + C27 isosterane: (dia27abS&R) / (dia27abS&R + s27aaaS&R + s27abbS&R) (m/z 217)",
+        "Code": "c27_diaster_c27_ster_isoster",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_diasterane_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 diasterane sterane to C29 sterane ratio",
+        "ID": "c29_diasterane_sterane",
+        "Description": "C29 diasterane sterane to C29 sterane ratio: dia29abR / s29aaaR + dia29abR (m/z 217)",
+        "Code": "c29_diasterane_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia29_s29",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia29abS&R (m/z 259) to s29aaaS&R (m/z 217) + s29abbS&R (m/z 218)",
+        "ID": "dia29_s29",
+        "Description": "dia29abS&R (m/z 259) / s29aaaS&R (m/z 217) + s29abbS&R (m/z 218)",
+        "Code": "dia29_s29",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia29_dia29s29",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia29abS&R (m/z 259) to dia29abS&R (m/z 259) + s29aaaS&R (m/z 217) + s29abbS&R (m/z 218)",
+        "ID": "dia29_dia29s29",
+        "Description": "dia29abS&R (m/z 259) / dia29abS&R (m/z 259) + s29aaaS&R (m/z 217) + s29abbS&R (m/z 218)",
+        "Code": "dia29_dia29s29",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:diasteranes_steranes_1",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) to dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) + s27aaaR + s28aaaR + s29aaaR (m/z 217) + s27abbS&R + s28abbS&R + s29abbS&R (m/z 218)",
+        "ID": "diasteranes_steranes_1",
+        "Description": "dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) / dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) + s27aaaR + s28aaaR + s29aaaR (m/z 217) + s27abbS&R + s28abbS&R + s29abbS&R (m/z 218)",
+        "Code": "diasteranes_steranes_1",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:diasteranes_steranes_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) to s27aaaR + s28aaaR + s29aaaR (m/z 217) + s27abbS&R + s28abbS&R + s29abbS&R (m/z 218)",
+        "ID": "diasteranes_steranes_2",
+        "Description": "dia27abS&R + dia28abS(1&2)&R(1&2) + dia29abS&R (m/z 259) / s27aaaR + s28aaaR + s29aaaR (m/z 217) + s27abbS&R + s28abbS&R + s29abbS&R (m/z 218)",
+        "Code": "diasteranes_steranes_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:methylisosterane_3_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3-methylisosterane/isosterane ratio",
+        "ID": "methylisosterane_3_isosterane",
+        "Description": "3-methylisosterane/isosterane ratio: 3-methyl C29 abb S&R (m/z 232) / s29abb (m/z 218)",
+        "Code": "methylisosterane_3_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:methylsterane_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4-methyl sterane/sterane ratio",
+        "ID": "methylsterane_sterane",
+        "Description": "4-methyl sterane/sterane ratio: 4-methyl C29 aaaR (m/z 231) / s29aaaR (m/z 217)",
+        "Code": "methylsterane_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:methylisosterane_isosterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4-methyl isosterane/isosterane ratio",
+        "ID": "methylisosterane_isosterane",
+        "Description": "4-methyl isosterane/isosterane ratio: 4-methyl C29 aaaS&R (m/z 232) / s29abb (m/z 218)",
+        "Code": "methylisosterane_isosterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:norhopane_hopane_ratio_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "29ab to 30ab",
+        "ID": "norhopane_hopane_ratio_2",
+        "Description": "29ab / 30ab",
+        "Code": "norhopane_hopane_ratio_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_c30_hopane_ratio_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "28ab to 28ab+30ab",
+        "ID": "c28_c30_hopane_ratio_2",
+        "Description": "28ab / 28ab+30ab",
+        "Code": "c28_c30_hopane_ratio_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_c30_hopane_ratio",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "29ab+29ba to 29ab+29ba+30ab+30ba",
+        "ID": "c29_c30_hopane_ratio",
+        "Description": "29ab+29ba / 29ab+29ba+30ab+30ba",
+        "Code": "c29_c30_hopane_ratio",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_c30_hopane_ratio_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "29ba+3ba to 29ab+30ab",
+        "ID": "c29_c30_hopane_ratio_2",
+        "Description": "29ba+3ba / 29ab+30ab",
+        "Code": "c29_c30_hopane_ratio_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:nor30hh_mh30ab2a_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C30 17a(H),21b(H)-Norhomohopane + 2a-17a(H),21b(H)-Methylhopane to 17a(H),21b(H)-Hopane",
+        "ID": "nor30hh_mh30ab2a_h30",
+        "Description": "C30 17a(H),21b(H)-Norhomohopane + 2a-17a(H),21b(H)-Methylhopane / 17a(H),21b(H)-Hopane",
+        "Code": "nor30hh_mh30ab2a_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dh29_177_h29s",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 25-norhopane (m/z 177) to h29s (m/z 191)",
+        "ID": "dh29_177_h29s",
+        "Description": "C29 25-norhopane (m/z 177) / h29s (m/z 191)",
+        "Code": "dh29_177_h29s",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dh29_177_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C29 25-norhopane (m/z 177) to h30 (m/z 191)",
+        "ID": "dh29_177_h30",
+        "Description": "C29 25-norhopane (m/z 177) / h30 (m/z 191)",
+        "Code": "dh29_177_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mh30ab2a_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "2a c30 methylhopane to h30",
+        "ID": "mh30ab2a_h30",
+        "Description": "2a c30 methylhopane / h30",
+        "Code": "mh30ab2a_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:nor30hh_mh30ab2a",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C30 Norhomohopane to 2a c30 methylhopane",
+        "ID": "nor30hh_mh30ab2a",
+        "Description": "C30 Norhomohopane / 2a c30 methylhopane",
+        "Code": "nor30hh_mh30ab2a",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h31s_r_h29_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "(17a(H),21b(H) 22S + 22R-Homohopane) to (17a(H),21b(H)-Hopane + 17a(H),21b(H)-30-Norhopane)",
+        "ID": "h31s_r_h29_h30",
+        "Description": "(17a(H),21b(H) 22S + 22R-Homohopane) / (17a(H),21b(H)-Hopane + 17a(H),21b(H)-30-Norhopane)",
+        "Code": "h31s_r_h29_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mh30ab3b_2a",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3b c30 methylhopane to 2a c30 methylhopane",
+        "ID": "mh30ab3b_2a",
+        "Description": "3b c30 methylhopane / 2a c30 methylhopane",
+        "Code": "mh30ab3b_2a",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mh30ab3b_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3b c30 methylhopane to h30",
+        "ID": "mh30ab3b_h30",
+        "Description": "3b c30 methylhopane / h30",
+        "Code": "mh30ab3b_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dmdam49_dmdam34",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4,9-dimethyl diamantane to 3,4-dimethyl diamantane",
+        "ID": "dmdam49_dmdam34",
+        "Description": "4,9-dimethyl diamantane / 3,4-dimethyl diamantane",
+        "Code": "dmdam49_dmdam34",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dmdam49_dmdam48",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4,9-dimethyl diamantane to 4,8-dimethyl diamantane",
+        "ID": "dmdam49_dmdam48",
+        "Description": "4,9-dimethyl diamantane / 4,8-dimethyl diamantane",
+        "Code": "dmdam49_dmdam48",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:eb_mpxyl",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ethylbenzene to mxyl + pxyl",
+        "ID": "eb_mpxyl",
+        "Description": "ethylbenzene / mxyl + pxyl",
+        "Code": "eb_mpxyl",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:tmb135_tmb124_105",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1,3,5-trimethyl butane to 1,2,4-trimethyl butane (m/z 105)",
+        "ID": "tmb135_tmb124_105",
+        "Description": "1,3,5-trimethyl butane / 1,2,4-trimethyl butane (m/z 105)",
+        "Code": "tmb135_tmb124_105",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:e1m2benzene_tmb124",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1-ethyl 2-methyl benzene to 1,2,4-trimethyl butane",
+        "ID": "e1m2benzene_tmb124",
+        "Description": "1-ethyl 2-methyl benzene / 1,2,4-trimethyl butane",
+        "Code": "e1m2benzene_tmb124",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:tmb124_tmb123",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1,2,4-trimethyl butane to 1,2,3-trimethyl butane",
+        "ID": "tmb124_tmb123",
+        "Description": "1,2,4-trimethyl butane / 1,2,3-trimethyl butane",
+        "Code": "tmb124_tmb123",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:m_pyxl_oxyl",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "m-xyl + p-yxl to o-xyl",
+        "ID": "m_pyxl_oxyl",
+        "Description": "m-xyl + p-yxl / o-xyl",
+        "Code": "m_pyxl_oxyl",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:m_pyxl_nprbenz",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "m-xyl + p-yxl to n-Propyl Benzene",
+        "ID": "m_pyxl_nprbenz",
+        "Description": "m-xyl + p-yxl / n-Propyl Benzene",
+        "Code": "m_pyxl_nprbenz",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:oyxl_nprbenz",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "o-xylene to n-propyl benzene",
+        "ID": "oyxl_nprbenz",
+        "Description": "o-xylene / n-propyl benzene",
+        "Code": "oyxl_nprbenz",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:iprbenz_nprbenz",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "i-propyl benzene to n-propyl benzene",
+        "ID": "iprbenz_nprbenz",
+        "Description": "i-propyl benzene / n-propyl benzene",
+        "Code": "iprbenz_nprbenz",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:iprbenz_e1m3benzene",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "i-propyl benzene to 1-ethyl 3-methyl benzene",
+        "ID": "iprbenz_e1m3benzene",
+        "Description": "i-propyl benzene / 1-ethyl 3-methyl benzene",
+        "Code": "iprbenz_e1m3benzene",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:iprbenz_e1m3_e1m4benzene",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "i-Propyl Benzene to 1-ethyl 3-methyl benzene + 1-ethyl 4-methyl benzene",
+        "ID": "iprbenz_e1m3_e1m4benzene",
+        "Description": "i-Propyl Benzene / 1-ethyl 3-methyl benzene + 1-ethyl 4-methyl benzene",
+        "Code": "iprbenz_e1m3_e1m4benzene",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:e1m3b_e1m4b_tmb135",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1-ethyl 3-methyl benzene + 1-ethyl 4-methyl benzene to 1,3,5-trimethyl butane",
+        "ID": "e1m3b_e1m4b_tmb135",
+        "Description": "1-ethyl 3-methyl benzene + 1-ethyl 4-methyl benzene / 1,3,5-trimethyl butane",
+        "Code": "e1m3b_e1m4b_tmb135",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:tmb135_e1m2b",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1,3,5-trimethyl butane to 1-ethyl 2-methyl benzene",
+        "ID": "tmb135_e1m2b",
+        "Description": "1,3,5-trimethyl butane / 1-ethyl 2-methyl benzene",
+        "Code": "tmb135_e1m2b",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:tot_c4_naphth",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "sum total of tetra methyl naphthalenes",
+        "ID": "tot_c4_naphth",
+        "Description": "sum total of tetra methyl naphthalenes: 1357+1367+1247+1246+1467+1257+2367+1267+1237+1236+1256+1235",
+        "Code": "tot_c4_naphth",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dbt_tot_c4_naphth",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DBT to sum 1357, 1367, 1247, 1246, 1467, 1257, 2367, 1267, 1237, 1236, 1256, 1235 tetra methyl naphthalenes",
+        "ID": "dbt_tot_c4_naphth",
+        "Description": "DBT / sum 1357, 1367, 1247, 1246, 1467, 1257, 2367, 1267, 1237, 1236, 1256, 1235 tetra methyl naphthalenes",
+        "Code": "dbt_tot_c4_naphth",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:demeth_hopane_index",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "c27 norhopane to c30 norhopane to c29 to c35 hopanes + c27 norhopane to c30 norhopane",
+        "ID": "demeth_hopane_index",
+        "Description": "c27 norhopane to c30 norhopane / c29 to c35 hopanes + c27 norhopane to c30 norhopane",
+        "Code": "demeth_hopane_index",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27_dia28",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dias27abS+R to dias28abS (1&2) + dias28abR (1&2)",
+        "ID": "dia27_dia28",
+        "Description": "dias27abS+R / dias28abS (1&2) + dias28abR (1&2)",
+        "Code": "dia27_dia28",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27_s27",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dias27abS+R to s27aaaS+R + (2* s27abbs) (m/z 217)",
+        "ID": "dia27_s27",
+        "Description": "dias27abS+R / s27aaaS+R + (2* s27abbs) (m/z 217)",
+        "Code": "dia27_s27",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27_s27aaa",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dias27abS+R to s27aaaS+R (m/z 217)",
+        "ID": "dia27_s27aaa",
+        "Description": "dias27abS+R / s27aaaS+R (m/z 217)",
+        "Code": "dia27_s27aaa",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27_s29",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dias27abS+R to s29aaaS+R + s29abbS+R (m/z 217)",
+        "ID": "dia27_s29",
+        "Description": "dias27abS+R / s29aaaS+R + s29abbS+R (m/z 217)",
+        "Code": "dia27_s29",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dmp_ratio",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dmp ratio",
+        "ID": "dmp_ratio",
+        "Description": "2,6 + 2,7 + 3,5 dimethyl phenanthrene / 1,3 + 2,10 + 3,9 + 3,10 + 1,6 + 2,5 + 2,9 dimethyl phenanthrene",
+        "Code": "dmp_ratio",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:en2_en1",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "2-ethyl napthalene to 1-ethyl naphthalene",
+        "ID": "en2_en1",
+        "Description": "2-ethyl napthalene / 1-ethyl naphthalene",
+        "Code": "en2_en1",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dh28_h29",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C28 demethylated hopane (m/z 177) to h29ab",
+        "ID": "dh28_h29",
+        "Description": "C28 demethylated hopane (m/z 177) / h29ab",
+        "Code": "dh28_h29",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_norneohopane_c29_norhopane_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h29ts to h29ab (m/z 191)",
+        "ID": "c29_norneohopane_c29_norhopane_2",
+        "Description": "h29ts / h29ab (m/z 191)",
+        "Code": "c29_norneohopane_c29_norhopane_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_norneohopane_c30_hopane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h29ts to h30ab (m/z 191)",
+        "ID": "c29_norneohopane_c30_hopane",
+        "Description": "h29ts / h30ab (m/z 191)",
+        "Code": "c29_norneohopane_c30_hopane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h30_h27ts_tm",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h30ab to h27s + h27m",
+        "ID": "h30_h27ts_tm",
+        "Description": "h30ab / h27s + h27m",
+        "Code": "h30_h27ts_tm",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h30_h29",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h30ab to h29ab (m/z 191)",
+        "ID": "h30_h29",
+        "Description": "h30ab / h29ab (m/z 191)",
+        "Code": "h30_h29",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h30b_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "C30 17b Homohopane to C30 17a Homohopane",
+        "ID": "h30b_h30",
+        "Description": "C30 17b Homohopane / C30 17a Homohopane",
+        "Code": "h30b_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c30_diahopane_c29_moretane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "c30 diahopane to c29 moretane",
+        "ID": "c30_diahopane_c29_moretane",
+        "Description": "c30 diahopane / c29 moretane",
+        "Code": "c30_diahopane_c29_moretane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h31s_h31r_205",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h31r to h31s (m/z 205)",
+        "ID": "h31s_h31r_205",
+        "Description": "h31r / h31s (m/z 205)",
+        "Code": "h31s_h31r_205",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c33s_c33r_hopane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h33s to h33r",
+        "ID": "c33s_c33r_hopane",
+        "Description": "h33s / h33r",
+        "Code": "c33s_c33r_hopane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c34s_c34r_hopane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h34s to h34r",
+        "ID": "c34s_c34r_hopane",
+        "Description": "h34s / h34r",
+        "Code": "c34s_c34r_hopane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c35s_c35r_hopane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h35s to h35r",
+        "ID": "c35s_c35r_hopane",
+        "Description": "h35s / h35r",
+        "Code": "c35s_c35r_hopane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:h35s_h34s",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "h35s to h34s",
+        "ID": "h35s_h34s",
+        "Description": "h35s / h34s",
+        "Code": "h35s_h34s",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mas21_ta21",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "mas21 to ta21",
+        "ID": "mas21_ta21",
+        "Description": "mas21 / ta21",
+        "Code": "mas21_ta21",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:monoaromatic_steriod_ratio_5",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "monoaromatic steriod ratio 5",
+        "ID": "monoaromatic_steriod_ratio_5",
+        "Description": "mas28bs + dma27ar + dma28bs + mas28as + mas28br + dma28br / mas29bs + dma29bs + mas29br + dma29br + mas28ar + mas29ar",
+        "Code": "monoaromatic_steriod_ratio_5",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mas28as_mas29as",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "mas28as to mas29as",
+        "ID": "mas28as_mas29as",
+        "Description": "mas28as / mas29as",
+        "Code": "mas28as_mas29as",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mas29as_ma29ar",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "mas29as to ma29ar",
+        "ID": "mas29as_ma29ar",
+        "Description": "mas29as / ma29ar",
+        "Code": "mas29as_ma29ar",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dma27bs_mas27bs",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dma27bs to mas27bs",
+        "ID": "dma27bs_mas27bs",
+        "Description": "dma27bs / mas27bs",
+        "Code": "dma27bs_mas27bs",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s27bb_s29bb_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s27bbR+S to s29bbR+S (m/z 218)",
+        "ID": "s27bb_s29bb_218",
+        "Description": "s27bbR+S / s29bbR+S (m/z 218)",
+        "Code": "s27bb_s29bb_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s27bbr_s29bbr_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s27bbR to s29bbR (m/z 218)",
+        "ID": "s27bbr_s29bbr_218",
+        "Description": "s27bbR / s29bbR (m/z 218)",
+        "Code": "s27bbr_s29bbr_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s27bbr_dia29bas_217",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s27bbR to dia29baS (m/z 217)",
+        "ID": "s27bbr_dia29bas_217",
+        "Description": "s27bbR / dia29baS (m/z 217)",
+        "Code": "s27bbr_dia29bas_217",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s27bbs_s29bbs_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s27bbS to s29bbS (m/z 218)",
+        "ID": "s27bbs_s29bbs_218",
+        "Description": "s27bbS / s29bbS (m/z 218)",
+        "Code": "s27bbs_s29bbs_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27bas_dia27bar_259",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia27baS to dia27baR to 259",
+        "ID": "dia27bas_dia27bar_259",
+        "Description": "dia27baS / dia27baR / 259",
+        "Code": "dia27bas_dia27bar_259",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia27bas_s27aaar_217",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "dia27baS to s27aaaR (m/z 217)",
+        "ID": "dia27bas_s27aaar_217",
+        "Description": "dia27baS / s27aaaR (m/z 217)",
+        "Code": "dia27bas_s27aaar_217",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c28_sterane_c29_sterane",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s28aaaR+S + s28abbR+S to s29aaaR+S + s29abbR+S",
+        "ID": "c28_sterane_c29_sterane",
+        "Description": "s28aaaR+S + s28abbR+S / s29aaaR+S + s29abbR+S",
+        "Code": "c28_sterane_c29_sterane",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s28aaar_s29aaar_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s28aaaR to s29aaaR (m/z 218)",
+        "ID": "s28aaar_s29aaar_218",
+        "Description": "s28aaaR / s29aaaR (m/z 218)",
+        "Code": "s28aaar_s29aaar_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s28bb_s29bb_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s28bbR+S to s29bbR+S (m/z 218)",
+        "ID": "s28bb_s29bb_218",
+        "Description": "s28bbR+S / s29bbR+S (m/z 218)",
+        "Code": "s28bb_s29bb_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s28bbs_s29bbs_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s28bbS to s29bbS (m/z 218)",
+        "ID": "s28bbs_s29bbs_218",
+        "Description": "s28bbS / s29bbS (m/z 218)",
+        "Code": "s28bbs_s29bbs_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s29abb_s29aaa_217",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29abbR+S to s29aaaR+S (m/z 217)",
+        "ID": "s29abb_s29aaa_217",
+        "Description": "s29abbR+S / s29aaaR+S (m/z 217)",
+        "Code": "s29abb_s29aaa_217",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s29abbr_s29aaar_217",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29abbR to s29aaaR (m/z 217)",
+        "ID": "s29abbr_s29aaar_217",
+        "Description": "s29abbR / s29aaaR (m/z 217)",
+        "Code": "s29abbr_s29aaar_217",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:sterane_isosterane_hopane_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29abbR+S + s29aaaR+S (m/z 217) to H30ab (m/z 191)",
+        "ID": "sterane_isosterane_hopane_2",
+        "Description": "s29abbR+S + s29aaaR+S (m/z 217) / H30ab (m/z 191)",
+        "Code": "sterane_isosterane_hopane_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:sterane_isosterane_hopane_3",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29abbR+S + s29aaaR+S (m/z 217) to H29ab + H30ab (m/z 191)",
+        "ID": "sterane_isosterane_hopane_3",
+        "Description": "s29abbR+S + s29aaaR+S (m/z 217) / H29ab + H30ab (m/z 191)",
+        "Code": "sterane_isosterane_hopane_3",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:c29_sterane_c27_sterane_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29aaaR to s27aaaR to 217",
+        "ID": "c29_sterane_c27_sterane_2",
+        "Description": "s29aaaR / s27aaaR / 217",
+        "Code": "c29_sterane_c27_sterane_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:s29bb_218",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "s29bbR to s29bbS (m/z 218)",
+        "ID": "s29bb_218",
+        "Description": "s29bbR / s29bbS (m/z 218)",
+        "Code": "s29bb_218",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:t28_29_30_h30",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "t28 + t29 + t30 to h30",
+        "ID": "t28_29_30_h30",
+        "Description": "t28 + t29 + t30 / h30",
+        "Code": "t28_29_30_h30",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:db_ta28s",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Triaromatic 23,24-Dimethylcholestoid Ratio",
+        "ID": "db_ta28s",
+        "Description": "Triaromatic 23,24-Dimethylcholestoid Ratio: Triaromatic 4-Methyl-23,24-Dimethyldinosteroid B (m/z 245) (db) / C28 20S triaromatic steroid (ta28s)",
+        "Code": "db_ta28s",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:tnr_5_ratio",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "trimethyl naphthalene (137 + 236) to (136 + 146 + 135)",
+        "ID": "tnr_5_ratio",
+        "Description": "trimethyl naphthalene (137 + 236) / (136 + 146 + 135)",
+        "Code": "tnr_5_ratio",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:dia29_s29aaa",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dias29abS+R to s29aaaS+R (217)",
+        "ID": "dia29_s29aaa",
+        "Description": "Dias29abS+R / s29aaaS+R (217)",
+        "Code": "dia29_s29aaa",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:mnr_ratio_2",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Methylnaphthalene ratio 2",
+        "ID": "mnr_ratio_2",
+        "Description": "Methylnaphthalene ratio 2: 2-methylnaphthalene + 1-methylnaphthalene (m/z 142) / C23 Tricyclic Terpane (m/z 191)",
+        "Code": "mnr_ratio_2",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:monoaromatic_steroid_ratio_7",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "monoaromatic steroid ratio 7",
+        "ID": "monoaromatic_steroid_ratio_7",
+        "Description": "mas27bs + mas27br + dma27bs + dma27br / mas28bs + dma27ar + dma28bs + mas28br + dma28br + mas29br + dma29br + mas28ar + mas29bs+ dma29bs",
+        "Code": "monoaromatic_steroid_ratio_7",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:monoaromatic_steroid_ratio_8",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "monoaromatic steroid ratio 8",
+        "ID": "monoaromatic_steroid_ratio_8",
+        "Description": "mas28bs + dma27ar + dma28bs + mas28br + dma28br / mas27bs + mas27br + dma27bs + dma27br + mas29br + dma29br + mas28ar + mas29bs+ dma29bs",
+        "Code": "monoaromatic_steroid_ratio_8",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:monoaromatic_steroid_ratio_9",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "monoaromatic steroid ratio 9",
+        "ID": "monoaromatic_steroid_ratio_9",
+        "Description": "mas29bs + mas29br + dma29br + mas28ar + dma29bs / mas28bs + dma27ar + dma28bs + mas28br + dma28br + mas27bs + mas27br + dma27bs + dma27br",
+        "Code": "monoaromatic_steroid_ratio_9",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GCMSCompoundsRatios:sterane_isosterane_hopane_4",
+      "kind": "osdu:wks:reference-data--GCMSCompoundsRatios:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "sterane isosterane hopane 4",
+        "ID": "sterane_isosterane_hopane_4",
+        "Description": "s27aaaS+R + s27abbS+R (217) / h30ab (m/z 191)",
+        "Code": "sterane_isosterane_hopane_4",
+        "Source": "Workbook ReferenceValues/Published/GCMSCompoundsRatios.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

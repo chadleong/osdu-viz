@@ -1,0 +1,175 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConveyanceMethod:ElectricWirelineConveyed",
+      "kind": "osdu:wks:reference-data--ConveyanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Electric Wireline Conveyed ",
+        "NameAlias": [
+          {
+            "AliasName": "EWL",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Acronym:"
+          }
+        ],
+        "Description": "Electric Wireline conveyed (includes single and mono-strand cable)",
+        "Code": "ElectricWirelineConveyed ",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ConveyanceMethod.1.xlsx; commit SHA 5ec1e304.",
+        "CommitDate": "2024-09-10T13:29:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConveyanceMethod:LoggingWhileDrilling",
+      "kind": "osdu:wks:reference-data--ConveyanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Logging While Drilling",
+        "NameAlias": [
+          {
+            "AliasName": "LWD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Acronym:"
+          }
+        ],
+        "Description": "Logging while drilling",
+        "Code": "LoggingWhileDrilling",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ConveyanceMethod.1.xlsx; commit SHA 5ec1e304.",
+        "CommitDate": "2024-09-10T13:29:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConveyanceMethod:PipeConveyedLogging",
+      "kind": "osdu:wks:reference-data--ConveyanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pipe Conveyed Logging",
+        "NameAlias": [
+          {
+            "AliasName": "PCL",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Acronym:"
+          }
+        ],
+        "Description": "Pipe conveyed logging",
+        "Code": "PipeConveyedLogging",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ConveyanceMethod.1.xlsx; commit SHA 5ec1e304.",
+        "CommitDate": "2024-09-10T13:29:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConveyanceMethod:CoiledTubingConveyed",
+      "kind": "osdu:wks:reference-data--ConveyanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coiled-Tubing Conveyed",
+        "NameAlias": [
+          {
+            "AliasName": "CT",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Acronym:"
+          }
+        ],
+        "Description": "Coiled-Tubing conveyed",
+        "Code": "CoiledTubingConveyed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ConveyanceMethod.1.xlsx; commit SHA 5ec1e304.",
+        "CommitDate": "2024-09-10T13:29:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConveyanceMethod:SlicklineConveyed",
+      "kind": "osdu:wks:reference-data--ConveyanceMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slickline Conveyed",
+        "NameAlias": [
+          {
+            "AliasName": "Slickline",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "Description": "A conveyance method using a thin, single-strand, non-electrical wire to lower and retrieve typically mechanical or battery-operated tools in a wellbore.",
+        "Code": "SlicklineConveyed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/ConveyanceMethod.1.xlsx; commit SHA 5ec1e304.",
+        "CommitDate": "2024-09-10T13:29:59+00:00"
+      }
+    }
+  ]
+}

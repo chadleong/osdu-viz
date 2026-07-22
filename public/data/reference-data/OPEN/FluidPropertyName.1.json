@@ -1,0 +1,3020 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:100rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "100 RPM",
+        "Description": "Fann viscometer reading at 100 Revolutions Per Minute",
+        "Code": "100rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:200rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "200 RPM",
+        "Description": "Fann viscometer reading at 200 Revolutions Per Minute",
+        "Code": "200rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:3rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3 RPM",
+        "Description": "Fann viscometer reading at 3 Revolutions Per Minute",
+        "Code": "3rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:30rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "30 RPM",
+        "Description": "Fann viscometer reading at 30 Revolutions Per Minute",
+        "Code": "30rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:300rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "300 RPM",
+        "Description": "Fann viscometer reading at 300 Revolutions Per Minute",
+        "Code": "300rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:6%20rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "6 RPM",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"6rpm\" with Name=\"6 RPM\" instead. Fann viscometer reading at 6 Revolutions Per Minute",
+        "Code": "6 rpm",
+        "AttributionAuthority": "OSDU",
+        "(COMPANY: insert comment)": "Deprecated use '6RPM' instead",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:6rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "6 RPM",
+        "Description": "Fann viscometer reading at 6 Revolutions Per Minute",
+        "Code": "6rpm",
+        "AttributionAuthority": "OSDU",
+        "(COMPANY: insert comment)": "Removed space in code",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:60prm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "60 RPM",
+        "Description": "Fann viscometer reading at 60 Revolutions Per Minute",
+        "Code": "60prm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:600rpm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "600  RPM",
+        "Description": "Fann viscometer reading at 600 Revolutions Per Minute",
+        "Code": "600rpm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:AkP1",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alkalinity P1",
+        "Description": "Alkalinity point 1",
+        "Code": "AkP1",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:AkP2",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alkalinity P2",
+        "Description": "Alkalinity point 2",
+        "Code": "AkP2",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ACS",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Average Cutting Size",
+        "NameAlias": [
+          {
+            "AliasName": "AverageCuttingSize"
+          }
+        ],
+        "Description": "Average Cutting Size",
+        "Code": "ACS",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ASG",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Average Specific Gravity",
+        "NameAlias": [
+          {
+            "AliasName": "ASG"
+          }
+        ],
+        "Description": "Average specific gravity of solids.",
+        "Code": "ASG",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:BrineDensity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brine Density",
+        "Description": "Brine density",
+        "Code": "BrineDensity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Calcium",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calcium",
+        "NameAlias": [
+          {
+            "AliasName": "Ca"
+          }
+        ],
+        "Description": "Calcium",
+        "Code": "Calcium",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:CalciumChloride",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calcium Chloride",
+        "NameAlias": [
+          {
+            "AliasName": "CaCl"
+          }
+        ],
+        "Description": "Calcium Chloride",
+        "Code": "CalciumChloride",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:HardnessCa",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calcium Hardness",
+        "NameAlias": [
+          {
+            "AliasName": "TotalHardness"
+          },
+          {
+            "AliasName": "Total Hardness"
+          }
+        ],
+        "Description": "Calcium hardness",
+        "Code": "HardnessCa",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Carbonate",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "Carb"
+          }
+        ],
+        "Description": "Carbonate",
+        "Code": "Carbonate",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Chlorides",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Chlorides",
+        "NameAlias": [
+          {
+            "AliasName": "Chloride"
+          },
+          {
+            "AliasName": "Cl-"
+          },
+          {
+            "AliasName": "Cl"
+          }
+        ],
+        "Description": "Chlorides",
+        "Code": "Chlorides",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Comments",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Comments",
+        "NameAlias": [
+          {
+            "AliasName": "Notes"
+          },
+          {
+            "AliasName": "Remarks"
+          }
+        ],
+        "Description": "Comments for Well Fluids Report",
+        "Code": "Comments",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ConsistencyIndex",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Consistency Index",
+        "NameAlias": [
+          {
+            "AliasName": "K"
+          },
+          {
+            "AliasName": "kPrime"
+          }
+        ],
+        "Description": "Consistency index. Used in the Power Law and Herschel-Bulkley models.",
+        "Code": "ConsistencyIndex",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsHiGravCorrected",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected High Gravity Solids",
+        "Description": "Corrected High Gravity Solids",
+        "Code": "SolidsHiGravCorrected",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsLowGravCorrected",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected Low Gravity Solids",
+        "Description": "Corrected Low Gravity Solids",
+        "Code": "SolidsLowGravCorrected",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Density",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Density",
+        "NameAlias": [
+          {
+            "AliasName": "Mud Weight"
+          },
+          {
+            "AliasName": "MW"
+          }
+        ],
+        "Description": "Fluid Density",
+        "Code": "Density",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:DensityTemperature",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Density Temperature",
+        "Description": "Temperature at which the Density was measured",
+        "Code": "DensityTemperature",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ElectStab",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Electric Stability",
+        "NameAlias": [
+          {
+            "AliasName": "Estab"
+          },
+          {
+            "AliasName": "ES"
+          },
+          {
+            "AliasName": "Electric Stability"
+          }
+        ],
+        "Description": "Electric stability",
+        "Code": "ElectStab",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:EquivalentCirculatingDensity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equivalent Circulating Density",
+        "NameAlias": [
+          {
+            "AliasName": "ECD"
+          }
+        ],
+        "Description": "Equivalent Circulating Density",
+        "Code": "EquivalentCirculatingDensity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:EquivalentStaticDensity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equivalent Static Density",
+        "NameAlias": [
+          {
+            "AliasName": "ESD"
+          }
+        ],
+        "Description": "Equivalent static density",
+        "Code": "EquivalentStaticDensity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FilterCake",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filter Cake",
+        "NameAlias": [
+          {
+            "AliasName": "FC"
+          }
+        ],
+        "Description": "Filter Cake thickness",
+        "Code": "FilterCake",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FilterCakeHthp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filter Cake HTHP",
+        "NameAlias": [
+          {
+            "AliasName": "FilterCakeHTHP"
+          }
+        ],
+        "Description": "High temperature high pressure filter cake",
+        "Code": "FilterCakeHthp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FilterCakeLtlp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filter Cake LTLP",
+        "NameAlias": [
+          {
+            "AliasName": "FilterCakeLTLP"
+          }
+        ],
+        "Description": "Low temperature low pressure filter cake",
+        "Code": "FilterCakeLtlp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Filtrate%20API%20FL",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filtrate API Fluid Loss",
+        "NameAlias": [
+          {
+            "AliasName": "API Filtrate"
+          },
+          {
+            "AliasName": "APIFiltrate"
+          }
+        ],
+        "Description": "Filtrate API fluid loss",
+        "Code": "Filtrate API FL",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FiltratePressureHthp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filtrate Pressure HTHP",
+        "NameAlias": [
+          {
+            "AliasName": "Filtrate Pressure HTHP"
+          }
+        ],
+        "Description": "High Pressure High Temperature Filtrate Pressure",
+        "Code": "FiltratePressureHthp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FiltrateTemperatureHthp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Filtrate Temperature HTHP",
+        "NameAlias": [
+          {
+            "AliasName": "Filtrate Temperature HTHP"
+          }
+        ],
+        "Description": "Filtrate Temperature High Pressure High Temperature",
+        "Code": "FiltrateTemperatureHthp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FiltrateHthp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FiltrateHthp",
+        "Description": "Filtrate High Pressure High Temperature",
+        "Code": "FiltrateHthp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FiltrateLtlp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FiltrateLtlp",
+        "Description": "Low Pressure Low Temperature Filtrate",
+        "Code": "FiltrateLtlp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:FlowBehaviorIndex",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Flow Behavior Index",
+        "NameAlias": [
+          {
+            "AliasName": "n"
+          },
+          {
+            "AliasName": "nPrime"
+          }
+        ],
+        "Description": "A measure of the fluid's non-Newtonian behavior. Used in the Power Law and Herschel-Bulkley models.",
+        "Code": "FlowBehaviorIndex",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ViscosityFunnel",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Funnel Viscosity",
+        "NameAlias": [
+          {
+            "AliasName": "Funnel Vis"
+          },
+          {
+            "AliasName": "Funnel Viscosity"
+          },
+          {
+            "AliasName": "FV"
+          }
+        ],
+        "Description": "Viscosity Funnel",
+        "Code": "ViscosityFunnel",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Gel0Sec",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gel0Sec",
+        "NameAlias": [
+          {
+            "AliasName": "0SecGel"
+          },
+          {
+            "AliasName": "0 sec Gels"
+          },
+          {
+            "AliasName": "Gel0S"
+          }
+        ],
+        "Description": "Gel strength zero seconds",
+        "Code": "Gel0Sec",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Gel10Min",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gel10Min",
+        "NameAlias": [
+          {
+            "AliasName": "10MinGel"
+          },
+          {
+            "AliasName": "10 min Gels"
+          },
+          {
+            "AliasName": "Gel10M"
+          }
+        ],
+        "Description": "Gel strength 10 Minutes",
+        "Code": "Gel10Min",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Gel10Sec",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gel10Sec",
+        "NameAlias": [
+          {
+            "AliasName": "10SecGel"
+          },
+          {
+            "AliasName": "10 sec Gels"
+          },
+          {
+            "AliasName": "Gel10S"
+          }
+        ],
+        "Description": "Gel strength 10 Seconds",
+        "Code": "Gel10Sec",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Gel30Min",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gel30Min",
+        "NameAlias": [
+          {
+            "AliasName": "30MinGel"
+          },
+          {
+            "AliasName": "30 min Gels"
+          },
+          {
+            "AliasName": "Gel30M"
+          }
+        ],
+        "Description": "Gel strength 30 Minutes",
+        "Code": "Gel30Min",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsHiGrav",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Gravity Solids",
+        "NameAlias": [
+          {
+            "AliasName": "HGS"
+          }
+        ],
+        "Description": "High Gravity Solids",
+        "Code": "SolidsHiGrav",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:HTHP%20Temp%20%28Deg%20F%29",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HTHP Temp",
+        "NameAlias": [
+          {
+            "AliasName": "HTHPTemp"
+          },
+          {
+            "AliasName": "hthpTemp"
+          }
+        ],
+        "Description": "High Pressure High Temperature Temp (Deg F)",
+        "Code": "HTHP Temp (Deg F)",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Iron",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Iron",
+        "NameAlias": [
+          {
+            "AliasName": "Fe"
+          }
+        ],
+        "Description": "Iron",
+        "Code": "Iron",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:KickToleranceIntensity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Kick Tolerance Intensity",
+        "Description": "Kick Tolerance Intensity",
+        "Code": "KickToleranceIntensity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:KickToleranceVolume",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Kick Tolerance Volume",
+        "Description": "Kick Tolerance Volume",
+        "Code": "KickToleranceVolume",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Lime",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lime",
+        "Description": "Excess Lime",
+        "Code": "Lime",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:LossCirculationMaterial",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Loss Circulation Material",
+        "NameAlias": [
+          {
+            "AliasName": "LCM"
+          }
+        ],
+        "Description": "Loss Circulation Material",
+        "Code": "LossCirculationMaterial",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Lgs",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low Gravity Solids",
+        "NameAlias": [
+          {
+            "AliasName": "LowGravitySolids"
+          },
+          {
+            "AliasName": "LGS %"
+          },
+          {
+            "AliasName": "LGS"
+          }
+        ],
+        "Description": "Low gravity solids",
+        "Code": "Lgs",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Magnesium",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Magnesium",
+        "NameAlias": [
+          {
+            "AliasName": "Mg"
+          }
+        ],
+        "Description": "Magnesium",
+        "Code": "Magnesium",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:MetalRecovered",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Metal Recovered",
+        "NameAlias": [
+          {
+            "AliasName": "Metal Recovered"
+          }
+        ],
+        "Description": "MetalRecovered",
+        "Code": "MetalRecovered",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Mf",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Methyl Orange Alkalinity",
+        "NameAlias": [
+          {
+            "AliasName": "Mf"
+          }
+        ],
+        "Description": "Methyl Orange Test",
+        "Code": "Mf",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Mbt",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Methylene Blue Test",
+        "NameAlias": [
+          {
+            "AliasName": "MBT"
+          }
+        ],
+        "Description": "Methylene Blue Test",
+        "Code": "Mbt",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:MudTempPh",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Temperature Ph",
+        "NameAlias": [
+          {
+            "AliasName": "MudTempPh"
+          }
+        ],
+        "Description": "Mud temperature when Ph was measured",
+        "Code": "MudTempPh",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:NAFContent",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NAF Content",
+        "Description": "Non-aqueous Fluids Content",
+        "Code": "NAFContent",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:OilCtgDry",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil Cuttings Dry Percent",
+        "Description": "Oil Cuttings Dry Percent",
+        "Code": "OilCtgDry",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:OilCtg",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil Cuttings Percent",
+        "Description": "Oil Cuttings Percent",
+        "Code": "OilCtg",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Oil%2FWater%20Ratio",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil/Water Ratio",
+        "NameAlias": [
+          {
+            "AliasName": "OilWaterRatio"
+          },
+          {
+            "AliasName": "OWR"
+          }
+        ],
+        "Description": "Oil/Water Ratio",
+        "Code": "Oil/Water Ratio",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:BaritePercent",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Barite ",
+        "NameAlias": [
+          {
+            "AliasName": "BaritePc"
+          }
+        ],
+        "Description": "Percent Barite",
+        "Code": "BaritePercent",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:BrinePercent",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Brine",
+        "NameAlias": [
+          {
+            "AliasName": "BrinePc"
+          }
+        ],
+        "Description": "Percent Brine",
+        "Code": "BrinePercent",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:CalciumChloridePc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Calcium Chloride",
+        "NameAlias": [
+          {
+            "AliasName": "CaClPc"
+          }
+        ],
+        "Description": "Percent calcium chloride",
+        "Code": "CalciumChloridePc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsCalcPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Calculated Solids",
+        "Description": "Percent Calculated Solids",
+        "Code": "SolidsCalcPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsHiGravPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent High Gravity Solids",
+        "Description": "Percent High Gravity Solids",
+        "Code": "SolidsHiGravPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsLowGravPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Low Gravity Solids",
+        "Description": "Percent Low Gravity Solids",
+        "Code": "SolidsLowGravPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:OilPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Oil",
+        "Description": "Percent Oil",
+        "Code": "OilPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SaltPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Salt",
+        "Description": "Percent Salt",
+        "Code": "SaltPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SandPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Sand",
+        "Description": "Percent Sand",
+        "Code": "SandPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SodiumChloridePc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Sodium Chloride",
+        "Description": "Percent Sodium Chloride",
+        "Code": "SodiumChloridePc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolidsPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Solids",
+        "Description": "Percent Solids",
+        "Code": "SolidsPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SolCorPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Solids Corrected",
+        "Description": "Percent Solids Corrected",
+        "Code": "SolCorPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:WaterPc",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Percent Water",
+        "Description": "Percent Water",
+        "Code": "WaterPc",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Ph",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ph",
+        "NameAlias": [
+          {
+            "AliasName": "pH"
+          }
+        ],
+        "Description": "Ph",
+        "Code": "Ph",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Pm",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Phenolphthalein Alkalinity",
+        "Description": "Phenolphthalein Alkalinity",
+        "Code": "Pm",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:PmFiltrate",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Phenolphthalein Filtrate",
+        "NameAlias": [
+          {
+            "AliasName": "Pmf"
+          }
+        ],
+        "Description": "Phenolphthalein Filtrate",
+        "Code": "PmFiltrate",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Pv",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plastic Viscosity",
+        "NameAlias": [
+          {
+            "AliasName": "PlasticViscosity"
+          }
+        ],
+        "Description": "Plastic Viscosity",
+        "Code": "Pv",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:PvTemp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plastic Viscosity Temperature",
+        "Description": "Plastic Viscosity Temperature",
+        "Code": "PvTemp",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Polymer",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Polymer",
+        "Description": "Polymer",
+        "Code": "Polymer",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Potassium",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Potassium",
+        "NameAlias": [
+          {
+            "AliasName": "K+"
+          },
+          {
+            "AliasName": "K"
+          }
+        ],
+        "Description": "Potassium",
+        "Code": "Potassium",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:KCl",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Potassium Chloride",
+        "NameAlias": [
+          {
+            "AliasName": "PotassiumChloride"
+          }
+        ],
+        "Description": "Potassium Chloride",
+        "Code": "KCl",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:PressureRheology",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressure Rheology",
+        "Description": "Pressure of rheometer",
+        "Code": "PressureRheology",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Salt",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Salt",
+        "Description": "Salt",
+        "Code": "Salt",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SaltConcentration",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Salt Concentration",
+        "Description": "Salt Concentration",
+        "Code": "SaltConcentration",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:SandContent",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sand Content",
+        "Description": "Sand Content",
+        "Code": "SandContent",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:NaCl",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sodium Chloride",
+        "NameAlias": [
+          {
+            "AliasName": "SodiumChloride"
+          }
+        ],
+        "Description": "Sodium Chloride",
+        "Code": "NaCl",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Sulphide",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sulfide",
+        "NameAlias": [
+          {
+            "AliasName": "Sulfide"
+          }
+        ],
+        "Description": "Sulphide",
+        "Code": "Sulphide",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TemperatureFlowLine",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Flow Line",
+        "Description": "Temperature of the flow line",
+        "Code": "TemperatureFlowLine",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TemperatureRheology",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Rheology",
+        "Description": "Temperature at time of rheometer measurement",
+        "Code": "TemperatureRheology",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TemperatureViscosity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Viscosity",
+        "Description": "Temperature of the funnel viscosity measurement",
+        "Code": "TemperatureViscosity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TSS",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Total Suspended Solids",
+        "Description": "Total Suspended Solids",
+        "Code": "TSS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TCT",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True crystallization temperature",
+        "Description": "True crystallization temperature",
+        "Code": "TCT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:TVD",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True Vertical Depth",
+        "Description": "True vertical depth at the time of mud sample.",
+        "Code": "TVD",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Tau0",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "True Yield Stress",
+        "Description": "True Yield Stress",
+        "Code": "Tau0",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Type",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Comments\" with Name=\"Comments\" instead. Type",
+        "Code": "Type",
+        "AttributionAuthority": "OSDU",
+        "(COMPANY: insert comment)": "DEPRECATED please use Comments Type",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:WaterPhaseSalinity",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water Phase Salinity",
+        "NameAlias": [
+          {
+            "AliasName": "WPS"
+          }
+        ],
+        "Description": "Water Phase Salinity",
+        "Code": "WaterPhaseSalinity",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:WholeMudCalcium",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Whole Mud Calcium",
+        "Description": "Whole Mud Calcium",
+        "Code": "WholeMudCalcium",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:WholeMudChloride",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Whole Mud Chloride",
+        "Description": "Whole Mud Chloride",
+        "Code": "WholeMudChloride",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:Yp",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Yield Point",
+        "Description": "Yield Point",
+        "Code": "Yp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidPropertyName:ZincOxide",
+      "kind": "osdu:wks:reference-data--FluidPropertyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Zinc Oxide",
+        "NameAlias": [
+          {
+            "AliasName": "ZnO"
+          }
+        ],
+        "Description": "Zinc Oxide",
+        "Code": "ZincOxide",
+        "Source": "Workbook ReferenceValues/Published/FluidPropertyName.1.xlsx; commit SHA 8567fbcc.",
+        "CommitDate": "2025-11-13T14:21:59+00:00"
+      }
+    }
+  ]
+}

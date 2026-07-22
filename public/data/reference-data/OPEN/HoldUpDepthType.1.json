@@ -1,0 +1,150 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthType:DamagedCasing",
+      "kind": "osdu:wks:reference-data--HoldUpDepthType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Damaged Casing",
+        "ID": "DamagedCasing",
+        "Description": "Damaged Casing e.g. Collapsed, buckled",
+        "Code": "DamagedCasing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthType:DamagedTubing",
+      "kind": "osdu:wks:reference-data--HoldUpDepthType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Damaged Tubing",
+        "ID": "DamagedTubing",
+        "Description": "Damaged Tubing e.g. bent, buckled",
+        "Code": "DamagedTubing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthType:Fish",
+      "kind": "osdu:wks:reference-data--HoldUpDepthType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fish",
+        "ID": "Fish",
+        "Description": "Fish - assembly or tool dropped/left in hole",
+        "Code": "Fish",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthType:Obstruction",
+      "kind": "osdu:wks:reference-data--HoldUpDepthType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Obstruction",
+        "ID": "Obstruction",
+        "Description": "Obstruction - any object/fill preventing passage of tools",
+        "Code": "Obstruction",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthType:Stuck",
+      "kind": "osdu:wks:reference-data--HoldUpDepthType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stuck",
+        "ID": "Stuck",
+        "Description": "Stuck - assembly stuck in hole",
+        "Code": "Stuck",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    }
+  ]
+}

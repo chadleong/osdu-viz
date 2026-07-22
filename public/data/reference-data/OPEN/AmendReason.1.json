@@ -1,0 +1,259 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:CalculationError",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calculation error",
+        "Code": "CalculationError",
+        "Description": "Amended because an algorithm or process in computing the reported data was corrected.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:InputError",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Input error",
+        "Code": "InputError",
+        "Description": "Correction of a data input error or omission.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:InstrumentationAdjustment",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Instrumentation adjustment",
+        "Code": "InstrumentationAdjustment",
+        "Description": "Amended because the instrument used to collect or process the data was recalibrated or replaced.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:InventoryAdjustment",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Inventory adjustment",
+        "Code": "InventoryAdjustment",
+        "Description": "Amended to report gains and losses that cannot be identified by a specific activity and/or production month.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:RegulatoryCorrection",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Regulatory correction",
+        "Code": "RegulatoryCorrection",
+        "Description": "Amended to comply with laws, regulations, or governing body expectations.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:RevisedProductAnalysis",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Revised product analysis",
+        "Code": "RevisedProductAnalysis",
+        "Description": "Amended to incorporate revised product analysis, such as oil composition.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:VolumeBalancing",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Volume balancing",
+        "Code": "VolumeBalancing",
+        "Description": "The record or measurement was changed due to inconsistency or inaccuracy of reported volumes.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:MeterAdjustment",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Meter adjustment",
+        "Code": "MeterAdjustment",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"InstrumentationAdjustment\" with Name=\"Instrumentation adjustment\" instead. A meter adjustment amendment reason is the explanation for changing a record or measurement due to the calibration, malfunction, replacement, or correction of a metering system that was used to collect data.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--AmendReason:ProductAnalysis",
+      "kind": "osdu:wks:reference-data--AmendReason:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Product analysis",
+        "Code": "ProductAnalysis",
+        "InactiveIndicator": true,
+        "AttributionAuthority": "PPDM Association",
+        "Description": "DEPRECATED: Please use Code=\"RevisedProductAnalysis\" with Name=\"Revised product analysis\" instead. ",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-06-13T16:35:42+00:00"
+      }
+    }
+  ]
+}

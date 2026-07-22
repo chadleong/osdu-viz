@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PropertyTypeClass:Discrete",
+      "kind": "osdu:wks:reference-data--PropertyTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Discrete",
+        "ID": "Discrete",
+        "Description": "Discrete properties are those that can only take on specific, distinct numerical values, often integers (e.g., stage number, number of joints, drilling day).",
+        "Code": "Discrete",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/PropertyTypeClass.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PropertyTypeClass:Continuous",
+      "kind": "osdu:wks:reference-data--PropertyTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Continuous",
+        "ID": "Continuous",
+        "Description": "Continuous properties are measurements that can take any numerical value within a range, typically represented by floating-point numbers (e.g., porosity, permeability, temperature, depth).",
+        "Code": "Continuous",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/PropertyTypeClass.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PropertyTypeClass:Categorical",
+      "kind": "osdu:wks:reference-data--PropertyTypeClass:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Categorical",
+        "ID": "Categorical",
+        "Description": "Categorical properties are data values that represent membership in a predefined set of categories, typically managed as look-up codes or enumerated lists within the data model (e.g., lithology code, facies code).",
+        "Code": "Categorical",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/PropertyTypeClass.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

@@ -686,14 +686,25 @@ export default function App() {
 
           {/* Load from GitLab button removed - GitLab loading disabled in UI */}
 
-          {/* Status Info */}
-          <div className="text-sm text-gray-600">
-            {models.length} schemas loaded | Selected: {selectedModel?.title || "None"}
-            {selectedModel?.version && (
-              <span className="text-xs text-gray-500" style={{ marginLeft: 8 }}>
-                v{selectedModel.version}
-              </span>
-            )}
+          {/* Status Info & Data Source Link */}
+          <div className="text-sm text-gray-600 flex items-center space-x-3 ml-auto">
+            <div>
+              {models.length} schemas loaded | Selected: {selectedModel?.title || "None"}
+              {selectedModel?.version && (
+                <span className="text-xs text-gray-500" style={{ marginLeft: 8 }}>
+                  v{selectedModel.version}
+                </span>
+              )}
+            </div>
+            <a
+              href="https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.0?ref_type=tags"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs text-blue-600 hover:text-blue-800 hover:underline border border-blue-200 bg-blue-50 px-2 py-1 rounded transition-colors"
+              title="OSDU Data Definitions Source (v0.30.0)"
+            >
+              Data Source: v0.30.0 ↗
+            </a>
           </div>
         </div>
       </div>{" "}

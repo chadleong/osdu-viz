@@ -1,0 +1,125 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelRelativePermeabilityPhase:OilInWater",
+      "kind": "osdu:wks:reference-data--RockModelRelativePermeabilityPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil-In-Water",
+        "ID": "OilInWater",
+        "Description": "The relative permeability to oil in the presence of water at different water or oil saturations.",
+        "Code": "OilInWater",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelRelativePermeabilityPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelRelativePermeabilityPhase:OilInGas",
+      "kind": "osdu:wks:reference-data--RockModelRelativePermeabilityPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil-In-Gas",
+        "ID": "OilInGas",
+        "Description": "The relative permeability to oil in the presence of gas at different gas or oil saturations, in the presence of connate water. ",
+        "Code": "OilInGas",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelRelativePermeabilityPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelRelativePermeabilityPhase:Water",
+      "kind": "osdu:wks:reference-data--RockModelRelativePermeabilityPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water",
+        "ID": "Water",
+        "Description": "The relative permeability to water in the presence of gas and/or oil at different water saturations. ",
+        "Code": "Water",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelRelativePermeabilityPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelRelativePermeabilityPhase:Gas",
+      "kind": "osdu:wks:reference-data--RockModelRelativePermeabilityPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas",
+        "ID": "Gas",
+        "Description": "The relative permeability to gas in the presence of water and/or oil at different gas saturations. ",
+        "Code": "Gas",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelRelativePermeabilityPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

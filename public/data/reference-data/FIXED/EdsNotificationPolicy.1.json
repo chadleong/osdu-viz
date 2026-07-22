@@ -1,0 +1,92 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--EdsNotificationPolicy:Always",
+      "kind": "osdu:wks:reference-data--EdsNotificationPolicy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Always",
+        "ID": "Always",
+        "Description": "Email notification will always be sent after each ingestion run.",
+        "Code": "Always",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/EdsNotificationPolicy.1.xlsx; commit SHA 3c1fe7a7.",
+        "CommitDate": "2026-01-15T10:25:41+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EdsNotificationPolicy:OnError",
+      "kind": "osdu:wks:reference-data--EdsNotificationPolicy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "On Error",
+        "ID": "OnError",
+        "Description": "Email notification will be sent if there's any error with the ingestion.",
+        "Code": "OnError",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/EdsNotificationPolicy.1.xlsx; commit SHA 3c1fe7a7.",
+        "CommitDate": "2026-01-15T10:25:41+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EdsNotificationPolicy:Never",
+      "kind": "osdu:wks:reference-data--EdsNotificationPolicy:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Never",
+        "ID": "Never",
+        "Description": "Email notification will not be sent.",
+        "Code": "Never",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/EdsNotificationPolicy.1.xlsx; commit SHA 3c1fe7a7.",
+        "CommitDate": "2026-01-15T10:25:41+00:00"
+      }
+    }
+  ]
+}

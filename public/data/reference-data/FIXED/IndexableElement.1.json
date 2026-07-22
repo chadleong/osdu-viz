@@ -1,0 +1,817 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:cells",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "cells",
+        "Description": "Allows to select representation's cells",
+        "Code": "cells",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:column%20edges",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "column edges",
+        "Description": "Allows to select representation's column edges",
+        "Code": "column edges",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:columns",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "columns",
+        "Description": "Allows to select representation's columns",
+        "Code": "columns",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:contacts",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "contacts",
+        "Description": "Allows to select representation's contacts",
+        "Code": "contacts",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:coordinate%20lines",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "coordinate lines",
+        "Description": "Allows to select representation's coordinate lines",
+        "Code": "coordinate lines",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:edges",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "edges",
+        "Description": "Allows to select representation's edges",
+        "Code": "edges",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:edges%20per%20column",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "edges per column",
+        "Description": "Allows to select representation's edges per column",
+        "Code": "edges per column",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:enumerated%20elements",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "enumerated elements",
+        "Description": "Allows to select representation's enumerated elements",
+        "Code": "enumerated elements",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:faces",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "faces",
+        "Description": "Allows to select representation's faces",
+        "Code": "faces",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:faces%20per%20cell",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "faces per cell",
+        "Description": "Allows to select representation's faces per cell",
+        "Code": "faces per cell",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:interval%20edges",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "interval edges",
+        "Description": "Allows to select representation's interval edges",
+        "Code": "interval edges",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:intervals",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "intervals",
+        "Description": "Allows to select representation's intervals",
+        "Code": "intervals",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:I0",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "I0",
+        "Description": "Allows to select representation's I0",
+        "Code": "I0",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:I0%20edges",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "I0 edges",
+        "Description": "Allows to select representation's I0 edges",
+        "Code": "I0 edges",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:J0",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "J0",
+        "Description": "Allows to select representation's J0",
+        "Code": "J0",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:J0%20edges",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "J0 edges",
+        "Description": "Allows to select representation's J0 edges",
+        "Code": "J0 edges",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:layers",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "layers",
+        "Description": "Allows to select representation's layers",
+        "Code": "layers",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:nodes",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "nodes",
+        "Description": "Allows to select representation's nodes",
+        "Code": "nodes",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:nodes%20per%20cell",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "nodes per cell",
+        "Description": "Allows to select representation's nodes per cell",
+        "Code": "nodes per cell",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:nodes%20per%20edge",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "nodes per edge",
+        "Description": "Allows to select representation's nodes per edge",
+        "Code": "nodes per edge",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:nodes%20per%20face",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "nodes per face",
+        "Description": "Allows to select representation's nodes per face",
+        "Code": "nodes per face",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:patches",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "patches",
+        "Description": "Allows to select representation's patches",
+        "Code": "patches",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:pillars",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "pillars",
+        "Description": "Allows to select representation's pillars",
+        "Code": "pillars",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:regions",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "regions",
+        "Description": "Allows to select representation's regions",
+        "Code": "regions",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:representation",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "representation",
+        "Description": "Allows to select representation's representation",
+        "Code": "representation",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:subnodes",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "subnodes",
+        "Description": "Allows to select representation's subnodes",
+        "Code": "subnodes",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:triangles",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "triangles",
+        "Description": "Allows to select representation's triangles",
+        "Code": "triangles",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.0.1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IndexableElement:lines",
+      "kind": "osdu:wks:reference-data--IndexableElement:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "lines",
+        "Description": "Allows to select representation's lines",
+        "Code": "lines",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML V2.2 RC1 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/IndexableElement.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-07-22
+
+### Added
+- Added link in navigation bar pointing to the latest OSDU Data Definitions source (`v0.30.0`).
+- Updated schema definitions dataset (expanded total schemas from 1,316 to 1,425).
+
+### Fixed
+- Fixed file scanner in `scan-schemas.cjs` to ignore `.min.json` files during recursive directory scanning.
+
 ## [1.1.1] - 2026-07-22
 
 ### Added

@@ -1,0 +1,929 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ",
+        "NameAlias": [
+          {
+            "AliasName": "In Situ"
+          }
+        ],
+        "Description": "In Situ field analysis",
+        "Code": "InSitu",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.CarbonDioxide",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Carbon Dioxide",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Carbon Dioxide"
+          }
+        ],
+        "Description": "In Situ field measurements of Carbon Dioxide",
+        "Code": "InSitu.CarbonDioxide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.Oxygen",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Oxygen",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Oxygen"
+          }
+        ],
+        "Description": "In Situ field measurements of Oxygen",
+        "Code": "InSitu.Oxygen",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.Methane",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Methane",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Methane"
+          }
+        ],
+        "Description": "In Situ field measurements of Methane",
+        "Code": "InSitu.Methane",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.CarbonMonoxide",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Carbon Monoxide",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Carbon Monoxide"
+          }
+        ],
+        "Description": "In Situ field measurements of Carbon Monoxide",
+        "Code": "InSitu.CarbonMonoxide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.HydrogenSulfide",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Hydrogen Sulfide",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Hydrogen Sulfide"
+          }
+        ],
+        "Description": "In Situ field measurements of Hydrogen Sulfide",
+        "Code": "InSitu.HydrogenSulfide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.GasBalance",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Gas Balance",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Gas Balance"
+          }
+        ],
+        "Description": "In Situ field measurements of Gas Balance",
+        "Code": "InSitu.GasBalance",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.IonisableGases",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Ionisable Gases",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Ionisable Gases"
+          }
+        ],
+        "Description": "In Situ field measurements of Ionisable Gases",
+        "Code": "InSitu.IonisableGases",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.PeakFlowRate",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Peak Flow Rate",
+        "NameAlias": [
+          {
+            "AliasName": "Field- Peak Flow Rate"
+          }
+        ],
+        "Description": "In Situ field measurements of Peak Flow Rate",
+        "Code": "InSitu.PeakFlowRate",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:InSitu.VolatileOrganicCompounds",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ.Volatile Organic Compounds",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Volatile Organic Compounds"
+          }
+        ],
+        "Description": "In Situ field measurements of Volatile Organic Compounds",
+        "Code": "InSitu.VolatileOrganicCompounds",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Compositional",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional"
+          }
+        ],
+        "Description": "Gas Compositional analysis",
+        "Code": "GasCompositional ",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.Helium",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas compositional.Helium",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Helium"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Helium",
+        "Code": "GasCompositional.Helium",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.Hydrogen",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas compositional.Hydrogen",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Hydrogen"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Hydrogen",
+        "Code": "GasCompositional.Hydrogen",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.OxygenArgon",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Compositional.Oxygen & Argon",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Oxygen & Argon"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Oxygen & Argon",
+        "Code": "GasCompositional.OxygenArgon",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.Nitrogen",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas compositional.Nitrogen (total)",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Nitrogen (total)"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Nitrogen(Total)",
+        "Code": "GasCompositional.Nitrogen",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.CarbonDioxide",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas compositional.Carbon Dioxide",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Carbon Dioxide"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Carbon Dioxide",
+        "Code": "GasCompositional.CarbonDioxide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:GasCompositional.CarbonMonoxide",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas compositional.Carbon Monoxide",
+        "NameAlias": [
+          {
+            "AliasName": "Gas Compositional.Carbon Monoxide"
+          }
+        ],
+        "Description": "Gas Compositional analysis of Carbon Monoxide",
+        "Code": "GasCompositional.CarbonMonoxide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis"
+          }
+        ],
+        "Description": "Isotope Analysis",
+        "Code": "IsotopeAnalysis",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-C1",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-C1",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-C1"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-C1",
+        "Code": "IsotopeAnalysis.C13-C1",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-C2",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-C2",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-C2"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-C2",
+        "Code": "IsotopeAnalysis.C13-C2",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-C3",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-C3",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-C3"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-C3",
+        "Code": "IsotopeAnalysis.C13-C3",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-iC4",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-iC4",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-iC4"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-iC4",
+        "Code": "IsotopeAnalysis.C13-iC4",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-nC4",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-nC4",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-nC4"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-nC4",
+        "Code": "IsotopeAnalysis.C13-nC4",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-iC5",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-iC5",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-iC5"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-iC5",
+        "Code": "IsotopeAnalysis.C13-iC5",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-nC5",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-nC5",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-nC5"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-nC5",
+        "Code": "IsotopeAnalysis.C13-nC5",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.C13-C6plus",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.C13-C6+",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.C13-C6+"
+          }
+        ],
+        "Description": "Isotope Analysis.C13-C6+",
+        "Code": "IsotopeAnalysis.C13-C6plus",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.d13CO2",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.d13CO2",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.d13CO2"
+          }
+        ],
+        "Description": "Isotope Analysis.d13CO2",
+        "Code": "IsotopeAnalysis.d13CO2",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasAnalysisType:IsotopeAnalysis.d13-C1",
+      "kind": "osdu:wks:reference-data--SoilGasAnalysisType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isotope Analysis.d13 C1",
+        "NameAlias": [
+          {
+            "AliasName": "Isotope Analysis.d13 C1"
+          }
+        ],
+        "Description": "Isotope Analysis.d13 C1",
+        "Code": "IsotopeAnalysis.d13-C1",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasAnalysisType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

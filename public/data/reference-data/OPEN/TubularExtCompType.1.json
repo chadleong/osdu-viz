@@ -1,0 +1,599 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:AlignmentClamp",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alignment Clamp",
+        "NameAlias": [
+          {
+            "AliasName": "ALICLMP"
+          }
+        ],
+        "Description": "Alignment Clamp",
+        "Code": "AlignmentClamp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:BowCentralizer",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bow Centralizer",
+        "NameAlias": [
+          {
+            "AliasName": "BOWCENT"
+          }
+        ],
+        "Description": "Bow Centralizer",
+        "Code": "BowCentralizer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:CrossCouplingClamp",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cross Coupling Clamp",
+        "NameAlias": [
+          {
+            "AliasName": "CCCLMP"
+          }
+        ],
+        "Description": "Cross Coupling Clamp",
+        "Code": "CrossCouplingClamp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:CentralizerClamp",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Centralizer Clamp",
+        "NameAlias": [
+          {
+            "AliasName": "CCLMP"
+          }
+        ],
+        "Description": "Centralizer Clamp",
+        "Code": "CentralizerClamp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:CementBasket",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement Basket",
+        "NameAlias": [
+          {
+            "AliasName": "CMTB"
+          }
+        ],
+        "Description": "Cement Basket",
+        "Code": "CementBasket",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:ExternalPressureGuage",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "External Pressure Guage",
+        "NameAlias": [
+          {
+            "AliasName": "EXPG"
+          }
+        ],
+        "Description": "External Pressure Guage",
+        "Code": "ExternalPressureGuage",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:FrictionReductionDevice",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Friction Reduction Device",
+        "NameAlias": [
+          {
+            "AliasName": "FRD"
+          }
+        ],
+        "Description": "Friction Reduction Device",
+        "Code": "FrictionReductionDevice",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:Geophone",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Geophone",
+        "NameAlias": [
+          {
+            "AliasName": "GEOPH"
+          }
+        ],
+        "Description": "Geophone",
+        "Code": "Geophone",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:GemocoSealRing",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gemoco Seal Ring",
+        "NameAlias": [
+          {
+            "AliasName": "GSR"
+          }
+        ],
+        "Description": "Gemoco Seal Ring",
+        "Code": "GemocoSealRing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:InterCasingCentralizer",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Inter Casing Centralizer",
+        "NameAlias": [
+          {
+            "AliasName": "ICCENT"
+          }
+        ],
+        "Description": "Inter Casing Centralizer",
+        "Code": "InterCasingCentralizer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:Micro-AnnulusSeal",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Micro-Annulus Seal",
+        "NameAlias": [
+          {
+            "AliasName": "MAS"
+          }
+        ],
+        "Description": "Micro-Annulus Seal",
+        "Code": "Micro-AnnulusSeal",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:MidJointClamp",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mid Joint Clamp",
+        "NameAlias": [
+          {
+            "AliasName": "MJCLMP"
+          }
+        ],
+        "Description": "Mid Joint Clamp",
+        "Code": "MidJointClamp",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:PipTag",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pip Tag",
+        "NameAlias": [
+          {
+            "AliasName": "PIP"
+          }
+        ],
+        "Description": "Pip Tag",
+        "Code": "PipTag",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:Scratcher",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Scratcher",
+        "NameAlias": [
+          {
+            "AliasName": "SCRTR"
+          }
+        ],
+        "Description": "Scratcher",
+        "Code": "Scratcher",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:SphericalCentralizer",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spherical Centralizer",
+        "NameAlias": [
+          {
+            "AliasName": "SPCENT"
+          }
+        ],
+        "Description": "Spherical Centralizer",
+        "Code": "SphericalCentralizer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:SemiRigidCentralizer",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Semi Rigid Centralizer",
+        "NameAlias": [
+          {
+            "AliasName": "SRCENT"
+          }
+        ],
+        "Description": "Semi Rigid Centralizer",
+        "Code": "SemiRigidCentralizer",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:StopCollar",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stop Collar",
+        "NameAlias": [
+          {
+            "AliasName": "STC"
+          }
+        ],
+        "Description": "Stop Collar",
+        "Code": "StopCollar",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularExtCompType:Thermocouple",
+      "kind": "osdu:wks:reference-data--TubularExtCompType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Thermocouple",
+        "NameAlias": [
+          {
+            "AliasName": "TMCP"
+          }
+        ],
+        "Description": "Thermocouple",
+        "Code": "Thermocouple",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularExtCompType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

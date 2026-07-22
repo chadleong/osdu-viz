@@ -1,0 +1,116 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelCapillaryPressurePhase:OilWater",
+      "kind": "osdu:wks:reference-data--RockModelCapillaryPressurePhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil-Water",
+        "NameAlias": [
+          {
+            "AliasName": "Water-Oil",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "OilWater",
+        "Description": "The capillary pressure between water and oil.",
+        "Code": "OilWater",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelCapillaryPressurePhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelCapillaryPressurePhase:GasWater",
+      "kind": "osdu:wks:reference-data--RockModelCapillaryPressurePhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas-Water",
+        "NameAlias": [
+          {
+            "AliasName": "Water-Gas",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "GasWater",
+        "Description": "The capillary pressure between gas and water.",
+        "Code": "GasWater",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelCapillaryPressurePhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--RockModelCapillaryPressurePhase:GasOil",
+      "kind": "osdu:wks:reference-data--RockModelCapillaryPressurePhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas-Oil",
+        "NameAlias": [
+          {
+            "AliasName": "Oil-Gas",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "GasOil",
+        "Description": "The capillary pressure between gas and oil. ",
+        "Code": "GasOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/RockModelCapillaryPressurePhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

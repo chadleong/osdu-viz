@@ -1,0 +1,140 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--OSDURegion:AWSEastUSA",
+      "kind": "osdu:wks:reference-data--OSDURegion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AWSEastUSA",
+        "Description": "Amazon Web Services - Region for East USA (Ohio)",
+        "Code": "AWSEastUSA",
+        "Source": "Workbook ReferenceValues/Published/OSDURegion.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--OSDURegion:AWSEuropeMilano",
+      "kind": "osdu:wks:reference-data--OSDURegion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AWSEuropeMilano",
+        "Description": "Amazon Web Services - European Region for Milano area",
+        "Code": "AWSEuropeMilano",
+        "Source": "Workbook ReferenceValues/Published/OSDURegion.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--OSDURegion:AzureNorthEurope",
+      "kind": "osdu:wks:reference-data--OSDURegion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AzureNorthEurope",
+        "Description": "Microsoft Azure region for Northern Europe",
+        "Code": "AzureNorthEurope",
+        "Source": "Workbook ReferenceValues/Published/OSDURegion.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--OSDURegion:AzureAustralia",
+      "kind": "osdu:wks:reference-data--OSDURegion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AzureAustralia",
+        "Description": "Microsoft Azure region for Australia",
+        "Code": "AzureAustralia",
+        "Source": "Workbook ReferenceValues/Published/OSDURegion.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--OSDURegion:IBMQatar",
+      "kind": "osdu:wks:reference-data--OSDURegion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IBMOcpQatar",
+        "Description": "IBM region for Qatar",
+        "Code": "IBMQatar",
+        "Source": "Workbook ReferenceValues/Published/OSDURegion.1.xlsx; commit SHA 4df70b7c.",
+        "CommitDate": "2025-02-18T08:27:24+00:00"
+      }
+    }
+  ]
+}

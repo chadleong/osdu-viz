@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationPhase:Oil",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil",
+        "ID": "Oil",
+        "Description": "Petroleum (oil) and other liquid hydrocarbons.",
+        "Code": "Oil",
+        "AttributionAuthority": "OSDU ",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationPhase:Gas",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas",
+        "ID": "Gas",
+        "Description": "Any substance in gaseous state, including hydrocarbon gas and non-hydrocarbon gases such as water vapor.",
+        "Code": "Gas",
+        "AttributionAuthority": "OSDU ",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationPhase:Water",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationPhase:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water",
+        "ID": "Water",
+        "Description": "Liquid phase of water and water-based mixtures. Includes pure water but also other water-based (aqueous) mixtures, which includes saltwater/brine and the presence of non-water additives.",
+        "Code": "Water",
+        "AttributionAuthority": "OSDU ",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationPhase.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

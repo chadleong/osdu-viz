@@ -1,0 +1,4444 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ByPassSlopeMargin",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ByPassSlopeMargin",
+        "NameAlias": [
+          {
+            "AliasName": "6331",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "By-pass slope margin",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A by-pass slope is a slope with limited or none sediments deposited, all excess of material from the platform and  margin is directly transported into the basin. Steep slope can be highly unstable and collapse where scars will remain.",
+        "Code": "ByPassSlopeMargin",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ChannelComplex.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ChannelComplex, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6332",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Channel complex, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A channel-fill complex is sourced from a carbonate platform bringing sediments into the basin as a stack of genetically related channel-fill bodies bound by regional pelagic sediments and or mass transport complex.",
+        "Code": "ChannelComplex.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:MassTransportComplex.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MassTransportComplex, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6341",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Mass transport complex, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Mass transport complexes are the deposits of a series of gravity driven processes that result from the failure and collapse of the carbonate shelf margin and slopes. Large carbonate platform shelves shed huge volumes of sediment onto their adjacent slopes. Mass-transport deposits (MTDs) cover a depositional continuum from slides to slumps, creeps and debrites, capturing a broad spectrum of syn-sedimentary deformation processes. MTDs are a common feature on the slopes surrounding large-scale carbonate platforms and hence constitute a significant part of the slope-to-basin depositional record. The reworking of failed strata during along-slope and slope-parallel deformation produces an array of deposits, which occasionally makes it challenging to distinguish the products of different mass-wasting processes.",
+        "Code": "MassTransportComplex.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Contourite.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Contourite, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6342",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Contourites is general term for all types of bottom current deposits following bathymetric curves \u2013 i.e. thermohaline, wind, tide, and baroclinic circulatory current deposits. Carbonate environments inhabit the realm of the surface, intermediate and deep currents of the ocean circulation where they produce and continuously deliver material which is potentially deposited into contourite drifts.  Contourites commonly form by contour currents eroding, circulating, and depositing material at the base of the continental slope. The currents can flow in all directions and around or above obstacles. The architecture and morphology of the resulting contourite and drift deposits is controlled by the dominance of one or the inter-action of various currents.  Carbonate contourite drifts are generally smaller and more variable. The diversi\ufb01cation of the morphology is largely caused by isolated platforms and build-ups that are obstacles for the currents. Common contourite categories are defined by grain sizes. Common obstacles in basins and seaways adjacent to steep-sided carbonate platforms and shelves are blocks and boulders in mass trans-port complexes generated by margin collapse or slope failures. Carbonate drifts not only record changes in the bottom current regime, but also sea-level changes that affect the shallow-water carbonate factory, which produces the majority of the components forming the drifts, that have therefore highest sedimentation rates during sea-level highstand.",
+        "Code": "Contourite.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ContouriteDriftPlastered.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ContouriteDriftPlastered, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6343",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite drift-plastered, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Plastered drift deposits are broad contourite sheets with low-relief features that extend through large areas and are plastered against the platform slope. They can laterally transform into elongated drift deposits.",
+        "Code": "ContouriteDriftPlastered.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ContouriteDriftSheet.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ContouriteDriftSheet, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6344",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite drift-sheet, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Contourite sheets are broad, low-relief features that extend through very large areas (i.e. over 1000000 km2) and are seen covering the abyssal plains . They are characteristic of very deep water. They have a relatively constant thickness of up to a few hundred meters with a slight thinning towards the continental margin. Internally these drifts with expanses of several tens of kilometres are characterized by weakly mounded parallel to subparallel layers with local development of low-angle erosional surfaces. Drift sediments are calcareous ooze rich in pelagic components and an admixture of shallow-water derived material.",
+        "Code": "ContouriteDriftSheet.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ContouriteDriftBaseOfSlopeMounded.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ContouriteDriftBaseOfSlopeMounded, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6345",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite drift-base of slope mounded, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Giant elongate drifts form very large mounded elongated geometries parallel to the deepwater bottom-current flow. They are characterized by a near complete lack of parallel bedding.  Elongated mounded drifts are some of the smallest, but also largest, drifts in carbonates. They develop as separated drifts with a moat or marginal valley separating the drift from the adjacent slope. The development of the moat can change or disappear along strike transforming the elongated separated drift into a plastered drift.",
+        "Code": "ContouriteDriftBaseOfSlopeMounded.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ContouriteDriftChannelDeltaRelated.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ContouriteDriftChannelDeltaRelated, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "6347",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite drift-channel-delta-related, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Channel-related drifts form when deepwater bottom-currents are confined to a smaller cross sectional area of flow and therefore their velocity increases substantially. This can happen if the deepwater bottom-current is trapped within a deep channel or within a gateway that connects two basins or a narrow passage between two carbonate platforms. Due to the high velocities, it is common to see scours and erosional features as well as different types of deposits at the floor of the channel, the flanks, and the down-current exit of the channel. Delta drift deposits can be created at the mouth of such gateway and are characterized by following architectural elements. The delta drift has: (i)high-amplitude prograding clinoforms; (ii) an overall mounded geometry with an apex that is shallower than the \ufb02oor of the source channel; (iii) slope channels cutting downslope arranged in a radial pattern; (iv) an excavation moat at the transition from the feeder channel to the delta drift; and (v) cyclic steps at the toe of the prograding clinoforms",
+        "Code": "ContouriteDriftChannelDeltaRelated.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:BasinFloorFan",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BasinFloorFan",
+        "NameAlias": [
+          {
+            "AliasName": "6520",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Basin floor fan",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Deep marine fan system sourced from a carbonate platform. In carbonate systems, the distance over which sediments are transported into the deep basin if often much smaller (max a few 10s of km)  compared to siliciclastic systems  (10s to over 100s of km).",
+        "Code": "BasinFloorFan",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Pelagic",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pelagic",
+        "NameAlias": [
+          {
+            "AliasName": "3710",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Pelagic",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Deposition on the basin floor across much of the oceans is in the form of pelagic (fine-grained marine sediment derived primarily from biogenic particles) and hemipelagic (both biogenic and terrigenous particles) muds, deposited from suspension. Locally deposition of course material occurs from turbidity flows and to a lesser extent semi-permanent bottom currents. The basin floor is a low relief plain which covers much of the oceans. In passive continental margins, the basin floor occurs at the base of slope at significant water depths (over 2 km) and turbidite systems are typically unconfined (i.e. smaller than the basin). The deep-water (pelagic) carbonate factory can be present in basinal settings.  Sediments that are dominated by calcareous nannofossils (dominantly coccoliths & foraminifera) are known as calcareous ooze & will lithify to form limestone (commonly chalk). Sediments that are dominated by siliceous nannofossils (diatoms and radiolaria) are known as siliceous ooze, & will lithify to form chert",
+        "Code": "Pelagic",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:AlluvialFan",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AlluvialFan",
+        "NameAlias": [
+          {
+            "AliasName": "1110",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Alluvial fan",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Alluvial fans are cone shaped bodies of sediment, deposited by small distributive fluvial systems which typically occur on the margins of basins.",
+        "Code": "AlluvialFan",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:AlluvialPlain",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "AlluvialPlain",
+        "NameAlias": [
+          {
+            "AliasName": "1120",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Alluvial plain",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The alluvial plain and overbank environments represent the parts of the alluvial system that are associated with, but outside the channels. The exact nature of the region is highly influenced by the climate but in most cases the alluvial plain will be  at least partly vegetated and will only receive sediment periodically. Palaeosols of different maturities are common.",
+        "Code": "AlluvialPlain",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Fluvial",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fluvial",
+        "NameAlias": [
+          {
+            "AliasName": "1130",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Fluvial",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Fluvial deposits are those associated with rivers and specifically the channels. There are a number of ways to classify fluvial systems either based on the planform geometry of the channels; on the position within a Distributive Fluvial System or descriptively. A purely descriptive terminology is used within SafariDB based upon the stacking of bars within the channel body. It is useful to review to also, briefly review all of these classification schemes.",
+        "Code": "Fluvial",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:IncisedValley.AlluviumConstrained",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IncisedValley, AlluviumConstrained",
+        "NameAlias": [
+          {
+            "AliasName": "1140",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Incised valley, alluvium constrained",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Alluvium confined incised valleys are typically associated with cyclic drops in sea-level which lead to incision into older strata. In the case of the alluvium confined valleys, the same rivers that were previously depositing on the alluvial plain are the ones that cut subsequently fill the valleys.",
+        "Code": "IncisedValley.AlluviumConstrained",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:IncisedValley.BedrockConstrained",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IncisedValley, BedrockConstrained",
+        "NameAlias": [
+          {
+            "AliasName": "1150",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Incised valley, bedrock constrained",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Bedrock confined incised valleys are commonly associated with stratigraphic onlap of older areas upland areas which have been uplifted, tectonically deformed and then are subsequently buried as the region subsides.",
+        "Code": "IncisedValley.BedrockConstrained",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:IncisedValley.Undifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "IncisedValley, Undifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "1160",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Incised valley, undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Incised valleys are depositional features deposited in valley systems that are cut by fluvial incision, typically associated with a drop in base level. Incised valleys are further subdivided based upon the nature of the substrate into which the valley has been cut, namely bedrock or alluvium.",
+        "Code": "IncisedValley.Undifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Overbank",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Overbank",
+        "NameAlias": [
+          {
+            "AliasName": "1170",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Overbank",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Fluvial systems can be subdivided into two key components. The channel and the overbank. The overbank deposits include the product of a range of processes that occur outside of the channel. These are commonly non-reservoir although they can contain some reservoir quality sands.",
+        "Code": "Overbank",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:DuneComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DuneComplex",
+        "NameAlias": [
+          {
+            "AliasName": "1210",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Dune complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The majority of aeolian deposits are comprised on dune and interdune deposits. Dunes make take on a variety of forms depending upon the sediment supply and the wind conditions. The nature of the interdunes within a dune complex are controlled by the water table. A key, and often overlooked aspect of dune deposits is the importance of subsidence and bedform climb as a mechanism for preserving deposits.",
+        "Code": "DuneComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Sandsheet",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sandsheet",
+        "NameAlias": [
+          {
+            "AliasName": "1220",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Sandsheet",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Sandsheets are extensive deposits of wind-blown sand that are not associated with the formation of dune bedforms. They are characterised by thick deposits of wind rippled sand. A number of factors lead to the development of a sandsheet rather than a dune field (Frybegrer ) typically associated with instability in the wind or frequent flooding.",
+        "Code": "Sandsheet",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Interdune",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Interdune",
+        "NameAlias": [
+          {
+            "AliasName": "1230",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Interdune",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Interdune areas occur in the low lying areas between aeolian dunes. Interdunes are classified as either dry or wet (damp), depending upon the level of the water table. Dry interdunes are typically poor reservoir facies and can form baffles in otherwise good quality aeolian reservoirs",
+        "Code": "Interdune",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Lacustrine",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lacustrine",
+        "NameAlias": [
+          {
+            "AliasName": "1310",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lacustrine",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lacustrine deposits away from the lake shoreline are dominantly mudstones. Their detailed character will depending upon the nature of the climate and the depth of the lake. Lakes are commonly stratified and deep water systems will often be very organic rich and my produce source rocks. Lakes in more arid climates may include evaporites and carbonates. Cyclicity is common. Small turbidites may be present.",
+        "Code": "Lacustrine",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LacustrineDelta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LacustrineDelta",
+        "NameAlias": [
+          {
+            "AliasName": "1320",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lacustrine delta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lacustrine deltas are common where rivers enter lakes. They are comparable to fluvial dominated marine deltas because wave action is typically minor and tidal reworking is non-existent within lakes. Lacustrine deltas may be shallow or deep water depending upon the physiography of the receiving basin. They are highly sensitive to changes in lake level which may occur very rapidly.",
+        "Code": "LacustrineDelta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LacustrineNonDeltaicShoreline",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LacustrineNonDeltaicShoreline",
+        "NameAlias": [
+          {
+            "AliasName": "1330",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lacustrine non deltaic shoreline",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The shoreline of the lake, away from the fluvial input point will dominated by wave processes but given the limited fetch the waves will be small and there will be limited amounts of longshore drift. The lacustrine shoreface will typically be thin. Lacustrine shorelines are highly sensitive to changes in lake level which may occur very rapidly.",
+        "Code": "LacustrineNonDeltaicShoreline",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialPlainUndifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialPlainUndifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "1411",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial plain undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A large sediment body deposited by glacial, braided meltwater streams. A braided river plain, also know as outwash plain. 1-10's km wide, 1-100 km long. Thickness highly variable and controlled by topography. Well sorted, rounded and sub-rounded sands and gravels. Proximal parts will holder higher degree of coarser material. Multiple erosional interval contacts.",
+        "Code": "GlacialPlainUndifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialDeltaUndifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialDeltaUndifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "1421",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial delta undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A glacial landform formed as streams of melt water  empty their water and sediment into another body of water, such as an ocean or lake",
+        "Code": "GlacialDeltaUndifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialDeltaTop",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialDeltaTop",
+        "NameAlias": [
+          {
+            "AliasName": "1422",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial delta top",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "See Delta Top for description.",
+        "Code": "GlacialDeltaTop",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialLake",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialLake",
+        "NameAlias": [
+          {
+            "AliasName": "1423",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial lake",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Proglacial  proximal and distal lake sedimentation is characterised from meltwater streams (delta/fans) or density currents (proximal) and by settling from suspension and from the meltwater plume in seasonal cycles (distal).  Fine silts and clay bedded and laminated (distal) Interbedded fine sands and silts (proximal). Subordinate coarse sands in lenses. Dropstone and varves could be present.",
+        "Code": "GlacialLake",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Canyon",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Canyon",
+        "NameAlias": [
+          {
+            "AliasName": "3110",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Canyon",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Canyons form from rivers flowing over a flat plateau. Over geological time, the river will erode less resistant material first, with the resistant valley sides, leaving a large ravine through the valley. Over time this deepens creating the canyon. The less resistant shales, clays and muds are washed away with the flowing river, leaving the hard walls behind. Canyons can form as a result of faulting or crustal extension. They can also form as submarine canyons due to turbidity currents and mass transit complexes. Canyons preserve the geological record in the steep walls, holding information about past geological climates",
+        "Code": "Canyon",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ShelfIncisedCanyon",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ShelfIncisedCanyon",
+        "NameAlias": [
+          {
+            "AliasName": "3120",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shelf incised canyon",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Shelf incised canyons are steep-walled, straight or sinuous valleys with V-shaped cross sections and steep valley floors cutting into the basin shelf.",
+        "Code": "ShelfIncisedCanyon",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Contourite",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Contourite",
+        "NameAlias": [
+          {
+            "AliasName": "3130",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Contourite",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Contourites is general term for all types of bottom current deposits following bathymetric curves -  i.e. thermohaline, wind, tide, and baroclinic circulatory current deposits. Contourites commonly form by contour currents eroding, circulating, and depositing material at the base of the continental slope. The currents can flow in all directions and around or above obstacles. Contourite deposits can range from 100 km2 to over 100,000 km2. Common contourite categories are defined by grain sizes as; muddy contourites, silty contourites, sandy contourites, gravel-lag contourites, and bioclastic contourites.",
+        "Code": "Contourite",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ChannelComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ChannelComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3140",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Channel complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A Channel complex consist of multiple channel fills connected spatially.",
+        "Code": "ChannelComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ErosionalChannelComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ErosionalChannelComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3150",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Erosional channel complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Channels occur on the slope, in canyons and in the upper part of the deep water fan. Channels have sharp erosional bases and are between 3 km and 200 m wide. Channels that occur in canyons are often vertically stacked and amalgamated and are associated with internal levees. They may be sinuous to straight.",
+        "Code": "ErosionalChannelComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LeveedChannelComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LeveedChannelComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3160",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Leveed channel complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Levees complexes occur adjacent to  channels and are formed when flow in the channel exceeds the bank full depth and water floods on to the basin floor caring both suspended and bed load sediment with it. The initial deposits of the flood event deposit the bed load sediment adjacent to the main channel creating a positive topographic feature called a levee. The levee is comprised of stacked crevasse splays, fed by crevasse channels.",
+        "Code": "LeveedChannelComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:StructurallyConfinedChannelComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "StructurallyConfinedChannelComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3170",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Structurally confined channel complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Channel complex bounded by structurally formed topographical elements on the sea-floor (e.g. faults, folds, salt diapirs).",
+        "Code": "StructurallyConfinedChannelComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:WeaklyConfinedChannelComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WeaklyConfinedChannelComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3180",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Weakly confined channel complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Channel complex confined/bounded by rather subtle elements of seafloor topography e.g. pre-existing shallow depositional elements, low-throw faults, insipient anticline hinge.",
+        "Code": "WeaklyConfinedChannelComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LobeComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LobeComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3210",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lobe complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "a stack of genetics linked lobes with associated feeder channel and overbank fines. Bound about and below by semi regional or regional drapes.",
+        "Code": "LobeComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SemiConfinedLobeComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SemiConfinedLobeComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3220",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Semi confined lobe complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lobe partly/locally confined to structural or depositional elements on the seafloor.",
+        "Code": "SemiConfinedLobeComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ConfinedLobeComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ConfinedLobeComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3230",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Confined lobe complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lobe complex confined to structural or depositional boundaries on the seafloor. Confinement can be related to ponding or only lateral restriction/bounding by elements of basin floor topography, e.g. rising anticline.",
+        "Code": "ConfinedLobeComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:MassTransportComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MassTransportComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3240",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Mass transport complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Mass transport complexes are the deposits of a series of gravity driven processes that result from the failure of a sub marine slope.",
+        "Code": "MassTransportComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubmarineFan",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubmarineFan",
+        "NameAlias": [
+          {
+            "AliasName": "3250",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Submarine fan",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The term  submarine fan  refers loosely to cone-like accumulations of sediments deposited in deep-marine environments at a change of slope, normally at the mouths of submarine canyons. They are constructed principally from the deposits of sediment gravity flows (mainly turbidity currents and debris flows) as terrigenous and shallow marine sediment is redistributed into deeper water. Walker (1978) combined early depositional models into one comprehensive submarine-fan model composed of a feeder canyon, distributary channels, proximal and distal lobes, all sitting on the basin plan. Submarine fans are however complex morphological features where the size, geometry and architectural element distribution are controlled by tectonic setting, basin physiography and sediment input. Submarine fans vary in size from a few kilometers radius to depositional systems covering over a million square kilometers and forming some of the largest geomorphological features on Earth.",
+        "Code": "SubmarineFan",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:PerchedLobeComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PerchedLobeComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3410",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Perched lobe complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lobe complex deposited on a steep gradient on the upper to middle slope (intraslope), not at the terminus of gravity flow system e.g. a submarine fan. Such lobe complex called also intraslope lobe complex, often evolves into a transient fan and shows evidence of incision and sediment bypass.",
+        "Code": "PerchedLobeComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:PondedLobeComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PondedLobeComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3420",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Ponded lobe complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lobe confined to structural or depositional elements on the seafloor. Ponding refers to complete or nearly complete spatial confinement.",
+        "Code": "PondedLobeComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:InjectiteComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "InjectiteComplex",
+        "NameAlias": [
+          {
+            "AliasName": "3510",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Injectite complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Injectites are sedimentary dykes, where fluidised sediment exploits a weakness in the carrier bed and cross-cuts the sedimentary strata. Injectites can occur passively due to water, wind, and gravity, or due to overpressuring from another source. Injectites can be a few metres to kilometres thick. Injectites are most commonly sandstone but can be muds, siltstone, salts, shale, or carbonate material precipitating in a rock fracture. They are more commonly near-vertical, as opposed to sheet injections, which are bed concordant or horizontal.",
+        "Code": "InjectiteComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ShelfEdgeDelta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ShelfEdgeDelta",
+        "NameAlias": [
+          {
+            "AliasName": "3610",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shelf edge delta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Shelf edge delta is a delta that is located at the transit likely to be able to prograde across the shelf to the shelf edge when the relative sea level is constant or falling. Shelf edge deltas are therefore more common during falling or lowstand stages of the relative sea level cycles.",
+        "Code": "ShelfEdgeDelta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Hemipelagic",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hemipelagic",
+        "NameAlias": [
+          {
+            "AliasName": "3720",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hemipelagic",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Hemipelagic",
+        "Code": "Hemipelagic",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticDeepMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:DeltaFront",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DeltaFront",
+        "NameAlias": [
+          {
+            "AliasName": "2111",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Delta front",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The delta front is the offshore, sloping section of a delta before the pro-delta. The delta front is a deposition centre and the rapid sedimentation rates may give way to growth faulting and submarine slumping.",
+        "Code": "DeltaFront",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:DeltaTop",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DeltaTop",
+        "NameAlias": [
+          {
+            "AliasName": "2121",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Delta top",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The delta top is characterised by distributary channels with irregular depositional patterns, keeping the delta plain above sea-level. It is a low elevation floodplain forming at the mouth of a river. The upper delta top is dominated by fluvial processes, and the bottom is dominated by tidal and wave processes.",
+        "Code": "DeltaTop",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Prodelta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Prodelta",
+        "NameAlias": [
+          {
+            "AliasName": "2122",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Prodelta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The pro-delta is the furthest depositional section of a delta complex, where the finest material is deposited, on the seaward side of deep and shallow water environments, before the offshore finer deposits. The pro-delta interfingers with the lower delta front facies and passes to the offshore.",
+        "Code": "Prodelta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:FanDelta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "FanDelta",
+        "NameAlias": [
+          {
+            "AliasName": "2123",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Fan delta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A fan delta is a depositional feature that is formed where an alluvial fan develops directly in a body of standing water from an adjacent highland. Consequently, fan delta deposition are often associated with active basin margins. The subaqueous front of the fan-delta has a relatively steep, angle-of-repose slope. Sedimentation along the delta front commonly produces large, basinward-dipping foresets. Fan deltas are very varied in their morphology and three broad types have been recognized on the basis of gradient and water depth of the coastal shelf, namely shelf-type (shallow water) fan deltas, slope-type fan deltas, and Gilbert-type fan deltas. Fan delta deposits are generally coarse-grained. Distributary systems tend to be braided. Sediment is supplied to the delta front from where it avalanches down-slope by gravitational forces (proximal slumps, debris flows and more distal turbidite deposits). The prodelta of the fan is generally dominated by fine-grained distal turbidite sandstone beds interbedded with mudstones. As the fan-delta prograde, a vertical profile will show an upward coarsening trend.",
+        "Code": "FanDelta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:EstuaryCentralBasin",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EstuaryCentralBasin",
+        "NameAlias": [
+          {
+            "AliasName": "2221",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Estuary central basin",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Estuaries are classified with two end members; tide-dominated estuary and storm-dominated estuary. The wave-dominated estuaries typically possess a well-defined tripartite subdivision: an outer marine sand body comprised of barrier, washover, tidal inlet and flood/ebb tidal delta deposits; a middle fine-grained (generally muddy) central basin; and an inner sand-rich bay-head delta. The estuary central basin is generally not present within the tide-dominated estuary. In vertical profile, fine-grained central basin sediments ideally exhibit a symmetrical grain-size trend. A basal upward fining represents the transition from transgressive, fluvial and bay-head delta deposits. The finest sediments represent the center of the central basin, which is in turn overlain by an upward coarsening succession as either the flood-tidal delta or washover sediments are approached. The deposits within the estuary central basin reflect the low energy flow conditions present. It is dominated by the deposition of restricted, often anoxic mudstones with mixed salinity trace fossil assemblages. In shallow areas, wave-generated structures may also be formed. The influence of unidirectional river flow may become increasingly important landward. The estuary central basin is often characterized by thick, structureless fluid mud layers deposited around slack water. These have typically a thickness of up to several centimeters.",
+        "Code": "EstuaryCentralBasin",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SupraTidal",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SupraTidal",
+        "NameAlias": [
+          {
+            "AliasName": "2311",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Supra-tidal",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The supratidal flat is the area within a tide dominated coast line that lies above the mean high water mark and is periodically inundated during very high tides. It is a mud dominated setting commonly vegetated with salt marsh and is cut by tidal channels.",
+        "Code": "SupraTidal",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:InterTidal",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "InterTidal",
+        "NameAlias": [
+          {
+            "AliasName": "2321",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Inter-tidal",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The inter-tidal flat is the area on a tide dominated coastline that is periodically inundated by each tidal cycle. It is heterolithic and cut by tidal channels.",
+        "Code": "InterTidal",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubTidal",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubTidal",
+        "NameAlias": [
+          {
+            "AliasName": "2331",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Sub-tidal",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Sub tidal flats occur on tidally influenced and tidally dominated coasts below the mean-low tide mark. The may occur in the central portion of tidal estuaries in the subaqueous part of tidal deltas and on tidal shelves. Sediment in the sub-tidal zone is transported by the tidal current but the area is only exposed during extreme low tides or not at all. Sub-tidal flats are commonly moderately bioturbated and may be restricted to the estuary centre of extensive across the shelf. The subtidal flats pass seaward to the offshore and grade landward into inter-tidal flat deposits.",
+        "Code": "SubTidal",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:BarrierComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BarrierComplex",
+        "NameAlias": [
+          {
+            "AliasName": "2411",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Barrier complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Barrier islands are long, linear, coast parallel features of wave dominated coasts. They pass landward into lagoons and seaward into offshore deposits. The also occur across the mouth of wave dominated estuaries. Barrier island are most common in transgressive settings were the coastline is moving landward. Barriers migrate landward through a process of erosion on the seaward sand by waves washing sediment into the lagoon. As such barriers rarely leave very much in the rock record however examples have been described, especially if transgression is very rapid and drowns the barrier.",
+        "Code": "BarrierComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:BarrierInlet",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BarrierInlet",
+        "NameAlias": [
+          {
+            "AliasName": "2412",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Barrier inlet",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Where the ocean connects to bays or lagoons through a passage of shore-parallel barrier islands, inlets may form. This is typically at transgressive, wave-dominated coastlines. Inlets are small, narrow bodies of water where the ocean connects to the continent, or lakes reach into the land.",
+        "Code": "BarrierInlet",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Lagoon",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lagoon",
+        "NameAlias": [
+          {
+            "AliasName": "2441",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lagoon",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lagoons are coastal water bodies that are almost isolated from other water bodies such as the ocean. They form by wave action building barriers that lock a body of water from the ocean. Lagoons are mixed salt and freshwater, paralic waters. Oceanic water may enter lagoons through channels or by overspill and seepage through the barrier. Freshwater enters lagoons through surface runoff. Lagoons are typically shallow at a few metres  depth.",
+        "Code": "Lagoon",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:InterdistributaryBay",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "InterdistributaryBay",
+        "NameAlias": [
+          {
+            "AliasName": "2442",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Interdistributary bay",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Interdistributary bays are typically present in deltas where the dominating process is fluvial, generating deltas with a birdfoot morphology. These deltas may be open to the sea or sheltered behind barrier islands. The interdistributary bays are situated between the distributary channels. Within an interdistributary bay both marine and non-marine processes are co-acting. Non-marine processes are mostly generated by the main distributary channels, smaller short-lived channels and crevasse splays as they enter the marine realm. At this position, sedimentary structures generated by unidirectional currents predominates, resulting in different types of cross-stratification and current ripple cross-lamination. Waves are the importance marine process redistributing the sediment from channel mouths into other areas of the interdistributary bay. The typical sedimentary structures generated are small-scale hummocky cross-stratification and wave ripple cross-lamination. An interdistributary bay is commonly coarsening upwards, reflecting the shallowing of the bay as it fills in. However, there are usually areas of the bay that do not receive sand-sized clastic input, where no trend is apparent. A distributary bay will be filled with the bayhead deltas, wave-dominated bayfills or sub-bay. In many cases, it could be difficult to decide whether a facies association is dominated by marine or non-marine processes, as these often interact. In such a case, a detailed analysis of the vertical succession is needed.",
+        "Code": "InterdistributaryBay",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:BayHead",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BayHead",
+        "NameAlias": [
+          {
+            "AliasName": "2443",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Bay head",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Deltaic units that occur where a fluvial system enters a bay or lagoon. They occur in a wide variety of coastal systems including wave dominated lagoonal coastlines, estuaries and in fluvial dominated delta systems between the major lobes of the delta.",
+        "Code": "BayHead",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Backshore",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Backshore",
+        "NameAlias": [
+          {
+            "AliasName": "2501",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Backshore",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The backshore is furthest landward area of a beach before the coastline and is only covered under extreme high tides and storm surges. The backshore is typically characterised by berms. The backshore is a seasonal deposit, with relative sea-level rise and fall during summer and winter months. If preserved, the backshore can make a very good reservoir.",
+        "Code": "Backshore",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:CoastalPlain",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CoastalPlain",
+        "NameAlias": [
+          {
+            "AliasName": "2502",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Coastal plain",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Coastal plains are subaerial planar landforms by the ocean. Coastal plains form as the eustatic or relative sea-level falls, exposing the subaqueous continental shelf. Coastal plains are extensive flats of sand and may extend far inland. Coastal plains may also be exposed due to increased sediment supply lifting the plain above sea level, or by marine transgression, increasing sediment in the system.",
+        "Code": "CoastalPlain",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Foreshore",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Foreshore",
+        "NameAlias": [
+          {
+            "AliasName": "2503",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Foreshore",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The foreshore is the area of beach deposition that lies within the tidal range i.e. it is subaerial during low-tide and subaqueous during high-tide. The foreshore extends offshore by around 5-20 metres.",
+        "Code": "Foreshore",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Shoreface",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shoreface",
+        "NameAlias": [
+          {
+            "AliasName": "2504",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shoreface",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The shoreface is the sloped surface that connects to the basin plain from the coast. It is the area between the shoreline at low-tide and the subaqueous basin floor. The shoreface can be divided into the upper- and lower-shoreface. In the upper, shallower section, the sediment has a stronger wave influence. There is less influence on the lower shoreface, where finer materials are deposited",
+        "Code": "Shoreface",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Shelf",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shelf",
+        "NameAlias": [
+          {
+            "AliasName": "2621",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shelf",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The shallow marine shelf is the area that lies in relatively shallow water seaward of the various shoreline types. In wave and fluvial dominated systems the shelf is typically mud dominated as it lies beneath mean storm wave base. The region may however receive that is introduced by larger storms. Such shelves are also local cross cut by sub-aqueous channels which are generated by geostrophic (storm related) or hyperpycnal (river related) currents. A key aspect is the width of the shelf which will have a fundamental impact in the nature of the processes at the shoreline. Wide shelves reduce wave action and enhance the relative important of tidal and fluvial processes, while narrow shells are typically associated with more wave dominated coastlines.",
+        "Code": "Shelf",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:OffshoreTransitionZone",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "OffshoreTransitionZone",
+        "NameAlias": [
+          {
+            "AliasName": "2631",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Offshore transition zone",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The offshore transition zone is the transition between the sand-dominated shoreface and the mud dominated shelf. It lies on the seaward side of the shoreface in wave dominated shallow marine systems. The OTZ is deposited between fair weather and storm wave base and is comprised of HCS sandstones, interbedded with bioturbated siltstones.",
+        "Code": "OffshoreTransitionZone",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Offshore",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Offshore",
+        "NameAlias": [
+          {
+            "AliasName": "2641",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Offshore",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Within wave dominated shorelines, the offshore zone is defined as the shelf area below storm wave base which is predominantly dominated by mud deposition. Exceptional storms may have some effect on this deeper part of the shelf by resuspending sediment from the offshore transition zone or by generating offshore directed sediment gravity flows below storm wave base. Preserved sediments will be mudstone-dominated with scattered, thin and often lenticular interbedded siltstone/sandstone including small scour surfaces. Within sediment starved shelf settings, deposition is achieved through a combination of hypopycnal or suspension settling processes. Sediments are the finest grained claystone to siltstone deposits. They are commonly dark and grey and highlight an elevated total organic carbon content. Ichnofauna diversity and abundance is typically lower than zones where episodic siltstone/sandstone thin interbeds make them more conductive to burrowing. Although mudstone and heterolithic interlaminated siltstone/sandstone deposited immediately down current of a river by hyperpycnal flows process often extend within the  offshore zone  as defined above, they are included in the prodelta depositional environment.",
+        "Code": "Offshore",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialDeltaSubaqueousUndifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialDeltaSubaqueousUndifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "2711",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial delta subaqueous undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The part of the glacial delta which is below sea level. Marine processes dominate the system. Include delta front and prodelta.",
+        "Code": "GlacialDeltaSubaqueousUndifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialDeltaFront",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialDeltaFront",
+        "NameAlias": [
+          {
+            "AliasName": "2712",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial delta front",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "See Delta Front",
+        "Code": "GlacialDeltaFront",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:GlacialDeltaProdelta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "GlacialDeltaProdelta",
+        "NameAlias": [
+          {
+            "AliasName": "2713",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Glacial delta prodelta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "See Prodelta",
+        "Code": "GlacialDeltaProdelta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:ClasticParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SabkhaUndifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SabkhaUndifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "1240",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Sabkha undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A sabkha is a coastal, supratidal mudflat or sandflat in which evaporite-saline minerals accumulate as the result of semiarid to arid climate. Sabkhas are gradational between land and intertidal zone within restricted coastal plains just above normal high-tide level. Within a sabkha, evaporite-saline minerals sediments typically accumulate below the surface of mudflats or sandflats. Evaporite-saline minerals, tidal-flood, and aeolian deposits characterize many sabkhas found along modern coastlines.",
+        "Code": "SabkhaUndifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporiteContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LacustrinePlayaEphemeral",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LacustrinePlayaEphemeral",
+        "NameAlias": [
+          {
+            "AliasName": "9110",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lacustrine-playa-ephemeral",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Playa, (Spanish: shore or beach), also called pan, flat, or dry lake, flat-bottom depression found in interior desert basins and adjacent to coasts within arid and semiarid regions, periodically covered by water that slowly filtrates into the ground water system or evaporates into the atmosphere, causing the deposition of salt, sand, and mud along the bottom and around the edges of the depression.",
+        "Code": "LacustrinePlayaEphemeral",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporiteContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LacustrineSaltLakePerennial",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LacustrineSaltLakePerennial",
+        "NameAlias": [
+          {
+            "AliasName": "9120",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lacustrine-salt lake-perennial",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "In perennial saline lakes are subaqueous lacustrine beds. They typically alternate with brine pan and sabkha salt beds in most active continental lakes. Changes from one depositional style to another relate to changes in inflow volume and chemistry and often indicate change in climate, fluvial supply and/or tectonics. Saline perennial lakes and pans typify the topographically lowest part of a endorheic lake basin. Most subaqueous lake sediments are dominated by carbonates and silicilcastics, higher salinity are less common. This reflects the hydrology need to form a permanent saline lake.",
+        "Code": "LacustrineSaltLakePerennial",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporiteContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:EolianInterdunalSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "EolianInterdunalSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9130",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Eolian-interdunal sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "An environment of coastal sedimentation characterized by arid or semiarid conditions above the level of high tide and by the absence of vegetation. Evaporites, aeolian deposits and tidal-flood deposits are common in sabkhas. The sabkha landscape includes salt flats, salty soils (halosols), scoured sand plains, and sand dunes. Wind erosion commonly forms a sabkha plain, known as a Stokes surface, where the strength of cohesion from water or crystalline salt is sufficient to bind sand grains in place. Windblown sand deposits may contain significant portions of salt-cemented silt-sand pellets and crystalline salt. Matrix association in aeolian sabkhas are nodular anhydrite, gypsum and displacive halite hosted in muddy aeolian matrices.",
+        "Code": "EolianInterdunalSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporiteContinental:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:CoastalSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CoastalSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9140",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Coastal sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The host matrix, and associated sedimentary structures, in which sabkha salts grow by capillary evaporation, along with the underlying sediments, is the sedimentological basis of most sabkha classification. Coastal sabkhas are dominated by coastal matrix association. Modern coastal sabkhas typically contain gypsum or halite and less often anhydrite",
+        "Code": "CoastalSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:DampSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DampSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9150",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Damp sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Damp sabkha",
+        "Code": "DampSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:WetSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "WetSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9160",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Wet sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Wet sabkha",
+        "Code": "WetSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SupraTidalSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SupraTidalSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9170",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Supra-tidal sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "coastal Sabkhas dominated by deposition in the supra tidal zone",
+        "Code": "SupraTidalSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:InterTidalSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "InterTidalSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "9180",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Inter-tidal sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "coastal Sabkhas dominated by deposition in the inter tidal zone",
+        "Code": "InterTidalSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Saltern",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Saltern",
+        "NameAlias": [
+          {
+            "AliasName": "9190",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Saltern",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "saltern  deposits are subaqueous units up to tens of meters thick that were deposited on the floors of evaporitic seaways. They are pure evaporites units with log signatures that can be correlated for lateral distances measured in tens to hundreds of km.",
+        "Code": "Saltern",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:EvaporitePlatform:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:MarginalPeritidal",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MarginalPeritidal",
+        "NameAlias": [
+          {
+            "AliasName": "5101",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Marginal peritidal",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Most proximal part of a ramp system that comprises 1. supratidal environment (i.e. the zone above the tidal range and are thus wet with seawater only during storm events, which transport carbonate sediment to form intraclast breccias called tempestite sand)  2. sabkha deposits 3. peritidal carbonates.  Within the tidal range and daily exposure to seawater. The areas are subject to storm events Periodic exposure to air often protected by barrier islands, thus tide dominated. Experience extremes of salinity hospitable to calcareous algal mats. Deposits are laterally persistent, evenly bedded limestone and dolostone that often preserves flat laminations and shallowing upward cycles that are often repeated to great thickness.",
+        "Code": "MarginalPeritidal",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SalinaAndSabkha",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SalinaAndSabkha",
+        "NameAlias": [
+          {
+            "AliasName": "5102",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Salina and Sabkha",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "The term salina (from Spanish) or sabkha (Arabian for salt flat) is used by sedimentologists to designate an arid, subaerially exposed environment (typically a salt-encrusted mudflat). The factors common to both marine and non-marine sabkhas are (1) an arid climate, (2) the dominance of subaerial exposure of the mudflats, punctuated by occasional flooding (seawater on marine sabkhas and meteoric waters on playas), and (3) deposition of evaporite minerals (such as gypsum and halite), subaqueously in ephemeral \"lakes\" but in the vadose zone and as efflorescent surface crusts during periods of subaerial exposure.",
+        "Code": "SalinaAndSabkha",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Lagoon.Carbonate",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lagoon, Carbonate",
+        "NameAlias": [
+          {
+            "AliasName": "5203",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Lagoon, Carbonate",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "These lower energy settings of the shelf interior are sheltered by a reef front or barrier island, which absorbs much of the wave energy. The lagoon\u2019s connection to the open ocean and the climate dictate the style of carbonate deposits developed (carbonate dominated in wet climate, evaporite dominated in arid climate). Carbonate lagoons contain fine-grained carbonate mudstone and wackestone.  The shape and internal structure of carbonate lagoons is somewhat similar to that of clastic coastlines. Breaks in the barrier ridge by tidal channels allow tidal currents to form ebb- and flood-tidal deltas similar to clastic barrier settings . Behind the shelter of a barrier island, carbonates can be found\u00a0develop great\u00a0variability\u00a0in porosity, probably\u00a0because subaerial exposure can leave a diagenetic\u00a0overprint on the facies, which can complicate hydrocarbon exploration in carbonate systems.",
+        "Code": "Lagoon.Carbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LowEnergyInnerRamp",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LowEnergyInnerRamp",
+        "NameAlias": [
+          {
+            "AliasName": "5211",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Low energy inner ramp",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Inner ramp characterized by lower energy environment and less wave agitation, and characterized by low energy facies",
+        "Code": "LowEnergyInnerRamp",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HighEnergyInnerRamp",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HighEnergyInnerRamp",
+        "NameAlias": [
+          {
+            "AliasName": "5212",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "High energy inner ramp",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Inner ramp characterized by high energy environment and  high level of wave agitation and characterized by high energy facies",
+        "Code": "HighEnergyInnerRamp",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ShorelineDetachedHighEnergyBelt",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ShorelineDetachedHighEnergyBelt",
+        "NameAlias": [
+          {
+            "AliasName": "5221",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shoreline-detached high energy belt",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Platform shelf interior characterized by lower energy environment and less wave agitation, and characterized by low energy facies",
+        "Code": "ShorelineDetachedHighEnergyBelt",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:LowEnergyPlatformInterior",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "LowEnergyPlatformInterior",
+        "NameAlias": [
+          {
+            "AliasName": "5311",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Low energy platform interior",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Platform shelf interior characterized by high energy environment and  high level of wave agitation and characterized by high energy facies",
+        "Code": "LowEnergyPlatformInterior",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HighEnergyPlatformInterior",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HighEnergyPlatformInterior",
+        "NameAlias": [
+          {
+            "AliasName": "5312",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "High energy platform interior",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A zone with pronounced relief (subaqueous or subaerial) in the inner ramp characterized by a high energy facies belt protecting the low energy inner ramp setting and peritidal zones from the higher wave energies. Shoreline-detached high energy belts are typically associated with high energy inner ramp setting.",
+        "Code": "HighEnergyPlatformInterior",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:ShoalMargin",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ShoalMargin",
+        "NameAlias": [
+          {
+            "AliasName": "5321",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Shoal-margin",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Platform shelf margin dominated by  with high energy shoals with grainstones of either organic, microbial or inorganic origin",
+        "Code": "ShoalMargin",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:BuildupMargin",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BuildupMargin",
+        "NameAlias": [
+          {
+            "AliasName": "5322",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Buildup-margin",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Platform shelf margin dominated by buildup growth or reefal growth by organisms that allow to build autogenic relief by skeletal growth (such as corals) or encrusting/bounding growth (microbial boundstones, algal boundstone). For a marginal reel complex, it would include both the reef crest, reef flat, back reef (transition into platform interior) and reef front (transition into the upper slope)",
+        "Code": "BuildupMargin",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:CarbonateParalicShallowMarine:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SillComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SillComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7511",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Sill complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Complex of sill intrusions. A sill is a tabular sheet intrusion that has intruded between older layers of sedimentary rock, beds of volcanic lava or tuff, or along the direction of foliation in metamorphic rock. A sill is a concordant intrusive sheet, meaning that a sill does not cut across pre-existing rock beds. Stacking of sills builds a sill complex and a large magma chamber at high magma flux.",
+        "Code": "SillComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:DikeSwarmComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "DikeSwarmComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7512",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Dike swarm complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Swarm or complex of dykes. A dike is a discordant intrusive sheet, which does cut across older rocks. Sills are fed by dikes, except in unusual locations where they form in nearly vertical beds attached directly to a magma source. The rocks must be brittle and fracture to create the planes along which the magma intrudes the parent rock bodies, whether this occurs along pre-existing planes between sedimentary or volcanic beds or weakened planes related to foliation in metamorphic rock. These planes or weakened areas allow the intrusion of a thin sheet-like body of magma paralleling the existing bedding planes, concordant fracture zone, or foliations.",
+        "Code": "DikeSwarmComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Laccolith",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Laccolith",
+        "NameAlias": [
+          {
+            "AliasName": "7513",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Laccolith",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A laccolith is a sheet-like intrusion (or concordant pluton) that has been injected within or between layers of sedimentary rock (when the host rock is volcanic, the laccolith is referred to as a cryptodome). The pressure of the magma is high enough that the overlying strata are forced upward and folded, giving the laccolith a dome or mushroom-like form (or possibly conical or wedge-shape) with a generally planar base.",
+        "Code": "Laccolith",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Pluton",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pluton",
+        "NameAlias": [
+          {
+            "AliasName": "7515",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Pluton",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Pluton, body of intrusive igneous rock the size, composition, shape, or exact type of which is in doubt; when such characteristics are known, more limiting terms can be used. Thus, plutons include dikes, laccoliths, batholiths, sills, and other forms of intrusions.",
+        "Code": "Pluton",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HydrothermalVentComplexSubSurfacePipe",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HydrothermalVentComplexSubSurfacePipe",
+        "NameAlias": [
+          {
+            "AliasName": "7516",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hydrothermal vent complex-sub-surface pipe",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Hydrothermal vent complex-sub-surface pipe)",
+        "Code": "HydrothermalVentComplexSubSurfacePipe",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HydrothermalVentComplexSurfaceVentEjecta",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HydrothermalVentComplexSurfaceVentEjecta",
+        "NameAlias": [
+          {
+            "AliasName": "7517",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hydrothermal vent complex-surface vent-ejecta",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Hydrothermal vent complex-surface vent-ejecta)",
+        "Code": "HydrothermalVentComplexSurfaceVentEjecta",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousIntrusive:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:TabularLavaFlowComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TabularLavaFlowComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7101",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Tabular lava flow complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lava flow complex composed of tabular-classic lave flows. Laterally extensive thick (over 50m) flows often well developed columnar jointing",
+        "Code": "TabularLavaFlowComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:CompoundBraidedLavaFlowComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CompoundBraidedLavaFlowComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7102",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Compound braided lava flow complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lava flow complex composed of compound-braided flows, thin anastomosing pahoehoe flow sheets up to a few m thick",
+        "Code": "CompoundBraidedLavaFlowComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubaerialVolcano.ShieldVolcanoPointSourced",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubaerialVolcano (ShieldVolcanoPointSourced)",
+        "NameAlias": [
+          {
+            "AliasName": "7103",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Subaerial-volcano (shield volcano-point sourced)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A shield volcano is a type of point sourced eruption/ volcano named for its low profile. It is formed by the eruption of highly fluid (low viscosity) lava, which travels farther and forms thinner flows",
+        "Code": "SubaerialVolcano.ShieldVolcanoPointSourced",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubaerialVolcano.StratovolcanoPointSourced",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubaerialVolcano (StratovolcanoPointSourced)",
+        "NameAlias": [
+          {
+            "AliasName": "7104",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Subaerial-volcano (stratovolcano-point sourced)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A\u00a0stratovolcano, also known as a\u00a0composite volcano, is a\u00a0conical\u00a0volcano\u00a0built up by many layers (strata) of hardened\u00a0lava\u00a0and\u00a0tephra. stratovolcanoes are characterized by a steep profile with a summit crater and periodic intervals of explosive eruptions and effusive eruptions, although some have collapsed summit craters called calderas. The lava flowing from stratovolcanoes typically cools and hardens before spreading far, due to high viscosity. The magma forming this lava is often felsic, having high-to-intermediate levels of silica (as in rhyolite, dacite, or andesite), with lesser amounts of less-viscous mafic magma. Extensive felsic lava flows are uncommon, but have travelled as far as 15 km.",
+        "Code": "SubaerialVolcano.StratovolcanoPointSourced",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubaerialVolcano.SalderaPointSourced",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubaerialVolcano (SalderaPointSourced)",
+        "NameAlias": [
+          {
+            "AliasName": "7105",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Subaerial-volcano (saldera-point sourced)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A\u00a0caldera\u00a0is a large\u00a0cauldron-like hollow that forms shortly after the emptying of a\u00a0magma chamber\u00a0in a volcanic eruption. When large volumes of magma are erupted over a short time, structural support for the rock above the magma chamber is lost. The ground surface then collapses downward into the emptied or partially emptied magma chamber, leaving a massive depression at the surface (from one to dozens of kilometers in diameter). Although sometimes described as a crater, the feature is actually a type of sinkhole, as it is formed through subsidence and collapse rather than an explosion or impact.",
+        "Code": "SubaerialVolcano.SalderaPointSourced",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubaerialVolcano.CompositeSeveralVents",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubaerialVolcano (CompositeSeveralVents)",
+        "NameAlias": [
+          {
+            "AliasName": "7106",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Subaerial-volcano (composite-several vents)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Subaerial-volcano (composite-several vents)",
+        "Code": "SubaerialVolcano.CompositeSeveralVents",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:MaarVolcano",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MaarVolcano",
+        "NameAlias": [
+          {
+            "AliasName": "7107",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Maar volcano",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "A maar is a broad, low-relief volcanic crater caused by a phreatomagmatic eruption (an explosion which occurs when groundwater comes into contact with hot lava or magma). A maar characteristically fills with water to form a relatively shallow crater lake which may also be called a maar. Maars are shallow, flat-floored craters that scientists interpret as having formed above diatremes as a result of a violent expansion of magmatic gas or steam; deep erosion of a maar presumably would expose a diatreme. Maars range in size from 60 to 8,000 m across and from 10 to 200 m deep; most maars commonly fill with water to form natural lakes.",
+        "Code": "MaarVolcano",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:PyroclasticComplex.Proximal",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PyroclasticComplex (Proximal)",
+        "NameAlias": [
+          {
+            "AliasName": "7131",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Pyroclastic complex (proximal)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Proximal pyroclastic fall is a uniform deposit of material which has been ejected from a volcanic eruption or plume such as an ash fall or tuff. The deposits of pyroclastic falls follow a well sorted and well bedded trend. They exhibit mantle bedding - the deposits directly overlie pre-existing topography and maintain a uniform thickness over relatively short distances.  Pyroclastic air fall deposits are a result of 1) Ballistic transport of ejecta such as volcanic blocks, volcanic bombs and lapilli from volcanic explosions; 2)Deposition of material from convective clouds associated with pyroclastic flows such as coignimbrite falls; 3)Ejecta carried in gas streaming from a vent. The material under the action of gravity will settle out from an eruption plume or eruption column and 4) Ejecta settling from an eruptive plume or eruption column that is displaced laterally by wind currents and is dispersed over great distances. The deposits of pyroclastic falls follow a well sorted and well bedded trend. They exhibit mantle bedding - the deposits directly overlie pre-existing topography and maintain a uniform thickness over relatively short distances.",
+        "Code": "PyroclasticComplex.Proximal",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:PyroclasticComplex.DistalAshFallout",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PyroclasticComplex (DistalAshFallout)",
+        "NameAlias": [
+          {
+            "AliasName": "7132",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Pyroclastic complex (distal ash-fallout)",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Distal pyroclastic fall is  a distal part of deposit of material which has been ejected from a volcanic eruption or plume such as an ash fall or tuff.",
+        "Code": "PyroclasticComplex.DistalAshFallout",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Volcaniclastic",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Volcaniclastic",
+        "NameAlias": [
+          {
+            "AliasName": "7141",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Volcaniclastic",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Volcaniclastics are primarily composed of broken fragments (clasts) of volcanic rock. These encompass all clastic volcanic materials, regardless of what process fragmented the rock, how it was subsequently transported, what environment it was deposited in, or whether nonvolcanic material is mingled with the volcanic clasts. over 25 percent of the clasts are of volcanic origin",
+        "Code": "Volcaniclastic",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:Epiclastic",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Epiclastic",
+        "NameAlias": [
+          {
+            "AliasName": "7142",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Epiclastic",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Mixed volcaniclastics and non-volcanic clastics material (below 25 percent of the clasts are of volcanic origin). Volcaniclastics are materials composed of broken fragments (clasts) of volcanic rock. These encompass all clastic volcanic materials, regardless of what process fragmented the rock, how it was subsequently transported, what environment it was deposited in, or whether nonvolcanic material is mingled with the volcanic clasts.",
+        "Code": "Epiclastic",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:SubaqueousLavaFlowComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubaqueousLavaFlowComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7201",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Subaqueous lava flow complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lava flow complex deposited under subaqueous conditions",
+        "Code": "SubaqueousLavaFlowComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HyaloclastiteUndifferentiated",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HyaloclastiteUndifferentiated",
+        "NameAlias": [
+          {
+            "AliasName": "7311",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hyaloclastite-undifferentiated",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Hyaloclastite\u00a0is a volcanoclastic accumulation or breccia consisting of glass fragments (clasts) formed by quench fragmentation of lava flow surfaces during submarine or subglacial extrusion. It occurs as thin margins on the lava flow surfaces and between pillow lavas as well as in thicker deposits, more commonly associated with explosive, volatile-rich eruptions as well as steeper topography. Hyaloclastites form during volcanic eruptions\u00a0under water,\u00a0under ice\u00a0or where subaerial flows reach the sea or other bodies of water.",
+        "Code": "HyaloclastiteUndifferentiated",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HyaloclastiteDeltaProDeltaDebrisFlowReworked",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HyaloclastiteDeltaProDeltaDebrisFlowReworked",
+        "NameAlias": [
+          {
+            "AliasName": "7313",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hyaloclastite delta-pro-delta debris flow-reworked",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Lava deltas and foresets are highly unstable, collapse regularly and are further reworked in the form of debris flows deposited in the prodelta area.",
+        "Code": "HyaloclastiteDeltaProDeltaDebrisFlowReworked",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:HyaloclastiteDeltaForesets",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HyaloclastiteDeltaForesets",
+        "NameAlias": [
+          {
+            "AliasName": "7314",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Hyaloclastite delta-foresets",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "In\u00a0lava deltas, hyaloclastites form the main constituent of\u00a0foresets\u00a0formed ahead of the expanding delta. The foresets fill in the\u00a0seabed topography, eventually building up to sea level, allowing the subaerial flow to move forwards until it reaches the sea again.",
+        "Code": "HyaloclastiteDeltaForesets",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:PillowLavaComplex",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PillowLavaComplex",
+        "NameAlias": [
+          {
+            "AliasName": "7315",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Pillow lava complex",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Complex of pillow lavas; those are lavas that contain characteristic pillow-shaped structures that are attributed to the extrusion of the lava underwater, or subaqueous extrusion. Pillow lavas in volcanic rock are characterized by thick sequences of discontinuous pillow-shaped masses, commonly up to one meter in diameter. Pillow lavas are commonly of basaltic composition and form among others the upper part of Layer 2 of normal oceanic crust.",
+        "Code": "PillowLavaComplex",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "DepositionalGrossEnvironmentID": "{{NAMESPACE}}:reference-data--DepositionalGrossEnvironment:IgneousVolcanic:",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepositionalSubEnvironment:UndifferentiatedSubEnvironment",
+      "kind": "osdu:wks:reference-data--DepositionalSubEnvironment:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "UndifferentiatedSubEnvironment",
+        "NameAlias": [
+          {
+            "AliasName": "5999",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IntegerCode:"
+          },
+          {
+            "AliasName": "Undifferentiated Sub-Environment",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryCode:"
+          }
+        ],
+        "Description": "Undifferentiated depositional sub-environment, to be used when there are no further specifications at the SE level.",
+        "Code": "UndifferentiatedSubEnvironment",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "2023",
+        "Source": "Workbook ReferenceValues/Published/DepositionalSubEnvironment.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

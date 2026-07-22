@@ -1,0 +1,1181 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Steel",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel",
+        "Description": "Tubular Component made from 'Steel' based material",
+        "Code": "Steel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Brass",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brass",
+        "Description": "Tubular Component made from 'Brass' based material",
+        "Code": "Brass",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Monel",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Monel",
+        "Description": "Tubular Component made from 'Monel' based material",
+        "Code": "Monel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:StainlessSteel",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stainless Steel",
+        "Description": "Tubular Component made from 'StainlessSteel' based material",
+        "Code": "StainlessSteel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:253525Cr32Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "253525Cr32Ni3Mo",
+        "Description": "Tubular Component made from '253525Cr32Ni3Mo' based material",
+        "Code": "253525Cr32Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Super13Cr5Ni1Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super13Cr5Ni1Mo",
+        "Description": "Tubular Component made from 'Super13Cr5Ni1Mo' based material",
+        "Code": "Super13Cr5Ni1Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:9CrL80Casing%26Tubing",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "9CrL80 Casing & Tubing",
+        "Description": "Tubular Component made from '9CrL80Casing&Tubing' based material",
+        "Code": "9CrL80Casing&Tubing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelDrillCollar",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Drill Collar",
+        "Description": "Tubular Component made from 'SteelDrillCollar' based material",
+        "Code": "SteelDrillCollar",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Super13Cr4Ni1Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super 13Cr4Ni1Mo",
+        "Description": "Tubular Component made from 'Super13Cr4Ni1Mo' based material",
+        "Code": "Super13Cr4Ni1Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Alloy25DrillCollar",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alloy 25 Drill Collar",
+        "Description": "Tubular Component made from 'Alloy25DrillCollar' based material",
+        "Code": "Alloy25DrillCollar",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Alloy2827Cr31Ni4Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Alloy 2827Cr31Ni4Mo",
+        "Description": "Tubular Component made from 'Alloy2827Cr31Ni4Mo' based material",
+        "Code": "Alloy2827Cr31Ni4Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:13Cr1Ni",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "13Cr1Ni",
+        "Description": "Tubular Component made from '13Cr1Ni' based material",
+        "Code": "13Cr1Ni",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SuperDuplex26Cr6Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super Duplex 26Cr6Ni3Mo",
+        "Description": "Tubular Component made from 'SuperDuplex26Cr6Ni3Mo' based material",
+        "Code": "SuperDuplex26Cr6Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SuperDuplex25Cr7Ni4Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super Duplex 25Cr7Ni4Mo",
+        "Description": "Tubular Component made from 'SuperDuplex25Cr7Ni4Mo' based material",
+        "Code": "SuperDuplex25Cr7Ni4Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelLinePipeASTM",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Line Pipe ASTM",
+        "Description": "Tubular Component made from 'SteelLinePipeASTM' based material",
+        "Code": "SteelLinePipeASTM",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelCasing%26Tubing",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Casing & Tubing",
+        "Description": "Tubular Component made from 'SteelCasing&Tubing' based material",
+        "Code": "SteelCasing&Tubing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelDrillPipe",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Drill Pipe",
+        "Description": "Tubular Component made from 'SteelDrillPipe' based material",
+        "Code": "SteelDrillPipe",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelLinePipe",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Line Pipe",
+        "Description": "Tubular Component made from 'SteelLinePipe' based material",
+        "Code": "SteelLinePipe",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelCoiledTubing",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Coiled Tubing",
+        "Description": "Tubular Component made from 'SteelCoiledTubing' based material",
+        "Code": "SteelCoiledTubing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:1515LCDrillCollar",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1515LC Drill Collar",
+        "Description": "Tubular Component made from '1515LCDrillCollar' based material",
+        "Code": "1515LCDrillCollar",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:1515LC",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "1515LC",
+        "Description": "Tubular Component made from '1515LC' based material",
+        "Code": "1515LC",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:CRAC27615Cr60Ni16Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CRAC27615 Cr60Ni16Mo",
+        "Description": "Tubular Component made from 'CRAC27615Cr60Ni16Mo' based material",
+        "Code": "CRAC27615Cr60Ni16Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:13CrL80Casing%26Tubing",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "13CrL80 Casing & Tubing",
+        "Description": "Tubular Component made from '13CrL80Casing&Tubing' based material",
+        "Code": "13CrL80Casing&Tubing",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SteelLowAlloySteel",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel Low Alloy Steel",
+        "Description": "Tubular Component made from 'SteelLowAlloySteel' based material",
+        "Code": "SteelLowAlloySteel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:13Cr",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "13Cr",
+        "Description": "Tubular Component made from '13Cr' based material",
+        "Code": "13Cr",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Duplex25Cr7Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Duplex 25 Cr7Ni3Mo",
+        "Description": "Tubular Component made from 'Duplex25Cr7Ni3Mo' based material",
+        "Code": "Duplex25Cr7Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Super13Cr5Ni2Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super 13 Cr5Ni2Mo",
+        "Description": "Tubular Component made from 'Super13Cr5Ni2Mo' based material",
+        "Code": "Super13Cr5Ni2Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Super13Cr5Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Super 13 Cr5Ni3Mo",
+        "Description": "Tubular Component made from 'Super13Cr5Ni3Mo' based material",
+        "Code": "Super13Cr5Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:Duplex22Cr5Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Duplex 22 Cr5Ni3Mo",
+        "Description": "Tubular Component made from 'Duplex22Cr5Ni3Mo' based material",
+        "Code": "Duplex22Cr5Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:203522Cr35Ni4Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "203522 Cr35Ni4Mo",
+        "Description": "Tubular Component made from '203522Cr35Ni4Mo' based material",
+        "Code": "203522Cr35Ni4Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:255025Cr50Ni6Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "255025 Cr50Ni6Mo",
+        "Description": "Tubular Component made from '255025Cr50Ni6Mo' based material",
+        "Code": "255025Cr50Ni6Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:82521Cr42Ni3Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "82521 Cr42Ni3Mo",
+        "Description": "Tubular Component made from '82521Cr42Ni3Mo' based material",
+        "Code": "82521Cr42Ni3Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:G322Cr50Ni7Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "G322 Cr50Ni7Mo",
+        "Description": "Tubular Component made from 'G322Cr50Ni7Mo' based material",
+        "Code": "G322Cr50Ni7Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:9Cr1Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "9Cr1Mo",
+        "Description": "Tubular Component made from '9Cr1Mo' based material",
+        "Code": "9Cr1Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:CS",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CS",
+        "Description": "Tubular Component made from 'CS' based material",
+        "Code": "CS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:SST",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SST",
+        "Description": "Tubular Component made from 'SST' based material",
+        "Code": "SST",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:718",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "718",
+        "Description": "Tubular Component made from '718' based material",
+        "Code": "718",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:925",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "925",
+        "Description": "Tubular Component made from '925' based material",
+        "Code": "925",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:174PH",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "174PH",
+        "Description": "Tubular Component made from '174PH' based material",
+        "Code": "174PH",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:4140",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4140",
+        "Description": "Tubular Component made from '4140' based material",
+        "Code": "4140",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:42Cr4Mo",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "42Cr4Mo",
+        "Description": "Tubular Component made from '42Cr4Mo' based material",
+        "Code": "42Cr4Mo",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularMaterialType:4140110",
+      "kind": "osdu:wks:reference-data--TubularMaterialType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "4140110",
+        "Description": "Tubular Component made from '4140110' based material",
+        "Code": "4140110",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularMaterialType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

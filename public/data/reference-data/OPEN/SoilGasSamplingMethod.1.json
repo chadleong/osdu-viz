@@ -1,0 +1,203 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:ContinuousCO2",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ - Continuous CO2 monitors",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Continuous CO2 monitors"
+          }
+        ],
+        "Description": "In Situ field measurements Continuous CO2 Monitor-data logger ",
+        "Code": "ContinuousCO2",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:GroundGA",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ - Ground Gas Analyser",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Ground Gas Analyser"
+          }
+        ],
+        "Description": "In Situ field measurements Ground gas analyser",
+        "Code": "GroundGA",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:GreenhouseGA",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ - Greenhouse Gas Analyser",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Greenhouse Gas Analyser"
+          }
+        ],
+        "Description": "In Situ field measurements Greenhouse Gas Analyser",
+        "Code": "GreenhouseGA",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:PhotoionisationDetector",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "In Situ - Photoionisation Detector",
+        "NameAlias": [
+          {
+            "AliasName": "Field - Photoionisation Detector"
+          }
+        ],
+        "Description": "In Situ field measurements Photoionisation detector",
+        "Code": "PhotoionisationDetector",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:SoilGasTubes",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soil Gas Tubes",
+        "NameAlias": [
+          {
+            "AliasName": "Laboratory - Soil Gas tubes"
+          }
+        ],
+        "Description": "Laboratory analysis soil gas tubes",
+        "Code": "SoilGasTubes",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SoilGasSamplingMethod:SoilGasCylinders",
+      "kind": "osdu:wks:reference-data--SoilGasSamplingMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soil Gas Cylinders",
+        "NameAlias": [
+          {
+            "AliasName": "Laboratory - Soil Gas cylinders"
+          }
+        ],
+        "Description": "Laboratory analysis soil gas cylinders",
+        "Code": "SoilGasCylinders",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SoilGasSamplingMethod.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

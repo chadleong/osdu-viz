@@ -1,0 +1,199 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:Pipe",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pipe",
+        "ID": "Pipe",
+        "Description": "Used for handling drill pipe or casing between the pipe rack and rig floor.",
+        "Code": "Pipe",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:BOP",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "BOP",
+        "ID": "BOP",
+        "Description": "Heavy-duty gantry for lifting and positioning blowout preventers.",
+        "Code": "BOP",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:Riser",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Riser",
+        "ID": "Riser",
+        "Description": "Supports marine risers during installation or storage on offshore rigs.",
+        "Code": "Riser",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:Crane",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Crane",
+        "ID": "Crane",
+        "Description": "Overhead gantry integrated with cranes for heavy lifting operations.",
+        "Code": "Crane",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:Tubular",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tubular",
+        "ID": "Tubular",
+        "Description": "Specialized gantry for tubular handling in automated pipe-handling systems.",
+        "Code": "Tubular",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GantryType:Cantilever",
+      "kind": "osdu:wks:reference-data--GantryType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cantilever",
+        "NameAlias": [
+          {
+            "AliasName": "Cantilever Drilling Gantry",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "Cantilever Gantry",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "CantileverGantry",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Cantilever",
+        "Description": "Gantry that allows drilling package to extend outboard beyond the hull",
+        "Code": "Cantilever",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/GantryType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    }
+  ]
+}

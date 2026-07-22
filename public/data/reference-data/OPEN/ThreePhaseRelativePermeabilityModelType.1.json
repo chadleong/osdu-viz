@@ -1,0 +1,146 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ThreePhaseRelativePermeabilityModelType:Baker",
+      "kind": "osdu:wks:reference-data--ThreePhaseRelativePermeabilityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Baker",
+        "ID": "Baker",
+        "Description": "Three-phase oil relative permeabilities are determined by a saturation-weighted interpolation between oil\u2013water and oil\u2013gas data based on (Baker, L. E.: \"Three-Phase Relative Permeability Correlations\", paper SPE 17369 presented at the SPE Enhanced Oil Recovery Symposium, Tulsa, Oklahoma, USA (16-21 April 1988)).",
+        "Code": "Baker",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ThreePhaseRelativePermeabilityModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ThreePhaseRelativePermeabilityModelType:Stone1",
+      "kind": "osdu:wks:reference-data--ThreePhaseRelativePermeabilityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stone 1",
+        "NameAlias": [
+          {
+            "AliasName": "Stone I",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Stone1",
+        "Description": "Model based on the channel flow theory, which states that in any flow channel there is at most only one mobile fluid. Requires two sets of two-phase data: water-oil displacement and gas-oil displacement based on (Stone, H. L.: \"Probability Model for Estimating Three-Phase Relative Permeability\", paper SPE 2116, Journal of Petroleum Technology (1970)) .",
+        "Code": "Stone1",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ThreePhaseRelativePermeabilityModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ThreePhaseRelativePermeabilityModelType:Stone2",
+      "kind": "osdu:wks:reference-data--ThreePhaseRelativePermeabilityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stone 2",
+        "NameAlias": [
+          {
+            "AliasName": "Stone II",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Stone2",
+        "Description": "Model based on channel flow theory which uses of all four two-phase relative permeability relationships from the oil\u2013gas and oil\u2013water systems based on (Stone, H. L.: \"Estimation of Three-Phase Relative Permeability and Residual Oil Data\", Journal of Canadian Petroleum Technology (1973)). ",
+        "Code": "Stone2",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ThreePhaseRelativePermeabilityModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ThreePhaseRelativePermeabilityModelType:Linear",
+      "kind": "osdu:wks:reference-data--ThreePhaseRelativePermeabilityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Linear",
+        "NameAlias": [
+          {
+            "AliasName": "Linear interpretation",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Linear",
+        "Description": "In this model, relative permeability to oil is obtained by true linear interpolation between two-phase relative permeability curves (oil-water and oil-gas) based on (Baker, L. E.: \"Three-Phase Relative Permeability Correlations\", paper SPE 17369 presented at the SPE Enhanced Oil Recovery Symposium, Tulsa, Oklahoma, USA (16-21 April 1988)).",
+        "Code": "Linear",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ThreePhaseRelativePermeabilityModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

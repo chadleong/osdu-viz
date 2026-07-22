@@ -1,0 +1,178 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthMeasurementType:DrillBit",
+      "kind": "osdu:wks:reference-data--DepthMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drill Bit",
+        "NameAlias": [
+          {
+            "AliasName": "DR"
+          }
+        ],
+        "ID": "DrillBit",
+        "Description": "Depth measured by Drill string length (bit touching HUD)",
+        "Code": "DR",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthMeasurementType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthMeasurementType:Logging",
+      "kind": "osdu:wks:reference-data--DepthMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Logging",
+        "NameAlias": [
+          {
+            "AliasName": "LO"
+          }
+        ],
+        "ID": "Logging",
+        "Description": "Depth measured from wireline",
+        "Code": "LO",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthMeasurementType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthMeasurementType:Slickline",
+      "kind": "osdu:wks:reference-data--DepthMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slickline",
+        "NameAlias": [
+          {
+            "AliasName": "SL"
+          }
+        ],
+        "ID": "Slickline",
+        "Description": "Depth measured from slickline",
+        "Code": "SL",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthMeasurementType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthMeasurementType:CoilTubing",
+      "kind": "osdu:wks:reference-data--DepthMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coil Tubing",
+        "NameAlias": [
+          {
+            "AliasName": "CT"
+          }
+        ],
+        "ID": "CoilTubing",
+        "Description": "Depth measured using coiled tubing",
+        "Code": "CT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthMeasurementType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthMeasurementType:ElectricLine",
+      "kind": "osdu:wks:reference-data--DepthMeasurementType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Electric Line",
+        "NameAlias": [
+          {
+            "AliasName": "EL"
+          },
+          {
+            "AliasName": "E Line"
+          }
+        ],
+        "ID": "ElectricLine",
+        "Description": "Depth measured using electric line",
+        "Code": "ELine",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthMeasurementType.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    }
+  ]
+}

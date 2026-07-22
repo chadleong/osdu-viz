@@ -1,0 +1,565 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:TotalGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for TotalGas",
+        "Description": "Estimated volume for TotalGas.",
+        "Code": "TotalGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:TotalHydrocarbonGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for TotalHydrocarbonGas",
+        "Description": "Estimated volume for TotalHydrocarbonGas.",
+        "Code": "TotalHydrocarbonGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Non-AssociatedGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Non-AssociatedGas",
+        "Description": "Estimated volume for Non-AssociatedGas.",
+        "Code": "Non-AssociatedGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Non-AssociatedHydrocarbonGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Non-AssociatedHydrocarbonGas",
+        "Description": "Estimated volume for Non-AssociatedHydrocarbonGas.",
+        "Code": "Non-AssociatedHydrocarbonGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:AssociatedGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for AssociatedGas",
+        "Description": "Estimated volume for AssociatedGas.",
+        "Code": "AssociatedGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:AssociatedHydrocarbon",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for AssociatedHydrocarbon",
+        "Description": "Estimated volume for AssociatedHydrocarbon.",
+        "Code": "AssociatedHydrocarbon",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:GasCapGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for GasCapGas",
+        "Description": "Estimated volume for GasCapGas.",
+        "Code": "GasCapGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:GasCapHydrocarbonGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for GasCapHydrocarbonGas",
+        "Description": "Estimated volume for GasCapHydrocarbonGas.",
+        "Code": "GasCapHydrocarbonGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:DissolvedGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for DissolvedGas",
+        "Description": "Estimated volume for DissolvedGas.",
+        "Code": "DissolvedGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:DissolvedHydrocarbonGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for DissolvedHydrocarbonGas",
+        "Description": "Estimated volume for DissolvedHydrocarbonGas.",
+        "Code": "DissolvedHydrocarbonGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Condensate",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Condensate",
+        "Description": "Estimated volume for Condensate.",
+        "Code": "Condensate",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:CondensateGas",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for CondensateGas",
+        "Description": "Estimated volume for CondensateGas.",
+        "Code": "CondensateGas",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:CondensateOil",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for CondensateOil",
+        "Description": "Estimated volume for CondensateOil.",
+        "Code": "CondensateOil",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Oil",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Oil",
+        "Description": "Estimated volume for Oil.",
+        "Code": "Oil",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:CarbonDioxide",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for CarbonDioxide",
+        "Description": "Estimated volume for CarbonDioxide.",
+        "Code": "CarbonDioxide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:HydrogenSulfide",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for HydrogenSulfide",
+        "Description": "Estimated volume for HydrogenSulfide.",
+        "Code": "HydrogenSulfide",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Nitrogen",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Nitrogen",
+        "Description": "Estimated volume for Nitrogen.",
+        "Code": "Nitrogen",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Hydrocarbon",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Hydrocarbon",
+        "Description": "Estimated volume for Hydrocarbon.",
+        "Code": "Hydrocarbon",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Petroleum",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Petroleum",
+        "Description": "Estimated volume for Petroleum.",
+        "Code": "Petroleum",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirEstimatedVolumePropertyType:Water",
+      "kind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Estimated Volume for Water",
+        "Description": "Estimated volume for Water.",
+        "Code": "Water",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Authoring/ReservoirEstimatedVolumePropertyType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--UniaxialCycleType:MiniLoading",
+      "kind": "osdu:wks:reference-data--UniaxialCycleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mini Loading",
+        "ID": "MiniLoading",
+        "Description": "Mini loading refers to the application of a small or preliminary load to a sample, often used to precondition the material or to assess initial response characteristics before main loading.",
+        "Code": "MiniLoading",
+        "Source": "Workbook ReferenceValues/Published/UniaxialCycleType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UniaxialCycleType:MiniUnloading",
+      "kind": "osdu:wks:reference-data--UniaxialCycleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mini Unloading",
+        "ID": "MiniUnloading",
+        "Description": "Mini unloading involves the removal of the preliminary load applied during mini loading, used to observe the material's recovery and elastic properties after minor stress.",
+        "Code": "MiniUnloading",
+        "Source": "Workbook ReferenceValues/Published/UniaxialCycleType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UniaxialCycleType:MainLoading",
+      "kind": "osdu:wks:reference-data--UniaxialCycleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Main Loading",
+        "ID": "MainLoading",
+        "Description": "Main loading is the primary phase of applying significant stress or load to the sample, intended to test the material's behavior under expected operational conditions or to its failure point.",
+        "Code": "MainLoading",
+        "Source": "Workbook ReferenceValues/Published/UniaxialCycleType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UniaxialCycleType:MainUnloading",
+      "kind": "osdu:wks:reference-data--UniaxialCycleType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Main Unloading",
+        "ID": "MainUnloading",
+        "Description": "Main unloading involves the removal of the main load, allowing for the assessment of residual strains, permanent deformations, or damage incurred during the main loading phase.",
+        "Code": "MainUnloading",
+        "Source": "Workbook ReferenceValues/Published/UniaxialCycleType.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

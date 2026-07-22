@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTSafetyClassificationType:PSI",
+      "kind": "osdu:wks:reference-data--NPTSafetyClassificationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Process Safety Incident",
+        "ID": "PSI",
+        "InactiveIndicator": false,
+        "Description": "Process Safety Incident occurred",
+        "Code": "PSI",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTSafetyClassificationType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTSafetyClassificationType:HP",
+      "kind": "osdu:wks:reference-data--NPTSafetyClassificationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High Potential",
+        "ID": "HP",
+        "InactiveIndicator": false,
+        "Description": "High Potential for Process Safety incident",
+        "Code": "HP",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook Published/NPTSafetyClassificationType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NPTSafetyClassificationType:HPPSI",
+      "kind": "osdu:wks:reference-data--NPTSafetyClassificationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HIPO + PSI",
+        "ID": "HPPSI",
+        "InactiveIndicator": false,
+        "Description": "High Potential for Process Safety incident and Process Safety Incident occurred",
+        "Code": "HPPSI",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/NPTSafetyClassificationType.1.xlsx; commit SHA fe755adf.",
+        "CommitDate": "2025-04-09T10:58:49+00:00"
+      }
+    }
+  ]
+}

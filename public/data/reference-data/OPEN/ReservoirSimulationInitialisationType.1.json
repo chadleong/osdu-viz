@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationType:Enumerated",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Enumerated",
+        "ID": "Enumerated",
+        "Description": "The Reservoir Simulation is initialized without any equilibrium model (Non-equilibrium Initialisation) - and requires a phase by phase, enumerated, description of the phases.",
+        "Code": "Enumerated",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationType:Equilibrium",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equilibrium",
+        "ID": "Equilibrium",
+        "Description": "The Reservoir Simulation is initialized following a thermodynamic equilibrium model. ",
+        "Code": "Equilibrium",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationType:Mixed",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mixed",
+        "ID": "Mixed",
+        "Description": "The Reservoir Simulation is initialized by a combination of \"Enumerated\" and \"Equilibrium\" approaches.",
+        "Code": "Mixed",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

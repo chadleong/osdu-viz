@@ -1,0 +1,1937 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Adit",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Adit",
+        "NameAlias": [
+          {
+            "AliasName": "ADIT"
+          }
+        ],
+        "ID": "Adit",
+        "Description": "A horizontal or nearly horizontal entrance to an underground mine",
+        "Code": "Adit",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:ArtificialExposure",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Artificial exposure",
+        "NameAlias": [
+          {
+            "AliasName": "ARTEX"
+          }
+        ],
+        "ID": "ArtificialExposure",
+        "Description": "An artificially exposed surface like a road cut",
+        "Code": "ArtificialExposure",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Beach",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Beach",
+        "NameAlias": [
+          {
+            "AliasName": "BEACH"
+          }
+        ],
+        "ID": "Beach",
+        "Description": "A pebbly or sandy shore, especially by the sea between high- and low-water marks",
+        "Code": "Beach",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Biomass",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Biomass",
+        "NameAlias": [
+          {
+            "AliasName": "BIO"
+          }
+        ],
+        "ID": "Biomass",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Biomass power generation plant",
+        "Code": "Biomass",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Canal",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Canal",
+        "NameAlias": [
+          {
+            "AliasName": "CANAL"
+          }
+        ],
+        "ID": "Canal",
+        "Description": "A canal is an artificial waterway across a drainage divide that connects two drainage basins.",
+        "Code": "Canal",
+        "(COMPANY: insert comment)": "Fix formatting, clarification",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Cement",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cement",
+        "NameAlias": [
+          {
+            "AliasName": "CEM"
+          }
+        ],
+        "ID": "Cement",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:Factory\" with Name=\"Factory\" instead. Cement industrial factory",
+        "Code": "Cement",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Coal",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Coal",
+        "NameAlias": [
+          {
+            "AliasName": "COAL"
+          }
+        ],
+        "ID": "Coal",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Coal power generation plant",
+        "Code": "Coal",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Cogeneration",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cogeneration",
+        "NameAlias": [
+          {
+            "AliasName": "COG"
+          }
+        ],
+        "ID": "Cogeneration",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Cogeneration power generation plant",
+        "Code": "Cogeneration",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Deposit",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deposit",
+        "NameAlias": [
+          {
+            "AliasName": "DEPOSIT"
+          }
+        ],
+        "ID": "Deposit",
+        "Description": "A deposit refers to a naturally occurring accumulation of minerals, organic materials, or geological substances (e.g., tar sands) concentrated in the Earth's crust, often formed through long-term geological processes like sedimentation, chemical precipitation, or biological activity. ",
+        "Code": "Deposit",
+        "(COMPANY: insert comment)": "Wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:DredgeSite",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dredge site",
+        "NameAlias": [
+          {
+            "AliasName": "DREDGE"
+          }
+        ],
+        "ID": "DredgeSite",
+        "Description": "A dredge site is a specific location, typically in a body of water such as a river, seabed, or harbor, where material (e.g., sediment, minerals, or debris) is excavated or removed using dredging equipment to deepen channels, extract resources, or clean and maintain waterways.",
+        "Code": "DredgeSite",
+        "(COMPANY: insert comment)": "Wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Drillhole",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drillhole",
+        "NameAlias": [
+          {
+            "AliasName": "DRILLHOLE"
+          }
+        ],
+        "ID": "Drillhole",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:Wellbore\" with Name=\"Wellbore\" instead. Capture this relationship from master-data--Wellbore rather than master-data--GenericFacility. A hole drilled for the purpose of mineral exploration, mineral resource delineation or resource expansion",
+        "Code": "Drillhole",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Fen",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fen",
+        "NameAlias": [
+          {
+            "AliasName": "FEN"
+          }
+        ],
+        "ID": "Fen",
+        "Description": "A type of peat-accumulating wetland fed by mineral-rich ground or surface water",
+        "Code": "Fen",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Field",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Field",
+        "NameAlias": [
+          {
+            "AliasName": "FIELD"
+          }
+        ],
+        "ID": "Field",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use master-data--Field or SiteType \"Deposit\" instead, as appropriate. Mineral deposit that has been exploited for commercial purposes",
+        "Code": "Field",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, Field is its own master-data schema, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Fumarole",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fumarole",
+        "NameAlias": [
+          {
+            "AliasName": "FUMAROLE"
+          }
+        ],
+        "ID": "Fumarole",
+        "Description": "A vent that emits hot gases to the atmosphere, usually associated with past or current magmatic activity below",
+        "Code": "Fumarole",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Geothermal",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Geothermal",
+        "NameAlias": [
+          {
+            "AliasName": "GEOTH"
+          }
+        ],
+        "ID": "Geothermal",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Geothermal power generation plant",
+        "Code": "Geothermal",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Geyser",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Geyser",
+        "NameAlias": [
+          {
+            "AliasName": "GEYSER"
+          }
+        ],
+        "ID": "Geyser",
+        "Description": "A hot spring that intermittently erupts a spray of steam and hot water. Caused by the heating of groundwater within a confined opening in hot rock.",
+        "Code": "Geyser",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Hydro",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydro",
+        "NameAlias": [
+          {
+            "AliasName": "HYDR"
+          }
+        ],
+        "ID": "Hydro",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Hydro power generation plant",
+        "Code": "Hydro",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:IndustrialPlant",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Industrial Plant",
+        "NameAlias": [
+          {
+            "AliasName": "INDPLT"
+          }
+        ],
+        "ID": "IndustrialPlant",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:Factory\" with Name=\"Factory\" instead. Industrial factories including steel and cement",
+        "Code": "IndustrialPlant",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:InjectionSystem",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Injection System",
+        "NameAlias": [
+          {
+            "AliasName": "INJSYS"
+          }
+        ],
+        "ID": "InjectionSystem",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:InjectionSystem\" with Name=\"Injection System\" instead. An injection system or station from which fluids are injected through well(s) into a producing reservoir",
+        "Code": "InjectionSystem",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Lake",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lake",
+        "NameAlias": [
+          {
+            "AliasName": "LAKE"
+          }
+        ],
+        "ID": "Lake",
+        "Description": "A lake is a large, inland body of water, surrounded by land, and typically formed through geological or hydrological processes such as glacial activity, tectonic movements, or river flow.",
+        "Code": "Lake",
+        "(COMPANY: insert comment)": "Better description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Marsh",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Marsh",
+        "NameAlias": [
+          {
+            "AliasName": "MARSH"
+          }
+        ],
+        "ID": "Marsh",
+        "Description": "A marsh is a type of wetland characterized by waterlogged, nutrient-rich soil and dominated by herbaceous plants like grasses, reeds, and sedges.",
+        "Code": "Marsh",
+        "(COMPANY: insert comment)": "Better description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:MineDump",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mine dump",
+        "NameAlias": [
+          {
+            "AliasName": "MDUMP"
+          }
+        ],
+        "ID": "MineDump",
+        "Description": "A stockpile of mined overburden or ore that was not processed",
+        "Code": "MineDump",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Mine",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mine",
+        "NameAlias": [
+          {
+            "AliasName": "MINE"
+          }
+        ],
+        "ID": "Mine",
+        "Description": "A mine is an excavation or site where minerals, ores, or other valuable geological materials are extracted from the earth.",
+        "Code": "Mine",
+        "(COMPANY: insert comment)": "Clarify description. Note that this is not Mutually Exclusive from other entries, but it is not the focus of this cleanup, June 2025.",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Miscellaneous",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Miscellaneous",
+        "NameAlias": [
+          {
+            "AliasName": "MISC"
+          }
+        ],
+        "ID": "Miscellaneous",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use an appropriate SiteType or FacilityType instead. Various Oil sites (Refinery, Terminal, Tanks, raw crudes, Drill mud, Landfill)",
+        "Code": "Miscellaneous",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:MineTunnel",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mine tunnel",
+        "NameAlias": [
+          {
+            "AliasName": "MTUNNEL"
+          }
+        ],
+        "ID": "MineTunnel",
+        "Description": "A mine tunnel is a horizontal or nearly horizontal passageway in an underground mine.",
+        "Code": "MineTunnel",
+        "(COMPANY: insert comment)": "Clarification, syntax",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:MudPool",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Pool",
+        "NameAlias": [
+          {
+            "AliasName": "MUDPOOL"
+          }
+        ],
+        "ID": "MudPool",
+        "Description": "Mudpot, or mud pool, is a sort of acidic hot spring, or fumarole, with limited water",
+        "Code": "MudPool",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Nuclear",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nuclear",
+        "NameAlias": [
+          {
+            "AliasName": "NUCR"
+          }
+        ],
+        "ID": "Nuclear",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Nuclear power generation plant",
+        "Code": "Nuclear",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:OpenPitMine",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Open pit mine",
+        "NameAlias": [
+          {
+            "AliasName": "OPMINE"
+          }
+        ],
+        "ID": "OpenPitMine",
+        "Description": "An open pit mine is a mine in which the ore is exposed to the surface, generally being excavated from a pit.",
+        "Code": "OpenPitMine",
+        "(COMPANY: insert comment)": "Syntax, clarification",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Outcrop",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Outcrop",
+        "NameAlias": [
+          {
+            "AliasName": "OTCP"
+          }
+        ],
+        "ID": "Outcrop",
+        "Description": "An outcrop is bedrock or another type of rock formation visibly exposed on the surface of the earth.",
+        "Code": "Outcrop",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Petcoke",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Petcoke",
+        "NameAlias": [
+          {
+            "AliasName": "PETCO"
+          }
+        ],
+        "ID": "Petcoke",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Petcoke power generation plant",
+        "Code": "Petcoke",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Pit",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pit",
+        "NameAlias": [
+          {
+            "AliasName": "PIT"
+          }
+        ],
+        "ID": "Pit",
+        "Description": "Shallow surface pit or trench",
+        "Code": "Pit",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:PlayaLake",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Playa lake",
+        "NameAlias": [
+          {
+            "AliasName": "PLAYA"
+          }
+        ],
+        "ID": "PlayaLake",
+        "Description": "A playa lake is a dry or ephemeral lake, usually in interior desert basins or adjacent to the coast in arid or semiarid regions.",
+        "Code": "PlayaLake",
+        "(COMPANY: insert comment)": "Clarify description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Pond",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pond",
+        "NameAlias": [
+          {
+            "AliasName": "POND"
+          }
+        ],
+        "ID": "Pond",
+        "Description": "An artificial or natural pond, smaller than a lake",
+        "Code": "Pond",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Pool",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pool",
+        "NameAlias": [
+          {
+            "AliasName": "POOL"
+          }
+        ],
+        "ID": "Pool",
+        "Description": "A geothermal pool or hot lake",
+        "Code": "Pool",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Port",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Port",
+        "NameAlias": [
+          {
+            "AliasName": "PORT"
+          }
+        ],
+        "ID": "Port",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:ShippingPort\" with Name=\"Shipping Port\" instead. Shipping ports",
+        "Code": "Port",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:PowerPlant",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Power Plant",
+        "NameAlias": [
+          {
+            "AliasName": "POWPLT"
+          }
+        ],
+        "ID": "PowerPlant",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Power generation plant",
+        "Code": "PowerPlant",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:River",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "River",
+        "NameAlias": [
+          {
+            "AliasName": "RIVER"
+          }
+        ],
+        "ID": "River",
+        "Description": "A river is a natural flowing body of freshwater that moves along a defined channel, typically from higher to lower elevation, eventually emptying into a sea, lake, or another river.",
+        "Code": "River",
+        "(COMPANY: insert comment)": "Better description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:SaltFlat",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Salt flat",
+        "NameAlias": [
+          {
+            "AliasName": "SALTFLAT"
+          }
+        ],
+        "ID": "SaltFlat",
+        "Description": "Flat expanses of ground covered with salt and other minerals",
+        "Code": "SaltFlat",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:ShallowSurfaceCores",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shallow Surface Cores",
+        "NameAlias": [
+          {
+            "AliasName": "SCORE"
+          }
+        ],
+        "ID": "ShallowSurfaceCores",
+        "Description": "Var shallow surf cores, incl. piston-, vibra-, dart-, soft sed-, box-, but excl. drop- (SGC)",
+        "Code": "ShallowSurfaceCores",
+        "(COMPANY: insert comment)": "Problematic item; Not yet discussed",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Seabed",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Seabed",
+        "NameAlias": [
+          {
+            "AliasName": "SEABED"
+          }
+        ],
+        "ID": "Seabed",
+        "Description": "A location at the seafloor or ocean floor",
+        "Code": "Seabed",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Seep",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Seep",
+        "NameAlias": [
+          {
+            "AliasName": "SEEP"
+          }
+        ],
+        "ID": "Seep",
+        "Description": "A seep is a natural, slow release of liquid hydrocarbons, water, or gas from underground reservoirs to the Earth's surface",
+        "Code": "Seep",
+        "(COMPANY: insert comment)": "Needs wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Shaft",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shaft",
+        "NameAlias": [
+          {
+            "AliasName": "SHAFT"
+          }
+        ],
+        "ID": "Shaft",
+        "Description": "A vertical or steeply inclined passageway in an underground mine",
+        "Code": "Shaft",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Sinkhole",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sinkhole",
+        "NameAlias": [
+          {
+            "AliasName": "SINKHOLE"
+          }
+        ],
+        "ID": "Sinkhole",
+        "Description": "A depression in the ground created by erosion and the drainage of water, that has no natural external surface drainage",
+        "Code": "Sinkhole",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Solar",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solar",
+        "NameAlias": [
+          {
+            "AliasName": "SOLR"
+          }
+        ],
+        "ID": "Solar",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Solar power generation plant",
+        "Code": "Solar",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Spring",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spring",
+        "NameAlias": [
+          {
+            "AliasName": "SPRING"
+          }
+        ],
+        "ID": "Spring",
+        "Description": "A natural spring of water, of any temperature.",
+        "Code": "Spring",
+        "(COMPANY: insert comment)": "Needs wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Steel",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel",
+        "NameAlias": [
+          {
+            "AliasName": "STL"
+          }
+        ],
+        "ID": "Steel",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:Factory\" with Name=\"Factory\" instead. Steel industrial factory",
+        "Code": "Steel",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Storage",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Storage",
+        "NameAlias": [
+          {
+            "AliasName": "STOR"
+          }
+        ],
+        "ID": "Storage",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Storage power generation plant",
+        "Code": "Storage",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Stream",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stream",
+        "NameAlias": [
+          {
+            "AliasName": "STREAM"
+          }
+        ],
+        "ID": "Stream",
+        "Description": "A geomorphological stream is a naturally flowing watercourse shaped by geological and climatic processes, which contributes to the erosion, transportation, and deposition of sediments, thereby influencing the landforms and overall physical landscape in its drainage basin.",
+        "Code": "Stream",
+        "(COMPANY: insert comment)": "Wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:MineTailing",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mine tailing",
+        "NameAlias": [
+          {
+            "AliasName": "TAIL"
+          }
+        ],
+        "ID": "MineTailing",
+        "Description": "A pond, dam or dump in which mine tailings (waste materials from mining, such as rock, chemicals, and water), are stored",
+        "Code": "MineTailing",
+        "(COMPANY: insert comment)": "Wordsmithed description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:UndergroundMine",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Underground mine",
+        "NameAlias": [
+          {
+            "AliasName": "UGMINE"
+          }
+        ],
+        "ID": "UndergroundMine",
+        "Description": "An underground mine is a mine in which ore is not exposed to the surface and is accessed by shafts, adits, declines or ramps.",
+        "Code": "UndergroundMine",
+        "(COMPANY: insert comment)": "Clarify description",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Vented",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vented",
+        "NameAlias": [
+          {
+            "AliasName": "VENT"
+          }
+        ],
+        "ID": "Vented",
+        "Description": "Vented Site",
+        "Code": "Vented",
+        "(COMPANY: insert comment)": "Needs wordsmithed description; not yet discussed",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Waste",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Waste",
+        "NameAlias": [
+          {
+            "AliasName": "WAST"
+          }
+        ],
+        "ID": "Waste",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Waste power generation plant",
+        "Code": "Waste",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:WaveAndTidal",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wave and Tidal",
+        "NameAlias": [
+          {
+            "AliasName": "WAVTID"
+          }
+        ],
+        "ID": "WaveAndTidal",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Wave and Tidal power generation plant",
+        "Code": "WaveAndTidal",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Wellbore",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wellbore",
+        "NameAlias": [
+          {
+            "AliasName": "WELLBORE"
+          }
+        ],
+        "ID": "Wellbore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:Wellbore\" with Name=\"Wellbore\" instead. Capture this relationship from master-data--Wellbore rather than master-data--GenericFacility. A type of borehole, which is a narrow shaft that is drilled into the ground",
+        "Code": "Wellbore",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nOSDU classifies a Wellbore as a specialized Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Wind",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wind",
+        "NameAlias": [
+          {
+            "AliasName": "WIND"
+          }
+        ],
+        "ID": "Wind",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FacilityType:PowerPlant\" with Name=\"Power Plant\" instead. Wind power generation plant",
+        "Code": "Wind",
+        "(COMPANY: insert comment)": "Soft deprecate\n\nBy OSDU definitions, this is a Facility, not a Site",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:OpenSea",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Open Sea",
+        "ID": "OpenSea",
+        "Description": "Open sea is a location in an ocean or sea, far away from land, which is not further differentiated.",
+        "Code": "OpenSea",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SiteType:Slick",
+      "kind": "osdu:wks:reference-data--SiteType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slick",
+        "ID": "Slick",
+        "Description": "A slick is a layer or film of hydrocarbon oil floating on the surface of a natural body of water, such as an ocean, river, or lake, often as a result of an oil spill or natural seep. ",
+        "Code": "Slick",
+        "Source": "Workbook ReferenceValues/Published/SiteType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    }
+  ]
+}

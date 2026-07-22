@@ -1,0 +1,257 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Synthetic",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Synthetic",
+        "ID": "Synthetic",
+        "Description": "A synthetic fluid sample is artificially created in a laboratory by mixing known individual components (such as C1, C2, and C3 gases) to mimic a reservoir fluid's composition and properties. In contrast to a \"combined\"/\"re-combined\" fluid sample, a synthetic fluid sample does not require components to have physically originated from the relevant reservoir.",
+        "Code": "Synthetic",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Recombined",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Recombined",
+        "ID": "Recombined",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Combined\" with Name=\"Combined\" instead.This describes samples that are created through a recombination process involving 2 or more samples.",
+        "Code": "Recombined",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 8230d460.",
+        "CommitDate": "2025-01-09T12:46:36+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Commingled",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Commingled",
+        "ID": "Commingled",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use the attribute \"IsCommingledProductionFluid\" on master-data--Sample instead.  This describes samples which are obtained from the commingling of production streams from multiple reservoirs",
+        "Code": "Commingled",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:SubSampled",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "SubSampled",
+        "ID": "SubSampled",
+        "Description": "Indicates that a sample is a smaller portion of a larger parent sample, extracted from the parent through a sub-sampling process that does not involve chemical change. (Contrast with \"Derived\".) For rock, examples include a core puck cut from a whole core, or an oil sample extracted from a core plug, even if the subsample does not have the same representative composition or lithology as the parent. For fluids, the subsample would exactly represent the parent (i.e., an aliquot).",
+        "Code": "SubSampled",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Slick",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slick",
+        "ID": "Slick",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"SiteType:Slick\" with Name=\"Slick\" instead. This describes hydrocarbon sample that originated as a slick (unintentional spill) on any environmental surface.",
+        "Code": "Slick",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Combined",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Combined",
+        "NameAlias": [
+          {
+            "AliasName": "Recombined",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          },
+          {
+            "AliasName": "Composite",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "Combined",
+        "Description": "A combined sample is one created by combining two or more acquired samples. For example, acquired separator liquids and gases are recombined to mimic the original reservoir conditions. Or for example, multiple rock samples from the same or similar facies are combined (stacked on top of each other) for core analysis measurements.",
+        "Code": "Combined",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:OriginalAsAcquired",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Original As-Acquired",
+        "ID": "OriginalAsAcquired",
+        "Description": "Indicates that the sample/specimen is in the form in which it was first acquired from a wellbore, site, or other facility, before any subsampling, derivation, or combination processes produced samples from this one. For example, this indicator would distinguish the sample of full-length whole core as-acquired (usually 9 metres long), from three 1-metre samples, which are sections of whole core that got subsampled from that full-length whole core.",
+        "Code": "OriginalAsAcquired",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleOriginType:Derived",
+      "kind": "osdu:wks:reference-data--SampleOriginType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Derived",
+        "ID": "Derived",
+        "Description": "A derived sample/specimen is one that results from a process applied to a parent sample that causes chemical change, where the output is chemically different from the input, such as \"flashing\" gas or oil. (Contrast with \"SubSampled\" and \"Combined\".)",
+        "Code": "Derived",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleOriginType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:RADARSAT",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RADARSAT",
+        "OperationalPeriod": [
+          {
+            "StartYear": 1995
+          }
+        ],
+        "Description": "RADARSAT ",
+        "Code": "RADARSAT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:ENVISAT",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ENVISAT",
+        "OperationalPeriod": [
+          {
+            "EndYear": 2012,
+            "StartYear": 2002
+          }
+        ],
+        "Description": "ENVISAT",
+        "Code": "ENVISAT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:Sentinel",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sentinel-1",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2014
+          }
+        ],
+        "Description": "Sentinel",
+        "Code": "Sentinel",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:TerraSARX",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TerraSAR-X",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2007
+          }
+        ],
+        "Description": "TerraSAR-X",
+        "Code": "TerraSARX",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:TanDEMX",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "TanDEM-X",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2010
+          }
+        ],
+        "Description": "TanDEM-X",
+        "Code": "TanDEMX",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:COSMOSkyMed",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COSMO-SkyMed",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2007
+          }
+        ],
+        "Description": "COSMO-SkyMed",
+        "Code": "COSMOSkyMed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:COSMOSkyMedSecondGeneration",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "COSMO-SkyMed Second Generation",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2019
+          }
+        ],
+        "Description": "COSMO-SkyMed Second Generation",
+        "Code": "COSMOSkyMedSecondGeneration",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:ALOS",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ALOS",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2006
+          }
+        ],
+        "Description": "ALOS",
+        "Code": "ALOS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:ERS",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "ERS",
+        "OperationalPeriod": [
+          {
+            "EndYear": 2011,
+            "StartYear": 1991
+          }
+        ],
+        "Description": "ERS",
+        "Code": "ERS",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:KOMPSAT",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "KOMPSAT",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2013
+          }
+        ],
+        "Description": "KOMPSAT",
+        "Code": "KOMPSAT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SatelliteMission:RISAT",
+      "kind": "osdu:wks:reference-data--SatelliteMission:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RISAT",
+        "OperationalPeriod": [
+          {
+            "StartYear": 2009
+          }
+        ],
+        "Description": "RISAT",
+        "Code": "RISAT",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SatelliteMission.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

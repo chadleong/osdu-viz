@@ -1,0 +1,287 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:PVC",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "PVC",
+        "ID": "PVC",
+        "Description": "Polyvinyl Chloride (PVC) is a durable material resistant to chemicals and suitable for handling wet cores with minimal contamination risk.",
+        "Code": "PVC",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:Aluminum",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Aluminum",
+        "ID": "Aluminum",
+        "Description": "Aluminum is a lightweight and corrosion-resistant metal, offering structural rigidity and protection for core samples.",
+        "Code": "Aluminum",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:Steel",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steel",
+        "ID": "Steel",
+        "Description": "Steel (often stainless steel) is an extremely strong and corrosion-resistant metal, ideal for high-pressure, high-temperature environments and aggressive fluids.",
+        "Code": "Steel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:Fiberglass",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiberglass",
+        "ID": "Fiberglass",
+        "Description": "Fiberglass is a lightweight and non-corrosive material providing thermal insulation to help preserve the integrity of temperature-sensitive cores.",
+        "Code": "Fiberglass",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:RubberOrElastomer",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rubber or Elastomer",
+        "NameAlias": [
+          {
+            "AliasName": "Rubber sleeve core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Rubber sleeve",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "RubberOrElastomer",
+        "Description": "Rubber or elastomers (e.g., silicone) are flexible and cushioning materials, used for protecting fragile cores during extraction.",
+        "Code": "RubberOrElastomer",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:Polycarbonate",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Polycarbonate",
+        "ID": "Polycarbonate",
+        "Description": "Polycarbonate is a transparent, durable, and impact-resistant polymer, occasionally used for specialized cores where visibility or monitoring is needed.",
+        "Code": "Polycarbonate",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:Teflon",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Teflon",
+        "ID": "Teflon",
+        "Description": "A chemically inert and non-stick fluoropolymer material, preventing adherence of core materials and reducing contamination for analysis.",
+        "Code": "Teflon",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:HighDensityPolyethelene",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "High-Density Polyethelyne",
+        "ID": "HighDensityPolyethelene",
+        "Description": "High-Density Polyethelene is a tough and impact-resistant plastic, commonly used for its flexibility, low weight, and economy.",
+        "Code": "HighDensityPolyethelene",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreInnerSleeveMaterial:CarbonFiber",
+      "kind": "osdu:wks:reference-data--ConventionalCoreInnerSleeveMaterial:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon Fiber",
+        "ID": "CarbonFiber",
+        "Description": "Carbon Fiber is an ultra-lightweight and highly durable material, often used where weight minimization and exceptional strength are critical.",
+        "Code": "CarbonFiber",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreInnerSleeveMaterial.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    }
+  ]
+}

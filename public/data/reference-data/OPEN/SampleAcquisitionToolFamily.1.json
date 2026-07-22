@@ -1,0 +1,578 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:GravityCorerPiston",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gravity Corer With Piston",
+        "NameAlias": [
+          {
+            "AliasName": "Piston core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "GravityCorerPiston",
+        "Description": "A gravity corer using a piston. A heavily weighted core tube is dropped into the seabed. A piston inside the tube creates a vacuum that draws the unconsolidated sediment upward into the tube. Capable of collecting cores tens of meters in length.",
+        "Code": "GravityCorerPiston",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Proposal to NOT migrate \"Drop core\" as an alias. Research indicates that drop core is different from Piston core\n\nAppropriate updates have been made to the name and description.",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Unspecified",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified",
+        "ID": "Unspecified",
+        "Description": "The tool family for the acquisition of a sample/specimen has not or cannot be specified.",
+        "Code": "Unspecified",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:SidewallPercussion",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidewall Percussion",
+        "NameAlias": [
+          {
+            "AliasName": "PSWC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "SidewallPercussion",
+        "Description": "A hollow, retrievable, cylindrical bullet is shot into the borehole wall and retrieved with the rock sample inside.",
+        "Code": "SidewallPercussion",
+        "AttributionAuthority": "PPDM Association",
+        "AttributionPublication": "Sidewall Core Type (adapted)",
+        "AttributionRevision": "2023-12-15 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:SidewallRotary",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidewall Rotary",
+        "NameAlias": [
+          {
+            "AliasName": "RSWC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "SidewallRotary",
+        "Description": "A diamond-tipped rotating drill cuts a plug from the borehole wall. The drill and sample are retracted into the body of the tool.",
+        "Code": "SidewallRotary",
+        "AttributionAuthority": "PPDM Association",
+        "AttributionPublication": "Sidewall Core Type (adapted)",
+        "AttributionRevision": "2023-12-15 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:SidewallRotaryPressurized",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidewall Rotary Pressurized",
+        "NameAlias": [
+          {
+            "AliasName": "SidewallPressurized",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "SidewallRotaryPressurized",
+        "Description": "A rotary sidewall core brought to surface at reservoir pressure. ",
+        "Code": "SidewallRotaryPressurized",
+        "AttributionAuthority": "PPDM Association",
+        "AttributionPublication": "Sidewall Core Type (adapted)",
+        "AttributionRevision": "2023-12-15 00:00:00",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:AugerCore",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Auger Core",
+        "ID": "AugerCore",
+        "Description": "An auger tool (helical/corkscrew-shaped) drills and extracts sediment without fluid circulation. Used primarily for shallow, unconsolidated sediments, often at the surface or near-surface.",
+        "Code": "AugerCore",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:PushCore",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Push Core",
+        "ID": "PushCore",
+        "Description": "Method of coring where a coring tube (often clear polycarbonate) is pushed into soft sediments. Often used offshore or in soil sampling.",
+        "Code": "PushCore",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:PunchCore",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Punch Core",
+        "ID": "PunchCore",
+        "Description": "A variation of push coring, where a smaller, hand-driven or mechanically driven punch tool collects shallow core samples, often in soil or soft rock.",
+        "Code": "PunchCore",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:ScoopingTool",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Scooping Tool",
+        "ID": "ScoopingTool",
+        "Description": "A method of specimen collection where a tool like a shovel is used to scoop up the specimen, such as sediment.",
+        "Code": "ScoopingTool",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:GravityCorerBasic",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gravity Corer Basic",
+        "NameAlias": [
+          {
+            "AliasName": "Drop core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "GravityCorerBasic",
+        "Description": "A gravity corer using no piston. A gravity corer, also known as drop core, is a sediment sampling tool that relies on its own weight and gravity to penetrate the seabed and collect cylindrical sediment cores. ",
+        "Code": "GravityCorerBasic",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Sponge",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Sponge Inner Barrel",
+        "NameAlias": [
+          {
+            "AliasName": "Sponge core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Sponge",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "Conventional.Sponge",
+        "Description": "An inner core barrel lined with absorbent sponge material, which captures in-situ fluids in-place to determine residual saturations.",
+        "Code": "Conventional.Sponge",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Oriented",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Oriented Inner Barrel",
+        "ID": "Conventional.Oriented",
+        "Description": "An inner core barrel designed to capture the orientation of the core sample relative to frame of reference such as the earth's axis.",
+        "Code": "Conventional.Oriented",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.FullyEnclosed",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Fully Enclosed Inner Barrel",
+        "ID": "Conventional.FullyEnclosed",
+        "Description": "A sealed inner core barrel that completely encloses the core to prevent external contamination and preserve sample integrity.",
+        "Code": "Conventional.FullyEnclosed",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Split",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Split Inner Barrel",
+        "ID": "Conventional.Split",
+        "Description": "An inner core barrel with a split or removable liner. It is designed for easier extraction and handling of the recovered core, and for viewing of the full core rather than just the ends.",
+        "Code": "Conventional.Split",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Pressurized",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Pressurized Inner Barrel",
+        "NameAlias": [
+          {
+            "AliasName": "Pressure core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Pressure",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "Conventional.Pressurized",
+        "Description": "An inner core barrel that maintains in-situ pressure conditions to preserve the core's original properties, particularly for gas-rich or unstable formations.",
+        "Code": "Conventional.Pressurized",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Vented",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Vented Inner Barrel",
+        "ID": "Conventional.Vented",
+        "Description": "An inner core barrel equipped with vents to allow controlled release of gases or fluids during coring and retrieval.",
+        "Code": "Conventional.Vented",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleAcquisitionToolFamily:Conventional.Telescoping",
+      "kind": "osdu:wks:reference-data--SampleAcquisitionToolFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Telescoping Inner Barrel",
+        "ID": "Conventional.Telescoping",
+        "Description": "An inner core barrel capable of extending telescopically to allow for a set amount of jams to occur while continuing to core. The core jam travels with the telescoping sleeve when shear pins are sheared.",
+        "Code": "Conventional.Telescoping",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleAcquisitionToolFamily.1.xlsx; commit SHA 39747d4f.",
+        "CommitDate": "2025-09-22T22:15:29+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyStatusType:Installed",
+      "kind": "osdu:wks:reference-data--TubularAssemblyStatusType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Installed",
+        "Description": "The TubularAssembly is deployed in the Wellbore.",
+        "Code": "Installed",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyStatusType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyStatusType:Pulled",
+      "kind": "osdu:wks:reference-data--TubularAssemblyStatusType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pulled",
+        "Description": "The TubularAssembly is no longer in place and has been pulled from the Wellbore.",
+        "Code": "Pulled",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyStatusType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyStatusType:Pulled.Partially",
+      "kind": "osdu:wks:reference-data--TubularAssemblyStatusType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Partially Pulled",
+        "NameAlias": [
+          {
+            "AliasName": "Partial Pull"
+          }
+        ],
+        "Description": "A partial pull is where the casing/tubing is cut and pulled above the cut to recycle or sell for scrap. This is usually above the top of cement when cemented or above a stuck point if the tubing is stuck in hole. The casing/tubing below the cut is left in hole.",
+        "Code": "Pulled.Partially",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyStatusType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularAssemblyStatusType:Planned",
+      "kind": "osdu:wks:reference-data--TubularAssemblyStatusType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Planned",
+        "Description": "The TubularAssembly is in its planning stage. This value is redundant if the data.ExistenceKind is set to Planned.",
+        "Code": "Planned",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/TubularAssemblyStatusType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:Brightfield",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brightfield",
+        "Description": "Image acquired in brightfield and without polarisation",
+        "Code": "Brightfield",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:Darkfield",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Darkfield",
+        "Description": "Image acquired in darkfield and without polarisation",
+        "Code": "Darkfield",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:PlanePolarised",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plane Polarised",
+        "Description": "Image acquired in plane polarised light",
+        "Code": "PlanePolarised",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:CrossPolarised",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cross Polarised",
+        "Description": "Image acquired in cross polarised light",
+        "Code": "CrossPolarised",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:Fluorescence",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fluorescence",
+        "Description": "Image acquired using tuneable wavelengths for fluorescence (not limited to UV), 100-760nm",
+        "Code": "Fluorescence",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleImageOpticalLightFilter:CircularPolarised",
+      "kind": "osdu:wks:reference-data--SampleImageOpticalLightFilter:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Circular Polarised",
+        "Description": "Image acquired in circular polarised light",
+        "Code": "CircularPolarised",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SampleImageOpticalLightFilter.1.xlsx; commit SHA 853a3036.",
+        "CommitDate": "2025-02-08T04:51:45+00:00"
+      }
+    }
+  ]
+}

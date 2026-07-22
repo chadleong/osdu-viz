@@ -1,0 +1,69 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularDirection:TopDown",
+      "kind": "osdu:wks:reference-data--TubularDirection:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Top Down",
+        "NameAlias": [
+          {
+            "AliasName": "TOPDOWN"
+          }
+        ],
+        "Description": "The sequence of tubular components is top-down.",
+        "Code": "TopDown",
+        "Source": "Workbook ReferenceValues/Published/TubularDirection.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--TubularDirection:BottomUp",
+      "kind": "osdu:wks:reference-data--TubularDirection:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bottom Up",
+        "NameAlias": [
+          {
+            "AliasName": "BOTTOMUP"
+          }
+        ],
+        "Description": "The sequence of tubular components is bottom-up.",
+        "Code": "BottomUp",
+        "Source": "Workbook ReferenceValues/Published/TubularDirection.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

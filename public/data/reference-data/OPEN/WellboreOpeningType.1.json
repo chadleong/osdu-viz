@@ -1,0 +1,305 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:OpenHole",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Open Hole",
+        "NameAlias": [
+          {
+            "AliasName": "Barefoot",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "OpenHole",
+        "Description": "There is no cemented casing though the reservoir interval.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Perforation",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Perforation",
+        "Code": "Perforation",
+        "Description": "Connections between the reservoir and the wellbore are created by a device that creates holes in the casing.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Preperforated",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pre-perforated",
+        "NameAlias": [
+          {
+            "AliasName": "Holed",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "slotted",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Preperforated",
+        "Description": "A section of liner or tubing with holes or slots that were made before being placed in the well.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Punch",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Punch",
+        "Code": "Punch",
+        "Description": "A hole created one at a time in the casing or tubing.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Perforated",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Perforated",
+        "Code": "Perforated",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Perforation\" with Name=\"Perforation\" instead. Opening created from explosive perforating through pipe. Perforating is the process of piercing the casing wall and the cement behind it to provide openings through which formation fluids may enter the borehole.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Screen",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Screen",
+        "Code": "Screen",
+        "InactiveIndicator": true,
+        "Description": "Mechanical opening created from installation of a screen along the reservoir interval.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:SlidingSleeve",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sliding Sleeve",
+        "Code": "SlidingSleeve",
+        "InactiveIndicator": true,
+        "Description": "Mechanical Opening created from installation of a sliding sleeve in the production tubing which can be opened (or closed) thus creating a flowpath  to the surface.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:Slotted",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slotted Liner",
+        "NameAlias": [
+          {
+            "AliasName": "Sliding Side Door",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "SSD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Slotted",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Preperforated\" with Name=\"Pre-perforated\" instead. Mechanical Opening created from installation of slotted liner along the reservoir interval. The slots allow hydraulic communication between the reservoir and the production tubing. This type includes holed or preperforated liner.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--WellboreOpeningType:TubingPunch",
+      "kind": "osdu:wks:reference-data--WellboreOpeningType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tubing Punch",
+        "NameAlias": [
+          {
+            "AliasName": "Wire Wrap Screen",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "WWS",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "TubingPunch",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Punch\" with Name=\"Punch\" instead. Tubing punches enable circulation to be achieved between tubing and an annulus open to the reservoir.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2024-02-06T15:17:49+00:00"
+      }
+    }
+  ]
+}

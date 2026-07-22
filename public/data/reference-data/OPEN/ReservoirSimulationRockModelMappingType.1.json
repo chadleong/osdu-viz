@@ -1,0 +1,215 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:SaturationFunctionSet",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Saturation Function Set ",
+        "ID": "SaturationFunctionSet",
+        "Description": "The Saturation Function Set assigned to a specific region.",
+        "Code": "SaturationFunctionSet",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:RockPhysicsModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock Physics Model ",
+        "ID": "RockPhysicsModel ",
+        "Description": "The Rock Physics Model assigned to a specific region.",
+        "Code": "RockPhysicsModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:RelativePermeability",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Relative Permeability ",
+        "ID": "RelativePermeability ",
+        "Description": "The relative permeability of a Saturation Function Set assigned to a specific region.",
+        "Code": "RelativePermeability ",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:CapillaryPressure",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Capillary Pressure ",
+        "ID": "CapillaryPressure ",
+        "Description": "The capillary pressure of a Saturation Function Set assigned to a specific region.",
+        "Code": "CapillaryPressure ",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:Compressibility",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compressibility ",
+        "ID": "Compressibility ",
+        "Description": "The Rock Physics Compressibility Model assigned to a specific region.",
+        "Code": "Compressibility ",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:ImbibitionSaturationFunctionSet",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Imbibition Saturation Function Set ",
+        "ID": "ImbibitionSaturationFunctionSet",
+        "Description": "The imbibition Saturation Function Set assigned to a specific region.",
+        "Code": "ImbibitionSaturationFunctionSet",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationRockModelMappingType:DrainageSaturationFunctionSet",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationRockModelMappingType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drainage Saturation Function Set ",
+        "ID": "DrainageSaturationFunctionSet",
+        "Description": "The drainage Saturation Function Set assigned to a specific region.",
+        "Code": "DrainageSaturationFunctionSet",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationRockModelMappingType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

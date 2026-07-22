@@ -1,0 +1,170 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--KerogenType:Type-I",
+      "kind": "osdu:wks:reference-data--KerogenType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type I",
+        "NameAlias": [
+          {
+            "AliasName": "Type I: algal/sapropelic"
+          }
+        ],
+        "Description": "Type I kerogen, oil prone, dominated by organisms of algal and sapropelic origin",
+        "Code": "Type-I",
+        "AttributionPublication": "https://wiki.aapg.org/Kerogen",
+        "Source": "Workbook ReferenceValues/Authoring/KerogenType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--KerogenType:Type-II",
+      "kind": "osdu:wks:reference-data--KerogenType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type II",
+        "NameAlias": [
+          {
+            "AliasName": "Type II: planktonic"
+          }
+        ],
+        "Description": "Type II kerogen, oil and gas prone, dominated by organisms of planktonic origin",
+        "Code": "Type-II",
+        "AttributionPublication": "https://wiki.aapg.org/Kerogen",
+        "Source": "Workbook ReferenceValues/Authoring/KerogenType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--KerogenType:Type-II-S",
+      "kind": "osdu:wks:reference-data--KerogenType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type II-S",
+        "NameAlias": [
+          {
+            "AliasName": "Type II-S: sulfurous"
+          }
+        ],
+        "Description": "Type II-S kerogen, oil and gas prone, sulphur rich",
+        "Code": "Type-II-S",
+        "AttributionPublication": "https://wiki.aapg.org/Type_IIS_kerogen",
+        "Source": "Workbook ReferenceValues/Authoring/KerogenType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--KerogenType:Type-III",
+      "kind": "osdu:wks:reference-data--KerogenType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type III",
+        "NameAlias": [
+          {
+            "AliasName": "Type III: humic"
+          }
+        ],
+        "Description": "Type III kerogen, gas prone, dominated by organisms of humic origin",
+        "Code": "Type-III",
+        "AttributionPublication": "https://wiki.aapg.org/Kerogen",
+        "Source": "Workbook ReferenceValues/Authoring/KerogenType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--KerogenType:Type-IV",
+      "kind": "osdu:wks:reference-data--KerogenType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Type IV",
+        "NameAlias": [
+          {
+            "AliasName": "Type IV: inert/residual"
+          }
+        ],
+        "Description": "Type IV kerogen, inert",
+        "Code": "Type-IV",
+        "AttributionPublication": "https://wiki.aapg.org/Kerogen",
+        "Source": "Workbook ReferenceValues/Authoring/KerogenType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

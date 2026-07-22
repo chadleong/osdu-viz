@@ -1,0 +1,77 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DriftType:Standard",
+      "kind": "osdu:wks:reference-data--DriftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Standard",
+        "NameAlias": [
+          {
+            "AliasName": "Standard Drift"
+          }
+        ],
+        "ID": "Standard",
+        "InactiveIndicator": false,
+        "Description": "Standard drift diameter.",
+        "Code": "Standard",
+        "AttributionAuthority": "OSDU",
+        "(COMPANY: insert comment)": "the DefinitionOrganisationID_1 of EquinorWellcom was causing a referential integrity issue and was removed ",
+        "Source": "Workbook ReferenceValues/Published/DriftType.1.xlsx; commit SHA 76d6da13.",
+        "CommitDate": "2026-01-24T03:52:26+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DriftType:Special",
+      "kind": "osdu:wks:reference-data--DriftType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Special",
+        "NameAlias": [
+          {
+            "AliasName": "Special Drift"
+          }
+        ],
+        "ID": "Special",
+        "InactiveIndicator": false,
+        "Description": "Special drift diameter.",
+        "Code": "Special",
+        "AttributionAuthority": "OSDU",
+        "(COMPANY: insert comment)": "the DefinitionOrganisationID_1 of EquinorWellcom was causing a referential integrity issue and was removed ",
+        "Source": "Workbook ReferenceValues/Published/DriftType.1.xlsx; commit SHA 76d6da13.",
+        "CommitDate": "2026-01-24T03:52:26+00:00"
+      }
+    }
+  ]
+}

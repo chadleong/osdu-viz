@@ -1,0 +1,137 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreCatcherType:FullClosure",
+      "kind": "osdu:wks:reference-data--ConventionalCoreCatcherType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Full Closure Catcher",
+        "NameAlias": [
+          {
+            "AliasName": "Full closure core",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Full closure",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:ShortName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "ID": "FullClosure",
+        "Description": "A core catcher that is designed for unconsolidated sands or friable formations. It works through either hydraulically closed/sealed via a dropped ball from surface or mechanically closed through picking up off the bottom of the borehole.",
+        "Code": "FullClosure",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreCatcherType.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreCatcherType:Conventional",
+      "kind": "osdu:wks:reference-data--ConventionalCoreCatcherType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Collet Or Split Ring Catcher",
+        "ID": "Conventional",
+        "Description": "A core catcher that is designed for consolidated rock and works by allowing the core to pass through it while coring and it mechanically activates when the bottom hole assembly is lifted from the formation. The core is captured by grips, and the split ring is closed. \u00a0",
+        "Code": "Conventional",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreCatcherType.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreCatcherType:Basket",
+      "kind": "osdu:wks:reference-data--ConventionalCoreCatcherType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Basket Catcher",
+        "ID": "Basket",
+        "Description": "A core catcher that works much like the Conventional Collet but is designed for more friable or rubble formations and includes long metal fingers which can enclose and help grip the core.",
+        "Code": "Basket",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreCatcherType.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ConventionalCoreCatcherType:SlipDog",
+      "kind": "osdu:wks:reference-data--ConventionalCoreCatcherType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slip Dog Catcher",
+        "ID": "SlipDog",
+        "Description": "A core catcher used for orientated coring and contains hubble knives which scribe the core.",
+        "Code": "SlipDog",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ConventionalCoreCatcherType.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:Spread",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Spread",
+        "ID": "Spread",
+        "Description": "Multiple anchors and mooring lines arranged radially around the rig.",
+        "Code": "Spread",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:Catenary",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Catenary ",
+        "ID": "Catenary",
+        "Description": "Uses heavy chains or wire ropes that form a catenary curve on the seabed.",
+        "Code": "Catenary",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:Taut-Leg",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Taut-Leg",
+        "ID": "Taut-Leg",
+        "Description": "Mooring lines are kept under high tension with vertical load anchors.",
+        "Code": "Taut-Leg",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:Semi-Taut",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Semi-Taut",
+        "ID": "Semi-Taut",
+        "Description": "Combination of catenary and taut-leg characteristics.",
+        "Code": "Semi-Taut",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:DynamicPositioningAssisted",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dynamic Positioning Assisted",
+        "NameAlias": [
+          {
+            "AliasName": "DP"
+          }
+        ],
+        "ID": "DynamicPositioningAssisted",
+        "Description": "Hybrid system where thrusters assist mooring lines for station-keeping.",
+        "Code": "DynamicPositioningAssisted",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:SinglePoint",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Single Point",
+        "ID": "SinglePoint",
+        "Description": "A single buoy or turret system that allows the vessel to weathervane.",
+        "Code": "SinglePoint",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MooringType:Turret",
+      "kind": "osdu:wks:reference-data--MooringType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Turret",
+        "ID": "Turret",
+        "Description": "Internal or external turret integrated into the vessel hull.",
+        "Code": "Turret",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/MooringType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:PressureDecay",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pressure Decay",
+        "ID": "PressureDecay",
+        "Description": "The pressure decay method measures rock permeability by observing the rate of pressure decrease in a sealed chamber containing the sample.",
+        "Code": "PressureDecay",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:Probe",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Probe",
+        "ID": "Probe",
+        "Description": "Inserting a device into the rock sample to directly assess the ease with which fluids can flow through the sample by recording pressure responses or fluid flow rates.",
+        "Code": "Probe",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:SteadyState",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steady State",
+        "ID": "SteadyState",
+        "Description": "Permeability measurement in which the flow rate of fluid passing through the sample is steady (no change with time) for a constant applied at the ends of the sample",
+        "Code": "SteadyState",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:UnsteadyState",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unsteady State",
+        "ID": "UnsteadyState",
+        "Description": "Permeability measurement in which the flow rate of fluid passing through the sample is not steady (changes with time)",
+        "Code": "UnsteadyState",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:PulseDecay",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pulse Decay",
+        "ID": "PulseDecay",
+        "Description": "The pulse decay method measures rock permeability by introducing a pressure pulse into the sample and monitoring the rate at which the pressure equilibrates, providing insights into the fluid flow characteristics of the rock.",
+        "Code": "PulseDecay",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PermeabilityMeasurementMethod:Mercury",
+      "kind": "osdu:wks:reference-data--PermeabilityMeasurementMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mercury",
+        "ID": "Mercury",
+        "Description": "The mercury injection method measures rock permeability by forcing mercury into the pore spaces of a rock sample under controlled pressures and recording the volume of mercury injected",
+        "Code": "Mercury",
+        "Source": "Workbook ReferenceValues/Published/PermeabilityMeasurementMethod.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

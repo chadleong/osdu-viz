@@ -1,0 +1,86 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationMethod:None",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Description": "No interpolation method is required, often used with bulk shifts.",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationMethod.1.xlsx; commit SHA 1b5f2cf2.",
+        "CommitDate": "2026-07-07T04:40:16+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationMethod:Linear",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Linear",
+        "ID": "Linear",
+        "Description": "This method uses a linear function between two endpoints, in this case the top and base depths, to calculate the shifted depths of any data points between those endpoints.",
+        "Code": "Linear",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationMethod.1.xlsx; commit SHA 1b5f2cf2.",
+        "CommitDate": "2026-07-07T04:40:16+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationMethod:Bilinear",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bilinear",
+        "ID": "Bilinear",
+        "Description": "This method uses two linear functions between two sets of endpoints to calculate the shifted values of any data points between those endpoints.",
+        "Code": "Bilinear",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationMethod.1.xlsx; commit SHA 1b5f2cf2.",
+        "CommitDate": "2026-07-07T04:40:16+00:00"
+      }
+    }
+  ]
+}

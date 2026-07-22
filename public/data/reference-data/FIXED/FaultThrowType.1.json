@@ -1,0 +1,179 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:Reverse",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reverse",
+        "Description": "Indicates that the fault has a reverse throw.",
+        "Code": "Reverse",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:StrikeSlip",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Strike-Slip",
+        "Description": "Indicates that the fault is a strike-slip fault.",
+        "Code": "StrikeSlip",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:Normal",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Normal",
+        "Description": "Indicates that the fault has a normal throw.",
+        "Code": "Normal",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:Thrust",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Thrust",
+        "Description": "Indicates that the fault is a thrust fault.",
+        "Code": "Thrust",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:Scissor",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Scissor",
+        "Description": "Indicates that the fault is a scissor fault.",
+        "Code": "Scissor",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FaultThrowType:Variable",
+      "kind": "osdu:wks:reference-data--FaultThrowType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Variable",
+        "Description": "Indicates that the fault throw has a variable fault throw type.",
+        "Code": "Variable",
+        "AttributionAuthority": "Energistics",
+        "AttributionPublication": "From RESQML 2.2 Data Exchange format",
+        "Source": "Workbook ReferenceValues/Published/FaultThrowType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

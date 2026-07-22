@@ -1,0 +1,34 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PayloadTemplate:ExampleName",
+      "kind": "osdu:wks:reference-data--PayloadTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Example Name",
+        "ID": "ExampleName",
+        "Code": "ExampleName",
+        "AttributionAuthority": "OSDU ",
+        "Template": "{ \\\"Subject\\\": \\\"Daily Report\\\", \\\"Body\\\": { \\\"ContentType\\\": \\\"{{BODY_CONTENT_TYPE}}\\\", \\\"Content\\\": \\\"{{BODY_CONTENT}}\\\" } }",
+        "Source": "Workbook ReferenceValues/Published/PayloadTemplate.1.xlsx; commit SHA ec77f827.",
+        "CommitDate": "2026-01-20T09:07:58+00:00"
+      }
+    }
+  ]
+}

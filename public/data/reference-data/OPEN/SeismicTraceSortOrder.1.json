@@ -1,0 +1,289 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:CMP.AbsoluteOffset",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CMP/Absolute Offset",
+        "Description": "Traces are sorted by common mid or image point and increasing absolute source-receiver offset.",
+        "Code": "CMP.AbsoluteOffset",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:CMP.Offset.Azimuth",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CMP/Offset/Azimuth",
+        "NameAlias": [
+          {
+            "AliasName": "COCA"
+          }
+        ],
+        "Description": "For a common mid or image point, traces are sorted by increasing common offset and increasing azimuth (requires offset binning).",
+        "Code": "CMP.Offset.Azimuth",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:CMP.Azimuth.Offset",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CMP/Azimuth/Offset",
+        "NameAlias": [
+          {
+            "AliasName": "CACO"
+          }
+        ],
+        "Description": "For a common mid or image point, traces are sorted by increasing common azimuth and increasing offset (requires azimuth binning).",
+        "Code": "CMP.Azimuth.Offset",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:Shot.DetectLine.DetectPoint",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shot/Detect Line/Detect Point",
+        "Description": "Traces are sorted by shot number, detect line or cable and detector point or receiver, depending on land or marine acquisition.",
+        "Code": "Shot.DetectLine.DetectPoint",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:Receiver.Cable.Shot",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Receiver/Cable/Shot",
+        "Description": "Traces are sorted by receiver, cable and shot number in marine acquisition case.",
+        "Code": "Receiver.Cable.Shot",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:DetectPoint.SourceLine.SourcePoint",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Detect Point/Source Line/Source Point",
+        "Description": "Traces are sorted by detect point, source line and source point for single common receiver gather in land/OBS acquisition case.",
+        "Code": "DetectPoint.SourceLine.SourcePoint",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:DetectLine.DetectPoint.SourceLine.SourcePoint",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Detect Line/Detect Point/Source Line/Source Point",
+        "Description": "Traces are sorted by detect line, detect point, source line and source point for multiple common receiver gathers in land/OBS acquisition case.",
+        "Code": "DetectLine.DetectPoint.SourceLine.SourcePoint",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:CrossSpreadSort",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cross Spread Sort",
+        "Description": "Traces are sorted by increasing source line and source point and increasing detect line and detect point.",
+        "Code": "CrossSpreadSort",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:InLine",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "InLine",
+        "Description": "Traces are sorted by inline number.   The sort order indicates the sorting of the primary dataset, and may not be applicable to derived volumes. ",
+        "Code": "InLine",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "SEG Wiki",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicTraceSortOrder:CrossLine",
+      "kind": "osdu:wks:reference-data--SeismicTraceSortOrder:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CrossLine",
+        "Description": "Traces are sorted by crossline.  The sort order indicates the sorting of the primary dataset and may not be applicable to derived volumes. ",
+        "Code": "CrossLine",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "SEG Wiki",
+        "Source": "Workbook ReferenceValues/Published/SeismicTraceSortOrder.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

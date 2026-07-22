@@ -1,0 +1,215 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:LBC",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": " Lohrenz-Bray-Clark",
+        "ID": "LBC",
+        "Description": "A viscosity model calculated as a function of temperature and pressure, based on the known composition of the sample.",
+        "Code": "LBC",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:LBCExponential",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": " Lohrenz-Bray-Clark Exponential",
+        "ID": "LBCExponential",
+        "Description": "A modified Lohrenz-Bray-Clark (LBC) viscosity model, which has an additional exponential term involving the compact volume.",
+        "Code": "LBCExponential",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:FrictionTheory",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Friction Theory",
+        "ID": "FrictionTheory",
+        "Description": "Also known as F-Theory, it is a viscosity model that relates the viscosity of fluids to the frictional forces between molecules, using an equation of state to account for the effects of pressure, temperature, and composition.",
+        "Code": "FrictionTheory",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:Pedersen84",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pedersen 1984",
+        "ID": "Pedersen84",
+        "Description": "The viscosity model outlined in Pedersen, K.s., Fredenslund, Aa., Christensen, P.L. and Thomassen, P., \"Viscosity of Crude Oils\", Chem. Eng. Sci. 39, 1984, pp.1011-1016.",
+        "Code": "Pedersen84",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:Pedersen87",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pedersen 1987",
+        "ID": "Pedersen87",
+        "Description": "The viscosity model outlined in Pedersen, K.s. and Fredenslund, Aa., \"An Improved Corresponding States Model for the Prediction of Oil and Gas Viscosities and Thermal Conductivites\", Chem. Eng. Sci. 42, 1987, pp.182-186.",
+        "Code": "Pedersen87",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:MixingRule",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mixing Rule",
+        "ID": "MixingRule",
+        "Description": "A viscosity model that combines pure component viscosities and viscosity correlations into a single phase viscosity in thermal simulations.",
+        "Code": "MixingRule",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ViscosityModelType:TemperatureTable",
+      "kind": "osdu:wks:reference-data--ViscosityModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Table",
+        "ID": "TemperatureTable",
+        "Description": "A viscosity model providing tables of viscosity for hydrocarbon components or water as a function of temperature and mixing rule to calculate phase viscosity for thermal simulations.",
+        "Code": "TemperatureTable",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ViscosityModelType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    }
+  ]
+}

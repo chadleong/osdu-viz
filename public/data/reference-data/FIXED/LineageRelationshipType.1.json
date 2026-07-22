@@ -1,0 +1,86 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--LineageRelationshipType:Direct",
+      "kind": "osdu:wks:reference-data--LineageRelationshipType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Direct",
+        "Description": "A resource which was used to derive the asserting work product component through a set of processes and transformations.  The prior data type is usually the same as the derived data type.  For example, the input well log used in creating a new log curve. [Was Predecessor]",
+        "Code": "Direct",
+        "Source": "Workbook ReferenceValues/Published/LineageRelationshipType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LineageRelationshipType:Indirect",
+      "kind": "osdu:wks:reference-data--LineageRelationshipType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Indirect",
+        "Description": "A resource which was used during the derivation of the asserting work product component to control the process, but is not directly transformed.  The prior data type is usually different from the derived data type.  For example, the velocity model used in migrating a seismic volume, the horizons used to constrain a velocity model. [Was Source]",
+        "Code": "Indirect",
+        "Source": "Workbook ReferenceValues/Published/LineageRelationshipType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--LineageRelationshipType:Reference",
+      "kind": "osdu:wks:reference-data--LineageRelationshipType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reference",
+        "Description": "A resource which captures information about the process to create the asserting work product component, but is not used directly in the process.  The prior data type is not a required ancestor of the asserting object.  For example, a bibliography relative to a published paper, a published paper used as the basis for the processing algorithm, a geologic interpretation used to QC a seismic velocity model.",
+        "Code": "Reference",
+        "Source": "Workbook ReferenceValues/Published/LineageRelationshipType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

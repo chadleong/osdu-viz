@@ -1,0 +1,215 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:ReservoirSimulationFluidModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reservoir Simulation Fluid Model",
+        "ID": "ReservoirSimulationFluidModel",
+        "Description": "Represents the physical and chemical properties of fluids (oil, gas, water) in the reservoir. It defines phase behavior, PVT (Pressure, Volume, Temperature) relationships, and compositional details used in simulation.",
+        "Code": "ReservoirSimulationFluidModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:NaturallyFracturedReservoirModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Naturally Fractured Reservoir Model",
+        "ID": "NaturallyFracturedReservoirModel",
+        "Description": "A model that accounts for the presence of natural fractures in the reservoir rock. It typically uses dual-porosity or dual-permeability approaches to simulate fluid flow between matrix and fractures.",
+        "Code": "NaturallyFracturedReservoirModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:ReservoirSimulationModelResolution",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reservoir Simulation Model Resolution",
+        "ID": "ReservoirSimulationModelResolution",
+        "Description": "Refers to the level of spatial detail in the simulation grid. Higher resolution means smaller grid cells for more accurate representation of heterogeneity, but at the cost of increased computational time.",
+        "Code": "ReservoirSimulationModelResolution",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:IntegratedAssetModel",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Integrated Asset Model",
+        "ID": "IntegratedAssetModel",
+        "Description": "Combines reservoir, well, and surface network models into a single framework to optimize production and forecast performance across the entire asset rather than isolated components.",
+        "Code": "IntegratedAssetModel",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:ReservoirSimulationModelType",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Reservoir Simulation Model Type",
+        "ID": "ReservoirSimulationModelType",
+        "Description": "Geomechanics or Flow Simulation Models ",
+        "Code": "ReservoirSimulationModelType",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:EnhancedOilRecoveryProcesses",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Enhanced Oil Recovery Processes",
+        "ID": "EnhancedOilRecoveryProcesses",
+        "Description": "Techniques applied to increase oil recovery beyond primary and secondary methods. (e.g., water flooding, polymer flooding, thermal methods)",
+        "Code": "EnhancedOilRecoveryProcesses",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationTypeTagCategory:AdditionalCharacteristics",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationTypeTagCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Additional Characteristics",
+        "ID": "AdditionalCharacteristics",
+        "Description": "Extra features or complexities in the reservoir model. (e.g., carbon storage, gas storage)",
+        "Code": "AdditionalCharacteristics",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationTypeTagCategory.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

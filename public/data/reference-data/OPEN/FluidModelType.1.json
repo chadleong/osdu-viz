@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelType:BlackOil",
+      "kind": "osdu:wks:reference-data--FluidModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Black Oil",
+        "ID": "BlackOil",
+        "Description": "The Black Oil Fluid Model is a simplified approach to modeling reservoir fluids, commonly used for reservoirs containing primarily oil and associated gas and works well when fluid compositions change relatively little during production. This model assumes that oil, gas, and water exist as distinct phases, each described by a few key properties. Includes empirical correlations (GOR, Rs, etc.)",
+        "Code": "BlackOil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelType:Compositional",
+      "kind": "osdu:wks:reference-data--FluidModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Compositional",
+        "ID": "Compositional",
+        "Description": "The Compositional Fluid Model is a more detailed  approach to modeling reservoir fluids. It explicitly represents fluid composition using individual hydrocarbon components (e.g., methane, ethane, propane, etc.) and other components like CO2, N2, and water. This model accounts for changes in fluid composition and phase behavior during production and depletion. Includes thermodynamic-based Equations-of-State with full composition modeling.",
+        "Code": "Compositional",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelType:ThermalCompositional",
+      "kind": "osdu:wks:reference-data--FluidModelType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Thermal Compositional",
+        "ID": "ThermalCompositional",
+        "Description": "The Thermal Compositional Fluid Model is a compositional model that also accounts for the effect of temperature on key fluid properties like viscosity, density, and phase equilibria. It is used for scenarios where heat transfer and thermal effects significantly influence fluid behavior, such as in heavy oil recovery, steam injection, or thermal enhanced oil recovery (EOR) processes. ",
+        "Code": "ThermalCompositional",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

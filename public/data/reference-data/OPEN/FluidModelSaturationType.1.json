@@ -1,0 +1,125 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSaturationType:NotSet",
+      "kind": "osdu:wks:reference-data--FluidModelSaturationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Not Set",
+        "ID": "NotSet",
+        "Description": "Indicates that the user has not provided this parameter. The application such as the reservoir simulator will automatically select this value based on other parameters.",
+        "Code": "NotSet",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSaturationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSaturationType:BubblePoint",
+      "kind": "osdu:wks:reference-data--FluidModelSaturationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bubble Point",
+        "ID": "BubblePoint",
+        "Description": "The Bubble Point is the temperature and pressure at which a hydrocarbon liquid mixture, when heated or depressurized, begins to produce bubbles of gas. It represents the onset of gas formation in a liquid-dominated system under equilibrium conditions.",
+        "Code": "BubblePoint",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSaturationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSaturationType:DewPoint",
+      "kind": "osdu:wks:reference-data--FluidModelSaturationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dew Point",
+        "ID": "DewPoint",
+        "Description": "The Dew Point is the temperature and pressure at which a hydrocarbon gas mixture, when cooled or compressed, begins to condense into a liquid phase. It represents the onset of liquid formation in a vapor-dominated system under equilibrium conditions.",
+        "Code": "DewPoint",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSaturationType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelSaturationType:Critical",
+      "kind": "osdu:wks:reference-data--FluidModelSaturationType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Critical",
+        "ID": "Critical",
+        "Description": "Critical refers to the unique temperature and pressure above which the distinction between liquid and vapor phases disappears completely. This is more of defining a fluid saturation type for the purpose of the reservoir simulation initialization process and not from a thermodynamic point of view. The fluid exists in a single homogeneous phase called a \"supercritical fluid,\" with properties of both gas and liquid.\n",
+        "Code": "Critical",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelSaturationType.1.xlsx; commit SHA fa40b5ae.",
+        "CommitDate": "2025-11-13T14:45:15+00:00"
+      }
+    }
+  ]
+}

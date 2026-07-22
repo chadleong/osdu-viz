@@ -1,0 +1,97 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GravityMagneticDataAcquisitionType:Gravity",
+      "kind": "osdu:wks:reference-data--GravityMagneticDataAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gravity",
+        "ID": "Gravity",
+        "Description": "Includes instruments for measuring the difference in gravity from one place to another.",
+        "Code": "Gravity",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/GravityMagneticDataAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GravityMagneticDataAcquisitionType:Magnetic",
+      "kind": "osdu:wks:reference-data--GravityMagneticDataAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Magnetic",
+        "ID": "Magnetic",
+        "Description": "Includes instruments for measuring the earths magnetic field.",
+        "Code": "Magnetic",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/GravityMagneticDataAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GravityMagneticDataAcquisitionType:GravityGradiometry",
+      "kind": "osdu:wks:reference-data--GravityMagneticDataAcquisitionType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gravity Gradiometry",
+        "NameAlias": [
+          {
+            "AliasName": "Full Tensor Gradiometry"
+          }
+        ],
+        "ID": "GravityGradiometry",
+        "Description": "Includes instrumentation for measuring the rate of change of gravitation acceleration.",
+        "Code": "GravityGradiometry",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/GravityMagneticDataAcquisitionType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

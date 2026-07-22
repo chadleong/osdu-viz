@@ -1,0 +1,253 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:Public",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Public",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: The value is not recognized by platform services. Please refer to the platform Security and Compliance Legal service managing the so-called legal tags, which contain a securityClassification property. Applies to information which the company or individual routinely makes available to customers and third parties. ",
+        "Code": "Public",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:Private",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Private",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: The value is not recognized by platform services. Please refer to the platform Security and Compliance Legal service managing the so-called legal tags, which contain a securityClassification property. Applies to information available to employees and authorized third parties (e.g. contractors, interns) as part of routine business. A security incident involving unauthorized access to private information will have a severity level of Serious or Major, depending on the financial or time-to-recover impact, but never less than Serious. Unlabeled Information Assets are considered private by default.",
+        "Code": "Private",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:Confidential",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Confidential",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: The value is not recognized by platform services. Please refer to the platform Security and Compliance Legal service managing the so-called legal tags, which contain a securityClassification property. Applies to information which, if disclosed, would be prejudicial to the interests of the company or would cause serious damage to the interest of the company or its employees. A security incident involving unauthorized access to Confidential information will have a severity level of Major or Catastrophic, depending on the financial or time-to-recover impact, but never less than Major.",
+        "Code": "Confidential",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:Secret",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Secret",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: The value is not recognized by platform services. Please refer to the platform Security and Compliance Legal service managing the so-called legal tags, which contain a securityClassification property. Information is classified as Secret when it provides the company with a significant competitive edge, or shows specific business strategies and organizational directions, or is essential to the technical or financial success of a specific product or service. Unauthorized disclosure would cause serious damage to the interests of the company. The severity of an information security incident involving unauthorized access to Secret information will be reported as Catastrophic or Multi-Catastrophic, depending on the financial or time-to-recover impact, but never less than Catastrophic. ",
+        "Code": "Secret",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "OSDU",
+        "AttributionRevision": "R3",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:RESTRICTED",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "RESTRICTED",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Original SDU classification label 'restricted'.",
+        "Code": "RESTRICTED",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "SDU",
+        "AttributionRevision": "R1",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:CLASSIFIED",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CLASSIFIED",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Original SDU classification label 'classified'.",
+        "Code": "CLASSIFIED",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "SDU",
+        "AttributionRevision": "R1",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:CONFIDENTIAL",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CONFIDENTIAL",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Confidential\" with Name=\"Confidential\" instead. Original SDU classification label 'confidential'.",
+        "Code": "CONFIDENTIAL",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "SDU",
+        "AttributionRevision": "R1",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ResourceSecurityClassification:MOST-CONFIDENTIAL",
+      "kind": "osdu:wks:reference-data--ResourceSecurityClassification:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "MOST-CONFIDENTIAL",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Secret\" with Name=\"Secret\" instead. Original SDU classification label 'most-confidential'.",
+        "Code": "MOST-CONFIDENTIAL",
+        "AttributionAuthority": "The Open Group",
+        "AttributionPublication": "SDU",
+        "AttributionRevision": "R1",
+        "Source": "Workbook ReferenceValues/Published/ResourceSecurityClassification.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

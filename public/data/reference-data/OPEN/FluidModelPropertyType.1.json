@@ -1,0 +1,125 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyType:Viscosity",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Viscosity",
+        "ID": "Viscosity",
+        "Description": "Viscosity measures a fluid's resistance to flow and affects how easily oil and gas (hydrocarbons, non-aqueous phase) move through a medium. In the context of reservoir simulation fluid modeling, this property of a phase could be included as a part of a table or calculated by a mathematical equation, such as mixing of component viscosities. ",
+        "Code": "Viscosity",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyType:Density",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Density",
+        "ID": "Density",
+        "Description": "Density is the mass per unit volume of a fluid. This property helps differentiate between lighter (e.g., gas) and heavier (e.g., oil, water) fluids. \n",
+        "Code": "Density",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyType:PhaseEquilibrium",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Phase Equilibrium",
+        "ID": "PhaseEquilibrium",
+        "Description": "Phase equilibrium describes the balance between liquid and vapor phases as well as between multiple liquid phases of reservoir fluids at specific pressure and temperature. A component of phase equilibrium is K-values, that is, equilibrium ratios.",
+        "Code": "PhaseEquilibrium",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FluidModelPropertyType:Enthalpy",
+      "kind": "osdu:wks:reference-data--FluidModelPropertyType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Enthalpy",
+        "ID": "Enthalpy",
+        "Description": "Enthalpy is a thermodynamic property that represents the total energy content of a fluid, encompassing both its internal energy and the energy associated with its pressure-volume work. \n",
+        "Code": "Enthalpy",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/FluidModelPropertyType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

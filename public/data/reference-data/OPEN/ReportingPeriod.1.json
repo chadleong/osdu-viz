@@ -1,0 +1,810 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Cumulative",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cumulative",
+        "NameAlias": [
+          {
+            "AliasName": "CU",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Cumulative",
+        "Description": "To be used where a production value represents the total to date from the beginning of the reporting context. The  length of reported time is not declared.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Day",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Day",
+        "NameAlias": [
+          {
+            "AliasName": "DY",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Daily",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Day",
+        "Description": "A period of 24 consecutive hours beginning at midnight and constituting a calendar day.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FiscalQuarter",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal quarter",
+        "NameAlias": [
+          {
+            "AliasName": "FQ",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "FiscalQuarter",
+        "Description": "A period of 3 consecutive months in the financial year of a business, beginning with the first day of the first, fourth, seventh or tenth calendar month in the financial year.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FiscalQuarterToDate",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal quarter to date",
+        "NameAlias": [
+          {
+            "AliasName": "FQTD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "FiscalQuarterToDate",
+        "Description": "A current (in progress) period of less than 3 consecutive months from the start of the current fiscal quarter.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FiscalYear",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal year",
+        "NameAlias": [
+          {
+            "AliasName": "FY",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "FiscalYear",
+        "Description": "A period of 12 consecutive months in the financial year of a business.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FiscalYearToDate",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal year to date",
+        "NameAlias": [
+          {
+            "AliasName": "FYTD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "FiscalYearToDate",
+        "Description": "A current (in progress) period of less than 12 consecutive months from the start of the current fiscal year.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Hour",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hour",
+        "NameAlias": [
+          {
+            "AliasName": "HR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Hourly",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Hour",
+        "Description": "A period of 60 nominal minutes.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Month",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Month",
+        "NameAlias": [
+          {
+            "AliasName": "MO",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Monthly",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Month",
+        "Description": "A full calendar month aligned to the calendar in use.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:MonthToDate",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Month to date",
+        "NameAlias": [
+          {
+            "AliasName": "MTD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "MonthToDate",
+        "Description": "A current (in progress) period of calendar days less than the full number of days in the current month.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Quarter",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Quarter",
+        "NameAlias": [
+          {
+            "AliasName": "QT",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Quarterly",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Quarter",
+        "Description": "A period of 3 consecutive months from the start of the first, fourth, seventh or tenth month of the calendar year.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:QuarterToDate",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Quarter to date",
+        "NameAlias": [
+          {
+            "AliasName": "QTD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "QuarterToDate",
+        "Description": "A current (in progress) period of less than 3 full months in the current quarter of the calendar year.",
+        "AttributionPublication": "https://en.wikipedia.org/wiki/Quarter-to-date",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Week",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Week",
+        "NameAlias": [
+          {
+            "AliasName": "WK",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Weekly",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Week",
+        "Description": "A period of 7 consecutive days. Commonly starts on Monday.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:Year",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Year",
+        "NameAlias": [
+          {
+            "AliasName": "YR",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Yearly",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          },
+          {
+            "AliasName": "Annual",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:IndustryName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "Year",
+        "Description": "A period of 12 months from the start of the  calendar year.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:YearToDate",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Year to date",
+        "NameAlias": [
+          {
+            "AliasName": "YTD",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:PPDM:"
+          }
+        ],
+        "Code": "YearToDate",
+        "Description": "A current (in progress) period of less than 12 months from the  start of the current calendar year.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:CU",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cumulative",
+        "Code": "CU",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Cumulative\" with Name=\"Cumulative\" instead. To be used where a production value represents the total to date from the beginning of the reporting context (life to date (LTD)), or absolute total for a reporting context that has end-dated. This could be the life of the associated reporting entity, or for a planned, or unplanned downtime event.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:DY",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Day",
+        "Code": "DY",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Day\" with Name=\"Day\" instead. A period not more than 24 hours. May include total values for a closed day, or day to date (DTD) for the current day in progress.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FQ",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal quarter",
+        "Code": "FQ",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FiscalQuarter\" with Name=\"Fiscal quarter\" instead. A period of 3 month increments from the designated start of the fiscal year. May include total values for a closed fiscal quarter, or fiscal quarter to date (FQTD) for the current fiscal quarter in progress.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:FY",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fiscal year",
+        "Code": "FY",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"FiscalYear\" with Name=\"Fiscal year\" instead. A period not more than 12 months from the designated start of the year for financial reporting purposes. May include total values for a closed fiscal year, or fiscal year to date (FYTD) for the current fiscal year in progress.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:HR",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hour",
+        "Code": "HR",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Hour\" with Name=\"Hour\" instead. A period not more than 60 minutes. May include total values for a closed hour, or hour to date (HTD) for the current hour in progress.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:MO",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Month",
+        "Code": "MO",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Month\" with Name=\"Month\" instead. A full, or partial calendar month aligned to the Gregorian Calendar as the internationally accepted civil calendar. May include total values for a closed month, or month to date (MTD) for the current month in progress.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:QT",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Quarter",
+        "Code": "QT",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Quarter\" with Name=\"Quarter\" instead. A full, or partial period of 3 month increments from the start of the (Gregorian) calendar year. May include total values for a closed quarter, or quarter to date (QTD) for the current quarter in progress.",
+        "AttributionPublication": "OSDU data platform",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:WK",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Week",
+        "Code": "WK",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Week\" with Name=\"Week\" instead. A period not more than 7 days. May include total values for a closed week, or week to date (WTD) for the current week in progress.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReportingPeriod:YR",
+      "kind": "osdu:wks:reference-data--ReportingPeriod:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Year",
+        "Code": "YR",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Year\" with Name=\"Year\" instead. A period not more than 12 months from the start of the (Gregorian) calendar year. May include total values for a closed year, or year to date (YTD) for the current year in progress.",
+        "AttributionPublication": "PRODML 2.2",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T21:33:08+00:00"
+      }
+    }
+  ]
+}

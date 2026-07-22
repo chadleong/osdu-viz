@@ -1,0 +1,205 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--FlareType:Vertical",
+      "kind": "osdu:wks:reference-data--FlareType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical",
+        "NameAlias": [
+          {
+            "AliasName": "VerticalFlare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "Vertical Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Vertical",
+        "Description": "A tall, upright stack where gas is burned at the top.",
+        "Code": "Vertical",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/FlareType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FlareType:Horizontal",
+      "kind": "osdu:wks:reference-data--FlareType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Horizontal ",
+        "NameAlias": [
+          {
+            "AliasName": "HorizontalFlare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "Horizontal Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Horizontal",
+        "Description": "A flare boom extending horizontally from the rig or platform.",
+        "Code": "Horizontal",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/FlareType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FlareType:Boom",
+      "kind": "osdu:wks:reference-data--FlareType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Boom",
+        "NameAlias": [
+          {
+            "AliasName": "Boom Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "BoomFlare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Boom",
+        "Description": "Mounted on a cantilevered boom projecting from the rig.",
+        "Code": "Boom",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/FlareType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FlareType:Ground",
+      "kind": "osdu:wks:reference-data--FlareType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ground",
+        "NameAlias": [
+          {
+            "AliasName": "Ground Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "Ground Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Ground",
+        "Description": "Located at ground level with an enclosure or pit.",
+        "Code": "Ground",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/FlareType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--FlareType:Enclosed",
+      "kind": "osdu:wks:reference-data--FlareType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Enclosed ",
+        "NameAlias": [
+          {
+            "AliasName": "EnclosedFlare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          },
+          {
+            "AliasName": "Enclosed Flare",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Enclosed ",
+        "Description": "A flare system inside a stack or chamber to reduce visible flame and emissions.",
+        "Code": "Enclosed ",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Authoring/FlareType.1.xlsx; commit SHA 41b652ef.",
+        "CommitDate": "2026-06-23T13:18:39+00:00"
+      }
+    }
+  ]
+}

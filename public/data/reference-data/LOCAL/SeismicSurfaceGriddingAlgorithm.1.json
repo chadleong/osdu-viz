@@ -1,0 +1,482 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:MinimumCurvature",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Minimum Curvature",
+        "Description": "Fits the smoothest possible surface through the input data points by minimising the total squared curvature of the surface. Mathematically analogous to a thin, linearly elastic plate bent to pass through each data value with minimum bending energy. Produces continuous second derivatives across the grid and honours the input data exactly at sample locations. The most widely used gridding method in geophysics for seismic horizon surfaces. Can produce overshoot and spurious inflection points in areas of sparse data.",
+        "Code": "MinimumCurvature",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "Briggs, I.C. (1974). Machine contouring using minimum curvature. Geophysics, 39(1), 39-48. DOI: 10.1190/1.1440410",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:MinimumCurvatureTension",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Minimum Curvature with Tension",
+        "Description": "An extension of minimum curvature gridding that introduces a tension parameter to suppress unwanted oscillations and spurious inflection points between data constraints. The tension factor blends the pure minimum-curvature solution toward a harmonic surface, improving behaviour in data-sparse areas and near fault boundaries. Recommended where minimum curvature produces geologically unrealistic surface undulations.",
+        "Code": "MinimumCurvatureTension",
+        "AttributionAuthority": "SEG",
+        "AttributionPublication": "Smith, W.H.F. and Wessel, P. (1990). Gridding with continuous curvature splines in tension. Geophysics, 55(3), 293-305. DOI: 10.1190/1.1442837",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:InverseDistanceWeighting",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Inverse Distance Weighting",
+        "Description": "Assigns a value to each grid node as a weighted average of surrounding sample points, where the weight applied to each sample is inversely proportional to its distance from the node raised to a specified power. Higher power values increase the influence of near samples and reduce the influence of distant ones. A simple and computationally efficient method that honours data values exactly at sample locations but can produce a bull's-eye pattern of circular contours around isolated data points.",
+        "Code": "InverseDistanceWeighting",
+        "AttributionAuthority": "Association for Computing Machinery ",
+        "AttributionPublication": "Shepard, D. (1968). A two-dimensional interpolation function for irregularly-spaced data. Proceedings of the 23rd ACM National Conference, 517-524. Association for Computing Machinery (ACM)",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:NearestNeighbour",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Nearest Neighbour",
+        "Description": "Assigns to each grid node the value of the closest input data point, with no interpolation between samples. Produces a step-function surface that exactly honours all input values. Useful for converting near-regular point sets to a grid format or for filling gaps in an otherwise complete grid, but not appropriate for generating smooth geological surfaces from irregularly spaced seismic picks.",
+        "Code": "NearestNeighbour",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:NaturalNeighbour",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Natural Neighbour",
+        "Description": "An interpolation method based on Voronoi tessellation geometry. For each grid node, natural neighbours are identified as those input points whose Voronoi regions are modified when the grid node is inserted into the tessellation. The interpolated value is a weighted average of these natural neighbours, with weights proportional to the fractional area of the stolen Voronoi regions. Produces smooth surfaces that honour data exactly, with no extrapolation beyond the convex hull of the input data. Handles variable data density well.",
+        "Code": "NaturalNeighbour",
+        "AttributionPublication": "Sibson, R. (1981). A brief description of natural neighbour interpolation. In V. Barnett (ed.), Interpreting Multivariate Data, Wiley, Chichester, pp. 21-36.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:RadialBasisFunction",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Radial Basis Function",
+        "Description": "A family of interpolation methods that represent the surface as a sum of radially symmetric basis functions, each centred on an input data point. Common kernel choices include thin-plate spline, multiquadric, and inverse multiquadric functions. Thin-plate spline radial basis functions produce results mathematically equivalent to minimum curvature for globally smooth surfaces. The method is flexible, handles scattered data without a regular structure, and can be tuned through kernel selection and shape parameters.",
+        "Code": "RadialBasisFunction",
+        "AttributionPublication": "Hardy, R.L. (1971). Multiquadric equations of topography and other irregular surfaces. Journal of Geophysical Research, 76(8), 1905-1915. / Duchon, J. (1977). Splines minimizing rotation-invariant semi-norms in Sobolev spaces. Constructive Theory of Functions of Several Variables, Springer.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:PolynomialRegression",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Polynomial Regression",
+        "Description": "Fits a global polynomial function of specified degree to the entire input dataset using least-squares regression. Captures large-scale regional trends in the surface but suppresses local detail. Commonly used for trend surface analysis - for example, removing a regional dip or compaction trend before mapping residual structure. Not used as a primary gridding method for seismic horizons; applied as a preparatory or analytical step within a surface generation workflow.",
+        "Code": "PolynomialRegression",
+        "AttributionPublication": "Davis, J.C. (1986). Statistics and Data Analysis in Geology, 2nd ed. Wiley, New York.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:LeastSquaresSurfaceFitting",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Least Square Surface Fitting",
+        "Description": "A surface-fitting method that estimates grid node values by solving a least-squares approximation problem over the input data. Unlike exact interpolators, it does not necessarily pass through every sample point, instead producing a best-fit surface that is often more stable for sparse, noisy, or irregularly distributed data. It is commonly used where the objective is to generate a realistic regional surface from incomplete or scattered control points rather than to honour every input exactly.",
+        "Code": "LeastSquaresSurfaceFitting",
+        "AttributionPublication": "ORSTOM / Universit\u00e9 Paris Sud    El Abbassi, T., Jallouli, C., Albouy, Y., and Diament, M. (1990). A comparison of surface fitting algorithms for geophysical data. Terra Nova, 2, 467\u2013475.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:DiscreteSmoothInterpolation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Discrete Smooth Interpolation",
+        "Description": "A smooth surface interpolation method in which the surface is constructed by minimizing a discrete roughness criterion subject to the input constraints. It is designed for complex geological and geophysical surfaces and is particularly useful where the interpreter needs a smooth, geologically plausible surface from heterogeneous control data. Compared with exact global spline methods, it is often used as a fast and flexible smoothing/interpolation framework.",
+        "Code": "DiscreteSmoothInterpolation",
+        "AttributionPublication": "Jean-Laurent Mallet    Mallet, J.-L. (1992). Discrete smooth interpolation in geometric modelling. Computer-Aided Design, 24(4), 178\u2013191. DOI: 10.1016/0010-4485(92)90054-E",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:MovingAverage",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Moving Average",
+        "Description": "A local interpolation method that assigns each grid node the arithmetic mean of sample values within a defined moving window. The window is typically circular or elliptical and may be controlled by radius, orientation, or neighbourhood size. The method is simple and fast, but it smooths the data strongly, does not honour the sample values exactly, and may produce discontinuities where neighbourhood composition changes.",
+        "Code": "MovingAverage",
+        "AttributionAuthority": "UNESCO",
+        "AttributionPublication": "https://ikcest-drr.data.ac.cn/tutorial/k2016",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:BilinearInterpolation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Bilinear Interpolation",
+        "Description": "A local interpolation method for regular grids in which the value at a target location is computed by repeated linear interpolation in two directions using the four surrounding grid nodes (2x2). It is primarily used for regridding or resampling an already gridded surface rather than for constructing a grid directly from scattered interpretation points.",
+        "Code": "BilinearInterpolation",
+        "AttributionAuthority": "General mathematical method",
+        "AttributionPublication": "General mathematical formulation as described in standard references; see also bilinear remapping discussion in Kim, K.-H., Shim, P.-S., and Shin, S. (2019). An Alternative Bilinear Interpolation Method Between Spherical Grids. Atmosphere, 10(3), 123. DOI: 10.3390/atmos10030123",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:BicubicInterpolation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Deterministic",
+        "Name": "Bicubic Interpolation",
+        "Description": "A grid-based interpolation method that estimates values using cubic interpolation in two dimensions, typically over a 4x4 neighbourhood of surrounding grid nodes. It produces a smoother surface than bilinear interpolation and is commonly used for resampling or refining existing gridded surfaces, although it is not generally the primary method for gridding directly from scattered horizon picks.",
+        "Code": "BicubicInterpolation",
+        "AttributionAuthority": "General mathematical method",
+        "AttributionPublication": "Standard mathematical method for interpolation on 2D regular grids; see also common use in resampling references.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:Kriging",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Geostatistical",
+        "Name": "Kriging/Ordinary Kriging/ Universal Kriging/ Indicator Kriging",
+        "NameAlias": [],
+        "Description": "A geostatistical interpolation method that estimates surface values at grid nodes as a weighted linear combination of neighbouring sample points, where weights are derived from a variogram model describing the spatial correlation structure of the data. Provides a statistically optimal estimate in the least-squares sense and can quantify interpolation uncertainty. Best suited to datasets that are variable between sample locations, statistically characterised, or irregularly clustered. Less commonly used for seismic surfaces than for geochemical or petrophysical data, as seismic horizons tend to follow smoother natural surfaces.",
+        "Code": "Kriging",
+        "AttributionPublication": "Matheron, G. (1963). Principles of geostatistics. Economic Geology, 58(8), 1246-1266. / Journel, A.G. and Huijbregts, C.J. (1978). Mining Geostatistics. Academic Press, London. Matheron, G. / Journel & Huijbregts",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:TriangulationLinearInterpolation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Mesh-based",
+        "Name": "Triangulation with Linear Interpolation",
+        "Description": "Constructs a Delaunay triangulation of the input data points and interpolates linearly within each triangle to estimate values at grid nodes. Produces a piecewise-linear surface that honours all input data exactly and avoids artefacts introduced by global smoothing algorithms. Does not extrapolate beyond the convex hull of the input data. Produces faceted surfaces that may appear discontinuous in gradient at triangle boundaries, making it better suited to quality control and data checking than final surface deliverables.",
+        "Code": "TriangulationLinearInterpolation",
+        "AttributionPublication": "Delaunay, B. (1934). Sur la sphere vide. Izvestia Akademii Nauk SSSR, Otdelenie Matematicheskikh i Estestvennykh Nauk, 7, 793-800.",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:NeuralNetworkInterpolation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Group": "Neural-Network based",
+        "Name": "Neural Network Interpolation",
+        "Description": "A data-driven interpolation method in which a neural network is trained to approximate the mapping from spatial coordinates and related features to surface values. Such methods can capture complex nonlinear relationships and trends, but they require training data, careful validation, and are not yet standard controlled-vocabulary choices for routine seismic horizon gridding workflows",
+        "Code": "NeuralNetworkInterpolation",
+        "AttributionPublication": "Springer / Geoscientific Model Development    Zhan, J., Wu, S., Qi, J., Zeng, J., Qin, M., Wang, Y., and Du, Z. (2023). A generalized spatial autoregressive neural network method for three-dimensional spatial interpolation. Geoscientific Model Development, 16, 2777\u20132794. DOI: 10.5194/gmd-16-2777-2023",
+        "Source": "Workbook ReferenceValues/Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA fb71c9e3.",
+        "CommitDate": "2026-06-03T09:04:44+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicSurfaceGriddingAlgorithm:MultiResolutionBSplineApproximation",
+      "kind": "osdu:wks:reference-data--SeismicSurfaceGriddingAlgorithm:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Multi Resolution Bspline Approximation",
+        "NameAlias": [
+          {
+            "AliasName": "MBA",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Acronym:"
+          }
+        ],
+        "Description": "The Multi Resolution BSpline Approximation (MBA) algorithm constructs a smooth surface from scattered data by successively refining a hierarchy of B\u2011spline approximations. At each level, a coarse B\u2011spline grid is fitted to the data, the residuals are computed, and a finer grid is used to approximate the remaining error. The final surface is the sum of all B\u2011spline contributions across levels, providing a multiresolution representation with good smoothness and local control. Strengths: fast, scalable, smooth, local control, excellent for large scattered datasets. Weaknesses: not probabilistic, no uncertainty quantification.",
+        "Code": "MultiResolutionBSplineApproximation",
+        "AttributionPublication": "\u201cMultilevel B-spline Approximation (MBA) for Scattered Data Interpolation.\u201d IEEE Transactions on Visualization and Computer Graphics, Vol. 3, No. 3, pp. 228\u2013244, 1997.",
+        "Group": " Deterministic",
+        "Source": "Workbook Published/SeismicSurfaceGriddingAlgorithm.1.xlsx; commit SHA 2698bb42.",
+        "CommitDate": "2026-06-05T02:25:18+00:00"
+      }
+    }
+  ]
+}

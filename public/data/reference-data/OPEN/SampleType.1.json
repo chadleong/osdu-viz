@@ -1,0 +1,2689 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Additive",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Additive",
+        "ID": "Additive",
+        "Description": "An additive is a representative substance or mixture introduced, usually in small quantities, into fluid or solid material for the purpose of influencing its chemistry and behavior. For example, surfactants, demulsifiers, defoamers, inhibitors, scavangers, etc.",
+        "Code": "Additive",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Undefined:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Additive is unique in that it emphasizes the purpose of the sample. It may be good to keep the distinction between Liquid and Solid elsewhere on this list to hint at its substance.",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Additive.Liquid",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Liquid Additive",
+        "ID": "Additive.Liquid",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Additive\" with Name=\"Additive\" instead. An additive material sample in the liquid phase.",
+        "Code": "Additive.Liquid",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Additive is unique in that it emphasizes the purpose of the sample. It may be good to keep the distinction between Liquid and Solid.",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Additive.Solid",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solid Additive",
+        "ID": "Additive.Solid",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Additive\" with Name=\"Additive\" instead. A solid additive additive material sample in the solid phase.",
+        "Code": "Additive.Solid",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Additive is unique in that it emphasizes the purpose of the sample. It may be good to keep the distinction between Liquid and Solid.",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:AirCore",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Air Core",
+        "ID": "AirCore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate rock-related SampleType and use MudBaseType = \"Air\". rotary drilling and coring method where circulation is driven by compressed air",
+        "Code": "Air Core",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Asphaltene",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Asphaltene",
+        "ID": "Asphaltene",
+        "Description": "An asphaltene sample is a high molecular weight and polar fraction of crude oil that can precipitate under certain conditions.",
+        "Code": "Asphaltene",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:AugerCore",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Auger Core",
+        "ID": "AugerCore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate rock-related SampleType and use SampleAcquisitionToolFamily = \"Auger Core\". Core taken using auger drilling method",
+        "Code": "Auger Core",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Bitumen",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bitumen",
+        "ID": "Bitumen",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"TarBitumen\" with Name=\"Tar/Bitumen\" instead. A bitumen sample is a highly viscous form of petroleum found in natural deposits or obtained from crude oil during the refining process.",
+        "Code": "Bitumen",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "2025-08-08 Fluids special meeting - decided to merge Bitumen and Tar",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Cavings",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cavings",
+        "ID": "Cavings",
+        "Description": "Cavings are rock samples that fall off the sides of the boreholes during the drilling process and are brought to the surface by drilling mud. Unlike cuttings, cavings are not directly created by the drill bit.",
+        "Code": "Cavings",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Concrete",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Concrete",
+        "ID": "Concrete",
+        "Description": "A concrete sample is a representative specimen of a mixture of cement, aggregates, and water, typically cast, solidified, and cured under controlled conditions. In the context of oil and gas, it may be tested as a candidate for securing the well casing or other practical engineering applications.",
+        "Code": "Concrete",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Condensate",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Condensate",
+        "ID": "Condensate",
+        "Description": "A condensate sample is a liquid mixture of light hydrocarbons that condenses from gas when pressure and temperature drop in reservoirs or surface facilities.",
+        "Code": "Condensate",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:CorePlug",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Core Plug",
+        "ID": "CorePlug",
+        "Description": "A core plug is a small cylindrical rock sample extracted from cylindrical core (conventional or wireline-retrievable), often after the core has been slabbed. This does not represent sidewall core, which is also plug-shaped. Core plugs are typically, but not limited to 1 to 1.5 inches (2.5 to 3.8 cm]) in diameter and 1 to 2 inches (2.5 to 5 cm) in length. ",
+        "Code": "CorePlug",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:CoreSlab.PreservationSlab",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Preservation Core Slab",
+        "ID": "CoreSlab.PreservationSlab",
+        "Description": "When whole bore cylindrical core is cut lengthwise into slabs, the Preservation Slab identifies the piece intended for preservation and viewing as opposed to further sub-sampling and lab measurements (although rarely it may also be subsampled). Slabbing commonly produces 1/3 and 2/3 split, although this may vary. When slabbing produces a smaller and larger piece, Preservation Slab refers to the smaller piece.",
+        "Code": "CoreSlab.PreservationSlab",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:CoreSlab.WorkingSlab",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Working Core Slab",
+        "ID": "CoreSlab.WorkingSlab",
+        "Description": "When whole bore cylindrical core is cut lengthwise into slabs, the Working Slab identifies the piece intended for sub-sampling and lab measurements. Slabbing commonly produces 1/3 and 2/3 split, although this may vary. When slabbing produces a smaller and larger piece, Working Slab refers to the larger piece.",
+        "Code": "CoreSlab.WorkingSlab",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:CrushedRock",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Crushed Rock",
+        "NameAlias": [
+          {
+            "AliasName": "Powdered Rock"
+          }
+        ],
+        "ID": "CrushedRock",
+        "Description": "Crushed rock identifies the remnants of rock samples that remain after being crushed to gather lab measurements, such as geomechanical analysis, particle size analysis, geochemistry, fluid typing, or clay typing. It may also indicate small-particle powdered remnants.",
+        "Code": "CrushedRock",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Cuttings",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Cuttings",
+        "ID": "Cuttings",
+        "Description": "Cuttings are small pieces of rock broken away by drill bit teeth during drilling and brought to the surface by the drilling mud. Cuttings are screened out of the liquid mud system at the  shakers and are monitored for composition, size, shape, color, texture, hydrocarbon content and other properties.",
+        "Code": "Cuttings",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:DeadOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dead Oil",
+        "ID": "DeadOil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Oil.DeadOil\" with Name=\"Dead Oil\" instead. A dead oil sample is a representative portion of crude oil taken from a reservoir or well that has not undergone any natural gas separation",
+        "Code": "Dead Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Diesel",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Diesel",
+        "ID": "Diesel",
+        "Description": "A diesel sample is a hydrocarbon fuel, heavier than gasoline, but lighter than lubricating oils. It is the primary product fraction obtained from the atmospheric distillation of crude oil.",
+        "Code": "Diesel",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "While we don't want to add specific fluid types like this in general, Diesel is a common enough special case that we should keep it on the list\n\nrelevant because it can be a mudbase or even a cleaning fluid",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:EndTrim",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "End Trim",
+        "ID": "EndTrim",
+        "Description": "An end trim is a small disc-shaped portion of rock cut crosswise from a plug-shaped sample (core plug or sidewall core). End trims are typically used for generating slides, destructive testing, or analysis that doesn't require a regularly shaped sample. Also known as a offcut or a slice. ",
+        "Code": "EndTrim",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Fluid",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fluid",
+        "ID": "Fluid",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Fluid.Unspecified\" with Name=\"Unspecified Fluid\" instead. A fluid sample type refers to any substance that exists in a physically fluid or liquid state at room temperature, example is water or oil, can be used if the substance is not well defined",
+        "Code": "Fluid",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Fluid.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Fluid",
+        "ID": "Fluid.Unspecified",
+        "Description": "An unspecified fluid sample is a specimen in liquid state that is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Fluid.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:FormationWater",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Water",
+        "ID": "FormationWater",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Water.Formation\" with Name=\"Formation Water\" instead. A formation water sample is a representative fluid collected from subsurface geological formations during oil and gas drilling.",
+        "Code": "Formation Water",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas",
+        "ID": "Gas",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Gas.Unspecified\" with Name=\"Unspecified Gas\" instead. Also consider whether there is another specific gas SampleType that would be appropriate. Hydrocarbon gas sample",
+        "Code": "Gas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.Formation",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Gas",
+        "ID": "Gas.Formation",
+        "Description": "A formation gas sample is a representative gas collected from subsurface geological formations during oil and gas drilling, usually through formation testing.",
+        "Code": "Gas.Formation",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.Headspace",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Headspace Gas",
+        "ID": "Gas.Headspace",
+        "Description": "A headspace gas sample is the gas present in the space above a liquid or solid sample within a sealed container.",
+        "Code": "Gas.Headspace",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.LiveGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Live Gas",
+        "ID": "Gas.LiveGas",
+        "Description": "A live gas sample is a natural gas that contains dissolved liquid hydrocarbons (e.g., condensates or heavier hydrocarbon fractions) in its gaseous phase due to high pressure and temperature conditions.",
+        "Code": "Gas.LiveGas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.MudGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Gas",
+        "ID": "Gas.MudGas",
+        "Description": "A mud gas sample refers to the gases that are present in the drilling mud circulating in the wellbore.",
+        "Code": "Gas.MudGas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.TripGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trip Gas",
+        "ID": "Gas.TripGas",
+        "Description": "A trip gas sample consists of gas collected during a \"drill string trip\", that is, when the drillstring is pulled out of the wellbore.",
+        "Code": "Gas.TripGas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Gas.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Gas",
+        "ID": "Gas.Unspecified",
+        "Description": "An unspecified gas sample is a sample/specimen that exists in the gaseous state at room temperature, but is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Gas.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "2025-07-08 - Rocks meeting: We intentionally did NOT add \"hydrocarbon gas\" to the description",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Glass",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Glass",
+        "ID": "Glass",
+        "Description": "Glass is a hard, transparent material made by cooling molten substances, typically silica, in a way that prevents crystal formation.",
+        "Code": "Glass",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:GroundWater",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ground Water",
+        "ID": "GroundWater",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Water.Formation\" with Name=\"Formation Water\" instead.  A groundwater sample is water collected from beneath the Earth's surface, typically from wells or aquifers.",
+        "Code": "Ground Water",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:HeadspaceGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Headspace Gas",
+        "ID": "HeadspaceGas",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Gas.Headspace\" with Name=\"Headspace Gas\" instead. A headspace gas sample refers to the gas present in the space above a liquid or solid sample within a sealed container.",
+        "Code": "Headspace Gas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Hydrate",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydrate",
+        "ID": "Hydrate",
+        "Description": "A hydrate sample is a crystalline solid composed of water molecules forming a lattice structure around certain gas molecules or ions, typically methane, commonly encountered in natural gas production and transportation.",
+        "Code": "Hydrate",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Kerogen",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Kerogen",
+        "ID": "Kerogen",
+        "Description": "\nA kerogen sample is a portion of shale rock extracted for analysis, providing insights into the organic material's composition, thermal maturity, and potential for hydrocarbon generation in petroleum source rocks.",
+        "Code": "Kerogen",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Metal",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Metal",
+        "ID": "Metal",
+        "Description": "Metal is a solid material characterized by high electrical conductivity, malleability, ductility, and a shiny appearance, typically made up of elements (e.g. iron or aluminum) that readily lose electrons. ",
+        "Code": "Metal",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Microplug",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Microplug",
+        "ID": "Microplug",
+        "Description": "A microplug is a small cylindrical rock sample cut or drilled from a plug sample (core plug or sidewall core). Micro plugs are typically 1 to 3mm in diameter and 20mm in length and used for micro CT measurements.",
+        "Code": "Microplug",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Mud%20Filtrate",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Filtrate",
+        "ID": "Mud%20Filtrate",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"MudFiltrate\" with Name=\"Mud Filtrate\" instead. A mud filtrate sample refers to a portion of the drilling mud that has permeated into the formation during drilling operations.",
+        "Code": "Mud Filtrate",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "2025-07-08 - Rock meeting: Changed Sample Substance Family to \"Fluid\", since that's generally the category in which it is analyzed",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:MudGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Gas",
+        "ID": "MudGas",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Gas.MudGas\" with Name=\"Mud Gas\" instead. A mud gas sample refers to the gases that are present in the drilling mud circulating in the wellbore.",
+        "Code": "Mud Gas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:MudOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Oil",
+        "ID": "MudOil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Oil.MudOil\" with Name=\"Mud Oil\" instead. Please use ID Oil.MudOil instead. Mud oil samples are typically collected during drilling operations in the oil and gas industry.",
+        "Code": "Mud Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:MudFiltrate",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Filtrate",
+        "ID": "MudFiltrate",
+        "Description": "A mud filtrate sample refers to a portion of the drilling mud that has permeated into the formation during drilling operations.",
+        "Code": "MudFiltrate",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil",
+        "ID": "Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Oil.Unspecified\" with Name=\"Unspecified Oil\" instead. Hydrocarbon oil sample",
+        "Code": "Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.DeadOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dead Oil",
+        "ID": "Oil.DeadOil",
+        "Description": "A dead oil sample is a representative portion of crude oil taken from a reservoir or well that does not contain dissolved natural gas. (Contrast with live oil.)",
+        "Code": "Oil.DeadOil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.Extract",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil Extract",
+        "ID": "Oil.Extract",
+        "Description": "An oil extract is a specimen of hydrocarbon oil that has been removed from a rock sample, usually for the purpose of geochemical analysis.",
+        "Code": "Oil.Extract",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.LiveOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Live Oil",
+        "ID": "Oil.LiveOil",
+        "Description": "A live oil sample is a representative portion of crude oil taken from a reservoir or well that does contain dissolved natural gas. (Contrast with dead oil.) It is usually kept at formation pressure in order to retain the dissolved gas.",
+        "Code": "Oil.LiveOil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.MudOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mud Oil",
+        "ID": "Oil.MudOil",
+        "Description": "A mud oil sample is a crude oil sample recovered from the drilling mud during drilling operations.",
+        "Code": "Oil.MudOil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.Refined",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Refined Oil",
+        "ID": "Oil.Refined",
+        "Description": "A refined oil sample is a representative portion of an oil product that has undergone purification and processing to remove impurities, resulting in a higher quality and more desirable end product.",
+        "Code": "Oil.Refined",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Oil.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Oil",
+        "ID": "Oil.Unspecified",
+        "Description": "An unspecified oil sample is a petroleum (hydrocarbon oil) sample that is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Oil.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Outcrop",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Outcrop",
+        "ID": "Outcrop",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Rock.Unspecified\" with Name=\"Unspecified Rock\" instead. On master-data--GenericSite, consider using \"SiteType:Outcrop\" with Name=\"Outcrop\". A sample taken from an outcrop. The sample length (see RockSample data.SampleLength), diameter (see RockSample data.SampleDiameter), weight (see RockSample data.SampleWeight) and sample preservation status (see RockSample data.PreservationTypeID) should be captured if applicable. Outcrop will have a surface location instead of wellbore.",
+        "Code": "Outcrop",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Plastic",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Plastic",
+        "ID": "Plastic",
+        "Description": "A plastic sample is a synthetic polymer-based material such as polypropylene or polyethylene.",
+        "Code": "Plastic",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Plug.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Plug",
+        "ID": "Plug.Unspecified",
+        "Description": "An unspecified plug identifies a small cylindrical plug-shaped rock sample which may be a core plug (conventional or wireline-retrievable) or sidewall core, but for which the acquisition method is unknown or is unspecified.",
+        "Code": "Plug.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:ProcessingWater",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Processing Water",
+        "ID": "ProcessingWater",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Water.Processing\" with Name=\"Processing Water\" instead. A sample of water used in industrial processes, manufacturing, or other applications",
+        "Code": "Processing Water",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Proppant",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Proppant",
+        "ID": "Proppant",
+        "Description": "Proppant is a solid material, used in hydraulic fracturing, to keep fractures open and maintain the flow of oil or gas. E.g., Certain kinds of sand or ceramic are used for this purpose.",
+        "Code": "Proppant",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Puck",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Puck",
+        "ID": "Puck",
+        "Description": "A puck is a disc-shaped portion of rock cut crosswise from a cylindrical whole core. It is usually 1 to 2 inches (2.5 to 5 cm) thick.",
+        "Code": "Puck",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:PushCore",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Push Core",
+        "ID": "PushCore",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate rock-related SampleType and use SampleAcquisitionToolFamily = \"Push Core\". Push cores are made of a removable clear poly carbonate tube that is used to collect sediment samples.",
+        "Code": "Push Core",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:RefinedOil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Refined Oil",
+        "ID": "RefinedOil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Oil.Refined\" with Name=\"Refined Oil\" instead. A refined oil sample is a representative portion of an oil product that has undergone purification and processing to remove impurities, resulting in a higher quality and more desirable end product",
+        "Code": "Refined Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Rock",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock",
+        "ID": "Rock",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Rock.Unspecified\" with Name=\"Unspecified Rock\" instead. A generic rock sample of undefined details",
+        "Code": "Rock",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Rock.Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock.Oil",
+        "ID": "Rock.Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate rock-related Sample Type. A rock sample containing hydrocarbon oil",
+        "Code": "Rock.Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Rock.Soil.Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock.Soil.Oil",
+        "ID": "Rock.Soil.Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate SampleType. A rock sample containing solids and hydrocarbon oil",
+        "Code": "Rock.Soil.Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Rock.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Rock",
+        "ID": "Rock.Unspecified",
+        "Description": "An unspecified rock sample is a rock sample that is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Rock.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:RockChip",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock Chip",
+        "ID": "RockChip",
+        "Description": "A rock chip is a fragment of rock broken or cut off of a larger specimen of rock such as conventional core. It is irregularly-shaped rather than plug-, disc-, or cube-shaped.",
+        "Code": "RockChip",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Saline",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Saline",
+        "ID": "Saline",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Use another appropriate water-based Sample Type. A solution sample containing dissolved salts.",
+        "Code": "Saline",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Recommended removal, since, it either attempts to identify a combination of substances, or it attempts to identify Seawater, which can be identified separately. Would replace with \"Surface Water\".",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Sediment",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sediment Or Soil",
+        "ID": "Sediment",
+        "Description": "A sediment/soil sample consists of loose, unconsolidated materials like sand, soil, silt, clay, gravel, and/or organic material. It may be collected from the bed of a body of water or from dry land.",
+        "Code": "Sediment",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:SidewallCore",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sidewall Core",
+        "ID": "SidewallCore",
+        "Description": "Sidewall core is a small cylindrical  sample of rock (1 to 1.5 inches [2.5 to 3.8 cm] in diameter and 1 to 2 inches [2.5 to 5 cm] in length) taken from the side of the borehole. It may be acquired using percussion or mechanical methods hung on a wireline, but is different than wireline-retrievable whole core.",
+        "Code": "SidewallCore",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Slide",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Slide",
+        "ID": "Slide",
+        "Description": "A sample/specimen of any substance type mounted to a glass slide to view under a microscope. ",
+        "Code": "Slide",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Undefined:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Soil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soil",
+        "ID": "Soil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Sediment\" with Name=\"Sediment\" instead. A soil sample is a small, representative portion of earth or ground material collected from a specific location, typically analyzed to assess its composition, nutrient content, and physical properties",
+        "Code": "Soil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "If we keep it, distinguish it from Sediment.",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Soil.Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soil.Oil",
+        "ID": "Soil.Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate SampleType. A soil sample containing hydrocarbon oil",
+        "Code": "Soil.Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Soil.SolidHC.Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soil.Solid HC.Oil",
+        "ID": "Soil.SolidHC.Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate SampleType. A mixture of soil, solid hydrocarbon (e.g. wax) and hydrocarbon oil",
+        "Code": "Soil.Solid HC.Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Solid",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solid",
+        "ID": "Solid",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Solid.Unspecified\" with Name=\"Unspecified Solid\" instead. A solid sample type refers to any substance that exists in a physically stable and rigid state at room temperature, example is wax or asphaltene, can be used if the substance is not well defined",
+        "Code": "Solid",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Undefined:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Solid.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Solid",
+        "ID": "Solid.Unspecified",
+        "Description": "An unspecified solid sample is a sample/specimen that exists in a physically stable and rigid state at room temperature, but is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Solid.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Steam",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steam",
+        "ID": "Steam",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Water.SteamSystem\" with Name=\"Steam System Water\" instead. A steam sample is a representative portion of vaporized water obtained from a steam system.",
+        "Code": "Steam",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Proposed to deprecate as redundant.\n\nConsider replacing with Water.SteamSystem? How would we capture Steam System as the acquisition type? Answer: Facility Sample Acquisition",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Tar",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tar",
+        "ID": "Tar",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"TarBitumen\" with Name=\"Tar/Bitumen\" instead. A tar sample is a dark, viscous, and sticky substance derived from the distillation of organic materials, such as coal, wood, or petroleum.",
+        "Code": "Tar",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "2025-08-08 Fluids special meeting - decided to merge Bitumen and Tar",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:TarBitumen",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tar/Bitumen",
+        "ID": "TarBitumen",
+        "Description": "A tar or bitumen sample is a highly viscous form of petroleum found in natural deposits or obtained from crude oil during the refining process.",
+        "Code": "TarBitumen",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "2025-08-08 Fluids special meeting - decided to merge Bitumen and Tar",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:TripGas",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trip Gas",
+        "ID": "TripGas",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Gas.TripGas\" with Name=\"Trip Gas\" instead. This sample may be taken from a wellbore or a pipeline to analyze the gas composition, pressure, and other relevant properties during a drilling trip/journey",
+        "Code": "Trip Gas",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Undefined",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Undefined",
+        "ID": "Undefined",
+        "Description": "The Sample Type is not or cannot be specified.",
+        "Code": "Undefined",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Undefined:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water",
+        "ID": "Water",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"Water.Unspecified\" with Name=\"Unspecified Water\" instead. A generic water sample",
+        "Code": "Water",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Extract",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water Extract",
+        "ID": "Water.Extract",
+        "Description": "A water extract is a specimen of water that has been removed from a rock sample, usually for the purpose of chemical analysis.",
+        "Code": "Water.Extract",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Formation",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Formation Water",
+        "ID": "Water.Formation",
+        "Description": "A formation water sample is a representative fluid collected from subsurface geological formations during oil and gas drilling, usually via formation testing. This includes groundwater collected from aquifers.",
+        "Code": "Water.Formation",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Oil",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water.Oil",
+        "ID": "Water.Oil",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use another appropriate Sample Type. A mixed oil and water sample",
+        "Code": "Water.Oil",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Processing",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Processing Water",
+        "ID": "Water.Processing",
+        "Description": "A processing water sample is water collected from industrial processes related to processing and refining oil and gas.",
+        "Code": "Water.Processing",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.SteamSystem",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Steam System Water",
+        "ID": "Water.SteamSystem",
+        "Description": "A steam system sample is a specimen of water, condensed from vaporized water that was captured from a steam system, such as that used for thermal enhanced oil recovery or in a processing plant.",
+        "Code": "Water.SteamSystem",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Surface",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Surface Water",
+        "ID": "Water.Surface",
+        "Description": "A surface water sample is water collected from a body of water on the surface of the earth such as a sea or river, as opposed to water collected underground.",
+        "Code": "Water.Surface",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Water.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Water",
+        "ID": "Water.Unspecified",
+        "Description": "An unspecified water sample is a water sample that is not or cannot be further qualified by a Sample Type on this list.",
+        "Code": "Water.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:Wax",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wax",
+        "ID": "Wax",
+        "Description": "A hydrocarbon wax is a crystalline hydrocarbon (such as paraffin or microcrystalline wax) that solidifies at room temperature, often derived from crude oil refining or natural gas processing.",
+        "Code": "Wax",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:WholeCore.Conventional",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Conventional Whole Core",
+        "ID": "WholeCore.Conventional",
+        "Description": "Conventional whole core is a full-diameter cylindrical rock sample obtained from a cylindrical coring tool and brought to the surface through drill pipe. This Sample Type may represent the full length as retrieved (e.g. 9 metres) or as sliced (e.g. 1 metre sections), before being further slabbed or subsampled. It may represent unconsolidated rock or sand if it was brought to the surface in this way.",
+        "Code": "WholeCore.Conventional",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:WholeCore.Unspecified",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Whole Core",
+        "ID": "WholeCore.Unspecified",
+        "Description": "An unspecified whole core is a full-diameter cylindrical rock sample for which the coring acquisition method (conventional or wireline-retrievable) is unknown or unspecified.",
+        "Code": "WholeCore.Unspecified",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleType:WholeCore.WirelineRetrievable",
+      "kind": "osdu:wks:reference-data--SampleType:1.1.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Wireline Retrievable Whole Core",
+        "ID": "WholeCore.WirelineRetrievable",
+        "Description": "A wireline-retrievable whole core is a full-diameter cylindrical rock sample obtained from a cylindrical coring tool and brought to the surface by a wireline tool. This difference compared to conventional core can affect pressures and depth shifts among other factors. This Sample Type may represent the full length as retrieved (e.g. 9 metres) or as sliced (e.g. 1 metre sections), before being further slabbed or subsampled. It may represent unconsolidated rock or sand if it was brought to the surface in this way.",
+        "Code": "WholeCore.WirelineRetrievable",
+        "SampleSubstanceFamilyID": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock:",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleType.1.xlsx; commit SHA a489fc4b.",
+        "CommitDate": "2025-10-16T08:12:32+00:00"
+      }
+    }
+  ]
+}

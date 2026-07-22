@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PressureGradientCalculationMethod:TrendAnalysis",
+      "kind": "osdu:wks:reference-data--PressureGradientCalculationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Trend Analysis",
+        "ID": "TrendAnalysis",
+        "Description": "Gradient Determination Method based on Human Analysis of Trends.",
+        "Code": "TrendAnalysis",
+        "Source": "Workbook ReferenceValues/Authoring/PressureGradientCalculationMethod.1.xlsx; commit SHA 413b7ea2.",
+        "CommitDate": "2025-11-15T18:27:41+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PressureGradientCalculationMethod:Unknown",
+      "kind": "osdu:wks:reference-data--PressureGradientCalculationMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unknown",
+        "ID": "Unknown",
+        "Description": "Unknown Method",
+        "Code": "Unknown",
+        "Source": "Workbook ReferenceValues/Authoring/PressureGradientCalculationMethod.1.xlsx; commit SHA 413b7ea2.",
+        "CommitDate": "2025-11-15T18:27:41+00:00"
+      }
+    }
+  ]
+}

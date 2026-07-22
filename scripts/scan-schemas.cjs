@@ -14,8 +14,8 @@ function scanSchemasRecursively(dir, basePath = "", results = []) {
         // Recursively scan subdirectories
         scanSchemasRecursively(fullPath, relativePath, results)
       } else if (entry.isFile() && entry.name.endsWith(".json")) {
-        // Skip the status files
-        if (entry.name === "SchemaStatus.json" || entry.name === "SchemaToIndexSchema.json") {
+        // Skip status files and minified files (minified files are handled via publicPath replacement)
+        if (entry.name === "SchemaStatus.json" || entry.name === "SchemaToIndexSchema.json" || entry.name.endsWith(".min.json")) {
           continue
         }
 

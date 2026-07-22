@@ -1,0 +1,117 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--NMRTestCondition:FullySaturated",
+      "kind": "osdu:wks:reference-data--NMRTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fully Saturated",
+        "ID": "FullySaturated",
+        "Description": "Refers to a condition where the pores of the sample are completely filled with fluid, allowing for the measurement of total porosity and fluid properties using NMR techniques.",
+        "Code": "FullySaturated",
+        "Source": "Workbook ReferenceValues/Published/NMRTestCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NMRTestCondition:PartiallySaturated",
+      "kind": "osdu:wks:reference-data--NMRTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Partially Saturated",
+        "ID": "PartiallySaturated",
+        "Description": "Indicates a state where only a portion of the sample\u2019s pore space is filled with fluid, useful for studying fluid distribution, wettability, and capillary forces within the porous medium.",
+        "Code": "PartiallySaturated",
+        "Source": "Workbook ReferenceValues/Published/NMRTestCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NMRTestCondition:Residual",
+      "kind": "osdu:wks:reference-data--NMRTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Residual",
+        "ID": "Residual",
+        "Description": "Describes the condition where only the residual amount of fluid remains in the pore spaces after drainage or production processes, important for understanding irreducible water or oil saturation levels.",
+        "Code": "Residual",
+        "Source": "Workbook ReferenceValues/Published/NMRTestCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--NMRTestCondition:FreshState",
+      "kind": "osdu:wks:reference-data--NMRTestCondition:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fresh State",
+        "ID": "FreshState",
+        "Description": "Refers to the original, unaltered condition of the sample, typically before any fluid introduction or saturation, providing a baseline for subsequent NMR measurements and comparisons.",
+        "Code": "FreshState",
+        "Source": "Workbook ReferenceValues/Published/NMRTestCondition.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

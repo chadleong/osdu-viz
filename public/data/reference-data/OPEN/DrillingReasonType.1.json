@@ -1,0 +1,237 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:DeeperPoolTest",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deeper Pool Test",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:DeeperPoolTest\" with Name=\"DeeperPoolTest\" instead. Exploratory well within known production but deeper than deepest test",
+        "Code": "DeeperPoolTest",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:Development",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Development",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:Development\" with Name=\"Development\" instead. A wellbore drilled in a zone in an area already proved productive. (POSC definition \u2013 Development)",
+        "Code": "Development",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:Extension",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Extension",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:Extension\" with Name=\"Extension\" instead. Well to significantly extend partly developed pool",
+        "Code": "Extension",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:NewFieldWildcat",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "New-field Wildcat",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:NewFieldWildcat\" with Name=\"NewFieldWildcat\" instead. Exploratory well on untested structure",
+        "Code": "NewFieldWildcat",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:NewPoolWildcat",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "New-pool Wildcat",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:NewFieldWildcat\" with Name=\"NewFieldWildcat\" instead. Exploratory well on tested structure outside known production",
+        "Code": "NewPoolWildcat",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:Service",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Service",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:Service\" with Name=\"Service\" instead. Well to support production (injection, disposal, observation)",
+        "Code": "Service",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:ShallowerPoolTest",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Shallower Pool Test",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:ShallowerPoolTest\" with Name=\"ShallowerPoolTest\" instead. Exploratory well within known production but shallower than deepest test",
+        "Code": "ShallowerPoolTest",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DrillingReasonType:StratigraphicTest",
+      "kind": "osdu:wks:reference-data--DrillingReasonType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Stratigraphic Test",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"LaheeClass:StratigraphicTest\" with Name=\"StratigraphicTest\" instead. Wellbore drilled to test geology.",
+        "Code": "StratigraphicTest",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook ReferenceValues/Published/DrillingReasonType.1.xlsx; commit SHA c016b408.",
+        "CommitDate": "2024-02-17T16:50:07+00:00"
+      }
+    }
+  ]
+}

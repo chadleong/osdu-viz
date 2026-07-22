@@ -1,0 +1,570 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:MetricUTM3D",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Metric UTM 3D",
+        "NameAlias": [
+          {
+            "AliasName": "Volve"
+          }
+        ],
+        "Description": "A SEG-Y Template for metric UTM coordinates and 100 scaling, developed for Volve.",
+        "Code": "MetricUTM3D",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 189,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 193,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 181,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 185,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 109,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:Popular3DMetric",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Popular 3D Metric",
+        "Description": "A popular SEG-Y header position template for metric coordinates.",
+        "Code": "Popular3DMetric",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 17,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 21,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 73,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 77,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 109,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:Popular3DFeet",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Popular 3D Feet",
+        "Description": "A popular SEG-Y header position template for international feet coordinates.",
+        "Code": "Popular3DFeet",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 17,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 21,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 73,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 77,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 109,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:Popular3DUSFeet",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Popular 3D US-Feet",
+        "Description": "A popular SEG-Y header position template for US feet coordinates.",
+        "Code": "Popular3DUSFeet",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 189,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 193,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 185,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 181,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 109,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:PetrelLegacy3DMetric",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Petrel Legacy 3D Metric",
+        "Description": "A SEG-Y template using an (incorrect) non-standard start time location for metric coordinates.",
+        "Code": "PetrelLegacy3DMetric",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 189,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 193,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 185,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 181,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 105,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:PetrelLegacy3DFeet",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Petrel Legacy 3D Feet",
+        "Description": "A SEG-Y template using an (incorrect) non-standard start time location for international feet coordinates.",
+        "Code": "PetrelLegacy3DFeet",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 189,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 193,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 185,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 181,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 105,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:PetrelLegacy3DUSFeet",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Petrel Legacy 3D USFeet",
+        "Description": "A SEG-Y template using an (incorrect) non-standard start time location for US-feet coordinates.",
+        "Code": "PetrelLegacy3DUSFeet",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 189,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 193,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 185,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 181,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 105,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SEGY-HeaderMappingTemplate:Corrected3DMetric",
+      "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Corrected 3D Metric",
+        "Description": "A SEG-Y template to read from corrected header positions since the original values were found incorrect.",
+        "Code": "Corrected3DMetric",
+        "SEGYRevision": "rev 0",
+        "VectorHeaderMapping": [
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Inline:",
+            "Position": 221,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:Crossline:",
+            "Position": 225,
+            "ScalarIndicator": "NOSCALE",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPY:",
+            "Position": 229,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:CMPX:",
+            "Position": 233,
+            "ScalarIndicator": "OVERRIDE",
+            "ScalarOverride": -100,
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:m:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:UINT:",
+            "WordWidth": 4
+          },
+          {
+            "KeyName": "{{NAMESPACE}}:reference-data--HeaderKeyName:STARTTIME:",
+            "Position": 109,
+            "ScalarIndicator": "NOSCALE",
+            "UoM": "{{NAMESPACE}}:reference-data--UnitOfMeasure:ms:",
+            "WordFormat": "{{NAMESPACE}}:reference-data--WordFormatType:INT:",
+            "WordWidth": 2
+          }
+        ],
+        "Source": "Workbook ReferenceValues/Published/SEGY-HeaderMappingTemplate.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

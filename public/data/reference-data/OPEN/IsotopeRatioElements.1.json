@@ -1,0 +1,425 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:C13",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon 13",
+        "ID": "C13",
+        "Description": "Carbon-13 (13C) is a stable isotope of carbon with a natural abundance, used in isotopic labeling and as a tracer in carbon cycle studies.",
+        "Code": "C13",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:C12",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon 12",
+        "ID": "C12",
+        "Description": "Carbon-12 (12C) is the most abundant stable isotope of carbon, making up about 98.9% of all carbon atoms and serving as the standard for atomic mass units.",
+        "Code": "C12",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:C14",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon 14",
+        "ID": "C14",
+        "Description": "Carbon-14 (14C) is a radioactive isotope of carbon used in radiocarbon dating and as a tracer in biochemical and environmental studies.",
+        "Code": "C14",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:H1",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hydrogen",
+        "ID": "H1",
+        "Description": "Hydrogen, the lightest element, has several isotopes, the most common being protium with no neutrons.",
+        "Code": "H1",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:H2",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deuterium (H2)",
+        "ID": "H2",
+        "Description": "Deuterium, or heavy hydrogen, contains one neutron and is used in nuclear applications and stable isotope studies.",
+        "Code": "H2",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:H3",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tritium",
+        "ID": "H3",
+        "Description": "Tritium is a radioactive isotope of hydrogen with two neutrons, used in nuclear fusion and as a tracer in environmental studies.",
+        "Code": "H3",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:N14",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitrogen 14",
+        "ID": "N14",
+        "Description": "Nitrogen-14 (14N) is the most abundant stable isotope of nitrogen, making up about 99.6% of natural nitrogen.",
+        "Code": "N14",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:N15",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitrogen 15",
+        "ID": "N15",
+        "Description": "Nitrogen-15 (15N) is a stable isotope used as a tracer in agricultural and environmental studies to track nitrogen sources and cycles.",
+        "Code": "N15",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:O16",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oxygen 16",
+        "ID": "O16",
+        "Description": "Oxygen-16 (16O) is the most abundant stable isotope of oxygen, comprising about 99.76% of natural oxygen, used as a standard in isotopic studies.",
+        "Code": "O16",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:O17",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oxygen 17",
+        "ID": "O17",
+        "Description": "Oxygen-17 (17O) is a rare stable isotope of oxygen used in the study of water cycles and paleoclimate through isotopic analysis.",
+        "Code": "O17",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:O18",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oxygen 18",
+        "ID": "O18",
+        "Description": "Oxygen-18 (18O) is a stable isotope used extensively in paleoclimatology to understand past climates and environmental conditions.",
+        "Code": "O18",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:S32",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sulphur 32",
+        "ID": "S32",
+        "Description": "Sulphur-32 (32S) is the most abundant stable isotope of sulfur, used as a reference in various chemical and environmental studies.",
+        "Code": "S32",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:S33",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sulphur 33",
+        "ID": "S33",
+        "Description": "Sulphur-33 (33S) is a stable isotope of sulfur, used in geochemical and environmental isotopic studies.",
+        "Code": "S33",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:S34",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sulphur 34",
+        "ID": "S34",
+        "Description": "Sulphur-34 (34S) is a stable isotope used in isotopic fractionation studies to track sulfur sources and biogeochemical cycles.",
+        "Code": "S34",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--IsotopeRatioElements:S36",
+      "kind": "osdu:wks:reference-data--IsotopeRatioElements:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sulphur 36",
+        "ID": "S36",
+        "Description": "Sulphur-36 (36S) is a rare stable isotope of sulfur, used in tracing and dating studies in geology and meteorology.",
+        "Code": "S36",
+        "Source": "Workbook ReferenceValues/Published/IsotopeRatioElements.1.xlsx; commit SHA 08e1c4c5.",
+        "CommitDate": "2025-02-09T17:44:00+00:00"
+      }
+    }
+  ]
+}

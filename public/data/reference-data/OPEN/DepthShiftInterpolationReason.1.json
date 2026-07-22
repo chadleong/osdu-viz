@@ -1,0 +1,121 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationReason:RubbleZone",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationReason:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rubble Zone",
+        "ID": "RubbleZone",
+        "Description": "This interpolation is to correct for a portion of the sample that has been broken or fragmented artificially, such as during drilling or coring operations, through mechanical stresses, vibration, or improper handling.",
+        "Code": "RubbleZone",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationReason.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationReason:GapInSample",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationReason:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gap In Sample",
+        "ID": "GapInSample",
+        "Description": "This interpolation is needed due to a distinct gap in the collected sample, such as a gap between two sections of whole core.",
+        "Code": "GapInSample",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationReason.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationReason:Unconsolidated",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationReason:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unconsolidated",
+        "ID": "Unconsolidated",
+        "Description": "This interpolation adjusts for a sample that does not naturally have adequate cementation within the grains, resulting in a loose structure within the reservoir.",
+        "Code": "Unconsolidated",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationReason.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DepthShiftInterpolationReason:OtherDiscrepancy",
+      "kind": "osdu:wks:reference-data--DepthShiftInterpolationReason:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Other Discrepancy",
+        "ID": "OtherDiscrepancy",
+        "Description": "This interpolation is to adjust for an unknown discrepancy or error in the depths of the sample.",
+        "Code": "OtherDiscrepancy",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/DepthShiftInterpolationReason.1.xlsx; commit SHA 4adf4ed1.",
+        "CommitDate": "2026-06-22T05:32:23+00:00"
+      }
+    }
+  ]
+}

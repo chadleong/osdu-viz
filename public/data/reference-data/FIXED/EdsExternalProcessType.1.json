@@ -1,0 +1,61 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--EdsExternalProcessType:PostIngestion",
+      "kind": "osdu:wks:reference-data--EdsExternalProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Post Ingestion",
+        "Description": "The External Process will be triggered after EDS Ingest is completed",
+        "Code": "PostIngestion",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/EdsExternalProcessType.1.xlsx; commit SHA 2937cdc4.",
+        "CommitDate": "2025-01-13T07:17:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--EdsExternalProcessType:PostNaturalization",
+      "kind": "osdu:wks:reference-data--EdsExternalProcessType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Post Naturalization",
+        "Description": "The External Process will be triggered after EDS Naturalization is completed",
+        "Code": "PostNaturalization",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/EdsExternalProcessType.1.xlsx; commit SHA 2937cdc4.",
+        "CommitDate": "2025-01-13T07:17:59+00:00"
+      }
+    }
+  ]
+}

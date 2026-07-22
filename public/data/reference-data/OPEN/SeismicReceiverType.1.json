@@ -1,0 +1,167 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:MarineStreamer",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Marine Streamer",
+        "Description": "A marine cable incorporating pressure sensors designed for continuous towing through the water.",
+        "Code": "MarineStreamer",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:VerticalComponentGeophone",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vertical Component Geophone",
+        "Description": "A simple, single (vertical) component geophone.",
+        "Code": "VerticalComponentGeophone",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:3-ComponentGeophone",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "3-Component Geophone",
+        "Description": "Three-component (three mutually orthogonal) geophone.",
+        "Code": "3-ComponentGeophone",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:LandStreamer",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Land Streamer",
+        "Description": "A towable geophone configuration for use on land.",
+        "Code": "LandStreamer",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:OBS",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ocean Bottom Seismometer",
+        "Description": "A seismometer designed for planting on the sea floor, usually 3- or 4-component (three mutually orthogonal geophones plus a hydrophone).",
+        "Code": "OBS",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SeismicReceiverType:OBC",
+      "kind": "osdu:wks:reference-data--SeismicReceiverType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Ocean Bottom Cable",
+        "Description": "A cable designed to be laid or dragged on the sea floor containing receivers for several stations, usually 3- or 4-component usually 3- or 4-component (three mutually orthogonal geophones plus a hydrophone)..",
+        "Code": "OBC",
+        "Source": "Workbook ReferenceValues/Published/SeismicReceiverType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

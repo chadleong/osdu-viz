@@ -1,0 +1,173 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:XRF",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "X-Ray Fluorescence",
+        "ID": "XRF",
+        "Description": "X-Ray Fluorescence is widely used for determining the elemental composition of rocks. It involves bombarding the sample with X-rays and measuring the secondary (fluorescent) X-rays emitted.",
+        "Code": "XRF",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:ICP-MS",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Inductively Coupled Plasma Mass Spectrometry",
+        "ID": "ICP-MS",
+        "Description": "Inductively Coupled Plasma Mass Spectrometry is highly sensitive and can detect trace elements in rock samples by ionizing the sample with an inductively coupled plasma and then using a mass spectrometer to measure the ions.",
+        "Code": "ICP-MS",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:AAS",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Atomic Absorption Spectroscopy",
+        "ID": "AAS",
+        "Description": "Atomic Absorption Spectroscopy is used to analyze metal concentrations in rock samples by measuring the absorption of light (specific wavelengths) by free atoms in the gaseous state.",
+        "Code": "AAS",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:ICP-OES",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Inductively Coupled Plasma Optical Emission Spectroscopy",
+        "ID": "ICP-OES",
+        "Description": "Inductively Coupled Plasma Optical Emission Spectroscopy",
+        "Code": "ICP-OES",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:NAA",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Neutron Activation Analysis",
+        "ID": "NAA",
+        "Description": "Neutron Activation Analysis involves irradiating the rock sample with neutrons, causing elements to form radioactive isotopes. The emitted gamma rays are then measured to identify and quantify the elements.",
+        "Code": "NAA",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ElementalAnalysisMethod:CombustionAnalysis",
+      "kind": "osdu:wks:reference-data--ElementalAnalysisMethod:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Combustion Analysis",
+        "ID": "CombustionAnalysis",
+        "Description": "Combustion Analysis is used to determine sulfur content in crude oil by burning the sample and measuring the resulting sulfur dioxide.",
+        "Code": "CombustionAnalysis",
+        "Source": "Workbook ReferenceValues/Published/ElementalAnalysisMethod.1.xlsx; commit SHA e270142c.",
+        "CommitDate": "2025-02-10T17:57:39+00:00"
+      }
+    }
+  ]
+}

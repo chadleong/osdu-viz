@@ -1,0 +1,160 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--MudBaseType:Brine",
+      "kind": "osdu:wks:reference-data--MudBaseType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brine",
+        "ID": "Brine",
+        "Description": "A wellbore mud base type consisting of highly concentrated saltwater, commonly used to control formation pressure, stabilize shales, and prevent hydration during drilling.",
+        "Code": "Brine",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Remove redundant alias; Add description\n\nAdd \"revision\" of \"evergreen\"",
+        "Source": "Workbook ReferenceValues/Published/MudBaseType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MudBaseType:Oil",
+      "kind": "osdu:wks:reference-data--MudBaseType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil",
+        "ID": "Oil",
+        "Description": "A wellbore mud base type consisting of highly concentrated saltwater, commonly used to control formation pressure, stabilize shales, and prevent hydration during drilling.",
+        "Code": "Oil",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Remove redundant alias; Add description\n\nAdd \"revision\" of \"evergreen\"",
+        "Source": "Workbook ReferenceValues/Published/MudBaseType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MudBaseType:Synthetic",
+      "kind": "osdu:wks:reference-data--MudBaseType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Synthetic",
+        "ID": "Synthetic",
+        "Description": "A wellbore mud base type made from synthetic hydrocarbons (e.g., esters, olefins) engineered to combine the benefits of oil-based mud with reduced environmental impact.",
+        "Code": "Synthetic",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Remove redundant alias; Add description\n\nAdd \"revision\" of \"evergreen\"",
+        "Source": "Workbook ReferenceValues/Published/MudBaseType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MudBaseType:Water",
+      "kind": "osdu:wks:reference-data--MudBaseType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water",
+        "ID": "Water",
+        "Description": "A wellbore mud base type that uses fresh or treated water as the continuous phase, typically inexpensive and used for drilling in non-reactive formations.",
+        "Code": "Water",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Remove redundant alias; Add description\n\nAdd \"revision\" of \"evergreen\"",
+        "Source": "Workbook ReferenceValues/Published/MudBaseType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MudBaseType:Air",
+      "kind": "osdu:wks:reference-data--MudBaseType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Air",
+        "ID": "Air",
+        "Description": "A wellbore fluid consisting of compressed air or other gases (e.g., nitrogen) used in air drilling, mainly for drilling in stable, hard formations to enhance speed and minimize fluid loss.",
+        "Code": "Air",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "(COMPANY: insert comment)": "Add because it is relevant to sample analysis - \"Air core\" or \"drilled with air\"\n",
+        "Source": "Workbook ReferenceValues/Published/MudBaseType.1.xlsx; commit SHA 0d5b6d39.",
+        "CommitDate": "2025-10-03T03:51:05+00:00"
+      }
+    }
+  ]
+}

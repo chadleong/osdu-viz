@@ -1,0 +1,73 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--MaterialGradeStandardType:API-ISO",
+      "kind": "osdu:wks:reference-data--MaterialGradeStandardType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "API-ISO",
+        "NameAlias": [
+          {
+            "AliasName": "API"
+          },
+          {
+            "AliasName": "ISO"
+          }
+        ],
+        "ID": "API-ISO",
+        "InactiveIndicator": false,
+        "Description": "Adheres to the API or ISO standards.",
+        "Code": "API-ISO",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/MaterialGradeStandardType.1.xlsx; commit SHA df66751b.",
+        "CommitDate": "2026-01-21T05:37:40+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--MaterialGradeStandardType:Proprietary",
+      "kind": "osdu:wks:reference-data--MaterialGradeStandardType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Proprietary",
+        "ID": "Proprietary",
+        "InactiveIndicator": false,
+        "Description": "Proprietary.  Not adhering to a standard such as API or ISO.",
+        "Code": "Proprietary",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/MaterialGradeStandardType.1.xlsx; commit SHA df66751b.",
+        "CommitDate": "2026-01-21T05:37:40+00:00"
+      }
+    }
+  ]
+}

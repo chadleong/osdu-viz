@@ -1,0 +1,75 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthCategory:HoldUpDepth",
+      "kind": "osdu:wks:reference-data--HoldUpDepthCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hold Up Depth",
+        "NameAlias": [
+          {
+            "AliasName": "HUD"
+          }
+        ],
+        "ID": "HoldUpDepth",
+        "InactiveIndicator": false,
+        "Description": "Hold Up Depth",
+        "Code": "HUD",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthCategory.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HoldUpDepthCategory:Fish",
+      "kind": "osdu:wks:reference-data--HoldUpDepthCategory:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fish",
+        "NameAlias": [
+          {
+            "AliasName": "Fish"
+          }
+        ],
+        "ID": "Fish",
+        "InactiveIndicator": false,
+        "Description": "Fish - assembly stuck or left in hole",
+        "Code": "Fish",
+        "AttributionAuthority": "OSDU",
+        "Source": "Workbook ReferenceValues/Published/HoldUpDepthCategory.1.xlsx; commit SHA 35c9ecf2.",
+        "CommitDate": "2026-01-15T06:59:05+00:00"
+      }
+    }
+  ]
+}

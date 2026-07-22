@@ -1,0 +1,185 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Rock",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Rock",
+        "ID": "Rock",
+        "Description": "The sample/specimen is primarily composed of natural rock, a solid material made up of mineral grains.",
+        "Code": "Rock",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Fluid",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Fluid",
+        "ID": "Fluid",
+        "Description": "The sample/specimen is primarily a fluid, meaning a liquid, a gas, or a combination of liquid and gas.",
+        "Code": "Fluid",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:SolidNonRock",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Solid Non-Rock",
+        "ID": "SolidNonRock",
+        "Description": "The sample/specimen is primarily a solid that is not a natural rock, such as metal or plastic.",
+        "Code": "SolidNonRock",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Mixed",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mixed",
+        "ID": "Mixed",
+        "Description": "The sample/specimen is a mixture of fluids and solids to the extent that a primary substance family cannot reasonably be identified.",
+        "Code": "Mixed",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Other",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Other",
+        "ID": "Other",
+        "Description": "The sample/specimen is made up of a substance family not otherwise represented in this list.",
+        "Code": "Other",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SampleSubstanceFamily:Undefined",
+      "kind": "osdu:wks:reference-data--SampleSubstanceFamily:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Undefined",
+        "ID": "Undefined",
+        "Description": "The substance of the sample/specimen cannot be reasonably identified.",
+        "Code": "Undefined",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/SampleSubstanceFamily.1.xlsx; commit SHA 06218b2e.",
+        "CommitDate": "2025-09-22T18:58:50+00:00"
+      }
+    }
+  ]
+}

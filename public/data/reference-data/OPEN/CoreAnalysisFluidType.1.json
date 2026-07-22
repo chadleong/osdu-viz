@@ -1,0 +1,1489 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Air",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Air",
+        "ID": "Air",
+        "Description": "Commonly used in various tests for porosity, permeability, and other petrophysical properties.",
+        "Code": "Air",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:AirFreeWellheadCrude",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Air Free Wellhead Crude",
+        "ID": "AirFreeWellheadCrude",
+        "Description": "Crude oil sampled directly from a wellhead without exposure to air to prevent oxidation or evaporation of light components.",
+        "Code": "AirFreeWellheadCrude",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Bayol35",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bayol 35",
+        "ID": "Bayol35",
+        "Description": "Bayol 35 refers to a specific type of white oil, also known as mineral oil, which is highly refined and purified to meet stringent quality standards. Bayol 35 is characterized by its colorless and odorless properties, making it suitable for applications that require a high degree of purity and stability.",
+        "Code": "Bayol35",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Bayol55",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Bayol 55",
+        "ID": "Bayol55",
+        "Description": "Bayol 55 is another grade of highly refined white mineral oil, similar to Bayol 35, but with different specific properties tailored to particular applications.",
+        "Code": "Bayol55",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Brine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Brine",
+        "ID": "Brine",
+        "Description": "Saltwater solution used in drilling and formation fluid simulations to mimic natural reservoir conditions.",
+        "Code": "Brine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:CarbonDioxide",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carbon Dioxide",
+        "ID": "CarbonDioxide",
+        "Description": "Often used in enhanced oil recovery (EOR) techniques to increase reservoir pressure and reduce oil viscosity.",
+        "Code": "CarbonDioxide",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Carnation",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Carnation",
+        "ID": "Carnation",
+        "Description": "Carnation",
+        "Code": "Carnation",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeadBrine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dead Brine",
+        "ID": "DeadBrine",
+        "Description": "Brine that has been equilibrated with reservoir conditions and contains no active biological components.",
+        "Code": "DeadBrine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeadCrudeOil",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Dead Crude Oil",
+        "ID": "DeadCrudeOil",
+        "Description": "Crude oil that has been degassed and stabilized, typically used in laboratory tests to simulate reservoir conditions without the presence of volatile components.",
+        "Code": "DeadCrudeOil",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Decane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Decane",
+        "ID": "Decane",
+        "Description": "A hydrocarbon used in laboratory tests as a standard or reference fluid to simulate certain crude oil components.",
+        "Code": "Decane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DIWater",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deionized Water",
+        "ID": "DIWater",
+        "Description": "Deionized Water is water that has had most of its mineral ions removed, including sodium, calcium, iron, copper, chloride, and sulfate.  It is known for its high purity and lack of electrical conductivity, which is due to the absence of dissolved salts.",
+        "Code": "DIWater",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Drakol7",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Drakol 7",
+        "ID": "Drakol7",
+        "Description": "Drakol 7",
+        "Code": "Drakol7",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:EquilibriumGas",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Equilibrium Gas",
+        "ID": "EquilibriumGas",
+        "Description": "Gas that has been allowed to reach equilibrium with crude oil under reservoir conditions, used in PVT analysis.",
+        "Code": "EquilibriumGas",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Gas",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas",
+        "ID": "Gas",
+        "Description": "Used in various forms (natural, synthetic) to study gas injection EOR methods or gas permeability in rocks.",
+        "Code": "Gas",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Helium",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Helium",
+        "ID": "Helium",
+        "Description": "Inert gas used in porosity and permeability measurements due to its small atomic size and non-reactive nature.",
+        "Code": "Helium",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Hexadecane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hexadecane",
+        "ID": "Hexadecane",
+        "Description": "A saturated hydrocarbon used as a model compound in various oil recovery and rock-fluid interaction studies.",
+        "Code": "Hexadecane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Hexane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Hexane",
+        "ID": "Hexane",
+        "Description": "A solvent used to extract oil from rock samples or to clean samples before analysis.",
+        "Code": "Hexane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Isopar",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isopar",
+        "ID": "Isopar",
+        "Description": "A synthetic isoparaffinic solvent known for its high purity and consistency, used in experiments requiring controlled chemical properties.",
+        "Code": "Isopar",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:IsoparBlend",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isopar Blend",
+        "ID": "IsoparBlend",
+        "Description": "A blend of isoparaffinic hydrocarbons used to achieve specific properties in experimental setups, such as viscosity or volatility.",
+        "Code": "IsoparBlend",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Kerosene",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Kerosene",
+        "ID": "Kerosene",
+        "Description": "Used as a solvent or wetting agent in core analysis and other petrophysical tests.",
+        "Code": "Kerosene",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:LabOil",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Lab Oil",
+        "ID": "LabOil",
+        "Description": "Generic term for any oil used in laboratory settings for calibration, testing, or experimental purposes.",
+        "Code": "LabOil",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Liquid",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Liquid",
+        "ID": "Liquid",
+        "Description": "Generic term for fluids in liquid state used in various injection and recovery tests.",
+        "Code": "Liquid",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:LiveBrine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Live Brine",
+        "ID": "LiveBrine",
+        "Description": "Brine that is saturated with gases or contains biological components, used to simulate active reservoir conditions.",
+        "Code": "LiveBrine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:LiveCrudeOil",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Live Crude Oil",
+        "ID": "LiveCrudeOil",
+        "Description": "Crude oil containing its natural gas content under pressure, used to simulate reservoir conditions in various tests.",
+        "Code": "LiveCrudeOil",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Marcol70",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Marcol 70",
+        "ID": "Marcol70",
+        "Description": "A highly refined mineral oil used for its stability and lack of reactivity in sensitive experimental setups.",
+        "Code": "Marcol70",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Mercury",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mercury",
+        "ID": "Mercury",
+        "Description": "Used in Mercury Injection Capillary Pressure (MICP) tests to measure pore size distribution and characteristics of rock samples. Highly toxic and requires careful handling.",
+        "Code": "Mercury",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:MineralOilUnspecified",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Mineral Oil Unspecified",
+        "ID": "MineralOilUnspecified",
+        "Description": "Generic term for any mineral oil used where specific properties are not critical to the experiment's outcome.",
+        "Code": "MineralOilUnspecified",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Nitrogen",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Nitrogen",
+        "ID": "Nitrogen",
+        "Description": "An inert gas commonly used in oil recovery processes and reservoir pressure maintenance.",
+        "Code": "Nitrogen",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:NotSpecified",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Not Specified",
+        "ID": "NotSpecified",
+        "Description": "Indicates that the fluid used in the experiment was not detailed in the documentation.",
+        "Code": "NotSpecified",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Oil",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Oil",
+        "ID": "Oil",
+        "Description": "Typically refers to crude oil used in core flooding experiments to study oil recovery processes.",
+        "Code": "Oil",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:PhillipsCoreTestFluid",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Phillips Core Test Fluid",
+        "ID": "PhillipsCoreTestFluid",
+        "Description": "Possibly a proprietary fluid developed by Phillips for specific core analysis tests; details would depend on the formulation.",
+        "Code": "PhillipsCoreTestFluid",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Propane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Propane",
+        "ID": "Propane",
+        "Description": "Used in gas injection studies for enhanced oil recovery due to its properties under reservoir conditions.",
+        "Code": "Propane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:RefinedOilBlend",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Refined Oil Blend",
+        "ID": "RefinedOilBlend",
+        "Description": "A mixture of refined oils tailored to mimic certain properties of natural crude oils in experimental setups.",
+        "Code": "RefinedOilBlend",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Soltrol",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Soltrol",
+        "ID": "Soltrol",
+        "Description": "A line of isoparaffinic solvents known for their high purity and low reactivity, used in cleaning and extraction processes.",
+        "Code": "Soltrol",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Sontex",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sontex",
+        "ID": "Sontex",
+        "Description": "Not a recognized standard term; possibly a proprietary or specific product name requiring further details.",
+        "Code": "Sontex",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:SourGas",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sour Gas",
+        "ID": "SourGas",
+        "Description": "Sour gas is a type of natural gas with high hydrogen sulfide content",
+        "Code": "SourGas",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:SynResGas",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Synthetic Reservoir Gas",
+        "ID": "SynResGas",
+        "Description": "Synthetic Reservoir Gas",
+        "Code": "SynResGas",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Tetradecane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tetradecane",
+        "ID": "Tetradecane",
+        "Description": "A hydrocarbon used in research to simulate the behavior of oil components under various conditions.",
+        "Code": "Tetradecane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Vacuum",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Vacuum",
+        "ID": "Vacuum",
+        "Description": "Used to create a pressure gradient necessary for certain types of physical and chemical tests in reservoir studies.",
+        "Code": "Vacuum",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Water",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Water",
+        "ID": "Water",
+        "Description": "Used in waterflooding tests and other analyses to understand water-rock interactions and water-based EOR techniques.",
+        "Code": "Water",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:GasCondensate",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas Condensate",
+        "ID": "GasCondensate",
+        "Description": "Used in waterflooding tests and other analyses to understand water-rock interactions and water-based EOR techniques.",
+        "Code": "GasCondensate",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:HumidifiedGas",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HumidifiedGas",
+        "ID": "HumidifiedGas",
+        "Description": "Gas that contains a controlled amount of water vapor.",
+        "Code": "HumidifiedGas",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:LowSalinityBrine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Low Salinity Brine",
+        "ID": "LowSalinityBrine",
+        "Description": "A water-based solution with a lower concentration of dissolved salts",
+        "Code": "LowSalinityBrine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:UnspecifiedSolvent",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Unspecified Solvent",
+        "ID": "UnspecifiedSolvent",
+        "Description": "A generic solvent whose specific chemical identity is not defined.",
+        "Code": "UnspecifiedSolvent",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Methane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Methane",
+        "ID": "Methane",
+        "Description": "The simplest hydrocarbon gas (CH\u2084)",
+        "Code": "Methane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeuteriumOxideWater",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "D\u2082O (Deuterium oxide) water",
+        "ID": "DeuteriumOxideWater",
+        "Description": "Also known as heavy water (D\u2082O), used in experiments requiring neutron scattering or tracing due to its unique isotopic properties.",
+        "Code": "DeuteriumOxideWater",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeuteriumOxideBrine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "D\u2082O (Deuterium oxide) brine",
+        "ID": "DeuteriumOxideBrine",
+        "Description": " A saline solution made with heavy water (D\u2082O), used for specialized tracer or contrast studies in core analysis.",
+        "Code": "DeuteriumOxideBrine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeuteratedSurfactant",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deuterated Surfactant",
+        "ID": "DeuteratedSurfactant",
+        "Description": "A surfactant molecule in which hydrogen atoms are replaced with deuterium, used in studies involving neutron or NMR techniques.",
+        "Code": "DeuteratedSurfactant",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:DeuteratedBrine",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Deuterated Brine",
+        "ID": "DeuteratedBrine",
+        "Description": "Brine solution where the water component is deuterium oxide, used for advanced analytical techniques requiring isotopic labeling.",
+        "Code": "DeuteratedBrine",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:PolymerSolution",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Polymer Solution",
+        "ID": "PolymerSolution",
+        "Description": "A fluid containing dissolved polymers.",
+        "Code": "PolymerSolution",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Isododecane",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Isododecane",
+        "ID": "Isododecane",
+        "Description": "A branched hydrocarbon (C\u2081\u2082H\u2082\u2086), used as a model oil or non-polar solvent.",
+        "Code": "Isododecane",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Tetrahydrofuran",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Tetrahydrofuran (THF)",
+        "ID": "Tetrahydrofuran",
+        "Description": "A polar, cyclic ether solvent (C\u2084H\u2088O), used for core cleaning or as a model solvent.",
+        "Code": "Tetrahydrofuran",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoreAnalysisFluidType:Xenon",
+      "kind": "osdu:wks:reference-data--CoreAnalysisFluidType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Xenon (Xe)",
+        "ID": "Xenon",
+        "Description": "An inert noble gas, sometimes used in NMR or imaging studies due to its unique physical properties.",
+        "Code": "Xenon",
+        "Source": "Workbook ReferenceValues/Published/CoreAnalysisFluidType.1.xlsx; commit SHA 02aa5573.",
+        "CommitDate": "2026-07-07T04:57:55+00:00"
+      }
+    }
+  ]
+}

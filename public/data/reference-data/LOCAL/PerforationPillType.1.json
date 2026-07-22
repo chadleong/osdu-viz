@@ -1,0 +1,98 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--PerforationPillType:HydroxyethylCellulose",
+      "kind": "osdu:wks:reference-data--PerforationPillType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "HEC (Hydroxyethyl Cellulose)",
+        "NameAlias": [
+          {
+            "AliasName": "HEC",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "Description": "HEC (Hydroxyethyl Cellulose)",
+        "Code": "HydroxyethylCellulose",
+        "Source": "Workbook ReferenceValues/Published/PerforationPillType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PerforationPillType:CalciumCarbonate",
+      "kind": "osdu:wks:reference-data--PerforationPillType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "CaCO3 (Calcium Carbonate)",
+        "NameAlias": [
+          {
+            "AliasName": "CaCO3",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:Abbreviation:"
+          }
+        ],
+        "Description": "CaCO3 (Calcium Carbonate)",
+        "Code": "CalciumCarbonate",
+        "Source": "Workbook ReferenceValues/Published/PerforationPillType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PerforationPillType:SizedSalt",
+      "kind": "osdu:wks:reference-data--PerforationPillType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Sized Salt",
+        "Description": "Sized Salt",
+        "Code": "SizedSalt",
+        "Source": "Workbook ReferenceValues/Published/PerforationPillType.1.xlsx; commit SHA 56f7c736.",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}

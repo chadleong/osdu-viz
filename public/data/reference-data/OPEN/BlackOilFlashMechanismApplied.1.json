@@ -1,0 +1,95 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlackOilFlashMechanismApplied:ConstantCompositionExpansion",
+      "kind": "osdu:wks:reference-data--BlackOilFlashMechanismApplied:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Composition Expansion",
+        "ID": "ConstantCompositionExpansion",
+        "Description": "Identifies the flash algorithm that simulates Constant Composition Expansion analysis.",
+        "Code": "ConstantCompositionExpansion",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlackOilFlashMechanismApplied.1.xlsx; commit SHA fa40b5ae.",
+        "CommitDate": "2025-11-13T14:45:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlackOilFlashMechanismApplied:ConstantVolumeDepletion",
+      "kind": "osdu:wks:reference-data--BlackOilFlashMechanismApplied:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Constant Volume Depletion",
+        "ID": "ConstantVolumeDepletion",
+        "Description": "Identifies the flash algorithm that simulates Constant Volume Depletion analysis.",
+        "Code": "ConstantVolumeDepletion",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlackOilFlashMechanismApplied.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--BlackOilFlashMechanismApplied:DifferentialLiberation",
+      "kind": "osdu:wks:reference-data--BlackOilFlashMechanismApplied:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Differential Liberation",
+        "ID": "DifferentialLiberation",
+        "Description": "Identifies the flash algorithm that simulates Differential Liberation analysis.",
+        "Code": "DifferentialLiberation",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/BlackOilFlashMechanismApplied.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

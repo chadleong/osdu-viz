@@ -1,0 +1,155 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationDataType:CHPIS",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationDataType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Continuous Hydrocarbon Phase Initial State",
+        "ID": "CHPIS",
+        "Description": "Indicates that the compositional model is initialized according to a description of initial state for each individual continuous hydrocarbon phase.",
+        "Code": "CHPIS",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationDataType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationDataType:GOCPlusComposition",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationDataType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Gas-Oil Contact With Vapor Composition Specified At Contact",
+        "ID": "GOCPlusComposition",
+        "Description": "The gas-oil contact depth and composition data will be honored. The datum depth and corresponding pressure will be ignored. The reference pressure will be set to the saturation pressure.",
+        "Code": "GOCPlusComposition",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationDataType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationDataType:NotSet",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationDataType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Not Set (Use Simulator's Analysis for Black Oil)",
+        "ID": "NotSet",
+        "Description": "If not defined to by the user, the initialisation state will be determined by the simulators logic. ",
+        "Code": "NotSet",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationDataType.1.xlsx; commit SHA fa40b5ae.",
+        "CommitDate": "2025-11-13T14:45:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationDataType:DatumPlusComposition",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationDataType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Datum With Composition Data",
+        "ID": "DatumPlusComposition",
+        "Description": "Datum depth and corresponding pressure and composition data will be honored. The specified gas-oil contact will be used depending on the fluid type. ",
+        "Code": "DatumPlusComposition",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationDataType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--ReservoirSimulationInitialisationDataType:DatumPlusPressureAtGOC",
+      "kind": "osdu:wks:reference-data--ReservoirSimulationInitialisationDataType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Datum With Pressure at Gas-Oil-Contact",
+        "ID": "DatumPlusPressureAtGOC",
+        "Description": "Datum depth and corresponding pressure and the gas-oil contact depth will be honored.",
+        "Code": "DatumPlusPressureAtGOC",
+        "AttributionAuthority": "OSDU",
+        "AttributionRevision": "evergreen",
+        "Source": "Workbook ReferenceValues/Published/ReservoirSimulationInitialisationDataType.1.xlsx; commit SHA 5c693079.",
+        "CommitDate": "2025-11-11T04:54:42+00:00"
+      }
+    }
+  ]
+}

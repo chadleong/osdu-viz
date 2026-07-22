@@ -1,0 +1,174 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:UptimeHours",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Uptime hours",
+        "Code": "UptimeHours",
+        "Description": "The amount of time in hours that the entity has remained in continuous operation",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:DowntimeHours",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Downtime hours",
+        "Code": "DowntimeHours",
+        "Description": "The amount of time in hours that the entity has been unable to perform its intended function due to disruption of operations",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:UptimeDays",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Uptime days",
+        "Code": "UptimeDays",
+        "Description": "The amount of time in days that the entity has remained in continuous operation",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:DowntimeDays",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Downtime days",
+        "Code": "DowntimeDays",
+        "Description": "The amount of time in days that the entity has been unable to perform its intended function due to disruption of operations",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:CalendarDays",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calendar days",
+        "Code": "CalendarDays",
+        "Description": "The number of days in a specified calendar month.",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--DurationContext:Calendar%20Days",
+      "kind": "osdu:wks:reference-data--DurationContext:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Calendar days",
+        "Code": "Calendar Days",
+        "InactiveIndicator": true,
+        "Description": "DEPRECATED: Please use Code=\"CalendarDays\" with Name=\"Calendar days\" instead. The number of days within a specified calendar month",
+        "AttributionAuthority": "PPDM Association",
+        "Source": "Workbook curated by PPDM; commit SHA - No SHA (Workbook not committed).",
+        "CommitDate": "2025-03-03T16:51:43+00:00"
+      }
+    }
+  ]
+}

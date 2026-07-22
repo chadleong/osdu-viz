@@ -1,0 +1,1957 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN21",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN21",
+        "Description": "NN21 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 0.29,
+        "AgeEnd": 0.0,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN21",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN10A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN10A",
+        "Description": "NN10A subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 0.0,
+        "AgeEnd": 0.0,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN10A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN10B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN10B",
+        "Description": "NN10B subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 0.0,
+        "AgeEnd": 0.0,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN10B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN20",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN20",
+        "Description": "NN20 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 0.44,
+        "AgeEnd": 0.29,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN20",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN19",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN19",
+        "Description": "NN19 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 1.93,
+        "AgeEnd": 0.44,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN19",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN18",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN18",
+        "Description": "NN18 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 2.39,
+        "AgeEnd": 1.93,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN18",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN17",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN17",
+        "Description": "NN17 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 2.49,
+        "AgeEnd": 2.39,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN17",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN16",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN16",
+        "Description": "NN16 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 3.7,
+        "AgeEnd": 2.49,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN16",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN15",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN15",
+        "Description": "NN15 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 3.92,
+        "AgeEnd": 3.7,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN15",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN14",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN14",
+        "Description": "NN14 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 4.13,
+        "AgeEnd": 3.92,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN14",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN13",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN13",
+        "Description": "NN13 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 5.12,
+        "AgeEnd": 4.13,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN13",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN12",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN12",
+        "Description": "NN12 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 5.59,
+        "AgeEnd": 5.12,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN12",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN11",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN11",
+        "Description": "NN11 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 8.29,
+        "AgeEnd": 5.59,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN11",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN11D",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN11D",
+        "Description": "NN11d subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 5.94,
+        "AgeEnd": 5.59,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN11D",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN11C",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN11C",
+        "Description": "NN11c subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 6.91,
+        "AgeEnd": 5.94,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN11C",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN11B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN11B",
+        "Description": "NN11b subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 7.42,
+        "AgeEnd": 6.91,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN11B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN11A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN11A",
+        "Description": "NN11a subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 8.29,
+        "AgeEnd": 7.42,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NN11A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN10",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN10",
+        "Description": "NN10 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 9.53,
+        "AgeEnd": 8.29,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN10",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN9",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN9",
+        "Description": "NN9 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 10.55,
+        "AgeEnd": 9.53,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN9",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN8",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN8",
+        "Description": "NN8 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 10.89,
+        "AgeEnd": 10.55,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN8",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN7",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN7",
+        "Description": "NN7 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 11.9,
+        "AgeEnd": 10.89,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN7",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN6",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN6",
+        "Description": "NN6 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 13.53,
+        "AgeEnd": 11.9,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN6",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN5",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN5",
+        "Description": "NN5 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 14.91,
+        "AgeEnd": 13.53,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN5",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN4",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN4",
+        "Description": "NN4 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 17.95,
+        "AgeEnd": 14.91,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN4",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN3",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN3",
+        "Description": "NN3 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 18.28,
+        "AgeEnd": 17.95,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN3",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN2",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN2",
+        "Description": "NN2 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 22.82,
+        "AgeEnd": 18.28,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN2",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NN1",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NN1",
+        "Description": "NN1 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 23.13,
+        "AgeEnd": 22.82,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NN1",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP25",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP25",
+        "Description": "NP25 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 26.84,
+        "AgeEnd": 23.13,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP25",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP24",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP24",
+        "Description": "NP24 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 29.62,
+        "AgeEnd": 26.84,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP24",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP23",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP23",
+        "Description": "NP23 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 32.02,
+        "AgeEnd": 29.62,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP23",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP22",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP22",
+        "Description": "NP22 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 32.92,
+        "AgeEnd": 32.02,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP22",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP21",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP21",
+        "Description": "NP21 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 34.44,
+        "AgeEnd": 32.92,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP21",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP20",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP20",
+        "Description": "NP20 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 35.7,
+        "AgeEnd": 34.44,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP20",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP19",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP19",
+        "Description": "NP19 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 36.97,
+        "AgeEnd": 35.7,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP19",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP18",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP18",
+        "Description": "NP18 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 37.32,
+        "AgeEnd": 36.97,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP18",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP17",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP17",
+        "Description": "NP17 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 40.4,
+        "AgeEnd": 37.32,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP17",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP16",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP16",
+        "Description": "NP16 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 42.87,
+        "AgeEnd": 40.4,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP16",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP15",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP15",
+        "Description": "NP15 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 46.29,
+        "AgeEnd": 42.87,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP15",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP15C",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP15C",
+        "Description": "NP15c subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 44.12,
+        "AgeEnd": 42.87,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP15C",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP15B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP15B",
+        "Description": "NP15b subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 45.49,
+        "AgeEnd": 44.12,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP15B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP15A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP15A",
+        "Description": "NP15a subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 46.29,
+        "AgeEnd": 45.49,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP15A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP14",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP14",
+        "Description": "NP14 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 49.11,
+        "AgeEnd": 46.29,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP14",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP14B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP14B",
+        "Description": "NP14b subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 47.84,
+        "AgeEnd": 46.29,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP14B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP14A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP14A",
+        "Description": "NP14a subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 49.11,
+        "AgeEnd": 47.84,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP14A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP13",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP13",
+        "Description": "NP13 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 50.5,
+        "AgeEnd": 49.11,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP13",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP13B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP13B",
+        "Description": "NP13b sunzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 49.8,
+        "AgeEnd": 49.11,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP13B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP13A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP13A",
+        "Description": "NP13a subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 50.5,
+        "AgeEnd": 49.8,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP13A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP12",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP12",
+        "Description": "NP12 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 53.7,
+        "AgeEnd": 50.5,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP12",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP11",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP11",
+        "Description": "NP11 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 54.17,
+        "AgeEnd": 53.7,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP11",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP10",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP10",
+        "Description": "NP10 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 55.86,
+        "AgeEnd": 54.17,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP10",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP9",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP9",
+        "Description": "NP9 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 57.21,
+        "AgeEnd": 55.86,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP9",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP9B",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP9B",
+        "Description": "NP9b subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 56.66,
+        "AgeEnd": 55.86,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP9B",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP9A",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP9A",
+        "Description": "NP9a subzone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 57.21,
+        "AgeEnd": 56.66,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biosubzone:",
+        "Code": "NP9A",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP8",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP8",
+        "Description": "NP8 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 58.7,
+        "AgeEnd": 57.21,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP8",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP7",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP7",
+        "Description": "NP7 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 58.97,
+        "AgeEnd": 58.7,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP7",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP6",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP6",
+        "Description": "NP6 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 59.54,
+        "AgeEnd": 58.97,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP6",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP5",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP5",
+        "Description": "NP5 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 61.51,
+        "AgeEnd": 59.54,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP5",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP4",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP4",
+        "Description": "NP4 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 63.25,
+        "AgeEnd": 61.51,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP4",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP3",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP3",
+        "Description": "NP3 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 64.81,
+        "AgeEnd": 63.25,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP3",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP2",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP2",
+        "Description": "NP2 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 65.47,
+        "AgeEnd": 64.87,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP2",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--Biozone:NP1",
+      "kind": "osdu:wks:reference-data--Biozone:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "NP1",
+        "Description": "NP1 zone",
+        "AttributionRevision": "2012",
+        "Source": "Workbook ReferenceValues/Published/Biozone.1.xlsx; commit SHA 56f7c736.",
+        "BiostratigraphicDisciplineID": "{{NAMESPACE}}:reference-data--BiostratigraphicDiscipline:Nannopalaeontology:",
+        "AgeBegin": 66.04,
+        "AgeEnd": 65.47,
+        "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Biostratigraphic.Biozone:",
+        "Code": "NP1",
+        "CommitDate": "2024-02-09T16:51:15+00:00"
+      }
+    }
+  ]
+}
