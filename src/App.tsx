@@ -90,6 +90,9 @@ export default function App() {
 
   // Move loadSchemas here so it's defined before useEffect to avoid any callable/type confusion
   // Helper to resolve public asset URLs under a subpath deployment
+  const rawSchemaIndexRef = useRef<any[]>([])
+
+  // Helper to resolve public asset URLs under a subpath deployment
   const publicUrl = (p: string) => {
     if (/^https?:\/\//i.test(p)) return p
     const base = (import.meta.env.BASE_URL as string) || "/"
@@ -98,76 +101,180 @@ export default function App() {
     return `${b}/${r}`
   }
 
-  // Load schemas on mount (inline to avoid callable-type issues)
+  // Extract $ref and entity relationship targets from a schema
+  function extractRefsAndRelationships(schema: any): string[] {
+    const targets: string[] = []
+    function walk(o: any) {
+      if (!o || typeof o !== "object") return
+      if (o.$ref && typeof o.$ref === "string") targets.push(o.$ref)
+      if (o["x-osdu-relationship"] && Array.isArray(o["x-osdu-relationship"])) {
+        for (const r of o["x-osdu-relationship"]) {
+          if (r.EntityType) targets.push(r.EntityType)
+        }
+      }
+      if (o.properties && typeof o.properties === "object") {
+        for (const v of Object.values(o.properties)) walk(v)
+      }
+      if (Array.isArray(o.allOf)) o.allOf.forEach(walk)
+      if (Array.isArray(o.anyOf)) o.anyOf.forEach(walk)
+      if (Array.isArray(o.oneOf)) o.oneOf.forEach(walk)
+      if (o.items) walk(o.items)
+    }
+    walk(schema)
+    return Array.from(new Set(targets))
+  }
+
+  // Find a schema's publicPath in schema-index given a reference string
+  function findPathInIndexList(refStr: string, indexList: any[]): string | undefined {
+    if (!refStr || !Array.isArray(indexList)) return undefined
+    const refClean = String(refStr).replace(/^\.\//, "").replace(/^\//, "").replace(/^[.]{2}\//, "")
+    const refMin = refClean.replace(/\.json$/i, ".min.json")
+    const lastSeg = refClean.split("/").pop() || refClean
+    const lastSegMin = lastSeg.replace(/\.json$/i, ".min.json")
+    const refLower = refStr.toLowerCase()
+
+    const match = indexList.find((item) => {
+      const p = String(item.publicPath || "")
+      const pLower = p.toLowerCase()
+      const titleLower = String(item.title || "").toLowerCase()
+      const idLower = String(item.id || "").toLowerCase()
+
+      return (
+        p.endsWith(refClean) ||
+        p.endsWith(refMin) ||
+        p.endsWith("/" + lastSeg) ||
+        p.endsWith("/" + lastSegMin) ||
+        titleLower === refLower ||
+        idLower.includes(`--${refLower}`) ||
+        pLower.includes(refLower)
+      )
+    })
+
+    return match ? match.publicPath : undefined
+  }
+
+  // Ensure a target schema (and its directly referenced schemas) are loaded into memory
+  async function ensureSchemaLoaded(targetModel: SchemaModel): Promise<SchemaModel> {
+    let currentSchema = targetModel.schema || index[targetModel.path]
+    const newIdxEntries: Record<string, any> = {}
+
+    if (!currentSchema) {
+      try {
+        const res = await fetch(publicUrl(targetModel.path))
+        if (res.ok) {
+          currentSchema = await res.json()
+          newIdxEntries[targetModel.path] = currentSchema
+        }
+      } catch (e) {
+        console.warn("Failed to fetch target schema on demand:", targetModel.path, e)
+      }
+    }
+
+    if (currentSchema) {
+      const refs = extractRefsAndRelationships(currentSchema)
+      const missingPaths: string[] = []
+
+      for (const r of refs) {
+        const matchedPath = findPathInIndexList(r, rawSchemaIndexRef.current)
+        if (matchedPath && !index[matchedPath] && !newIdxEntries[matchedPath]) {
+          missingPaths.push(matchedPath)
+        }
+      }
+
+      if (missingPaths.length > 0) {
+        await Promise.all(
+          missingPaths.map(async (p) => {
+            try {
+              const res = await fetch(publicUrl(p))
+              if (res.ok) {
+                const s = await res.json()
+                newIdxEntries[p] = s
+              }
+            } catch (e) {
+              console.warn("Failed to fetch ref schema on demand:", p, e)
+            }
+          })
+        )
+      }
+    }
+
+    if (Object.keys(newIdxEntries).length > 0) {
+      setIndex((prev) => ({ ...prev, ...newIdxEntries }))
+    }
+
+    const updatedModel: SchemaModel = {
+      ...targetModel,
+      schema: currentSchema || targetModel.schema,
+    }
+
+    setModels((prev) =>
+      prev.map((m) => (m.path === updatedModel.path ? updatedModel : m))
+    )
+
+    return updatedModel
+  }
+
+  // Load schemas on mount: Instant UI startup via lightweight index, on-demand fetching + background bundle
   useEffect(() => {
     ;(async () => {
-      const parsed: SchemaModel[] = []
-      const idx: Record<string, any> = {}
+      let parsed: SchemaModel[] = []
       try {
         const response = await fetch(publicUrl("/schema-index.json"))
         const schemaIndex = await response.json()
+        if (Array.isArray(schemaIndex)) {
+          rawSchemaIndexRef.current = schemaIndex
+          parsed = schemaIndex.map((info: any) => ({
+            id: info.id || info.publicPath,
+            title: info.title || info.id || info.publicPath,
+            schema: null,
+            path: info.publicPath,
+            version: info.version,
+          }))
 
-        // setup progress counters
-        const total = Array.isArray(schemaIndex) ? schemaIndex.length : 0
-        setLoadTotal(total)
-        setLoadDone(0)
-
-        let completed = 0
-        for (const schemaInfo of schemaIndex) {
-          try {
-            const path = schemaInfo.publicPath
-            const schemaResponse = await fetch(publicUrl(path))
-            const schema = await schemaResponse.json()
-
-            if (schema && typeof schema === "object" && schema["$schema"]) {
-              const isStandard = schema["$schema"].includes("json-schema.org")
-              if (isStandard) {
-                const id = schema["$id"] || path
-                const title = schema["title"] || schemaInfo.title || id
-                const model: SchemaModel = {
-                  id,
-                  title,
-                  schema,
-                  path,
-                  version: schemaInfo.version,
-                }
-                parsed.push(model)
-                idx[path] = schema
-              }
-            }
-          } catch (e) {
-            console.warn(`Failed to load ${schemaInfo.publicPath}:`, e)
-          }
-          completed += 1
-          setLoadDone(completed)
+          setModels(parsed)
+          setLoadTotal(parsed.length)
+          setLoadDone(parsed.length)
         }
-
-        setModels(parsed)
-        setIndex(idx)
       } catch (error) {
         console.error("Failed to load schema index:", error)
       }
 
-      // try to load any cached schemas from IndexedDB so users can resume offline
-      // NOTE: do NOT merge cache into freshly fetched results. Use cache only as a fallback
-      // when the network fetch produced zero schemas (offline resume scenario).
+      // Fast background bundle fetch (single HTTP request for all schemas)
       try {
-        const cached = await idbGetAll()
-        if (cached && cached.length > 0 && parsed.length === 0) {
-          const cachedModels: SchemaModel[] = cached.map((it: any) => ({
-            id: it.id || it.path,
-            title: it.title || it.id || it.path,
-            schema: it.schema,
-            path: it.path,
-            version: it.version,
-          }))
-          const cachedIndex: Record<string, any> = {}
-          for (const it of cached) cachedIndex[it.path] = it.schema
-          setModels(cachedModels)
-          setIndex(cachedIndex)
+        const bundleRes = await fetch(publicUrl("/schema-bundle.json"))
+        if (bundleRes.ok) {
+          const bundle = await bundleRes.json()
+          if (bundle && typeof bundle === "object") {
+            setIndex((prev) => ({ ...bundle, ...prev }))
+            setModels((prev) =>
+              prev.map((m) => ({ ...m, schema: bundle[m.path] || m.schema }))
+            )
+          }
         }
       } catch (e) {
-        // ignore cache errors
+        console.warn("Failed background schema-bundle.json fetch:", e)
+      }
+
+      // Offline fallback: load from IndexedDB if network fetch failed
+      if (parsed.length === 0) {
+        try {
+          const cached = await idbGetAll()
+          if (cached && cached.length > 0) {
+            const cachedModels: SchemaModel[] = cached.map((it: any) => ({
+              id: it.id || it.path,
+              title: it.title || it.id || it.path,
+              schema: it.schema,
+              path: it.path,
+              version: it.version,
+            }))
+            const cachedIndex: Record<string, any> = {}
+            for (const it of cached) cachedIndex[it.path] = it.schema
+            setModels(cachedModels)
+            setIndex(cachedIndex)
+          }
+        } catch (e) {
+          // ignore cache errors
+        }
       }
     })()
   }, [])
@@ -373,15 +480,16 @@ export default function App() {
     )
   }, [models, searchTerm])
 
-  const handleModelSelect = (model: SchemaModel) => {
+  const handleModelSelect = async (model: SchemaModel) => {
     // Manual selection resets history
     setHistory([])
-    setSelectedModel(model)
-    setSearchTerm(model.title)
+    const fullModel = await ensureSchemaLoaded(model)
+    setSelectedModel(fullModel)
+    setSearchTerm(fullModel.title)
     setShowDropdown(false)
   }
 
-  const handleSchemaSelect = (schemaId: string) => {
+  const handleSchemaSelect = async (schemaId: string) => {
     // Accept id, partial id, title, or file path
     const key = schemaId || ""
     const keyLower = key.toLowerCase()
@@ -400,17 +508,18 @@ export default function App() {
     })
 
     if (targetSchema) {
+      const fullModel = await ensureSchemaLoaded(targetSchema)
       // Only push to history if navigating to a different schema
       const isDifferent =
-        !selectedModel || selectedModel.id !== targetSchema.id || selectedModel.path !== targetSchema.path
+        !selectedModel || selectedModel.id !== fullModel.id || selectedModel.path !== fullModel.path
 
       if (isDifferent && selectedModel) {
         setHistory((h) => [...h, selectedModel])
       }
 
       if (isDifferent) {
-        setSelectedModel(targetSchema)
-        setSearchTerm(targetSchema.title)
+        setSelectedModel(fullModel)
+        setSearchTerm(fullModel.title)
         setShowDropdown(false)
       }
     }
