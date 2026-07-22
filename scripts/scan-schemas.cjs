@@ -42,6 +42,7 @@ function scanSchemasRecursively(dir, basePath = "", results = []) {
               id: schema["$id"] || relativePath,
               version: extractVersion(schema),
               directory: basePath || "root",
+              rawSchema: schema,
             })
           }
         } catch (e) {
@@ -123,7 +124,19 @@ if (schemaList.length > 20) {
 }
 console.log("];")
 
-// Write to a JSON file that the React app can use
+// Write to JSON files that the React app can use
+const bundleMap = {}
+schemas.forEach((s) => {
+  if (s.rawSchema) {
+    bundleMap[s.publicPath] = s.rawSchema
+    delete s.rawSchema
+  }
+})
+
 const outputFile = path.join(__dirname, "..", "public", "schema-index.json")
-fs.writeFileSync(outputFile, JSON.stringify(schemas, null, 2))
-console.log(`\nSchema index written to: ${outputFile}`)
+fs.writeFileSync(outputFile, JSON.stringify(schemas))
+console.log(`\nSchema index written to: ${outputFile} (${(fs.statSync(outputFile).size / 1024).toFixed(1)} KB)`)
+
+const bundleFile = path.join(__dirname, "..", "public", "schema-bundle.json")
+fs.writeFileSync(bundleFile, JSON.stringify(bundleMap))
+console.log(`Schema bundle written to: ${bundleFile} (${(fs.statSync(bundleFile).size / 1024 / 1024).toFixed(2)} MB)`)
