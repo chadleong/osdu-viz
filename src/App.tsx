@@ -550,10 +550,10 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-gray-50 overflow-hidden">
+    <div className="h-screen bg-gray-50">
       {/* Header with Search and Dropdown */}
       <div
-        className="bg-white border-b border-gray-200 px-100 py-3 flex-none"
+        className="bg-white border-b border-gray-200 px-100 py-3"
         style={{ position: "sticky", top: 0, zIndex: 1000, backdropFilter: "saturate(180%) blur(4px)" }}
       >
         <div
@@ -561,9 +561,20 @@ export default function App() {
           style={{ paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12 }}
         >
           <div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Viz</h1>
               <span className="text-xs text-gray-500">v{(pkg as any).version}</span>
+              <a
+                href="https://github.com/chadleong/osdu-viz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center p-1 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors ml-1"
+                title="View Source Code on GitHub"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -684,7 +695,7 @@ export default function App() {
             </button>
           )}
 
-          {/* Status Info, Data Source Link & GitHub Repo Link */}
+          {/* Status Info & Data Source Link */}
           <div className="text-sm text-gray-600 flex items-center space-x-3 ml-auto">
             <div>
               {models.length} schemas loaded | Selected: {selectedModel?.title || "None"}
@@ -703,24 +714,12 @@ export default function App() {
             >
               Data Source: v0.30.0 ↗
             </a>
-            <a
-              href="https://github.com/chadleong/osdu-viz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-xs font-medium text-gray-700 hover:text-gray-900 border border-gray-300 bg-white hover:bg-gray-50 px-2.5 py-1 rounded shadow-sm transition-colors"
-              title="View Source Code on GitHub"
-            >
-              <svg className="w-4 h-4 mr-1.5 fill-current" viewBox="0 0 24 24">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              GitHub
-            </a>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 relative overflow-hidden">
+      <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
         {selectedModel && selectedModel.schema ? (
           <div style={{ position: "relative", height: "100%" }}>
             <SchemaGraph
@@ -816,11 +815,6 @@ export default function App() {
           </div>
         )}
       </div>
-
-      {/* Footer */}
-      <footer className="flex-none bg-white border-t border-gray-200 py-2 px-4 text-center text-xs text-gray-600 font-medium z-10 flex items-center justify-center gap-1 shadow-inner">
-        Made with <span className="text-red-500 font-bold text-sm">❤️</span> from Chad
-      </footer>
     </div>
   )
 }
