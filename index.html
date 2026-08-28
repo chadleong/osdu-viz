@@ -3,11 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>OSDU Schemas | Interactive JSON Schema &amp; Data Model Visualizer</title>
+    <meta name="title" content="OSDU Schemas | Interactive JSON Schema &amp; Data Model Visualizer" />
+    <meta name="description" content="Explore, search, and visualize 1,400+ OSDU JSON schemas interactively. Complete OSDU data definitions, Master Data, Work Product Components, Reference Data, and entity relationship models." />
+    <meta name="keywords" content="osdu schema, osdu schemas, osdu data definitions, osdu data model, osdu json schema, osdu visualizer, wellbore schema, well schema, seismic schema, master-data, work-product-component, reference-data, the open group osdu, data model explorer" />
+    <meta name="author" content="OSDU Schema Visualizer" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="canonical" href="https://osdu-viz.netlify.app/" />
+
+    <!-- Favicon & Icons -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>OSDU Schema Viz</title>
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://osdu-viz.netlify.app/" />
+    <meta property="og:site_name" content="OSDU Schema Visualizer" />
+    <meta property="og:title" content="OSDU Schemas | Interactive JSON Schema &amp; Data Model Visualizer" />
+    <meta property="og:description" content="Explore, search, and visualize 1,400+ OSDU JSON schemas interactively. Complete OSDU data definitions, Master Data, Work Product Components, Reference Data, and entity relationship models." />
+    <meta property="og:image" content="https://osdu-viz.netlify.app/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="OSDU Schema Visualizer - Interactive JSON Schema and Data Model Explorer" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://osdu-viz.netlify.app/" />
+    <meta name="twitter:title" content="OSDU Schemas | Interactive JSON Schema &amp; Data Model Visualizer" />
+    <meta name="twitter:description" content="Explore, search, and visualize 1,400+ OSDU JSON schemas interactively. Complete OSDU data definitions, Master Data, Work Product Components, Reference Data, and entity relationships." />
+    <meta name="twitter:image" content="https://osdu-viz.netlify.app/og-image.svg" />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://osdu-viz.netlify.app/#webapp",
+          "name": "OSDU Schema Visualizer",
+          "url": "https://osdu-viz.netlify.app/",
+          "description": "Interactive web visualizer to search, inspect, and navigate OSDU JSON Schemas, data definitions, and entity relationship models.",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Interactive OSDU Schema ERD Graph Visualization",
+            "Fast Search and Filter across 1,400+ OSDU Schemas",
+            "Master Data, Work Product Component (WPC), Reference Data and Abstract Schema support",
+            "Schema Relationship and Reference Inspection",
+            "Reference Data Manifest Value Viewer",
+            "Local OSDU Schema folder loader and offline caching"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://osdu-viz.netlify.app/#website",
+          "url": "https://osdu-viz.netlify.app/",
+          "name": "OSDU Schemas & Data Model Visualizer",
+          "description": "Open Subsurface Data Universe (OSDU) schema definitions and interactive visualizer."
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://osdu-viz.netlify.app/#dataset",
+          "name": "OSDU Data Definitions JSON Schemas",
+          "description": "Comprehensive collection of Open Group OSDU JSON Schema definitions for energy and subsurface data interoperability.",
+          "url": "https://osdu-viz.netlify.app/",
+          "keywords": [
+            "OSDU",
+            "OSDU Schema",
+            "OSDU Schemas",
+            "JSON Schema",
+            "Subsurface Data",
+            "Master Data",
+            "Work Product Component",
+            "Reference Data",
+            "Energy Data Platform"
+          ],
+          "creator": {
+            "@type": "Organization",
+            "name": "The Open Group OSDU Forum",
+            "url": "https://osduforum.org/"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header style="padding: 2rem; max-width: 960px; margin: 0 auto; font-family: system-ui, sans-serif;">
+        <h1 style="font-size: 2rem; color: #1e1b4b; margin-bottom: 0.5rem;">OSDU Schema Visualizer &amp; Data Model Explorer</h1>
+        <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.6;">
+          Interactive explorer and visual graph for <strong>OSDU JSON Schemas</strong> and <strong>OSDU Data Definitions</strong>. Search, browse, and inspect entity relationships across 1,400+ schemas including Master Data, Work Product Components (WPC), Reference Data, and Abstract Schemas from The Open Group OSDU Forum.
+        </p>
+      </header>
+      <main style="padding: 0 2rem 2rem; max-width: 960px; margin: 0 auto; font-family: system-ui, sans-serif; color: #374151; line-height: 1.6;">
+        <section style="margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.25rem; color: #1f2937;">Explore OSDU Schema Categories</h2>
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li><strong>Master Data Schemas:</strong> Well, Wellbore, SeismicAcquisitionSurvey, Rig, Field, Organisation, Basin, Prospect, StorageFacility, and more.</li>
+            <li><strong>Work Product Component (WPC) Schemas:</strong> WellLog, WellboreTrajectory, WellboreMarkerSet, SeismicTraceData, SeismicInterpretationSet, Document, and Activity.</li>
+            <li><strong>Reference Data Schemas:</strong> UnitOfMeasure, WellStatus, ActivityCode, AliasNameType, VerticalMeasurementType, and lookup taxonomies.</li>
+            <li><strong>Abstract &amp; Manifest Schemas:</strong> AbstractCommonResources, AbstractSpatialLocation, AbstractLegalTags, GenericMasterData, and GenericDataset.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="font-size: 1.25rem; color: #1f2937;">Key Features</h2>
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li>Interactive Entity-Relationship Graph (ERD) powered by React Flow and Dagre.</li>
+            <li>Instant type-ahead search by schema name, $id, or version.</li>
+            <li>Deep property inspection, inheritance chain visualization, and reference data resolution.</li>
+            <li>Offline support and local custom schema folder analysis.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <noscript>
+      <div style="padding: 2rem; max-width: 960px; margin: 0 auto; font-family: system-ui, sans-serif;">
+        <p><strong>Note:</strong> JavaScript is required to use the interactive OSDU Schema Visualizer graph tool. Please enable JavaScript in your browser settings to explore OSDU schemas interactively.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

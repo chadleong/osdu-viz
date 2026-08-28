@@ -6,7 +6,7 @@ Check out the live demo [here](https://osdu-viz.netlify.app/).
 
 Quick features
 
-- Dropdown search to find and select any schema found under `public/data/**/*.(min.)json`. The current schema source is from the published `v0.28.7` [here](https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.28.7/Generated?ref_type=tags) and reference values [here](https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.28.7/ReferenceValues/Manifests?ref_type=tags).
+- Dropdown search to find and select any schema found under `public/data/**/*.(min.)json`. The current schema source is from the published `v0.30.0` [here](https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.0/Generated?ref_type=tags) and reference values [here](https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.0/ReferenceValues/Manifests?ref_type=tags).
 - Fast text search / filter by schema title, $id or version.
 - Clickable graph nodes with styled relationship edges and tooltip details.
 - Tooltip shows properties, relationships and (for reference-data types) loads reference values from disk.
