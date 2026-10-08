@@ -1,0 +1,123 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoilTubingWrapType:LevelWind",
+      "kind": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Level Wind",
+        "ID": "LevelWind",
+        "Description": "The tubing is wound evenly across the reel using a level wind mechanism.",
+        "Code": "LevelWind",
+        "Source": "Workbook ReferenceValues/Authoring/CoilTubingWrapType.1.xlsx; commit SHA d08127c7.",
+        "CommitDate": "2026-09-09T20:44:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoilTubingWrapType:Random",
+      "kind": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Random",
+        "NameAlias": [
+          {
+            "AliasName": "Free",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:CommonName:"
+          }
+        ],
+        "ID": "Random",
+        "Description": "Tubing is spooled without a level wind guide.",
+        "Code": "Random",
+        "Source": "Workbook ReferenceValues/Authoring/CoilTubingWrapType.1.xlsx; commit SHA d08127c7.",
+        "CommitDate": "2026-09-09T20:44:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoilTubingWrapType:FigureEight",
+      "kind": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Figure-Eight",
+        "ID": "FigureEight",
+        "Description": "Used for temporary storage or short lengths.",
+        "Code": "FigureEight",
+        "Source": "Workbook ReferenceValues/Authoring/CoilTubingWrapType.1.xlsx; commit SHA d08127c7.",
+        "CommitDate": "2026-09-09T20:44:04+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--CoilTubingWrapType:Helical",
+      "kind": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Helical",
+        "ID": "Helical",
+        "Description": "Tubing follows a continuous spiral pattern.",
+        "Code": "Helical",
+        "Source": "Workbook ReferenceValues/Authoring/CoilTubingWrapType.1.xlsx; commit SHA d08127c7.",
+        "CommitDate": "2026-09-09T20:44:04+00:00"
+      }
+    }
+  ]
+}

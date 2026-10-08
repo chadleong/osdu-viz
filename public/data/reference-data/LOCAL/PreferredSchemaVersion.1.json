@@ -1544,11 +1544,11 @@
         "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--EquipmentInventory:1\".",
         "Code": "osdu:wks:master-data--EquipmentInventory:1",
         "MinimumKindVersion": "osdu:wks:master-data--EquipmentInventory:1.0.0",
-        "PreferredKindVersion": "osdu:wks:master-data--EquipmentInventory:1.0.0",
-        "MaximumKindVersion": "osdu:wks:master-data--EquipmentInventory:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--EquipmentInventory:1.1.0",
+        "MaximumKindVersion": "osdu:wks:master-data--EquipmentInventory:1.1.0",
         "IsPreferredMajorVersion": true,
-        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -2420,6 +2420,130 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigAnchor:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigAnchor major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigAnchor:1\".",
+        "Code": "osdu:wks:master-data--RigAnchor:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigAnchor:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigAnchor:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigAnchor:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigBoiler:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigBoiler major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigBoiler:1\".",
+        "Code": "osdu:wks:master-data--RigBoiler:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigBoiler:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigBoiler:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigBoiler:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigCementUnit:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigCementUnit major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigCementUnit:1\".",
+        "Code": "osdu:wks:master-data--RigCementUnit:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigCementUnit:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigCementUnit:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigCementUnit:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigCentrifuge:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigCentrifuge major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigCentrifuge:1\".",
+        "Code": "osdu:wks:master-data--RigCentrifuge:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigCentrifuge:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigCentrifuge:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigCentrifuge:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigCirculatingSystem:1",
       "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
       "acl": {
@@ -2448,6 +2572,99 @@
         "IsPreferredMajorVersion": true,
         "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA e429db12.",
         "CommitDate": "2026-07-09T10:06:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigCoilTubingReel:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigCoilTubingReel major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigCoilTubingReel:1\".",
+        "Code": "osdu:wks:master-data--RigCoilTubingReel:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigCoilTubingReel:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigCoilTubingReel:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigCoilTubingReel:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigCrane:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigCrane major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigCrane:1\".",
+        "Code": "osdu:wks:master-data--RigCrane:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigCrane:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigCrane:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigCrane:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigDegasser:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigDegasser major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigDegasser:1\".",
+        "Code": "osdu:wks:master-data--RigDegasser:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigDegasser:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigDegasser:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigDegasser:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -2482,6 +2699,99 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigHydrocyclone:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigHydrocyclone major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigHydrocyclone:1\".",
+        "Code": "osdu:wks:master-data--RigHydrocyclone:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigHydrocyclone:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigHydrocyclone:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigHydrocyclone:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigMotor:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigMotor major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigMotor:1\".",
+        "Code": "osdu:wks:master-data--RigMotor:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigMotor:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigMotor:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigMotor:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigPit:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigPit major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigPit:1\".",
+        "Code": "osdu:wks:master-data--RigPit:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigPit:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigPit:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigPit:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigPump:1",
       "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
       "acl": {
@@ -2505,11 +2815,11 @@
         "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigPump:1\".",
         "Code": "osdu:wks:master-data--RigPump:1",
         "MinimumKindVersion": "osdu:wks:master-data--RigPump:1.0.0",
-        "PreferredKindVersion": "osdu:wks:master-data--RigPump:1.0.0",
-        "MaximumKindVersion": "osdu:wks:master-data--RigPump:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigPump:1.1.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigPump:1.1.0",
         "IsPreferredMajorVersion": true,
-        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -2541,6 +2851,37 @@
         "IsPreferredMajorVersion": true,
         "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA e429db12.",
         "CommitDate": "2026-07-09T10:06:59+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--RigShaker:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--RigShaker major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--RigShaker:1\".",
+        "Code": "osdu:wks:master-data--RigShaker:1",
+        "MinimumKindVersion": "osdu:wks:master-data--RigShaker:1.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--RigShaker:1.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--RigShaker:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -2662,9 +3003,40 @@
         "MinimumKindVersion": "osdu:wks:master-data--Risk:1.0.0",
         "PreferredKindVersion": "osdu:wks:master-data--Risk:1.2.0",
         "MaximumKindVersion": "osdu:wks:master-data--Risk:1.2.0",
+        "IsPreferredMajorVersion": false,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:master-data--Risk:2",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "master-data--Risk major version 2",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--Risk:2\".",
+        "Code": "osdu:wks:master-data--Risk:2",
+        "MinimumKindVersion": "osdu:wks:master-data--Risk:2.0.0",
+        "PreferredKindVersion": "osdu:wks:master-data--Risk:2.0.0",
+        "MaximumKindVersion": "osdu:wks:master-data--Risk:2.0.0",
         "IsPreferredMajorVersion": true,
-        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA 69d7c778.",
-        "CommitDate": "2024-11-15T12:51:49+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -3280,11 +3652,11 @@
         "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:master-data--Well:1\".",
         "Code": "osdu:wks:master-data--Well:1",
         "MinimumKindVersion": "osdu:wks:master-data--Well:1.0.0",
-        "PreferredKindVersion": "osdu:wks:master-data--Well:1.4.0",
-        "MaximumKindVersion": "osdu:wks:master-data--Well:1.4.0",
+        "PreferredKindVersion": "osdu:wks:master-data--Well:1.5.0",
+        "MaximumKindVersion": "osdu:wks:master-data--Well:1.5.0",
         "IsPreferredMajorVersion": true,
-        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA 69d7c778.",
-        "CommitDate": "2024-11-15T12:51:49+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -6354,6 +6726,37 @@
         "IsPreferredMajorVersion": true,
         "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA 69d7c778.",
         "CommitDate": "2024-11-15T12:51:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--CoilTubingWrapType:1",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "reference-data--CoilTubingWrapType major version 1",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:reference-data--CoilTubingWrapType:1\".",
+        "Code": "osdu:wks:reference-data--CoilTubingWrapType:1",
+        "MinimumKindVersion": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+        "PreferredKindVersion": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+        "MaximumKindVersion": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -24461,6 +24864,192 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPostStackProcessingProduct major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPostStackTrace2DSection major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPostStackTrace3DVolume major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPreStackProcessingProduct major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPreStackTrace2DSection major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0",
+      "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "work-product-component--SeismicPreStackTrace3DVolume major version 0",
+        "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0\".",
+        "Code": "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0",
+        "MinimumKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0",
+        "IsPreferredMajorVersion": true,
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SeismicTraceData:1",
       "kind": "osdu:wks:reference-data--PreferredSchemaVersion:1.0.0",
       "acl": {
@@ -24484,11 +25073,11 @@
         "Description": "Minimum, maximum and preferred schema version (also known as kind) for \"osdu:wks:work-product-component--SeismicTraceData:1\".",
         "Code": "osdu:wks:work-product-component--SeismicTraceData:1",
         "MinimumKindVersion": "osdu:wks:work-product-component--SeismicTraceData:1.0.0",
-        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicTraceData:1.7.0",
-        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicTraceData:1.7.0",
+        "PreferredKindVersion": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "MaximumKindVersion": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
         "IsPreferredMajorVersion": true,
-        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {

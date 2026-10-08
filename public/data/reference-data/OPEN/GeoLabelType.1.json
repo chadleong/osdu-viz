@@ -112,7 +112,7 @@
             "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
           }
         ],
-        "Description": "The hydrogen index (HI) represents the amount of hydrogen relative to the amount of organic carbon present in a sample. The S2 curve of a Rock-Eval analysis can help us determine the total amount of hydrogen in milligrams of hydrogen to grams of sample according to the following formula: HI=(S2/TOC)X100.",
+        "Description": "The\u00a0hydrogen index\u00a0(HI) represents the amount of hydrogen relative to the amount of organic carbon present in a sample. The S2 curve of a Rock-Eval analysis can help us determine the total amount of hydrogen in milligrams of hydrogen to grams of sample according to the following formula: HI=(S2/TOC)X100.",
         "Code": "Pyrolysis.Bulk.HydrogenIndex.Average",
         "ValueType": "number",
         "FacetIDs": [
@@ -3491,7 +3491,7 @@
             "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
           }
         ],
-        "Description": "Oilfield scaling is the precipitation and accumulation of insoluble crystals (salts) from a mixture of incompatible aqueous phases in oil processing systems. This is to indicate whether the scale is of organic matter or not as a boolean.",
+        "Description": "Oilfield scaling is the\u00a0precipitation\u00a0and accumulation of insoluble crystals (salts) from a mixture of incompatible\u00a0aqueous\u00a0phases in oil processing systems. This is to indicate whether the scale is of organic matter or not as a boolean.",
         "Code": "IsOrganicOilfieldScale",
         "ValueType": "boolean",
         "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.xlsx; commit SHA 56f7c736.",
@@ -4321,7 +4321,7 @@
             "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
           }
         ],
-        "Description": "The rate of sedimentation is the thickness of sediment accumulated per unit time. The unit of measure is fixed to mm/Ma and not subject to normalization.",
+        "Description": "The rate of sedimentation is the thickness of\u00a0sediment\u00a0accumulated per unit time. The unit of measure is fixed to mm/Ma and not subject to normalization.",
         "Code": "SedimentationRate",
         "ValueType": "number",
         "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:none:",
