@@ -133,7 +133,7 @@
                         "type": "string",
                         "description": "The ID for a distinct vertical measurement within the Wellbore VerticalMeasurements array so that it may be referenced by other vertical measurements if necessary."
                       },
-                      "rigid": {
+                      "RigID": {
                         "type": "string",
                         "title": "Rig ID",
                         "description": "The relationship to the rig, which was used while this vertical measurement was in active use.",

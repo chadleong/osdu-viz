@@ -3015,6 +3015,53 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--EquipmentInventory:1.1.0",
+      "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "osdu:wks:master-data--EquipmentInventory:1.1.0",
+        "Description": "Schema upgrade instructions for Storage records from kind osdu:wks:master-data--EquipmentInventory:1.0.0 to osdu:wks:master-data--EquipmentInventory:1.1.0",
+        "Code": "osdu:wks:master-data--EquipmentInventory:1.1.0",
+        "ExpectedResults": {
+          "kind": "osdu:wks:master-data--EquipmentInventory:1.1.0"
+        },
+        "JoltConfigurations": [
+          {
+            "operation": "remove",
+            "spec": {
+              "kind": ""
+            }
+          },
+          {
+            "operation": "shift",
+            "spec": {
+              "*": "&",
+              "#osdu:wks:master-data--EquipmentInventory:1\\.1\\.0": "kind"
+            }
+          }
+        ],
+        "SourceKind": "osdu:wks:master-data--EquipmentInventory:1.0.0",
+        "TargetKind": "osdu:wks:master-data--EquipmentInventory:1.1.0",
+        "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--EvaluationPlan:1.1.0",
       "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
       "acl": {
@@ -5233,6 +5280,53 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--RigPump:1.1.0",
+      "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "osdu:wks:master-data--RigPump:1.1.0",
+        "Description": "Schema upgrade instructions for Storage records from kind osdu:wks:master-data--RigPump:1.0.0 to osdu:wks:master-data--RigPump:1.1.0",
+        "Code": "osdu:wks:master-data--RigPump:1.1.0",
+        "ExpectedResults": {
+          "kind": "osdu:wks:master-data--RigPump:1.1.0"
+        },
+        "JoltConfigurations": [
+          {
+            "operation": "remove",
+            "spec": {
+              "kind": ""
+            }
+          },
+          {
+            "operation": "shift",
+            "spec": {
+              "*": "&",
+              "#osdu:wks:master-data--RigPump:1\\.1\\.0": "kind"
+            }
+          }
+        ],
+        "SourceKind": "osdu:wks:master-data--RigPump:1.0.0",
+        "TargetKind": "osdu:wks:master-data--RigPump:1.1.0",
+        "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--RigUtilization:1.1.0",
       "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
       "acl": {
@@ -5421,6 +5515,59 @@
         "TargetKind": "osdu:wks:master-data--Risk:1.2.0",
         "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA f0648c6b.",
         "CommitDate": "2024-11-15T08:41:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--Risk:2.0.0",
+      "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "osdu:wks:master-data--Risk:2.0.0",
+        "Description": "Schema upgrade instructions for Storage records from kind osdu:wks:master-data--Risk:1.2.0 to osdu:wks:master-data--Risk:2.0.0",
+        "Code": "osdu:wks:master-data--Risk:2.0.0",
+        "ExpectedResults": {
+          "kind": "osdu:wks:master-data--Risk:2.0.0"
+        },
+        "JoltConfigurations": [
+          {
+            "operation": "remove",
+            "spec": {
+              "kind": "",
+              "data": {
+                "Preventions": ""
+              }
+            }
+          },
+          {
+            "operation": "shift",
+            "spec": {
+              "*": "&",
+              "data": {
+                "*": "data.&"
+              },
+              "#osdu:wks:master-data--Risk:2\\.0\\.0": "kind"
+            }
+          }
+        ],
+        "SourceKind": "osdu:wks:master-data--Risk:1.2.0",
+        "TargetKind": "osdu:wks:master-data--Risk:2.0.0",
+        "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -7283,6 +7430,53 @@
         "TargetKind": "osdu:wks:master-data--Well:1.4.0",
         "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA f0648c6b.",
         "CommitDate": "2024-11-15T08:41:24+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:master-data--Well:1.5.0",
+      "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "osdu:wks:master-data--Well:1.5.0",
+        "Description": "Schema upgrade instructions for Storage records from kind osdu:wks:master-data--Well:1.4.0 to osdu:wks:master-data--Well:1.5.0",
+        "Code": "osdu:wks:master-data--Well:1.5.0",
+        "ExpectedResults": {
+          "kind": "osdu:wks:master-data--Well:1.5.0"
+        },
+        "JoltConfigurations": [
+          {
+            "operation": "remove",
+            "spec": {
+              "kind": ""
+            }
+          },
+          {
+            "operation": "shift",
+            "spec": {
+              "*": "&",
+              "#osdu:wks:master-data--Well:1\\.5\\.0": "kind"
+            }
+          }
+        ],
+        "SourceKind": "osdu:wks:master-data--Well:1.4.0",
+        "TargetKind": "osdu:wks:master-data--Well:1.5.0",
+        "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -20076,6 +20270,53 @@
         "TargetKind": "osdu:wks:work-product-component--SeismicTraceData:1.7.0",
         "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA 173d07d2.",
         "CommitDate": "2026-07-07T01:55:02+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--SchemaUpgradeSpecification:osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+      "kind": "osdu:wks:reference-data--SchemaUpgradeSpecification:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "Description": "Schema upgrade instructions for Storage records from kind osdu:wks:work-product-component--SeismicTraceData:1.7.0 to osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "Code": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "ExpectedResults": {
+          "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0"
+        },
+        "JoltConfigurations": [
+          {
+            "operation": "remove",
+            "spec": {
+              "kind": ""
+            }
+          },
+          {
+            "operation": "shift",
+            "spec": {
+              "*": "&",
+              "#osdu:wks:work-product-component--SeismicTraceData:1\\.8\\.0": "kind"
+            }
+          }
+        ],
+        "SourceKind": "osdu:wks:work-product-component--SeismicTraceData:1.7.0",
+        "TargetKind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "Source": "Workbook ReferenceValues/Authoring/SchemaUpgradeSpecification.1.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {

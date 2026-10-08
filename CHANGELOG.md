@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-10-08
+
+### Added
+- Added 23 new schemas from OSDU Data Definitions `v0.30.1` (total schemas now 1,448), including `EquipmentInventory:1.1.0`, `Risk:2.0.0`, `Well:1.5.0`, `SeismicTraceData:1.8.0`, `CoilTubingWrapType`, the `Rig*` master-data types (`RigAnchor`, `RigBoiler`, `RigCementUnit`, `RigCentrifuge`, `RigCoilTubingReel`, `RigCrane`, `RigDegasser`, `RigHydrocyclone`, `RigMotor`, `RigPit`, `RigShaker`, `RigPump:1.1.0`) and the `SeismicPreStack*` / `SeismicPostStack*` work-product-components.
+- Added reference-data `CoilTubingWrapType` and `LithoStratigraphy`.
+
+### Changed
+- Updated data source link in the navigation bar and README from `v0.30.0` to `v0.30.1`.
+- Refreshed `Well:1.4.0`, `SeismicTraceData:1.7.0`, `SchemaStatus`, `SchemaToIndexSchema` and the reference-data manifests (`GeoLabelType`, `HeaderKeyName`, `IngestionSequence`, `ReferenceValueTypeDependencies` and the LOCAL schema-upgrade tables).
+
 ## [1.3.0] - 2026-07-22
 
 ### Added

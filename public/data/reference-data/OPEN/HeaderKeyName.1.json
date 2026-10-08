@@ -245,6 +245,60 @@
       }
     },
     {
+      "id": "{{NAMESPACE}}:reference-data--HeaderKeyName:OFFSET",
+      "kind": "osdu:wks:reference-data--HeaderKeyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Offset",
+        "Description": "Distance between the energy source and the receiver",
+        "Code": "OFFSET",
+        "Source": "Workbook ReferenceValues/Published/HeaderKeyName.1.xlsx; commit SHA 81645153.",
+        "CommitDate": "2026-08-10T02:00:42+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--HeaderKeyName:AZIMUTH",
+      "kind": "osdu:wks:reference-data--HeaderKeyName:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Azimuth",
+        "Description": "Represents the directional bearing (measured in degrees from North) of the shot-receiver pair.",
+        "Code": "AZIMUTH",
+        "Source": "Workbook ReferenceValues/Published/HeaderKeyName.1.xlsx; commit SHA 81645153.",
+        "CommitDate": "2026-08-10T02:00:42+00:00"
+      }
+    },
+    {
       "id": "{{NAMESPACE}}:reference-data--HeaderKeyName:XYSCALAR",
       "kind": "osdu:wks:reference-data--HeaderKeyName:1.0.0",
       "acl": {

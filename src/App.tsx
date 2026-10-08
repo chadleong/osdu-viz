@@ -699,11 +699,11 @@ export default function App() {
           <div className="text-sm text-gray-600 ml-auto">
             {models.length} schemas loaded from{" "}
             <a
-              href="https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.0?ref_type=tags"
+              href="https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.1?ref_type=tags"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
-              title="OSDU Data Definitions Source (v0.30.0)"
+              title="OSDU Data Definitions Source (v0.30.1)"
             >
               OSDU
             </a>{" "}

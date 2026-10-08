@@ -2885,6 +2885,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -3457,7 +3465,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -3473,6 +3537,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -3481,7 +3569,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -3538,6 +3642,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -3954,6 +4066,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -5793,6 +5913,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -5858,6 +6026,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -6586,8 +6762,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -7278,6 +7454,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -7850,7 +8034,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -7866,6 +8106,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -7874,7 +8138,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -7931,6 +8211,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -8347,6 +8635,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -10194,6 +10490,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -10259,6 +10603,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -10987,8 +11339,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -11417,6 +11769,14 @@
             }
           ],
           "osdu:wks:master-data--EquipmentInventory:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -11996,7 +12356,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -12012,6 +12428,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -12020,7 +12460,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -12077,6 +12533,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -12493,6 +12957,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -14332,6 +14804,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
@@ -14397,6 +14917,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.GeoContexts[].GeoTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.GeoContexts[].GeoTypeID",
               "SearchModeIDs": [
@@ -15125,8 +15653,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -15780,6 +16308,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
@@ -16366,7 +16902,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
               "SearchModeIDs": [
@@ -16382,6 +16974,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
@@ -16390,7 +17006,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
               "SearchModeIDs": [
@@ -16447,6 +17079,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
               "SearchModeIDs": [
@@ -16863,6 +17503,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.SpatialLocation.QuantitativeAccuracyBandID",
               "SearchModeIDs": [
@@ -20072,6 +20720,114 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.LiveTraceOutline.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.LiveTraceOutline.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.LiveTraceOutline.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.LiveTraceOutline.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
@@ -20233,6 +20989,26 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.SpatialArea.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            },
+            {
+              "Path": "data.LiveTraceOutline.QuantitativeAccuracyBandID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.SpatialPoint.QuantitativeAccuracyBandID",
               "SearchModeIDs": [
@@ -21519,8 +22295,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -22729,6 +23505,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
@@ -23289,7 +24073,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -23305,6 +24145,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
@@ -23313,7 +24177,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -23370,6 +24250,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -23786,6 +24674,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -24850,6 +25746,14 @@
             }
           ],
           "osdu:wks:reference-data--ChronoStratigraphy:1.1.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:reference-data--CoilTubingWrapType:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -31177,6 +32081,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.ResourceCurationStatus",
@@ -31242,6 +32194,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.ResourceCurationStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.ResourceCurationStatus",
               "SearchModeIDs": [
@@ -31970,8 +32930,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -32896,6 +33856,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
@@ -33456,7 +34424,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -33472,6 +34496,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
@@ -33480,7 +34528,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -33537,6 +34601,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -33953,6 +35025,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -35017,6 +36097,14 @@
             }
           ],
           "osdu:wks:reference-data--ChronoStratigraphy:1.1.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:reference-data--CoilTubingWrapType:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -41344,6 +42432,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
@@ -41409,6 +42545,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.ResourceLifecycleStatus",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.ResourceLifecycleStatus",
               "SearchModeIDs": [
@@ -42137,8 +43281,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -43054,6 +44198,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--EquipmentInventory:1.1.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--EvaluationPlan:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
@@ -43614,7 +44766,63 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigAnchor:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigBoiler:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCementUnit:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCentrifuge:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigCirculatingSystem:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCoilTubingReel:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigCrane:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigDegasser:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -43630,6 +44838,30 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigHydrocyclone:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigMotor:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigPit:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigPump:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
@@ -43638,7 +44870,23 @@
               ]
             }
           ],
+          "osdu:wks:master-data--RigPump:1.1.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--RigRiser:1.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--RigShaker:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -43695,6 +44943,14 @@
             }
           ],
           "osdu:wks:master-data--Risk:1.2.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Risk:2.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -44111,6 +45367,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -45175,6 +46439,14 @@
             }
           ],
           "osdu:wks:reference-data--ChronoStratigraphy:1.1.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:reference-data--CoilTubingWrapType:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -51502,6 +52774,54 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.ResourceSecurityClassification",
@@ -51567,6 +52887,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.ResourceSecurityClassification",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.ResourceSecurityClassification",
               "SearchModeIDs": [
@@ -52295,8 +53623,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -53370,6 +54698,14 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.GatherTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.1.0": [
             {
               "Path": "data.GatherTypeID",
@@ -53433,10 +54769,18 @@
                 "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
               ]
             }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
+            {
+              "Path": "data.GatherTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -53573,6 +54917,22 @@
           }
         },
         "UsingKinds": {
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SeismicMigrationTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SeismicMigrationTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.SeismicMigrationTypeID",
@@ -53644,10 +55004,18 @@
                 "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
               ]
             }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
+            {
+              "Path": "data.SeismicMigrationTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -53921,6 +55289,22 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SeismicWaveTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.SeismicWaveTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.SeismicWaveTypeID",
@@ -53992,10 +55376,18 @@
                 "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
               ]
             }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
+            {
+              "Path": "data.SeismicWaveTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -55755,6 +57147,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--Well:1.5.0": [
+            {
+              "Path": "data.VerticalMeasurements[].VerticalMeasurementPathID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--WellLicense:1.0.0": [
             {
               "Path": "data.VerticalMeasurement.VerticalMeasurementPathID",
@@ -56410,8 +57810,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -56835,6 +58235,14 @@
             }
           ],
           "osdu:wks:master-data--Well:1.4.0": [
+            {
+              "Path": "data.VerticalMeasurements[].VerticalMeasurementTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QueryNested:"
+              ]
+            }
+          ],
+          "osdu:wks:master-data--Well:1.5.0": [
             {
               "Path": "data.VerticalMeasurements[].VerticalMeasurementTypeID",
               "SearchModeIDs": [
@@ -57346,6 +58754,22 @@
               ]
             }
           ],
+          "osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.VerticalMeasurementTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0": [
+            {
+              "Path": "data.VerticalMeasurementTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:work-product-component--SeismicTraceData:1.0.0": [
             {
               "Path": "data.VerticalMeasurementTypeID",
@@ -57411,6 +58835,14 @@
             }
           ],
           "osdu:wks:work-product-component--SeismicTraceData:1.7.0": [
+            {
+              "Path": "data.VerticalMeasurementTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
+          "osdu:wks:work-product-component--SeismicTraceData:1.8.0": [
             {
               "Path": "data.VerticalMeasurementTypeID",
               "SearchModeIDs": [
@@ -57737,8 +59169,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
@@ -58758,6 +60190,14 @@
               ]
             }
           ],
+          "osdu:wks:master-data--Well:1.5.0": [
+            {
+              "Path": "data.FacilityTypeID",
+              "SearchModeIDs": [
+                "{{NAMESPACE}}:reference-data--DiscoverabilityBySearch:QuerySimple:"
+              ]
+            }
+          ],
           "osdu:wks:master-data--WellSiteStructure:1.0.0": [
             {
               "Path": "data.FacilityTypeID",
@@ -58831,8 +60271,8 @@
             }
           ]
         },
-        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA e429db12.",
-        "CommitDate": "2026-07-09T10:06:59+00:00"
+        "Source": "Workbook ReferenceValues/Authoring/ReferenceValueUpgradeLookUp.2.xlsx; commit SHA d03cf8fa.",
+        "CommitDate": "2026-09-22T13:04:01+00:00"
       }
     },
     {
