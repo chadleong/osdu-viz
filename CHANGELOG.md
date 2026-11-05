@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.6.0] - 2026-11-05
 
 ### Added
 - Properties that point at reference data (e.g. `data.TypeRigID` -> `RigType`, including array properties) get an "Allowed values" toggle in the side panel. It lists the possible values with their full record IDs (e.g. `namespace:reference-data--RigType:Barge:`), with a filter box for long lists. Values are loaded on demand from the bundled reference data and cached.
