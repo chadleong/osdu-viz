@@ -577,8 +577,8 @@ export default function App() {
           )}
 
           {/* Status Info with inline OSDU link */}
-          <div className="text-sm text-gray-600 ml-auto app-status" title={`${models.length} schemas loaded | Selected: ${selectedModel?.title || "None"}`}>
-            {models.length} schemas loaded from{" "}
+          <div className="text-sm text-gray-600 ml-auto app-status" title={`${models.length} schemas loaded from OSDU data-definitions v0.30.1`}>
+            {models.length} schemas ·{" "}
             <a
               href="https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.1?ref_type=tags"
               target="_blank"
@@ -586,14 +586,8 @@ export default function App() {
               className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
               title="OSDU Data Definitions Source (v0.30.1)"
             >
-              OSDU
-            </a>{" "}
-            | Selected: {selectedModel?.title || "None"}
-            {selectedModel?.version && (
-              <span className="text-xs text-gray-500" style={{ marginLeft: 8 }}>
-                v{selectedModel.version}
-              </span>
-            )}
+              OSDU v0.30.1
+            </a>
           </div>
 
           {/* Light / dark background toggle (top right) */}

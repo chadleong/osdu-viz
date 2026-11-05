@@ -113,6 +113,17 @@ describe("PropertyTooltip nested object groups", () => {
     expect(screen.queryByText("Name")).not.toBeInTheDocument()
   })
 
+  it("toggles when clicking anywhere on the row, not just the name", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    fireEvent.click(screen.getByText("2 attributes")) // the count, not the name
+    expect(group()).toHaveAttribute("aria-expanded", "true")
+    fireEvent.click(screen.getByText("2 attributes").closest("li") as HTMLElement) // the row itself
+    expect(group()).toHaveAttribute("aria-expanded", "false")
+    // clicking the name toggles exactly once (no double toggle from bubbling)
+    fireEvent.click(screen.getByText("data.HistoricalInterests"))
+    expect(group()).toHaveAttribute("aria-expanded", "true")
+  })
+
   it("expands and collapses everything with the header buttons", () => {
     render(<PropertyTooltip node={node} onClose={() => {}} />)
     fireEvent.click(screen.getByRole("button", { name: "Expand all" }))
@@ -232,5 +243,26 @@ describe("PropertyTooltip resizing", () => {
     const { container } = render(<PropertyTooltip node={node} onClose={() => {}} />)
     expect((container.querySelector(".tooltip") as HTMLElement).style.width).toBe("700px")
     localStorage.clear()
+  })
+})
+
+describe("PropertyTooltip collapsible relationships", () => {
+  const node: any = {
+    id: "rel",
+    data: {
+      label: "E",
+      properties: [],
+      relations: [{ kind: "master-data--Organisation", target: "data.OperatorID", type: "relationship" }],
+      schema: {},
+    },
+  }
+  it("is collapsed by default, shows a count, and toggles", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    const title = screen.getByText(/Relationships \(1\)/)
+    expect(title).toHaveAttribute("aria-expanded", "false")
+    expect(screen.getByText("master-data--Organisation").closest("ul")).toHaveStyle({ display: "none" })
+    fireEvent.click(title)
+    expect(title).toHaveAttribute("aria-expanded", "true")
+    expect(screen.getByText("master-data--Organisation").closest("ul")).not.toHaveStyle({ display: "none" })
   })
 })

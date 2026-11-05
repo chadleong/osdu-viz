@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.2] - 2026-11-05
+
+### Added
+- "Relationships" in the side panel is collapsible (collapsed by default, shows the count).
+
+### Changed
+- A property row with nested attributes expands and collapses when you click anywhere on the row, not just on its name. Clicks on inner buttons or links, and text selection, don't toggle it.
+- The header status text is shortened to `N schemas · OSDU v0.30.1` (the duplicated "Selected: ..." is gone, since the search box and breadcrumb already show it) and is hidden below 900px.
+
+### Removed
+- "Copy $id" action in the side panel.
+
 ## [1.6.1] - 2026-11-05
 
 ### Changed

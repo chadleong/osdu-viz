@@ -102,6 +102,17 @@ const PropertyRow = memo(function PropertyRow({
       className={`list-row ${highlighted ? "prop-highlight" : ""} ${deprecated ? "prop-deprecated" : ""}`}
       onMouseEnter={() => onEnter(p.name.split(".").slice(-1)[0], refPath)}
       onMouseLeave={onLeave}
+      // The whole row toggles an expandable group (ignore clicks on inner controls and text selection)
+      style={group ? { cursor: "pointer" } : undefined}
+      onClick={
+        group
+          ? (e) => {
+              if ((e.target as HTMLElement).closest("button, a, input")) return
+              if (window.getSelection?.()?.toString()) return
+              group.onToggle()
+            }
+          : undefined
+      }
     >
       {/* Left column: (toggle) property name + required pill + attribute count */}
       <span style={{ display: "inline-flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
@@ -112,7 +123,6 @@ const PropertyRow = memo(function PropertyRow({
             aria-expanded={group.open}
             aria-label={`${p.name} (${group.count} attribute${group.count === 1 ? "" : "s"})`}
             style={{ cursor: "pointer", userSelect: "none", display: "inline-flex", gap: 4, alignItems: "center" }}
-            onClick={group.onToggle}
             onKeyDown={(e) => {
               if (e.key === "Enter" || e.key === " ") {
                 e.preventDefault()
@@ -333,6 +343,10 @@ export function PropertyTooltip({
   const topLevelOpen = topLevelOverride ?? nested.length === 0
   const toggleTopLevel = () => setTopLevelOverride(!topLevelOpen)
 
+  // Relationships are collapsed by default (can be long); reset when the tooltip shows a different node
+  const [relsOpen, setRelsOpen] = useState(false)
+  useEffect(() => setRelsOpen(false), [node])
+
   // Nested properties as a tree: object-like properties (e.g. data.HistoricalInterests) are collapsed groups
   const nestedTree = useMemo(() => buildPropertyTree(nested), [nested])
   const groupNames = useMemo(() => {
@@ -540,12 +554,6 @@ export function PropertyTooltip({
                 Open
               </button>
             </li>
-            <li className="list-row">
-              <span className="k">Copy $id</span>
-              <button className="btn" onClick={() => navigator.clipboard?.writeText(schemaId || "")}>
-                Copy
-              </button>
-            </li>
           </ul>
         </div>
         <div className="tooltip-section">
@@ -609,8 +617,23 @@ export function PropertyTooltip({
           </ul>
         </div>
         <div className="tooltip-section">
-          <div className="tooltip-section-title">Relationships</div>
-          <ul className="list">
+          <div
+            className="tooltip-section-title"
+            role="button"
+            tabIndex={0}
+            aria-expanded={relsOpen}
+            style={{ cursor: "pointer", userSelect: "none" }}
+            onClick={() => setRelsOpen(!relsOpen)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                setRelsOpen(!relsOpen)
+              }
+            }}
+          >
+            {relsOpen ? "▾" : "▸"} Relationships ({rels.length})
+          </div>
+          <ul className="list" style={relsOpen ? undefined : { display: "none" }}>
             {rels.map((r, idx) => (
               <li key={idx} className="list-row">
                 <span className="k">{r.type}</span>
