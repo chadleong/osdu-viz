@@ -1098,3 +1098,54 @@ body {
   opacity: 0.45;
   outline: none;
 }
+
+/* --- Compact, responsive main header --- */
+.app-header-row {
+  gap: 12px;
+  padding: 6px 16px;
+}
+.app-brand {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.app-title {
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.app-search {
+  flex: 1 1 280px;
+  min-width: 140px;
+  max-width: 720px;
+}
+.app-status {
+  min-width: 0;
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app-header-row > button {
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+/* Medium screens: drop the long status text */
+@media (max-width: 1100px) {
+  .app-status {
+    display: none;
+  }
+}
+/* Small screens: shorten the title, hide the version, tighten spacing */
+@media (max-width: 720px) {
+  .app-header-row {
+    gap: 8px;
+    padding: 4px 8px;
+  }
+  .app-title-extra,
+  .app-version {
+    display: none;
+  }
+}
+.app-header-row > :last-child {
+  margin-left: auto;
+  flex: 0 0 auto;
+}

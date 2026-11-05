@@ -432,20 +432,21 @@ export default function App() {
   const handleBreadcrumbJump = goToHistory
 
   return (
-    <div className="h-screen bg-gray-50">
+    <div className="h-screen bg-gray-50" style={{ display: "flex", flexDirection: "column" }}>
       {/* Header with Search and Dropdown */}
       <div
-        className="bg-white border-b border-gray-200 px-100 py-3"
-        style={{ position: "sticky", top: 0, zIndex: 1000, backdropFilter: "saturate(180%) blur(4px)" }}
+        className="app-header bg-white border-b border-gray-200"
+        style={{ position: "sticky", top: 0, zIndex: 1000, backdropFilter: "saturate(180%) blur(4px)", flex: "0 0 auto" }}
       >
         <div
-          className="flex items-center space-x-4"
-          style={{ paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12 }}
+          className="app-header-row flex items-center"
         >
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <h1 className="text-lg font-semibold text-gray-900">OSDU Schema Viz</h1>
-              <span className="text-xs text-gray-500">v{(pkg as any).version}</span>
+          <div className="app-brand">
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <h1 className="text-lg font-semibold text-gray-900 app-title">
+                OSDU<span className="app-title-extra"> Schema Viz</span>
+              </h1>
+              <span className="text-xs text-gray-500 app-version">v{(pkg as any).version}</span>
               <a
                 href="https://github.com/chadleong/osdu-viz"
                 target="_blank"
@@ -461,7 +462,7 @@ export default function App() {
           </div>
 
           {/* Schema Selector with Search */}
-          <div className="relative dropdown-container" style={{ width: 720, flex: "none" }}>
+          <div className="relative dropdown-container app-search">
             <div style={{ position: "relative" }} ref={inputRef}>
               <input
                 type="text"
@@ -576,7 +577,7 @@ export default function App() {
           )}
 
           {/* Status Info with inline OSDU link */}
-          <div className="text-sm text-gray-600 ml-auto">
+          <div className="text-sm text-gray-600 ml-auto app-status" title={`${models.length} schemas loaded | Selected: ${selectedModel?.title || "None"}`}>
             {models.length} schemas loaded from{" "}
             <a
               href="https://community.opengroup.org/osdu/data/data-definitions/-/tree/v0.30.1?ref_type=tags"
@@ -601,7 +602,7 @@ export default function App() {
       </div>
 
       {/* Main Content */}
-      <div className="h-full" style={{ height: "calc(100vh - 73px)" }}>
+      <div style={{ flex: "1 1 auto", minHeight: 0 }}>
         {selectedModel && selectedModel.schema ? (
           <div style={{ position: "relative", height: "100%" }}>
             <SchemaGraph

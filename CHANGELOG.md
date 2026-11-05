@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.1] - 2026-11-05
+
+### Changed
+- The main header is more compact: stacked padding was reduced, the search box shrinks with the window (140-720px) instead of a fixed 720px, and the graph area now fills the remaining height instead of a hard-coded offset.
+- On narrower screens the header trims itself: the status text is hidden below 1100px, and below 720px the title shortens to "OSDU" and the version number is hidden.
+- The "Show Legend" button moved to the bottom-left, just above the mini-map, and its list opens upward. It was previously top-right, then top-left where the breadcrumb could cover it.
+
 ## [1.6.0] - 2026-11-05
 
 ### Added

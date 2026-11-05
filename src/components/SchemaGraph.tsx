@@ -111,7 +111,11 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "lig
 
         {/* Legend for ERD view */}
         {isErdView && (
-          <div className="absolute top-4" style={{ right: activeNode ? 440 : 16 }}>
+          <div
+            className="absolute"
+            // sits just above the bottom-left minimap (150px tall + 15px margin); the list opens upward
+            style={{ left: 15, bottom: 175, zIndex: 5, display: "flex", flexDirection: "column-reverse", alignItems: "flex-start" }}
+          >
             <button
               onClick={() => setShowLegend(!showLegend)}
               className="px-3 py-2 bg-white border border-gray-300 rounded shadow text-sm font-medium text-gray-700 hover:bg-gray-50"
@@ -120,7 +124,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "lig
             </button>
 
             {showLegend && (
-              <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
+              <div className="mb-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
                 <div className="font-semibold mb-2">Entity Types</div>
                 {LEGEND_ENTITIES.map(({ key, label }) => (
                   <div key={key} className="flex items-center mb-1">
