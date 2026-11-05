@@ -77,3 +77,52 @@ describe("buildGraph", () => {
     )
   })
 })
+
+describe("buildGraph entity resolution", () => {
+  const wellSchema = {
+    $id: "osdu:wks:master-data--Wellbore:1.0.0",
+    $schema: "https://json-schema.org/draft/2020-12/schema",
+    title: "Wellbore",
+    properties: {
+      data: {
+        properties: {
+          WellID: { type: "string", "x-osdu-relationship": [{ GroupType: "master-data", EntityType: "Well" }] },
+        },
+      },
+    },
+  }
+  const index = {
+    "/data/master-data/WellLog.1.0.0.min.json": {
+      $id: "osdu:wks:master-data--WellLog:1.0.0",
+      title: "WellLog",
+      properties: { logOnly: { type: "string" } },
+    },
+    "/data/master-data/Well.1.0.0.min.json": {
+      $id: "osdu:wks:master-data--Well:1.0.0",
+      title: "Well",
+      properties: { wellOnly: { type: "string" } },
+    },
+  }
+
+  it("links a relationship to the exact entity, not a longer name containing it", () => {
+    const { nodes } = buildGraph(
+      { id: wellSchema.$id, title: "Wellbore", schema: wellSchema, path: "/x.json" } as any,
+      { index, erdView: true }
+    )
+    const well = nodes.find((n) => n.id === "entity::Well") as any
+    expect(well.data.filePath).toBe("/data/master-data/Well.1.0.0.min.json")
+    expect(well.data.properties.map((p: any) => p.name)).toEqual(["wellOnly"])
+    expect(well.data.category).toBe("master-data")
+  })
+
+  it("resolves $ref targets on path-segment boundaries", () => {
+    const schema = { ...wellSchema, allOf: [{ $ref: "../abstract/AbstractFoo.1.0.0.json" }] }
+    const idx = {
+      "/data/abstract/XAbstractFoo.1.0.0.min.json": { $id: "wrong" },
+      "/data/abstract/AbstractFoo.1.0.0.min.json": { $id: "right" },
+    }
+    const { nodes } = buildGraph({ id: "i", title: "t", schema, path: "/x.json" } as any, { index: idx, erdView: true })
+    const ref = nodes.find((n: any) => n.data?.nodeType === "abstract") as any
+    expect(ref.data.schemaId).toBe("right")
+  })
+})

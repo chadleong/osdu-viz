@@ -3,9 +3,16 @@ import { createPortal } from "react-dom"
 import SchemaGraph from "./components/SchemaGraph"
 import { buildGraph } from "./utils/graphBuilder"
 import type { SchemaModel } from "./types"
+import { findBestMatch } from "./utils/schemaMatch"
+import { getNodeColors } from "./utils/nodeColors"
+import { parseSchemaFiles } from "./utils/localSchemas"
+import { idbGetAll, idbPutMany } from "./utils/schemaCache"
+import { useTheme } from "./hooks/useTheme"
+import ThemeToggle from "./components/ThemeToggle"
 import pkg from "../package.json"
 
 export default function App() {
+  const { theme, toggleTheme } = useTheme()
   const [models, setModels] = useState<SchemaModel[]>([])
   const [index, setIndex] = useState<Record<string, any>>({})
   const [selectedModel, setSelectedModel] = useState<SchemaModel | null>(null)
@@ -126,31 +133,9 @@ export default function App() {
 
   // Find a schema's publicPath in schema-index given a reference string
   function findPathInIndexList(refStr: string, indexList: any[]): string | undefined {
-    if (!refStr || !Array.isArray(indexList)) return undefined
-    const refClean = String(refStr).replace(/^\.\//, "").replace(/^\//, "").replace(/^[.]{2}\//, "")
-    const refMin = refClean.replace(/\.json$/i, ".min.json")
-    const lastSeg = refClean.split("/").pop() || refClean
-    const lastSegMin = lastSeg.replace(/\.json$/i, ".min.json")
-    const refLower = refStr.toLowerCase()
-
-    const match = indexList.find((item) => {
-      const p = String(item.publicPath || "")
-      const pLower = p.toLowerCase()
-      const titleLower = String(item.title || "").toLowerCase()
-      const idLower = String(item.id || "").toLowerCase()
-
-      return (
-        p.endsWith(refClean) ||
-        p.endsWith(refMin) ||
-        p.endsWith("/" + lastSeg) ||
-        p.endsWith("/" + lastSegMin) ||
-        titleLower === refLower ||
-        idLower.includes(`--${refLower}`) ||
-        pLower.includes(refLower)
-      )
-    })
-
-    return match ? match.publicPath : undefined
+    if (!Array.isArray(indexList)) return undefined
+    const items = indexList.map((item) => ({ path: String(item.publicPath || ""), title: item.title, id: item.id }))
+    return findBestMatch(refStr, items, { fuzzy: true })?.path
   }
 
   // Ensure a target schema (and its directly referenced schemas) are loaded into memory
@@ -281,51 +266,6 @@ export default function App() {
 
   // (removed unused loadSchemas helper)
 
-  // --- IndexedDB helpers (very small wrapper) ---
-  const DB_NAME = "osdu-viz-cache"
-  const STORE = "schemas"
-
-  function openDB(): Promise<IDBDatabase> {
-    return new Promise((resolve, reject) => {
-      const req = indexedDB.open(DB_NAME, 1)
-      req.onupgradeneeded = () => {
-        const db = req.result
-        if (!db.objectStoreNames.contains(STORE)) db.createObjectStore(STORE, { keyPath: "path" })
-      }
-      req.onsuccess = () => resolve(req.result)
-      req.onerror = () => reject(req.error)
-    })
-  }
-
-  async function idbPut(item: {
-    path: string
-    schema: any
-    id?: string
-    title?: string
-    version?: string
-    fetchedAt?: number
-  }) {
-    const db = await openDB()
-    return new Promise<void>((resolve, reject) => {
-      const tx = db.transaction(STORE, "readwrite")
-      const store = tx.objectStore(STORE)
-      const req = store.put(item)
-      req.onsuccess = () => resolve()
-      req.onerror = () => reject(req.error)
-    })
-  }
-
-  async function idbGetAll(): Promise<Array<any>> {
-    const db = await openDB()
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction(STORE, "readonly")
-      const store = tx.objectStore(STORE)
-      const req = store.getAll()
-      req.onsuccess = () => resolve(req.result)
-      req.onerror = () => reject(req.error)
-    })
-  }
-
   // --- Local folder loading (File System Access API or webkitdirectory fallback) ---
   async function selectLocalFolder() {
     if (loadingLocal) return
@@ -368,41 +308,18 @@ export default function App() {
         })
       }
 
-      // Filter JSON files and process
-      const jsonFiles = files.filter((x) => x.path.toLowerCase().endsWith(".json"))
-      setLocalLoadTotal(jsonFiles.length)
+      const jsonCount = files.filter((x) => x.path.toLowerCase().endsWith(".json")).length
+      setLocalLoadTotal(jsonCount)
       setLocalLoadDone(0)
 
-      const parsed: SchemaModel[] = []
-      const idx: Record<string, any> = {}
-      let completed = 0
+      const { models: parsed, index: idx } = await parseSchemaFiles(files, setLocalLoadDone)
 
-      for (const it of jsonFiles) {
-        try {
-          const text = await it.file.text()
-          const schema = JSON.parse(text)
-          if (
-            schema &&
-            typeof schema === "object" &&
-            schema["$schema"] &&
-            String(schema["$schema"]).includes("json-schema.org")
-          ) {
-            const id = schema["$id"] || it.path
-            const title = schema["title"] || it.path
-            const model: SchemaModel = { id, title, schema, path: it.path, version: undefined }
-            parsed.push(model)
-            idx[it.path] = schema
-            try {
-              await idbPut({ path: it.path, schema, id, title, fetchedAt: Date.now() })
-            } catch (e) {
-              console.warn("Failed to cache local schema:", e)
-            }
-          }
-        } catch (e) {
-          console.warn("Failed to read/parse local file", it.path, e)
-        }
-        completed += 1
-        setLocalLoadDone(completed)
+      try {
+        await idbPutMany(
+          parsed.map((m) => ({ path: m.path, schema: m.schema, id: m.id, title: m.title, fetchedAt: Date.now() }))
+        )
+      } catch (e) {
+        console.warn("Failed to cache local schemas:", e)
       }
 
       // Merge local-loaded schemas into current models/index (local takes precedence)
@@ -430,7 +347,8 @@ export default function App() {
 
   // Map a schema model to a text color that matches the node rendering in SchemaGraph
   const getColorForModel = (model: SchemaModel | null) => {
-    if (!model) return "#374151" // neutral gray
+    const neutral = theme === "dark" ? "#d1d5db" : "#374151"
+    if (!model) return neutral
     // try to find a node that corresponds to this model
     const match = nodes.find((n: any) => {
       const d = n?.data || {}
@@ -449,24 +367,9 @@ export default function App() {
       return false
     })
 
-    // colors align with SchemaGraph's ErdEntityNode colorMap.text values
-    const defaultColor = "#374151"
+    const defaultColor = neutral
     if (!match) return defaultColor
-
-    const d = match.data || {}
-    const nodeType = d.nodeType
-    const category = d.category
-
-    if (nodeType === "entity") return "#451a7a" // purple main
-    if (nodeType === "abstract") return "#1e40af" // blue
-    if (nodeType === "related-entity") {
-      if (category === "master-data") return "#7f1d1d"
-      if (category === "reference-data") return "#065f46"
-      if (category === "work-product-component") return "#5c3d00"
-      return "#374151"
-    }
-
-    return defaultColor
+    return getNodeColors(match.data?.nodeType as string, match.data?.category as string)?.[theme === "dark" ? "onDark" : "text"] ?? defaultColor
   }
 
   // Filter models based on search term
@@ -492,20 +395,11 @@ export default function App() {
   const handleSchemaSelect = async (schemaId: string) => {
     // Accept id, partial id, title, or file path
     const key = schemaId || ""
-    const keyLower = key.toLowerCase()
-    const lastSeg = key.split("/").pop() || key
-    const targetSchema = models.find((model) => {
-      const idLower = model.id.toLowerCase()
-      const titleLower = model.title.toLowerCase()
-      const pathLower = (model.path || "").toLowerCase()
-      return (
-        model.id === key ||
-        idLower.includes(keyLower) ||
-        titleLower.includes(keyLower) ||
-        pathLower === keyLower ||
-        pathLower.endsWith((lastSeg || "").toLowerCase())
-      )
-    })
+    const targetSchema = findBestMatch(
+      key,
+      models.map((m) => ({ path: m.path, title: m.title, id: m.id, model: m })),
+      { fuzzy: true }
+    )?.model
 
     if (targetSchema) {
       const fullModel = await ensureSchemaLoaded(targetSchema)
@@ -525,29 +419,17 @@ export default function App() {
     }
   }
 
-  const handleBack = () => {
-    setHistory((h) => {
-      if (h.length === 0) return h
-      const prev = h[h.length - 1]
-      // apply previous selection and shrink history
-      setSelectedModel(prev)
-      setSearchTerm(prev.title)
-      return h.slice(0, -1)
-    })
+  // Jump to history[index]; everything after it (and the current schema) is dropped from the trail
+  function goToHistory(index: number) {
+    if (index < 0 || index >= history.length) return
+    const target = history[index]
+    setSelectedModel(target)
+    setSearchTerm(target.title)
+    setHistory(history.slice(0, index))
   }
 
-  function handleBreadcrumbJump(index: number) {
-    // index refers to the history index: 0..history.length-1
-    // The breadcrumb shows [...history, selected]; clicking an item in history jumps to it
-    setHistory((h) => {
-      if (index < 0 || index >= h.length) return h
-      const target = h[index]
-      setSelectedModel(target)
-      setSearchTerm(target.title)
-      // keep only items before the clicked index
-      return h.slice(0, index)
-    })
-  }
+  const handleBack = () => goToHistory(history.length - 1)
+  const handleBreadcrumbJump = goToHistory
 
   return (
     <div className="h-screen bg-gray-50">
@@ -610,6 +492,7 @@ export default function App() {
               {/* Selected version badge inside the input */}
               {selectedModel?.version && (
                 <span
+                  className="version-badge"
                   style={{
                     position: "absolute",
                     right: 44,
@@ -617,11 +500,8 @@ export default function App() {
                     transform: "translateY(-50%)",
                     pointerEvents: "none",
                     fontSize: 12,
-                    color: "#475569",
-                    background: "#f1f5f9",
                     padding: "2px 6px",
                     borderRadius: 6,
-                    border: "1px solid #e2e8f0",
                     width: 60,
                     textAlign: "center",
                   }}
@@ -714,6 +594,9 @@ export default function App() {
               </span>
             )}
           </div>
+
+          {/* Light / dark background toggle (top right) */}
+          <ThemeToggle theme={theme} onToggle={toggleTheme} />
         </div>
       </div>
 
@@ -726,6 +609,7 @@ export default function App() {
               nodes={nodes}
               edges={edges}
               onSchemaSelect={handleSchemaSelect}
+              theme={theme}
             />
             {/* Overlay layer to host interactive controls above ReactFlow */}
             <div
@@ -742,6 +626,13 @@ export default function App() {
                   className="absolute top-3 left-3 px-3 py-2 text-sm max-w-[70vw] overflow-x-auto whitespace-nowrap"
                   style={{ pointerEvents: "auto", background: "transparent" }}
                 >
+                  <button
+                    onClick={handleBack}
+                    className="mr-3 px-2 py-1 border border-gray-300 rounded bg-white hover:bg-gray-50 text-gray-700"
+                    title="Back to previous schema"
+                  >
+                    ← Back
+                  </button>
                   {/* Show history items then the current selected */}
                   {history.map((m, i) => (
                     <span key={m.path}>
@@ -785,7 +676,7 @@ export default function App() {
                       <div
                         style={{
                           height: 8,
-                          background: "#e5e7eb",
+                          background: "var(--line)",
                           borderRadius: 9999,
                           overflow: "hidden",
                           boxShadow: "inset 0 1px 2px rgba(0,0,0,0.05)",

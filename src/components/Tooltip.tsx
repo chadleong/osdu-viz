@@ -1,11 +1,157 @@
-import React, { useEffect, useState } from "react"
+import { Fragment, useCallback, useEffect, useMemo, useState, memo } from "react"
 import { Node } from "@xyflow/react"
 import { ReactNode } from "react"
+import { buildPropertyTree, type TreeNode } from "../utils/propertyTree"
 
-// Define explicit type for node data
-interface TooltipNodeData {
-  label: ReactNode
-  subtitle?: ReactNode
+type PropertyInfo = {
+  name: string
+  type?: string
+  description?: string
+  required?: boolean
+  depth?: number
+}
+
+// Matches "DEPRECATED: ...", "[DEPRECATED] ..." at the start of a description, or a bracketed marker anywhere
+export const isDeprecated = (description?: string) =>
+  !!description && /^\s*[\[(]?\s*deprecated(?![a-z])|\[\s*deprecated\s*\]/i.test(description)
+
+type RowGroup = { open: boolean; count: number; onToggle: () => void }
+
+const PropertyRow = memo(function PropertyRow({
+  prop: p,
+  highlighted,
+  onEnter,
+  onLeave,
+  label,
+  group,
+}: {
+  prop: PropertyInfo
+  highlighted: boolean
+  onEnter: (name: string, ref?: string) => void
+  onLeave: () => void
+  /** Text shown instead of the full dotted name (used for children in the tree) */
+  label?: string
+  /** Present when the property is an object whose attributes can be expanded */
+  group?: RowGroup
+}) {
+  const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
+  const refPath = isRef ? String(p.type).slice(5) : undefined
+  const deprecated = isDeprecated(p.description)
+  return (
+    <li
+      className={`list-row ${highlighted ? "prop-highlight" : ""} ${deprecated ? "prop-deprecated" : ""}`}
+      onMouseEnter={() => onEnter(p.name.split(".").slice(-1)[0], refPath)}
+      onMouseLeave={onLeave}
+    >
+      {/* Left column: (toggle) property name + required pill + attribute count */}
+      <span style={{ display: "inline-flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+        {group ? (
+          <span
+            role="button"
+            tabIndex={0}
+            aria-expanded={group.open}
+            aria-label={`${p.name} (${group.count} attribute${group.count === 1 ? "" : "s"})`}
+            style={{ cursor: "pointer", userSelect: "none", display: "inline-flex", gap: 4, alignItems: "center" }}
+            onClick={group.onToggle}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                group.onToggle()
+              }
+            }}
+          >
+            <span aria-hidden>{group.open ? "▾" : "▸"}</span>
+            <span className="k">
+              {label ?? p.name}
+            </span>
+          </span>
+        ) : (
+          <span className="k">
+            {label ?? p.name}
+          </span>
+        )}
+        {deprecated && <span className="badge req">DEPRECATED</span>}
+        {p.required && <span className="badge req">required</span>}
+        {group && (
+          <span className="t" style={{ whiteSpace: "nowrap" }}>
+            {group.count} attribute{group.count === 1 ? "" : "s"}
+          </span>
+        )}
+      </span>
+      {/* Right column: type (only when not a $ref) */}
+      {!isRef && p.type ? <span className="t">{p.type}</span> : <span />}
+      {/* $ref shown under the property, spanning full width */}
+      {isRef && (
+        <div style={{ gridColumn: "1 / -1" }}>
+          <span className="t">$ref: {refPath}</span>
+        </div>
+      )}
+      {/* Description spans full width on next line */}
+      {p.description && (
+        <div style={{ gridColumn: "1 / -1" }}>
+          <span className="d">
+            {p.description}
+          </span>
+        </div>
+      )}
+    </li>
+  )
+})
+
+function PropertyTree({
+  nodes,
+  level,
+  expanded,
+  toggle,
+  hoveredPropName,
+  onEnter,
+  onLeave,
+}: {
+  nodes: TreeNode<PropertyInfo>[]
+  level: number
+  expanded: Set<string>
+  toggle: (name: string) => void
+  hoveredPropName: string | null
+  onEnter: (name: string, ref?: string) => void
+  onLeave: () => void
+}) {
+  return (
+    <>
+      {nodes.map((n) => {
+        const p = n.prop
+        const hasChildren = n.children.length > 0
+        const open = expanded.has(p.name)
+        return (
+          <Fragment key={p.name}>
+            <PropertyRow
+              prop={p}
+              // roots keep the full dotted name (e.g. data.Foo); children show just their own name
+              label={level === 0 ? undefined : p.name.split(".").slice(-1)[0]}
+              highlighted={hoveredPropName === (p.name.split(".").slice(-1)[0] || "")}
+              onEnter={onEnter}
+              onLeave={onLeave}
+              group={hasChildren ? { open, count: n.children.length, onToggle: () => toggle(p.name) } : undefined}
+            />
+            {hasChildren && open && (
+              <li style={{ listStyle: "none", marginLeft: 10, paddingLeft: 10, borderLeft: "2px solid var(--line)" }}>
+                <ul className="list">
+                  <PropertyTree
+                    nodes={n.children}
+                    level={level + 1}
+                    expanded={expanded}
+                    toggle={toggle}
+                    hoveredPropName={hoveredPropName}
+                    onEnter={onEnter}
+                    onLeave={onLeave}
+                  />
+                </ul>
+              </li>
+            )}
+          </Fragment>
+        )
+      })}
+    </>
+  )
 }
 
 export function PropertyTooltip({
@@ -19,17 +165,16 @@ export function PropertyTooltip({
   onHoverProperty?: (payload: { name?: string; ref?: string } | null) => void
   onLeaveProperty?: () => void
 }) {
-  const props = (node?.data?.properties ?? []) as Array<{
-    name: string
-    type?: string
-    description?: string
-    required?: boolean
-    depth?: number
-  }>
+  const props = useMemo(() => (node?.data?.properties ?? []) as PropertyInfo[], [node])
   const rels = (node?.data?.relations ?? []) as Array<{ kind: string; target: string; type: string }>
 
-  const topLevel = props.filter((p) => (p.depth ?? p.name.split(".").length) === 1)
-  const nested = props.filter((p) => (p.depth ?? p.name.split(".").length) > 1)
+  const { topLevel, nested } = useMemo(() => {
+    const depthOf = (p: PropertyInfo) => p.depth ?? p.name.split(".").length
+    return {
+      topLevel: props.filter((p) => depthOf(p) === 1),
+      nested: props.filter((p) => depthOf(p) > 1),
+    }
+  }, [props])
 
   const filePath = (node?.data?.filePath as string | undefined) || ""
   const schemaId = (node?.data?.schemaId as string | undefined) || ""
@@ -38,6 +183,49 @@ export function PropertyTooltip({
   const subtitle = node?.data?.subtitle as ReactNode | undefined
 
   const [hoveredPropName, setHoveredPropName] = useState<string | null>(null)
+  const handleRowEnter = useCallback(
+    (name: string, ref?: string) => {
+      setHoveredPropName(name)
+      onHoverProperty?.({ name, ref })
+    },
+    [onHoverProperty]
+  )
+  const handleRowLeave = useCallback(() => {
+    setHoveredPropName(null)
+    onLeaveProperty?.()
+  }, [onLeaveProperty])
+  // Top-level properties (id, kind, acl, legal, ...) are collapsed by default; users mostly want the data block
+  // Collapsed by default, but open when there are no nested properties (nothing else to look at).
+  // A manual toggle overrides the default until the tooltip shows a different node.
+  const [topLevelOverride, setTopLevelOverride] = useState<boolean | null>(null)
+  useEffect(() => setTopLevelOverride(null), [node])
+  const topLevelOpen = topLevelOverride ?? nested.length === 0
+  const toggleTopLevel = () => setTopLevelOverride(!topLevelOpen)
+
+  // Nested properties as a tree: object-like properties (e.g. data.HistoricalInterests) are collapsed groups
+  const nestedTree = useMemo(() => buildPropertyTree(nested), [nested])
+  const groupNames = useMemo(() => {
+    const names: string[] = []
+    const walk = (ns: TreeNode<PropertyInfo>[]) =>
+      ns.forEach((n) => {
+        if (n.children.length) {
+          names.push(n.prop.name)
+          walk(n.children)
+        }
+      })
+    walk(nestedTree)
+    return names
+  }, [nestedTree])
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set())
+  const toggleGroup = useCallback(
+    (name: string) =>
+      setExpanded((prev) => {
+        const next = new Set(prev)
+        if (!next.delete(name)) next.add(name)
+        return next
+      }),
+    []
+  )
 
   // Reference values loading (for reference-data related entities)
   // Detect reference-data by explicit category, by file path or by schemaId containing "reference-data"
@@ -283,96 +471,62 @@ export function PropertyTooltip({
           </ul>
         </div>
         <div className="tooltip-section">
-          <div className="tooltip-section-title">Top-level properties ({topLevel.length})</div>
-          <ul className="list">
-            {topLevel.map((p, idx) => {
-              const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
-              const refPath = isRef ? String(p.type).slice(5) : null
-              return (
-                <li
-                  key={idx}
-                  className={`list-row ${
-                    hoveredPropName === (p.name.split(".").slice(-1)[0] || "") ? "prop-highlight" : ""
-                  }`}
-                  onMouseEnter={() => {
-                    const nm = p.name.split(".").slice(-1)[0]
-                    setHoveredPropName(nm)
-                    onHoverProperty?.({ name: nm, ref: refPath || undefined })
-                  }}
-                  onMouseLeave={() => {
-                    setHoveredPropName(null)
-                    onLeaveProperty?.()
-                  }}
-                >
-                  {/* Left column: property name + required pill */}
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                    <span className="k">{p.name}</span>
-                    {p.required && <span className="badge req">required</span>}
-                  </span>
-                  {/* Right column: type (only when not a $ref) */}
-                  {!isRef && p.type ? <span className="t">{p.type}</span> : <span />}
-                  {/* $ref shown under property spanning full width */}
-                  {isRef && (
-                    <div style={{ gridColumn: "1 / -1" }}>
-                      <span className="t">$ref: {refPath}</span>
-                    </div>
-                  )}
-                  {/* Description spans full width on next line */}
-                  {p.description && (
-                    <div style={{ gridColumn: "1 / -1" }}>
-                      <span className="d">{p.description}</span>
-                    </div>
-                  )}
-                </li>
-              )
-            })}
+          <div
+            className="tooltip-section-title"
+            role="button"
+            tabIndex={0}
+            aria-expanded={topLevelOpen}
+            style={{ cursor: "pointer", userSelect: "none" }}
+            onClick={toggleTopLevel}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                toggleTopLevel()
+              }
+            }}
+          >
+            {topLevelOpen ? "▾" : "▸"} Top-level properties ({topLevel.length})
+          </div>
+          <ul className="list" style={topLevelOpen ? undefined : { display: "none" }}>
+            {topLevel.map((p, idx) => (
+              <PropertyRow
+                key={idx}
+                prop={p}
+                highlighted={hoveredPropName === (p.name.split(".").slice(-1)[0] || "")}
+                onEnter={handleRowEnter}
+                onLeave={handleRowLeave}
+              />
+            ))}
             {!topLevel.length && <li className="muted">No top-level properties</li>}
           </ul>
         </div>
         <div className="tooltip-section">
-          <div className="tooltip-section-title">Nested properties ({nested.length})</div>
+          <div
+            className="tooltip-section-title"
+            style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
+          >
+            <span>Nested properties ({nested.length})</span>
+            {groupNames.length > 0 && (
+              <span style={{ display: "inline-flex", gap: 6 }}>
+                <button className="btn" onClick={() => setExpanded(new Set(groupNames))}>
+                  Expand all
+                </button>
+                <button className="btn" onClick={() => setExpanded(new Set())}>
+                  Collapse all
+                </button>
+              </span>
+            )}
+          </div>
           <ul className="list">
-            {nested.map((p, idx) => {
-              const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
-              const refPath = isRef ? String(p.type).slice(5) : null
-              return (
-                <li
-                  key={idx}
-                  className={`list-row ${
-                    hoveredPropName === (p.name.split(".").slice(-1)[0] || "") ? "prop-highlight" : ""
-                  }`}
-                  onMouseEnter={() => {
-                    const nm = p.name.split(".").slice(-1)[0]
-                    setHoveredPropName(nm)
-                    onHoverProperty?.({ name: nm, ref: refPath || undefined })
-                  }}
-                  onMouseLeave={() => {
-                    setHoveredPropName(null)
-                    onLeaveProperty?.()
-                  }}
-                >
-                  {/* Left column: property name + required pill (if present) */}
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                    <span className="k">{p.name}</span>
-                    {p.required && <span className="badge req">required</span>}
-                  </span>
-                  {/* Right column: type (only when not a $ref) */}
-                  {!isRef && p.type ? <span className="t">{p.type}</span> : <span />}
-                  {/* $ref on a new line spanning both columns */}
-                  {isRef && (
-                    <div style={{ gridColumn: "1 / -1" }}>
-                      <span className="t">$ref: {refPath}</span>
-                    </div>
-                  )}
-                  {/* Description on a new line spanning both columns */}
-                  {p.description && (
-                    <div style={{ gridColumn: "1 / -1" }}>
-                      <span className="d">{p.description}</span>
-                    </div>
-                  )}
-                </li>
-              )
-            })}
+            <PropertyTree
+              nodes={nestedTree}
+              level={0}
+              expanded={expanded}
+              toggle={toggleGroup}
+              hoveredPropName={hoveredPropName}
+              onEnter={handleRowEnter}
+              onLeave={handleRowLeave}
+            />
             {!nested.length && <li className="muted">No nested properties</li>}
           </ul>
         </div>

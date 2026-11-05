@@ -1,5 +1,6 @@
 import type { Edge, Node } from "@xyflow/react"
 import { GraphBuildOptions, SchemaModel } from "../types"
+import { baseName, findBestMatch } from "./schemaMatch"
 
 function normalizeId(id: string) {
   return id.replace(/[^a-zA-Z0-9_\-:.]/g, "_")
@@ -285,16 +286,26 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
         }
 
         // Look for schemas that match this entity type among candidates
-        const matchKey = candidates.find((key) => {
-          const keyLower = key.toLowerCase()
-          const targetLower = (erdRel.targetEntity || "").toLowerCase()
-          const titleMatch = ((index[key] && index[key].title) || "").toLowerCase() === targetLower
-          const idMatch = ((index[key] && index[key].$id) || "").toLowerCase().includes(`--${targetLower}`)
-          const fileMatch =
-            keyLower.includes(targetLower) ||
-            keyLower.includes(erdRel.targetEntity.replace(/([A-Z])/g, "-$1").toLowerCase())
+        const targetLower = (erdRel.targetEntity || "").toLowerCase()
+        // Strict pass first (exact title, delimited $id entity name, exact file base name) so "Well"
+        // doesn't resolve to "WellLog"; the loose substring pass only runs when nothing strict matches.
+        const strictKey = candidates.find((key) => {
+          const doc = index[key] || {}
+          const titleMatch = String(doc.title || "").toLowerCase() === targetLower
+          const idLower = String(doc.$id || "").toLowerCase()
+          const idMatch = idLower.includes(`--${targetLower}:`) || idLower.endsWith(`--${targetLower}`)
+          const fileMatch = baseName(key).toLowerCase() === targetLower
           return titleMatch || idMatch || fileMatch
         })
+        const matchKey =
+          strictKey ??
+          candidates.find((key) => {
+            const keyLower = key.toLowerCase()
+            return (
+              keyLower.includes(targetLower) ||
+              keyLower.includes(erdRel.targetEntity.replace(/([A-Z])/g, "-$1").toLowerCase())
+            )
+          })
 
         if (matchKey) {
           targetSchema = index[matchKey]
@@ -340,24 +351,11 @@ export function buildGraph(model: SchemaModel, opts: GraphBuildOptions): { nodes
     let category: string | undefined = undefined
 
     if (opts.index) {
-      // Normalize the ref and try both .json and .min.json variants when matching against the index keys
-      const refClean = String(r)
-        .replace(/^\.\//, "")
-        .replace(/^\//, "")
-        .replace(/^[.]{2}\//, "")
-      const refMin = refClean.replace(/\.json$/i, ".min.json")
-      const lastSeg = refClean.split("/").pop() || refClean
-      const lastSegMin = lastSeg.replace(/\.json$/i, ".min.json")
-
-      const matchKey = Object.keys(opts.index).find((k) => {
-        const key = String(k)
-        return (
-          key.endsWith(refClean) ||
-          key.endsWith(refMin) ||
-          key.endsWith("/" + lastSeg) ||
-          key.endsWith("/" + lastSegMin)
-        )
-      })
+      // Match on path-segment boundaries, trying both .json and .min.json variants
+      const matchKey = findBestMatch(
+        r,
+        Object.keys(opts.index).map((k) => ({ path: String(k) }))
+      )?.path
       const targetSchema = matchKey ? opts.index[matchKey] : undefined
       if (targetSchema) {
         refProps = collectPropsOnly(targetSchema)

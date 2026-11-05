@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest"
-import { render, screen } from "@testing-library/react"
-import { PropertyTooltip } from "./Tooltip"
+import { render, screen, fireEvent } from "@testing-library/react"
+import { PropertyTooltip, isDeprecated } from "./Tooltip"
 
 const nodeBase: any = {
   id: "n1",
@@ -29,5 +29,152 @@ describe("PropertyTooltip", () => {
     render(<PropertyTooltip node={nodeBase} onClose={() => {}} />)
     const refLine = screen.getByText(/\$ref:/)
     expect(refLine).toBeInTheDocument()
+  })
+})
+
+describe("PropertyTooltip collapsible top-level section", () => {
+  const node: any = {
+    id: "n2",
+    data: {
+      label: "Entity",
+      properties: [
+        { name: "kind", type: "string", depth: 1 },
+        { name: "data.Name", type: "string", depth: 2 },
+      ],
+      relations: [],
+      schema: {},
+    },
+  }
+  const toggle = () => screen.getByRole("button", { name: /Top-level properties \(1\)/ })
+
+  it("is collapsed by default while nested properties stay visible", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    expect(toggle()).toHaveAttribute("aria-expanded", "false")
+    expect(screen.getByText("kind")).not.toBeVisible()
+    expect(screen.getByText("data.Name")).toBeVisible()
+  })
+
+  it("expands and collapses on click and keyboard", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    fireEvent.click(toggle())
+    expect(toggle()).toHaveAttribute("aria-expanded", "true")
+    expect(screen.getByText("kind")).toBeVisible()
+    fireEvent.keyDown(toggle(), { key: "Enter" })
+    expect(toggle()).toHaveAttribute("aria-expanded", "false")
+    fireEvent.keyDown(toggle(), { key: " " })
+    expect(toggle()).toHaveAttribute("aria-expanded", "true")
+  })
+
+  it("reports hovered property name and ref", () => {
+    const calls: any[] = []
+    const n: any = {
+      ...node,
+      data: { ...node.data, properties: [{ name: "data.Ref", type: "$ref:../x/Y.json", depth: 2 }] },
+    }
+    render(<PropertyTooltip node={n} onClose={() => {}} onHoverProperty={(p) => calls.push(p)} />)
+    fireEvent.mouseEnter(screen.getByText("data.Ref").closest("li")!)
+    expect(calls).toEqual([{ name: "Ref", ref: "../x/Y.json" }])
+  })
+})
+
+describe("PropertyTooltip nested object groups", () => {
+  const node: any = {
+    id: "n3",
+    data: {
+      label: "Entity",
+      properties: [
+        { name: "data", type: "object", depth: 1 },
+        { name: "data.HistoricalInterests", type: "array", depth: 2 },
+        { name: "data.HistoricalInterests.Name", type: "string", depth: 3 },
+        { name: "data.HistoricalInterests.Share", type: "number", depth: 3 },
+        { name: "data.Plain", type: "string", depth: 2 },
+      ],
+      relations: [],
+      schema: {},
+    },
+  }
+  const group = () => screen.getByRole("button", { name: /data\.HistoricalInterests \(2 attributes\)/ })
+
+  it("shows object properties collapsed with their attribute count", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    expect(group()).toHaveAttribute("aria-expanded", "false")
+    expect(screen.getByText("2 attributes")).toBeInTheDocument()
+    expect(screen.queryByText("Name")).not.toBeInTheDocument()
+    expect(screen.getByText("data.Plain")).toBeInTheDocument()
+  })
+
+  it("reveals child attributes (by short name) when expanded and hides them again", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    fireEvent.click(group())
+    expect(group()).toHaveAttribute("aria-expanded", "true")
+    expect(screen.getByText("Name")).toBeInTheDocument()
+    expect(screen.getByText("Share")).toBeInTheDocument()
+    fireEvent.keyDown(group(), { key: "Enter" })
+    expect(screen.queryByText("Name")).not.toBeInTheDocument()
+  })
+
+  it("expands and collapses everything with the header buttons", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    fireEvent.click(screen.getByRole("button", { name: "Expand all" }))
+    expect(screen.getByText("Name")).toBeInTheDocument()
+    fireEvent.click(screen.getByRole("button", { name: "Collapse all" }))
+    expect(screen.queryByText("Name")).not.toBeInTheDocument()
+  })
+})
+
+describe("deprecated properties", () => {
+  const node: any = {
+    id: "n4",
+    data: {
+      label: "Entity",
+      properties: [
+        { name: "data.Old", type: "string", depth: 2, description: "DEPRECATED: please use data.New." },
+        { name: "data.Marked", type: "string", depth: 2, description: "[DEPRECATED] gone soon" },
+        { name: "data.New", type: "string", depth: 2, description: "Replacement; the old one is not deprecated here." },
+      ],
+      relations: [],
+      schema: {},
+    },
+  }
+
+  it("detects deprecation markers", () => {
+    expect(isDeprecated("DEPRECATED: use X")).toBe(true)
+    expect(isDeprecated("[DEPRECATED] use X")).toBe(true)
+    expect(isDeprecated("  deprecated - use X")).toBe(true)
+    expect(isDeprecated("Replaces a deprecated field")).toBe(false)
+    expect(isDeprecated(undefined)).toBe(false)
+  })
+
+  it("renders deprecated rows in red with a badge, and leaves others alone", () => {
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    expect(screen.getAllByText("DEPRECATED")).toHaveLength(2)
+    expect(screen.getByText("data.Old").closest("li")).toHaveClass("prop-deprecated")
+    expect(screen.getByText("data.New").closest("li")).not.toHaveClass("prop-deprecated")
+  })
+})
+
+describe("top-level section default state", () => {
+  const mk = (properties: any[]): any => ({ id: "x", data: { label: "E", properties, relations: [], schema: {} } })
+  const top = { name: "kind", type: "string", depth: 1 }
+  const nestedProp = { name: "data.A", type: "string", depth: 2 }
+  const toggle = () => screen.getByRole("button", { name: /Top-level properties/ })
+
+  it("is expanded when there are no nested properties", () => {
+    render(<PropertyTooltip node={mk([top])} onClose={() => {}} />)
+    expect(toggle()).toHaveAttribute("aria-expanded", "true")
+    expect(screen.getByText("kind")).toBeVisible()
+  })
+
+  it("can still be collapsed manually in that case", () => {
+    render(<PropertyTooltip node={mk([top])} onClose={() => {}} />)
+    fireEvent.click(toggle())
+    expect(toggle()).toHaveAttribute("aria-expanded", "false")
+  })
+
+  it("re-evaluates the default when the node changes", () => {
+    const { rerender } = render(<PropertyTooltip node={mk([top])} onClose={() => {}} />)
+    expect(toggle()).toHaveAttribute("aria-expanded", "true")
+    rerender(<PropertyTooltip node={mk([top, nestedProp])} onClose={() => {}} />)
+    expect(toggle()).toHaveAttribute("aria-expanded", "false")
   })
 })

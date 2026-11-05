@@ -1,12 +1,10 @@
-import React, { useCallback, useMemo, useState, useEffect } from "react"
+import React, { useCallback, useMemo, useState, useEffect, useRef } from "react"
 import {
   Background,
   Controls,
   MiniMap,
   Node,
   Edge,
-  XYPosition,
-  Position,
   useNodesState,
   useEdgesState,
   MarkerType,
@@ -20,6 +18,17 @@ import "@xyflow/react/dist/style.css"
 import { layoutWithDagre } from "../utils/layout"
 import { PropertyTooltip } from "./Tooltip"
 import { nodeTypes, edgeTypes } from "./rf-configs"
+import { validateEdges } from "../utils/edges"
+import { NODE_COLORS, getNodeColors } from "../utils/nodeColors"
+
+const LEGEND_ENTITIES: Array<{ key: string; label: string }> = [
+  { key: "entity", label: "Main Entity" },
+  { key: "master-data", label: "Related: Master Data" },
+  { key: "reference-data", label: "Related: Reference Data" },
+  { key: "work-product-component", label: "Related: Work Product Component" },
+  { key: "defaultRelated", label: "Related: Other/Unknown" },
+  { key: "abstract", label: "Abstract Schema" },
+]
 
 // Define explicit types for nodes and edges with required properties
 interface CustomNodeData {
@@ -40,95 +49,10 @@ type Props = {
   nodes: Node[]
   edges: Edge[]
   onSchemaSelect?: (idOrTerm: string) => void
+  theme?: "light" | "dark"
 }
 
-// Edge validation utility
-function validateEdges(edges: Edge[], nodes: Node[]): Edge[] {
-  const nodeIds = new Set(nodes.map((n) => n.id))
-  const mainNode = nodes.find((n) => (n as any).data?.nodeType === "entity")
-  const mainNodeId = mainNode?.id
-  // Build a quick alias map for ref-like ids to actual node ids
-  const aliasMap = new Map<string, string>()
-  for (const n of nodes) {
-    const id = n.id
-    // If this node is an abstract with schema/file info, create aliases that may appear in edges
-    const d: any = (n as any).data || {}
-    if (d.nodeType === "abstract") {
-      const last =
-        String(d.schemaId || d.filePath || d.label || id)
-          .split("/")
-          .pop() || ""
-      const normLast = last.replace(/[^a-zA-Z0-9_.-]/g, "_")
-      aliasMap.set(`ref::${normLast}`, id)
-      aliasMap.set(normLast, id)
-    }
-  }
-
-  // helper to try to resolve an id that doesn't directly exist by fuzzy-matching
-  const findMatchingNodeId = (rawId: string | undefined) => {
-    if (!rawId) return undefined
-    if (nodeIds.has(rawId)) return rawId
-    const lastSegment = String(rawId).split("::").pop() || rawId
-    const compact = String(lastSegment)
-      .replace(/[^a-zA-Z0-9]/g, "")
-      .toLowerCase()
-    for (const n of nodes) {
-      const compNode = String(n.id)
-        .replace(/[^a-zA-Z0-9]/g, "")
-        .toLowerCase()
-      if (!compact) continue
-      if (compNode.endsWith(compact) || compNode.includes(compact)) {
-        console.log(`Resolved missing id '${rawId}' -> '${n.id}' via fuzzy match`)
-        return n.id
-      }
-    }
-    return undefined
-  }
-
-  const remapped = edges
-    .map((edge) => {
-      // If source/target are missing, try to resolve via fuzzy match
-      let source = edge.source
-      let target = edge.target
-
-      if (!nodeIds.has(source)) {
-        const resolved = findMatchingNodeId(source)
-        if (resolved) source = resolved
-        else if (mainNodeId) source = mainNodeId
-      }
-      if (!nodeIds.has(target)) {
-        const resolved = findMatchingNodeId(target)
-        if (resolved) target = resolved
-        else if (aliasMap.has(target)) target = aliasMap.get(target) as string
-      }
-
-      if (!source || !target || !nodeIds.has(source) || !nodeIds.has(target) || source === target) {
-        console.warn(`Removing invalid edge: ${edge.source} -> ${edge.target}`)
-        return null
-      }
-
-      if (!edge.id) {
-        console.warn("Removing edge without id")
-        return null
-      }
-
-      return { ...edge, source, target } as Edge | null
-    })
-    .filter(Boolean) as Edge[]
-
-  const preserved = remapped.map((edge) => {
-    // Preserve handle keys (sourceHandle/targetHandle) if present so anchors remain stable
-    const { sourceHandle, targetHandle, ...rest } = edge as any
-    const preserved: any = { ...rest }
-    if (typeof sourceHandle !== "undefined") preserved.sourceHandle = sourceHandle
-    if (typeof targetHandle !== "undefined") preserved.targetHandle = targetHandle
-    return preserved as Edge
-  })
-
-  return preserved
-}
-
-export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
+export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "light" }: Props) {
   const [activeNode, setActiveNode] = useState<Node | null>(null)
   const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null)
   const [showLegend, setShowLegend] = useState(false)
@@ -178,6 +102,7 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
           nodes={laidOut.nodes}
           edges={laidOut.edges}
           onSchemaSelect={onSchemaSelect}
+          theme={theme}
           setActiveNode={setActiveNode}
           setPinnedNodeId={setPinnedNodeId}
           activeNode={activeNode}
@@ -197,84 +122,22 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect }: Props) {
             {showLegend && (
               <div className="mt-2 p-3 bg-white border border-gray-300 rounded shadow-lg text-xs">
                 <div className="font-semibold mb-2">Entity Types</div>
-                <div className="flex items-center mb-1">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#f5f3ff",
-                      border: "1px solid #7c3aed",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Main Entity</span>
-                </div>
-                <div className="flex items-center mb-1">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#fff1f2",
-                      border: "1px solid #fca5a5",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Related: Master Data</span>
-                </div>
-                <div className="flex items-center mb-1">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#ecfdf5",
-                      border: "1px solid #34d399",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Related: Reference Data</span>
-                </div>
-                <div className="flex items-center mb-1">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#fffbeb",
-                      border: "1px solid #fcd34d",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Related: Work Product Component</span>
-                </div>
-                <div className="flex items-center mb-3">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#f3f4f6",
-                      border: "1px solid #9ca3af",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Related: Other/Unknown</span>
-                </div>
-                <div className="flex items-center mb-3">
-                  <div
-                    style={{
-                      width: 16,
-                      height: 12,
-                      backgroundColor: "#eff6ff",
-                      border: "1px solid #3b82f6",
-                      borderRadius: 4,
-                      marginRight: 8,
-                    }}
-                  ></div>
-                  <span>Abstract Schema</span>
-                </div>
+                {LEGEND_ENTITIES.map(({ key, label }) => (
+                  <div key={key} className="flex items-center mb-1">
+                    <div
+                      style={{
+                        width: 16,
+                        height: 12,
+                        backgroundColor: NODE_COLORS[key].bg,
+                        border: `1px solid ${NODE_COLORS[key].border}`,
+                        borderRadius: 4,
+                        marginRight: 8,
+                      }}
+                    ></div>
+                    <span>{label}</span>
+                  </div>
+                ))}
+                <div className="mb-2" />
 
                 <div className="font-semibold mb-2">Relationship Types</div>
                 <div className="flex items-center mb-1">
@@ -318,6 +181,7 @@ type GraphRendererProps = {
   nodes: Node[]
   edges: Edge[]
   onSchemaSelect?: (idOrTerm: string) => void
+  theme: "light" | "dark"
   activeNode: Node | null
   pinnedNodeId: string | null
   setActiveNode: (node: Node | null) => void
@@ -328,6 +192,7 @@ function GraphRenderer({
   nodes,
   edges,
   onSchemaSelect,
+  theme,
   activeNode,
   pinnedNodeId,
   setActiveNode,
@@ -338,6 +203,7 @@ function GraphRenderer({
   const [hoverNodeId, setHoverNodeId] = useState<string | null>(null)
   const [hoveredProp, setHoveredProp] = useState<{ name?: string; ref?: string } | null>(null)
   const { fitView } = useReactFlow()
+  const lastFitKey = useRef<string | null>(null)
 
   // Custom nodes change handler to track dragging and validate edges
   const handleNodesChange = useCallback(
@@ -435,6 +301,7 @@ function GraphRenderer({
     )
 
     const validatedEdges = validateEdges(edges, nodes)
+    const nodeById = new Map(nodes.map((n) => [n.id, n]))
 
     // Group edges by source->target so we can stagger label offsets when multiple edges share same connector
     const validated = validatedEdges as Edge<CustomEdgeData>[]
@@ -500,8 +367,8 @@ function GraphRenderer({
             markerColor = "#475569"
         }
 
-        const sourceNode = (nodes || []).find((n) => n.id === e.source)
-        const targetNode = (nodes || []).find((n) => n.id === e.target)
+        const sourceNode = nodeById.get(e.source)
+        const targetNode = nodeById.get(e.target)
 
         const isMainToAbstract =
           (sourceNode as any)?.data?.nodeType === "entity" && (targetNode as any)?.data?.nodeType === "abstract"
@@ -553,38 +420,30 @@ function GraphRenderer({
         }
       }) as unknown as Edge<CustomEdgeData>[]
     )
-    fitView({ padding: 0.2 })
+    // Only re-fit when the set of nodes changes, so unrelated updates don't reset the user's pan/zoom
+    const nodesKey = nodes.map((n) => n.id).join("|")
+    if (lastFitKey.current !== nodesKey) {
+      lastFitKey.current = nodesKey
+      fitView({ padding: 0.2 })
+    }
   }, [nodes, edges, setRfNodes, setRfEdges, fitView])
 
   // recolor connectors based on selection state without rebuilding/fitView to avoid layout jumps
   useEffect(() => {
     if (hoveredProp) return // let hover highlighting take precedence
 
-    const deriveBorderColorForNode = (n: any) => {
-      if (!n || !n.data) return undefined
-      const d = n.data || {}
-      const nodeType = d.nodeType
-      const category = d.category
-      if (nodeType === "entity") return "#7c3aed"
-      if (nodeType === "abstract") return "#3b82f6"
-      if (nodeType === "related-entity") {
-        if (category === "master-data") return "#fca5a5"
-        if (category === "reference-data") return "#34d399"
-        if (category === "work-product-component") return "#fcd34d"
-        return "#9ca3af"
-      }
-      return undefined
-    }
+    const deriveBorderColorForNode = (n: any) => getNodeColors(n?.data?.nodeType, n?.data?.category)?.border
 
     const defaultConnectorColor = "#6b7280"
 
+    const nodeById = new Map((nodes || []).map((n) => [n.id, n]))
     setRfEdges(
       (es) =>
         es.map((e) => {
           const base = (e.data as any)?.__baseStyle || e.style || {}
           let stroke = defaultConnectorColor
           if (activeNode) {
-            const targetNode = (nodes || []).find((n) => n.id === e.target)
+            const targetNode = nodeById.get(e.target)
             const downstreamColor = deriveBorderColorForNode(targetNode)
             if (downstreamColor) stroke = downstreamColor
           }
@@ -694,6 +553,7 @@ function GraphRenderer({
 
   return (
     <ReactFlow
+      colorMode={theme}
       nodes={rfNodes}
       edges={rfEdges}
       onNodesChange={handleNodesChange}
@@ -730,18 +590,11 @@ function GraphRenderer({
       <Background />
       <Controls />
       <MiniMap
-        nodeStrokeColor={(n) => {
-          if (n.type === "input") return "#0041d0"
-          if (n.type === "output") return "#ff0072"
-          if (n.type === "default") return "#1a192b"
-          return "#eee"
-        }}
-        nodeColor={(n) => {
-          if (n.type === "input") return "#0041d0"
-          if (n.type === "output") return "#ff0072"
-          if (n.type === "default") return "#1a192b"
-          return "#fff"
-        }}
+        nodeStrokeColor={(n) => getNodeColors((n.data as any)?.nodeType, (n.data as any)?.category)?.border ?? "#9ca3af"}
+        nodeColor={(n) =>
+          getNodeColors((n.data as any)?.nodeType, (n.data as any)?.category)?.[theme === "dark" ? "border" : "bg"] ??
+          (theme === "dark" ? "#374151" : "#e5e7eb")
+        }
         nodeBorderRadius={2}
         position="bottom-left"
       />
