@@ -126,3 +126,25 @@ describe("buildGraph entity resolution", () => {
     expect(ref.data.schemaId).toBe("right")
   })
 })
+
+describe("reference-data property detection", () => {
+  it("records refTypes for direct and array relationship properties", async () => {
+    const schema = {
+      properties: {
+        data: {
+          properties: {
+            RigTypeID: { type: "string", "x-osdu-relationship": [{ GroupType: "reference-data", EntityType: "RigType" }] },
+            OperatorIDs: { type: "array", items: { type: "string", "x-osdu-relationship": [{ GroupType: "master-data", EntityType: "Organisation" }] } },
+            ModeIDs: { type: "array", items: { type: "string", "x-osdu-relationship": [{ GroupType: "reference-data", EntityType: "Mode" }] } },
+          },
+        },
+      },
+    }
+    const g = buildGraph({ id: "x", title: "X", schema, path: "/x.json" } as any, { index: {}, erdView: true })
+    const props = (g.nodes.find((n: any) => n.data?.nodeType === "entity") as any).data.properties
+    const by = (n: string) => props.find((p: any) => p.name === n)
+    expect(by("data.RigTypeID").refTypes).toEqual(["RigType"])
+    expect(by("data.ModeIDs").refTypes).toEqual(["Mode"])
+    expect(by("data.OperatorIDs").refTypes).toBeUndefined()
+  })
+})

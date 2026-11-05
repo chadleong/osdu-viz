@@ -7,7 +7,7 @@ function normalizeId(id: string) {
 }
 
 type CollectResult = {
-  properties: Array<{ name: string; type?: string; description?: string; required?: boolean; depth: number }>
+  properties: Array<{ name: string; type?: string; description?: string; required?: boolean; depth: number; refTypes?: string[] }>
   relations: Array<{ kind: string; target: string; type: "ref" | "relationship" }>
   refs: string[]
 }
@@ -39,7 +39,19 @@ function collectFromSchema(schema: any): CollectResult {
         const name = [...path, k].join(".")
         const depth = name.split(".").length
         const required = depth === 1 && rootRequired.includes(k)
-        props.push({ name, type, description: (v as any).description, required, depth })
+        // Properties pointing at reference-data (e.g. RigTypeID -> RigType); arrays carry it on `items`
+        const relSrc = (v as any)["x-osdu-relationship"] ?? (v as any).items?.["x-osdu-relationship"]
+        const refTypes = Array.isArray(relSrc)
+          ? relSrc.filter((r: any) => r?.GroupType === "reference-data" && r.EntityType).map((r: any) => String(r.EntityType))
+          : []
+        props.push({
+          name,
+          type,
+          description: (v as any).description,
+          required,
+          depth,
+          ...(refTypes.length ? { refTypes } : {}),
+        })
         walk(v, [...path, k])
       }
     }

@@ -1079,3 +1079,22 @@ body {
 [data-theme="dark"] .erd-entity-node .bg-gray-50 {
   background-color: #f9fafb;
 }
+
+/* Draggable left edge of the property panel */
+.tooltip-resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 5;
+  touch-action: none;
+}
+.tooltip-resize:hover,
+.tooltip-resize:focus-visible,
+.tooltip-resize:active {
+  background: var(--accent);
+  opacity: 0.45;
+  outline: none;
+}

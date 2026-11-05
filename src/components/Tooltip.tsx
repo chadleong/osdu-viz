@@ -1,7 +1,9 @@
-import { Fragment, useCallback, useEffect, useMemo, useState, memo } from "react"
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState, memo } from "react"
+import type { KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react"
 import { Node } from "@xyflow/react"
 import { ReactNode } from "react"
 import { buildPropertyTree, type TreeNode } from "../utils/propertyTree"
+import { loadReferenceValues, toReferenceValues, type ReferenceValue } from "../utils/referenceValues"
 
 type PropertyInfo = {
   name: string
@@ -9,6 +11,63 @@ type PropertyInfo = {
   description?: string
   required?: boolean
   depth?: number
+  /** reference-data entity types this property points at (from x-osdu-relationship) */
+  refTypes?: string[]
+}
+
+/** Lazily loads and lists the allowed values (IDs) of one reference-data type. */
+function ReferenceValuesList({ entityType }: { entityType: string }) {
+  const [state, setState] = useState<{ loading: boolean; values: ReferenceValue[]; error?: string }>({
+    loading: true,
+    values: [],
+  })
+  const [filter, setFilter] = useState("")
+  useEffect(() => {
+    let alive = true
+    loadReferenceValues(entityType).then((set) => {
+      if (!alive) return
+      setState(set ? { loading: false, values: set.values } : { loading: false, values: [], error: "No reference values found" })
+    })
+    return () => {
+      alive = false
+    }
+  }, [entityType])
+
+  const q = filter.trim().toLowerCase()
+  const shown = q
+    ? state.values.filter((v) => `${v.name} ${v.code ?? ""} ${v.id ?? ""}`.toLowerCase().includes(q))
+    : state.values
+  return (
+    <div style={{ gridColumn: "1 / -1" }}>
+      <div className="t">
+        {entityType} {state.values.length ? `(${state.values.length} values)` : ""}
+      </div>
+      {state.loading && <div className="muted">Loading reference values...</div>}
+      {state.error && <div className="muted">{state.error}</div>}
+      {state.values.length > 8 && (
+        <input
+          type="search"
+          placeholder="Filter values..."
+          aria-label={`Filter ${entityType} values`}
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          style={{ width: "100%", boxSizing: "border-box", margin: "4px 0" }}
+        />
+      )}
+      {shown.length > 0 && (
+        <ul className="list" style={{ maxHeight: 200, overflowY: "auto" }}>
+          {shown.slice(0, 200).map((rv, idx) => (
+            <li key={rv.id || idx} className="list-row" style={{ gridTemplateColumns: "1fr" }} title={rv.description}>
+              <span className="k">{rv.name}</span>
+              <span className="t">{rv.id ? rv.id.replace("{{NAMESPACE}}", "namespace") : rv.code}</span>
+            </li>
+          ))}
+          {shown.length > 200 && <li className="muted">...and {shown.length - 200} more (use the filter)</li>}
+        </ul>
+      )}
+      {!state.loading && !state.error && q && shown.length === 0 && <div className="muted">No matches</div>}
+    </div>
+  )
 }
 
 // Matches "DEPRECATED: ...", "[DEPRECATED] ..." at the start of a description, or a bracketed marker anywhere
@@ -37,6 +96,7 @@ const PropertyRow = memo(function PropertyRow({
   const isRef = typeof p.type === "string" && p.type.startsWith("$ref:")
   const refPath = isRef ? String(p.type).slice(5) : undefined
   const deprecated = isDeprecated(p.description)
+  const [showValues, setShowValues] = useState(false)
   return (
     <li
       className={`list-row ${highlighted ? "prop-highlight" : ""} ${deprecated ? "prop-deprecated" : ""}`}
@@ -86,6 +146,20 @@ const PropertyRow = memo(function PropertyRow({
           <span className="t">$ref: {refPath}</span>
         </div>
       )}
+      {/* Allowed values for properties that point at reference-data */}
+      {p.refTypes?.map((rt) => (
+        <div key={rt} style={{ gridColumn: "1 / -1" }}>
+          <button
+            className="btn"
+            aria-expanded={showValues}
+            onClick={() => setShowValues((v) => !v)}
+            title={`Show the allowed ${rt} values`}
+          >
+            {showValues ? "▾" : "▸"} Allowed values: {rt}
+          </button>
+          {showValues && <ReferenceValuesList entityType={rt} />}
+        </div>
+      ))}
       {/* Description spans full width on next line */}
       {p.description && (
         <div style={{ gridColumn: "1 / -1" }}>
@@ -154,6 +228,19 @@ function PropertyTree({
   )
 }
 
+const WIDTH_KEY = "osdu-viz:tooltip-width"
+const DEFAULT_WIDTH = 420
+const MIN_WIDTH = 320
+
+function readStoredWidth(): number {
+  try {
+    const n = Number(localStorage.getItem(WIDTH_KEY))
+    return Number.isFinite(n) && n >= MIN_WIDTH ? n : DEFAULT_WIDTH
+  } catch {
+    return DEFAULT_WIDTH
+  }
+}
+
 export function PropertyTooltip({
   node,
   onClose,
@@ -181,6 +268,50 @@ export function PropertyTooltip({
   const schema = node?.data?.schema as any
   const nodeDescription = (node?.data?.description as string | undefined) || (schema?.description as string | undefined)
   const subtitle = node?.data?.subtitle as ReactNode | undefined
+
+  // Resizable panel: drag the left edge; width is remembered, double-click the edge to reset
+  const [width, setWidth] = useState<number>(readStoredWidth)
+  const widthRef = useRef(width)
+  widthRef.current = width
+  const maxWidth = (el: HTMLElement | null) => Math.max(MIN_WIDTH, (el?.parentElement?.clientWidth || window.innerWidth) - 40)
+  const onResizeStart = (e: ReactPointerEvent<HTMLDivElement>) => {
+    e.preventDefault()
+    const handle = e.currentTarget
+    const panel = handle.parentElement as HTMLElement
+    const startX = e.clientX
+    const startW = panel.getBoundingClientRect().width
+    const max = maxWidth(panel)
+    handle.setPointerCapture?.(e.pointerId)
+    const move = (ev: PointerEvent) =>
+      setWidth(Math.round(Math.min(max, Math.max(MIN_WIDTH, startW + (startX - ev.clientX)))))
+    const up = () => {
+      handle.removeEventListener("pointermove", move)
+      handle.removeEventListener("pointerup", up)
+      handle.removeEventListener("pointercancel", up)
+      try {
+        localStorage.setItem(WIDTH_KEY, String(widthRef.current))
+      } catch {}
+    }
+    handle.addEventListener("pointermove", move)
+    handle.addEventListener("pointerup", up)
+    handle.addEventListener("pointercancel", up)
+  }
+  const onResizeKey = (e: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return
+    e.preventDefault()
+    const max = maxWidth(e.currentTarget.parentElement)
+    const next = Math.min(max, Math.max(MIN_WIDTH, widthRef.current + (e.key === "ArrowLeft" ? 40 : -40)))
+    setWidth(next)
+    try {
+      localStorage.setItem(WIDTH_KEY, String(next))
+    } catch {}
+  }
+  const resetWidth = () => {
+    setWidth(DEFAULT_WIDTH)
+    try {
+      localStorage.removeItem(WIDTH_KEY)
+    } catch {}
+  }
 
   const [hoveredPropName, setHoveredPropName] = useState<string | null>(null)
   const handleRowEnter = useCallback(
@@ -233,9 +364,7 @@ export function PropertyTooltip({
     (node?.data as any)?.category === "reference-data" ||
     /reference-data/i.test(schemaId || "") ||
     /reference-data/i.test(filePath || "")
-  const [refValues, setRefValues] = useState<Array<{ name: string; code?: string; description?: string; id?: string }>>(
-    []
-  )
+  const [refValues, setRefValues] = useState<ReferenceValue[]>([])
   const [refLoading, setRefLoading] = useState(false)
   const [refError, setRefError] = useState<string | null>(null)
   const [refSourcePath, setRefSourcePath] = useState<string | null>(null)
@@ -262,14 +391,6 @@ export function PropertyTooltip({
     return name || null
   }
 
-  const publicUrl = (p: string) => {
-    if (/^https?:\/\//i.test(p)) return p
-    const base = (import.meta.env.BASE_URL as string) || "/"
-    const b = base.endsWith("/") ? base.slice(0, -1) : base
-    const r = p.startsWith("/") ? p.slice(1) : p
-    return `${b}/${r}`
-  }
-
   useEffect(() => {
     let aborted = false
     async function loadRefValues() {
@@ -290,15 +411,7 @@ export function PropertyTooltip({
       // JSON file is opened as the main entity), use it directly instead of fetching external files.
       if (schema && Array.isArray((schema as any).ReferenceData)) {
         try {
-          const rows = (schema as any).ReferenceData.map((entry: any) => {
-            const d = entry?.data || {}
-            return {
-              id: entry?.id,
-              name: String(d.Name ?? d.Code ?? "").trim(),
-              code: d.Code,
-              description: d.Description,
-            }
-          })
+          const rows = toReferenceValues((schema as any).ReferenceData)
           setRefValues(rows)
           setRefSourcePath(filePath || null)
           setRefLoading(false)
@@ -313,67 +426,20 @@ export function PropertyTooltip({
       setRefValues([])
       setRefSourcePath(null)
 
-      const sets = ["OPEN", "LOCAL", "FIXED"]
-      const versions = ["1", "2", "3"]
-      // prefer the .min.json variants in this codebase; fall back to .json
-      const suffixes = [".min.json", ".json"]
-      let found: any = null
-      let sourcePath: string | null = null
-
-      for (const scope of sets) {
-        for (const v of versions) {
-          for (const suffix of suffixes) {
-            // try both encoded and raw base (some filenames are encoded, many are plain)
-            const candidates = [encodeURIComponent(base), base]
-            for (const b of candidates) {
-              const candidate = `/data/reference-data/${scope}/${b}.${v}${suffix}`
-              try {
-                const res = await fetch(publicUrl(candidate))
-                if (!res.ok) continue
-                const json = await res.json()
-                if (json && Array.isArray(json.ReferenceData)) {
-                  found = json
-                  sourcePath = candidate
-                  break
-                }
-              } catch {
-                // ignore and try next
-              }
-            }
-            if (found) break
-          }
-          if (found) break
-        }
-        if (found) break
-      }
+      const set = await loadReferenceValues(base)
 
       if (aborted) return
 
-      if (!found) {
+      if (!set) {
         setRefLoading(false)
         setRefError("No reference values found")
         setRefValues([])
         setRefSourcePath(null)
         return
       }
-
-      try {
-        const rows = (found.ReferenceData as any[]).map((entry: any) => {
-          const d = entry?.data || {}
-          return {
-            id: entry?.id,
-            name: String(d.Name ?? d.Code ?? "").trim(),
-            code: d.Code,
-            description: d.Description,
-          }
-        })
-        setRefValues(rows)
-        setRefSourcePath(sourcePath)
-      } catch (e) {
-        setRefError("Failed to parse reference values")
-      } finally {
-        setRefLoading(false)
-      }
+      setRefValues(set.values)
+      setRefSourcePath(set.sourcePath)
+      setRefLoading(false)
     }
 
     loadRefValues()
@@ -383,7 +449,19 @@ export function PropertyTooltip({
   }, [isReferenceData, node])
 
   return (
-    <div className="tooltip">
+    <div className="tooltip" style={{ width, maxWidth: "calc(100% - 40px)" }}>
+      <div
+        className="tooltip-resize"
+        role="separator"
+        aria-orientation="vertical"
+        aria-label="Resize panel"
+        aria-valuenow={width}
+        tabIndex={0}
+        title="Drag to resize (double-click to reset)"
+        onPointerDown={onResizeStart}
+        onDoubleClick={resetWidth}
+        onKeyDown={onResizeKey}
+      />
       <div className="tooltip-header">
         <div>
           <div className="tooltip-title">{node?.data?.label as ReactNode}</div>

@@ -178,3 +178,59 @@ describe("top-level section default state", () => {
     expect(toggle()).toHaveAttribute("aria-expanded", "false")
   })
 })
+
+describe("PropertyTooltip reference value lookup", () => {
+  it("loads and lists allowed values for a property that points at reference-data", async () => {
+    const { vi } = await import("vitest")
+    const { findByText } = await import("@testing-library/react")
+    const fetchMock = vi.fn(async (url: string) =>
+      String(url).includes("/OPEN/RigTypeX.1.json")
+        ? {
+            ok: true,
+            json: async () => ({
+              ReferenceData: [{ id: "{{NAMESPACE}}:reference-data--RigTypeX:Barge:", data: { Name: "Barge Rig", Code: "Barge" } }],
+            }),
+          }
+        : { ok: false, json: async () => ({}) }
+    )
+    vi.stubGlobal("fetch", fetchMock)
+    const node: any = {
+      id: "n3",
+      data: {
+        label: "Rig",
+        properties: [{ name: "data.TypeRigID", type: "string", depth: 2, refTypes: ["RigTypeX"] }],
+        relations: [],
+        schema: {},
+      },
+    }
+    render(<PropertyTooltip node={node} onClose={() => {}} />)
+    expect(fetchMock).not.toHaveBeenCalled() // lazy until expanded
+    fireEvent.click(screen.getByText(/Allowed values: RigTypeX/))
+    expect(await findByText(document.body, "Barge Rig")).toBeInTheDocument()
+    expect(screen.getByText("namespace:reference-data--RigTypeX:Barge:")).toBeInTheDocument()
+    vi.unstubAllGlobals()
+  })
+})
+
+describe("PropertyTooltip resizing", () => {
+  const node: any = { id: "r", data: { label: "E", properties: [], relations: [], schema: {} } }
+  it("resizes via keyboard on the handle, persists, and resets on double-click", () => {
+    localStorage.clear()
+    const { container } = render(<PropertyTooltip node={node} onClose={() => {}} />)
+    const panel = container.querySelector(".tooltip") as HTMLElement
+    const handle = screen.getByRole("separator", { name: /resize/i })
+    expect(panel.style.width).toBe("420px")
+    fireEvent.keyDown(handle, { key: "ArrowLeft" })
+    expect(panel.style.width).toBe("460px")
+    expect(localStorage.getItem("osdu-viz:tooltip-width")).toBe("460")
+    fireEvent.doubleClick(handle)
+    expect(panel.style.width).toBe("420px")
+    expect(localStorage.getItem("osdu-viz:tooltip-width")).toBeNull()
+  })
+  it("restores a stored width", () => {
+    localStorage.setItem("osdu-viz:tooltip-width", "700")
+    const { container } = render(<PropertyTooltip node={node} onClose={() => {}} />)
+    expect((container.querySelector(".tooltip") as HTMLElement).style.width).toBe("700px")
+    localStorage.clear()
+  })
+})

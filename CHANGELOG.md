@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Properties that point at reference data (e.g. `data.TypeRigID` -> `RigType`, including array properties) get an "Allowed values" toggle in the side panel. It lists the possible values with their full record IDs (e.g. `namespace:reference-data--RigType:Barge:`), with a filter box for long lists. Values are loaded on demand from the bundled reference data and cached.
+- The side panel is resizable: drag its left edge (or use the arrow keys when focused), double-click to reset. The width is remembered in the browser.
+
+### Changed
+- Reference value loading moved into a shared, cached helper (`src/utils/referenceValues.ts`) used by both the entity-level and per-property lists.
+
 ## [1.5.0] - 2026-11-05
 
 ### Added
