@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-11-05
+
+### Added
+- Light/dark background toggle at the top right of the header. Light is the default; the choice is remembered in the browser. Graph controls, mini-map, side panel, dropdown, legend and breadcrumb are themed; entity cards keep their light colours in both themes.
+- Nested properties in the side panel are shown as a tree: object properties (e.g. `data.HistoricalInterests`) are collapsible groups that show how many attributes they contain, with Expand all / Collapse all.
+- Attributes marked `DEPRECATED` are highlighted in red with a badge.
+- "← Back" button in the breadcrumb.
+- Unit tests grew from 4 to 56 (schema matching, edge validation, layout, local-folder parsing, property tree, theme, tooltip behaviour).
+
+### Changed
+- "Top-level properties" is collapsible and collapsed by default (open when a schema has no nested properties).
+- Type labels (`string`, `array`, `integer`, ...) use a darker green that is readable on a light background.
+- Schema lookups prefer exact matches over substring matches, so e.g. `Well` no longer resolves to `WellLog`; unresolved graph edges are dropped instead of being re-attached to the main entity.
+- Local-folder loading is stricter about what counts as a schema, parses files in batches and caches them in a single IndexedDB transaction.
+- The graph only re-fits the view when the set of nodes changes, so hovering or selecting no longer resets pan and zoom.
+- Internal cleanup: shared colour, matching, edge and tree helpers; one property-row component in the side panel.
+
+### Fixed
+- Back / breadcrumb navigation no longer updates state inside a state updater (double-run under React StrictMode).
+
 ## [1.4.0] - 2026-10-08
 
 ### Added
