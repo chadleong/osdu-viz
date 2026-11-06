@@ -4,6 +4,7 @@ import SchemaGraph from "./components/SchemaGraph"
 import { buildGraph } from "./utils/graphBuilder"
 import type { SchemaModel } from "./types"
 import { findBestMatch } from "./utils/schemaMatch"
+import { groupVersions, groupKey, compareVersions, versionOf } from "./utils/schemaVersions"
 import { getNodeColors } from "./utils/nodeColors"
 import { parseSchemaFiles } from "./utils/localSchemas"
 import { idbGetAll, idbPutMany } from "./utils/schemaCache"
@@ -19,6 +20,7 @@ export default function App() {
   const [history, setHistory] = useState<SchemaModel[]>([])
   const [searchTerm, setSearchTerm] = useState("")
   const [showDropdown, setShowDropdown] = useState(false)
+  const [showAllVersions, setShowAllVersions] = useState(false)
   const inputRef = useRef<HTMLDivElement | null>(null)
   const portalRef = useRef<HTMLDivElement | null>(null)
   const [portalStyle, setPortalStyle] = useState<{ top: number; left: number; width: number } | null>(null)
@@ -373,15 +375,39 @@ export default function App() {
   }
 
   // Filter models based on search term
+  const groups = useMemo(() => groupVersions(models), [models])
+  const groupByKey = useMemo(() => new Map(groups.map((g) => [g.key, g])), [groups])
+
   const filteredModels = useMemo(() => {
-    if (!searchTerm) return models
-    return models.filter(
-      (model) =>
-        model.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        model.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (model.version && model.version.includes(searchTerm))
-    )
-  }, [models, searchTerm])
+    const term = searchTerm.toLowerCase()
+    const matches = term
+      ? models.filter(
+          (model) =>
+            model.title.toLowerCase().includes(term) ||
+            model.id.toLowerCase().includes(term) ||
+            (versionOf(model) || "").includes(term)
+        )
+      : models
+    if (showAllVersions) return matches
+    // Latest only: keep the newest matching version of each schema
+    const best = new Map<string, SchemaModel>()
+    for (const m of matches) {
+      const k = groupKey(m)
+      const cur = best.get(k)
+      if (!cur || compareVersions(versionOf(m), versionOf(cur)) > 0) best.set(k, m)
+    }
+    return Array.from(best.values())
+  }, [models, searchTerm, showAllVersions])
+
+  const selectedGroup = selectedModel ? groupByKey.get(groupKey(selectedModel)) : undefined
+
+  // Switch to another version of the current schema without resetting the navigation trail
+  const handleVersionSwitch = async (path: string) => {
+    const target = selectedGroup?.versions.find((v) => v.path === path)
+    if (!target || target.path === selectedModel?.path) return
+    const full = await ensureSchemaLoaded(target)
+    setSelectedModel(full)
+  }
 
   const handleModelSelect = async (model: SchemaModel) => {
     // Manual selection resets history
@@ -474,7 +500,11 @@ export default function App() {
                 onFocus={() => setShowDropdown(true)}
                 placeholder="Search schemas..."
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-24"
-                style={{ boxSizing: "border-box" }}
+                style={{
+                  boxSizing: "border-box",
+                  // leave room for the wider version dropdown
+                  paddingRight: selectedGroup && selectedGroup.versions.length > 1 ? 152 : undefined,
+                }}
               />
               {/* Carat icon */}
               <span
@@ -491,7 +521,35 @@ export default function App() {
                 ▼
               </span>
               {/* Selected version badge inside the input */}
-              {selectedModel?.version && (
+              {selectedModel && selectedGroup && selectedGroup.versions.length > 1 ? (
+                <select
+                  className="version-badge"
+                  aria-label="Schema version"
+                  title={`${selectedGroup.versions.length} versions available`}
+                  value={selectedModel.path}
+                  onChange={(e) => handleVersionSwitch(e.target.value)}
+                  style={{
+                    position: "absolute",
+                    right: 32,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    fontSize: 12,
+                    padding: "2px 2px",
+                    borderRadius: 6,
+                    width: 108,
+                    cursor: "pointer",
+                  }}
+                >
+                  {selectedGroup.versions.map((v, i) => (
+                    <option key={v.path} value={v.path}>
+                      v{versionOf(v)}
+                      {i === 0 ? " (latest)" : ""}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                selectedModel &&
+                versionOf(selectedModel) && (
                 <span
                   className="version-badge"
                   style={{
@@ -507,8 +565,9 @@ export default function App() {
                     textAlign: "center",
                   }}
                 >
-                  v{selectedModel.version}
+                  v{versionOf(selectedModel)}
                 </span>
+                )
               )}
             </div>
 
@@ -518,8 +577,22 @@ export default function App() {
                 {filteredModels.length > 0 ? (
                   <>
                     {/* Results count header */}
-                    <div className="px-3 py-2 bg-gray-50 border-b border-gray-200 text-xs text-gray-600 font-medium sticky top-0">
-                      {filteredModels.length} schema{filteredModels.length !== 1 ? "s" : ""} found
+                    <div
+                      className="px-3 py-2 bg-gray-50 border-b border-gray-200 text-xs text-gray-600 font-medium sticky top-0"
+                      style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8 }}
+                    >
+                      <span>
+                        {filteredModels.length} schema{filteredModels.length !== 1 ? "s" : ""}
+                        {showAllVersions ? " (all versions)" : " (latest versions)"}
+                      </span>
+                      <label style={{ display: "flex", alignItems: "center", gap: 4, cursor: "pointer", fontWeight: 400 }}>
+                        <input
+                          type="checkbox"
+                          checked={showAllVersions}
+                          onChange={(e) => setShowAllVersions(e.target.checked)}
+                        />
+                        All versions
+                      </label>
                     </div>
 
                     {/* Scrollable results */}
@@ -535,7 +608,18 @@ export default function App() {
                           }}
                         >
                           <div className="font-medium text-sm text-gray-900">{model.title}</div>
-                          {model.version && <div className="text-xs text-gray-500">Version {model.version}</div>}
+                          {versionOf(model) && (
+                            <div className="text-xs text-gray-500">
+                              Version {versionOf(model)}
+                              {(() => {
+                                const g = groupByKey.get(groupKey(model))
+                                if (!g || g.versions.length < 2) return null
+                                return g.latest.path === model.path
+                                  ? ` · latest of ${g.versions.length}`
+                                  : ` · older (latest ${versionOf(g.latest)})`
+                              })()}
+                            </div>
+                          )}
                           <div className="text-xs text-gray-400 truncate">{model.id}</div>
                         </div>
                       ))}

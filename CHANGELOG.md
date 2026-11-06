@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-11-06
+
+### Added
+- Schemas with multiple versions now appear once in the search dropdown, showing the latest version by default (924 entries instead of 1,448). An "All versions" checkbox in the dropdown header lists every version, and older ones are labelled with the latest available.
+- When the selected schema has several versions, the version badge becomes a dropdown to switch between them (latest is marked). Switching keeps the breadcrumb trail.
+
+### Changed
+- Search matches on version number across all versions, even when only latest versions are listed.
+- Schemas loaded from a local folder derive their version from the file name.
+
 ## [1.6.2] - 2026-11-05
 
 ### Added
