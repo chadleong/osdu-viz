@@ -1,0 +1,30 @@
+[[_TOC_]]
+
+# Migration to `osdu:wks:work-product-component--SeismicHorizon:1.1.0`
+
+Migrating  [`osdu:wks:work-product-component--SeismicHorizon:1.0.0`](../../../E-R/work-product-component/SeismicHorizon.1.0.0.md)
+to [`osdu:wks:work-product-component--SeismicHorizon:1.1.0`](../../../E-R/work-product-component/SeismicHorizon.1.1.0.md)
+means adding new properties only. No migration effort expected.
+
+## New Properties
+
+| Property                                                                                                                         | Value Type                                                                                      | Description                                                                                                                           | Migration Instructions                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| data.InterpretationID                                                                                                            | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - string  | Allow to link an interpretation with this representation                                                                              | This property opens integration opportunities. No migration effort required. |
+| data.InterpretationName                                                                                                          | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - string  | Name of the interpretation the representation refers to                                                                               | This property opens integration opportunities. No migration effort required. |
+| data.TimeSeries.TimeIndex                                                                                                        | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - integer | Index of the timestamp of the representation in the associated TimeSeries                                                             | This property opens integration opportunities. No migration effort required. |
+| data.TimeSeries.TimeSeriesID &rarr; [TimeSeries](../../../E-R/work-product-component/TimeSeries.1.0.0.md)                        | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - string  | Time series the representation is associated to                                                                                       | This property opens integration opportunities. No migration effort required. |
+| data.RealizationIndex                                                                                                            | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - integer | The index of the realization of this representation                                                                                   | This property opens integration opportunities. No migration effort required. |
+| data.IndexableElementCount[].Count                                                                                               | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - integer | The count of indexable element                                                                                                        | This property opens integration opportunities. No migration effort required. |
+| data.IndexableElementCount[].IndexableElementID &rarr; [IndexableElement](../../../E-R/reference-data/IndexableElement.1.0.0.md) | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - string  | The indexable element which is counted                                                                                                | This property opens integration opportunities. No migration effort required. |
+| data.LocalModelCompoundCrsID &rarr; [LocalModelCompoundCrs](../../../E-R/work-product-component/LocalModelCompoundCrs.1.0.0.md)  | [AbstractRepresentation.1.0.0](../../../E-R/abstract/AbstractRepresentation.1.0.0.md) - string  | Allow to link a local CRS with this representation                                                                                    | This property opens integration opportunities. No migration effort required. |
+| data.Role &rarr; [RepresentationRole](../../../E-R/reference-data/RepresentationRole.1.0.0.md)                                   | string                                                                                          | The RepresentationRole assigned to this SeismicHorizon. Examples: Pick, Map.                                                          | This property opens integration opportunities. No migration effort required. |
+| data.Type &rarr; [RepresentationType](../../../E-R/reference-data/RepresentationType.1.0.0.md)                                   | string                                                                                          | The RepresentationType for this SeismicHorizon. Examples: PointSet, PolylineSet, Regular2DGrid, Irregular2DGrid, TriangulatedSurface. | This property opens integration opportunities. No migration effort required. |
+
+---
+
+# Links
+
+* [Back to Milestone](README.md)
+* [Back to Migration Guides](../README.md)
+* [Back to Guides](../../README.md)

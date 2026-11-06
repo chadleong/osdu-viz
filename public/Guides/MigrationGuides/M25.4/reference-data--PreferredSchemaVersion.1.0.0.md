@@ -1,0 +1,99 @@
+<a name="TOC"></a>
+
+[[_TOC_]]
+
+# Migration to `osdu:wks:reference-data--PreferredSchemaVersion:1.0.0`
+
+Content changes (schema unchanged) [osdu:wks:reference-data--PreferredSchemaVersion:1.0.0](../../../E-R/reference-data/PreferredSchemaVersion.1.0.0.md) are listed below.
+
+[//]: # "The Schema property change table contains manual comments, which must be protected? (Yes/No): No"
+[//]: # "Please do not add any comments below this line. The following lines are auto-generated."
+
+# Schema Changes
+
+**_No Schema Changes._**
+
+[//]: # "End of section Schema Changes"
+
+# Reference Data Changes
+
+| `id` | Name | Description | Change Notes |
+| ----- | ----- | ----- | ----- |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:content--DdmsFootprint:1 | content--DdmsFootprint major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:content--DdmsFootprint:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:master-data--SeismicProcessingProject:1 | master-data--SeismicProcessingProject major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:master-data--SeismicProcessingProject:1". | Changes in PreferredKindVersion, MaximumKindVersion |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--AromaticGCMSCompounds:1 | reference-data--AromaticGCMSCompounds major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--AromaticGCMSCompounds:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--BulkPyrolysisMethod:1 | reference-data--BulkPyrolysisMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--BulkPyrolysisMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1 | reference-data--CompoundSpecificIsotopeComponents major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--CompoundSpecificIsotopeComponents:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--CompressibilityMeasurementType:1 | reference-data--CompressibilityMeasurementType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--CompressibilityMeasurementType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--ConductivityMeasurementMethod:1 | reference-data--ConductivityMeasurementMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--ConductivityMeasurementMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--ConsolidationType:1 | reference-data--ConsolidationType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--ConsolidationType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--CutFluidType:1 | reference-data--CutFluidType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--CutFluidType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--DataQualityRule:1 | reference-data--DataQualityRule major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--DataQualityRule:1". | Changes in PreferredKindVersion, MaximumKindVersion |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--DesaturationMethod:1 | reference-data--DesaturationMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--DesaturationMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--DisplacedFluidType:1 | reference-data--DisplacedFluidType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--DisplacedFluidType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--DrainageCondition:1 | reference-data--DrainageCondition major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--DrainageCondition:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--ElementalAnalysisMethod:1 | reference-data--ElementalAnalysisMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--ElementalAnalysisMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--ElementalMeasurementMethod:1 | reference-data--ElementalMeasurementMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--ElementalMeasurementMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--Elements:1 | reference-data--Elements major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--Elements:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--EndFaceEstimationMethod:1 | reference-data--EndFaceEstimationMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--EndFaceEstimationMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FluidPhasesPresent:1 | reference-data--FluidPhasesPresent major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FluidPhasesPresent:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FluidResistivityMeasurementMethod:1 | reference-data--FluidResistivityMeasurementMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FluidResistivityMeasurementMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FluidSaturantType:1 | reference-data--FluidSaturantType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FluidSaturantType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FluidSystemAnalysisType:1 | reference-data--FluidSystemAnalysisType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FluidSystemAnalysisType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FractionationComponent:1 | reference-data--FractionationComponent major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FractionationComponent:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--FractionationMethod:1 | reference-data--FractionationMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--FractionationMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--GasIsotopeComponents:1 | reference-data--GasIsotopeComponents major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--GasIsotopeComponents:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--GCMSCompoundsRatios:1 | reference-data--GCMSCompoundsRatios major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--GCMSCompoundsRatios:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--GCMSMSCompounds:1 | reference-data--GCMSMSCompounds major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--GCMSMSCompounds:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--IsotopeRatioElements:1 | reference-data--IsotopeRatioElements major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--IsotopeRatioElements:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--Minerals:1 | reference-data--Minerals major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--Minerals:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--NMRTestCondition:1 | reference-data--NMRTestCondition major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--NMRTestCondition:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--NonGasIsotopeComponents:1 | reference-data--NonGasIsotopeComponents major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--NonGasIsotopeComponents:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--PermeabilityMeasurementMethod:1 | reference-data--PermeabilityMeasurementMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--PermeabilityMeasurementMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--PHMeasurementMethod:1 | reference-data--PHMeasurementMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--PHMeasurementMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageBeamType:1 | reference-data--SampleImageBeamType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageBeamType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageColourSpace:1 | reference-data--SampleImageColourSpace major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageColourSpace:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageLightingCondition:1 | reference-data--SampleImageLightingCondition major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageLightingCondition:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageOpticalLightFilter:1 | reference-data--SampleImageOpticalLightFilter major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageOpticalLightFilter:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageOpticalLightPath:1 | reference-data--SampleImageOpticalLightPath major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageOpticalLightPath:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageParameters:1 | reference-data--SampleImageParameters major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageParameters:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageResolutionSource:1 | reference-data--SampleImageResolutionSource major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageResolutionSource:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleImageXRayDetector:1 | reference-data--SampleImageXRayDetector major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleImageXRayDetector:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleInjectionFluidType:1 | reference-data--SampleInjectionFluidType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleInjectionFluidType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleOrganicCompositionComponent:1 | reference-data--SampleOrganicCompositionComponent major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleOrganicCompositionComponent:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleStressLoadingMethod:1 | reference-data--SampleStressLoadingMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleStressLoadingMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleStressLoadingStage:1 | reference-data--SampleStressLoadingStage major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleStressLoadingStage:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SampleTestCondition:1 | reference-data--SampleTestCondition major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SampleTestCondition:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SaturateGCMSCompounds:1 | reference-data--SaturateGCMSCompounds major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SaturateGCMSCompounds:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SaturationFluidType:1 | reference-data--SaturationFluidType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SaturationFluidType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SaturationMeasurementLocation:1 | reference-data--SaturationMeasurementLocation major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SaturationMeasurementLocation:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SaturationPressureType:1 | reference-data--SaturationPressureType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SaturationPressureType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--SaturationProcessMethod:1 | reference-data--SaturationProcessMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--SaturationProcessMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--TensileStrengthMethod:1 | reference-data--TensileStrengthMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--TensileStrengthMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--UniaxialCycleType:1 | reference-data--UniaxialCycleType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--UniaxialCycleType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--UniaxialTestControlType:1 | reference-data--UniaxialTestControlType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--UniaxialTestControlType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--ViscosityMethod:1 | reference-data--ViscosityMethod major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--ViscosityMethod:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--VitriniteMountTechnique:1 | reference-data--VitriniteMountTechnique major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--VitriniteMountTechnique:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--VitriniteReflectancePopulationType:1 | reference-data--VitriniteReflectancePopulationType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--VitriniteReflectancePopulationType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--WaterSaturationCompositionComponent:1 | reference-data--WaterSaturationCompositionComponent major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--WaterSaturationCompositionComponent:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--WettabilityIndexType:1 | reference-data--WettabilityIndexType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--WettabilityIndexType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--WettabilityPhaseType:1 | reference-data--WettabilityPhaseType major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--WettabilityPhaseType:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:reference-data--WOGnCycleNotation:1 | reference-data--WOGnCycleNotation major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:reference-data--WOGnCycleNotation:1". | Value added. |
+| partition-id:reference-data--PreferredSchemaVersion:osdu:wks:work-product-component--SampleImage:1 | work-product-component--SampleImage major version 1 | Minimum, maximum and preferred schema version (also known as kind) for "osdu:wks:work-product-component--SampleImage:1". | Changes in PreferredKindVersion, MaximumKindVersion |
+
+# Value Spreadsheet and Manifest
+
+* &rarr; [Reference value workbook PreferredSchemaVersion.1.xlsx](../../../ReferenceValues/Authoring/PreferredSchemaVersion.1.xlsx)
+* &rarr; [Manifest record PreferredSchemaVersion.1.json](../../../ReferenceValues/Manifests/reference-data/LOCAL/PreferredSchemaVersion.1.json)
+
+[Back to TOC](#TOC)
+
+---
+
+[//]: # "End of section Reference Data Changes"
+
+# Links
+
+* [Back to Milestone](README.md)
+* [Back to Migration Guides](../README.md)
+* [Back to Guides](../../README.md)

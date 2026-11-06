@@ -16,7 +16,7 @@ import {
 } from "@xyflow/react"
 import "@xyflow/react/dist/style.css"
 import { layoutWithDagre } from "../utils/layout"
-import { PropertyTooltip } from "./Tooltip"
+import { PropertyTooltip, type ReferrerItem, type GuideLink } from "./Tooltip"
 import { nodeTypes, edgeTypes } from "./rf-configs"
 import { validateEdges } from "../utils/edges"
 import { NODE_COLORS, getNodeColors } from "../utils/nodeColors"
@@ -50,9 +50,13 @@ type Props = {
   edges: Edge[]
   onSchemaSelect?: (idOrTerm: string) => void
   theme?: "light" | "dark"
+  /** schemas referencing the given schema path (drives the "Referenced by" panel section) */
+  getReferrers?: (path: string) => ReferrerItem[]
+  /** migration guides that mention the given schema path */
+  getGuides?: (path: string) => GuideLink[]
 }
 
-export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "light" }: Props) {
+export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "light", getReferrers, getGuides }: Props) {
   const [activeNode, setActiveNode] = useState<Node | null>(null)
   const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null)
   const [showLegend, setShowLegend] = useState(false)
@@ -168,6 +172,15 @@ export default function SchemaGraph({ nodes, edges, onSchemaSelect, theme = "lig
           <PropertyTooltip
             node={activeNode}
             onClose={() => setActiveNode(null)}
+            referrers={
+              getReferrers && (activeNode.data as any)?.filePath
+                ? getReferrers((activeNode.data as any).filePath as string)
+                : undefined
+            }
+            onNavigate={onSchemaSelect}
+            guides={
+              getGuides && (activeNode.data as any)?.filePath ? getGuides((activeNode.data as any).filePath as string) : undefined
+            }
             onHoverProperty={(payload) => {
               // delegate to GraphRenderer via custom event on window so inner component can react
               const e = new CustomEvent("osdu:tooltip:prophover", { detail: payload })
@@ -424,8 +437,12 @@ function GraphRenderer({
         }
       }) as unknown as Edge<CustomEdgeData>[]
     )
-    // Only re-fit when the set of nodes changes, so unrelated updates don't reset the user's pan/zoom
-    const nodesKey = nodes.map((n) => n.id).join("|")
+    // Only re-fit when the set of nodes changes, so unrelated updates don't reset the user's pan/zoom.
+    // The "referenced by" overlay nodes are ignored so toggling it keeps the current view.
+    const nodesKey = nodes
+      .filter((n) => !n.id.startsWith("used-by::"))
+      .map((n) => n.id)
+      .join("|")
     if (lastFitKey.current !== nodesKey) {
       lastFitKey.current = nodesKey
       fitView({ padding: 0.2 })

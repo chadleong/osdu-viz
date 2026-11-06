@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+'scale 350 width
+skinparam state {
+  BackgroundColor<<Happy>> LightGreen
+  BackgroundColor<<Suspended>> LightGreen|Red
+  BackgroundColor<<Exception>> Red
+  BackgroundColor<<Evaluation>> Gold
+  BorderColor Black
+}
+
+hide empty description
+state ActivityStatus {
+    [*] -[#green,bold]-> Planned
+
+    state Planned <<Happy>>
+    state InProgress <<Happy>>
+    state Completed <<Happy>>
+    state Suspended <<Suspended>>
+    state Aborted <<Exception>>
+    state FinalState <<join>> 
+    Planned -[#green,bold]-> InProgress : Starting
+    Planned -[#red]-> Aborted : Never\nstarting
+    InProgress -[#green,dotted]-> Suspended : Temporarily\nstopped
+    InProgress <-[#green,dotted]- Suspended : Continue
+    InProgress -[#red]-> Aborted : Permanently\nstopped
+    Suspended -[#red]-> Aborted : Permanently\nstopped
+    InProgress -[#green,bold]-> Completed : Completed
+    Completed --> FinalState
+    Aborted --> FinalState
+}
+
+@enduml

@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest"
 import { render, screen, fireEvent } from "@testing-library/react"
-import { PropertyTooltip, isDeprecated } from "./Tooltip"
+import { PropertyTooltip } from "./Tooltip"
+import { isDeprecated } from "../utils/deprecated"
 
 const nodeBase: any = {
   id: "n1",

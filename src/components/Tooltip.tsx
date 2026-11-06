@@ -3,6 +3,9 @@ import type { KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerE
 import { Node } from "@xyflow/react"
 import { ReactNode } from "react"
 import { buildPropertyTree, type TreeNode } from "../utils/propertyTree"
+import { groupKey } from "../utils/schemaVersions"
+import { guideHash } from "../utils/guides"
+import { isDeprecated } from "../utils/deprecated"
 import { loadReferenceValues, toReferenceValues, type ReferenceValue } from "../utils/referenceValues"
 
 type PropertyInfo = {
@@ -57,8 +60,21 @@ function ReferenceValuesList({ entityType }: { entityType: string }) {
       {shown.length > 0 && (
         <ul className="list" style={{ maxHeight: 200, overflowY: "auto" }}>
           {shown.slice(0, 200).map((rv, idx) => (
-            <li key={rv.id || idx} className="list-row" style={{ gridTemplateColumns: "1fr" }} title={rv.description}>
-              <span className="k">{rv.name}</span>
+            <li
+              key={rv.id || idx}
+              className={`list-row ${rv.deprecated ? "prop-deprecated" : ""}`}
+              style={{ gridTemplateColumns: "1fr" }}
+              title={rv.description}
+            >
+              <span className="k">
+                {rv.name}
+                {rv.deprecated && (
+                  <>
+                    {" "}
+                    <span className="badge req">DEPRECATED</span>
+                  </>
+                )}
+              </span>
               <span className="t">{rv.id ? rv.id.replace("{{NAMESPACE}}", "namespace") : rv.code}</span>
             </li>
           ))}
@@ -70,9 +86,6 @@ function ReferenceValuesList({ entityType }: { entityType: string }) {
   )
 }
 
-// Matches "DEPRECATED: ...", "[DEPRECATED] ..." at the start of a description, or a bracketed marker anywhere
-export const isDeprecated = (description?: string) =>
-  !!description && /^\s*[\[(]?\s*deprecated(?![a-z])|\[\s*deprecated\s*\]/i.test(description)
 
 type RowGroup = { open: boolean; count: number; onToggle: () => void }
 
@@ -251,14 +264,75 @@ function readStoredWidth(): number {
   }
 }
 
+export type GuideLink = { path: string; label: string }
+
+export type ReferrerItem = {
+  path: string
+  title: string
+  version?: string
+  via: "ref" | "relationship"
+  properties: string[]
+}
+
+/** Schemas that reference the selected one, one row per schema with all referring versions. */
+function ReferencedByList({ items, onNavigate }: { items: ReferrerItem[]; onNavigate?: (path: string) => void }) {
+  const rows = useMemo(() => {
+    const groups = new Map<string, ReferrerItem[]>()
+    for (const it of items) {
+      const k = groupKey(it)
+      const g = groups.get(k)
+      if (g) g.push(it)
+      else groups.set(k, [it])
+    }
+    return Array.from(groups.values())
+      .map((g) => g.slice().sort((a, b) => (b.version || "").localeCompare(a.version || "", undefined, { numeric: true })))
+      .sort((a, b) => a[0].title.localeCompare(b[0].title))
+  }, [items])
+  return (
+    <>
+      {rows.map((g) => (
+        <li key={g[0].path} className="list-row" style={{ gridTemplateColumns: "1fr" }}>
+          <span>
+            <button
+              type="button"
+              className="btn"
+              style={{ textAlign: "left" }}
+              title={g[0].path}
+              onClick={() => onNavigate?.(g[0].path)}
+            >
+              {g[0].title}
+            </button>{" "}
+            <span className="muted">
+              {g.map((x) => (x.version ? `v${x.version}` : "")).filter(Boolean).join(", ")}
+              {" · "}
+              {g[0].via === "relationship"
+                ? `relationship${g[0].properties.filter(Boolean).length ? ` (${Array.from(new Set(g.flatMap((x) => x.properties.filter(Boolean)))).join(", ")})` : ""}`
+                : "$ref"}
+            </span>
+          </span>
+        </li>
+      ))}
+      {!rows.length && <li className="muted">Not referenced by any loaded schema</li>}
+    </>
+  )
+}
+
 export function PropertyTooltip({
   node,
   onClose,
   onHoverProperty,
   onLeaveProperty,
+  referrers,
+  onNavigate,
+  guides,
 }: {
+  /** migration guides for this node's schema */
+  guides?: GuideLink[]
   node: Node
   onClose: () => void
+  /** schemas that reference this node's schema */
+  referrers?: ReferrerItem[]
+  onNavigate?: (path: string) => void
   onHoverProperty?: (payload: { name?: string; ref?: string } | null) => void
   onLeaveProperty?: () => void
 }) {
@@ -346,6 +420,13 @@ export function PropertyTooltip({
   // Relationships are collapsed by default (can be long); reset when the tooltip shows a different node
   const [relsOpen, setRelsOpen] = useState(false)
   useEffect(() => setRelsOpen(false), [node])
+  // Nested properties section: expanded by default, collapsible; reset when the tooltip shows a different node
+  const [nestedOpen, setNestedOpen] = useState(true)
+  useEffect(() => setNestedOpen(true), [node])
+  const [guidesOpen, setGuidesOpen] = useState(false)
+  useEffect(() => setGuidesOpen(false), [node])
+  const [refByOpen, setRefByOpen] = useState(false)
+  useEffect(() => setRefByOpen(false), [node])
 
   // Nested properties as a tree: object-like properties (e.g. data.HistoricalInterests) are collapsed groups
   const nestedTree = useMemo(() => buildPropertyTree(nested), [nested])
@@ -509,8 +590,16 @@ export function PropertyTooltip({
             {!refLoading && !refError && refValues.length > 0 && (
               <ul className="list" style={{ maxHeight: 220, overflowY: "auto" }}>
                 {refValues.slice(0, 200).map((rv, idx) => (
-                  <li key={rv.id || idx} className="list-row">
-                    <span className="k">{rv.name}</span>
+                  <li key={rv.id || idx} className={`list-row ${rv.deprecated ? "prop-deprecated" : ""}`}>
+                    <span className="k">
+                      {rv.name}
+                      {rv.deprecated && (
+                        <>
+                          {" "}
+                          <span className="badge req">DEPRECATED</span>
+                        </>
+                      )}
+                    </span>
                     {rv.code && <span className="t">{rv.code}</span>}
                     {rv.description && <span className="d">{rv.description}</span>}
                   </li>
@@ -591,8 +680,22 @@ export function PropertyTooltip({
             className="tooltip-section-title"
             style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
           >
-            <span>Nested properties ({nested.length})</span>
-            {groupNames.length > 0 && (
+            <span
+              role="button"
+              tabIndex={0}
+              aria-expanded={nestedOpen}
+              style={{ cursor: "pointer", userSelect: "none", flex: 1 }}
+              onClick={() => setNestedOpen(!nestedOpen)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault()
+                  setNestedOpen(!nestedOpen)
+                }
+              }}
+            >
+              {nestedOpen ? "▾" : "▸"} Nested properties ({nested.length})
+            </span>
+            {nestedOpen && groupNames.length > 0 && (
               <span style={{ display: "inline-flex", gap: 6 }}>
                 <button className="btn" onClick={() => setExpanded(new Set(groupNames))}>
                   Expand all
@@ -603,7 +706,7 @@ export function PropertyTooltip({
               </span>
             )}
           </div>
-          <ul className="list">
+          <ul className="list" style={nestedOpen ? undefined : { display: "none" }}>
             <PropertyTree
               nodes={nestedTree}
               level={0}
@@ -644,6 +747,56 @@ export function PropertyTooltip({
             {!rels.length && <li className="muted">No relationships</li>}
           </ul>
         </div>
+        {guides && guides.length > 0 && (
+          <div className="tooltip-section">
+            <div
+              className="tooltip-section-title"
+              role="button"
+              tabIndex={0}
+              aria-expanded={guidesOpen}
+              style={{ cursor: "pointer", userSelect: "none" }}
+              onClick={() => setGuidesOpen(!guidesOpen)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault()
+                  setGuidesOpen(!guidesOpen)
+                }
+              }}
+            >
+              {guidesOpen ? "▾" : "▸"} Migration guides ({guides.length})
+            </div>
+            <ul className="list" style={guidesOpen ? undefined : { display: "none" }}>
+              {guides.map((g) => (
+                <li key={g.path} className="list-row" style={{ gridTemplateColumns: "1fr" }}>
+                  <a href={guideHash(g.path)}>{g.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {referrers && (
+          <div className="tooltip-section">
+            <div
+              className="tooltip-section-title"
+              role="button"
+              tabIndex={0}
+              aria-expanded={refByOpen}
+              style={{ cursor: "pointer", userSelect: "none" }}
+              onClick={() => setRefByOpen(!refByOpen)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault()
+                  setRefByOpen(!refByOpen)
+                }
+              }}
+            >
+              {refByOpen ? "▾" : "▸"} Referenced by ({new Set(referrers.map((r) => groupKey(r))).size})
+            </div>
+            <ul className="list" style={refByOpen ? { maxHeight: 280, overflowY: "auto" } : { display: "none" }}>
+              <ReferencedByList items={referrers} onNavigate={onNavigate} />
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   )

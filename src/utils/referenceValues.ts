@@ -1,4 +1,6 @@
-export type ReferenceValue = { id?: string; name: string; code?: string; description?: string }
+import { isDeprecated } from "./deprecated"
+
+export type ReferenceValue = { id?: string; name: string; code?: string; description?: string; deprecated?: boolean }
 
 export type ReferenceValueSet = { values: ReferenceValue[]; sourcePath: string }
 
@@ -11,6 +13,7 @@ export function toReferenceValues(entries: any[]): ReferenceValue[] {
       name: String(d.Name ?? d.Code ?? "").trim(),
       code: d.Code,
       description: d.Description,
+      deprecated: d.InactiveIndicator === true || isDeprecated(d.Description),
     }
   })
 }

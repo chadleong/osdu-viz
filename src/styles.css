@@ -899,6 +899,7 @@ body {
   padding-left: 6px;
 }
 .prop-deprecated .k,
+.prop-deprecated .t,
 .prop-deprecated .d {
   color: var(--danger-text);
 }
@@ -1148,4 +1149,241 @@ body {
 .app-header-row > :last-child {
   margin-left: auto;
   flex: 0 0 auto;
+}
+
+/* ---------- Guides viewer ---------- */
+.guides-viewer {
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  background: var(--panel);
+  color: var(--text);
+}
+.guides-sidebar {
+  flex: 0 0 280px;
+  overflow-y: auto;
+  padding: 12px;
+  border-right: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 13px;
+}
+.guides-sidebar input[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+}
+.guide-tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.guide-folder {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 3px 4px;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+.guide-file {
+  display: block;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: var(--muted);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.guide-file:hover {
+  background: var(--line);
+}
+.guide-file.active {
+  background: var(--accent);
+  color: #fff;
+}
+.guide-path {
+  display: block;
+  font-size: 11px;
+}
+.guides-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.guides-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.guides-toolbar .btn {
+  text-decoration: none;
+}
+.guides-body {
+  padding: 16px 24px 64px;
+}
+.guides-frame {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+  background: #fff;
+}
+.guides-outline {
+  flex: 0 0 220px;
+  overflow-y: auto;
+  padding: 16px 12px;
+  border-left: 1px solid var(--line);
+  font-size: 12px;
+}
+.guides-outline-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.guides-outline ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.guides-outline li {
+  padding: 2px 0;
+}
+.guides-outline a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.guides-outline a:hover {
+  color: var(--accent);
+}
+@media (max-width: 1100px) {
+  .guides-outline {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .guides-viewer {
+    flex-direction: column;
+  }
+  .guides-sidebar {
+    flex: 0 0 auto;
+    max-height: 35%;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+.guide-content {
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+/* Prose keeps a readable line length; tables and code use the full width of the reader */
+.guide-content > :not(.guide-table-wrap):not(pre) {
+  max-width: 900px;
+}
+.guide-content h1,
+.guide-content h2,
+.guide-content h3,
+.guide-content h4 {
+  margin: 1.4em 0 0.5em;
+  line-height: 1.25;
+  scroll-margin-top: 56px;
+}
+.guide-content h1 {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.3em;
+}
+.guide-content h2 {
+  font-size: 1.4em;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.2em;
+}
+.guide-content a {
+  color: var(--accent);
+}
+.guide-content img {
+  max-width: 100%;
+  height: auto;
+}
+.guide-content pre {
+  overflow-x: auto;
+  padding: 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 12px;
+}
+.guide-content code {
+  background: var(--bg);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.guide-content pre code {
+  background: none;
+  padding: 0;
+}
+.guide-content blockquote {
+  margin: 1em 0;
+  padding: 0 1em;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+.guide-table-wrap {
+  overflow-x: auto;
+  margin: 1em 0;
+}
+.guide-content table {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 100%;
+}
+.guide-content th,
+.guide-content td {
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
+  /* columns never collapse to a few characters, long text wraps instead of stretching the table */
+  min-width: 110px;
+  max-width: 520px;
+}
+/* first column holds long dotted property paths: let those break */
+.guide-content td:first-child,
+.guide-content th:first-child {
+  min-width: 200px;
+  overflow-wrap: anywhere;
+}
+.guide-content th {
+  background: var(--bg);
+}
+.guide-content details {
+  margin: 0.8em 0;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+[data-theme="dark"] .guide-file.active {
+  color: #0b1220;
+}
+
+/* Focus mode: hide the tree and outline so wide tables get the whole width */
+.guides-viewer.focus .guides-sidebar,
+.guides-viewer.focus .guides-outline {
+  display: none;
 }

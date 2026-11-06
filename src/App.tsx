@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useMemo, useRef } from "react"
+import React, { Suspense, lazy, useState, useEffect, useMemo, useRef } from "react"
 import { createPortal } from "react-dom"
 import SchemaGraph from "./components/SchemaGraph"
-import { buildGraph } from "./utils/graphBuilder"
+import { buildGraph, collectPropsOnly } from "./utils/graphBuilder"
+import { buildReverseRefs } from "./utils/referencedBy"
+import type { ReferrerItem } from "./components/Tooltip"
 import type { SchemaModel } from "./types"
 import { findBestMatch } from "./utils/schemaMatch"
 import { groupVersions, groupKey, compareVersions, versionOf } from "./utils/schemaVersions"
@@ -10,7 +12,12 @@ import { parseSchemaFiles } from "./utils/localSchemas"
 import { idbGetAll, idbPutMany } from "./utils/schemaCache"
 import { useTheme } from "./hooks/useTheme"
 import ThemeToggle from "./components/ThemeToggle"
+import { parseRoute, guideHash, schemaFromGuideName, DEFAULT_GUIDE, type GuideEntry, type Route } from "./utils/guides"
+import type { GuideLink } from "./components/Tooltip"
 import pkg from "../package.json"
+
+// Loaded on demand: pulls in the markdown renderer and sanitizer
+const GuidesViewer = lazy(() => import("./components/GuidesViewer"))
 
 export default function App() {
   const { theme, toggleTheme } = useTheme()
@@ -31,6 +38,23 @@ export default function App() {
   const [loadingLocal, setLoadingLocal] = useState(false)
   const [localLoadTotal, setLocalLoadTotal] = useState(0)
   const [localLoadDone, setLocalLoadDone] = useState(0)
+
+  // --- Guides: hash-routed viewer ("#/guides/<path>") and schema deep links ("#/schema/<group>/<Name>.<ver>") ---
+  const [route, setRoute] = useState<Route | null>(() => parseRoute(window.location.hash))
+  const [guideEntries, setGuideEntries] = useState<GuideEntry[]>([])
+  useEffect(() => {
+    const onHash = () => setRoute(parseRoute(window.location.hash))
+    window.addEventListener("hashchange", onHash)
+    return () => window.removeEventListener("hashchange", onHash)
+  }, [])
+  useEffect(() => {
+    fetch(publicUrl("/guides-index.json"))
+      .then((r) => (r.ok ? r.json() : []))
+      .then((list) => Array.isArray(list) && setGuideEntries(list))
+      .catch(() => {})
+  }, [])
+  const guidesActive = route?.view === "guides"
+  const publicBase = ((import.meta.env.BASE_URL as string) || "/").replace(/\/?$/, "/")
 
   // Close dropdown when clicking outside — attach a capture-phase pointerdown listener while dropdown is open
   useEffect(() => {
@@ -340,12 +364,83 @@ export default function App() {
     }
   }
 
+  // Reverse reference map (who references whom). Only recomputed when schemas are added, not on every update.
+  const indexSize = Object.keys(index).length
+  // (skipped until a schema is selected: the scan is wasted work on the start screen)
+  const hasSelection = !!selectedModel
+  const reverseRefs = useMemo(
+    () => (hasSelection ? buildReverseRefs(index) : new Map<string, never[]>()),
+    [indexSize, hasSelection] // eslint-disable-line react-hooks/exhaustive-deps
+  )
+  const modelByPath = useMemo(() => new Map(models.map((m) => [m.path, m])), [models])
+  const getReferrers = (path: string): ReferrerItem[] =>
+    (reverseRefs.get(path) || []).map((r) => {
+      const m = modelByPath.get(r.path)
+      return {
+        path: r.path,
+        title: m?.title || r.path.split("/").pop() || r.path,
+        version: m ? versionOf(m) : undefined,
+        via: r.via,
+        properties: r.properties,
+      }
+    })
+
+  // Optional graph overlay: draw the schemas that reference the selected one (latest referring version of each)
+  const [showReferrers, setShowReferrers] = useState(false)
+  const MAX_REFERRER_NODES = 24
+  const referrerSummary = useMemo(() => {
+    if (!selectedModel) return { shown: [] as ReferrerItem[], total: 0 }
+    const best = new Map<string, ReferrerItem>()
+    for (const r of getReferrers(selectedModel.path)) {
+      const k = groupKey(r)
+      const cur = best.get(k)
+      if (!cur || compareVersions(r.version, cur.version) > 0) best.set(k, r)
+    }
+    const all = Array.from(best.values()).sort((a, b) => a.title.localeCompare(b.title))
+    return { shown: all.slice(0, MAX_REFERRER_NODES), total: all.length }
+  }, [selectedModel, reverseRefs, modelByPath]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const { nodes, edges } = useMemo(() => {
     if (!selectedModel || !selectedModel.schema) {
       return { nodes: [], edges: [] }
     }
-    return buildGraph(selectedModel, { index, erdView: true })
-  }, [selectedModel, index])
+    const g = buildGraph(selectedModel, { index, erdView: true })
+    if (!showReferrers || !g.nodes.length) return g
+    const mainId = g.nodes[0].id
+    const extraNodes: typeof g.nodes = []
+    const extraEdges: typeof g.edges = []
+    for (const r of referrerSummary.shown) {
+      const schema = index[r.path]
+      const id = `used-by::${r.path}`
+      const lower = r.path.toLowerCase()
+      const category = ["master-data", "reference-data", "work-product-component"].find((c) => lower.includes(`/${c}/`))
+      extraNodes.push({
+        id,
+        position: { x: 0, y: 0 },
+        type: "erd-entity",
+        data: {
+          label: r.title,
+          subtitle: `Uses ${selectedModel.title}${r.version ? ` · v${r.version}` : ""}`,
+          properties: schema ? collectPropsOnly(schema) : [],
+          relations: [],
+          erdRelationships: [],
+          filePath: r.path,
+          schemaId: schema?.$id,
+          schema,
+          nodeType: category ? "related-entity" : "abstract",
+          category,
+        },
+      })
+      extraEdges.push({
+        id: `${id}->${mainId}`,
+        source: id,
+        target: mainId,
+        label: r.via === "relationship" ? r.properties.filter(Boolean)[0] || "relationship" : "uses",
+        data: { type: r.via === "relationship" ? "erd-relationship" : "inheritance" },
+      })
+    }
+    return { nodes: [...g.nodes, ...extraNodes], edges: [...g.edges, ...extraEdges] }
+  }, [selectedModel, index, showReferrers, referrerSummary])
 
   // Map a schema model to a text color that matches the node rendering in SchemaGraph
   const getColorForModel = (model: SchemaModel | null) => {
@@ -400,6 +495,10 @@ export default function App() {
   }, [models, searchTerm, showAllVersions])
 
   const selectedGroup = selectedModel ? groupByKey.get(groupKey(selectedModel)) : undefined
+  // Warn when an older version is on screen; the dismissal is remembered per schema version
+  const [dismissedOutdated, setDismissedOutdated] = useState<string | null>(null)
+  const outdatedLatest =
+    selectedModel && selectedGroup && selectedGroup.latest.path !== selectedModel.path ? selectedGroup.latest : null
 
   // Switch to another version of the current schema without resetting the navigation trail
   const handleVersionSwitch = async (path: string) => {
@@ -455,7 +554,48 @@ export default function App() {
   }
 
   const handleBack = () => goToHistory(history.length - 1)
+
+  // Same as the Clear button; also leaves the guides so the title always returns to the start screen
+  const handleClear = () => {
+    setSelectedModel(null)
+    setSearchTerm("")
+    setShowDropdown(false)
+    setHistory([])
+    if (route) {
+      setRoute(null)
+      window.history.replaceState(null, "", window.location.pathname + window.location.search)
+    }
+  }
   const handleBreadcrumbJump = goToHistory
+
+  // A guide linked to a schema: open it in the graph once the schema list is available
+  useEffect(() => {
+    if (route?.view !== "schema" || models.length === 0) return
+    const ref = route.ref
+    setRoute(null)
+    window.history.replaceState(null, "", window.location.pathname + window.location.search)
+    handleSchemaSelect(ref)
+  }, [route, models.length]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Migration guides are named after their schema ("master-data--Well.1.0.0.md"): index them by "group/name"
+  const guidesBySchema = useMemo(() => {
+    const map = new Map<string, GuideLink[]>()
+    for (const e of guideEntries) {
+      const sc = schemaFromGuideName(e.p)
+      if (!sc) continue
+      const key = `${sc.group}/${sc.name}`.toLowerCase()
+      const milestone = e.p.split("/").slice(-2, -1)[0]
+      const list = map.get(key) || []
+      list.push({ path: e.p, label: `${milestone} · v${sc.version}` })
+      map.set(key, list)
+    }
+    for (const list of map.values()) list.sort((a, b) => b.label.localeCompare(a.label, undefined, { numeric: true }))
+    return map
+  }, [guideEntries])
+  const getGuides = (filePath: string): GuideLink[] => {
+    const key = groupKey({ path: filePath }).split("/").slice(-2).join("/")
+    return guidesBySchema.get(key) || []
+  }
 
   return (
     <div className="h-screen bg-gray-50" style={{ display: "flex", flexDirection: "column" }}>
@@ -470,7 +610,14 @@ export default function App() {
           <div className="app-brand">
             <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
               <h1 className="text-lg font-semibold text-gray-900 app-title">
-                OSDU<span className="app-title-extra"> Schema Viz</span>
+                <button
+                  type="button"
+                  onClick={handleClear}
+                  title="Back to the start (clears the selected schema)"
+                  style={{ background: "none", border: 0, padding: 0, font: "inherit", color: "inherit", cursor: "pointer" }}
+                >
+                  OSDU<span className="app-title-extra"> Schema Viz</span>
+                </button>
               </h1>
               <span className="text-xs text-gray-500 app-version">v{(pkg as any).version}</span>
               <a
@@ -648,12 +795,7 @@ export default function App() {
           {/* Clear button */}
           {selectedModel && (
             <button
-              onClick={() => {
-                setSelectedModel(null)
-                setSearchTerm("")
-                setShowDropdown(false)
-                setHistory([])
-              }}
+              onClick={handleClear}
               className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
             >
               Clear
@@ -674,6 +816,23 @@ export default function App() {
             </a>
           </div>
 
+          {/* Switch between the schema graph and the guides */}
+          <button
+            onClick={() => {
+              if (guidesActive) {
+                setRoute(null)
+                window.history.replaceState(null, "", window.location.pathname + window.location.search)
+              } else {
+                window.location.hash = guideHash(DEFAULT_GUIDE)
+              }
+            }}
+            aria-pressed={guidesActive}
+            title={guidesActive ? "Back to the schema graph" : "Browse the Schema Usage Guide, migration guides and release reports"}
+            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+          >
+            {guidesActive ? "← Graph" : "Guides"}
+          </button>
+
           {/* Light / dark background toggle (top right) */}
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
         </div>
@@ -681,7 +840,11 @@ export default function App() {
 
       {/* Main Content */}
       <div style={{ flex: "1 1 auto", minHeight: 0 }}>
-        {selectedModel && selectedModel.schema ? (
+        {route?.view === "guides" ? (
+          <Suspense fallback={<div className="text-center text-gray-600" style={{ marginTop: 64 }}>Loading guides...</div>}>
+            <GuidesViewer entries={guideEntries} path={route.path} anchor={route.anchor} base={publicBase} />
+          </Suspense>
+        ) : selectedModel && selectedModel.schema ? (
           <div style={{ position: "relative", height: "100%" }}>
             <SchemaGraph
               key={selectedModel.id || selectedModel.path}
@@ -689,6 +852,8 @@ export default function App() {
               edges={edges}
               onSchemaSelect={handleSchemaSelect}
               theme={theme}
+              getReferrers={getReferrers}
+              getGuides={getGuides}
             />
             {/* Overlay layer to host interactive controls above ReactFlow */}
             <div
@@ -699,6 +864,73 @@ export default function App() {
                 pointerEvents: "none",
               }}
             >
+              {outdatedLatest && selectedModel && dismissedOutdated !== selectedModel.path && (
+                <div
+                  role="alert"
+                  className="absolute"
+                  style={{
+                    pointerEvents: "auto",
+                    top: 12,
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    maxWidth: "min(560px, 90vw)",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    padding: "8px 12px",
+                    background: "#fffbeb",
+                    border: "1px solid #f59e0b",
+                    borderRadius: 8,
+                    color: "#78350f",
+                    fontSize: 13,
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  <span aria-hidden="true">⚠️</span>
+                  <span>
+                    You are viewing <strong>v{versionOf(selectedModel)}</strong> of {selectedModel.title}. A newer
+                    version, <strong>v{versionOf(outdatedLatest)}</strong>, is available.
+                  </span>
+                  <button
+                    onClick={() => handleVersionSwitch(outdatedLatest.path)}
+                    style={{
+                      whiteSpace: "nowrap",
+                      padding: "2px 8px",
+                      border: "1px solid #b45309",
+                      borderRadius: 6,
+                      background: "#fef3c7",
+                      color: "#78350f",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Switch to latest
+                  </button>
+                  <button
+                    onClick={() => setDismissedOutdated(selectedModel.path)}
+                    aria-label="Dismiss version warning"
+                    title="Dismiss"
+                    style={{ background: "none", border: 0, color: "#78350f", cursor: "pointer", fontSize: 16, lineHeight: 1 }}
+                  >
+                    ×
+                  </button>
+                </div>
+              )}
+              <button
+                onClick={() => setShowReferrers(!showReferrers)}
+                aria-pressed={showReferrers}
+                disabled={referrerSummary.total === 0}
+                className="absolute left-3 px-3 py-1.5 border border-gray-300 rounded bg-white hover:bg-gray-50 text-gray-700 text-sm shadow"
+                style={{ pointerEvents: "auto", top: history.length > 0 ? 56 : 12, opacity: referrerSummary.total === 0 ? 0.6 : 1 }}
+                title="Show the schemas that reference this one (latest referring version of each)"
+              >
+                {referrerSummary.total === 0
+                  ? "Not referenced by other schemas"
+                  : `${showReferrers ? "Hide" : "Show"} referenced by (${referrerSummary.total})${
+                      showReferrers && referrerSummary.total > referrerSummary.shown.length
+                        ? ` · showing ${referrerSummary.shown.length}`
+                        : ""
+                    }`}
+              </button>
               {history.length > 0 && (
                 <nav
                   aria-label="Breadcrumb"

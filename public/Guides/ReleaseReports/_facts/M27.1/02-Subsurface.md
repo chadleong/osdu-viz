@@ -1,0 +1,16 @@
+2. **Subsurface**
+   1. **Geophysics**
+      1. Updated [HeaderKeyName.1.0.0](../E-R/reference-data/HeaderKeyName.1.0.0.md) reference value list — added two new values: `OFFSET` (Offset — distance between the energy source and the receiver) and `AZIMUTH` (Azimuth — represents the directional bearing, measured in degrees from North, of the shot-receiver pair). These support header mapping for pre-stack seismic trace data (e.g. [SeismicTraceData](../E-R/work-product-component/SeismicTraceData.1.7.0.md)) where offset and azimuth are commonly carried as standard trace header fields. See [migration guide](../Guides/MigrationGuides/M27.1/reference-data--HeaderKeyName.1.0.0.md).
+      2. Fixed [SeismicTraceData.1.7.0](../E-R/work-product-component/SeismicTraceData.1.7.0.md) schema status, changing to PUBLISHED
+      3. Added six new, experimental **work-product-component** schemas (all version 0.0.0, Schema status **DEVELOPMENT**) for characterising seismic post-stack and pre-stack processing products and the sections and volumes derived from them. Like other 0.0.0 schemas, they are expected to undergo potentially breaking changes until their first revision is published, and should not be relied on for production use in the meantime:
+         1. [`osdu:wks:work-product-component--SeismicPostStackProcessingProduct:0.0.0`](../E-R/work-product-component/SeismicPostStackProcessingProduct.0.0.0.md) — a singular post stack output from a seismic processing project, encompassing one or many sections and/or volumes.
+         2. [`osdu:wks:work-product-component--SeismicPostStackTrace2DSection:0.0.0`](../E-R/work-product-component/SeismicPostStackTrace2DSection.0.0.0.md) — a single logical post stack dataset containing seismic samples related to a 2D section.
+         3. [`osdu:wks:work-product-component--SeismicPostStackTrace3DVolume:0.0.0`](../E-R/work-product-component/SeismicPostStackTrace3DVolume.0.0.0.md) — a single logical post stack dataset containing seismic samples related to a 3D volume.
+         4. [`osdu:wks:work-product-component--SeismicPreStackProcessingProduct:0.0.0`](../E-R/work-product-component/SeismicPreStackProcessingProduct.0.0.0.md) — a singular pre-stack output from a seismic processing project, encompassing one or many sections and/or volumes.
+         5. [`osdu:wks:work-product-component--SeismicPreStackTrace2DSection:0.0.0`](../E-R/work-product-component/SeismicPreStackTrace2DSection.0.0.0.md) — a single logical pre-stack dataset containing seismic samples related to a 2D section.
+         6. [`osdu:wks:work-product-component--SeismicPreStackTrace3DVolume:0.0.0`](../E-R/work-product-component/SeismicPreStackTrace3DVolume.0.0.0.md) — a single logical pre-stack dataset containing seismic samples related to a 3D volume.
+      4. Updated [SeismicTraceData.1.8.0](../E-R/work-product-component/SeismicTraceData.1.8.0.md) — added `Contracts[]`
+         (references to applicable agreements in an external contract database system of record),
+         `AdditionalTraceHeaderRanges[]` (minimum and maximum ranges parsed from trace headers for any additional
+         parameters beyond the standard set), and `VelocityModelID` (the velocity model used in the creation of this
+         trace dataset). See [migration guide](../Guides/MigrationGuides/M27.1/work-product-component--SeismicTraceData.1.7.0.md).

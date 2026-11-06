@@ -72,7 +72,7 @@ function collectFromSchema(schema: any): CollectResult {
   return { properties: props, relations: rels, refs }
 }
 
-function collectPropsOnly(schema: any) {
+export function collectPropsOnly(schema: any) {
   const out: Array<{ name: string; type?: string; description?: string }> = []
   function walk(o: any, path: string[] = []) {
     if (!o || typeof o !== "object") return

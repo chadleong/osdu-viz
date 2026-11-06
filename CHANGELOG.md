@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-11-06
+
+Major release: the build toolchain moves to Vite 8, Vitest 5 and TypeScript 7 (Node 20.19+ / 22.12+ required), and the app gains a built-in guides viewer and reverse-reference ("referenced by") navigation.
+
+### Added
+- "Referenced by" section in the side panel: lists the schemas that use the selected one, via `$ref` (e.g. `AbstractBusinessRule` -> `DataQuality`) or `x-osdu-relationship` (with the property name). One row per schema with all referring versions; click to open it.
+- "Show referenced by" button on the graph that draws the referring schemas (latest version of each, up to 24) as nodes pointing at the selected schema. Toggling it keeps your pan and zoom.
+- Reverse references are computed in the browser from the loaded schemas (`src/utils/referencedBy.ts`), so schemas loaded from a local folder are included.
+- Guides viewer (header "Guides" button): browse everything in `public/Guides` inside the app. A left tree (Chapters, Migration Guides by milestone, Release Reports) with search, the rendered page with an "On this page" outline, and shareable deep links (`#/guides/<path>?a=<heading>`).
+  - Links between guides stay in the app; links to schema docs (`E-R/<group>/<Name>.<ver>.md`) open that schema in the graph; links to content that is not bundled (worked examples, etc.) open the upstream repository. Images, tables, `<details>` and heading anchors are supported, and content is sanitized.
+  - Release reports (HTML) show in a sandboxed frame. Migration guides have an "Open schema in graph" button, and the schema side panel lists a schema's migration guides.
+  - `npm run scan` now also writes `public/guides-index.json` (paths and titles of all guides).
+- Warning banner at the top of the graph when an older version of a schema is selected, with a "Switch to latest" button (dismissible per version).
+- "Wide view" button in the guides viewer hides the tree and outline so wide tables get the full width.
+- "Nested properties" section in the side panel is collapsible (expanded by default).
+- Deprecated reference values (description starting with `DEPRECATED:` or `InactiveIndicator: true`) are highlighted in red with a DEPRECATED badge, like deprecated properties.
+- The "OSDU Schema Viz" title is clickable and behaves like Clear (and leaves the guides).
+
+### Changed
+- Dependencies updated to latest: Vite 7 -> 8, @vitejs/plugin-react 5 -> 6, Vitest and @vitest/coverage-v8 2 -> 5, TypeScript 5.9 -> 7, @dagrejs/dagre 1 -> 3, @testing-library/jest-dom 6 -> 7, jsdom 25 -> 29, plus React 19.3, @xyflow/react 12.12 and other minor/patch updates. `npm audit` now reports 0 vulnerabilities (was 10). jsdom stays on 29 because 30+ needs Node 22.22.2+.
+- CI deploy workflow uses Node 22 (Node 18 is no longer supported by the toolchain).
+- jest-dom is registered through `@testing-library/jest-dom/vitest` (types via `src/vitest-env.d.ts`).
+- Guide tables use the full reader width with minimum column widths so long descriptions no longer squeeze narrow columns.
+- `isDeprecated` moved from `Tooltip.tsx` to `src/utils/deprecated.ts` (fixes the Vite Fast Refresh warning) and is shared by property and reference-value deprecation checks.
+
+### Performance
+- The guides viewer (markdown renderer and sanitizer) loads on demand, keeping it out of the main bundle; its page cache is bounded to the 30 most recent pages.
+- Reverse references are only computed once a schema is selected.
+
 ## [1.7.0] - 2026-11-06
 
 ### Added

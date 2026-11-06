@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DD M27.1 Milestone Delivery Report — M27.1 / v0.30.1</title>
+<style>
+:root{
+  --bg: #F0EEE5;
+  --bg-raised: #FAF8F1;
+  --text: #12202A;
+  --text-muted: #5B6B72;
+  --border: #DDD6C6;
+  --accent-new: #963C1B;
+  --accent-upd: #3E6259;
+  --accent-major: #A82E17;
+  --mono-bg: #E7E2D4;
+  --rule: #C9C1AC;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #10191F;
+    --bg-raised: #182530;
+    --text: #EAE6DB;
+    --text-muted: #93A5A9;
+    --border: #2B3B44;
+    --accent-new: #DD8256;
+    --accent-upd: #74AC9B;
+    --accent-major: #E36A48;
+    --mono-bg: #1D2A32;
+    --rule: #33454E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg: #10191F;
+  --bg-raised: #182530;
+  --text: #EAE6DB;
+  --text-muted: #93A5A9;
+  --border: #2B3B44;
+  --accent-new: #DD8256;
+  --accent-upd: #74AC9B;
+  --accent-major: #E36A48;
+  --mono-bg: #1D2A32;
+  --rule: #33454E;
+}
+:root[data-theme="light"]{
+  --bg: #F0EEE5;
+  --bg-raised: #FAF8F1;
+  --text: #12202A;
+  --text-muted: #5B6B72;
+  --border: #DDD6C6;
+  --accent-new: #963C1B;
+  --accent-upd: #3E6259;
+  --accent-major: #A82E17;
+  --mono-bg: #E7E2D4;
+  --rule: #C9C1AC;
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.sheet{
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+.mono{
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+.sans{ font-family: "Archivo Narrow", "Arial Narrow", sans-serif; }
+.sheet a{ color: inherit; text-decoration-color: var(--rule); text-underline-offset: 2px; }
+.sheet a:hover, .sheet a:focus-visible{ color: var(--accent-upd); text-decoration-color: currentColor; }
+
+/* ---- Header ---- */
+.masthead{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  border-bottom: 3px solid var(--text);
+  padding-bottom: 1.1rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+.masthead .eyebrow{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+h1{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  margin: 0.15rem 0 0;
+  text-wrap: balance;
+  border: none;
+}
+.masthead-meta{
+  text-align: right;
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.masthead-meta .mono{ color: var(--text); }
+
+.subline{
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin: 0.6rem 0 2rem;
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+}
+.subline .mono{ color: var(--text); }
+
+/* ---- Jump nav ---- */
+.toc{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.85rem;
+  margin: 0 0 1.8rem;
+  padding: 0.85rem 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--rule);
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.78rem;
+}
+.toc .toc-label{
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-right: 0.2rem;
+}
+.toc a{
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+}
+.toc a:hover, .toc a:focus-visible{ color: var(--accent-upd); border-bottom-color: currentColor; }
+.toc a .n{ font-weight: 700; color: var(--text); }
+.toc a:hover .n, .toc a:focus-visible .n{ color: var(--accent-upd); }
+
+/* ---- Stat strip ---- */
+.stats{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.8rem;
+}
+.stat{ padding: 1rem 0.6rem; border-left: 1px solid var(--rule); text-align: center; }
+.stat:first-child{ border-left: none; }
+.stat .num{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+.stat .num.new{ color: var(--accent-new); }
+.stat .num.upd{ color: var(--accent-upd); }
+.stat .num.major{ color: var(--accent-major); }
+.stat .label{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+.stats-note{
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 2rem;
+}
+.stats-note .lead{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* ---- Executive summary box ---- */
+.execbox{
+  background: var(--bg-raised);
+  border: 1px solid var(--rule);
+  padding: 1.3rem 1.4rem;
+  margin-bottom: 2.2rem;
+}
+.execbox .k{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.execbox ul{ margin: 0; padding: 0; list-style: none; }
+.execbox li{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.98rem;
+}
+.execbox li:last-child{ border-bottom: none; }
+.execbox .mark{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.4rem;
+  margin-top: 0.15rem;
+  flex: 0 0 8.5rem;
+  width: 8.5rem;
+  text-align: center;
+  line-height: 1.25;
+  white-space: normal;
+  border: 1px solid currentColor;
+}
+.execbox .mark.action{ color: var(--accent-major); }
+.execbox .mark.new{ color: var(--accent-new); }
+.execbox .mark.fixed{ color: var(--accent-upd); }
+.execbox .mark.fyi{ color: var(--text-muted); }
+
+/* ---- Category (top-level, numbered) ---- */
+.category{ margin-top: 2.8rem; }
+.category-head{
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.category-head .idx{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  min-width: 1.5ch;
+}
+.category-head h2{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 1.28rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text);
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.category-head .count{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.category-intro{
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  margin: 0.5rem 0 1rem;
+  max-width: 74ch;
+}
+
+/* ---- Ledger table ---- */
+.ledger{ width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.ledger th{
+  text-align: left;
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 0.3rem 0.6rem 0.3rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.ledger td{
+  padding: 0.55rem 0.6rem 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.ledger tr.row-new td:first-child{ border-left: 3px solid var(--accent-new); padding-left: 0.6rem; }
+.ledger tr.row-upd td:first-child{ border-left: 3px solid var(--accent-upd); padding-left: 0.6rem; }
+.ledger tr.row-major td:first-child{ border-left: 3px solid var(--accent-major); padding-left: 0.6rem; }
+.ledger tr.row-total td{ border-top: 2px solid var(--text); border-bottom: none; font-weight: 700; }
+.ledger .name{ font-weight: 700; white-space: nowrap; }
+.ledger .desc{ color: var(--text); }
+.ledger .tag{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ledger .tag.new{ color: var(--accent-new); }
+.ledger .tag.upd{ color: var(--accent-upd); }
+.ledger .tag.major{ color: var(--accent-major); font-weight: 700; }
+.ledger .ver{ white-space: nowrap; }
+.ledger .ver .from{ color: var(--text-muted); }
+.ledger .ver .arrow{ color: var(--text-muted); padding: 0 0.15em; }
+.ledger .num{ text-align: right; }
+.table-wrap{ overflow-x: auto; }
+
+/* ---- Details / "technical depth" disclosure ---- */
+details.depth{ margin: 0.7rem 0 0.4rem; }
+details.depth > summary{
+  cursor: pointer;
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-upd);
+  list-style: none;
+  user-select: none;
+}
+details.depth > summary::-webkit-details-marker{ display: none; }
+details.depth > summary::before{ content: "+ "; font-weight: 700; }
+details.depth[open] > summary::before{ content: "\2212 "; }
+details.depth[open] > summary{ margin-bottom: 0.6rem; }
+.depth-body{
+  font-size: 0.92rem;
+  border-left: 2px solid var(--rule);
+  padding-left: 0.9rem;
+  margin-left: 0.1rem;
+}
+.depth-body p{ margin: 0.4rem 0; }
+.depth-body ul{ margin: 0.35rem 0; padding-left: 1.1rem; }
+.depth-body li{ margin: 0.3rem 0; }
+
+/* ---- Callout ---- */
+.callout{
+  background: var(--bg-raised);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent-major);
+  padding: 1rem 1.2rem;
+  margin: 1rem 0 1.6rem;
+  font-size: 0.94rem;
+}
+.callout .k{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent-major);
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.callout ul{ margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.callout li{ margin: 0.3rem 0; }
+
+/* ---- Appendix ---- */
+h2.appendix{
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
+  margin: 3rem 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+h2.appendix .count{ color: var(--text); font-weight: 700; }
+p.theme-note{ color: var(--text-muted); font-size: 0.9rem; margin: 0 0 0.8rem; max-width: 72ch; }
+
+/* ---- Footer ---- */
+footer{
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+  font-family: "Archivo Narrow", "Arial Narrow", sans-serif;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+footer .status{ font-weight: 700; }
+footer .status.pending{ color: var(--accent-major); }
+footer .status.pushed{ color: var(--accent-upd); }
+
+:focus-visible{ outline: 2px solid var(--accent-upd); outline-offset: 2px; }
+
+@media (max-width: 640px){
+  .stats{ grid-template-columns: repeat(3, 1fr); }
+  .stat:nth-child(4), .stat:nth-child(7){ border-left: none; }
+  .masthead{ flex-direction: column; }
+  .masthead-meta{ text-align: left; }
+}
+@media (max-width: 460px){
+  .stats{ grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(3), .stat:nth-child(5), .stat:nth-child(7){ border-left: none; }
+}
+@media (max-width: 560px){
+  .execbox li{ flex-direction: column; gap: 0.4rem; }
+  .execbox .mark{ width: auto; flex: none; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce){ *{ scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <div class="masthead">
+    <div>
+      <div class="eyebrow">Data Definitions Community Publication (draft, 2nd October 2026)</div>
+      <h1>DD M27.1 Milestone Delivery Report</h1>
+    </div>
+    <div class="masthead-meta">
+      Release <span class="mono">M27.1 / v0.30.1</span><br>
+      Branch <span class="mono">M27.1-working</span><br>
+      Commit <span class="mono">aa30db5a</span> · 2026-10-02
+    </div>
+  </div>
+  <div class="subline">Prepared by Chris Hough (DD Data Steward). Click <span class="sans" style="text-transform:uppercase;font-size:0.85em;color:var(--accent-upd);">+ Technical detail</span> under any item for the full engineering write-up</div>
+
+  <nav class="toc" aria-label="Jump to section">
+    <span class="toc-label">Jump to</span>
+    <a href="#sec1"><span class="n">1</span> Subsurface</a>
+    <a href="#sec2"><span class="n">2</span> Well</a>
+    <a href="#sec3"><span class="n">3</span> Rig</a>
+    <a href="#sec4"><span class="n">4</span> Portal &amp; Data Quality</a>
+    <a href="#sec5"><span class="n">5</span> Tooling</a>
+    <a href="#sec6"><span class="n">6</span> Reference Values</a>
+    <a href="#sec7"><span class="n">7</span> Documentation &amp; Guides</a>
+    <a href="#appendix">Appendix</a>
+  </nav>
+
+  <div class="stats">
+    <div class="stat"><div class="num mono new">18</div><div class="label">New Schemas</div></div>
+    <div class="stat"><div class="num mono upd">5</div><div class="label">Version Upgrades</div></div>
+    <div class="stat"><div class="num mono major">1</div><div class="label">Breaking Change</div></div>
+    <div class="stat"><div class="num mono new">6</div><div class="label">New Reference Values</div></div>
+    <div class="stat"><div class="num mono upd">10</div><div class="label">Migration Guides</div></div>
+    <div class="stat"><div class="num mono major">1</div><div class="label">Security Fix</div></div>
+    <div class="stat"><div class="num mono new">4</div><div class="label">New Automated Processes</div></div>
+  </div>
+  <p class="stats-note">
+    <span class="lead">Reading the numbers above</span>
+    "New Schemas" (18) counts 11 new rig-equipment record types, 6 experimental seismic processing-product
+    schemas (version 0.0.0, status DEVELOPMENT), and 1 new reference list (CoilTubingWrapType).
+    "Migration Guides" (10) covers the 5 version upgrades plus 5 reference-data content changes
+    (<a href="#sec6">§6</a>–<a href="#sec7">§7</a>). New schemas have nothing to migrate from.
+    "Breaking Change" (1) is a subset of "Version Upgrades" (5), not a separate count (<a href="#sec2">§2</a>).
+    "New Automated Processes" (4) are the schema data quality checks, the DQ dashboard, the Release Reports
+    index with its fact extractor, and the GitLab Pages publishing pipeline (<a href="#sec4">§4</a>).
+  </p>
+
+  <div class="execbox">
+    <span class="k">At a glance</span>
+    <ul>
+      <li><span class="mark action">Breaking change</span> <span><b>Risk</b> 2.0.0 drops the separate <span class="mono">Preventions[]</span> list. Prevention and mitigation actions are now both recorded under <span class="mono">Mitigations[]</span>, and a Risk no longer has to be tied to a planned Wellbore. This affects anything that reads Risk records today. (<a href="#sec2">§2</a>)</span></li>
+      <li><span class="mark fixed">Fixed</span> <span>A <b>security bug</b> in the schema-building tool. Its download routine was still switching off certificate checks for the whole process. Downloads now use a properly verified, request-scoped connection. No published content was affected. (<a href="#sec5">§5</a>)</span></li>
+      <li><span class="mark new">New capability</span> <span><b>11 more rig-equipment types</b> (anchors, boilers, cranes, shakers, mud pits and more) can now be recorded and tracked through EquipmentInventory, each with a full worked example. (<a href="#sec3">§3</a>)</span></li>
+      <li><span class="mark new">New capability</span> <span>The <b>Well Reference Point</b> is now part of Well 1.5.0. This is the fixed, recoverable tie-in point for a well's first survey and plan. (<a href="#sec2">§2</a>)</span></li>
+      <li><span class="mark new">New capability (MVP)</span> <span><b>6 experimental seismic processing-product schemas</b>, covering post-stack and pre-stack products, 2D sections and 3D volumes, are open for early feedback. They are at version 0.0.0, so expect changes and do not use them in production yet. (<a href="#sec1">§1</a>)</span></li>
+      <li><span class="mark new">Process change</span> <span>A new <b>Data Definitions portal</b> brings together a Schema Data Quality dashboard and the Release Reports index, and this page is one of those reports. Both rebuild automatically on every master pipeline. (<a href="#sec4">§4</a>)</span></li>
+      <li><span class="mark new">Reference data delivered</span> <span><b>6 new reference values</b>: <span class="mono">OFFSET</span> and <span class="mono">AZIMUTH</span> seismic trace header keys, and the 4-value <b>CoilTubingWrapType</b> list. (<a href="#sec6">§6</a>)</span></li>
+      <li><span class="mark fyi">Documentation delivered</span> <span><b>10 migration guides</b>, plus an expanded Rig Worked Example covering every new equipment type. (<a href="#sec7">§7</a>)</span></li>
+      <li><span class="mark fyi">Everything else</span> <span>The other 4 version upgrades are purely additive. Nothing already in use is changed or removed.</span></li>
+    </ul>
+  </div>
+
+  <!-- ============ 1. SUBSURFACE ============ -->
+  <div class="category" id="sec1">
+    <div class="category-head">
+      <span class="idx mono">1</span>
+      <h2>Subsurface</h2>
+      <span class="count">Geophysics</span>
+    </div>
+    <p class="category-intro">Richer seismic trace metadata, two new trace-header keys, and a first, experimental cut at describing the products of seismic processing.</p>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Record</th><th>Change</th><th>What it does</th></tr>
+      <tr class="row-upd"><td class="name">SeismicTraceData</td><td class="mono ver"><span class="from">1.7.0</span><span class="arrow">→</span>1.8.0</td><td class="desc">Can now record applicable contracts, extra trace-header ranges, and the velocity model used to create the dataset.</td></tr>
+      <tr class="row-upd"><td class="name">SeismicTraceData 1.7.0</td><td><span class="tag upd">Fixed</span></td><td class="desc">Schema status corrected to PUBLISHED.</td></tr>
+      <tr class="row-upd"><td class="name">HeaderKeyName</td><td><span class="tag upd">+2 values</span></td><td class="desc">Adds <span class="mono">OFFSET</span> and <span class="mono">AZIMUTH</span> for pre-stack trace header mapping.</td></tr>
+      <tr class="row-new"><td class="name" style="white-space:normal;">SeismicPostStackProcessingProduct</td><td><span class="tag new">New · 0.0.0</span></td><td class="desc">One post-stack output from a seismic processing project, made up of one or more sections and/or volumes.</td></tr>
+      <tr class="row-new"><td class="name" style="white-space:normal;">SeismicPostStackTrace2DSection, SeismicPostStackTrace3DVolume</td><td><span class="tag new">New · 0.0.0</span></td><td class="desc">A single post-stack dataset for a 2D section or a 3D volume.</td></tr>
+      <tr class="row-new"><td class="name" style="white-space:normal;">SeismicPreStackProcessingProduct</td><td><span class="tag new">New · 0.0.0</span></td><td class="desc">One pre-stack output from a seismic processing project, made up of one or more sections and/or volumes.</td></tr>
+      <tr class="row-new"><td class="name" style="white-space:normal;">SeismicPreStackTrace2DSection, SeismicPreStackTrace3DVolume</td><td><span class="tag new">New · 0.0.0</span></td><td class="desc">A single pre-stack dataset for a 2D section or a 3D volume.</td></tr>
+    </table>
+    </div>
+
+    <div class="callout" style="border-left-color:var(--accent-upd);">
+      <span class="k" style="color:var(--accent-upd);">Experimental — DEVELOPMENT status</span>
+      The six processing-product schemas are at version 0.0.0. Like other 0.0.0 schemas, they may still have breaking changes before their first published revision. Feedback is welcome, but don't rely on them in production yet.
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — Geophysics</summary>
+      <div class="depth-body">
+        <p><b>SeismicTraceData</b> 1.8.0 adds three properties. <span class="mono">Contracts[]</span> holds references to applicable agreements in an external contract system of record. <span class="mono">AdditionalTraceHeaderRanges[]</span> holds minimum and maximum ranges parsed from trace headers for any parameters beyond the standard set. <span class="mono">VelocityModelID</span> is the velocity model used to create the trace dataset.</p>
+        <p><b>HeaderKeyName</b> 1.0.0 gets two content-only additions. <span class="mono">OFFSET</span> is the distance between energy source and receiver. <span class="mono">AZIMUTH</span> is the bearing of the shot–receiver pair, in degrees from North. Both are commonly carried as standard trace header fields in pre-stack data.</p>
+        <p><b>Processing products</b> are all <span class="mono">osdu:wks:work-product-component--…:0.0.0</span>: <span class="mono">SeismicPostStackProcessingProduct</span>, <span class="mono">SeismicPostStackTrace2DSection</span>, <span class="mono">SeismicPostStackTrace3DVolume</span>, <span class="mono">SeismicPreStackProcessingProduct</span>, <span class="mono">SeismicPreStackTrace2DSection</span>, <span class="mono">SeismicPreStackTrace3DVolume</span>. A processing product groups the sections and volumes produced by one processing project.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 2. WELL ============ -->
+  <div class="category" id="sec2">
+    <div class="category-head">
+      <span class="idx mono">2</span>
+      <h2>Well</h2>
+      <span class="count">Well Reference Point · Risk rework</span>
+    </div>
+    <p class="category-intro">Wells gain a formal reference point. Risk records are simplified, which is <b>the one breaking change</b> in this release.</p>
+
+    <div class="callout">
+      <span class="k">Breaking change — FYI for consumers</span>
+      <b>Risk</b> 1.2.0 → 2.0.0 removes the separate <span class="mono">Preventions[]</span> list. Prevention and mitigation actions are now both recorded in <span class="mono">Mitigations[]</span>. Anything that reads or writes <span class="mono">Preventions[]</span> needs updating once this version is adopted.
+    </div>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Record</th><th>Change</th><th>What it does</th></tr>
+      <tr class="row-major"><td class="name">Risk</td><td class="mono ver"><span class="from">1.2.0</span><span class="arrow">→</span>2.0.0</td><td class="desc">One list of response actions instead of two. Linking to a planned Wellbore is now optional.</td></tr>
+      <tr class="row-upd"><td class="name">Well</td><td class="mono ver"><span class="from">1.4.0</span><span class="arrow">→</span>1.5.0</td><td class="desc">Adds the Well Reference Point, the fixed tie-in point for the well's first survey and plan.</td></tr>
+    </table>
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — Risk &amp; Well</summary>
+      <div class="depth-body">
+        <p><b>Risk</b> 2.0.0 makes these changes:</p>
+        <ul>
+          <li><span class="mono">data.Preventions[]</span> and all its sub-properties (<span class="mono">Name</span>, <span class="mono">Description</span>, <span class="mono">Status</span>, <span class="mono">Responsibles[]</span>, <span class="mono">ResponsiblesByReferenceIDs[]</span>, <span class="mono">Deadline</span>, <span class="mono">UpdateDate</span>) are removed.</li>
+          <li><span class="mono">data.Mitigations[]</span> is now indexed as <span class="mono">nested</span>.</li>
+          <li><span class="mono">data.WellboreID</span> is no longer required.</li>
+        </ul>
+        <p>A schema-upgrade specification (1.2.0 → 2.0.0) is registered so that records can be carried forward.</p>
+        <p><b>Well</b> 1.5.0 adds <span class="mono">data.WellReferencePoint</span>. The WRP is a permanent, recoverable, fixed point of deepest horizontal constraint, commonly the well's position at seabed or ground level. It records:</p>
+        <ul>
+          <li>the WRP type (e.g. Vertical, Slant Rig, Curved Conductor)</li>
+          <li>TVD/MD relative to the well's default vertical measurement</li>
+          <li>inclination and azimuth</li>
+          <li>northing, easting and offset coordinates</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 3. RIG ============ -->
+  <div class="category" id="sec3">
+    <div class="category-head">
+      <span class="idx mono">3</span>
+      <h2>Rig</h2>
+      <span class="count">11 new equipment types</span>
+    </div>
+    <p class="category-intro">M27.0 introduced equipment tracking with derricks, pumps and risers. M27.1 adds eleven more equipment types and widens EquipmentInventory so it can track all of them.</p>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Record</th><th>Change</th><th>What it does</th></tr>
+      <tr class="row-new"><td class="name" style="white-space:normal;">RigAnchor, RigBoiler, RigCementUnit, RigCentrifuge, RigCoilTubingReel, RigCrane, RigDegasser, RigHydrocyclone, RigMotor, RigPit, RigShaker</td><td><span class="tag new">New</span></td><td class="desc">Eleven rig-equipment types. Each has its own physical and rated properties and builds on the shared <span class="mono">AbstractUnitEquipment</span> fragment.</td></tr>
+      <tr class="row-upd"><td class="name">EquipmentInventory</td><td class="mono ver"><span class="from">1.0.0</span><span class="arrow">→</span>1.1.0</td><td class="desc">Can now reference all eleven new equipment types and RigRiser, as well as RigDerrick and RigPump.</td></tr>
+      <tr class="row-upd"><td class="name">RigPump</td><td class="mono ver"><span class="from">1.0.0</span><span class="arrow">→</span>1.1.0</td><td class="desc">Now also uses the shared <span class="mono">AbstractUnitEquipment</span> fragment, in line with the new types.</td></tr>
+      <tr class="row-new"><td class="name">CoilTubingWrapType</td><td><span class="tag new">New</span></td><td class="desc">Reference list of 4 ways tubing is spooled onto a reel. Used by RigCoilTubingReel.</td></tr>
+    </table>
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — rig equipment</summary>
+      <div class="depth-body">
+        <p>Each new type is <span class="mono">osdu:wks:master-data--Rig…:1.0.0</span> with a small set of equipment-specific properties. For example, <b>RigHydrocyclone</b> adds <span class="mono">IsMudCleaner</span>, <span class="mono">FlowCapacity</span>, <span class="mono">AmountOfCones</span>, <span class="mono">ConeType</span> and <span class="mono">ConeSize</span>.</p>
+        <p><b>EquipmentInventory</b> 1.0.0 only let <span class="mono">EquipmentID</span> reference <span class="mono">RigDerrick</span> or <span class="mono">RigPump</span>. In 1.1.0 it can also reference the eleven new types and <span class="mono">RigRiser</span>.</p>
+        <p>The Rig Worked Example now has a full example record for every new type. It also documents <span class="mono">RigSurfaceEquipment</span> as planned but not yet published.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 4. PORTAL & DATA QUALITY ============ -->
+  <div class="category" id="sec4">
+    <div class="category-head">
+      <span class="idx mono">4</span>
+      <h2>Data Definitions Portal &amp; Schema Data Quality</h2>
+      <span class="count">4 new automated processes</span>
+    </div>
+    <p class="category-intro">This isn't schema content. It's new, published visibility into the state of the schemas and what each release delivers.</p>
+
+    <div class="callout" style="border-left-color:var(--accent-upd);">
+      <span class="k" style="color:var(--accent-upd);">New: Data Definitions portal</span>
+      One <a href="https://osdu.projects.opengroup.org/subcommittees/data-def/work-products/schema/" style="color:inherit;">GitLab Pages portal</a> with three tiles: the <b>Schema Data Quality dashboard</b>, a placeholder <b>Schema Graph Model</b> view (a demo from the in-progress Logical Data Model proof of concept, pending approval), and the <b>Release Reports</b> index, which lists this report. It rebuilds automatically on every master pipeline.
+    </div>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Capability</th><th></th><th>What it does</th></tr>
+      <tr class="row-new"><td class="name">Schema data quality checks</td><td><span class="tag new">New</span></td><td class="desc">Flags preferred schemas that still reference an out-of-date fragment version, and tracks schema lifecycle status (DEVELOPMENT / PUBLISHED / OBSOLETE) over time.</td></tr>
+      <tr class="row-new"><td class="name">DQ dashboard</td><td><span class="tag new">New</span></td><td class="desc">Interactive dashboard showing the stale-fragment trend, compliance score and status distribution. It regenerates on every check run and every Pages build.</td></tr>
+      <tr class="row-new"><td class="name">Release Reports</td><td><span class="tag new">New</span></td><td class="desc">One curated report per milestone, with an index that discovers new reports automatically and a fact extractor that seeds each draft from the change report.</td></tr>
+      <tr class="row-new"><td class="name">Pages publishing pipeline</td><td><span class="tag new">New</span></td><td class="desc">Builds the whole portal on master only. Pushes to the LDM proof-of-concept branch trigger a rebuild, so the graph model tile stays current.</td></tr>
+    </table>
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — the DQ toolchain &amp; portal build</summary>
+      <div class="depth-body">
+        <p><span class="mono">SchemaFragmentStalenessChecker.py</span> and <span class="mono">SchemaStatusChecker.py</span> are combined by <span class="mono">SchemaDataQualityReporter.py</span> and run from OsduApp's new <b>Run schema data quality checks</b> menu item. Each run does four things:</p>
+        <ul>
+          <li>scans the preferred schemas once</li>
+          <li>appends a timestamped snapshot to <span class="mono">_doc/SchemaDataQuality/DataQualityLog.json</span></li>
+          <li>refreshes the Markdown trend report with Mermaid charts</li>
+          <li>regenerates a <span class="mono">DataQuality:2.0.0</span>-conformant record, <span class="mono">LatestDataQuality.json</span></li>
+        </ul>
+        <p><span class="mono">Generate_DQ_Dashboard.py</span> renders the HTML dashboard from the log. Because the Pages job also invokes it, the local preview file stays gitignored.</p>
+        <p><span class="mono">PortalBuilder.py</span> assembles the portal page. <span class="mono">ReleaseReportIndexBuilder.py</span> builds the newest-first report index. <span class="mono">ReleaseReportFactExtractor.py</span> pulls structured facts (schema names and versions, breaking changes, migration-guide counts) out of a <span class="mono">ChangeReport.md</span> milestone section to seed the drafting step.</p>
+        <p>The <span class="mono">.gitlab-ci.yml</span> <span class="mono">pages</span> job is restricted to <span class="mono">master</span>, so a feature-branch push can't overwrite the shared site. A <span class="mono">trigger_pages_rebuild</span> job lets pushes to <span class="mono">883-logical-data-models-linkml</span> start a fresh master pipeline.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 5. TOOLING ============ -->
+  <div class="category" id="sec5">
+    <div class="category-head">
+      <span class="idx mono">5</span>
+      <h2>Schema-Building Tooling</h2>
+      <span class="count">Security · Resiliency · ~28% faster</span>
+    </div>
+    <p class="category-intro">This isn't schema content either. These are fixes to the internal tool that generates and validates every schema above. A full generation run now takes about 715s instead of about 1,000s, with identical output.</p>
+
+    <div class="callout">
+      <span class="k">Security fix — already applied</span>
+      The tool's download routine was still turning off certificate verification for the <b>whole process</b> while it fetched reference data. It now uses a verified connection scoped to each request. When a server doesn't send its full certificate chain, the tool recovers the missing intermediate certificate safely instead of skipping the check. No published schema content was affected.
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — resiliency &amp; performance</summary>
+      <div class="depth-body">
+        <ul>
+          <li><b>SSL</b> — <span class="mono">Utility.url_retrieve_file()</span> no longer sets <span class="mono">ssl._create_default_https_context</span> globally. It uses a request-scoped, verified <span class="mono">ssl.SSLContext</span>, and recovers a missing intermediate certificate from the leaf certificate's Authority Information Access extension.</li>
+          <li><b>Fail fast</b> — an upfront Java availability check means a missing Java runtime is reported before the long generation stages start.</li>
+          <li><b>Windows file locks</b> — <span class="mono">remove_with_retry()</span> and <span class="mono">move_with_retry()</span> stop a transient antivirus or indexer lock from aborting a run.</li>
+          <li><b>Performance</b> — PlantUML diagrams are rendered in batches of up to 100 per JVM launch. The JVM comparisons in BreakingChangeDetection and SchemaUpgradeConfigurationTester run in parallel. Temporary spec-file names were fixed so concurrent migrations no longer collide. New <span class="mono">Scripts/Timing.py</span> instrumentation (<span class="mono">timings-report.md</span>) makes future regressions visible.</li>
+          <li><b>Line endings</b> — a repo-wide <span class="mono">.gitattributes</span> (<span class="mono">* text=auto eol=lf</span>, with explicit <span class="mono">binary</span> declarations) handles line endings at commit and checkout. The root cause is also fixed: <span class="mono">newline="\n"</span> was added to all 29 text-mode writes across 15 generator scripts. 20 previously CRLF-committed files were renormalised, with line endings only and no content change.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 6. REFERENCE VALUES ============ -->
+  <div class="category" id="sec6">
+    <div class="category-head">
+      <span class="idx mono">6</span>
+      <h2>Reference Values</h2>
+      <span class="count">The vocabulary behind §1 &amp; §3</span>
+    </div>
+    <p class="category-intro">A small reference-data release: <b>6 new reference values</b>, one new code list, and the automatic-upgrade "wiring" for this milestone's version changes.</p>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Code list</th><th>Values</th><th>Governance</th><th>Backs</th></tr>
+      <tr class="row-new"><td class="name">CoilTubingWrapType <span class="tag new">New list</span></td><td class="num mono">4</td><td>OPEN</td><td class="desc">RigCoilTubingReel (<a href="#sec3">§3</a>): LevelWind, Random, FigureEight, Helical</td></tr>
+      <tr class="row-upd"><td class="name">HeaderKeyName</td><td class="num mono">+2</td><td>—</td><td class="desc">Seismic trace header mapping (<a href="#sec1">§1</a>): OFFSET, AZIMUTH</td></tr>
+      <tr class="row-total"><td class="name">Total</td><td class="num mono">6</td><td colspan="2" class="desc">new reference values this milestone</td></tr>
+    </table>
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — schema-upgrade wiring</summary>
+      <div class="depth-body">
+        <p>Four workbooks were refreshed as the "wiring" that routes this milestone's automatic schema upgrades, not as domain content: <span class="mono">PreferredSchemaVersion</span>, <span class="mono">ReferenceValueUpgradeLookUp</span>, <span class="mono">SchemaUpgradeChain</span> and <span class="mono">SchemaUpgradeSpecification</span>. Together they register the new kinds (e.g. the eleven rig-equipment types) and add upgrade specifications for EquipmentInventory 1.1.0, RigPump 1.1.0 and Risk 2.0.0, so existing records can be carried forward automatically.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ 7. DOCUMENTATION & GUIDES ============ -->
+  <div class="category" id="sec7">
+    <div class="category-head">
+      <span class="idx mono">7</span>
+      <h2>Documentation &amp; Guides</h2>
+      <span class="count">10 migration guides · 1 worked example</span>
+    </div>
+    <p class="category-intro">Every version upgrade and reference-data change above comes with a consumer-facing explanation.</p>
+
+    <div class="table-wrap">
+    <table class="ledger">
+      <tr><th>Deliverable</th><th>Count</th><th>What it's for</th></tr>
+      <tr class="row-new"><td class="name">M27.1 Migration Guides</td><td class="mono num">10</td><td class="desc">One per changed schema or reference-data list. Each explains exactly what changed and how to adapt.</td></tr>
+      <tr class="row-upd"><td class="name">Rig Worked Example</td><td class="mono num">Extended</td><td class="desc">A full example record for each of the eleven new equipment types (<a href="#sec3">§3</a>).</td></tr>
+      <tr class="row-new"><td class="name">Release Reports guide</td><td class="mono num">New</td><td class="desc">The authoring process behind this report (<a href="#sec4">§4</a>).</td></tr>
+      <tr class="row-upd"><td class="name">Usage Guide chapters</td><td class="mono num">6 updated</td><td class="desc">Frame of Reference, Provenance, Seismic Projects, Glossary, Proposals, Known Issues: cross-references updated for the new and changed schemas.</td></tr>
+    </table>
+    </div>
+
+    <details class="depth">
+      <summary>Technical detail — migration guide coverage</summary>
+      <div class="depth-body">
+        <p><b>master-data</b>: EquipmentInventory, RigPump, Risk (breaking), Well.</p>
+        <p><b>work-product-component</b>: SeismicTraceData.</p>
+        <p><b>reference-data</b> (content changes only, schema unchanged): HeaderKeyName, PreferredSchemaVersion, ReferenceValueUpgradeLookUp, SchemaUpgradeChain, SchemaUpgradeSpecification.</p>
+        <p>These guides are written by hand and focus on what changed. They're separate from the E-R reference pages and diagrams that are regenerated for every published schema version (see Appendix).</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ============ APPENDIX: REPO FOOTPRINT ============ -->
+  <h2 class="appendix" id="appendix">Appendix — Repo-Wide File Footprint <span class="count mono">881 files</span></h2>
+  <p class="theme-note">Measured from the M27.1 baseline reset (<span class="mono">d6cc09ee</span>) to <span class="mono">aa30db5a</span>. Most of the count is diagrams and documentation regenerated across previously published schema versions, not new content. It's included for completeness, not for review. 79 further files (tooling scripts, CI configuration and portal assets) fall outside the content sections below.</p>
+  <div class="table-wrap">
+  <table class="ledger">
+    <tr><th>Section</th><th class="num">Files</th><th>What changed</th></tr>
+    <tr class="row-upd"><td class="name">Authoring Schemas</td><td class="mono num">27</td><td class="desc">Source-of-truth definitions for §1–3 above</td></tr>
+    <tr class="row-upd"><td class="name">Generated Schemas</td><td class="mono num">29</td><td class="desc">Machine-derived variants and registry refresh</td></tr>
+    <tr class="row-upd"><td class="name">Examples, Worked Examples</td><td class="mono num">69</td><td class="desc">New example records and the Rig Worked Example (see <a href="#sec7">§7</a>)</td></tr>
+    <tr class="row-major"><td class="name">E-R &amp; Documentation</td><td class="mono num">634</td><td class="desc">Diagrams and docs regenerated repo-wide, plus a new change-report snapshot</td></tr>
+    <tr class="row-upd"><td class="name">Reference Data</td><td class="mono num">22</td><td class="desc">The reference-values workstream (see <a href="#sec6">§6</a>)</td></tr>
+    <tr class="row-upd"><td class="name">Usage Guide</td><td class="mono num">21</td><td class="desc">Migration guides, chapters and release reports (see <a href="#sec7">§7</a>)</td></tr>
+  </table>
+  </div>
+
+  <footer>
+    <div>Publishes to the <b>Community Repo</b> <span class="mono">osdu/data/data-definitions</span> · not yet staged</div>
+    <div class="status pending">Pending — draft on <span class="mono">M27.1-working</span> at <span class="mono">aa30db5a</span></div>
+  </footer>
+
+</div>
+
+</body>
+</html>

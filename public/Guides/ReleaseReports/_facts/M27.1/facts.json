@@ -1,0 +1,163 @@
+{
+  "milestone": "M27.1",
+  "milestone_type": null,
+  "heading": "M27.1 Tag v0.30.1",
+  "after_link": "./_ChangeReports/ChangeReport-2026-07-17.md",
+  "source_file": "E-R/ChangeReport.md",
+  "categories": [
+    {
+      "index": 1,
+      "title": "Process & Script Improvements \u2014 Data Definitions Portal & Schema Data Quality Tooling",
+      "entries": [],
+      "migration_guide_links": [],
+      "reference_value_hints": [],
+      "raw_text_file": "01-Process-Script-Improvements-Data-Definitions-Portal-Schema-Data-Quality-Tooling.md"
+    },
+    {
+      "index": 2,
+      "title": "Subsurface",
+      "entries": [
+        {
+          "entity": "HeaderKeyName",
+          "version": "1.0.0",
+          "verb": "Updated",
+          "path": "../E-R/reference-data/HeaderKeyName.1.0.0.md",
+          "display": "HeaderKeyName.1.0.0",
+          "breaking": false
+        },
+        {
+          "entity": "SeismicTraceData",
+          "version": "1.8.0",
+          "verb": "Updated",
+          "path": "../E-R/work-product-component/SeismicTraceData.1.8.0.md",
+          "display": "SeismicTraceData.1.8.0",
+          "breaking": false
+        }
+      ],
+      "migration_guide_links": [
+        "Guides/MigrationGuides/M27.1/reference-data--HeaderKeyName.1.0.0.md",
+        "Guides/MigrationGuides/M27.1/work-product-component--SeismicTraceData.1.7.0.md"
+      ],
+      "reference_value_hints": [],
+      "raw_text_file": "02-Subsurface.md"
+    },
+    {
+      "index": 3,
+      "title": "Schema Composer Tooling \u2014 SSL Resiliency & Performance",
+      "entries": [],
+      "migration_guide_links": [],
+      "reference_value_hints": [],
+      "raw_text_file": "03-Schema-Composer-Tooling-SSL-Resiliency-Performance.md"
+    },
+    {
+      "index": 4,
+      "title": "Well",
+      "entries": [
+        {
+          "entity": "Well",
+          "version": "1.5.0",
+          "verb": "Added",
+          "path": "../E-R/master-data/Well.1.5.0.md",
+          "display": "osdu:wks:master-data--Well:1.5.0",
+          "breaking": false
+        },
+        {
+          "entity": "Risk",
+          "version": "2.0.0",
+          "verb": "Added",
+          "path": "../E-R/master-data/Risk.2.0.0.md",
+          "display": "osdu:wks:master-data--Risk:2.0.0",
+          "breaking": true
+        }
+      ],
+      "migration_guide_links": [
+        "Guides/MigrationGuides/M27.1/master-data--Risk.1.2.0.md",
+        "Guides/MigrationGuides/M27.1/master-data--Well.1.4.0.md"
+      ],
+      "reference_value_hints": [],
+      "raw_text_file": "04-Well.md"
+    },
+    {
+      "index": 5,
+      "title": "Rig",
+      "entries": [
+        {
+          "entity": "EquipmentInventory",
+          "version": "1.1.0",
+          "verb": "Added",
+          "path": "../E-R/master-data/EquipmentInventory.1.1.0.md",
+          "display": "osdu:wks:master-data--EquipmentInventory:1.1.0",
+          "breaking": false
+        },
+        {
+          "entity": "RigHydrocyclone",
+          "version": "1.0.0",
+          "verb": "Added",
+          "path": "../E-R/master-data/RigHydrocyclone.1.0.0.md",
+          "display": "osdu:wks:master-data--RigHydrocyclone:1.0.0",
+          "breaking": false
+        },
+        {
+          "entity": "CoilTubingWrapType",
+          "version": "1.0.0",
+          "verb": "Added",
+          "path": "../E-R/reference-data/CoilTubingWrapType.1.0.0.md",
+          "display": "osdu:wks:reference-data--CoilTubingWrapType:1.0.0",
+          "breaking": false
+        }
+      ],
+      "migration_guide_links": [
+        "Guides/MigrationGuides/M27.1/master-data--RigPump.1.0.0.md"
+      ],
+      "reference_value_hints": [
+        {
+          "entity": "CoilTubingWrapType",
+          "count": 4
+        }
+      ],
+      "raw_text_file": "05-Rig.md"
+    }
+  ],
+  "totals": {
+    "new_schema_count": 5,
+    "version_upgrade_count": 2,
+    "breaking_change_count": 1,
+    "migration_guide_inline_link_count": 5,
+    "migration_guide_file_count": 10,
+    "reference_value_hint_total": 4
+  },
+  "migration_guide_files": {
+    "folder": "Guides/MigrationGuides/M27.1",
+    "files": [
+      "master-data--EquipmentInventory.1.0.0.md",
+      "master-data--RigPump.1.0.0.md",
+      "master-data--Risk.1.2.0.md",
+      "master-data--Well.1.4.0.md",
+      "reference-data--HeaderKeyName.1.0.0.md",
+      "reference-data--PreferredSchemaVersion.1.0.0.md",
+      "reference-data--ReferenceValueUpgradeLookUp.2.0.0.md",
+      "reference-data--SchemaUpgradeChain.1.0.0.md",
+      "reference-data--SchemaUpgradeSpecification.1.0.0.md",
+      "work-product-component--SeismicTraceData.1.7.0.md"
+    ]
+  },
+  "notes": [
+    "Counts and entries here are a best-effort, mechanically-extracted starting point -- verify against each category's raw_text_file before publishing. Cross-cutting rollups (Reference Values, Documentation & Guides sections in the template) and the executive-summary framing are not generated here by design; see Guides/ReleaseReports/README.md Step 2."
+  ],
+  "repo_footprint": {
+    "from_ref": "d6cc09ee9a",
+    "to_ref": "HEAD",
+    "total_files": 881,
+    "by_bucket": {
+      "Authoring Schemas": 27,
+      "Schema Registration Resources": 0,
+      "Generated Schemas": 29,
+      "Examples, Worked Examples": 69,
+      "E-R & Documentation": 634,
+      "Reference Data": 22,
+      "Usage Guide": 21,
+      "OSDU Standard Records": 0
+    },
+    "unclassified": 79
+  }
+}

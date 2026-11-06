@@ -1,0 +1,94 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+'skinparam handwritten true
+skinparam responseMessageBelowArrow true
+autonumber
+
+actor "Platform\nOperator" as operator
+box "Schema Upgrade\nService" #gold
+actor "Schema Upgrade\nService" as service
+end box
+box "Storage Records" #LightBlue
+database "\nSchemaUpgrade\nSpecification" as upgrade
+database "\nSchemaUpgrade\nChain" as chain
+end box
+box "Service Instance\nCache" #gold
+collections "Kind-to-JOLT\noperations list\nlook-up table" as lut
+end box
+box "Storage Records" #LightBlue
+database "Storage Records\nfor kind(s)\nto be upgraded" as records
+end box
+box "Search Service" #lightgreen
+actor "\nSearch\n" as search
+end box
+
+operator --> service : Invoke with\ntarget kind id
+activate service
+service --> upgrade : Does an upgrade\nspecification exist\nfor the requested\nkind?\n[Storage GET /record]
+activate upgrade
+upgrade --> service : Return with\nSchemaUpgradeSpecification
+deactivate upgrade
+
+'service --> operator : Return on 404
+'happy path only
+
+service --> chain : Get SchemaUpgradeChain\nfor target kind id\n[Storage GET /record]
+activate chain
+chain --> service : Return the list of\ndata.SourceKinds[]
+deactivate chain
+
+loop "over kinds in data.SourceKinds[]\n(The source kind list is ordered),\nstarting from index 1."
+    service --> upgrade : Get\nSchemaUpgradeSpecification\nfor target id\n[Storage GET /record]
+    activate service
+    activate upgrade
+    upgrade --> service : return\nSchemaUpgradeSpecification\nfor kind
+    deactivate upgrade
+    service --> service : Extract the\nJoltConfigurations\n<b><i>new operations</i></b>
+    loop "over source_kind in data.SourceKinds[]"
+        service --> lut : get the list of <b><i>previous operations</i></b> for key source_kind
+        activate lut
+        activate service
+        lut --> service : return JOLT operations list or empty list
+        deactivate lut
+        service --> service : append the\n<b><i>new operations</i></b>\nto the\n<b><i>previous operations</i></b>
+        service --> lut : update JOLT operations dictionary for key source_kind
+        activate lut
+        lut --> service
+        deactivate lut
+        deactivate service
+    end
+    deactivate service
+end
+
+group "Start processing records for Schema Upgrade"
+    loop Search for records by kind in chunks (query with cursor)
+        service --> search : get a chunk of record id to process
+        activate service
+        activate search
+        search --> service : returns list of record ids
+        deactivate search
+        loop "for each id in ids"
+            service --> records : get record by id
+            activate service
+            activate records
+            records --> service : return record
+            deactivate records
+            service --> service : extract kind
+            service --> lut : get JOLT operations list by key kind
+            activate lut
+            lut --> service
+            deactivate lut
+            service --> service : execute JOLT\ntransformation on\nrecord
+            service --> records : update the record using Storage PUT /records
+            activate records
+            records --> service
+            deactivate records
+            deactivate service
+        end
+        deactivate service
+    end
+end
+deactivate service
+service --> operator : Report status
+
+@enduml

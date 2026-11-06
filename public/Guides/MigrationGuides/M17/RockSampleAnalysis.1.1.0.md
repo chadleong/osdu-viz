@@ -1,0 +1,99 @@
+<a name="TOC"></a>
+
+[[_TOC_]]
+
+# Migration to `osdu:wks:work-product-component--RockSampleAnalysis:1.2.0`
+
+Changes between [osdu:wks:work-product-component--RockSampleAnalysis:1.1.0](../../../E-R/work-product-component/RockSampleAnalysis.1.1.0.md) and [osdu:wks:work-product-component--RockSampleAnalysis:1.2.0](../../../E-R/work-product-component/RockSampleAnalysis.1.2.0.md) are listed below.
+
+[//]: # "Please do not add any comments below this line. The following lines are auto-generated."
+
+# Schema Changes
+
+|Cumulative Name|Value Type|Title|Description|Migration/Recommendation|
+|-----|-----|-----|-----|-----|
+|data.Datasets[]|string|Datasets|The record id, which identifies this OSDU File or dataset resource.|Changed|
+|data.DDMSDatasets[]|string|DDMS Datasets|An array of references to content in Domain Data Management Services represented by this work-product-component. The references are formed as URI following https://www.rfc-editor.org/rfc/rfc3986#page-16. This property is exclusively populated by DDMSs. If a work-product-component is represented in more than one DDMS, DDMSs are obliged to find the specific reference by inspecting the URI's authority values matching the DDMS id.|Added property|
+|_data.Artefacts[]_|_object_|_Artefacts_|_An array of Artefacts - each artefact has a Role, Resource tuple. An artefact is distinct from the file, in the sense certain valuable information is generated during loading process (Artefact generation process). Examples include retrieving location data, performing an OCR which may result in the generation of artefacts which need to be preserved distinctly_|Changed|
+|data.Artefacts[].RoleID &rarr; [ArtefactRole](../../../E-R/reference-data/ArtefactRole.1.0.0.md)|string|Role Id|The record id of this artefact's role.|Changed|
+|data.Artefacts[].ResourceKind|string|Resource Kind|The kind or schema ID of the artefact. Resolvable with the Schema Service.|Changed|
+|data.Artefacts[].ResourceID|string|Resource Id|The SRN which identifies this OSDU Artefact resource.|Changed|
+|data.IsExtendedLoad|boolean|Is Extended Load|A flag that indicates if the work product component is undergoing an extended load.  It reflects the fact that the work product component is in an early stage and may be updated before finalization.|Changed|
+|data.IsDiscoverable|boolean|Is Discoverable|A flag that indicates if the work product component is searchable, which means covered in the search index.|Changed|
+|_data.TechnicalAssurances[]_|_object_|_AbstractTechnicalAssurance_|_Describes a record's overall suitability for general business consumption based on data quality. Clarifications: Since Certified is the highest classification of suitable quality, any further change or versioning of a Certified record should be carefully considered and justified. If a Technical Assurance value is not populated then one can assume the data has not been evaluated or its quality is unknown (=Unevaluated). Technical Assurance values are not intended to be used for the identification of a single "preferred" or "definitive" record by comparison with other records. Fragment Description: Describes a record's overall suitability for general business consumption based on level of trust._|Changed|
+|data.TechnicalAssurances[].TechnicalAssuranceTypeID &rarr; [TechnicalAssuranceType](../../../E-R/reference-data/TechnicalAssuranceType.1.0.0.md)|string|Technical Assurance Type ID|Describes a record's overall suitability for general business consumption based on data quality. Clarifications: Since Certified is the highest classification of suitable quality, any further change or versioning of a Certified record should be carefully considered and justified. If a Technical Assurance value is not populated then one can assume the data has not been evaluated or its quality is unknown (=Unevaluated). Technical Assurance values are not intended to be used for the identification of a single "preferred" or "definitive" record by comparison with other records.|Changed|
+|_data.TechnicalAssurances[].Reviewers[]_|_object_|_Abstract Contact_|_The individuals, or roles, that reviewed and determined the technical assurance value Fragment Description: An object with properties that describe a specific person or other point-of-contact (like an email distribution list) that is relevant in this context (like a given data set or business project). The contact specified may be either internal or external to the organisation (something denoted via the Organisation object that is referenced). Note that some properties contain personally identifiable information, so it might not be appropriate to populate all properties in all scenarios._|Changed|
+|data.TechnicalAssurances[].Reviewers[].EmailAddress|string|Email Address|Contact email address. Property may be left empty where it is inappropriate to provide personally identifiable information.|Changed|
+|data.TechnicalAssurances[].Reviewers[].PhoneNumber|string|Phone Number|Contact phone number. Property may be left empty where it is inappropriate to provide personally identifiable information.|Changed|
+|data.TechnicalAssurances[].Reviewers[].RoleTypeID &rarr; [ContactRoleType](../../../E-R/reference-data/ContactRoleType.1.0.0.md)|string|Role Type ID|The identifier of a reference value for the role of the contact within the associated organisation, such as Account owner, Sales Representative, Technical Support, Project Manager, Party Chief, Client Representative, Senior Observer.|Changed|
+|data.TechnicalAssurances[].Reviewers[].DataGovernanceRoleTypeID &rarr; [DataGovernanceRoleType](../../../E-R/reference-data/DataGovernanceRoleType.1.0.0.md)|string|DataGovernanceRoleTypeID|The data governance role assigned to this contact if and only if the context has a data governance role (in context of TechnicalAssurance). The value is kept absent in all other cases.|Added property|
+|data.TechnicalAssurances[].Reviewers[].WorkflowPersonaTypeID &rarr; [WorkflowPersonaType](../../../E-R/reference-data/WorkflowPersonaType.1.0.1.md)|string|WorkflowPersonaTypeID|The persona in context of workflows associated with this contact, as used in TechnicalAssurance.|Added property|
+|data.TechnicalAssurances[].Reviewers[].Comment|string|Comment|Additional information about the contact|Changed|
+|data.TechnicalAssurances[].Reviewers[].OrganisationID &rarr; [Organisation](../../../E-R/master-data/Organisation.1.1.0.md)|string|Organisation ID|Reference to the company the contact is associated with.|Changed|
+|data.TechnicalAssurances[].Reviewers[].Name|string|Name|Name of the individual contact. Property may be left empty where it is inappropriate to provide personally identifiable information.|Changed|
+|_data.TechnicalAssurances[].AcceptableUsage[]_|_object_|_AcceptableUsage_|_List of workflows and/or personas that the technical assurance value is valid for (e.g., This data is trusted for Seismic Processing) Fragment Description: Describes the workflows and/or personas that the technical assurance value is valid for (e.g., This data has a technical assurance property of "trusted" and it is suitable for Seismic Interpretation)._|Changed|
+|data.TechnicalAssurances[].AcceptableUsage[].WorkflowUsage &rarr; [WorkflowUsageType](../../../E-R/reference-data/WorkflowUsageType.1.0.1.md)|string|Workflow Usage|Name of the business activities, processes, and/or workflows that the record is technical assurance value is valid for.|Changed|
+|data.TechnicalAssurances[].AcceptableUsage[].WorkflowPersona &rarr; [WorkflowPersonaType](../../../E-R/reference-data/WorkflowPersonaType.1.0.1.md)|string|Workflow Persona|Name of the role or personas that the record is technical assurance value is valid for.|Changed|
+|data.TechnicalAssurances[].AcceptableUsage[].QualityDataRuleSetID &rarr; [QualityDataRuleSet](../../../E-R/reference-data/QualityDataRuleSet.2.0.0.md)|string|Quality Data Rule Set ID|The QualityDataRuleSet, which had to pass successfully to achieve this level of technical assurance.|Added property|
+|data.TechnicalAssurances[].AcceptableUsage[].ValueChainStatusTypeID &rarr; [ValueChainStatusType](../../../E-R/reference-data/ValueChainStatusType.1.0.0.md)|string|Value Chain Status Type ID|The stage of business where the record is acceptable for workflow usage.|Added property|
+|_data.TechnicalAssurances[].UnacceptableUsage[]_|_object_|_UnacceptableUsage_|_List of workflows and/or personas that the technical assurance value is not valid for (e.g., This data is not trusted for seismic interpretation) Fragment Description: Describes the workflows and/or personas that the technical assurance value is not valid for (e.g., This data has a technical assurance property of "trusted", but it is not suitable for Seismic Interpretation)._|Changed|
+|data.TechnicalAssurances[].UnacceptableUsage[].WorkflowUsage &rarr; [WorkflowUsageType](../../../E-R/reference-data/WorkflowUsageType.1.0.1.md)|string|Workflow Usage|Name of the business activities, processes, and/or workflows that the record is technical assurance value is not valid for.|Changed|
+|data.TechnicalAssurances[].UnacceptableUsage[].WorkflowPersona &rarr; [WorkflowPersonaType](../../../E-R/reference-data/WorkflowPersonaType.1.0.1.md)|string|Workflow Persona|Name of the role or personas that the record is technical assurance value is not valid for.|Changed|
+|data.TechnicalAssurances[].UnacceptableUsage[].QualityDataRuleSetID &rarr; [QualityDataRuleSet](../../../E-R/reference-data/QualityDataRuleSet.2.0.0.md)|string|Quality Data Rule Set ID|The QualityDataRuleSet, which did not pass successfully to achieve this level of technical assurance.|Added property|
+|data.TechnicalAssurances[].UnacceptableUsage[].ValueChainStatusTypeID &rarr; [ValueChainStatusType](../../../E-R/reference-data/ValueChainStatusType.1.0.0.md)|string|Value Chain Status Type ID|The stage of business where the record is not acceptable for workflow usage.|Added property|
+|data.TechnicalAssurances[].EffectiveDate|string|Effective Date|Date when the technical assurance determination for this record has taken place|Changed|
+|data.TechnicalAssurances[].Comment|string|Comment|Any additional context to support the determination of technical assurance|Changed|
+|_data.NameAliases[]_|_object_|_AbstractAliasNames_|_Alternative names, including historical, by which this work-product-component is/has been known (it should include all the identifiers). Fragment Description: A list of alternative names for an object.  The preferred name is in a separate, scalar property.  It may or may not be repeated in the alias list, though a best practice is to include it if the list is present, but to omit the list if there are no other names.  Note that the abstract entity is an array so the $ref to it is a simple property reference._|Added property|
+|data.NameAliases[].AliasName|string|Alias Name|Alternative Name value of defined name type for an object.|Added property|
+|data.NameAliases[].AliasNameTypeID &rarr; [AliasNameType](../../../E-R/reference-data/AliasNameType.1.0.0.md)|string|Alias Name Type Id|A classification of alias names such as by role played or type of source, such as regulatory name, regulatory code, company code, international standard name, etc.|Added property|
+|data.NameAliases[].DefinitionOrganisationID &rarr; [StandardsOrganisation](../../../E-R/reference-data/StandardsOrganisation.1.0.0.md) &rarr; [Organisation](../../../E-R/master-data/Organisation.1.1.0.md)|string|Definition Organisation Id|The StandardsOrganisation (reference-data) or Organisation (master-data) that provided the name (the source).|Added property|
+|data.NameAliases[].EffectiveDateTime|string|Effective Date Time|The date and time when an alias name becomes effective.|Added property|
+|data.NameAliases[].TerminationDateTime|string|Termination Date Time|The data and time when an alias name is no longer in effect.|Added property|
+|data.ActivityTemplateID &rarr; [ActivityTemplate](../../../E-R/master-data/ActivityTemplate.1.0.0.md)|string|Activity Template ID|The relation to the ActivityTemplate carrying expected parameter definitions and default values.|Changed|
+|data.ParentProjectID|string|Parent Project ID|The relationship to a parent project acting as a parent activity.|Changed|
+|data.ParentActivityID|string|Parent Activity ID|The relationship to a parent activity.|Changed|
+|_data.Parameters[]_|_object_|_AbstractActivityParameter_|_General parameter value used in one instance of activity.  Includes reference to data objects which are inputs and outputs of the activity. Fragment Description: General parameter value used in one instance of activity. [Without inheritance, combined specializations.]_|Changed|
+|data.Parameters[].Title|string|Title|Name of the parameter, used to identify it in the activity. It must have an equivalent in the ActivityTemplate parameters.|Changed|
+|data.Parameters[].Index|integer|Index|When parameter is an array, used to indicate the index in the array.|Changed|
+|data.Parameters[].Selection|string|Selection|Textual description about how this parameter was selected.|Changed|
+|_data.Parameters[].Keys[]_|_object_|_Parameter Key_|_A nested array describing keys used to identify a parameter value. When multiple values are provided for a given parameter, the key provides a way to identify the parameter through its association with an object, a time index or a parameter array member via ParameterKey value. Fragment Description: Abstract class describing a key used to identify a parameter value. When multiple values are provided for a given parameter, provides a way to identify the parameter through its association with an object, a time index, an integer...  [Without inheritance, combined specializations.] Note: floating point numbers are not supported as key values; the numbers have to be formatted as strings for robust equality operations, which are necessary for keys._|Changed|
+|data.Parameters[].Keys[].ObjectParameterKey|string|Object Parameter Key|Relationship to an object ID, which acts as the parameter.|Changed|
+|data.Parameters[].Keys[].TimeIndexParameterKey|string|Time Index Parameter Key|The time index acting as parameter key value.|Changed|
+|data.Parameters[].Keys[].ParameterKey|string|Internal Parameter Key|The key name, which establishes an association between parameters.|Changed|
+|data.Parameters[].Keys[].IntegerParameterKey|integer|Integer Parameter Key|Integer value from "ParameterKey" parameter, associated with this parameter. Example: {"ParameterKey": "index", "StringParameterKey: 2}.|Changed|
+|data.Parameters[].Keys[].StringParameterKey|string|String Parameter Key|String value from "ParameterKey" parameter, associated with this parameter. Can be used to associate with parameter values of type string or data quantity. In the later case, the string representation of the quantity value will be used. Example: {"ParameterKey": "facies", "StringParameterKey: "shale"}, {"ParameterKey":"depth", "StringParameterKey":"1545.43m"}.|Changed|
+|data.Parameters[].DataObjectParameter|string|Data Object Parameter|Parameter referencing to a top level object.|Changed|
+|data.Parameters[].DataQuantityParameter|number|Data Quantity Parameter|Parameter containing a double value.|Changed|
+|data.Parameters[].IntegerQuantityParameter|integer|Integer Quantity Parameter|Parameter containing an integer value.|Changed|
+|data.Parameters[].StringParameter|string|String Parameter|Parameter containing a string value.|Changed|
+|data.Parameters[].TimeIndexParameter|string|Time Index Parameter|Parameter containing a time index value.  It is assumed that all TimeIndexParameters within an Activity have the same date-time format, which is then described by the FrameOfReference mechanism.|Changed|
+|data.Parameters[].ParameterKindID &rarr; [ParameterKind](../../../E-R/reference-data/ParameterKind.1.0.0.md)|string|Parameter Kind Id|[Added to cover lack of inheritance]|Changed|
+|data.Parameters[].ParameterRoleID &rarr; [ParameterRole](../../../E-R/reference-data/ParameterRole.1.0.0.md)|string|Parameter Role|Reference data describing how the parameter was used by the activity, such as input, output, control, constraint, agent, predecessor activity, successor activity.|Changed|
+|data.Parameters[].DataQuantityParameterUOMID &rarr; [UnitOfMeasure](../../../E-R/reference-data/UnitOfMeasure.1.0.0.md)|string|Data Quantity Parameter UoM ID|Identifies unit of measure for floating point value.|Changed|
+|data.PriorActivityIDs[]|string|Prior Activity IDs|The activity or activities feeding results into this activity instance.|Changed|
+|_data.SoftwareSpecifications[]_|_object_|_Software_|_Software names and versions used. Fragment Description: The name and version of the software being executed in the context of this activity_|Changed|
+|data.SoftwareSpecifications[].SoftwareName|string|Software Name|The name of the software, application or plug-in used while performing this activity.|Changed|
+|data.SoftwareSpecifications[].Version|string|Software Version|The version of the software, application or plug-in used while performing this activity.|Changed|
+|_data.ActivityStates[]_|_object_|_AbstractActivityState_|_The (non-overlapping) historical activity states and effective start and termination dates. The last state is replicated in the single LastActivityState for simpler queries. Fragment Description: One step/interval in an Activity's or ProjectActivity's state._|Added property|
+|data.ActivityStates[].EffectiveDateTime|string|Effective Date Time|The date and time at which the activity status becomes effective.|Added property|
+|data.ActivityStates[].TerminationDateTime|string|Termination Date Time|The date and time at which the activity status is no longer in effect. For still effective activity states, the TerminationDateTime is left absent. For zero-duration intervals (events), the TerminationDateTime set to the same value as EffectiveDateTime.|Added property|
+|data.ActivityStates[].ActivityStatusID &rarr; [ActivityStatus](../../../E-R/reference-data/ActivityStatus.1.0.0.md)|string|Activity Status ID|The ActivityStatus is a set of major activity phases that are significant to business stakeholders.|Added property|
+|data.ActivityStates[].Remark|string|Remark|An optional remark associated with the ActivityStatus and time interval.|Added property|
+|_data.LastActivityState_|_object_|_AbstractActivityState_|_The current or last state this activity transitioned to. It is a copy of the last element in ActivityStates[]. If there is only one state recorded, the ActivityStates[] can stay empty. Fragment Description: One step/interval in an Activity's or ProjectActivity's state._|Added property|
+|data.LastActivityState.EffectiveDateTime|string|Effective Date Time|The date and time at which the activity status becomes effective.|Added property|
+|data.LastActivityState.TerminationDateTime|string|Termination Date Time|The date and time at which the activity status is no longer in effect. For still effective activity states, the TerminationDateTime is left absent. For zero-duration intervals (events), the TerminationDateTime set to the same value as EffectiveDateTime.|Added property|
+|data.LastActivityState.ActivityStatusID &rarr; [ActivityStatus](../../../E-R/reference-data/ActivityStatus.1.0.0.md)|string|Activity Status ID|The ActivityStatus is a set of major activity phases that are significant to business stakeholders.|Added property|
+|data.LastActivityState.Remark|string|Remark|An optional remark associated with the ActivityStatus and time interval.|Added property|
+
+[Back to TOC](#TOC)
+
+---
+
+
+[//]: # "End of section Schema Changes"
+
+# Links
+
+* [Back to Milestone](README.md)
+* [Back to Migration Guides](../README.md)
+* [Back to Guides](../../README.md)

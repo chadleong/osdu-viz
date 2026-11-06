@@ -141,6 +141,42 @@ const bundleFile = path.join(__dirname, "..", "public", "schema-bundle.json")
 fs.writeFileSync(bundleFile, JSON.stringify(bundleMap))
 console.log(`Schema bundle written to: ${bundleFile} (${(fs.statSync(bundleFile).size / 1024 / 1024).toFixed(2)} MB)`)
 
+// Guide index: every .md/.html under public/Guides with a title, so the in-app guide viewer can build its tree,
+// resolve links and search without fetching 900+ files.
+;(function writeGuideIndex() {
+  const guidesDir = path.join(__dirname, "..", "public", "Guides")
+  if (!fs.existsSync(guidesDir)) {
+    console.log("No public/Guides folder, skipping guide index")
+    return
+  }
+  const entries = []
+  const walk = (dir, rel) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name)
+      const r = rel ? `${rel}/${e.name}` : e.name
+      if (e.isDirectory()) {
+        if (e.name.startsWith("_") || e.name === "Illustrations") continue
+        walk(full, r)
+      } else if (/\.(md|html)$/i.test(e.name)) {
+        let title = e.name.replace(/\.(md|html)$/i, "")
+        try {
+          const text = fs.readFileSync(full, "utf8")
+          const m = /^#\s+(.+)$/m.exec(text) || /<title>([^<]+)<\/title>/i.exec(text)
+          if (m) title = m[1].replace(/`/g, "").trim()
+        } catch (err) {
+          console.warn(`Failed to read guide ${r}:`, err.message)
+        }
+        entries.push({ p: r, t: title })
+      }
+    }
+  }
+  walk(guidesDir, "")
+  entries.sort((a, b) => a.p.localeCompare(b.p, undefined, { numeric: true }))
+  const out = path.join(__dirname, "..", "public", "guides-index.json")
+  fs.writeFileSync(out, JSON.stringify(entries))
+  console.log(`Guide index written to: ${out} (${entries.length} guides, ${(fs.statSync(out).size / 1024).toFixed(1)} KB)`)
+})()
+
 // Generate SEO Assets: robots.txt, sitemap.xml, site.webmanifest, and og-image.svg
 const publicDir = path.join(__dirname, "..", "public")
 const siteUrl = "https://osdu-viz.netlify.app"
