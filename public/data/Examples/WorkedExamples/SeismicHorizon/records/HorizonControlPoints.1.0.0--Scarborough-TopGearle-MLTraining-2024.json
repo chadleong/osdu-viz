@@ -1,0 +1,477 @@
+{
+  "id": "partition-id:work-product-component--HorizonControlPoints:Scarborough-TopGearle-MLTraining-2024",
+  "kind": "osdu:wks:work-product-component--HorizonControlPoints:1.0.0",
+  "version": 1709366400000000,
+  "acl": {
+    "owners": [
+      "data.manager@operator.com.au"
+    ],
+    "viewers": [
+      "data.manager@operator.com.au",
+      "geoscience.team@operator.com.au",
+      "ml.engineering@operator.com.au"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "partition-id-public-aus-dataset-8234567"
+    ],
+    "otherRelevantDataCountries": [
+      "AU"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "Horizon": "Top Gearle",
+    "Survey": "Scarborough3D_2024",
+    "Basin": "Carnarvon",
+    "Workflow": "ML Training",
+    "MLModel": "Horizon Prediction"
+  },
+  "createTime": "2024-03-02T10:30:00.000Z",
+  "createUser": "chris.hough@operator.com.au",
+  "modifyTime": "2024-03-02T17:15:00.000Z",
+  "modifyUser": "chris.hough@operator.com.au",
+  "ancestry": {
+    "parents": [
+      "partition-id:work-product-component--SeismicTraceData:Scarborough3D_2024_FullStack:1709366400000000"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalDatum.VerticalMeasurementUnitOfMeasureID"
+      ]
+    },
+    {
+      "kind": "CRS",
+      "name": "GDA94 * EPSG-Aus / MGA zone 50 [28350,1150]",
+      "persistableReference": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"28350001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28350\"},\"name\":\"GDA_1994_MGA_Zone_50\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"GDA_1994_MGA_Zone_50\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",10000000.0],PARAMETER[\\\"Central_Meridian\\\",117.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",28350]]\"},\"name\":\"GDA94 * EPSG-Aus / MGA zone 50 [28350,1150]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1150\"},\"name\":\"GDA_1994_To_WGS_1984\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"GDA_1994_To_WGS_1984\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",0.0],PARAMETER[\\\"Y_Axis_Translation\\\",0.0],PARAMETER[\\\"Z_Axis_Translation\\\",0.0],PARAMETER[\\\"X_Axis_Rotation\\\",0.0],PARAMETER[\\\"Y_Axis_Rotation\\\",0.0],PARAMETER[\\\"Z_Axis_Rotation\\\",0.0],PARAMETER[\\\"Scale_Difference\\\",0.0],OPERATIONACCURACY[3.2],AUTHORITY[\\\"EPSG\\\",1150]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+      "propertyNames": [
+        "HorizontalCRSID"
+      ]
+    },
+    {
+      "kind": "CRS",
+      "name": "MSL depth",
+      "persistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5715\"},\"name\":\"MSL depth\",\"type\":\"LBC\"}",
+      "propertyNames": [
+        "VerticalDatum.VerticalCRSID"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AUWest:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AUWest:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Seismic Interpretation Project - Scarborough ML Training Dataset 2024",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Datasets": [],
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Approved:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "partition-id:reference-data--ContactRoleType:Reviewer:",
+            "DataGovernanceRoleTypeID": "partition-id:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:DataScientist:",
+            "OrganisationID": "partition-id:master-data--Organisation:OperatorAustralia:",
+            "Name": "Chris Hough"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:MachineLearningTraining:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:DataScientist:",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Exploration:"
+          },
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Appraisal:"
+          }
+        ],
+        "EffectiveDate": "2024-03-02",
+        "Comment": "Approved for ML model training and validation. Curated training dataset with quality-controlled interpreter picks, confidence scores, and seismic attributes. Training/validation split: 70/30. Validated against well ties at Scarborough-2, Scarborough-4, and Jupiter-1."
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Gearle-ML-Training-v1",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:ShortName:",
+        "DefinitionOrganisationID": "partition-id:master-data--Organisation:OperatorAustralia:",
+        "EffectiveDateTime": "2024-03-02T10:30:00.000Z"
+      }
+    ],
+    "Name": "Top Gearle Formation - ML Training Control Points",
+    "Description": "Curated control points for Top Gearle Formation horizon, prepared for machine learning model training. Dataset includes spatial coordinates (X, Y, Z), interpreter confidence scores, pick quality labels, training/validation split flags, and seismic amplitude values at pick locations. Ten high-quality picks selected from multi-interpreter consensus across structural features and well tie locations. Suitable for supervised learning approaches to automated horizon tracking and prediction.",
+    "CreationDateTime": "2024-03-02T10:30:00.000Z",
+    "Tags": [
+      "Top Gearle",
+      "Triassic",
+      "Seal Horizon",
+      "ML Training Dataset",
+      "Quality Controlled"
+    ],
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2024-03-02T10:30:00.000Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:Length.LessThan10m:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:Surveyed:",
+      "CoordinateQualityCheckPerformedBy": "Chris Hough - Senior Seismic Interpreter",
+      "CoordinateQualityCheckDateTime": "2024-03-02T16:00:00.000Z",
+      "CoordinateQualityCheckRemarks": [
+        "Control points validated against survey bin grid",
+        "Spatial extent covers Scarborough gas field development area",
+        "ML training dataset quality-controlled for consistency"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::28350:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+        "VerticalUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28350\"},\"name\":\"GDA94 / MGA zone 50\",\"type\":\"LBC\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5715\"},\"name\":\"MSL depth\",\"type\":\"LBC\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {
+              "description": "Spatial extent of ML training control points"
+            },
+            "geometry": {
+              "type": "AnyCrsPolygon",
+              "coordinates": [
+                [
+                  [
+                    308500.0,
+                    7762200.0
+                  ],
+                  [
+                    315800.0,
+                    7762200.0
+                  ],
+                  [
+                    315800.0,
+                    7756400.0
+                  ],
+                  [
+                    308500.0,
+                    7756400.0
+                  ],
+                  [
+                    308500.0,
+                    7762200.0
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          308500.0,
+          7756400.0,
+          315800.0,
+          7762200.0
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "description": "Spatial extent of ML training control points (WGS84)"
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    115.042,
+                    -20.598
+                  ],
+                  [
+                    115.112,
+                    -20.598
+                  ],
+                  [
+                    115.112,
+                    -20.65
+                  ],
+                  [
+                    115.042,
+                    -20.65
+                  ],
+                  [
+                    115.042,
+                    -20.598
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          115.042,
+          -20.65,
+          115.112,
+          -20.598
+        ]
+      },
+      "AppliedOperations": [
+        "Coordinates ingested in GDA94 / MGA zone 50 (EPSG:28350)",
+        "Transformation to WGS84 (EPSG:4326) applied for global compatibility"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Boundary:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Polygon:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:Australia.WA:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:State:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:CarnavonBasin:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:ScarboroughGasField:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "Chris Hough",
+    "BusinessActivities": [
+      "Exploration",
+      "Machine Learning Development"
+    ],
+    "AuthorIDs": [
+      "Chris Hough",
+      "Operator Australia Geoscience Team",
+      "Operator Australia Data Science Team"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "partition-id:work-product-component--SeismicTraceData:Scarborough3D_2024_FullStack:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      },
+      {
+        "ID": "partition-id:master-data--Seismic3DInterpretationSet:Scarborough_Interpretation_2024:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:TopGearle:",
+    "InterpretationName": "Top Gearle Seeds Points",
+    "RepresentationRole": "partition-id:reference-data--RepresentationRole:Pick:",
+    "RepresentationType": "partition-id:reference-data--RepresentationType:PointSet:",
+    "SeismicTraceDataIDs": [
+      "partition-id:work-product-component--SeismicTraceData:Scarborough3D_2024_FullStack:"
+    ],
+    "BinGridID": "partition-id:work-product-component--SeismicBinGrid:Scarborough3D_2024_BinGrid:",
+    "Seismic3DInterpretationSetID": "partition-id:master-data--Seismic3DInterpretationSet:Scarborough_Interpretation_2024:",
+    "DomainTypeID": "partition-id:reference-data--DomainType:Depth:",
+    "HorizontalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::28350_EPSG::1150:",
+    "VerticalDatum": {
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+      "VerticalMeasurementDescription": "Depth datum is Mean Sea Level (MSL depth EPSG:5715). All Z values in HorizonControlPoints are True Vertical Depth Sub-Sea (TVDSS)."
+    },
+    "WellboreMarkerSetIDs": [
+      "partition-id:work-product-component--WellboreMarkerSet:Scarborough-2-Markers-2023:",
+      "partition-id:work-product-component--WellboreMarkerSet:Scarborough-4-Markers-2024:",
+      "partition-id:work-product-component--WellboreMarkerSet:Jupiter-1-Markers-2022:"
+    ],
+    "HorizonControlPoints": {
+      "KeyColumns": [],
+      "Columns": [
+        {
+          "ValueType": "number",
+          "ValueCount": 10,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:620cec71-5ce3-4ea5-9120-833756b427d7:",
+            "Name": "x coordinate"
+          },
+          "ColumnName": "X"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 10,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:cfcfdb04-02c1-4262-b66b-459b0aab3e8e:",
+            "Name": "y coordinate"
+          },
+          "ColumnName": "Y"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 10,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:8f4fbd79-87c9-4232-8934-f663e2fbf538:",
+            "Name": "subsea vertical depth"
+          },
+          "ColumnName": "Z"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 10,
+          "ColumnName": "Confidence",
+          "UnitQuantityID": "partition-id:reference-data--UnitQuantity:dimensionless:"
+        },
+        {
+          "ValueType": "string",
+          "ValueCount": 10,
+          "ColumnName": "Quality"
+        },
+        {
+          "ValueType": "boolean",
+          "ValueCount": 10,
+          "ColumnName": "IsTraining"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 10,
+          "UnitQuantityID": "partition-id:reference-data--UnitQuantity:dimensionless:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:43d4382c-4414-4ff1-b68e-754ac5904ca7:",
+            "Name": "amplitude"
+          },
+          "ColumnName": "Amplitude"
+        },
+        {
+          "ValueType": "string",
+          "ValueCount": 10,
+          "ColumnName": "InterpreterID"
+        }
+      ],
+      "ColumnSize": 10,
+      "ColumnValues": [
+        {
+          "NumberColumn": [
+            308500.0,
+            310250.0,
+            311800.0,
+            313400.0,
+            309650.0,
+            312100.0,
+            314500.0,
+            315800.0,
+            311200.0,
+            313900.0
+          ]
+        },
+        {
+          "NumberColumn": [
+            7762200.0,
+            7761400.0,
+            7760100.0,
+            7758800.0,
+            7759500.0,
+            7757600.0,
+            7759200.0,
+            7760800.0,
+            7756400.0,
+            7761900.0
+          ]
+        },
+        {
+          "NumberColumn": [
+            2456.8,
+            2423.5,
+            2478.2,
+            2501.6,
+            2467.3,
+            2512.9,
+            2489.4,
+            2445.1,
+            2534.7,
+            2461.2
+          ]
+        },
+        {
+          "NumberColumn": [
+            0.95,
+            0.88,
+            0.92,
+            0.78,
+            0.91,
+            0.85,
+            0.73,
+            0.96,
+            0.82,
+            0.94
+          ]
+        },
+        {
+          "StringColumn": [
+            "high",
+            "high",
+            "high",
+            "medium",
+            "high",
+            "high",
+            "medium",
+            "high",
+            "medium",
+            "high"
+          ]
+        },
+        {
+          "BooleanColumn": [
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "NumberColumn": [
+            -1247.5,
+            -1189.2,
+            -1305.8,
+            -1156.4,
+            -1278.9,
+            -1198.6,
+            -1145.3,
+            -1312.1,
+            -1167.8,
+            -1289.4
+          ]
+        },
+        {
+          "StringColumn": [
+            "CHough",
+            "CHough",
+            "CHough",
+            "SMitchell",
+            "CHough",
+            "CHough",
+            "SMitchell",
+            "CHough",
+            "SMitchell",
+            "CHough"
+          ]
+        }
+      ],
+      "ColumnBasedTableType": "partition-id:reference-data--ColumnBasedTableType:SpatialControlPoints:"
+    },
+    "ExtensionProperties": {}
+  }
+}

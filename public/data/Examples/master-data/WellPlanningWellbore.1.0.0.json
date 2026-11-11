@@ -1,0 +1,79 @@
+{
+  "id": "namespace:master-data--WellPlanningWellbore:27ba08ea-5c4e-5859-bd7e-d04b3c34a0bc",
+  "kind": "osdu:wks:master-data--WellPlanningWellbore:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "WellboreID": "namespace:master-data--Wellbore:SomeUniqueWellboreID:",
+    "WellPlanningWellID": "namespace:master-data--WellPlanningWell:SomeUniqueWellPlanningWellID:",
+    "SurveyProgramIDs": [
+      "namespace:master-data--SurveyProgram:SomeUniqueSurveyProgramID:"
+    ],
+    "TargetID": "namespace:master-data--GeometricTargetSet:SomeUniqueGeometricTargetSetID:",
+    "WellboreMarkerSetID": "namespace:work-product-component--WellboreMarkerSet:WellboreMarkerSet-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "PlannedLithologyID": "namespace:work-product-component--PlannedLithology:PlannedLithology-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "HoleSectionID": "namespace:master-data--HoleSection:SomeUniqueHoleSectionID:",
+    "PPFGDatasetID": "namespace:work-product-component--PPFGDataset:PPFGDataset-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "Name": "Example Name",
+    "VerticalMeasurement": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "VerticalMeasurement": 12345.6,
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "VerticalMeasurementTypeID": "namespace:reference-data--VerticalMeasurementType:ArbitraryPoint:",
+      "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "namespace:reference-data--VerticalMeasurementSource:DRL:",
+      "WellboreTVDTrajectoryID": "namespace:work-product-component--WellboreTrajectory:WellboreTrajectory-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+      "VerticalMeasurementUnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+      "VerticalReferenceID": "Example VerticalReferenceID",
+      "VerticalReferenceEntityID": "namespace:master-data--Rig:SomeUniqueRigID:",
+      "VerticalMeasurementDescription": "Example VerticalMeasurementDescription"
+    },
+    "ExtensionProperties": {}
+  }
+}

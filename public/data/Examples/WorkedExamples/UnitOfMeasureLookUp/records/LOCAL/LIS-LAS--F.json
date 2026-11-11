@@ -1,0 +1,38 @@
+{
+  "id": "partition-id:reference-data--ExternalUnitOfMeasure:LIS-LAS::F",
+  "kind": "osdu:wks:reference-data--ExternalUnitOfMeasure:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "foot",
+    "ID": "F",
+    "Code": "LIS-LAS::F",
+    "AttributionAuthority": "Schlumberger",
+    "AttributionRevision": "2021-10-08T12:00:00Z",
+    "CoefficientA": 0,
+    "CoefficientB": 0.3048,
+    "CoefficientC": 1,
+    "CoefficientD": 0,
+    "ExternalUnitQuantityID": "partition-id:reference-data--ExternalUnitQuantity:SLB-OSDD::Length:",
+    "MapStateID": "partition-id:reference-data--CatalogMapStateType:identical:",
+    "NamespaceID": "partition-id:reference-data--ExternalCatalogNamespace:LIS-LAS:",
+    "PersistableReference": "{\"scaleOffset\":{\"scale\":0.3048,\"offset\":0.0},\"symbol\":\"F\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+    "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+    "Source": "Workbook Published/ExternalUnitOfMeasure.1.0.0.xlsx; commit SHA 54e89405.",
+    "CommitDate": "2022-02-05T15:50:17+01:00"
+  }
+}

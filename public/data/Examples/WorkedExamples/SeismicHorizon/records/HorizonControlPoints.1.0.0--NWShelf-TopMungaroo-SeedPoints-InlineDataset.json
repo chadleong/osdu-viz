@@ -1,0 +1,355 @@
+{
+  "id": "partition-id:work-product-component--HorizonControlPoints:NWShelf-TopMungaroo-SeedPoints-2024",
+  "kind": "osdu:wks:work-product-component--HorizonControlPoints:1.0.0",
+  "version": 1704067200000000,
+  "acl": {
+    "owners": [
+      "data.manager@operator.com.au"
+    ],
+    "viewers": [
+      "data.manager@operator.com.au",
+      "geoscience.team@operator.com.au"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "opendes-public-aus-dataset-7643990"
+    ],
+    "otherRelevantDataCountries": [
+      "AU"
+    ],
+    "status": "compliant"
+  },
+  "tags": {},
+  "createTime": "2024-01-15T08:30:00.000Z",
+  "createUser": "chris.hough@operator.com.au",
+  "modifyTime": "2024-01-15T14:45:00.000Z",
+  "modifyUser": "chris.hough@operator.com.au",
+  "ancestry": {
+    "parents": [
+      "partition-id:work-product-component--SeismicTraceData:NWShelf3D_MAZ_2023_PostStack:1704067200000000"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"USO\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalDatum.VerticalMeasurementUnitOfMeasureID"
+      ]
+    },
+    {
+      "kind": "CRS",
+      "name": "GDA94 * EPSG-Aus / MGA zone 50 [28350,1150]",
+      "persistableReference": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"28350001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28350\"},\"name\":\"GDA_1994_MGA_Zone_50\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"GDA_1994_MGA_Zone_50\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",10000000.0],PARAMETER[\\\"Central_Meridian\\\",117.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",28350]]\"},\"name\":\"GDA94 * EPSG-Aus / MGA zone 50 [28350,1150]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1150\"},\"name\":\"GDA_1994_To_WGS_1984\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"GDA_1994_To_WGS_1984\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",0.0],PARAMETER[\\\"Y_Axis_Translation\\\",0.0],PARAMETER[\\\"Z_Axis_Translation\\\",0.0],PARAMETER[\\\"X_Axis_Rotation\\\",0.0],PARAMETER[\\\"Y_Axis_Rotation\\\",0.0],PARAMETER[\\\"Z_Axis_Rotation\\\",0.0],PARAMETER[\\\"Scale_Difference\\\",0.0],OPERATIONACCURACY[3.2],AUTHORITY[\\\"EPSG\\\",1150]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+      "propertyNames": [
+        "HorizontalCRSID"
+      ]
+    },
+    {
+      "kind": "CRS",
+      "name": "MSL depth",
+      "persistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5715\"},\"name\":\"MSL depth\",\"type\":\"LBC\"}",
+      "propertyNames": [
+        "VerticalDatum.VerticalCRSID"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AUWest:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AUWest:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Seismic Interpretation Project - NW Shelf 2024",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Datasets": [],
+    "DDMSDatasets": [],
+    "Artefacts": [],
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Approved:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "partition-id:reference-data--ContactRoleType:Reviewer:",
+            "DataGovernanceRoleTypeID": "partition-id:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "OrganisationID": "partition-id:master-data--Organisation:OperatorAustralia:",
+            "Name": "Chris Hough"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Exploration:"
+          },
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:ReservoirModeling:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:ReservoirEngineer:",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Appraisal:"
+          }
+        ],
+        "EffectiveDate": "2024-01-15",
+        "Comment": "Approved for exploration drilling and reservoir modeling. Control points validated against well ties at Wheatstone-3, Angel-1, and Julimar-2."
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Mungaroo-Seeds-v1",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:ShortName:",
+        "DefinitionOrganisationID": "partition-id:master-data--Organisation:OperatorAustralia:",
+        "EffectiveDateTime": "2024-01-15T08:30:00.000Z"
+      }
+    ],
+    "Name": "Top Mungaroo Formation - Seismic Horizon Control Points",
+    "Description": "Sparse seed points for Top Mungaroo Formation horizon picked on NW Shelf 3D MAZ seismic survey (2023). Five control points selected at structural highs and well tie locations to guide automated horizon tracking. Validated against well markers at Wheatstone-3, Angel-1, and Julimar-2.",
+    "CreationDateTime": "2024-01-15T08:30:00.000Z",
+    "Tags": [
+      "Top Mungaroo",
+      "Jurassic",
+      "Reservoir Horizon",
+      "Well Tie Validated"
+    ],
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2024-01-15T08:30:00.000Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:Length.LessThan10m:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:Surveyed:",
+      "CoordinateQualityCheckPerformedBy": "Chris Hough - Senior Seismic Interpreter",
+      "CoordinateQualityCheckDateTime": "2024-01-15T14:00:00.000Z",
+      "CoordinateQualityCheckRemarks": [
+        "Control points validated against survey bin grid",
+        "Spatial extent covers main structural closure"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::28350:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+        "VerticalUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28350\"},\"name\":\"GDA94 / MGA zone 50\",\"type\":\"LBC\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5715\"},\"name\":\"MSL depth\",\"type\":\"LBC\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {
+              "description": "Spatial extent of horizon control points"
+            },
+            "geometry": {
+              "type": "AnyCrsPolygon",
+              "coordinates": [
+                [
+                  [
+                    327450.0,
+                    7819300.0
+                  ],
+                  [
+                    332800.0,
+                    7819300.0
+                  ],
+                  [
+                    332800.0,
+                    7814500.0
+                  ],
+                  [
+                    327450.0,
+                    7814500.0
+                  ],
+                  [
+                    327450.0,
+                    7819300.0
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          327450.0,
+          7814500.0,
+          332800.0,
+          7819300.0
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "description": "Spatial extent of horizon control points (WGS84)"
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    115.234,
+                    -20.485
+                  ],
+                  [
+                    115.286,
+                    -20.485
+                  ],
+                  [
+                    115.286,
+                    -20.528
+                  ],
+                  [
+                    115.234,
+                    -20.528
+                  ],
+                  [
+                    115.234,
+                    -20.485
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          115.234,
+          -20.528,
+          115.286,
+          -20.485
+        ]
+      },
+      "AppliedOperations": [
+        "Coordinates ingested in GDA94 / MGA zone 50 (EPSG:28350)",
+        "Transformation to WGS84 (EPSG:4326) applied for global compatibility"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Boundary:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Polygon:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:Australia.WA:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:State:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:CarnavonBasin:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:NWShelfProspect_Alpha:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "Chris Hough",
+    "BusinessActivities": [
+      "Exploration",
+      "Appraisal"
+    ],
+    "AuthorIDs": [
+      "Chris Hough",
+      "Operator Australia Geoscience Team"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "partition-id:work-product-component--SeismicTraceData:NWShelf3D_MAZ_2023_PostStack:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      },
+      {
+        "ID": "partition-id:master-data--Seismic3DInterpretationSet:NWShelf_Interpretation_2024:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:TopMungaroo:",
+    "InterpretationName": "Top Mungaroo Seeds Points",
+    "RepresentationRole": "partition-id:reference-data--RepresentationRole:Pick:",
+    "RepresentationType": "partition-id:reference-data--RepresentationType:PointSet:",
+    "SeismicTraceDataIDs": [
+      "partition-id:work-product-component--SeismicTraceData:NWShelf3D_MAZ_2023_PostStack:"
+    ],
+    "BinGridID": "partition-id:work-product-component--SeismicBinGrid:NWShelf3D_MAZ_2023_BinGrid:",
+    "SeismicLineGeometryIDs": [],
+    "Seismic3DInterpretationSetID": "partition-id:master-data--Seismic3DInterpretationSet:NWShelf_Interpretation_2024:",
+    "DomainTypeID": "partition-id:reference-data--DomainType:Depth:",
+    "HorizontalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::28350_EPSG::1150:",
+    "VerticalDatum": {
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+      "VerticalMeasurementDescription": "Depth datum is Mean Sea Level (MSL depth EPSG:5715). All Z values in HorizonControlPoints are True Vertical Depth Sub-Sea (TVDSS)."
+    },
+    "WellboreMarkerSetIDs": [
+      "partition-id:work-product-component--WellboreMarkerSet:Wheatstone-3-Markers-2023:",
+      "partition-id:work-product-component--WellboreMarkerSet:Angel-1-Markers-2022:",
+      "partition-id:work-product-component--WellboreMarkerSet:Julimar-2-Markers-2024:"
+    ],
+    "HorizonControlPoints": {
+      "KeyColumns": [],
+      "Columns": [
+        {
+          "ValueType": "number",
+          "ValueCount": 5,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:620cec71-5ce3-4ea5-9120-833756b427d7:",
+            "Name": "x coordinate"
+          },
+          "ColumnName": "X"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 5,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:cfcfdb04-02c1-4262-b66b-459b0aab3e8e:",
+            "Name": "y coordinate"
+          },
+          "ColumnName": "Y"
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 5,
+          "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:8f4fbd79-87c9-4232-8934-f663e2fbf538:",
+            "Name": "subsea vertical depth"
+          },
+          "ColumnName": "Z"
+        }
+      ],
+      "ColumnSize": 5,
+      "ColumnValues": [
+        {
+          "NumberColumn": [
+            327450.0,
+            329875.5,
+            331200.0,
+            330100.0,
+            332800.0
+          ]
+        },
+        {
+          "NumberColumn": [
+            7819300.0,
+            7817850.0,
+            7816500.0,
+            7815200.0,
+            7814500.0
+          ]
+        },
+        {
+          "NumberColumn": [
+            3124.5,
+            3087.2,
+            3156.8,
+            3201.0,
+            3178.5
+          ]
+        }
+      ],
+      "ColumnBasedTableType": "partition-id:reference-data--ColumnBasedTableType:SpatialControlPoints:",
+      "ColumnBasedTableTemplateID": "partition-id:master-data--ColumnBasedTableTemplate:SomeUniqueColumnBasedTableTemplateID:"
+    },
+    "ExtensionProperties": {}
+  }
+}

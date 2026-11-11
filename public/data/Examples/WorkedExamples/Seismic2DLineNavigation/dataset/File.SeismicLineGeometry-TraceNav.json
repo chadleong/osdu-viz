@@ -1,0 +1,53 @@
+{
+  "id": "namespace:dataset--File.SeismicLineGeometry:TraceNav-00ffa8a0-e867-4c6b-adde-cef94a9d80b0",
+  "kind": "osdu:wks:dataset--File.SeismicLineGeometry:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "Key": "TraceNavigation"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Equinor",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "TraceNav.ST0299-05005_MIG_FIN.json",
+    "Description": "Provides connection to ../content/TraceNav.ST0299-05005_MIG_FIN.json. The parsed, extrapolated and interpolated version",
+    "TotalSize": "293727",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "Name": "TraceNav.ST0299-05005_MIG_FIN.json",
+        "FileSize": "293727",
+        "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:text%2Fjson:",
+        "FileSource": "s3://osdu-seismic-test-data/volve/seismic/st0299/navigation_2D/TraceNav.ST0299-05005_MIG_FIN.json",
+        "PreloadFilePath": "s3://osdu-seismic-test-data/volve/seismic/st0299/navigation_2D/TraceNav.ST0299-05005_MIG_FIN.json"
+      }
+    },
+    "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+    "ContentSchemaKind": "osdu:wks:content--TraceNavigation:1.0.0",
+    "ExtensionProperties": {}
+  }
+}

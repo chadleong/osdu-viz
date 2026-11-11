@@ -1,0 +1,209 @@
+{
+  "id": "namespace:work-product-component--WellPressureTestRawMeasurement:0c4b5c5b-32cd-57d2-b6a7-bbff6801fb09",
+  "kind": "osdu:wks:work-product-component--WellPressureTestRawMeasurement:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "viewers": [
+      "data.mastertotal.viewers@osduprod-opendes.dataservices.energy"
+    ],
+    "owners": [
+      "data.mastertotal.owners@osduprod-opendes.dataservices.energy"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-mastertotal-legal-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "FR"
+    ],
+    "status": "compliant"
+  },
+  "createUser": "44adf31d-25cc-468d-aee0-7f3b7fcf100f",
+  "createTime": "2023-04-07T13:59:27.411Z",
+  "modifyUser": "44adf31d-25cc-468d-aee0-7f3b7fcf100f",
+  "modifyTime": "2023-07-19T02:02:24.084Z",
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "Measurements[].PressurePointMeasuredDepth",
+        "Measurements[].PressureTestTopMeasuredDepth",
+        "Measurements[].PressureTestBottomMeasuredDepth",
+        "Measurements[0].DepthReference.VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "DDMSDatasets": [
+      "urn://wddms-3/uuid:20840361-adc0-4842-999b-5639bd07bb38",
+      "eml://rddms-1/dataspace('demo/Volve')/resqml20.obj_ContinuousProperty(1615d8d2-2a2d-482c-885e-14225b89e90c)"
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Name": "Example Name",
+    "Description": "Raw Measurement for 15_9-F-1 - Station #3",
+    "CreationDateTime": "2013-08-18T23:15:00.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "WellPressureTestAcquisitionJobID": "namespace:master-data--WellPressureTestAcquisitionJob:586a50bb-c5fb-5498-82fa-1ea1b2af9907:",
+    "WellPressureTestAcquisitionRunIdentifier": 1,
+    "AcquisitionStringToolFace": 81.2,
+    "PressureTestStartDate": "2013-08-18T23:03:51.55Z",
+    "Measurements": [
+      {
+        "WellPressureTestAcquisitionStationIdentifier": 3,
+        "PressurePointMeasuredDepth": 3360.7,
+        "TestNumber": 2,
+        "ActiveProbeTypeID": "namespace:reference-data--WellPressureTestProbeType:TestTrak:",
+        "ActiveGaugeID": "namespace:reference-data--WellPressureTestGaugeType:TTK:",
+        "MeasurementPeriods": [
+          {
+            "PeriodNumber": 1,
+            "MeasurementPeriodKind": "osduprod-opendes:reference-data--WellPressureTestMeasurementPeriodKind:PreTest:",
+            "PeriodStartTime": 50,
+            "PeriodEndTime": 200
+          },
+          {
+            "PeriodNumber": 2,
+            "MeasurementPeriodKind": "osduprod-opendes:reference-data--WellPressureTestMeasurementPeriodKind:PreTest:",
+            "PeriodStartTime": 210,
+            "PeriodEndTime": 475
+          },
+          {
+            "PeriodNumber": 3,
+            "MeasurementPeriodKind": "osduprod-opendes:reference-data--WellPressureTestMeasurementPeriodKind:PreTest:",
+            "PeriodStartTime": 500,
+            "PeriodEndTime": 550
+          }
+        ],
+        "IsTubular": true,
+        "DetailedTestTypeID": "namespace:reference-data--WellPressureDetailedTestCategory:LowMobility:",
+        "DepthReference": {
+          "VerticalMeasurement": 866.2,
+          "VerticalMeasurementPathID": "osduprod-opendes:reference-data--VerticalMeasurementPath:ELEV:",
+          "VerticalMeasurementTypeID": "osduprod-opendes:reference-data--VerticalMeasurementType:RT:",
+          "VerticalMeasurementDescription": "RT",
+          "VerticalCRSID": "osduprod-opendes:reference-data--CoordinateReferenceSystem:VerticalCRS::EPSG::3855:",
+          "VerticalMeasurementUnitOfMeasureID": "osduprod-opendes:reference-data--UnitOfMeasure:m:"
+        },
+        "TestReliabilityID": "namespace:reference-data--WellPressureTestValidityStatus:Valid:"
+      }
+    ],
+    "Curves": [
+      {
+        "CurveID": "1",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:s:",
+        "Mnemonic": "TIME",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "TimeCurve"
+      },
+      {
+        "CurveID": "2",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure"
+      },
+      {
+        "CurveID": "3",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:cm3:",
+        "Mnemonic": "DD_VOLUME",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "Incremental Drawdown Volume"
+      },
+      {
+        "CurveID": "4",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD1000",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod1000"
+      },
+      {
+        "CurveID": "5",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD100",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod100"
+      },
+      {
+        "CurveID": "6",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD10",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod10"
+      },
+      {
+        "CurveID": "7",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD1",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod1"
+      },
+      {
+        "CurveID": "8",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD01",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod01"
+      },
+      {
+        "CurveID": "9",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD001",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod001"
+      },
+      {
+        "CurveID": "10",
+        "NullValue": false,
+        "TimeUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnitID": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "DD_PRESS_MOD0001",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "DrawDown Pressure Mod0001"
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "namespace:master-data--WellActivity:da97410e-b8fb-447e-848b-dbe88ca442b8",
+  "kind": "osdu:wks:master-data--WellActivity:1.3.0",
+  "version": 1635454823310,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "Example exploration well Drilling operation",
+    "WellID": "namespace:master-data--Well:920c7e6d-1e9f-496d-ba4f-fe5bf5503d57:",
+    "WellActivityType": "namespace:reference-data--WellActivityType:DRO:",
+    "WellActivityDescription": "Drill 'JORGE' exploration well to 8-1/2\" TD into Big Formation",
+    "WellActivityObjective": [
+      "Dryhole Activities"
+    ],
+    "EstimatedDuration": 60,
+    "StartDateTime": "2023-01-15T17:30:00+0000",
+    "EndDateTime": "2023-03-27T23:59:00+0000",
+    "DataQCName": "Joe Bloggs",
+    "DataQCDate": "2023-04-15T00:00:00+0000",
+    "IsPerformanceBenchmarkSubmitted": true,
+    "PerformanceBenchmarkSubmitter": "Joe Bloggs",
+    "Comments": "Final Well Status Diagram submitted 15-April-2023 (JB)",
+    "Customer": "Big Oil",
+    "StewardingCompanyTeam": "An Operator Drilling Team"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:d:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":86400.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"d\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "EstimatedDuration"
+      ]
+    }
+  ]
+}

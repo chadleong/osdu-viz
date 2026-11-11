@@ -1,0 +1,78 @@
+{
+  "id": "namespace:work-product-component--Activity:XxxAssessmentEngineRun-bcab6f05-d832-4b52-942e-91e508bf7053",
+  "kind": "osdu:wks:work-product-component--Activity:1.4.0",
+  "version": 1705308394206600,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2024-01-15T09:46:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2024-01-15T09:46:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "Quality Engine Xxx Execution Record",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "CreationDateTime": "2024-01-15T09:46:34+00:00",
+    "LineageAssertions": [
+      {
+        "ID": "namespace:work-product-component--PersistedCollection:4ed87e4f-9919-4011-aa39-499953051cce:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "ActivityTemplateID": "namespace:master-data--ActivityTemplate:XxxQualityEngineTemplate-778a069c-df38-4c48-bc19-304fd50634d4:",
+    "ParentActivityID": "namespace:work-product-component--AnyActivity:AnyActivity-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "ActivityStates": [
+      {
+        "EffectiveDateTime": "2024-01-15T08:57:09+00:00",
+        "TerminationDateTime": "2024-01-15T09:46:34+00:00",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:Completed:",
+        "Remark": "Success"
+      }
+    ],
+    "LastActivityState": {
+        "EffectiveDateTime": "2024-01-15T08:57:09+00:00",
+        "TerminationDateTime": "2024-01-15T09:46:34+00:00",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:Completed:",
+        "Remark": "Success"
+    },
+    "Parameters": [
+      {
+        "Title": "DataQualityRuleSet",
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "namespace:reference-data--DataQualityRuleSet:CGG.SourceRockScreening:1562066009929332",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "ChunkSize",
+        "Selection": "Selected by end-user",
+        "IntegerQuantityParameter": 500,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Integer:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+      }
+    ],
+    "PriorActivityIDs": [],
+    "ExtensionProperties": {}
+  }
+}

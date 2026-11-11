@@ -1,0 +1,342 @@
+{
+  "id": "namespace:work-product-component--ReservoirEstimatedVolumes:ChampionSand-1bc4f584-fa89-5587-bfe0-4e986f017527-h",
+  "kind": "osdu:wks:work-product-component--ReservoirEstimatedVolumes:1.1.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--File.Generic:2022-Champion-Sand1-54530b9b-6225-41c6-b2e0-180f75592528:"
+    ],
+    "DDMSDatasets": [],
+    "Artefacts": [
+      {
+        "RoleID": "namespace:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "namespace:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "Name": "Champion Sand1 2022 Estimates",
+    "Description": "Effective Date: 2022 Status: Prospect has been considered as commercial Final Investment Decision has been taken Development concept: 5 producer wells + 1 injection well Reserves are calculated",
+    "CreationDateTime": "2021-12-13T09:13:15.55Z",
+    "Tags": [
+      "Age: Pliocene"
+    ],
+    "SpatialPoint": {},
+    "SpatialArea": {},
+    "GeoContexts": [
+      {
+        "PlayID": "namespace:master-data--Play:OilWithGas:",
+        "GeoTypeID": "namespace:reference-data--PlayType:Conventional:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:Champion:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SubmitterName": "SC",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "EstimatedVolumeTypeID": "namespace:reference-data--ReservoirEstimatedVolumeType:EstimatedInPlaceVolumes:",
+    "ParentObjectID": "namespace:master-data--ReservoirSegment:Champion-Sand1:",
+    "EstimationName": "Champion Sand1 Volumes",
+    "EstimationDate": "2021-12-13",
+    "HydrocarbonTypeIDs": [
+      "namespace:reference-data--WellProductType:Oil:",
+      "namespace:reference-data--WellProductType:Gas:"
+    ],
+    "EffectiveEstimationYear": "2022",
+    "Volumes": {
+      "KeyColumns": [],
+      "Columns": [
+        {
+          "ValueType": "string",
+          "ValueCount": 1,
+          "ColumnName": "In-Place Volumes",
+          "PropertyType": {},
+          "RelationshipTargetKind": "osdu:wks:reference-data--ReservoirEstimatedVolumePropertyType:"
+        },
+        {
+          "ColumnName": "P10 bscf",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bscf:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P10:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "P10 mmsbbl",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mmsbbl:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P10:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "P50 bscf",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bscf:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P50:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "P50 mmsbbl",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mmsbbl:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P50:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "P90 bscf",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bscf:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P90:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "P90 mmsbbl",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mmsbbl:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:statistics:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:P90:"
+            },
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:condition:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:surface:"
+            }
+          ]
+        }
+      ],
+      "ColumnSize": 2,
+      "ColumnValues": [
+        {
+          "StringColumn": [
+            "namespace:reference-data--ReservoirEstimatedVolumePropertyType:TotalGas:",
+            "namespace:reference-data--ReservoirEstimatedVolumePropertyType:Oil:"
+          ],
+          "UndefinedValueRows": []
+        },
+        {
+          "NumberColumn": [
+            1064.1,
+            0
+          ],
+          "UndefinedValueRows": [
+            1
+          ]
+        },
+        {
+          "NumberColumn": [
+            0,
+            1753.0
+          ],
+          "UndefinedValueRows": [
+            0
+          ]
+        },
+        {
+          "NumberColumn": [
+            699.0,
+            0
+          ],
+          "UndefinedValueRows": [
+            1
+          ]
+        },
+        {
+          "NumberColumn": [
+            0,
+            1271.0
+          ],
+          "UndefinedValueRows": [
+            0
+          ]
+        },
+        {
+          "NumberColumn": [
+            424.1,
+            0
+          ],
+          "UndefinedValueRows": [
+            1
+          ]
+        },
+        {
+          "NumberColumn": [
+            0,
+            773.2
+          ],
+          "UndefinedValueRows": [
+            0
+          ]
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  }
+}

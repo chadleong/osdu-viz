@@ -1,0 +1,233 @@
+{
+  "id": "partition-id:master-data--Coring:KKS1-Core-1",
+  "kind": "osdu:wks:master-data--Coring:1.1.1",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepth",
+        "BottomDepth",
+        "ConventionalCoring.CoreSections[].TopDepth",
+        "ConventionalCoring.CoreSections[].BottomDepth",
+        "ConventionalCoring.CoreSections[].RecoveredLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "propertyNames": [
+        "CoreDiameter"
+      ]
+    }
+  ],
+  "data": {
+    "TechnicalAssuranceID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SpatialLocation": {
+      "CoordinateQualityCheckRemarks": [
+        "Wgs84Coordinates copied from parent Wellbore ProjectedBottomHoleLocation."
+      ],
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81362197200383,
+                -19.781020115817476
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ],
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "CoreIdentifier": "KKS1-Core-1",
+    "WellboreID": "partition-id:master-data--Wellbore:KKS1:",
+    "Name": "KKS1 Core #1",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "ZDP",
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalMeasurementDescription": "Same vertical reference as wellbore ZDP, Measured Depth, Drillers Depth.",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:KKS1:"
+    },
+    "ServiceCompanyID": "partition-id:master-data--Organisation:Baker_Hughes_Inteq_BHI:",
+    "TopDepth": 2413.0,
+    "BottomDepth": 2431.0,
+    "RunNumber": 1,
+    "CoreDiameter": 5.125,
+    "IsOriented": false,
+    "CoreRemarks": [
+      {
+        "RemarkID": "1",
+        "Remark": "Core difficult to start.  Initial dip with stick indicated that top of core was 1.32 m from top of barrel 1 - Core GR was started from that point. Subsequent measurement showed that the top of the core was actually 5.8 m from the top of barrel 1 - therefore the first 4.48 m (5.8 - 1.32 m) of core GR should be dicarded.  Subsequent inspection of the core indicated that the annulus of the core deteriotated towards the base.  The core catcher was removed - core appeared to be jammed.  The core was removed and packed into a PVC pipe.  Note some junk (from the shoe) was subsequently found on the top of core 2.  This junk probably was the cause of the poor start to core 1 and to the poor recovery.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Comments"
+      },
+      {
+        "RemarkID": "2",
+        "Remark": "1. 2415.1 m SANDSTONE:   100%  very light grey, friable, predominantly very fine minor fine grained quartz, sub-angular, moderate sphericity, well sorted, weak siliceous cement, trace pyritic cement, trace dark grey claystone lithics, trace carbonaceous detritus,  trace mica (muscovite and trace biotite?), trace chlorite, good visual porosity.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Lithology/Shows"
+      },
+      {
+        "RemarkID": "3",
+        "Remark": "2. 2424.2 m SANDSTONE:   100%  very light grey, friable, predominantly very fine minor fine grained quartz, sub-angular to angular, moderate sphericity, well sorted, weak siliceous cement, trace dark grey claystone lithics, trace carbonaceous detritus,  trace mica (muscovite and trace biotite?), trace chlorite, good visual porosity.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Lithology/Shows"
+      },
+      {
+        "RemarkID": "4",
+        "Remark": "3. 2425.2 m SANDSTONE:   100%  very light grey, friable, predominantly very fine minor fine grained quartz, sub-angular to angular, moderate sphericity, well sorted, weak siliceous cement, trace carbonaceous detritus, trace chlorite, good visual porosity.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Lithology/Shows"
+      }
+    ],
+    "PreferredDepthShiftsID": "partition-id:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "HasTrippingSchedule": true,
+    "CoringOperationDate": "2012-12-19",
+    "CoreRecoveredDate": "2012-12-19",
+    "ConventionalCoring": {
+      "CoreTypeID": "partition-id:reference-data--ConventionalCoreType:ConventionalCore:",
+      "CoreSections": [
+        {
+          "CoreSectionID": "1A",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2413.0,
+          "BottomDepth": 2414.0
+        },
+        {
+          "CoreSectionID": "1B",
+          "RecoveredLength": 0.5,
+          "TopDepth": 2414.0,
+          "BottomDepth": 2414.5
+        },
+        {
+          "CoreSectionID": "1C",
+          "RecoveredLength": 0.61,
+          "TopDepth": 2414.5,
+          "BottomDepth": 2415.11
+        },
+        {
+          "CoreSectionID": "2A",
+          "RecoveredLength": 0.89,
+          "TopDepth": 2415.11,
+          "BottomDepth": 2416.0
+        },
+        {
+          "CoreSectionID": "2B",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2416.0,
+          "BottomDepth": 2417.0
+        },
+        {
+          "CoreSectionID": "2C",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2417.0,
+          "BottomDepth": 2418.0
+        },
+        {
+          "CoreSectionID": "2D",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2418.0,
+          "BottomDepth": 2419.0
+        },
+        {
+          "CoreSectionID": "2E",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2419.0,
+          "BottomDepth": 2420.0
+        },
+        {
+          "CoreSectionID": "2F",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2420.0,
+          "BottomDepth": 2421.0
+        },
+        {
+          "CoreSectionID": "2G",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2421.0,
+          "BottomDepth": 2422.0
+        },
+        {
+          "CoreSectionID": "3A",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2422.0,
+          "BottomDepth": 2423.0
+        },
+        {
+          "CoreSectionID": "3B",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2423.0,
+          "BottomDepth": 2424.0
+        },
+        {
+          "CoreSectionID": "3C",
+          "RecoveredLength": 0.23,
+          "TopDepth": 2424.0,
+          "BottomDepth": 2424.23
+        },
+        {
+          "CoreSectionID": "4A",
+          "RecoveredLength": 0.98,
+          "TopDepth": 2424.23,
+          "BottomDepth": 2425.21
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

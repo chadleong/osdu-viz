@@ -1,0 +1,375 @@
+{
+  "id": "partition-id:work-product-component--FormationIntegrityTest:ae8d8b82-24e4-5a0f-9377-10b729d7a96f",
+  "kind": "osdu:wks:work-product-component--FormationIntegrityTest:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2023-01-25T00:00:00.000Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2023-01-25T00:00:00.000Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "foot",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+      "persistableReference": "",
+      "propertyNames": [
+        "VerticalMeasurement.VerticalMeasurement",
+        "ShoeMeasuredDepth",
+        "ShoeTrueVerticalDepth",
+        "BottomHoleMeasuredDepth",
+        "BottomHoleTrueVerticalDepth",
+        "PWDSensorMeasuredDepth",
+        "PWDSensorTrueVerticalDepth",
+        "OpenHoleLength",
+        "PumpHeight"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "inch",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "persistableReference": "",
+      "propertyNames": [
+        "ShoeDiameter",
+        "HoleDiameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "pound-mass per US gallon lbm/gal[US]",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:lbm%2Fgal%5BUS%5D:",
+      "persistableReference": "",
+      "propertyNames": [
+        "SurfaceMudWeight",
+        "StaticDownholeMudWeight",
+        "SurfaceCalculatedInflectionPointDHEMW",
+        "SurfaceCalculatedDHEMWMax",
+        "SurfaceCalculated5MinDHShutInEMW",
+        "PWDInflectionPointEMW",
+        "PWDMaxPressureEMW",
+        "PWD5MinShutInEMW",
+        "PWDAdjustedSurfaceInflectionPointEMW",
+        "PWDAdjustedSurfaceMaxEMW",
+        "PWDAdjustedSurface5MinEMW",
+        "ExpectedTestGradient",
+        "CementInflectionPointDownholeEMW",
+        "CementMaxPointDownholeEMW",
+        "Cement5MinShutInPointDownholeEMW",
+        "MPDPriorBackPressureESD"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "centipoise",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:cP:",
+      "persistableReference": "",
+      "propertyNames": [
+        "MudPlasticViscosity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "pound-force per square inch",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+      "persistableReference": "",
+      "propertyNames": [
+        "MudYieldPoint",
+        "SystemStiffness",
+        "SurfaceInitialOffsetPressure",
+        "PWDCementOffsetPressure",
+        "SurfaceInflectionPointPressure",
+        "SurfaceCalculatedInflectionPointDHPressure",
+        "SurfacePressureMax",
+        "SurfaceCalculatedDHPressureMax",
+        "Surface5MinShutInPressure",
+        "SurfaceCalculated5MinDHShutInPressure",
+        "PWDInflectionPointPressure",
+        "PWDMaxPressurePulsed",
+        "PWDMaxPressure",
+        "PWD5MinShutInPressure",
+        "PWDAdjustedSurfaceInflectionPointPressure",
+        "PWDAdjustedSurfacedMaxPressure",
+        "PWDAdjustedSurface5MinPressure",
+        "FrictionPressure",
+        "InterpretedSurfaceInflectionPointPressure",
+        "InterpretedSurfacePressureMaximum",
+        "InterpretedSurface5minShutInPressure",
+        "MPDInflectionPointPressure",
+        "MPDDeltaPressureMax",
+        "CementInflectionPointDownholePressure",
+        "CementMaxPointDownholePressure",
+        "Cement5MinShutInPointDownholePressure",
+        "VolumePressureResponses[].SurfacePressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "per psi",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fpsi:",
+      "persistableReference": "",
+      "propertyNames": [
+        "MudCompressibility"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "second",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:s:",
+      "persistableReference": "",
+      "propertyNames": [
+        "SurfaceInflectionPointTime",
+        "SurfacePressureMaxTime",
+        "Surface5MinShutInTime",
+        "SurfacePWDDeltaTime",
+        "PWDInflectionPointTime",
+        "PWDMaxPressureTime",
+        "PWD5MinShutInTime",
+        "StepIntervalTime",
+        "PumpsOffTime",
+        "SmoothingWindowSurface",
+        "SmoothingWindowPWD",
+        "SmoothingWindowPWDShiftTime",
+        "CementUnitPumpsOffTime",
+        "VolumePressureResponses[].ElapsedTime",
+        "VolumePressureResponses[].PWDPressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "barrel",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:bbl:",
+      "persistableReference": "",
+      "propertyNames": [
+        "SurfaceInflectionPointVolume",
+        "SurfacePressureMaximumVolume",
+        "PWDInflectionPointVolume",
+        "PWDMaxPressureVolume",
+        "StepIntervalVolume",
+        "PumpedVolume",
+        "ReturnedVolume",
+        "InjectedVolume",
+        "VolumePressureResponses[].PumpedVolume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "barrel per minute",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:bbl%2Fmin:",
+      "persistableReference": "",
+      "propertyNames": [
+        "PumpRateAverage",
+        "VolumePressureResponses[].PumpRate",
+        "VolumePressureResponses[].FlowInRate",
+        "VolumePressureResponses[].FlowOutRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "angular degree",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:dega:",
+      "persistableReference": "",
+      "propertyNames": [
+        "HoleInclination",
+        "HoleAzimuth"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "partition-id:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "partition-id:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "partition-id:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "partition-id:reference-data--ContactRoleType:GeomechanicsSpecialist:",
+            "OrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "Joe Bloggs"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:Geomechanics:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:Petrophysicist:"
+          }
+        ],
+        "EffectiveDate": "2023-01-25",
+        "Comment": "Interpretation completed. LOT achieved injection with 12.28ppg EMW"
+      }
+    ],
+    "Name": "MC807 Well A FIT/LOT 23/1/2023",
+    "Description": "FIT/LOT 18\" Hole Section 23/1/2023",
+    "CreationDateTime": "2023-01-24T00:00:00.000Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "osdu:master-data--GeoPoliticalEntity:US:",
+        "GeoTypeID": "osdu:reference-data--GeoPoliticalEntityType:Country:"
+      },
+      {
+        "GeoPoliticalEntityID": "osdu:master-data--GeoPoliticalEntity:MC807:",
+        "GeoTypeID": "osdu:reference-data--GeoPoliticalEntityType:LicenceBlock:"
+      }
+    ],
+    "SubmitterName": "Joe Bloggs",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "JoeBloggs"
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+    "HoleSectionID": "partition-id:master-data--HoleSection:11000091175501HS04:",
+    "OperationsReportID": "partition-id:master-data--OperationsReport:11000091175501DDR23:",
+    "VerticalMeasurement": {
+      "VerticalMeasurementUnitOfMeasureID": "osdu:reference-data--UnitOfMeasure:ft:",
+      "VerticalCRSID": "osdu:reference-data--CoordinateReferenceSystem:Vertical:EPSG::8050:",
+      "VerticalMeasurementSourceID": "osdu:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalMeasurementPathID": "osdu:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "EffectiveDateTime": "2023-01-01T00:00:00.000Z",
+      "VerticalMeasurement": 85.5,
+      "VerticalMeasurementTypeID": "osdu:reference-data--VerticalMeasurementType:DrillFloor:",
+      "VerticalMeasurementDescription": "DFE DW Pontus"
+    },
+    "TestDateTime": "2023-01-23T15:00:00.000Z",
+    "TestType": "partition-id:reference-data--FormationIntegrityTestType:LOT:",
+    "ShoeDiameter": 18.0,
+    "ShoeMeasuredDepth": 7357.45,
+    "ShoeTrueVerticalDepth": 7350,
+    "BottomHoleMeasuredDepth": -7490,
+    "BottomHoleTrueVerticalDepth": 7478,
+    "HoleDiameter": 16.5,
+    "IsRiserless": false,
+    "IsMPD": false,
+    "MudBaseType": "partition-id:reference-data--MudBaseType:Synthetic:",
+    "SurfaceMudWeight": 11.3,
+    "MudPlasticViscosity": 32,
+    "MudYieldPoint": 26,
+    "IsStaticMWMeasured": true,
+    "IsPermeableFormationInOH": false,
+    "StaticDownholeMudWeight": 11.53,
+    "StaticDownholeMudWeightSource": "PWD",
+    "SurfaceInitialOffsetPressure": 20.65,
+    "PWDCementOffsetPressure": 0.0,
+    "SurfaceInflectionPointTime": 244,
+    "SurfaceInflectionPointVolume": 3.072,
+    "SurfaceInflectionPointPressure": 284.66,
+    "SurfaceCalculatedInflectionPointDHPressure": 4687,
+    "SurfaceCalculatedInflectionPointDHEMW": 12.28,
+    "SurfacePressureMax": 323.14,
+    "SurfacePressureMaxTime": 322,
+    "SurfacePressureMaximumVolume": 4.045,
+    "SurfaceCalculatedDHPressureMax": 4725.5,
+    "SurfaceCalculatedDHEMWMax": 12.38,
+    "Surface5MinShutInTime": 629,
+    "Surface5MinShutInPressure": 239.81,
+    "SurfaceCalculated5MinDHShutInPressure": 4642.17,
+    "SurfaceCalculated5MinDHShutInEMW": 12.16,
+    "PWDSensorMeasuredDepth": 7300,
+    "PWDSensorTrueVerticalDepth": 7294,
+    "IsPWDInflectionPoint": true,
+    "PWDInflectionPointTime": 248,
+    "PWDInflectionPointVolume": 3.122,
+    "PWDInflectionPointPressure": 4575.19,
+    "PWDInflectionPointEMW": 12.07,
+    "PWDMaxPressure": 4615.4,
+    "PWDMaxPressureEMW": 12.18,
+    "PWDMaxPressureTime": 322,
+    "PWDMaxPressureVolume": 4.045,
+    "PWD5MinShutInPressure": 4571.7,
+    "PWD5MinShutInEMW": 12.06,
+    "PWD5MinShutInTime": 629,
+    "PWDAdjustedSurfaceMaxEMW": 12.18,
+    "WellboreMarkerID": "partition-id:work-product-component--WellboreMarkerSet:WellboreMarkerSet-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "LithologyTypeID": "partition-id:reference-data--LithologyType:SHA:",
+    "IsExtendedHole": true,
+    "OpenHoleLength": 143,
+    "IsLCMUsedInTest": false,
+    "PumpRateAverage": 0.75,
+    "IsTestContinuous": true,
+    "HoleInclination": 14.78,
+    "HoleAzimuth": 304.22,
+    "PumpsOffTime": 329,
+    "PumpedVolume": 4,
+    "ReturnedVolume": 3,
+    "InjectedVolume": 1,
+    "ExpectedTestGradient": 12.3,
+    "IsInterpreterReviewed": true,
+    "Interpreter": "Joe Bloggs",
+    "InterpretationDate": "2023-01-027T00:00:00",
+    "TestResult": "partition-id:reference-data--FormationIntegrityTestResult:Injection:",
+    "TestDataQualityIndicator": true,
+    "InterpretedSurfaceInflectionPointPressure": 239.81,
+    "SmoothingWindowSurface": 20,
+    "SmoothingWindowPWD": 20,
+    "SmoothingWindowPWDShiftTime": -527,
+    "DailyOperationsTestRemarks": "Example Daily Operations Report Test Remarks",
+    "InterpretersRemarks": "Example Interpreters Remarks",
+    "CementInflectionPointDownholePressure": 4613,
+    "CementInflectionPointDownholeEMW": 12.07,
+    "CementMaxPointDownholePressure": 4655,
+    "CementMaxPointDownholeEMW": 12.18,
+    "Cement5MinShutInPointDownholePressure": 4571,
+    "Cement5MinShutInPointDownholeEMW": 11.96,
+    "CementUnitPumpsOffTime": 329,
+    "VolumePressureResponses": [
+      {
+        "PressureDataSource": "partition-id:reference-data--FormationIntegrityPressureDataSource:Surface:",
+        "SequenceNumber": 1,
+        "ElapsedTime": 0,
+        "PumpRate": 0,
+        "PumpedVolume": 0,
+        "SurfacePressure": 20.65,
+        "SurfacePressureSource": "partition-id:reference-data--FormationIntegritySurfacePressureDataSource:CementGauge:",
+        "PWDElapsedTime": 0,
+        "PWDPressure": 4367.53,
+        "FlowInRate": 0,
+        "FlowOutRate": 0
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "partition-id:reference-data--ExternalReferenceValueMapping:EDS.Global.OpsEnvironment.Offshore",
+  "kind": "osdu:wks:reference-data--ExternalReferenceValueMapping:1.0.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "EDS.Global.OpsEnvironment.Offshore",
+    "NameAlias": [
+      {
+        "AliasName": "OFF"
+      },
+      {
+        "AliasName": "off"
+      },
+      {
+        "AliasName": "Off"
+      },
+      {
+        "AliasName": "OFFSHORE"
+      },
+      {
+        "AliasName": "offshore"
+      },
+      {
+        "AliasName": "Offshore"
+      }
+    ],
+    "Code": "EDS.Global.OpsEnvironment.Offshore",
+    "NamespaceID": "partition-id:reference-data--ExternalCatalogNamespace:EDS:",
+    "HasGlobalScope": true,
+    "Scope": "Global.OpsEnvironment",
+    "MapStateID": "partition-id:reference-data--CatalogMapStateType:identical:",
+    "SimpleMap": {
+      "ReferenceValueID": "partition-id:reference-data--OperatingEnvironment:Offshore:"
+    },
+    "Source": "Workbook Authoring/ExternalReferenceValueMapping.1.0.0.xlsx; commit SHA cc92e1b8.",
+    "CommitDate": "2022-10-14T15:41:06+02:00"
+  }
+}

@@ -1,0 +1,103 @@
+
+@startuml
+skinparam object {
+    BackgroundColor<<master-data>> LightSalmon
+    BackgroundColor<<work-product-component>> Gold
+    BackgroundColor<<abstract>> LightSteelBlue
+    BackgroundColor<<reference-data>> Turquoise
+    BackgroundColor<<Abstraction>> LightSkyBlue
+    BackgroundColor<<error>> Red
+    BackgroundColor<<Activity>> LightSkyBlue
+    BackgroundColor<<ReferenceType>> LightSkyBlue
+    BackgroundColor<<WorkProductComponent>> LightSkyBlue
+    BackgroundColor<<Project>> LightSkyBlue
+    BackgroundColor<<Survey>> LightSkyBlue
+    BackgroundColor<<Dataset>> LightSkyBlue
+    BackgroundColor<<File>> LightSkyBlue
+    BackgroundColor<<FileCollection>> LightSkyBlue
+    packageStyle rectangle
+}
+skinparam map {
+    BackgroundColor<<master-data>> LightSalmon
+    BackgroundColor<<work-product-component>> Gold
+    BackgroundColor<<abstract>> LightSteelBlue
+    BackgroundColor<<reference-data>> Turquoise
+    BackgroundColor<<Abstraction>> LightSkyBlue
+    BackgroundColor<<error>> Red
+    BackgroundColor<<Activity>> LightSkyBlue
+    BackgroundColor<<ActivityTemplate>> LightBlue
+    BackgroundColor<<ActivityTemplateArc>> LightGreen
+    BackgroundColor<<ReferenceType>> LightSkyBlue
+    BackgroundColor<<WorkProductComponent>> LightSkyBlue
+    BackgroundColor<<Project>> LightSkyBlue
+    BackgroundColor<<Survey>> LightSkyBlue
+    BackgroundColor<<Dataset>> LightSkyBlue
+    BackgroundColor<<File>> LightSkyBlue
+    BackgroundColor<<FileCollection>> LightSkyBlue
+    packageStyle rectangle
+}
+
+map "**ActivityTemplate:Compute-Impedance-RC-example1**" as A1 <<ActivityTemplate>> {
+  1 => Input <i>Sonic</i> as WellLog
+  2 => Input <i>Sonic Curve Name</i> as string
+  3 => Input <i>Density</i> as WellLog
+  4 => Input <i>Density Curve Name</i> as string
+  5 => Output <i>Impedance</i> as WellLog
+  6 => Output <i>Impedance Curve Name</i> as string
+  7 => Output <i>Reflection Coefficients</i> as WellLog
+  8 => Output <i>Reflection Coefficients Curve Name</i> as string
+  9 => Input <i>Sampling Start</i> as number in ms (0.0)
+  10 => Input  <i>Sampling Interval</i> as number in ms (2.0)
+}
+
+
+map "**ActivityTemplateArc:RC-Synthetics**" as WL2 <<ActivityTemplateArc>> {
+ 1_1 => ProducingParameterTitle <i>Reflection Coefficients</i>
+ 1_2 => ConsumingParameterTitle <i>Reflection Coefficients</i>
+ 2_1 => ProducingParameterTitle <i>Reflection Coefficients Curve Name</i>
+ 2_2 => ConsumingParameterTitle <i>Reflection Coefficients Curve Name</i>
+ 3_1 => ProducingParameterTitle <i>Wavelet</i>
+ 3_2 => ConsumingParameterTitle <i>Wavelet</i>
+ 4_1 => ProducingParameterTitle <i>Wavelet Curve Name</i>
+ 4_2 => ConsumingParameterTitle <i>Wavelet Curve Name</i>
+ 5_1 => ProducingParameterTitle <i>Sampling Interval</i>
+ 5_2 => ConsumingParameterTitle <i>Sampling Interval</i>
+}
+
+A1::8 --> WL2::2_1
+A1 -[thickness=3]-> WL2 : **ProducingActivityTemplateID**
+
+map "**ActivityTemplate:GenerateWavelet**" as A2 <<ActivityTemplate>> {
+  1 => Input <i>Wavelet Type</i> as string
+  2 => Input <i>Wavelet Frequency</i> as number in Hz (35)
+  3 => Input <i>Wavelet Number of Samples</i> as integer (256)
+  4 => Input <i>Sampling Interval</i> as number in ms (2.0)
+  5 => Input <i>Wavelet Phase</i> as string (Zero)
+  6 => Output <i>RickerWavelet</i> as WellLog
+  7 => Output <i>RickerWavelet Curve Name</i> as string
+  8 =>
+  9 =>
+  10 =>
+}
+
+A2::7 --> WL2::4_1
+A2 -[thickness=3]-> WL2 : **ProducingActivityTemplateID**
+
+map "**ActivityTemplate:Synthetic-Example**" as A3 <<ActivityTemplate>> {
+  1 => Input <i>Reflection Coefficients</i> as WellLog
+  2 => Input <i>Reflection Coefficients Curve Name</i> as string
+  3 => Input <i>RickerWavelet</i> as WellLog
+  4 => Input <i>RickerWavelet Curve Name</i> as string
+  5 => Output <i>Synthetic Seismogram</i> as WellLog
+  6 => Output <i>Synthetic Seismogram Curve Name</i> as string
+  7 => Input <i>Synthetics Sample Interval</i> as number in ms
+}
+
+WL2::2_2 --> A3::2
+WL2 -[thickness=3]-> A3 : **SucceedingActivityTemplateID**
+WL2::4_2 --> A3::4
+
+
+@enduml
+
+

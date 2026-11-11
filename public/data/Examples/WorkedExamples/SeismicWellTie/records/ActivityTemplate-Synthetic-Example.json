@@ -1,0 +1,120 @@
+{
+  "id": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1",
+  "kind": "osdu:wks:master-data--ActivityTemplate:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2021-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2021-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "Synthetic Seismogram Generation",
+    "Description": "A template for the synthetics generation by convolving a reflection coefficient curve with a wavelet.",
+    "Source": "Example ",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "VersionCreationReason": "Demonstrate seismic-synthetic tie",
+    "Parameters": [
+      {
+        "Title": "Input Reflection Coefficients WellLog",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "DataObjectContentType": [
+          "work-product-component--WellLog"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Input Reflection Coefficients Curve Name",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:String:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Input Ricker Wavelet WellLog",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "DataObjectContentType": [
+          "work-product-component--WellLog"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Input Ricker Wavelet Curve Name",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:String:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Output Synthetic Seismogram WellLog",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": false,
+        "IsOutput": true,
+        "DataObjectContentType": [
+          "work-product-component--WellLog"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Output Synthetic Seismogram Curve Name",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:String:",
+        "IsInput": false,
+        "IsOutput": true,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "DefaultValue": {
+          "Title": "Synthetics Curve Name",
+          "Selection": "Default from ActivityTemplate",
+          "StringParameter": "Synthetic Seismogram",
+          "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+          "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+        }
+      },
+      {
+        "Title": "Synthetics Sample Interval",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "DefaultValue": {
+          "Title": "Synthetics Sample Interval",
+          "Selection": "Default from ActivityTemplate",
+          "DataQuantityParameter": 2.0,
+          "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+          "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:",
+          "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:ms:"
+        }
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

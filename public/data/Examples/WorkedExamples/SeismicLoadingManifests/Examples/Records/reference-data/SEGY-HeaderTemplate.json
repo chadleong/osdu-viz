@@ -1,0 +1,79 @@
+{
+  "id": "partition-id:reference-data--SEGY-HeaderMappingTemplate:MetricUTM3D",
+  "kind": "osdu:wks:reference-data--SEGY-HeaderMappingTemplate:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "ancestry": {
+    "parents": []
+  },
+  "data": {
+    "Name": "Metric UTM 3D",
+    "NameAlias": [
+      {
+        "AliasName": "Volve"
+      }
+    ],
+    "Description": "A SEG-Y Template for metric UTM coordinates and 100 scaling, developed for Volve.",
+    "Code": "MetricUTM3D",
+    "SEGYRevision": "rev 0",
+    "VectorHeaderMapping": [
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:Inline:",
+        "Position": 189,
+        "ScalarIndicator": "NOSCALE",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:Crossline:",
+        "Position": 193,
+        "ScalarIndicator": "NOSCALE",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:CMPY:",
+        "Position": 181,
+        "ScalarIndicator": "OVERRIDE",
+        "ScalarOverride": -100,
+        "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:CMPX:",
+        "Position": 185,
+        "ScalarIndicator": "OVERRIDE",
+        "ScalarOverride": -100,
+        "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:STARTTIME:",
+        "Position": 109,
+        "ScalarIndicator": "NOSCALE",
+        "UoM": "partition-id:reference-data--UnitOfMeasure:ms:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 2
+      }
+    ],
+    "Source": "Workbook Authoring/SEGY-HeaderMappingTemplate.1.0.0.xlsx; commit SHA 6fd43e42.",
+    "CommitDate": "2022-10-07T20:35:35+02:00"
+  }
+}

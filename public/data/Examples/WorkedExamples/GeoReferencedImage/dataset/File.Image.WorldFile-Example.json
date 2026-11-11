@@ -1,0 +1,54 @@
+{
+  "id": "partition-id:dataset--File.Image.WorldFile:c4323916-d7bc-4777-9243-98654aba6d78",
+  "kind": "osdu:wks:dataset--File.Image.WorldFile:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "USGS world file example from https://download.osgeo.org/geotiff/samples/usgs/",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Name": "World-file for o41078a1.tif",
+    "TotalSize": "1496",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://default_bucket/r1/data/provided/documents/geo-reference-image/samples/usgs/o41078a1.lgo.txt",
+        "PreloadFilePath": "https://download.osgeo.org/geotiff/samples/usgs/o41078a1.lgo",
+        "Name": "o41078a1.lgo.txt",
+        "FileSize": "1496"
+      }
+    },
+    "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+    "SpatialReference": {
+      "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+      "PersistableReferenceCRS": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32617\"},\"name\":\"WGS_1984_UTM_Zone_17N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"WGS_1984_UTM_Zone_17N\\\",GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-81.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",32617]]\"}"
+    },
+    "ExtensionProperties": {}
+  }
+}

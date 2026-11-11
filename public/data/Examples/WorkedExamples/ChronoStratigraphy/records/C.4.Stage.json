@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Stage",
+  "kind": "osdu:wks:reference-data--StratigraphicColumnRankUnitType:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Stage",
+    "NameAlias": [
+      {
+        "AliasName": "Age"
+      }
+    ],
+    "Description": "In chronostratigraphy, a stage is a succession of rock strata laid down in a single age on the geologic timescale, which usually represents millions of years of deposition. A given stage of rock and the corresponding age of time will by convention have the same name, and the same boundaries.",
+    "Code": "Chronostratigraphic.Stage",
+    "AttributionPublication": "https://en.wikipedia.org/wiki/Stage_(stratigraphy)",
+    "Rank": 4,
+    "StratigraphicRoleTypeID": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic:",
+    "Source": "Workbook Authoring/StratigraphicColumnRankUnitType.1.0.0.xlsx; commit SHA 71749e18."
+  }
+}

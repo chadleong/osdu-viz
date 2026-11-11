@@ -1,0 +1,92 @@
+{
+  "id": "namespace:work-product-component--Document:0e6a8fdb-0a0a-56db-955a-c62204c42cb0",
+  "kind": "osdu:wks:work-product-component--Document:2.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "viewers": [
+      "data.mastertotal.viewers@osduprod-opendes.dataservices.energy"
+    ],
+    "owners": [
+      "data.mastertotal.owners@osduprod-opendes.dataservices.energy"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-mastertotal-legal-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "FR"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:3615p8g2-2a2d-482c-885e-14225b89e90c:"
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Name": "TestTrak Run Summary 15_9-F-1",
+    "Description": "Final Report for Well Pressure Test Run in 15_9-F-1 Wellbore",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:NOR:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Country:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:Volve:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "Darth Bjarne",
+    "LineageAssertions": [
+      {
+        "ID": "namespace:master-data--WellPressureTestAcquisitionJob:586a50bb-c5fb-5498-82fa-1ea1b2af9907:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      },
+      {
+        "ID": "namespace:work-product-component--WellPressureTestRawMeasurement:0c4b5c5b-32cd-57d2-b6a7-bbff6801fb09:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      },
+      {
+        "ID": "namespace:work-product-component--WellLog:anyIDtobeupdated:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "TaxonomyIDs": [
+      "namespace:reference-data--DocumentTaxonomy:RESERVOIR_ENGINEERING.FormationPressureInterpretationsAndReport:",
+      "namespace:reference-data--DocumentTaxonomy:PETROPHYSICS.FormationPressureWhileDrilling:"
+    ],
+    "NumberOfPages": 25,
+    "Languages": [
+      "English"
+    ],
+    "DateIssued": "2013-08-01",
+    "Summary": "Example Summary",
+    "Keywords": [
+      "Well Pressure Test",
+      "MWD",
+      "Volve",
+      "TestTrak"
+    ],
+    "ProducedByOrganisationID": "namespace:master-data--Organisation:BakerHugues:",
+    "ProducedForOrganisationID": "namespace:master-data--Organisation:Statoil:",
+    "ExtensionProperties": {}
+  }
+}

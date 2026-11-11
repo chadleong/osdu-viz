@@ -1,0 +1,91 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--UnitOfMeasure:1%2Fs2",
+      "kind": "osdu:wks:reference-data--UnitOfMeasure:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "hertz squared",
+        "NameAlias": [
+          {
+            "AliasName": "1/s\u00b2",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:",
+            "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:OSDU:"
+          }
+        ],
+        "ID": "1/s2",
+        "InactiveIndicator": false,
+        "Code": "1/s2",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "OSDU extension to Energistics Unit of Measure Dictionary V1.0",
+        "AttributionRevision": "1.0",
+        "CoefficientA": 0,
+        "CoefficientB": 1,
+        "CoefficientC": 1,
+        "CoefficientD": 0,
+        "IsBaseUnit": true,
+        "PersistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/s2\",\"baseMeasurement\":{\"ancestry\":\"1/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "UnitDimensionCode": "1/T2",
+        "UnitDimensionName": "reciprocal time squared",
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:1%2FT2:",
+        "Source": "Workbook Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/reference-data/UnitOfMeasure.json"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UnitOfMeasure:eotvos",
+      "kind": "osdu:wks:reference-data--UnitOfMeasure:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "eotvos",
+        "NameAlias": [],
+        "ID": "eotvos",
+        "InactiveIndicator": false,
+        "Code": "eotvos",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "OSDU extension to Energistics Unit of Measure Dictionary V1.0",
+        "AttributionRevision": "1.0",
+        "CoefficientA": 0,
+        "CoefficientB": 1000000000,
+        "CoefficientC": 1,
+        "CoefficientD": 0,
+        "IsBaseUnit": false,
+        "PersistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1000000000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"eotvos\",\"baseMeasurement\":{\"ancestry\":\"1/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "UnitDimensionCode": "1/T2",
+        "UnitDimensionName": "reciprocal time squared",
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:1%2FT2:",
+        "Source": "Workbook Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/reference-data/UnitOfMeasure.json"
+      }
+    }
+  ]
+}

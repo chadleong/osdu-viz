@@ -1,0 +1,26 @@
+{
+  "id": "partition-id:dataset--File.Generic:WellCompletionReport-KentishKnockSouth1-Terratek-LPSA-904833",
+  "kind": "osdu:wks:dataset--File.Generic:1.0.1",
+  "data": {
+    "Name": "Kentish Knock South 1, LPSA",
+    "Description": "Terratek LPSA report, project 904833.",
+    "TotalSize": "354469",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet:",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://chevron-data/wcr/Carnarvon/CHEVRON_Kentish_Knock_South_904833_LPSA.xlsx",
+        "PreloadFilePath": "https://gitlab.opengroup.org/osdu/subcommittees/data-def/work-products/schema/-/blob/master/Examples/WorkedExamples/RockSampleAnalysis/dataset/content/CHEVRON_Kentish_Knock_South_904833_LPSA.xlsx",
+        "Name": "CHEVRON_Kentish_Knock_South_904833_LPSA.xlsx",
+        "FileSize": "354469"
+      }
+    }
+  },
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

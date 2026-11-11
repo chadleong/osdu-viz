@@ -1,0 +1,85 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "MasterData": [
+    {
+      "id": "osdu:master-data--SeismicAcquisitionSurvey:ST0202R08",
+      "kind": "osdu:wks:master-data--SeismicAcquisitionSurvey:1.4.0",
+      "acl": {
+        "owners": [],
+        "viewers": []
+      },
+      "legal": {
+        "legaltags": [],
+        "otherRelevantDataCountries": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "s",
+          "persistableReference": "{\\\"abcd\\\":{\\\"a\\\":0.0,\\\"b\\\":1.0,\\\"c\\\":1.0,\\\"d\\\":0.0},\\\"symbol\\\":\\\"s\\\",\\\"baseMeasurement\\\":{\\\"ancestry\\\":\\\"T\\\",\\\"type\\\":\\\"UM\\\"},\\\"type\\\":\\\"UAD\\\"}",
+          "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:s:",
+          "propertyNames": [
+            "RecordLength"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\\\"abcd\\\":{\\\"a\\\":0.0,\\\"b\\\":1.0,\\\"c\\\":1.0,\\\"d\\\":0.0},\\\"symbol\\\":\\\"m\\\",\\\"baseMeasurement\\\":{\\\"ancestry\\\":\\\"L\\\",\\\"type\\\":\\\"UM\\\"},\\\"type\\\":\\\"UAD\\\"}",
+          "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "ShotpointIncrementDistance",
+            "CableLength",
+            "CableSpacingDistance",
+            "MaxOffsetDistance"
+          ]
+        }
+      ],
+      "data": {
+        "GeoContexts": [
+          {
+            "GeoPoliticalEntityID": "osdu:master-data--GeoPoliticalEntity:Norway_Country:",
+            "GeoTypeID": "osdu:reference-data--GeoPoliticalEntityType:Country:"
+          }
+        ],
+        "Purpose": "Acquisition for Volve",
+        "ProjectEndDate": "2008-02-01T00:00:00",
+        "Operator": "osdu:master-data--Organisation:Statoil:",
+        "Contractors": [
+          {
+            "ContractorOrganisationID": "osdu:master-data--Organisation:WesternGeco:",
+            "ContractorTypeID": "osdu:reference-data--ContractorType:Recording:"
+          }
+        ],
+        "SeismicGeometryTypeID": "osdu:reference-data--SeismicGeometryType:3D:",
+        "OperatingEnvironmentID": "osdu:reference-data--OperatingEnvironment:Offshore:",
+        "SampleInterval": 4.0,
+        "RecordLength": 10.2,
+        "MaxOffsetDistance": 6000.0,
+        "FoldCount": 120,
+        "SourceConfigurations": [
+          {
+            "VesselName": "Geco Angler",
+            "ShotpointSpacing": 25.0,
+            "EnergySourceTypeID": "namespace:reference-data--SeismicEnergySourceType:AirGun:",
+            "SourceArrayCount": 2,
+            "SourceArraySpacing": 100.0,
+            "Remarks": "Source configuration description"
+          }
+        ],
+        "ReceiverConfigurations": [
+          {
+            "VesselName": "Geco Angler",
+            "CableCount": 4,
+            "CableLength": 6000.0,
+            "CableSpacing": 400.0,
+            "ReceiverTypeID": "namespace:reference-data--SeismicReceiverType:MarineStreamer:",
+            "ReceiverCount": 2,
+            "ReceiverGroupSpacing": 25.0,
+            "Remarks": "Example Remarks"
+          }
+        ]
+      }
+    }
+  ]
+}

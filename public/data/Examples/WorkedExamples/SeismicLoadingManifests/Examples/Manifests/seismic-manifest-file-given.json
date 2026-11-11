@@ -1,0 +1,127 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [],
+  "MasterData": [],
+  "Data": {
+    "WorkProduct": {
+      "id": "surrogate-key:wp",
+      "kind": "osdu:wks:work-product--WorkProduct:1.0.0",
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ]
+      },
+      "meta": [],
+      "data": {
+        "Source": "Equinor",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "Components": [
+          "surrogate-key:wpc-1"
+        ],
+        "Name": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH",
+        "Description": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH.MIG_FIN.POST_STACK.3D.JS-017534.segy"
+      }
+    },
+    "WorkProductComponents": [
+      {
+        "id": "surrogate-key:wpc-1",
+        "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "version": 1605873241000221,
+        "acl": {
+          "owners": [
+            "someone@company.com"
+          ],
+          "viewers": [
+            "someone@company.com"
+          ]
+        },
+        "legal": {
+          "legaltags": [
+            "Example legaltags"
+          ],
+          "otherRelevantDataCountries": [
+            "US"
+          ]
+        },
+        "meta": [
+          {
+            "kind": "Unit",
+            "name": "ms",
+            "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"ms\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+            "propertyNames": [
+              "StartTime",
+              "EndTime",
+              "ShiftApplied",
+              "SampleInterval",
+              "TraceLength"
+            ]
+          },
+          {
+            "kind": "Unit",
+            "name": "m/s",
+            "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"USO\"}",
+            "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m%2Fs:",
+            "propertyNames": [
+              "ReplacementVelocity"
+            ]
+          }
+        ],
+        "data": {
+          "Source": "Example Data Source",
+          "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+          "Datasets": [
+            "partition-id:dataset--FileCollection.SEGY:eba9adc4-f274-4cea-9df8-abc9916bb4fd:"
+          ],
+          "BinGridID": "partition-id:work-product-component--SeismicBinGrid:ExampleSeismicBinGrid-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+          "HorizontalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+          "Preferred3DInterpretationSetID": "partition-id:master-data--Seismic3DInterpretationSet:ExampleSeismic3DInterpretationSurvey:",
+          "Preferred2DInterpretationSetID": "partition-id:master-data--Seismic2DInterpretationSet:ExampleSeismic2DInterpretationSurvey:",
+          "SeismicAttributeTypeID": "partition-id:reference-data--SeismicAttributeType:ExampleSeismicAttributeType:",
+          "SeismicProcessingStageTypeID": "partition-id:reference-data--SeismicProcessingStageType:ExampleSeismicProcessingStageType:",
+          "PrincipalAcquisitionProjectID": "partition-id:master-data--SeismicAcquisitionSurvey:ST0202R08:",
+          "ProcessingProjectID": "partition-id:master-data--SeismicProcessingProject:ST0202R08:",
+          "SeismicTraceDataDimensionalityTypeID": "partition-id:reference-data--SeismicTraceDataDimensionalityType:3D:",
+          "SeismicMigrationTypeID": "partition-id:reference-data--SeismicMigrationType:PSDM-Kirch:",
+          "SeismicStackingTypeID": "partition-id:reference-data--SeismicStackingType:Full:",
+          "SeismicFilteringTypeID": "partition-id:reference-data--SeismicFilteringType:Taup:",
+          "SeismicPhaseID": "partition-id:reference-data--SeismicPhase:ZeroPhase:",
+          "SeismicPolarityID": "partition-id:reference-data--SeismicPolarity:PositiveSEG:",
+          "Difference": false,
+          "StartTime": 0.0,
+          "EndTime": 10200.0,
+          "TraceLength": 10200.0,
+          "SampleInterval": 4.0,
+          "SampleCount": 2551,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+          "ReplacementVelocity": 1450.0,
+          "ShiftApplied": 0.0,
+          "Precision": {
+            "WordFormat": "partition-id:reference-data--WordFormatType:IEEE_FLOAT:",
+            "WordWidth": 4
+          },
+          "ProcessingParameters": [
+            {
+              "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:ExampleProcessingParameterType:",
+              "ProcessingParameterValue": "Example ProcessingParameterValue"
+            }
+          ],
+          "SeismicWaveTypeID": "partition-id:reference-data--SeismicWaveType:ExampleSeismicWaveType:",
+          "ExtensionProperties": {}
+        }
+      }
+    ],
+    "Datasets": []
+  }
+}

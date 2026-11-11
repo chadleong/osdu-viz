@@ -1,0 +1,150 @@
+{
+  "id": "partition-id:master-data--IsolatedInterval:11000091175501.1",
+  "kind": "osdu:wks:master-data--IsolatedInterval:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-08-15T10:00:00.000Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-09-01T00:00:00.000Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "FacilitySpecifications[0].FacilitySpecificationQuantity",
+        "VerticalMeasurement.VerticalMeasurement",
+        "MeasuredDepthTop",
+        "TrueVerticalDepthTop",
+        "IsolatedIntervalBases[].MeasuredDepthBase",
+        "IsolatedIntervalBases[].TrueVerticalDepthBase"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+    "NameAliases": [
+      {
+        "AliasName": "12345678901234",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:API:",
+        "EffectiveDateTime": "2022-09-01T00:00:00.000Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+      }
+    ],
+    "VersionCreationReason": "Initial Completion",
+    "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "FacilityID": "11000091175501.1",
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:IsolatedInterval:",
+    "FacilityOperators": [
+      {
+        "FacilityOperatorID": "Example Facility Operator ID",
+        "FacilityOperatorOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2022-09-01T00:00:00.00Z"
+      }
+    ],
+    "InitialOperatorID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "CurrentOperatorID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "DataSourceOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "OperatingEnvironmentID": "partition-id:reference-data--OperatingEnvironment:Onshore:",
+    "FacilityName": "Initial Completion",
+    "FacilityStates": [
+      {
+        "EffectiveDateTime": "2022-09-01T00:00:00.00Z",
+        "FacilityStateTypeID": "partition-id:reference-data--FacilityStateType:Active:"
+      }
+    ],
+    "FacilityEvents": [
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Creation:",
+        "EffectiveDateTime": "2022-09-01T00:00:00.00Z"
+      }
+    ],
+    "FacilitySpecifications": [
+      {
+        "EffectiveDateTime": "2022-09-01T00:00:00.00Z",
+        "FacilitySpecificationQuantity": 12345.6,
+        "FacilitySpecificationDateTime": "2020-02-13T09:13:15.55Z",
+        "FacilitySpecificationIndicator": true,
+        "FacilitySpecificationText": "Example FacilitySpecificationText",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "ParameterTypeID": "partition-id:reference-data--ParameterType:SlotName:"
+      }
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+    "Description": "Initial Completion",
+    "VerticalMeasurement": {
+      "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+      "VerticalMeasurement": 954.1,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+    },
+    "IsolatedIntervalID": "partition-id:master-data--IsolatedInterval:11000091175501.1:",
+    "SequenceNumber": 1,
+    "IsolatedIntervalTypeID": "partition-id:reference-data--IsolatedIntervalType:CasedHole.FullString:",
+    "MeasuredDepthTop": 5400.0,
+    "TrueVerticalDepthTop": 5100.0,
+    "IsolatedIntervalBases": [
+      {
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "MeasuredDepthBase": 5550.0,
+        "TrueVerticalDepthBase": 5250.0
+      }
+    ],
+    "WellboreOpeningIDs": [
+      "partition-id:master-data--WellboreOpening:11000091175501.B.1:",
+      "partition-id:master-data--WellboreOpening:11000091175501.B.2:",
+      "partition-id:master-data--WellboreOpening:11000091175501.B.3:",
+      "partition-id:master-data--WellboreOpening:11000091175501.B.4:",
+      "partition-id:master-data--WellboreOpening:11000091175501.A.1:",
+      "partition-id:master-data--WellboreOpening:11000091175501.A.2:",
+      "partition-id:master-data--WellboreOpening:11000091175501.A.3:",
+      "partition-id:master-data--WellboreOpening:11000091175501.A.4:"
+    ],
+    "IsCommingled": false,
+    "ClassificationID": "namespace:reference-data--IsolatedIntervalClassification:SweetOilProduction:",
+    "TubularAssemblyTypeID": "namespace:reference-data--TubularAssemblyType:CompletionStringLong:",
+    "CementOptionID": "namespace:reference-data--IsolatedIntervalCementOption:Cemented:",
+    "ZoneAccessMechanismID": "namespace:reference-data--IsolatedIntervalZoneAccessMechanism:TubingConveyedPerforation:",
+    "IsolationMechanismID": "namespace:reference-data--IsolatedIntervalIsolationMechanism:InflatablePackers:",
+    "ExtensionProperties": {}
+  }
+}

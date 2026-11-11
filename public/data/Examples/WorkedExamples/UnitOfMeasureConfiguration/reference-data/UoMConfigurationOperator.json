@@ -1,0 +1,52 @@
+{
+  "id": "namespace:reference-data--UnitOfMeasureConfiguration:Imperial-OperatorABC",
+  "kind": "osdu:wks:reference-data--UnitOfMeasureConfiguration:1.0.0",
+  "version": 1562066009935463,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "meta": [],
+  "data": {
+    "Name": "Imperial OperatorABC",
+    "Description": "Operator ABC default for length",
+    "Code": "Imperial-OperatorABC",
+    "Configurations": [
+      {
+        "Name": "Length",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "PropertyNames": [
+          "*"
+        ],
+        "DefaultUnitID": "namespace:reference-data--UnitOfMeasure:ft:",
+        "PreferredUnitIDs": [
+          "namespace:reference-data--UnitOfMeasure:ft:",
+          "namespace:reference-data--UnitOfMeasure:m:",
+          "namespace:reference-data--UnitOfMeasure:in:",
+          "namespace:reference-data--UnitOfMeasure:cm:",
+          "namespace:reference-data--UnitOfMeasure:mm:"
+        ],
+        "NumericFormatType": "g",
+        "NumericPrecision": 7
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

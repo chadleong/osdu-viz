@@ -1,0 +1,283 @@
+{
+  "id": "namespace:work-product-component--GeoLabelSet:22de97d5-9b9e-415f-9392-0b17cc9eaf2f",
+  "kind": "osdu:wks:work-product-component--GeoLabelSet:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "BLOK-F-234 GeoLabelSet",
+    "Description": "Example GeoLabelSet for BLOK-F-234",
+    "LabelledEntityID": "{{NAMESPACE}}:master-data--ReservoirSegment:BLOCK-F-234:",
+    "LabelAndValues": [
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Area:",
+        "ValueAsNumber": 100
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:GeologicalStructureID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date--ProspectType:Structural.Anticline:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:DriveMechanismTypeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-data--ReservoirDriveMechanismType:Primary.GasExpansion.GasCap:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:PrimaryEnvironmentOfDepositionID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date--DepositionalGrossEnvironment:ClasticDeepMarine:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:HCTypeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date--WellProductType:Oil:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.Height:",
+        "ValueAsNumber": 50
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:NetToGrossRatio:",
+        "ValueAsNumber": 0.67
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Sand.Thickness.TrueVertical:",
+        "ValueAsNumber": 37.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pay.Thickness.TrueVertical.Average.Net:",
+        "ValueAsNumber": 25
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pay.Thickness.Minimum.Net:",
+        "ValueAsNumber": 20
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pay.Thickness.Maximum.Net:",
+        "ValueAsNumber": 30
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:GasOil.Ratio.Initial.SurfaceCondition:",
+        "ValueAsNumber": 60
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:StratigraphicUnit.Depth.Top.TrueVertical:",
+        "ValueAsNumber": 1500
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Average:",
+        "ValueAsNumber": 0.6
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Minimum:",
+        "ValueAsNumber": 0.1
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Maximum:",
+        "ValueAsNumber": 1.5
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Average:",
+        "ValueAsNumber": 25.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Minimum:",
+        "ValueAsNumber": 12.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Maximum:",
+        "ValueAsNumber": 30.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.ApiGravity:",
+        "ValueAsNumber": 9.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.Saturation.Initial:",
+        "ValueAsNumber": 25
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Temperature.Average:",
+        "ValueAsNumber": 200
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.Viscosity.Average:",
+        "ValueAsNumber": 0.02
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Bubblepoint.Pressure:",
+        "ValueAsNumber": 1900
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pressure.Initial:",
+        "ValueAsNumber": 8000
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pressure.Current:",
+        "ValueAsNumber": 6000
+      }
+    ],
+    "SpatialArea": {
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "coordinates": [
+                [
+                  [
+                    -75.03249772035784,
+                    36.06610913491761
+                  ],
+                  [
+                    -75.03249772035784,
+                    35.84984299286968
+                  ],
+                  [
+                    -74.72846795239404,
+                    35.844242050990516
+                  ],
+                  [
+                    -74.72846795239404,
+                    35.980419282101565
+                  ],
+                  [
+                    -74.91963818528026,
+                    35.98414686537339
+                  ],
+                  [
+                    -74.92424469691656,
+                    36.06610913491761
+                  ],
+                  [
+                    -75.03249772035784,
+                    36.06610913491761
+                  ]
+                ]
+              ],
+              "type": "Polygon"
+            }
+          }
+        ]
+      },
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Polygon:"
+    }
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "km2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1000000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"km2\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:km2:",
+      "propertyNames": [
+        "LabelAndValues[0].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "LabelAndValues[5].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "LabelAndValues[6].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "LabelAndValues[7].ValueAsNumber",
+        "LabelAndValues[8].ValueAsNumber",
+        "LabelAndValues[9].ValueAsNumber",
+        "LabelAndValues[10].ValueAsNumber",
+        "LabelAndValues[12].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "mD",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.000000000000001,\"c\":1.01325,\"d\":0.0},\"symbol\":\"mD\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:mD:",
+      "propertyNames": [
+        "LabelAndValues[13].ValueAsNumber",
+        "LabelAndValues[14].ValueAsNumber",
+        "LabelAndValues[15].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "%",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.01,\"c\":1.0,\"d\":0.0},\"symbol\":\"%\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:%:",
+      "propertyNames": [
+        "LabelAndValues[11].ValueAsNumber",
+        "LabelAndValues[16].ValueAsNumber",
+        "LabelAndValues[17].ValueAsNumber",
+        "LabelAndValues[18].ValueAsNumber",
+        "LabelAndValues[20].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dAPI",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"dAPI\",\"baseMeasurement\":{\"ancestry\":\"none\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:dAPI:",
+      "propertyNames": [
+        "LabelAndValues[19].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "degF",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":2298.35,\"c\":9.0,\"d\":0.0},\"symbol\":\"degF\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:degF:",
+      "propertyNames": [
+        "LabelAndValues[21].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "cP",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"cP\",\"baseMeasurement\":{\"ancestry\":\"M/LT\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:cP:",
+      "propertyNames": [
+        "LabelAndValues[22].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "LabelAndValues[23].ValueAsNumber",
+        "LabelAndValues[24].ValueAsNumber",
+        "LabelAndValues[25].ValueAsNumber"
+      ]
+    }
+  ]
+}

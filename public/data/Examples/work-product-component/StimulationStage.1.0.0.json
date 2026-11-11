@@ -1,0 +1,1363 @@
+{
+  "id": "namespace:work-product-component--StimulationStage:a73e9d9f-27d2-57cb-ad40-a6f03119b204",
+  "kind": "osdu:wks:work-product-component--StimulationStage:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "IntervalTopMeasuredDepth",
+        "IntervalBaseMeasuredDepth",
+        "IntervalTopTrueVerticalDepth",
+        "IntervalBaseTrueVerticalDepth",
+        "StageIntervalLength",
+        "FormationTopMeasuredDepth",
+        "FormationTopTrueVerticalDepth",
+        "FractureLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm/gal[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":0.003785411784,\"d\":0.0},\"symbol\":\"lbm/gal[US]\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm%2Fgal%5BUS%5D:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].Density",
+        "JobStep[].Fluid.Density",
+        "JobStep[].MaterialUsed[].Density",
+        "JobStep[].MaterialUsedRateStart[].Density",
+        "JobStep[].MaterialUsedRateEnd[].Density",
+        "JobStep[].MaterialUsedRateMax[].Density",
+        "JobStep[].MaterialUsedRateAvg[].Density",
+        "JobStep[].BHMaterialUsedRateStart[].Density",
+        "JobStep[].BHMaterialUsedRateEnd[].Density",
+        "JobStep[].BHMaterialUsedRateAvg[].Density",
+        "JobStep[].ProppantConcBHStart",
+        "JobStep[].ProppantConcBHEnd",
+        "JobStep[].ProppantConcBHMax",
+        "JobStep[].ProppantConcBHAvg",
+        "JobStep[].ProppantConcSurfaceStart",
+        "JobStep[].ProppantConcSurfaceEnd",
+        "JobStep[].ProppantConcSurfaceMax",
+        "JobStep[].ProppantConcSurfaceAvg",
+        "JobStep[].ProppantSlurryConcAvg",
+        "JobStep[].ProppantSlurryConcMax",
+        "MaterialUsageRateMax[].Density",
+        "MaterialUsage[].Density",
+        "ProppantBHConcAvg",
+        "ProppantBHConcMax",
+        "ProppantPerforationConc",
+        "ProppantSurfaceConcAvg",
+        "ProppantSurfaceConcMax"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":1.0,\"d\":0.0},\"symbol\":\"lbm\",\"baseMeasurement\":{\"ancestry\":\"M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].Mass",
+        "JobStep[].MaterialUsed[].Mass",
+        "JobStep[].MaterialUsedRateStart[].Mass",
+        "JobStep[].MaterialUsedRateEnd[].Mass",
+        "JobStep[].MaterialUsedRateMax[].Mass",
+        "JobStep[].MaterialUsedRateAvg[].Mass",
+        "JobStep[].BHMaterialUsedRateStart[].Mass",
+        "JobStep[].BHMaterialUsedRateEnd[].Mass",
+        "JobStep[].BHMaterialUsedRateAvg[].Mass",
+        "MaterialUsageRateMax[].Mass",
+        "MaterialUsage[].Mass",
+        "ProppantDesignMass",
+        "ProppantInFormationMass",
+        "ProppantInFormationTotal",
+        "ProppantWellboreMass"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm/min",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":60.0,\"d\":0.0},\"symbol\":\"lbm/min\",\"baseMeasurement\":{\"ancestry\":\"M/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm%2Fmin:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].MassFlowRate",
+        "JobStep[].MaterialUsed[].MassFlowRate",
+        "JobStep[].MaterialUsedRateStart[].MassFlowRate",
+        "JobStep[].MaterialUsedRateEnd[].MassFlowRate",
+        "JobStep[].MaterialUsedRateMax[].MassFlowRate",
+        "JobStep[].MaterialUsedRateAvg[].MassFlowRate",
+        "JobStep[].BHMaterialUsedRateStart[].MassFlowRate",
+        "JobStep[].BHMaterialUsedRateEnd[].MassFlowRate",
+        "JobStep[].BHMaterialUsedRateAvg[].MassFlowRate",
+        "MaterialUsageRateMax[].MassFlowRate",
+        "MaterialUsage[].MassFlowRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].StdVolume",
+        "JobStep[].Fluid.AdditiveConcentration[].Volume",
+        "JobStep[].BaseFluidBypassVolume",
+        "JobStep[].BaseFluidVolumeEquip",
+        "JobStep[].FluidBaseVolume",
+        "JobStep[].FluidCirculatedVolume",
+        "JobStep[].FluidPumpedVolume",
+        "JobStep[].FluidReturnedVolume",
+        "JobStep[].FluidSqueezedVolume",
+        "JobStep[].FluidWashedVolume",
+        "JobStep[].MaterialUsed[].StdVolume",
+        "JobStep[].MaterialUsed[].Volume",
+        "JobStep[].MaterialUsedRateStart[].StdVolume",
+        "JobStep[].MaterialUsedRateStart[].Volume",
+        "JobStep[].MaterialUsedRateEnd[].StdVolume",
+        "JobStep[].MaterialUsedRateEnd[].Volume",
+        "JobStep[].MaterialUsedRateMax[].StdVolume",
+        "JobStep[].MaterialUsedRateMax[].Volume",
+        "JobStep[].MaterialUsedRateAvg[].StdVolume",
+        "JobStep[].MaterialUsedRateAvg[].Volume",
+        "JobStep[].BHMaterialUsedRateStart[].StdVolume",
+        "JobStep[].BHMaterialUsedRateStart[].Volume",
+        "JobStep[].BHMaterialUsedRateEnd[].StdVolume",
+        "JobStep[].BHMaterialUsedRateEnd[].Volume",
+        "JobStep[].BHMaterialUsedRateAvg[].StdVolume",
+        "JobStep[].BHMaterialUsedRateAvg[].Volume",
+        "JobStep[].SlurryFluidVolume",
+        "JobStep[].WellheadSlurryVolume",
+        "MaterialUsageRateMax[].StdVolume",
+        "MaterialUsageRateMax[].Volume",
+        "MaterialUsage[].StdVolume",
+        "MaterialUsage[].Volume",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].FlowbackVolume",
+        "PumpDiagnosticSession[].BaseFluidVol",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].FlowbackVolume",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].FlowBackVolume",
+        "PumpDiagnosticSession[].WellboreVolume",
+        "SlurryVolumeTotal"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/m3\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fm3:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].VolumeConcentration",
+        "JobStep[].BaseFluidQualityAvg",
+        "JobStep[].CO2BaseFluidQualityAvg",
+        "JobStep[].InternalPhaseFractionAvg",
+        "JobStep[].MaterialUsed[].VolumeConcentration",
+        "JobStep[].MaterialUsedRateStart[].VolumeConcentration",
+        "JobStep[].MaterialUsedRateEnd[].VolumeConcentration",
+        "JobStep[].MaterialUsedRateMax[].VolumeConcentration",
+        "JobStep[].MaterialUsedRateAvg[].VolumeConcentration",
+        "JobStep[].BHMaterialUsedRateStart[].VolumeConcentration",
+        "JobStep[].BHMaterialUsedRateEnd[].VolumeConcentration",
+        "JobStep[].BHMaterialUsedRateAvg[].VolumeConcentration",
+        "JobStep[].N2BaseFluidQualityAvg",
+        "MaterialUsageRateMax[].VolumeConcentration",
+        "MaterialUsage[].VolumeConcentration",
+        "PumpDiagnosticSession[].FluidEfficiency",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FluidEfficiency",
+        "PumpDiagnosticSession[].FoamQuality",
+        "PumpDiagnosticSession[].PadPercent"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "JobStep[].Fluid.AdditiveConcentration[].VolumetricFlowRate",
+        "JobStep[].CO2SurfaceRateEnd",
+        "JobStep[].DirtyMaterialRateStart",
+        "JobStep[].DirtyMaterialRateEnd",
+        "JobStep[].MaterialUsed[].VolumetricFlowRate",
+        "JobStep[].MaterialUsedRateStart[].VolumetricFlowRate",
+        "JobStep[].MaterialUsedRateEnd[].VolumetricFlowRate",
+        "JobStep[].MaterialUsedRateMax[].VolumetricFlowRate",
+        "JobStep[].MaterialUsedRateAvg[].VolumetricFlowRate",
+        "JobStep[].BHMaterialUsedRateStart[].VolumetricFlowRate",
+        "JobStep[].BHMaterialUsedRateEnd[].VolumetricFlowRate",
+        "JobStep[].BHMaterialUsedRateAvg[].VolumetricFlowRate",
+        "JobStep[].N2SurfaceRateEnd",
+        "JobStep[].WellheadFlowRateAvg",
+        "JobStep[].WellheadFlowRateMax",
+        "BaseFluidReturnRateAvg",
+        "MaterialUsageRateMax[].VolumetricFlowRate",
+        "MaterialUsage[].VolumetricFlowRate",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].BHFlowRate",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].FlowbackRate",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].SurfaceFlowRate",
+        "PumpDiagnosticSession[].StepRateTest[].PressureMeasurement[].BHFlowRate",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].BHFlowRate",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].FlowbackRate",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].SurfaceFlowRate",
+        "PumpDiagnosticSession[].BHTreatmentRateAvg",
+        "SlurryReturnRateAvg",
+        "TubingFluidRateMax"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "JobStep[].Fluid.FilterSize",
+        "JobStep[].Fluid.FilterCake",
+        "Diversion.ElementSpacing",
+        "FlowPath.BridgePlugMeasuredDepth",
+        "FlowPath.TubingBottomMeasuredDepth",
+        "FlowPath.PackerMeasuredDepth",
+        "FormationBottomMeasuredDepth",
+        "FormationBottomTrueVerticalDepth",
+        "PumpDiagnosticSession[].StepDownTest[].EntryHoleDiameter",
+        "PumpDiagnosticSession[].BHMeasuredDepth",
+        "PumpDiagnosticSession[].ChokeSize",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureLength",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureWidth",
+        "PumpDiagnosticSession[].MidPerforationMeasuredDepth",
+        "PumpDiagnosticSession[].MidPerforationTrueVerticalDepth",
+        "PumpDiagnosticSession[].InjectionPointMeasuredDepth",
+        "PerfBallSize"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "JobStep[].Fluid.FluidSurfaceTemperature",
+        "JobStep[].Fluid.FluidTestTemperature",
+        "PumpDiagnosticSession[].StaticBHTemperature",
+        "PumpDiagnosticSession[].SurfaceFluidTemperature",
+        "PumpDiagnosticSession[].SurfaceTemperature",
+        "BHTreatingTemperatureAvg"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "JobStep[].Fluid.FluidTestPressure",
+        "JobStep[].Fluid.GelStrength10Sec",
+        "JobStep[].Fluid.GelStrength10Min",
+        "JobStep[].BHPressureStart",
+        "JobStep[].BHPressureEnd",
+        "JobStep[].BHPressureAvg",
+        "JobStep[].PipeFrictionPressureLoss",
+        "JobStep[].SurfacePressureStart",
+        "JobStep[].SurfacePressureEnd",
+        "JobStep[].SurfacePressureMax",
+        "JobStep[].SurfacePressureAvg",
+        "FlowPath.BreakDownPressure",
+        "FlowPath.PmaxPacPressureAvg",
+        "FlowPath.PmaxPacPressureMax",
+        "FlowPath.PmaxWeaklinkPressureAvg",
+        "FlowPath.PmaxWeaklinkPressureMax",
+        "CasingPressureAvg",
+        "CasingPressureMax",
+        "ClosurePressure",
+        "FrictionPressure",
+        "NetPressure",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].EntryFriction",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].NearWellboreFriction",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].PerfFrictionLoss",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].PipeFrictionLoss",
+        "PumpDiagnosticSession[].StepDownTest[].FlowBackTestStep[].SurfacePressure",
+        "PumpDiagnosticSession[].StepDownTest[].InitialShutinPressure",
+        "PumpDiagnosticSession[].StepRateTest[].FractureExtensionPressure",
+        "PumpDiagnosticSession[].StepRateTest[].PressureMeasurement[].Pressure",
+        "PumpDiagnosticSession[].BHHydrostaticPressure",
+        "PumpDiagnosticSession[].BubblePointPressure",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureClosePressure",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureExtensionPressure",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].NetPressure",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].PorePressure",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].PseudoRadialPressure",
+        "PumpDiagnosticSession[].FractureClosePressure",
+        "PumpDiagnosticSession[].FrictionPressure",
+        "PumpDiagnosticSession[].PorePressure",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].EntryFriction",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].NearWellboreFriction",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].PerfFrictionLoss",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].PipeFrictionLoss",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].Step[].SurfacePressure",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].CasingPressure",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].FractureClosePressure",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].TubingPressure",
+        "PumpDiagnosticSession[].ShutInInitialPressure",
+        "PumpDiagnosticSession[].BHTreatmentPressureAvg",
+        "ScreenOutPressure",
+        "ShutInPressure[].Pressure",
+        "SurfacePressureAvg",
+        "SurfacePressureMax",
+        "TubingPressureAvg",
+        "TubingPressureMax",
+        "PerforationSetFrictionPressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "JobStep[].Fluid.pH",
+        "JobStep[].Fluid.SpecificGravity",
+        "JobStep[].FrictionFactor",
+        "FlowPath.OpenHoleFrictionFactor",
+        "FlowPath.PipeFrictionFactor",
+        "PumpDiagnosticSession[].StepDownTest[].DischargeCoefficient",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].PdlCoefficient",
+        "PumpDiagnosticSession[].FluidKprimeFactor",
+        "PumpDiagnosticSession[].FluidNprimeFactor",
+        "PerforationSetFrictionFactor",
+        "PerforationSetDischargeCoefficient"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa.s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa.s\",\"baseMeasurement\":{\"ancestry\":\"M/LT\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa.s:",
+      "propertyNames": [
+        "JobStep[].Fluid.Viscosity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "degF",
+      "persistableReference": "{\"abcd\":{\"a\":2298.35,\"b\":5.0,\"c\":9.0,\"d\":0.0},\"symbol\":\"degF\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:degF:",
+      "propertyNames": [
+        "JobStep[].FluidTemperatureAvg",
+        "DHStaticTemperatureAvg"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi/ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.000196644768,\"d\":0.0},\"symbol\":\"psi/ft\",\"baseMeasurement\":{\"ancestry\":\"M/L2T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi%2Fft:",
+      "propertyNames": [
+        "JobStep[].FractureGradientInitial",
+        "JobStep[].FractureGradientFinal",
+        "FractureGradientInitial",
+        "FractureGradientFinal"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "hp",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":745.6998715822702,\"c\":1.0,\"d\":0.0},\"symbol\":\"hp\",\"baseMeasurement\":{\"ancestry\":\"L2M/T3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:hp:",
+      "propertyNames": [
+        "JobStep[].HhpAvg",
+        "JobStep[].HhpMax",
+        "HHPAvg",
+        "HHPMax",
+        "HHPOrderedCO2"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "JobStep[].ProppantConcAvg",
+        "PumpDiagnosticSession[].StepDownTest[].BHFluidDensity",
+        "PumpDiagnosticSession[].FluidDensity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "min",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":60.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"min\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:min:",
+      "propertyNames": [
+        "JobStep[].PumpTime",
+        "ClosureDuration",
+        "PumpTimeTotal"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bbl/min",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.158987294928,\"c\":60.0,\"d\":0.0},\"symbol\":\"bbl/min\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bbl%2Fmin:",
+      "propertyNames": [
+        "JobStep[].SlurryReturnRateAvg",
+        "FluidPumpRateAvg",
+        "FluidPumpRateMax",
+        "BHPumpRateAvg",
+        "CasingPumpRateMax"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L2T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N%2Fm3:",
+      "propertyNames": [
+        "FlowPath.FractureGradient",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureGradient"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "AnnulusPressureAvg",
+        "AnnulusPressureMax",
+        "BreakDownPressure",
+        "ShutinPressureInitial"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "gal[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.003785411784,\"c\":1.0,\"d\":0.0},\"symbol\":\"gal[US]\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:gal%5BUS%5D:",
+      "propertyNames": [
+        "BodyVolume",
+        "PadVolume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+      "propertyNames": [
+        "ConductivityAvg"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bbl",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.158987294928,\"c\":1.0,\"d\":0.0},\"symbol\":\"bbl\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bbl:",
+      "propertyNames": [
+        "FlushVolume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft/d",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":86400.0,\"d\":0.0},\"symbol\":\"ft/d\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft%2Fd:",
+      "propertyNames": [
+        "FormationBreakLengthPerDay"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:in:",
+      "propertyNames": [
+        "FractureHeight",
+        "FractureWidthAvg",
+        "OpenHoleDiameter",
+        "ProppantHeight"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "W",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"W\",\"baseMeasurement\":{\"ancestry\":\"L2M/T3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:W:",
+      "propertyNames": [
+        "HHPOrderedFluid",
+        "HHPUsedCO2",
+        "HHPUsedFluid"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "%",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.01,\"c\":1.0,\"d\":0.0},\"symbol\":\"%\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:%25:",
+      "propertyNames": [
+        "PadPercent",
+        "ProppantPumpedPercent"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/J",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/J\",\"baseMeasurement\":{\"ancestry\":\"LT2/M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2FJ:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidCompressibility",
+        "PumpDiagnosticSession[].ReservoirTotalCompressibility"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].FractureCloseDuration",
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].PdlEndDuration",
+        "PumpDiagnosticSession[].PumpDuration",
+        "PumpDiagnosticSession[].PumpFlowBackTest[].FractureCloseDuration",
+        "ShutInPressure[].TimeAfterShutin"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "TD[API]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"TD[API]\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:TD%5BAPI%5D:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidEfficiencyTest[].ResidualPermeability"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "J/(kg.deltaK)",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"J/(kg.deltaK)\",\"baseMeasurement\":{\"ancestry\":\"L2/DT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:J%2F%28kg.deltaK%29:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidSpecificHeat"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "W/(m.deltaK)",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"W/(m.deltaK)\",\"baseMeasurement\":{\"ancestry\":\"LM/DT3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:W%2F%28m.deltaK%29:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidThermalConductivity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/(m3.deltaK)",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/(m3.deltaK)\",\"baseMeasurement\":{\"ancestry\":\"1/D\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2F%28m3.deltaK%29:",
+      "propertyNames": [
+        "PumpDiagnosticSession[].FluidThermalExpansionCoefficient"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "DDMSDatasets": [
+      "urn://wddms-3/uuid:20840361-adc0-4842-999b-5639bd07bb38",
+      "eml://rddms-1/dataspace('demo/Volve')/resqml20.obj_ContinuousProperty(1615d8d2-2a2d-482c-885e-14225b89e90c)"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "namespace:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "namespace:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "Name": "Example Name",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:11000091175501:",
+    "WellActivityID": "namespace:master-data--WellActivity:110000911755.COM:",
+    "StimulationJobID": "namespace:work-product-component--StimulationJob:110000911755.COM:",
+    "StageNumber": 2,
+    "StageStartDateTime": "2020-05-01T016:00:00+0000",
+    "StageEndDateTime": "2020-05-01T018:30:00+0000",
+    "IntervalTopMeasuredDepth": 14386.0,
+    "IntervalBaseMeasuredDepth": 14613.0,
+    "IntervalTopTrueVerticalDepth": 7029.0,
+    "IntervalBaseTrueVerticalDepth": 7025.0,
+    "StageIntervalLength": 227.0,
+    "HoleSectionID": "namespace:master-data--HoleSection:11000091175501.6inHoleSect:",
+    "JobEvent": [
+      {
+        "Number": 1,
+        "DateTime": "2020-05-01T018:30:00+0000",
+        "NumberStep": 2,
+        "Comment": "Max acheivable rate 350 L/minute at 61.75 MPa. FLBK 50 m3 at 0.9 m3/min average."
+      }
+    ],
+    "JobStep": [
+      {
+        "StepNumber": 2,
+        "StepName": "Pump Main Body",
+        "JobStepTypeID": "namespace:reference-data--StimJobStepType:PumpMainBody:",
+        "Description": "Pump Main Body w/ 40/70 Ottawa Sand",
+        "StepStartDateTime": "2020-05-01T016:35:00+0000",
+        "StepEndDateTime": "2020-05-01T016:52:00+0000",
+        "Fluid": {
+          "Name": "Slickwater",
+          "FluidTypeID": "namespace:reference-data--StimJobFluidType:Water.Slick:",
+          "Description": "FR-70 Slickwater",
+          "AdditiveConcentration": [
+            {
+              "MaterialReferenceID": "70 Ottawa Sand",
+              "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+              "Density": 22.15,
+              "Mass": 200000.0,
+              "MassFlowRate": 2000.0,
+              "StdVolume": 12345.6,
+              "Volume": 12345.6,
+              "VolumeConcentration": 12345.6,
+              "VolumetricFlowRate": 1500.0
+            }
+          ],
+          "Density": 8.76,
+          "FilterSize": 12345.6,
+          "FilterType": "Example Filter Type",
+          "FilterCake": 12345.6,
+          "FluidSurfaceTemperature": 12345.6,
+          "FluidTestPressure": 12345.6,
+          "FluidTestTemperature": 12345.6,
+          "GelStrength10Sec": 12345.6,
+          "GelStrength10Min": 12345.6,
+          "IsKillFluid": false,
+          "pH": 6.0,
+          "Purpose": "Main Body",
+          "SpecificGravity": 0.6,
+          "Supplier": "Schlumberger",
+          "SupplierID": "namespace:master-data--Organisation:SLB:",
+          "Viscosity": 12345.6,
+          "Remarks": "Example Remarks"
+        },
+        "FluidReportID": "namespace:work-product-component--WellFluidsReport:WellFluidsReport-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "BallsUsed": 16,
+        "BallsRecovered": 16,
+        "BaseFluidBypassVolume": 12345.6,
+        "BaseFluidQualityAvg": 12345.6,
+        "BaseFluidVolumeEquip": 72311.0,
+        "BHPressureStart": 12345.6,
+        "BHPressureEnd": 12345.6,
+        "BHPressureAvg": 12345.6,
+        "CO2BaseFluidQualityAvg": 12345.6,
+        "CO2SurfaceRateEnd": 12345.6,
+        "DirtyMaterialRateStart": 12345.6,
+        "DirtyMaterialRateEnd": 12345.6,
+        "FluidBaseVolume": 72311.8,
+        "FluidCirculatedVolume": 72311.8,
+        "FluidPumpedVolume": 72311.8,
+        "FluidReturnedVolume": 71000.0,
+        "FluidSqueezedVolume": 1311.0,
+        "FluidTemperatureAvg": 45.0,
+        "FluidWashedVolume": 1430.0,
+        "FractureGradientInitial": 1.079,
+        "FractureGradientFinal": 1.03,
+        "FrictionFactor": 12345.6,
+        "HhpAvg": 7400.0,
+        "HhpMax": 7600.0,
+        "InternalPhaseFractionAvg": 12345.6,
+        "MaterialUsed": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "MaterialUsedRateStart": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "MaterialUsedRateEnd": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "MaterialUsedRateMax": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "MaterialUsedRateAvg": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "BHMaterialUsedRateStart": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "BHMaterialUsedRateEnd": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "BHMaterialUsedRateAvg": [
+          {
+            "MaterialReferenceID": "70 Ottawa Sand",
+            "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+            "Density": 22.15,
+            "Mass": 200000.0,
+            "MassFlowRate": 2000.0,
+            "StdVolume": 12345.6,
+            "Volume": 12345.6,
+            "VolumeConcentration": 12345.6,
+            "VolumetricFlowRate": 1500.0
+          }
+        ],
+        "N2BaseFluidQualityAvg": 12345.6,
+        "N2SurfaceRateEnd": 12345.6,
+        "PipeFrictionPressureLoss": 12345.6,
+        "ProppantConcAvg": 12345.6,
+        "ProppantConcBHStart": 0.51,
+        "ProppantConcBHEnd": 0.45,
+        "ProppantConcBHMax": 0.6,
+        "ProppantConcBHAvg": 0.51,
+        "ProppantConcSurfaceStart": 0.5,
+        "ProppantConcSurfaceEnd": 0.5,
+        "ProppantConcSurfaceMax": 0.5,
+        "ProppantConcSurfaceAvg": 0.5,
+        "ProppantSlurryConcAvg": 0.5,
+        "ProppantSlurryConcMax": 0.5,
+        "PumpTime": 21.0,
+        "SlurryFluidVolume": 72000.0,
+        "SlurryReturnRateAvg": 36.0,
+        "SurfacePressureStart": 12345.6,
+        "SurfacePressureEnd": 12345.6,
+        "SurfacePressureMax": 12345.6,
+        "SurfacePressureAvg": 12345.6,
+        "WellheadSlurryVolume": 12345.6,
+        "WellheadFlowRateAvg": 12345.6,
+        "WellheadFlowRateMax": 12345.6,
+        "Remarks": "Treatment #2"
+      }
+    ],
+    "Diversion": {
+      "ContractorName": "Example Contractor Name",
+      "ElementSpacing": 12345.6,
+      "DiversionMethodID": "namespace:reference-data--StimJobDiversionMethod:BallSealer:",
+      "ToolDescription": "Example Tool Description",
+      "Remarks": "Example Remarks"
+    },
+    "FlowPath": {
+      "BreakDownPressure": 12345.6,
+      "BridgePlugMeasuredDepth": 12345.6,
+      "BridgePlugRemovalDate": "2020-02-13T09:13:15.55Z",
+      "TubingBottomMeasuredDepth": 12345.6,
+      "FractureGradient": 12345.6,
+      "FlowPathTypeID": "namespace:reference-data--StimFlowPathType:Annulus:",
+      "OpenHoleFrictionFactor": 12345.6,
+      "PackerMeasuredDepth": 12345.6,
+      "PipeFrictionFactor": 12345.6,
+      "PmaxPacPressureAvg": 12345.6,
+      "PmaxPacPressureMax": 12345.6,
+      "PmaxWeaklinkPressureAvg": 12345.6,
+      "PmaxWeaklinkPressureMax": 12345.6,
+      "Remarks": "Example Remarks"
+    },
+    "FluidPumpRateAvg": 36.54,
+    "FluidPumpRateMax": 46.23,
+    "AnnulusPressureAvg": 8303.0,
+    "AnnulusPressureMax": 8755.0,
+    "BaseFluidReturnRateAvg": 12345.6,
+    "BHPumpRateAvg": 36.54,
+    "DHStaticTemperatureAvg": 155.0,
+    "BodyVolume": 156435.0,
+    "BreakDownPressure": 8358.0,
+    "CasingPumpRateMax": 46.0,
+    "CasingPressureAvg": 12345.6,
+    "CasingPressureMax": 12345.6,
+    "ClosureDuration": 1.0,
+    "ClosurePressure": 12345.6,
+    "ConductivityAvg": 12345.6,
+    "FlushVolume": 5.0,
+    "FormationBreakLengthPerDay": 1000.0,
+    "FormationName": "Willow",
+    "LithostratigraphicID": "namespace:reference-data--LithoStratigraphy:Bed:",
+    "WellboreMarketSetID": "namespace:work-product-component--WellboreMarkerSet:WellboreMarkerSet-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "WellboreMarkerID": "Example Wellbore Marker ID",
+    "ReservoirID": "namespace:master-data--Reservoir:Willow:",
+    "ReservoirSegmentID": "namespace:master-data--ReservoirSegment:SomeUniqueReservoirSegmentID:",
+    "FormationTopMeasuredDepth": 7300.0,
+    "FormationTopTrueVerticalDepth": 7036.0,
+    "FormationBottomMeasuredDepth": 12345.6,
+    "FormationBottomTrueVerticalDepth": 12345.6,
+    "FractureGradientInitial": 1.079,
+    "FractureGradientFinal": 1.079,
+    "FractureHeight": 0.25,
+    "FractureLength": 12.0,
+    "FractureWidthAvg": 0.15,
+    "FrictionPressure": 12345.6,
+    "HHPAvg": 7431.0,
+    "HHPMax": 7800.0,
+    "HHPOrderedCO2": 8000.0,
+    "HHPOrderedFluid": 12345.6,
+    "HHPUsedCO2": 12345.6,
+    "HHPUsedFluid": 12345.6,
+    "IsScreenedOut": false,
+    "MaterialUsageRateMax": [
+      {
+        "MaterialReferenceID": "70 Ottawa Sand",
+        "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+        "Density": 22.15,
+        "Mass": 200000.0,
+        "MassFlowRate": 2000.0,
+        "StdVolume": 12345.6,
+        "Volume": 12345.6,
+        "VolumeConcentration": 12345.6,
+        "VolumetricFlowRate": 1500.0
+      }
+    ],
+    "MaterialUsage": [
+      {
+        "MaterialReferenceID": "70 Ottawa Sand",
+        "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+        "Density": 22.15,
+        "Mass": 200000.0,
+        "MassFlowRate": 2000.0,
+        "StdVolume": 12345.6,
+        "Volume": 12345.6,
+        "VolumeConcentration": 12345.6,
+        "VolumetricFlowRate": 1500.0
+      }
+    ],
+    "NetPressure": 12345.6,
+    "OpenHoleDiameter": 6.0,
+    "OpenHoleName": "6\" Hole Section",
+    "PadPercent": 100.0,
+    "PadVolume": 8194.0,
+    "PumpDiagnosticSession": [
+      {
+        "StageNumber": 2,
+        "Number": 2,
+        "Name": "Example Name",
+        "Description": "Example Description",
+        "StepDownTest": [
+          {
+            "FlowBackTestStep": [
+              {
+                "StepNumber": 2,
+                "DateTime": "2020-02-13T09:13:15.55Z",
+                "BHFlowRate": 12345.6,
+                "EntryFriction": 12345.6,
+                "FlowbackVolume": 12345.6,
+                "FlowbackRate": 12345.6,
+                "NearWellboreFriction": 12345.6,
+                "PerfFrictionLoss": 12345.6,
+                "PipeFrictionLoss": 12345.6,
+                "SurfacePressure": 12345.6,
+                "SurfaceFlowRate": 12345.6
+              }
+            ],
+            "BHFluidDensity": 12345.6,
+            "DischargeCoefficient": 12345.6,
+            "EntryHoleDiameter": 12345.6,
+            "InitialShutinPressure": 12345.6,
+            "PerforationsEffective": 2,
+            "PerforationsTotal": 2,
+            "Remarks": "Example Remarks"
+          }
+        ],
+        "StepRateTest": [
+          {
+            "FractureExtensionPressure": 12345.6,
+            "PressureMeasurement": [
+              {
+                "BHFlowRate": 12345.6,
+                "Pressure": 12345.6
+              }
+            ]
+          }
+        ],
+        "BaseFluidVol": 12345.6,
+        "BHHydrostaticPressure": 12345.6,
+        "BHMeasuredDepth": 12345.6,
+        "StaticBHTemperature": 12345.6,
+        "BubblePointPressure": 12345.6,
+        "ChokeSize": 12345.6,
+        "FluidCompressibility": 12345.6,
+        "FluidDensity": 12345.6,
+        "FluidEfficiency": 12345.6,
+        "FluidEfficiencyTest": [
+          {
+            "StartDateTime": "2020-02-13T09:13:15.55Z",
+            "EndDateTime": "2020-02-13T09:13:15.55Z",
+            "AnalysisMethodID": "namespace:reference-data--StimFETestAnalysisMethod:Average:",
+            "FluidEfficiency": 12345.6,
+            "FractureCloseDuration": 12345.6,
+            "FractureClosePressure": 12345.6,
+            "FractureExtensionPressure": 12345.6,
+            "FractureGradient": 12345.6,
+            "FractureLength": 12345.6,
+            "FractureWidth": 12345.6,
+            "NetPressure": 12345.6,
+            "PdlCoefficient": 12345.6,
+            "PdlEndDuration": 12345.6,
+            "PorePressure": 12345.6,
+            "PseudoRadialPressure": 12345.6,
+            "ResidualPermeability": 12345.6
+          }
+        ],
+        "FluidKprimeFactor": 12345.6,
+        "FluidNprimeFactor": 12345.6,
+        "FluidSpecificHeat": 12345.6,
+        "FluidThermalConductivity": 12345.6,
+        "FluidThermalExpansionCoefficient": 12345.6,
+        "FoamQuality": 12345.6,
+        "FractureCloseDateTime": "2020-02-13T09:13:15.55Z",
+        "FractureClosePressure": 12345.6,
+        "FrictionPressure": 12345.6,
+        "IsTemperatureCorrectionApplied": true,
+        "MidPerforationMeasuredDepth": 12345.6,
+        "MidPerforationTrueVerticalDepth": 12345.6,
+        "PadPercent": 12345.6,
+        "PorePressure": 12345.6,
+        "PumpDuration": 12345.6,
+        "PumpFlowBackTest": [
+          {
+            "FlowBackStartDateTime": "2020-02-13T09:13:15.55Z",
+            "FlowBackEndDateTime": "2020-02-13T09:13:15.55Z",
+            "Step": [
+              {
+                "StepNumber": 2,
+                "DateTime": "2020-02-13T09:13:15.55Z",
+                "BHFlowRate": 12345.6,
+                "EntryFriction": 12345.6,
+                "FlowbackVolume": 12345.6,
+                "FlowbackRate": 12345.6,
+                "NearWellboreFriction": 12345.6,
+                "PerfFrictionLoss": 12345.6,
+                "PipeFrictionLoss": 12345.6,
+                "SurfacePressure": 12345.6,
+                "SurfaceFlowRate": 12345.6
+              }
+            ],
+            "CasingPressure": 12345.6,
+            "FlowBackVolume": 12345.6,
+            "FractureCloseDuration": 12345.6,
+            "FractureClosePressure": 12345.6,
+            "TubingPressure": 12345.6,
+            "Remarks": "Example Remarks"
+          }
+        ],
+        "PumpOffDateTime": "2020-02-13T09:13:15.55Z",
+        "PumpOnDateTime": "2020-02-13T09:13:15.55Z",
+        "ReservoirTotalCompressibility": 12345.6,
+        "ShutInInitialPressure": 12345.6,
+        "SurfaceFluidTemperature": 12345.6,
+        "InjectionPointMeasuredDepth": 12345.6,
+        "SurfaceTemperature": 12345.6,
+        "BHTreatmentPressureAvg": 12345.6,
+        "BHTreatmentRateAvg": 12345.6,
+        "WellboreVolume": 12345.6,
+        "WellShutinDateTime": "2020-02-13T09:13:15.55Z",
+        "Remarks": "Example Remarks"
+      }
+    ],
+    "PerfBallCount": 2,
+    "PerfBallSize": 12345.6,
+    "ProppantBHConcAvg": 0.51,
+    "ProppantBHConcMax": 0.61,
+    "ProppantDesignMass": 0.55,
+    "ProppantInFormationMass": 44100.0,
+    "ProppantHeight": 0.25,
+    "ProppantInFormationTotal": 44100.0,
+    "ProppantPerforationConc": 0.51,
+    "ProppantPumpedPercent": 100.0,
+    "ProppantSurfaceConcAvg": 0.51,
+    "ProppantSurfaceConcMax": 0.51,
+    "ProppantWellboreMass": 44100.0,
+    "PumpTimeTotal": 45.0,
+    "ScreenOutPressure": 12345.6,
+    "ShutInPressure": [
+      {
+        "Pressure": 12345.6,
+        "TimeAfterShutin": 12345.6
+      }
+    ],
+    "ShutinPressureInitial": 3964.0,
+    "SlurryReturnRateAvg": 12345.6,
+    "SurfacePressureAvg": 12345.6,
+    "SurfacePressureMax": 12345.6,
+    "TechnologyDescription": "Example Technology Description",
+    "BHTreatingTemperatureAvg": 12345.6,
+    "TubingFluidRateMax": 12345.6,
+    "TubingPressureAvg": 12345.6,
+    "TubingPressureMax": 12345.6,
+    "SlurryVolumeTotal": 12345.6,
+    "WaterSource": "Willow Municipal",
+    "PerforationSet": [
+      "namespace:master-data--PerforationInterval:SomeUniquePerforationIntervalID:"
+    ],
+    "PerforationSetFrictionFactor": 12345.6,
+    "PerforationSetFrictionPressure": 12345.6,
+    "PerforationSetDischargeCoefficient": 12345.6,
+    "WellLog": [
+      "namespace:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+    ],
+    "Remarks": "Screened out observing 1.5T in formation, 1.5T in wellbore, max acheivable rate 350 L/minute at 61.75 MPa. FLBK 50 m3 at 0.9 m3/min average. Attempted to Flush Wellbore observing 24 m3 to seat ball. Established feed rate 0.5 m3/min at 60 MPa. Displaced 1 m3 HCR to perfs and let soak 5 min. Re-initiated frac as per.",
+    "ExtensionProperties": {}
+  }
+}

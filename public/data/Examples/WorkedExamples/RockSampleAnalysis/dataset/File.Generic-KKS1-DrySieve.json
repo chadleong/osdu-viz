@@ -1,0 +1,26 @@
+{
+  "id": "partition-id:dataset--File.Generic:WellCompletionReport-KentishKnockSouth1-Terratek-DrySieve-904833",
+  "kind": "osdu:wks:dataset--File.Generic:1.0.1",
+  "data": {
+    "Name": "Kentish Knock South 1, DrySieve",
+    "Description": "Terratek Dry Sieve report, project 904833.",
+    "TotalSize": "340000",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet:",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://chevron-data/wcr/Carnarvon/CHEVRON_Kentish_Knock_South_904833_DrySieve.xlsx",
+        "PreloadFilePath": "https://gitlab.opengroup.org/osdu/subcommittees/data-def/work-products/schema/-/blob/master/Examples/WorkedExamples/RockSampleAnalysis/dataset/content/CHEVRON_Kentish_Knock_South_904833_DrySieve.xlsx",
+        "Name": "CHEVRON_Kentish_Knock_South_904833_DrySieve.xlsx",
+        "FileSize": "340000"
+      }
+    }
+  },
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

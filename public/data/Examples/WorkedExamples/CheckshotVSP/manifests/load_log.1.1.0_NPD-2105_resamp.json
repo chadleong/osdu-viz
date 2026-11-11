@@ -1,0 +1,147 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "Data": {
+    "WorkProduct": {
+      "kind": "osdu:wks:work-product--WorkProduct:1.0.0",
+      "data": {
+        "Components": [
+          "surrogate-key:wpc-1"
+        ],
+        "Name": "checkshot_resamp_15_0_19_SR.csv",
+        "Description": "Resampled and smoothed checkshots"
+      },
+      "acl": {
+        "owners": [],
+        "viewers": []
+      },
+      "legal": {
+        "legaltags": [],
+        "otherRelevantDataCountries": []
+      }
+    },
+    "WorkProductComponents": [
+      {
+        "id": "surrogate-key:wpc-1",
+        "kind": "osdu:wks:work-product-component--WellLog:1.5.0",
+        "tags": {
+          "Searchkey": "time-depth curve",
+          "TimeDepthSource": "Checkshot"
+        },
+        "meta": [
+          {
+            "kind": "Unit",
+            "name": "m",
+            "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+            "propertyNames": [
+              "TopMeasuredDepth",
+              "BottomMeasuredDepth",
+              "SamplingStart",
+              "SamplingStop",
+              "Curves[].TopDepth",
+              "Curves[].BaseDepth",
+              "SeismicReferenceElevation.VerticalMeasurement",
+              "VerticalMeasurement.VerticalMeasurement"
+            ]
+          }
+        ],
+        "data": {
+          "Datasets": [
+            "surrogate-key:file-1"
+          ],
+          "Name": "checkshot_resamp_15_0_19_SR.data.csv",
+          "Description": "Time Depth curve from resampled and smoothed checkshots",
+          "WellboreID": "partition-id:master-data--Wellbore:NPD-2105:",
+          "WellLogTypeID": "partition-id:reference-data--LogType:Raw:",
+          "TopMeasuredDepth": 0.0,
+          "BottomMeasuredDepth": 2905.0,
+          "LogSource": "Statoil",
+          "Curves": [
+            {
+              "CurveID": "TVD",
+              "IsProcessed": true,
+              "TopDepth": 0.0,
+              "BaseDepth": 2905.0,
+              "DepthUnit": "partition-id:reference-data--UnitOfMeasure:m:",
+              "CurveUnit": "partition-id:reference-data--UnitOfMeasure:m:",
+              "Mnemonic": "TVD",
+              "LogCurveTypeID": "partition-id:reference-data--LogCurveType:TVD:",
+              "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Depth:",
+              "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:TVD:",
+              "NumberOfColumns": 1
+            },
+            {
+              "CurveID": "OWT",
+              "IsProcessed": true,
+              "TopDepth": 0.0,
+              "BaseDepth": 3064.5,
+              "DepthUnit": "partition-id:reference-data--UnitOfMeasure:m:",
+              "CurveUnit": "partition-id:reference-data--UnitOfMeasure:ms:",
+              "Mnemonic": "OneWay",
+              "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:SeismicTimeSmoothed:",
+              "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:TimeDepth:",
+              "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:OneWayTime:",
+              "NumberOfColumns": 1
+            }
+          ],
+          "ReferenceCurveID": "TVD",
+          "SamplingInterval": 20.0,
+          "SamplingStart": 0.0,
+          "SamplingStop": 2905.0,
+          "SamplingDomainTypeID": "partition-id:reference-data--WellLogSamplingDomainType:TVD:",
+          "CompanyID": "partition-id:master-data--Organisation:Statoil:",
+          "SeismicReferenceElevation": {
+            "VerticalMeasurement": 0.0,
+            "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:SeismicReferenceDatum:",
+            "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+            "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+            "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+            "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:LOG:",
+            "VerticalMeasurementDescription": "Zero time reference: Mean sea level"
+          },
+          "VerticalMeasurement": {
+            "VerticalMeasurement": 22.0,
+            "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:KellyBushing:",
+            "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+            "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+            "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5715:",
+            "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:LOG:",
+            "VerticalMeasurementDescription": "Zero depth point for TVD."
+          },
+          "IsRegular": true
+        },
+        "acl": {
+          "owners": [],
+          "viewers": []
+        },
+        "legal": {
+          "legaltags": [],
+          "otherRelevantDataCountries": []
+        }
+      }
+    ],
+    "Datasets": [
+      {
+        "id": "surrogate-key:file-1",
+        "kind": "osdu:wks:dataset--File.Generic:1.0.1",
+        "data": {
+          "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:ASCII:",
+          "DatasetProperties": {
+            "FileSourceInfo": {
+              "FileSource": "s3://osdu-seismic-test-data/volve/checkshots/checkshot_resamp_15_0_19_SR.data.csv",
+              "PreloadFilePath": "s3://osdu-seismic-test-data/volve/checkshots/checkshot_resamp_15_0_19_SR.data.csv"
+            }
+          }
+        },
+        "acl": {
+          "owners": [],
+          "viewers": []
+        },
+        "legal": {
+          "legaltags": [],
+          "otherRelevantDataCountries": []
+        }
+      }
+    ]
+  }
+}

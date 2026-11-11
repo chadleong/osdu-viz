@@ -1,0 +1,139 @@
+{
+  "id": "namespace:dataset--FileCollection.SEGY:b47f793a-dc9c-5d11-8d59-6cc611a98926",
+  "kind": "osdu:wks:dataset--FileCollection.SEGY:1.3.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Name": "ST0299-05005+MIG_FIN.segy",
+    "Description": "ST0299-05005+MIG_FIN 2D Seismic Volve",
+    "TotalSize": "13245217273",
+    "SchemaFormatTypeID": "namespace:reference-data--SchemaFormatType:SEG-Y:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileCollectionPath": "s3://default_bucket/opendes/data/seg-y-dataset/",
+      "IndexFilePath": "s3://default_bucket/opendes/data/seg-y-dataset/seg-y-dataset.index",
+      "FileSourceInfos": [
+        {
+          "Name": "ST0299-05005+MIG_FIN.segy",
+          "FileSize": "12364000",
+          "FileSource": "s3://osdu-seismic-test-data/volve/seismic/st0299/ST0299-05005+MIG_FIN.segy",
+          "PreloadFilePath": "s3://osdu-seismic-test-data/volve/seismic/st0299/ST0299-05005+MIG_FIN.segy",
+          "PreloadFileCreateUser": "somebody@acme.org",
+          "PreloadFileCreateDate": "2019-12-16T11:46:20.163Z",
+          "PreloadFileModifyUser": "somebody.else@acme.org",
+          "PreloadFileModifyDate": "2019-12-20T17:20:05.356Z",
+          "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+          "ChecksumAlgorithm": "MD5"
+        }
+      ],
+      "Checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "VectorHeaderMapping": [
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:CMP:",
+        "WordFormat": "namespace:reference-data--WordFormatType:INT:",
+        "WordWidth": 4,
+        "Position": 21
+      },
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:SP:",
+        "WordFormat": "namespace:reference-data--WordFormatType:INT:",
+        "WordWidth": 4,
+        "Position": 17
+      },
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:TraceNumber:",
+        "WordFormat": "namespace:reference-data--WordFormatType:INT:",
+        "WordWidth": 4,
+        "Position": 1
+      },
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:ReelNumber:",
+        "WordFormat": "namespace:reference-data--WordFormatType:INT:",
+        "WordWidth": 4,
+        "Position": 3209
+      }
+    ],
+    "TraceHeaderOverrides": [
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:SP:",
+        "OverrideByExpressions": [
+          {
+            "Input": "namespace:reference-data--HeaderKeyName:TraceNumber:",
+            "Operator1": "Plus",
+            "Operand1Constant": 101,
+            "Remark": "Recalculate SP as TraceNumber + 101"
+          }
+        ]
+      },
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:CMP:",
+        "OverrideByExpressions": [
+          {
+            "Input": "namespace:reference-data--HeaderKeyName:SP:",
+            "Operator1": "MultiplyBy",
+            "Operand1Constant": 2,
+            "Operator2": "Plus",
+            "Operand2Constant": 100,
+            "Remark": "Recalculate CMP as SP * 2 + 100"
+          }
+        ]
+      }
+    ],
+    "BinaryHeaderOverrides": [
+      {
+        "KeyName": "namespace:reference-data--HeaderKeyName:ReelNumber:",
+        "OverrideByConstant": 2474
+      }
+    ],
+    "Is3D": false,
+    "StorageFacilityID": "namespace:master-data--StorageFacility:BigOil-StorageFacility:",
+    "TapeLabels": [
+      "ST00299-CMP-05005"
+    ],
+    "BoxLabels": [
+      "2002-Surveys-NorthSea-Statoil"
+    ],
+    "SEGYRevision": "rev 0",
+    "Precision": {
+      "WordFormat": "namespace:reference-data--WordFormatType:INT:",
+      "WordWidth": 4
+    },
+    "ExtensionProperties": {}
+  }
+}

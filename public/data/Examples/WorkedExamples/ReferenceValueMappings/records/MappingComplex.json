@@ -1,0 +1,57 @@
+{
+  "id": "partition-id:reference-data--ExternalReferenceValueMapping:EDS.Wellbore.Status.GAS-IDLE",
+  "kind": "osdu:wks:reference-data--ExternalReferenceValueMapping:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "Name": "EDS.Wellbore.Status.GAS-IDLE",
+    "Code": "EDS.Wellbore.Status.GAS-IDLE",
+    "NamespaceID": "partition-id:reference-data--ExternalCatalogNamespace:EDS:",
+    "Scope": "Wellbore.Status",
+    "MapStateID": "partition-id:reference-data--CatalogMapStateType:identical:",
+    "ComplexMappings": [
+      {
+        "PropertyName": "data.ConditionID",
+        "ReferenceValueID": "partition-id:reference-data--WellCondition:Inactive.Idle:",
+        "TargetKind": "osdu:wks:master-data--Wellbore:1.1."
+      },
+      {
+        "PropertyName": "data.LifecyclePhaseID",
+        "ReferenceValueID": "partition-id:reference-data--FacilityStateType:Operating:",
+        "TargetKind": "osdu:wks:master-data--Wellbore:1.1."
+      },
+      {
+        "PropertyName": "data.FluidDirectionID",
+        "ReferenceValueID": "partition-id:reference-data--WellFluidDirection:Outflow:",
+        "TargetKind": "osdu:wks:master-data--Wellbore:1.1."
+      },
+      {
+        "PropertyName": "data.PrimaryProductTypeID",
+        "ReferenceValueID": "partition-id:reference-data--WellProductType:Gas:",
+        "TargetKind": "osdu:wks:master-data--Wellbore:1.1."
+      },
+      {
+        "PropertyName": "data.RoleID",
+        "ReferenceValueID": "partition-id:reference-data--WellRole:Produce:",
+        "TargetKind": "osdu:wks:master-data--Wellbore:1.1."
+      }
+    ],
+    "Source": "Workbook Authoring/ExternalReferenceValueMapping.1.0.0.xlsx; commit SHA 7fe72cf9.",
+    "CommitDate": "2022-10-14T15:36:59+02:00"
+  }
+}

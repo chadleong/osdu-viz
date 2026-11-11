@@ -1,0 +1,431 @@
+{
+  "SchemaKind": "osdu:wks:content--DdmsFootprint:1.0.0",
+  "Name": "Reservoir DDMS",
+  "Description": "The data footprint declared by the Reservoir DDMS as capability.",
+  "DdmsVersion": "DDMS Version 1.1",
+  "DocumentationURL": "https://community.opengroup.org/osdu/platform/domain-data-mgmt-services/reservoir/home/-/blob/main/README.md",
+  "CoveredItems": [
+    {
+      "WKS": "osdu:wks:work-product-component--Activity:1.",
+      "ContentTypes": [
+        "resqml20.obj_Activity",
+        "eml23.Activity"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:master-data--ActivityTemplate:1.",
+      "ContentTypes": [
+        "resqml20.obj_ActivityTemplate",
+        "eml23.ActivityTemplate"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--EarthModelInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_EarthModelInterpretation",
+        "resqml22.EarthModelInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--FaultInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_FaultInterpretation",
+        "resqml22.FaultInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--ColumnBasedTable:1.",
+      "ContentTypes": [
+        "resqml20.obj_StringTableLookup"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--GenericProperty:1.",
+      "ContentTypes": [
+        "resqml20.obj_CategoricalProperty",
+        "resqml20.obj_ContinuousProperty",
+        "resqml20.obj_DiscreteProperty",
+        "resqml22.CategoricalProperty",
+        "resqml22.ContinuousProperty",
+        "resqml22.DiscreteProperty"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--GenericRepresentation:1.",
+      "ContentTypes": [
+        "resqml20.obj_Grid2dRepresentation",
+        "resqml20.obj_PolylineRepresentation",
+        "resqml20.obj_PolylineSetRepresentation",
+        "resqml20.obj_PointSetRepresentation",
+        "resqml20.obj_TriangulatedSetRepresentation",
+        "resqml22.Grid2dRepresentation",
+        "resqml22.PolylineRepresentation",
+        "resqml22.PolylineSetRepresentation",
+        "resqml22.PointSetRepresentation",
+        "resqml22.TriangulatedSetRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--GeobodyInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_GeobodyInterpretation",
+        "resqml22.GeobodyInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--GridConnectionSetRepresentation:1.",
+      "ContentTypes": [
+        "resqml20.obj_GridConnectionSetRepresentation",
+        "resqml22.GridConnectionSetRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--HorizonInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_HorizonInterpretation",
+        "resqml22.HorizonInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--IjkGridRepresentation:1.",
+      "ContentTypes": [
+        "resqml20.obj_IjkGridRepresentation",
+        "resqml22.IjkGridRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--LocalBoundaryFeature:1.",
+      "ContentTypes": [
+        "resqml20.obj_GeneticBoundaryFeature",
+        "resqml20.obj_TectonicBoundaryFeature",
+        "resqml22.BoundaryFeature"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--LocalModelCompoundCrs:1.",
+      "ContentTypes": [
+        "resqml20.obj_LocalDepth3dCrs",
+        "resqml20.obj_LocalTime3dCrs",
+        "eml23.LocalEngineeringCompoundCrs"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--LocalModelFeature:1.",
+      "ContentTypes": [
+        "resqml20.obj_OrganizationFeature",
+        "resqml22.OrganizationFeature"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--LocalRockVolumeFeature:1.",
+      "ContentTypes": [
+        "resqml20.obj_StratigraphicUnitFeature",
+        "resqml22.StratigraphicUnitFeature"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--PersistedCollection:1.",
+      "ContentTypes": [
+        "resqml20.obj_PropertySet",
+        "resqml20.obj_RepresentationSetRepresentation",
+        "eml23.DataobjectCollection"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:reference-data--PropertyType:1.",
+      "ContentTypes": [
+        "resqml20.obj_PropertyKind",
+        "resqml22.PropertyKind"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--SeismicBinGrid:1.",
+      "ContentTypes": [
+        "resqml20.obj_Grid2dRepresentation",
+        "resqml22.Grid2dRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--SeismicHorizon:1.",
+      "ContentTypes": [
+        "resqml20.obj_Grid2dRepresentation",
+        "resqml22.Grid2dRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--StratigraphicColumn:1.",
+      "ContentTypes": [
+        "resqml20.obj_StratigraphicColumn",
+        "resqml22.StratigraphicColumn"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--StratigraphicColumnRankInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_StratigraphicColumnRankInterpretation",
+        "resqml22.StratigraphicColumnRankInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--StratigraphicUnitInterpretation:1.",
+      "ContentTypes": [
+        "resqml20.obj_StratigraphicUnitInterpretation",
+        "resqml22.StratigraphicUnitInterpretation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--SubRepresentation:1.",
+      "ContentTypes": [
+        "resqml20.obj_SubRepresentation",
+        "resqml22.SubRepresentation"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--TimeSeries:1.",
+      "ContentTypes": [
+        "resqml20.obj_TimeSeries",
+        "resqml22.TimeSeries"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:work-product-component--UnstructuredGridRepresentation:1.",
+      "ContentTypes": [
+        "resqml20.obj_UnstructuredGridRepresentation",
+        "resqml22.UnstructuredGridRepresentation"
+      ]
+    }
+  ],
+  "AuthorityToContentTypes": [
+    {
+      "Authority": "Energistics RESQML",
+      "Description": "RESQML 2.0.1",
+      "AuthorityURL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-000-000-titlepage.html",
+      "ContentTypeURLs": [
+        {
+          "ContentType": "resqml20.obj_Activity",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-292-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_ActivityTemplate",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-293-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_EarthModelInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-095-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_FaultInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-096-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_StringTableLookup",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-158-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_CategoricalProperty",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-134-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_ContinuousProperty",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-136-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_DiscreteProperty",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-137-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_Grid2dRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-255-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_PolylineRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-264-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_PolylineSetRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-266-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_PointSetRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-263-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_TriangulatedSetRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-271-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_GeobodyInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-100-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_GridConnectionSetRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-214-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_HorizonInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-103-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_IjkGridRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-217-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_GeneticBoundaryFeature",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-034-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_TectonicBoundaryFeature",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-041-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_LocalDepth3dCrs",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-012-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_LocalTime3dCrs",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-013-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_OrganizationFeature",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-038-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_StratigraphicUnitFeature",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-040-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_PropertySet",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-154-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_RepresentationSetRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-172-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_PropertyKind",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-152-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_StratigraphicColumn",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-109-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_StratigraphicColumnRankInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-110-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_StratigraphicUnitInterpretation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-112-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_SubRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-173-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_TimeSeries",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-018-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_UnstructuredGridRepresentation",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-241-0-R-sv2010.html"
+        }
+      ]
+    },
+    {
+      "Authority": "Energistics EML",
+      "Description": "EML 2.3",
+      "ContentTypeURLs": [
+        {
+          "ContentType": "eml23.Activity"
+        },
+        {
+          "ContentType": "eml23.ActivityTemplate"
+        },
+        {
+          "ContentType": "eml23.LocalEngineeringCompoundCrs"
+        },
+        {
+          "ContentType": "eml23.DataobjectCollection"
+        }
+      ]
+    },
+    {
+      "Authority": "Energistics RESQML",
+      "Description": "RESQML 2.2",
+      "ContentTypeURLs": [
+        {
+          "ContentType": "resqml22.EarthModelInterpretation"
+        },
+        {
+          "ContentType": "resqml22.FaultInterpretation"
+        },
+        {
+          "ContentType": "resqml22.CategoricalProperty"
+        },
+        {
+          "ContentType": "resqml22.ContinuousProperty"
+        },
+        {
+          "ContentType": "resqml22.DiscreteProperty"
+        },
+        {
+          "ContentType": "resqml22.PolylineRepresentation"
+        },
+        {
+          "ContentType": "resqml22.PolylineSetRepresentation"
+        },
+        {
+          "ContentType": "resqml22.PointSetRepresentation"
+        },
+        {
+          "ContentType": "resqml22.TriangulatedSetRepresentation"
+        },
+        {
+          "ContentType": "resqml22.GeobodyInterpretation"
+        },
+        {
+          "ContentType": "resqml22.GridConnectionSetRepresentation"
+        },
+        {
+          "ContentType": "resqml22.HorizonInterpretation"
+        },
+        {
+          "ContentType": "resqml22.IjkGridRepresentation"
+        },
+        {
+          "ContentType": "resqml22.BoundaryFeature"
+        },
+        {
+          "ContentType": "resqml22.OrganizationFeature"
+        },
+        {
+          "ContentType": "resqml22.StratigraphicUnitFeature"
+        },
+        {
+          "ContentType": "resqml22.PropertyKind"
+        },
+        {
+          "ContentType": "resqml22.Grid2dRepresentation"
+        },
+        {
+          "ContentType": "resqml22.StratigraphicColumn"
+        },
+        {
+          "ContentType": "resqml22.StratigraphicColumnRankInterpretation"
+        },
+        {
+          "ContentType": "resqml22.StratigraphicUnitInterpretation"
+        },
+        {
+          "ContentType": "resqml22.SubRepresentation"
+        },
+        {
+          "ContentType": "resqml22.TimeSeries"
+        },
+        {
+          "ContentType": "resqml22.UnstructuredGridRepresentation"
+        }
+      ]
+    }
+  ]
+}

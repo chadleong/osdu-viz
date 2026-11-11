@@ -1,0 +1,31 @@
+{
+  "id": "namespace:master-data--WellboreArchitecture:wa_bfa6c73d-4b12-4980-be91-80ce7cdb3291",
+  "kind": "osdu:wks:master-data--WellboreArchitecture:1.2.0",
+  "version": 1635454826101,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "HoleSectionIDs": [
+      "namespace:master-data--HoleSection:341b6f97-8dc9-42bc-b825-0049d8753b51:1635454818831",
+      "namespace:master-data--HoleSection:494566fd-8058-4f59-bae2-03953ac2707c:1635454821002",
+      "namespace:master-data--HoleSection:da97410e-b8fb-447e-848b-dbe88ca442b3:1635454823310"
+    ],
+    "InstalledTubulars": []
+  }
+}

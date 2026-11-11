@@ -1,0 +1,66 @@
+{
+  "id": "namespace:dataset--File.Image.JPEG:CT-2eb3aced-f079-432d-9b47-8efebc9b6c9a",
+  "kind": "osdu:wks:dataset--File.Image.JPEG:1.0.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "Core 2 2435.97-2437",
+    "Description": "1m interval CT. O-90 deg plus axials A-B-C.",
+    "TotalSize": "13245217273",
+    "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:image%2Fjpeg:",
+    "SchemaFormatTypeID": "namespace:reference-data--SchemaFormatType:Image.JPEG:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://default_bucket/r1/data/provided/documents/kks1-CT-1m-Interval-2435.97-2437.jpeg",
+        "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/kks1-CT-1m-Interval-2435.97-2437.jpeg",
+        "PreloadFileCreateUser": "somebody@acme.org",
+        "PreloadFileCreateDate": "2019-12-16T11:46:20.163Z",
+        "PreloadFileModifyUser": "somebody.else@acme.org",
+        "PreloadFileModifyDate": "2019-12-20T17:20:05.356Z",
+        "Name": "kks1-CT-1m-Interval-2435.97-2437",
+        "FileSize": "95463",
+        "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:image%2Fjpeg:",
+        "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+        "ChecksumAlgorithm": "SHA-256"
+      }
+    },
+    "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+    "ExtensionProperties": {}
+  }
+}

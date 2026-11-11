@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic",
+  "kind": "osdu:wks:reference-data--StratigraphicRoleType:1.0.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Chronostratigraphic",
+    "NameAlias": [
+      {
+        "AliasName": "chronostratigraphic"
+      }
+    ],
+    "Description": "Organizations, layered or unlayered, that were formed during a specified interval of geologic time",
+    "Code": "Chronostratigraphic",
+    "AttributionAuthority": "Energistics",
+    "AttributionPublication": "RESQML",
+    "AttributionRevision": "2",
+    "Source": "Workbook Authoring/StratigraphicRoleType.1.0.0.xlsx; commit SHA 864a9859."
+  }
+}

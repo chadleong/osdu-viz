@@ -1,0 +1,211 @@
+{
+  "id": "namespace:work-product-component--WellPressureTestInterpretation:0c4b5c5b-32cd-57d2-b6a7-bbff6801fb08",
+  "kind": "namespace:wks:work-product-component--WellPressureTestInterpretation:1.0.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "InterpretationResults[].ReservoirDatumTrueVerticalDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bar",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":100000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"bar\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bar:",
+      "propertyNames": [
+        "InterpretationResults[].AppliedPressureCorrections[].PressureCorrectionValue",
+        "InterpretationResults[].ReservoirPressureAtDatumDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bar per metre",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":100000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"bar/m\",\"baseMeasurement\":{\"ancestry\":\"M/L2T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bar%2Fm:",
+      "propertyNames": [
+        "InterpretationResults[].InterpretationInput.PressureGradients[].PressureGradientValue"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "Example Data Source",
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:ReservoirEngineer:",
+            "Name": "Mr B."
+          }
+        ],
+        "EffectiveDate": "2017-07-07",
+        "Comment": "null"
+      }
+    ],
+    "Name": "Example Interpretation Name",
+    "AuthorIDs": [
+      "Mr A."
+    ],
+    "WellPressureTestRawMeasurementID": "namespace:work-product-component--WellPressureTestRawMeasurement:0c4b5c5b-32cd-57d2-b6a7-bbff6801fb09:",
+    "WellPressureTestRawMeasurementTestIdentifier": 1,
+    "WellPressureTestRawMeasurementTestPeriodIdentifier": 2,
+    "PressureTestInterpretationDateTime": "2017-07-07T00:00.00Z",
+    "InterpretationSubjectiveClassificationRatingID": "namespace:reference-data--SubjectiveClassificationRating:Confidence.Uncertain:",
+    "IsPreferred": true,
+    "InterpretationAnalysts": [
+      {
+        "Name": "Mr C.",
+        "RoleTypeID": "namespace:reference-data--ContactRoleType:TechnicalSupport:"
+      }
+    ],
+    "Remarks": [
+      {
+        "RemarkSequenceNumber": 1,
+        "Remark": "P Measured"
+      }
+    ],
+    "InterpretationResults": [
+      {
+        "WellPressureTestInterpretationNumber": 1,
+        "WellPressureTestAcquisitionStationIdentifier": 1,
+        "WellPressureTestRawMeasurementTestIdentifier": 1,
+        "WellPressureTestRawMeasurementTestPeriodIdentifier": 2,
+        "InterpretationInput": {
+          "WellboreMarkerSetID": "namespace:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+          "GeoLabelSetID": "namespace:work-product-component--GeoLabelSet:15-3-7-Labels-:",
+          "PressureGradients": [
+            {
+              "PressureGradientValue": 0.0088,
+              "PressureGradientPositiveVerticalDeltaValue": 0.008,
+              "PressureGradientNegativeVerticalDeltaValue": 0.0095,
+              "PressureGradientCalculationMethodID": "namespace:reference-data--PressureGradientCalculationMethod:TrendAnalysis:",
+              "PropertyType": {
+                "PropertyTypeID": "namespace:reference-data--PropertyType:a5da7dff-d30d-4670-8b89-565ecfd5343a:",
+                "Name": "pressure gradient"
+              },
+              "FacetIDs": [
+                {
+                  "FacetTypeID": "namespace:reference-data--FacetType:what:",
+                  "FacetRoleID": "namespace:reference-data--FacetRole:Gas:"
+                }
+              ]
+            },
+            {
+              "PressureGradientValue": 0.001,
+              "PressureGradientCalculationMethodID": "namespace:reference-data--PressureGradientCalculationMethod:TrendAnalysis:",
+              "PropertyType": {
+                "PropertyTypeID": "namespace:reference-data--PropertyType:a5da7dff-d30d-4670-8b89-565ecfd5343a:",
+                "Name": "pressure gradient"
+              },
+              "FacetIDs": [
+                {
+                  "FacetTypeID": "namespace:reference-data--FacetType:what:",
+                  "FacetRoleID": "namespace:reference-data--FacetRole:Oil:"
+                }
+              ]
+            }
+          ],
+          "Parameters": [
+            {
+              "Title": "The Height of the Gas Column in the Wellbore in meters",
+              "DataQuantityParameter": 10,
+              "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m:",
+              "ParameterKindID": "namespace:reference-data--ParameterKind:GasColumnHeight:",
+              "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+            }
+          ],
+          "Remarks": [
+            {
+              "RemarkSequenceNumber": 1,
+              "Remark": "Some Remarks about the Interpretation Inputs such as assurance, source, etc."
+            }
+          ]
+        },
+        "DominantReservoirEntityID": "namespace:master-data--Reservoir:VolveUpper:",
+        "CommingledReservoirEntityIDs": [
+          "namespace:master-data--Reservoir:VolveLower:"
+        ],
+        "GeologicUnitInterpretationIDs": [
+          "namespace:work-product-component--StratigraphicUnitInterpretation:Draupne-:"
+        ],
+        "ReservoirDatumTrueVerticalDepth": 1981.2,
+        "ReservoirDatumCalculationSubjectiveClassificationRatingID": "namespace:reference-data--SubjectiveClassificationRating:Confidence.Uncertain:",
+        "AppliedPressureCorrections": [
+          {
+            "PressureCorrectionValue": 10.0,
+            "FacetIDs": [
+              {
+                "FacetTypeID": "namespace:reference-data--FacetType:what:",
+                "FacetRoleID": "namespace:reference-data--FacetRole:Gas:"
+              }
+            ]
+          },
+          {
+            "PressureCorrectionValue": 5.0,
+            "FacetIDs": [
+              {
+                "FacetTypeID": "namespace:reference-data--FacetType:what:",
+                "FacetRoleID": "namespace:reference-data--FacetRole:Oil:"
+              }
+            ]
+          },
+          {
+            "PressureCorrectionValue": 15.0,
+            "FacetIDs": [
+              {
+                "FacetTypeID": "namespace:reference-data--FacetType:qualifier:",
+                "FacetRoleID": "namespace:reference-data--FacetRole:Total:"
+              }
+            ]
+          }
+        ],
+        "ReservoirPressureAtDatumDepth": 56.5,
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Some Remarks about the Interpretation Inputs such as assurance, source, etc."
+          }
+        ]
+      }
+    ],
+    "InterpretationResultProperties": {
+      "ColumnSize": 1,
+      "ColumnValues": [
+        {
+          "NumberColumn": [
+            1300
+          ]
+        },
+        {
+          "NumberColumn": [
+            5.3
+          ]
+        }
+      ],
+      "ColumnBasedTableType": "namespace:reference-data--ColumnBasedTableType:ColumnBasedTableTemplateControlled:",
+      "ColumnBasedTableTemplateID": "namespace:master-data--ColumnBasedTableTemplate:WellPressureTestInterpretation.Template.BuildUp:"
+    }
+  }
+}

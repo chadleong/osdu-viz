@@ -1,0 +1,61 @@
+{
+  "id": "opendes:reference-data--IndexPropertyPathConfiguration:work-product-component--Document:1",
+  "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+  "acl": {
+    "owners": [
+      "data.default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+    ],
+    "viewers": [
+      "data.default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "opendes-default-legal"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "DocumentIndex-PropertyPathConfiguration",
+    "Description": "The index property list for Document:1., valid for all Document kinds for major version 1.",
+    "Code": "osdu:wks:work-product-component--Document:1.",
+    "AttributionAuthority": "OSDU",
+    "Configurations": [
+      {
+        "Name": "DocumentRelatedWellWellboreNames",
+        "Policy": "ExtractAllMatches",
+        "Paths": [
+          {
+            "RelatedObjectsSpec": {
+              "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+              "RelatedObjectID": "data.LineageAssertions[].ID",
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:master-data\\-\\-Wellbore:[\\w\\-\\.\\:\\%]+$"
+              ],
+              "RelatedConditionProperty": "data.LineageAssertions[].ID"
+            },
+            "ValueExtraction": {
+              "ValuePath": "FacilityName"
+            }
+          },
+          {
+            "RelatedObjectsSpec": {
+              "RelatedObjectKind": "osdu:wks:master-data--Well:1.",
+              "RelatedObjectID": "data.LineageAssertions[].ID",
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:master-data\\-\\-Well:[\\w\\-\\.\\:\\%]+$"
+              ],
+              "RelatedConditionProperty": "data.LineageAssertions[].ID"
+            },
+            "ValueExtraction": {
+              "ValuePath": "FacilityName"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to discover Wellbore and Well Names which are associated with the document."
+      }
+    ]
+  }
+}

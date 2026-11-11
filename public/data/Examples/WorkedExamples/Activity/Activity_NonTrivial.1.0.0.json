@@ -1,0 +1,246 @@
+{
+  "id": "namespace:work-product-component--Activity:SimpleExample-d3ff5ea3-3070-51ec-aba2-d67370b1ed2b",
+  "kind": "osdu:wks:work-product-component--Activity:1.4.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Made-up Example",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "Volume Above Contact Computation Activity",
+    "Description": "Example activity record demonstrating the 'compute volume above contact'.",
+    "CreationDateTime": "2021-04-04T09:13:15.55Z",
+    "LineageAssertions": [
+      {
+        "ID": "namespace:work-product-component--SeismicHorizon:H1-4ed87e4f-9919-4011-aa39-499953051cce:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "ActivityTemplateID": "namespace:master-data--ActivityTemplate:NonTrivialExample-778a069c-df38-4c48-bc19-304fd50634d4:",
+    "ParentActivityID": "namespace:work-product-component--AnyActivity:AnyActivity-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "ActivityStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-07-21T10:09:02.00Z",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:Planned:",
+        "Remark": "Rather long planning phase."
+      },
+      {
+        "EffectiveDateTime": "2020-07-21T10:09:02.00Z",
+        "TerminationDateTime": "2020-07-25T14:07:45.00Z",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:InProgress:",
+        "Remark": "Example Remark"
+      },
+      {
+        "EffectiveDateTime": "2020-07-25T14:07:45.00Z",
+        "TerminationDateTime": "2020-07-25T14:07:45.00Z",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:Completed:",
+        "Remark": "Success"
+      }
+    ],
+    "LastActivityState": {
+      "EffectiveDateTime": "2020-07-25T14:07:45.00Z",
+      "TerminationDateTime": "2020-07-25T14:07:45.00Z",
+      "ActivityStatusID": "namespace:reference-data--ActivityStatus:Completed:",
+      "Remark": "Success"
+    },
+    "Parameters": [
+      {
+        "Title": "Horizon Above Contact",
+        "Index": 0,
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "namespace:work-product-component--SeismicHorizon:H1-4ed87e4f-9919-4011-aa39-499953051cce:",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Horizon Above Contact",
+        "Index": 1,
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "namespace:work-product-component--SeismicHorizon:H2-cf71e25c-2581-4f0f-acfc-06c59b8304c3:",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Horizon Above Contact",
+        "Index": 2,
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "namespace:work-product-component--SeismicHorizon:H3-ac47fe1d-c64c-488a-a1ce-051b45666420:",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Contact Depth",
+        "Index": 0,
+        "Selection": "Selected by end-user",
+        "DataQuantityParameter": 1500.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m:",
+        "Keys": [
+          {
+            "ParameterKey": "GOC"
+          }
+        ]
+      },
+      {
+        "Title": "Contact Depth",
+        "Index": 1,
+        "Selection": "Selected by end-user",
+        "DataQuantityParameter": 1550.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m:",
+        "Keys": [
+          {
+            "ParameterKey": "OWC"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 0,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 8200.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Oil"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 1,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 8180.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Oil"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 2,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 8175.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Oil"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 0,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 320.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Gas"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 1,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 330.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Gas"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Volume above Contact",
+        "Index": 2,
+        "Selection": "Computed by the process",
+        "DataQuantityParameter": 375.0,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Gas"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Statistics",
+        "Index": 0,
+        "Selection": "Computed by the process",
+        "DataObjectParameter": "namespace:work-product-component--FluidStatistics:Oil-009ff575-b0fa-482d-95ed-a5580c22795e:",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Oil"
+          }
+        ]
+      },
+      {
+        "Title": "Fluid Statistics",
+        "Index": 1,
+        "Selection": "Computed by the process",
+        "DataObjectParameter": "namespace:work-product-component--FluidStatistics:Gas-0b1d8bda-12f3-47ba-86d5-5cb28d43c459:",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m3:",
+        "Keys": [
+          {
+            "ParameterKey": "Gas"
+          }
+        ]
+      }
+    ],
+    "PriorActivityIDs": [
+      "namespace:work-product-component--AnyActivity:AnyActivity-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+    ],
+    "ExtensionProperties": {}
+  }
+}

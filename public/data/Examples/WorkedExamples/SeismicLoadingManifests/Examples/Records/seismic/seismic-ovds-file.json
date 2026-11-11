@@ -1,0 +1,49 @@
+{
+  "id": "partition-id:dataset--FileCollection.Bluware.OpenVDS:c7b49f00-e6de-4992-9614-326a06876034",
+  "kind": "osdu:wks:dataset--FileCollection.Bluware.OpenVDS:1.1.1",
+  "version": 1605832053000,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "ancestry": {
+    "parents": [
+      "partition-id:dataset--FileCollection.SEGY:eba9adc4-f274-4cea-9df8-abc9916bb4fd:1605860768554777"
+    ]
+  },
+  "meta": [],
+  "data": {
+    "TotalSize": "3859233985032",
+    "Endian": "BIG",
+    "VectorHeaderMapping": [],
+    "DatasetProperties": {
+      "FileCollectionPath": "s3://default_bucket/opendes/data/vds-dataset/",
+      "IndexFilePath": "s3://default_bucket/opendes/data/vds-dataset/vds-dataset.index",
+      "FileSourceInfos": [
+        {
+          "FileSource": "s3://default_bucket/opendes/data/vds-dataset/vds-file-1",
+          "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/vds-file-1",
+          "Name": "vds-file-1",
+          "FileSize": "3859233985032",
+          "Checksum": "d41d8cd98f00b204e9800998ecf8427e",
+          "ChecksumAlgorithm": "MD5"
+        }
+      ],
+      "Checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "id": "partition-id:master-data--Coring:KKS1-Core-3",
+  "kind": "osdu:wks:master-data--Coring:1.1.1",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepth",
+        "BottomDepth",
+        "ConventionalCoring.CoreSections[].TopDepth",
+        "ConventionalCoring.CoreSections[].BottomDepth",
+        "ConventionalCoring.CoreSections[].RecoveredLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "propertyNames": [
+        "CoreDiameter"
+      ]
+    }
+  ],
+  "data": {
+    "TechnicalAssuranceID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SpatialLocation": {
+      "CoordinateQualityCheckRemarks": [
+        "Wgs84Coordinates copied from parent Wellbore ProjectedBottomHoleLocation."
+      ],
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81362197200383,
+                -19.781020115817476
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ],
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "CoreIdentifier": "KKS1-Core-3",
+    "WellboreID": "partition-id:master-data--Wellbore:KKS1:",
+    "Name": "KKS1 Core #3",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "ZDP",
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalMeasurementDescription": "Same vertical reference as wellbore ZDP, Measured Depth, Drillers Depth.",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:KKS1:"
+    },
+    "ServiceCompanyID": "partition-id:master-data--Organisation:Baker_Hughes_Inteq_BHI:",
+    "TopDepth": 2450.0,
+    "BottomDepth": 2469.0,
+    "RunNumber": 1,
+    "CoreDiameter": 5.125,
+    "IsOriented": false,
+    "CoreRemarks": [
+      {
+        "RemarkID": "1",
+        "Remark": "Clam shell catcher activated - no chip sample from bottom of core.\nTop of core appears to be thin - partially washed out at the top of the core.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Comments"
+      },
+      {
+        "RemarkID": "2",
+        "Remark": "1. 2458.1 m SILTY SANDSTONE:   100%  medium grey, friable, very fine grained quartz, sub-angular to angular, moderate sphericity, well sorted, weak siliceous cement, 20% light grey silty matrix, 2% micro-mica (biotite and muscovite), trace carbonaceous detritus, poor visual porosity.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, Lithology/Shows"
+      }
+    ],
+    "PreferredDepthShiftsID": "partition-id:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "HasTrippingSchedule": true,
+    "CoringOperationDate": "2012-12-19",
+    "CoreRecoveredDate": "2012-12-19",
+    "ConventionalCoring": {
+      "CoreTypeID": "partition-id:reference-data--ConventionalCoreType:ConventionalCore:",
+      "CoreSections": [
+        {
+          "CoreSectionID": "1A",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2450.0,
+          "BottomDepth": 2451.0
+        },
+        {
+          "CoreSectionID": "1B",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2451.0,
+          "BottomDepth": 2452.0
+        },
+        {
+          "CoreSectionID": "1C",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2452.0,
+          "BottomDepth": 2453.0
+        },
+        {
+          "CoreSectionID": "1D",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2453.0,
+          "BottomDepth": 2454.0
+        },
+        {
+          "CoreSectionID": "1E",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2454.0,
+          "BottomDepth": 2455.0
+        },
+        {
+          "CoreSectionID": "1F",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2455.0,
+          "BottomDepth": 2456.0
+        },
+        {
+          "CoreSectionID": "1G",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2456.0,
+          "BottomDepth": 2457.0
+        },
+        {
+          "CoreSectionID": "1H",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2457.0,
+          "BottomDepth": 2458.0
+        },
+        {
+          "CoreSectionID": "1I",
+          "RecoveredLength": 0.11,
+          "TopDepth": 2458.0,
+          "BottomDepth": 2458.11
+        },
+        {
+          "CoreSectionID": "2A",
+          "RecoveredLength": 0.89,
+          "TopDepth": 2458.11,
+          "BottomDepth": 2459.0
+        },
+        {
+          "CoreSectionID": "2B",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2459.0,
+          "BottomDepth": 2460.0
+        },
+        {
+          "CoreSectionID": "2C",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2460.0,
+          "BottomDepth": 2461.0
+        },
+        {
+          "CoreSectionID": "2D",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2461.0,
+          "BottomDepth": 2462.0
+        },
+        {
+          "CoreSectionID": "2E",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2462.0,
+          "BottomDepth": 2463.0
+        },
+        {
+          "CoreSectionID": "2F",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2463.0,
+          "BottomDepth": 2464.0
+        },
+        {
+          "CoreSectionID": "2G",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2464.0,
+          "BottomDepth": 2465.0
+        },
+        {
+          "CoreSectionID": "2H",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2465.0,
+          "BottomDepth": 2466.0
+        },
+        {
+          "CoreSectionID": "2I",
+          "RecoveredLength": 1.0,
+          "TopDepth": 2466.0,
+          "BottomDepth": 2467.0
+        },
+        {
+          "CoreSectionID": "2J",
+          "RecoveredLength": 1.08,
+          "TopDepth": 2467.0,
+          "BottomDepth": 2468.08
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

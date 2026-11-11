@@ -1,0 +1,95 @@
+{
+  "id": "namespace:master-data--Well:920c7e6d-1e9f-496d-ba4f-fe5bf5503d57",
+  "kind": "osdu:wks:master-data--Well:1.5.0",
+  "version": 1635454815323,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "FacilityName": "Jorge_Well-01",
+    "ExtensionProperties": {
+      "Name": "Jorge_Well-01",
+      "NameLegal": "Jorge_Well-01",
+      "Field": "Big Field",
+      "Country": "United States of America (the)",
+      "Region": "Big Area",
+      "TimeZone": "+00:00",
+      "Operator": "Big Oil",
+      "StatusWell": "namespace:reference-data--WellStatus:abandoned:",
+      "PurposeWell": "namespace:reference-data--WellPurpose:unknown:",
+      "FluidWell": "namespace:reference-data--WellFluid:oil:",
+      "DirectionWell": "namespace:reference-data--WellDirection:huffnpuff:",
+      "GroundElevation": 982.98,
+      "WellDatum": [
+        {
+          "VerticalMeasurementID": "KB",
+          "VerticalMeasurement": 9.144000000000005,
+          "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:Elevation:",
+          "VerticalMeasurementDescription": "RKB"
+        },
+        {
+          "VerticalMeasurementID": "SL",
+          "VerticalMeasurementDescription": "Mean Sea Level"
+        },
+        {
+          "VerticalMeasurementID": "GL",
+          "VerticalMeasurement": 982.98,
+          "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:Elevation:",
+          "VerticalMeasurementDescription": "Ground Level"
+        }
+      ],
+      "WellLocation": [
+        {
+          "Coordinates": [
+            {
+              "y": 32.123457532416346,
+              "x": -103.98126039256375
+            }
+          ]
+        },
+        {
+          "Coordinates": [
+            {
+              "x": 870696.75,
+              "y": 912081.0
+            }
+          ]
+        },
+        {
+          "Coordinates": [
+            {
+              "y": 32.12358147091861,
+              "x": -103.98174563044829
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ExtensionProperties.GroundElevation",
+        "ExtensionProperties.VerticalMeasurement"
+      ]
+    }
+  ]
+}

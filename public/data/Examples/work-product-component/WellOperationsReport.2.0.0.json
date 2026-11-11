@@ -1,0 +1,985 @@
+{
+  "id": "namespace:work-product-component--WellOperationsReport:57073d16-6bcf-51f0-ba68-86298f92e80e",
+  "kind": "osdu:wks:work-product-component--WellOperationsReport:2.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "BitRecord[].DiameterBit",
+        "BitRecord[].DiameterPassThrough",
+        "BitRecord[].DiameterPilot",
+        "OperationsActivity[].ActivityMDTop",
+        "OperationsActivity[].ActivityMDBase",
+        "OperationsActivity[].ActivityTVDTop",
+        "OperationsActivity[].ActivityTVDBase",
+        "OperationsActivity[].BitMDTop",
+        "OperationsActivity[].BitMDBase",
+        "OperationsActivity[].PlannedHoleDepthIn",
+        "OperationsActivity[].PlannedHoleDepthOut",
+        "OperationsActivity[].TargetDepth",
+        "OperationsActivity[].SectionDiameter",
+        "StatusInfo[].ReportEndMD",
+        "StatusInfo[].ReportEndTVD",
+        "StatusInfo[].PlugTopMD",
+        "StatusInfo[].DiameterHole",
+        "StatusInfo[].DiameterHoleStartMD",
+        "StatusInfo[].DiameterPilot",
+        "StatusInfo[].DiameterPilotPlanMD",
+        "StatusInfo[].DiameterPilotPlanTVD",
+        "StatusInfo[].KickoffMD",
+        "StatusInfo[].KickoffTVD",
+        "StatusInfo[].FormationStrengthMD",
+        "StatusInfo[].FormationStrengthTVD",
+        "StatusInfo[].CasingDiameterLast",
+        "StatusInfo[].CasingMDLast",
+        "StatusInfo[].CasingTVDLast",
+        "StatusInfo[].MdPlanned",
+        "StatusInfo[].DrilledDistance",
+        "StatusInfo[].DistDrillRot",
+        "StatusInfo[].DistDrillSlid",
+        "StatusInfo[].DistReam",
+        "StatusInfo[].DistHold",
+        "StatusInfo[].DistSteering",
+        "StatusInfo[].TvdLot",
+        "Weather[].PrecipitationAmount",
+        "Weather[].CloudCeiling",
+        "Weather[].WaveHeightAverage",
+        "Weather[].WaveHeightMax",
+        "Weather[].WaveSignificant",
+        "Weather[].Visibility",
+        "PumpOp[].LinerInnerDiameter",
+        "PumpOp[].StrokeLength",
+        "PumpOp[].MeasuredDepthBit",
+        "MudVolume[].MudVolumeMeasureDepthTop",
+        "MudVolume[].MudVolumeMeasureDepthBase",
+        "MudVolume[].MudVolumeTvdTop",
+        "MudVolume[].MudVolumeTvdBase",
+        "MudLosses[].MudLostVolumeMeasureDepthTop",
+        "MudLosses[].MudLostVolumeMeasureDepthBase",
+        "MudLosses[].MudLostVolumeTvdTop",
+        "MudLosses[].MudLostVolumeTvdBase",
+        "GasReading[].GasReadingMeasureDepthTop",
+        "GasReading[].GasReadingTvdBase"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "OperationsActivity[].ActualDuration",
+        "OperationsActivity[].PlannedDuration",
+        "StatusInfo[].ElapsedTimeStart",
+        "StatusInfo[].ElapsedTimeSpud",
+        "StatusInfo[].ElapsedTimeLoc",
+        "StatusInfo[].ElapsedTimeDrill",
+        "StatusInfo[].ElapsedTimeDrillRot",
+        "StatusInfo[].ElapsedTimeDrillSlid",
+        "StatusInfo[].ElapsedTimeCirc",
+        "StatusInfo[].ElapsedTimeReam",
+        "StatusInfo[].ElapsedTimeHold",
+        "StatusInfo[].ElapsedTimeSteering",
+        "TargetDays",
+        "TotalDays",
+        "TotalNPT"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "StatusInfo[].FormationStrength",
+        "StatusInfo[].PresLotEmw"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+      "propertyNames": [
+        "StatusInfo[].RopCurrent",
+        "StatusInfo[].RopAverage",
+        "Weather[].CurrentSeaSpeed",
+        "Weather[].WindSpeed"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "StatusInfo[].PresKickTol",
+        "StatusInfo[].MAASP",
+        "Weather[].BarometricPressure",
+        "PumpOp[].PumpPressure",
+        "HSE[].PressureAnnular",
+        "HSE[].PressureChokeLine",
+        "HSE[].PressureChokeMan",
+        "HSE[].PressureDiverter",
+        "HSE[].PressureKellyHose",
+        "HSE[].PressureLastCasing",
+        "HSE[].PressureBOPRam",
+        "HSE[].PressureStandPipeManifold"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+      "propertyNames": [
+        "StatusInfo[].VolKickTol",
+        "MudVolume[].MudVolumeStart",
+        "MudVolume[].MudVolumeEnd",
+        "MudVolume[].MudVolumeBuild",
+        "MudVolume[].MudVolumeCasing",
+        "MudVolume[].MudVolumeDumped",
+        "MudVolume[].MudVolumeHole",
+        "MudVolume[].MudVolumeReceived",
+        "MudVolume[].MudVolumeReturned",
+        "MudVolume[].MudVolumeRiser",
+        "MudVolume[].MudVolumeString",
+        "MudVolume[].TotalMudVolume",
+        "MudVolume[].ExpectedMudVolume",
+        "Inventory[].VolumeItem",
+        "HSE[].VolumeFluidDischarged",
+        "HSE[].VolumeCuttingDischarged",
+        "HSE[].VolumeOilCuttingDischarge",
+        "HSE[].VolumeWasteDischarged",
+        "MudLosses[].MudLostVolumeAbandonDownhole",
+        "MudLosses[].MudLostVolumeBehindCasingDownhole",
+        "MudLosses[].MudLostVolumeCirculatingDownhole",
+        "MudLosses[].MudLostVolumeCementingDownhole",
+        "MudLosses[].MudLostVolumeCasingHole",
+        "MudLosses[].MudLostVolumeMudCleanerSurface",
+        "MudLosses[].MudLostVolumeOtherLocationDownhole",
+        "MudLosses[].MudLostVolumeOtherLocationSurface",
+        "MudLosses[].MudLostVolumePitsSurface",
+        "MudLosses[].MudLostVolumeShakerSurface",
+        "MudLosses[].MudLostVolumeTrippingSurface",
+        "MudLosses[].TotalMudLostVolumeDownhole",
+        "MudLosses[].TotalMudLostVolumeSurface"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad:",
+      "propertyNames": [
+        "Weather[].SeaCurrentDirection",
+        "Weather[].WaveDirection",
+        "Weather[].WindDirection"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "Weather[].SeaTemp",
+        "Weather[].SurfaceTempMin",
+        "Weather[].SurfaceTempMax",
+        "Weather[].WindChillTemp"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "W/W",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"W/W\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:W%2FW:",
+      "propertyNames": [
+        "PumpOp[].PumpEfficiency"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "PumpOp[].PumpOutput"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/s\",\"baseMeasurement\":{\"ancestry\":\"A/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+      "propertyNames": [
+        "PumpOp[].StrokeRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/rad\",\"baseMeasurement\":{\"ancestry\":\"L3/A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Frad:",
+      "propertyNames": [
+        "PumpOp[].PumpDisplacement"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg\",\"baseMeasurement\":{\"ancestry\":\"M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg:",
+      "propertyNames": [
+        "Inventory[].WeightItem"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/m3\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fm3:",
+      "propertyNames": [
+        "GasReading[].TotalGasMax",
+        "GasReading[].TotalGasMin",
+        "GasReading[].TotalGasAverage",
+        "GasReading[].Methane",
+        "GasReading[].Ethane",
+        "GasReading[].Propane",
+        "GasReading[].Isobutane",
+        "GasReading[].Norbutane",
+        "GasReading[].Isopentane"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "DDMSDatasets": [
+      "urn://wddms-3/uuid:20840361-adc0-4842-999b-5639bd07bb38",
+      "eml://rddms-1/dataspace('demo/Volve')/resqml20.obj_ContinuousProperty(1615d8d2-2a2d-482c-885e-14225b89e90c)"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "namespace:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "namespace:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "Name": "Example Name",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "StartDateTime": "2020-02-13T09:13:15.55Z",
+    "EndDateTime": "2020-02-13T09:13:15.55Z",
+    "BitRecord": [
+      {
+        "NumBit": "Example Identifier",
+        "DiameterBit": 12345.6,
+        "DiameterPassThrough": 12345.6,
+        "DiameterPilot": 12345.6,
+        "Manufacturer": "Example Manufacturer",
+        "TypeBit": "namespace:reference-data--BitType:BiCenter:",
+        "Cost": 12345.6,
+        "CostCurrency": "Example Cost Currency",
+        "MfgCode": "Example Manufacturer Code",
+        "IADCCode": "Example IADC code",
+        "InitialConditionInner": 12345.6,
+        "InitialConditionOuter": 12345.6,
+        "InitialConditionDull": "namespace:reference-data--BitDullCode:BC:",
+        "InitialConditionLocation": "Example Initial Condition Location",
+        "InitialConditionBearing": "Example Initial Condition Bearing",
+        "InitialConditionGauge": "Example Initial Condition Gauge",
+        "InitialConditionOther": "Example Initial Condition Other",
+        "InitialConditionReason": "namespace:reference-data--BitReasonPulled:BHA:",
+        "FinalConditionInner": 12345.6,
+        "FinalConditionOuter": 12345.6,
+        "FinalConditionDull": "namespace:reference-data--BitDullCode:BC:",
+        "FinalConditionLocation": "Example Final Condition Location",
+        "FinalConditionBearing": "Example Final Condition Bearing",
+        "FinalConditionGauge": "Example Final Condition Gauge",
+        "FinalConditionOther": "Example Final Condition Other",
+        "FinalConditionReason": "namespace:reference-data--BitReasonPulled:BHA:",
+        "DriveType": "Example Drive Type",
+        "BitClass": "Example Bit Class"
+      }
+    ],
+    "OperationsActivity": [
+      {
+        "ActivityID": "Example Activity ID",
+        "StartDateTime": "2020-02-13T09:13:15.55Z",
+        "EndDateTime": "2020-02-13T09:13:15.55Z",
+        "ActualDuration": 12345.6,
+        "Phase": "Example Phase",
+        "ActivityCodeID": "namespace:reference-data--ActivityCode:root:",
+        "DetailActivity": "Example Detail Activity",
+        "TypeActivityClassID": "namespace:reference-data--DrillingActivityClassType:planned:",
+        "ActivityMDTop": 12345.6,
+        "ActivityMDBase": 12345.6,
+        "ActivityTVDTop": 12345.6,
+        "ActivityTVDBase": 12345.6,
+        "BitMDTop": 12345.6,
+        "BitMDBase": 12345.6,
+        "ActivityOutcomeID": "namespace:reference-data--ActivityOutcome:OK:",
+        "ActivityOutcomeDetailID": "namespace:reference-data--ActivityOutcomeDetail:injury:",
+        "OperatorID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ServiceProviderID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "TubularID": "namespace:master-data--TubularAssembly:9_58ProdCasing:",
+        "IsOptimum": true,
+        "IsProductive": true,
+        "IsOffline": true,
+        "ItemState": "Example Item State",
+        "Comments": "Example Comments",
+        "ProprietaryActivityCode": [
+          {
+            "Identifier": "Example Identifier",
+            "Description": "Example Description",
+            "Authority": "Example Authority"
+          }
+        ],
+        "ParentID": "Example Parent ID",
+        "PredecessorID": "Example Predecessor ID",
+        "PlannedHoleDepthIn": 12345.6,
+        "PlannedHoleDepthOut": 12345.6,
+        "PlannedDuration": 12345.6,
+        "TargetDepth": 12345.6,
+        "OperationalNotes": "Example Operational Notes",
+        "AttachmentIDs": [
+          "namespace:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+        ],
+        "SectionDiameter": 12345.6,
+        "ObjectReference": "Example Object Reference",
+        "WellboreID": "namespace:master-data--Wellbore:SomeUniqueWellboreID:"
+      }
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:SomeUniqueWellboreID:",
+    "WellAlias": {
+      "Identifier": "Example Identifier",
+      "Description": "Example Description",
+      "Authority": "Example Authority"
+    },
+    "WellboreAlias": [
+      {
+        "Identifier": "Example Identifier",
+        "Description": "Example Description",
+        "Authority": "Example Authority"
+      }
+    ],
+    "StatusInfo": [
+      {
+        "StatusDateTime": "2020-02-13T09:13:15.55Z",
+        "ReportEndMD": 12345.6,
+        "ReportEndTVD": 12345.6,
+        "PlugTopMD": 12345.6,
+        "DiameterHole": 12345.6,
+        "DiameterHoleStartMD": 12345.6,
+        "DiameterPilot": 12345.6,
+        "DiameterPilotPlanMD": 12345.6,
+        "DiameterPilotPlanTVD": 12345.6,
+        "TypeWellbore": "Example Wellbore Type",
+        "KickoffMD": 12345.6,
+        "KickoffTVD": 12345.6,
+        "FormationStrength": 12345.6,
+        "FormationStrengthMD": 12345.6,
+        "FormationStrengthTVD": 12345.6,
+        "CasingDiameterLast": 12345.6,
+        "CasingMDLast": 12345.6,
+        "CasingTVDLast": 12345.6,
+        "PresTestType": "Example Pressure Test Type",
+        "MdPlanned": 12345.6,
+        "DrilledDistance": 12345.6,
+        "Summary24Hr": "Example 24Hr Summary",
+        "Forecast24Hr": "Example 24Hr Forecast",
+        "RopCurrent": 12345.6,
+        "Rig": "Example Rig",
+        "ElapsedTimeStart": 12345.6,
+        "ElapsedTimeSpud": 12345.6,
+        "ElapsedTimeLoc": 12345.6,
+        "ElapsedTimeDrill": 12345.6,
+        "RopAverage": 12345.6,
+        "Supervisor": "Example Supervisor",
+        "Engineer": "Example Engineer",
+        "Geologist": "Example Geologist",
+        "ElapsedTimeDrillRot": 12345.6,
+        "ElapsedTimeDrillSlid": 12345.6,
+        "ElapsedTimeCirc": 12345.6,
+        "ElapsedTimeReam": 12345.6,
+        "ElapsedTimeHold": 12345.6,
+        "ElapsedTimeSteering": 12345.6,
+        "DistDrillRot": 12345.6,
+        "DistDrillSlid": 12345.6,
+        "DistReam": 12345.6,
+        "DistHold": 12345.6,
+        "DistSteering": 12345.6,
+        "NumPOB": 2,
+        "NumContract": 2,
+        "NumOperator": 2,
+        "NumService": 2,
+        "NumAFE": "Example AFE number",
+        "ConditionHole": "Example Hole Condition",
+        "TvdLot": 12345.6,
+        "PresLotEmw": 12345.6,
+        "PresKickTol": 12345.6,
+        "VolKickTol": 12345.6,
+        "MAASP": 12345.6,
+        "TubularID": "namespace:master-data--TubularAssembly:9_58ProdCasing:",
+        "CostDayMud": 12345.6
+      }
+    ],
+    "FluidsIDs": [
+      "namespace:work-product-component--WellFluidsReport:WellFluidsReport-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+    ],
+    "PorePressure": [
+      "namespace:work-product-component--PPFGDataset:PPFGDataset-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+    ],
+    "TimedComments": [
+      {
+        "Comment": "Example Comment",
+        "CommentTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "Weather": [
+      {
+        "Agency": "Example Agency",
+        "PrecipitationAmount": 12345.6,
+        "SeaCurrentDirection": 12345.6,
+        "WaveDirection": 12345.6,
+        "WindDirection": 12345.6,
+        "BarometricPressure": 12345.6,
+        "BeaufortScaleNumber": 12345.6,
+        "CloudCeiling": 12345.6,
+        "Comments": "Example Comments",
+        "CloudCover": "Example Cloud Cover",
+        "CurrentSeaSpeed": 12345.6,
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "WaveHeightAverage": 12345.6,
+        "WaveHeightMax": 12345.6,
+        "WavePeriodDuration": 12345.6,
+        "WaveSignificant": 12345.6,
+        "SeaTemp": 12345.6,
+        "SurfaceTempMin": 12345.6,
+        "SurfaceTempMax": 12345.6,
+        "WindChillTemp": 12345.6,
+        "WeatherType": "namespace:reference-data--WeatherType:rain:",
+        "WindSpeed": 12345.6,
+        "Visibility": 12345.6
+      }
+    ],
+    "Personnel": [
+      {
+        "OrganizationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "HeadCount": 3.0,
+        "TotalTime": 12345.6,
+        "OrganizationRole": "namespace:reference-data--PersonnelOrganisationRole:rig_contractor:",
+        "ServiceType": "namespace:reference-data--PersonnelServiceType:cementing:",
+        "Comments": "Example Comments"
+      }
+    ],
+    "PumpOp": [
+      {
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "LinerInnerDiameter": 12345.6,
+        "StrokeLength": 12345.6,
+        "MeasuredDepthBit": 12345.6,
+        "PumpEfficiency": 12345.6,
+        "PumpPressure": 12345.6,
+        "PumpNumber": "Example Pump Number",
+        "PumpOutput": 12345.6,
+        "StrokeRate": 12345.6,
+        "OperationType": "namespace:reference-data--PumpOpType:drilling:",
+        "Comments": "Example Comments",
+        "PumpDisplacement": 12345.6,
+        "PumpModelName": "Example Pump Model Name"
+      }
+    ],
+    "MudVolume": [
+      {
+        "MudVolumeStart": 12345.6,
+        "MudVolumeEnd": 12345.6,
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "MudVolumeMeasureDepthTop": 12345.6,
+        "MudVolumeMeasureDepthBase": 12345.6,
+        "MudVolumeTvdTop": 12345.6,
+        "MudVolumeTvdBase": 12345.6,
+        "MudVolumeBuild": 12345.6,
+        "MudVolumeCasing": 12345.6,
+        "MudVolumeDumped": 12345.6,
+        "MudVolumeHole": 12345.6,
+        "MudVolumeReceived": 12345.6,
+        "MudVolumeReturned": 12345.6,
+        "MudVolumeRiser": 12345.6,
+        "MudVolumeString": 12345.6,
+        "TotalMudVolume": 12345.6,
+        "ExpectedMudVolume": 12345.6,
+        "Comments": "Example Comments"
+      }
+    ],
+    "Inventory": [
+      {
+        "CostOfItem": 12345.6,
+        "VolumeItem": 12345.6,
+        "WeightItem": 12345.6,
+        "Name": "Example Name",
+        "PricePerUnit": 12345.6,
+        "TotalQuantityAdjustment": 12345.6,
+        "TotalQuantityOnLocation": 12345.6,
+        "TotalQuantityReceived": 12345.6,
+        "TotalQuantityReturned": 12345.6,
+        "TotalQuantityStart": 12345.6,
+        "TotalQuantityUsed": 12345.6,
+        "Comments": "Example Comments",
+        "ItemDescription": "Example Item Description"
+      }
+    ],
+    "Cost": [
+      {
+        "Comments": "Example Comments",
+        "TotalCostAmount": 12345.6,
+        "CostCurrency": "Example Cost Currency",
+        "CostClass": "Example Cost Class Code",
+        "CostCode": "Example Cost Code",
+        "CostGroup": "Example Cost Group",
+        "ItemDescription": "Example Item Description",
+        "UnitCost": 12345.6,
+        "CostSubCode": "Example Cost Subcode",
+        "IsEstimated": true,
+        "IsCarryOver": true,
+        "IsRental": true,
+        "UnitKind": "Example Unit Kind",
+        "UnitSize": 12345.6,
+        "TagName": "Example Item Identification Tag",
+        "VendorName": "Example Item Vendor Name",
+        "AFENumber": "Example AFE Number",
+        "InvoiceNumber": "Example Invoice Number",
+        "PONumber": "Example Purchase Order Number",
+        "ItemSerialNumber": "Example Item Serial Number",
+        "TicketNumber": "Example Ticket Number",
+        "VendorNumber": "Example Vendor Number",
+        "CostPoolName": "Example Cost Pool Name",
+        "TotalQuantityItemsUsed": 2,
+        "ActivityPhaseID": "namespace:reference-data--WellActivityPhaseType:LCOMP:",
+        "InUse": true,
+        "ProductType": "namespace:reference-data--WellSiteProductType:cement:"
+      }
+    ],
+    "HSE": [
+      {
+        "Comments": "Example Comments",
+        "DaysIncidentFree": 2,
+        "VolumeFluidDischarged": 12345.6,
+        "LastAbandonDrillDate": "2020-02-13T09:13:15.55Z",
+        "LastBopDrillDate": "2020-02-13T09:13:15.55Z",
+        "LastBopPressureTestDate": "2020-02-13T09:13:15.55Z",
+        "LastCasingPressureTestDate": "2020-02-13T09:13:15.55Z",
+        "LastDiverterDrillDate": "2020-02-13T09:13:15.55Z",
+        "LastFireBoatDrillDate": "2020-02-13T09:13:15.55Z",
+        "LastRigInspectionDate": "2020-02-13T09:13:15.55Z",
+        "LastSafetyInspectionDate": "2020-02-13T09:13:15.55Z",
+        "LastSafetyMeetingDate": "2020-02-13T09:13:15.55Z",
+        "LastTripDrillDate": "2020-02-13T09:13:15.55Z",
+        "NextBopPresTestDate": "2020-02-13T09:13:15.55Z",
+        "NonComplianceIssued": true,
+        "TotalStopCards": 2,
+        "PressureAnnular": 12345.6,
+        "PressureChokeLine": 12345.6,
+        "PressureChokeMan": 12345.6,
+        "PressureDiverter": 12345.6,
+        "PressureKellyHose": 12345.6,
+        "PressureLastCasing": 12345.6,
+        "PressureBOPRam": 12345.6,
+        "PressureStandPipeManifold": 12345.6,
+        "RegulatoryAgencyInspection": true,
+        "VolumeCuttingDischarged": 12345.6,
+        "VolumeOilCuttingDischarge": 12345.6,
+        "VolumeWasteDischarged": 12345.6
+      }
+    ],
+    "Incident": [
+      {
+        "Comments": "Example Comments",
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "CauseDescription": "Example Cause Description",
+        "CostLossEstimate": 12345.6,
+        "AccidentDescription": "Example Accident Description",
+        "LocationDescription": "Example Location Description",
+        "EstimateHoursLost": 12345.6,
+        "IsNearMiss": true,
+        "TotalFatality": 2,
+        "TotalMajorInjury": 2,
+        "TotalMinorInjury": 2,
+        "RemedialActionDescription": "Example Remedial Action Description",
+        "IncidentReporterName": "Example Incident Reporter Name",
+        "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:"
+      }
+    ],
+    "MudLosses": [
+      {
+        "Comments": "Example Comments",
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "MudLostVolumeMeasureDepthTop": 12345.6,
+        "MudLostVolumeMeasureDepthBase": 12345.6,
+        "MudLostVolumeTvdTop": 12345.6,
+        "MudLostVolumeTvdBase": 12345.6,
+        "MudLostVolumeAbandonDownhole": 12345.6,
+        "MudLostVolumeBehindCasingDownhole": 12345.6,
+        "MudLostVolumeCirculatingDownhole": 12345.6,
+        "MudLostVolumeCementingDownhole": 12345.6,
+        "MudLostVolumeCasingHole": 12345.6,
+        "MudLostVolumeMudCleanerSurface": 12345.6,
+        "MudLostVolumeOtherLocationDownhole": 12345.6,
+        "MudLostVolumeOtherLocationSurface": 12345.6,
+        "MudLostVolumePitsSurface": 12345.6,
+        "MudLostVolumeShakerSurface": 12345.6,
+        "MudLostVolumeTrippingSurface": 12345.6,
+        "TotalMudLostVolumeDownhole": 12345.6,
+        "TotalMudLostVolumeSurface": 12345.6
+      }
+    ],
+    "JobContact": [
+      {
+        "EmailAddress": "support@company.com",
+        "PhoneNumber": "1-555-281-5555",
+        "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+        "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:ExecutiveSponsor:",
+        "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:All:",
+        "Comment": "Example Comment",
+        "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "Name": "Example Name",
+        "UserProfileID": "namespace:master-data--UserProfile:JohnSmith:"
+      }
+    ],
+    "GasReading": [
+      {
+        "DateTime": "2020-02-13T09:13:15.55Z",
+        "TotalGasMax": 12345.6,
+        "TotalGasMin": 12345.6,
+        "TotalGasAverage": 12345.6,
+        "GasReadingMeasureDepthTop": 12345.6,
+        "GasReadingTvdBase": 12345.6,
+        "Methane": 12345.6,
+        "Ethane": 12345.6,
+        "Propane": 12345.6,
+        "Isobutane": 12345.6,
+        "Norbutane": 12345.6,
+        "Isopentane": 12345.6,
+        "ReadingType": "namespace:reference-data--GasReadingType:background_gas:"
+      }
+    ],
+    "ConditionHole": "Example Hole Condition",
+    "CostDay": 12345.6,
+    "CostDayMud": 12345.6,
+    "Lithology": "Example Lithology Description",
+    "TotalCost": 12345.6,
+    "TargetCost": 12345.6,
+    "TargetDays": 12345.6,
+    "TotalDays": 12345.6,
+    "TotalNPT": 12345.6,
+    "WellActivityID": "namespace:master-data--WellActivity:SomeUniqueWellActivityID:",
+    "ReportNumber": "Example Report Number",
+    "ReportDescription": "Example Report Description",
+    "ReportRemarks": "Example Report Remarks",
+    "ExtensionProperties": {}
+  }
+}

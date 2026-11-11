@@ -1,0 +1,59 @@
+{
+  "id": "namespace:reference-data--DataQualityRuleSet:6e658-f2a01-ffffffffffffffff",
+  "kind": "osdu:wks:reference-data--DataQualityRuleSet:1.0.1",
+  "data": {
+    "Source": "Alloy",
+    "ID": "Default Rule Set for osdu:wks:work-product-component--WellLog:1.5.0",
+    "Description": "Default Rule Set for osdu:wks:work-product-component--WellLog:1.5.0",
+    "Code": "Default Rule Set for osdu:wks:work-product-component--WellLog:1.5.0",
+    "Name": "Base line RuleSet for WellLog",
+    "EvaluatedKind": "osdu:wks:work-product-component--WellLog:1.5.0",
+    "DataRules": [
+      {
+        "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:"
+      },
+      {
+        "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-4e61747572616c204b657920436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:"
+      },
+      {
+        "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:"
+      }
+    ],
+    "ExtensionProperties": {
+      "RuleNames": [
+        {
+          "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+          "RuleName": "Pattern Check"
+        },
+        {
+          "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-4e61747572616c204b657920436865636b:",
+          "RuleName": "Natural Key Check"
+        },
+        {
+          "DataRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+          "RuleName": "Required Properties Check"
+        }
+      ]
+    }
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@namespace.group"
+    ],
+    "owners": [
+      "data.default.owners@namespace.group"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "namespace-default-data-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  }
+}

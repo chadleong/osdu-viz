@@ -1,0 +1,335 @@
+{
+  "id": "namespace:work-product-component--ProductionValues:FieldWaddockCross-MonProdHCL",
+  "kind": "osdu:wks:work-product-component--ProductionValues:1.1.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "MeasurementConditions.Temperature"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "MeasurementConditions.Pressure"
+      ]
+    }
+  ],
+  "data": {
+    "Datasets": [
+      "osduprod-opendes:dataset--File.Generic:fc189cd0-3a49-486e-a6da-a38dddaa8433:"
+    ],
+    "Source": "North Sea NSTA Public site",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Name": "Example Name",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SubmitterName": "HCL resource name",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "ReportingEntityID": "namespace:master-data--Field:Singleton:",
+    "StartDateTime": "2003-10-01",
+    "EndDateTime": "2004-02-01",
+    "NominalPeriodIDs": [
+      "namespace:reference-data--ReportingPeriod:Month:"
+    ],
+    "QuantityMethodIDs": [
+      "namespace:reference-data--QuantityMethod:Allocated:"
+    ],
+    "DurationContextIDs": [
+      "namespace:reference-data--DurationContext:CalendarDays:"
+    ],
+    "PropertyIDs": [
+      "namespace:reference-data--ProductionPropertyType:Mass:",
+      "namespace:reference-data--ProductionPropertyType:Volume:",
+      "namespace:reference-data--ProductionPropertyType:Density:"
+    ],
+    "ProductIDs": [
+      "namespace:reference-data--ProductKind:Oil:",
+      "namespace:reference-data--ProductKind:AssociatedGas:",
+      "namespace:reference-data--ProductKind:Water:"
+    ],
+    "DispositionIDs": [
+      "namespace:reference-data--DispositionType:Transferred:"
+    ],
+    "ValueContexts": [
+      {
+        "DowntimeEventID": "namespace:work-product-component--DowntimeEvent:SomeUniqueDowntimeEventID:",
+        "ContextType": "Downtime Event"
+      }
+    ],
+    "MeasurementConditions": {
+      "Temperature": 273.15,
+      "Pressure": 101.325,
+      "IsStandardConditions": true
+    },
+    "ProductionValuesObservationDescription": {
+      "KeyColumns": [],
+      "Columns": [
+        {
+          "ColumnName": "DateTime",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:T:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:Time:",
+            "Name": "TimeStamp"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:conditions:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:date:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "OilProductionMass",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:t:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:e770fed8-43e3-4bda-a94e-6bdcdafb43dc:",
+            "Name": "OIL Production Mass"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:oil:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "OilProductionVolume",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "Oil Production Volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:oil:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "OilProductionRate",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:954570a3-d587-454c-8481-bf21657625e2:",
+            "Name": "Oil Production Flow Rate"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:oil:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "OilProductionDensity",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass%20per%20volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:fd8a4e2e-63d7-43d9-926a-a23da337dc6c:",
+            "Name": "Oil Production Density"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:oil:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "AssociatedGasProductionMass",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:t:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:e770fed8-43e3-4bda-a94e-6bdcdafb43dc:",
+            "Name": "Associated Gas Production Mass"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:gas:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "AssociatedGasProductionVolume - KiloStandardCubicMeter",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "Associated Gas Production Volume in KiloStandardCubicMeter"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:gas:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "AssociatedGasProductionRate",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20ft3%2Fd:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:954570a3-d587-454c-8481-bf21657625e2:",
+            "Name": "Associated Gas Production Flow Rate"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:gas:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "AssociatedGasProductionDensity",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass%20per%20volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:fd8a4e2e-63d7-43d9-926a-a23da337dc6c:",
+            "Name": "Associated Gas Production Density"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:gas:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "InjectionWaterVolume",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "Water Production Volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:water:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "InjectionWaterRate",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:954570a3-d587-454c-8481-bf21657625e2:",
+            "Name": "Water Injection Flow Rate"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:water:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "ProductionWaterVolume",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:",
+            "Name": "Water Production Volume"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:water:"
+            }
+          ]
+        },
+        {
+          "ColumnName": "ProductionWaterRate",
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyType": {
+            "PropertyTypeID": "namespace:reference-data--PropertyType:954570a3-d587-454c-8481-bf21657625e2:",
+            "Name": "Water Production Flow Rate"
+          },
+          "FacetIDs": [
+            {
+              "FacetTypeID": "namespace:reference-data--FacetType:what:",
+              "FacetRoleID": "namespace:reference-data--FacetRole:water:"
+            }
+          ]
+        }
+      ],
+      "ColumnBasedTableType": "namespace:reference-data--ColumnBasedTableType:ProductionMeasurements:"
+    },
+    "ObservationInterval": "Oct-2003 till Feb-2004 hence 5 months",
+    "ExtensionProperties": {}
+  }
+}

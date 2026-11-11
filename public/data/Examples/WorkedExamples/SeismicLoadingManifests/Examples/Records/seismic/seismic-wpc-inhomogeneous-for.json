@@ -1,0 +1,62 @@
+{
+  "id": "partition-id:work-product-component--SeismicTraceData:f6c3c7db-656a-4a52-87ee-18861f74b932",
+  "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "us",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1e-06,\"c\":1.0,\"d\":0.0},\"symbol\":\"us\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:us:",
+      "propertyNames": [
+        "SampleInterval"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ms",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"ms\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+      "propertyNames": [
+        "StartTime",
+        "EndTime"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "TraceLength"
+      ]
+    }
+  ],
+  "data": {
+    "Datasets": [
+      "partition-id:dataset--FileCollection.SEGY:9e425e42-9097-457e-9e16-1f41f25235a8:"
+    ],
+    "SampleInterval": 4000.0,
+    "SampleCount": 2501,
+    "StartTime": 2000.0,
+    "EndTime": 12000.0,
+    "TraceCount": 2000,
+    "TraceLength": 10.0
+  },
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  }
+}

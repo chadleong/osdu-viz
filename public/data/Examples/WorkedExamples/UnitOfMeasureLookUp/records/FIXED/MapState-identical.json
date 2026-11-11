@@ -1,0 +1,30 @@
+{
+  "id": "partition-id:reference-data--CatalogMapStateType:identical",
+  "kind": "osdu:wks:reference-data--CatalogMapStateType:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "identical",
+    "Description": "Indicates that the target conversion factor is identical to the source conversion factor. A copy of the value should be assigned the target unit.",
+    "Code": "identical",
+    "AttributionAuthority": "Energistics",
+    "AttributionPublication": "Energistics Unit of Measure Standard",
+    "AttributionRevision": "1.0",
+    "Source": "Workbook Published/CatalogMapStateType.1.0.0.xlsx; commit SHA 54e89405.",
+    "CommitDate": "2022-02-05T15:50:17+01:00"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "version": 1635454816654,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellID": "namespace:master-data--Well:920c7e6d-1e9f-496d-ba4f-fe5bf5503d57:1635454815323",
+    "DefinitiveTrajectoryID": "namespace:work-product-component--WellboreTrajectory:4b44b41a-6373-5373-8971-e16c99ec34f0:1635454826926"
+  }
+}

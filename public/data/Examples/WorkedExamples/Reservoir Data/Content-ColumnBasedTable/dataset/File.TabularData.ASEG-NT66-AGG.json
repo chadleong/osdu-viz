@@ -1,0 +1,585 @@
+{
+  "id": "namespace:dataset--File.TabularData:ASEG-0f40da92-921f-48af-9f39-3c045395a45b",
+  "kind": "osdu:wks:dataset--File.TabularData:1.0.0",
+  "version": 1727768012929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2024-10-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2024-10-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "ResourceSecurityClassification": "namespace:reference-data--ResourceSecurityClassification:Public:",
+    "Source": "Chris Hough",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "NT66-AGG-Data",
+    "Description": "As originally delivered by TerraNexus.",
+    "TotalSize": "15281",
+    "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:text%2Fplain:",
+    "SchemaFormatTypeID": "namespace:reference-data--SchemaFormatType:ASEG-GDF2:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://default_bucket/r1/data/provided/documents/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66-AGG-Data.truncated.dat",
+        "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66-AGG-Data.truncated.dat",
+        "PreloadFileCreateUser": "somebody@acme.org",
+        "PreloadFileCreateDate": "2024-10-01T11:46:20.163Z",
+        "PreloadFileModifyUser": "somebody.else@acme.org",
+        "PreloadFileModifyDate": "2024-10-01T17:20:05.356Z",
+        "Name": "NT66-AGG-Data.truncated.dat",
+        "FileSize": "15281",
+        "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:text%2Fplain:",
+        "Checksum": "068ae640de896024a4a71027e05771c5",
+        "ChecksumAlgorithm": "MD5"
+      }
+    },
+    "Checksum": "068ae640de896024a4a71027e05771c5",
+    "ColumnBasedTableTemplateID": "namespace:master-data--ColumnBasedTableTemplate:ASEG-GDF2-NT66-AGD:",
+    "ColumnBasedTableTypeID": "namespace:reference-data--ColumnBasedTableType:ColumnBasedTableTemplateControlled:",
+    "Columns": [
+      {
+        "ColumnName": "RT",
+        "ValueType": "string",
+        "ValueCount": 1
+      },
+      {
+        "ColumnName": "FLTLINE: Line number",
+        "ValueType": "number",
+        "ValueCount": 1
+      },
+      {
+        "ColumnName": "ALTITUDE: Sensor Height above WGS84 ellipsoid with Geoid (EGM96) correcti",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "Clearance_Bath: Aircraft Clearance above Bathymetry surface (m)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DEM: Terrain Height above WGS84 ellipsoid with Geoid (EGM96) correct",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_EQUIV_120M: Drape surface for equivalent source construction (m)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_FOURIER_120M: Drape surface for fourier reconstruction (m)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "EAST: WGS84 SUTM55 Easting",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "FIDUCIAL: Fiducial (seconds)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:time:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2: Equivalent source derived vertical gravity (mGal)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2_120M_GG: Equivalent source derived vertical gravity (mGal)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived vertical Gravity(mGal)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived vertical Gravity(mGal)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2: Equivalent source derived vertical gravity gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2_120M_GG: Equivalent source derived vertical gravity gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived vertical gravity gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived vertical gravity gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_2000x2800: Spatially derived vertical gravity gradient",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_DT_2000x2800: 1D Detrended Spatially derived vertical gravity gradient",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2: Equivalent source derived Gne curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2_120M_GG: Equivalent source derived Gne curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived Gne curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived Gne curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2: Equivalent source derived Guv curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2_120M_GG: Equivalent source derived Guv curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived Guv curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived Guv curvature gradient(Eotvos)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "LATITUDE: WGS84 Latitude",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:plane%20angle:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:dega:"
+      },
+      {
+        "ColumnName": "LONGITUD: WGS84 Longitude",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:plane%20angle:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:dega:"
+      },
+      {
+        "ColumnName": "NORTH: WGS84 SUTM55 Northing",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "ON_LINE: AGG on line indicator",
+        "ValueType": "boolean",
+        "ValueCount": 1
+      },
+      {
+        "ColumnName": "RADAR: Radar Altimeter (m)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "surf_grv_plus_trend: surf_grv_plus_trend",
+        "ValueType": "number",
+        "ValueCount": 1
+      },
+      {
+        "ColumnName": "T_DD: SeaLevel Terrain effect calculated for DD(assumes density corre",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "T_NE: SeaLevel Terrain effect calculated for NE(assumes density corre",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "T_UV: SeaLevel Terrain effect calculated for UV(assumes density corre",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "TURBULENCE: Estimated vertical platform turbulence (mg)",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      }
+    ],
+    "ColumnNamesInFirstRow": false,
+    "ColumnSpecifications": [
+      {
+        "ColumnName": "RT",
+        "ColumnFormat": "A4",
+        "ColumnByteCount": 4,
+        "ColumnStartByte": 0
+      },
+      {
+        "ColumnName": "FLTLINE: Line number",
+        "ColumnFormat": "F10.1",
+        "ColumnByteCount": 10,
+        "ColumnStartByte": 4
+      },
+      {
+        "ColumnName": "ALTITUDE: Sensor Height above WGS84 ellipsoid with Geoid (EGM96) correcti",
+        "ColumnFormat": "F7.2",
+        "ColumnByteCount": 7,
+        "ColumnStartByte": 14,
+        "AbsentValue": "-99.99"
+      },
+      {
+        "ColumnName": "Clearance_Bath: Aircraft Clearance above Bathymetry surface (m)",
+        "ColumnFormat": "F18.2",
+        "ColumnByteCount": 18,
+        "ColumnStartByte": 21,
+        "AbsentValue": "-9999999999999.99"
+      },
+      {
+        "ColumnName": "DEM: Terrain Height above WGS84 ellipsoid with Geoid (EGM96) correct",
+        "ColumnFormat": "F8.2",
+        "ColumnByteCount": 8,
+        "ColumnStartByte": 39,
+        "AbsentValue": "-999.99"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_EQUIV_120M: Drape surface for equivalent source construction (m)",
+        "ColumnFormat": "F7.2",
+        "ColumnByteCount": 7,
+        "ColumnStartByte": 47,
+        "AbsentValue": "-99.99"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_FOURIER_120M: Drape surface for fourier reconstruction (m)",
+        "ColumnFormat": "F7.2",
+        "ColumnByteCount": 7,
+        "ColumnStartByte": 54,
+        "AbsentValue": "-99.99"
+      },
+      {
+        "ColumnName": "EAST: WGS84 SUTM55 Easting",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 61,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "FIDUCIAL: Fiducial (seconds)",
+        "ColumnFormat": "F14.1",
+        "ColumnByteCount": 14,
+        "ColumnStartByte": 81,
+        "AbsentValue": "-9999999999.9"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2: Equivalent source derived vertical gravity (mGal)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 95,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2_120M_GG: Equivalent source derived vertical gravity (mGal)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 115,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "gD_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived vertical Gravity(mGal)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 135,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "gD_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived vertical Gravity(mGal)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 155,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2: Equivalent source derived vertical gravity gradient(Eotvos)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 175,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2_120M_GG: Equivalent source derived vertical gravity gradient(Eotvos)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 195,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived vertical gravity gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 215,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived vertical gravity gradient(Eotvos)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 221,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_2000x2800: Spatially derived vertical gravity gradient",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 241,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_DT_2000x2800: 1D Detrended Spatially derived vertical gravity gradient",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 261,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2: Equivalent source derived Gne curvature gradient(Eotvos)",
+        "ColumnFormat": "F17.2",
+        "ColumnByteCount": 17,
+        "ColumnStartByte": 281,
+        "AbsentValue": "-999999999999.99"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2_120M_GG: Equivalent source derived Gne curvature gradient(Eotvos)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 298,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived Gne curvature gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 318,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived Gne curvature gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 324,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2: Equivalent source derived Guv curvature gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 330,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2_120M_GG: Equivalent source derived Guv curvature gradient(Eotvos)",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 336,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_0p0_1000_LWT_C120_ML: Fourier derived Guv curvature gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 356,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_2p2_1000_LWT_C120_ML: Fourier derived Guv curvature gradient(Eotvos)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 362,
+        "AbsentValue": "-9.99"
+      },
+      {
+        "ColumnName": "LATITUDE: WGS84 Latitude",
+        "ColumnFormat": "F10.6",
+        "ColumnByteCount": 10,
+        "ColumnStartByte": 368,
+        "AbsentValue": "-9.999999"
+      },
+      {
+        "ColumnName": "LONGITUD: WGS84 Longitude",
+        "ColumnFormat": "F10.6",
+        "ColumnByteCount": 10,
+        "ColumnStartByte": 378,
+        "AbsentValue": "-9.999999"
+      },
+      {
+        "ColumnName": "NORTH: WGS84 SUTM55 Northing",
+        "ColumnFormat": "F11.2",
+        "ColumnByteCount": 11,
+        "ColumnStartByte": 388,
+        "AbsentValue": "-999999.99"
+      },
+      {
+        "ColumnName": "ON_LINE: AGG on line indicator",
+        "ColumnFormat": "F11.0",
+        "ColumnByteCount": 11,
+        "ColumnStartByte": 399,
+        "AbsentValue": "-99999999."
+      },
+      {
+        "ColumnName": "RADAR: Radar Altimeter (m)",
+        "ColumnFormat": "F7.2",
+        "ColumnByteCount": 7,
+        "ColumnStartByte": 410,
+        "AbsentValue": "-99.99"
+      },
+      {
+        "ColumnName": "surf_grv_plus_trend: surf_grv_plus_trend",
+        "ColumnFormat": "F20.2",
+        "ColumnByteCount": 20,
+        "ColumnStartByte": 417,
+        "AbsentValue": "-999999999999999.99"
+      },
+      {
+        "ColumnName": "T_DD: SeaLevel Terrain effect calculated for DD(assumes density corre",
+        "ColumnFormat": "F5.1",
+        "ColumnByteCount": 5,
+        "ColumnStartByte": 437,
+        "AbsentValue": "-9.9"
+      },
+      {
+        "ColumnName": "T_NE: SeaLevel Terrain effect calculated for NE(assumes density corre",
+        "ColumnFormat": "F4.1",
+        "ColumnByteCount": 4,
+        "ColumnStartByte": 442,
+        "AbsentValue": "-.9"
+      },
+      {
+        "ColumnName": "T_UV: SeaLevel Terrain effect calculated for UV(assumes density corre",
+        "ColumnFormat": "F9.1",
+        "ColumnByteCount": 9,
+        "ColumnStartByte": 446,
+        "AbsentValue": "-99999.9"
+      },
+      {
+        "ColumnName": "TURBULENCE: Estimated vertical platform turbulence (mg)",
+        "ColumnFormat": "F6.2",
+        "ColumnByteCount": 6,
+        "ColumnStartByte": 455,
+        "AbsentValue": "-9.99"
+      }
+    ],
+    "ColumnSeparator": "",
+    "NumberOfRowsToSkip": 0,
+    "CommentIndicator": "",
+    "ExtensionProperties": {}
+  }
+}

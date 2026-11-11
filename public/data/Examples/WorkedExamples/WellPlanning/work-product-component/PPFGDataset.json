@@ -1,0 +1,109 @@
+{
+  "id": "osdu:work-product-component--PPFGDataset:ppfg_bfa6c73d-4b12-4980-be91-80ce7cdb3291",
+  "kind": "osdu:wks:work-product-component--PPFGDataset:1.2.0",
+  "version": 1635454829421,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "ExtensionProperties": {
+      "Logs": [
+        {
+          "Name": "Pressure Window",
+          "ObjectGrowing": false,
+          "DataUpateRate": 0.0,
+          "CurveSensorsAligned": false,
+          "BhaRunNumber": 0.0,
+          "IndexType": "verticaldepth",
+          "Direction": "increasing",
+          "IndexCurve": "TVD",
+          "NullValue": "-999.25",
+          "LogCurveInfo": [
+            {
+              "Mnemonic": "TVD",
+              "Unit": "m",
+              "traceState": "depthadjusted",
+              "traceOrigin": "realtime",
+              "typeLogData": "double"
+            },
+            {
+              "Mnemonic": "PorePressure",
+              "Unit": "Pa",
+              "traceState": "depthadjusted",
+              "traceOrigin": "realtime",
+              "typeLogData": "double"
+            }
+          ],
+          "LogData": [
+            {
+              "MnemonicList": "TVD, PorePressure",
+              "UnitList": "m, Pa",
+              "Data": [
+                "0, 89613.93223174104",
+                "600.456, 6205281.212218903",
+                "1194.7398, 13789514.689758081",
+                "1697.736, 20684272.706875958",
+                "2185.416, 28624881.634066362"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Pressure Window",
+          "ObjectGrowing": false,
+          "DataUpateRate": 0.0,
+          "CurveSensorsAligned": false,
+          "BhaRunNumber": 0.0,
+          "IndexType": "verticaldepth",
+          "Direction": "increasing",
+          "IndexCurve": "TVD",
+          "NullValue": "-999.25",
+          "LogCurveInfo": [
+            {
+              "Mnemonic": "TVD",
+              "Unit": "m",
+              "traceState": "depthadjusted",
+              "traceOrigin": "realtime",
+              "typeLogData": "double"
+            },
+            {
+              "Mnemonic": "PorePressure",
+              "Unit": "Pa",
+              "traceState": "depthadjusted",
+              "traceOrigin": "realtime",
+              "typeLogData": "double"
+            }
+          ],
+          "LogData": [
+            {
+              "MnemonicList": "TVD, PorePressure",
+              "UnitList": "m, Pa",
+              "Data": [
+                "0, 89613.93223174104",
+                "600.456, 6205281.212218903",
+                "1194.7398, 13789514.689758081",
+                "1697.736, 20684272.706875958",
+                "2185.416, 28624881.634066362"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

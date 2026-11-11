@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Series",
+  "kind": "osdu:wks:reference-data--StratigraphicColumnRankUnitType:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Series",
+    "NameAlias": [
+      {
+        "AliasName": "Epoch"
+      }
+    ],
+    "Description": "Series are subdivisions of rock layers based on the age of the rock and formally defined by international conventions of the geological timescale. A series is therefore a sequence of strata defining a chronostratigraphic unit. Series are subdivisions of systems and are themselves divided into stages.",
+    "Code": "Chronostratigraphic.Series",
+    "AttributionPublication": "https://en.wikipedia.org/wiki/Series_(stratigraphy)",
+    "Rank": 3,
+    "StratigraphicRoleTypeID": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic:",
+    "Source": "Workbook Authoring/StratigraphicColumnRankUnitType.1.0.0.xlsx; commit SHA 71749e18."
+  }
+}

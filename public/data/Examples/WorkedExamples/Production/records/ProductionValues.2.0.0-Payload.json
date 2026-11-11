@@ -1,0 +1,306 @@
+{
+  "0": {
+    "id": "namespace:work-product-component--ProductionValues:FieldWaddockCross-MonProdHCL",
+    "kind": "osdu:wks:work-product-component--ProductionValues:2.0.0",
+    "version": 1562066009929332,
+    "acl": {
+      "owners": [
+        "someone@company.com"
+      ],
+      "viewers": [
+        "someone@company.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "Example legaltags"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ],
+      "status": "compliant"
+    },
+    "tags": {
+      "NameOfKey": "String value"
+    },
+    "ancestry": {
+      "parents": []
+    },
+    "meta": [
+      {
+        "kind": "Unit",
+        "name": "K",
+        "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+        "propertyNames": [
+          "MeasurementConditions.Temperature"
+        ]
+      },
+      {
+        "kind": "Unit",
+        "name": "Pa",
+        "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+        "propertyNames": [
+          "MeasurementConditions.Pressure"
+        ]
+      }
+    ],
+    "data": {
+      "Source": "North Sea NSTA Public site",
+      "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+      "IsExtendedLoad": true,
+      "IsDiscoverable": true,
+      "Name": "Example Name",
+      "Description": "Example Description",
+      "CreationDateTime": "2020-02-13T09:13:15.55Z",
+      "Tags": [
+        "Example Tags"
+      ],
+      "SubmitterName": "HCL resource name",
+      "BusinessActivities": [
+        "Example BusinessActivities"
+      ],
+      "AuthorIDs": [
+        "Example AuthorIDs"
+      ],
+      "ExtensionProperties": {},
+      "ReportingEntityID": "namespace:master-data--Field:Singleton:",
+      "StartDateTime": "2003-10-01",
+      "EndDateTime": "2004-02-01",
+      "NominalPeriodID": "namespace:reference-data--ReportingPeriod:Month:",
+      "QuantityMethodID": "namespace:reference-data--QuantityMethod:Allocated:",
+      "DurationContextID": "namespace:reference-data--DurationContext:CalendarDays:",
+      "VolumeFlowMeasurementTypeID": "namespace:reference-data--VolumeFlowMeasurementType:Production:",
+      "ValueContext": [
+        {
+          "DowntimeEventID": "namespace:work-product-component--DowntimeEvent:SomeUniqueDowntimeEventID:",
+          "ContextType": "Downtime Event"
+        }
+      ],
+      "ReservoirModelScenarioID": null,
+      "AmendReasonID": null,
+      "MeasurementConditions": {
+        "Pressure": 101.325,
+        "Temperature": 273.15,
+        "IsStandardConditions": true,
+        "NonStandardConditionsReference": null
+      },
+      "Remarks": "Monthly production / injection for the Singleton field",
+      "ProductionMetricValues": [
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:t:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Mass:",
+          "ProductID": "namespace:reference-data--ProductKind:Oil:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "OILPRODMAS"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Volume:",
+          "ProductID": "namespace:reference-data--ProductKind:Oil:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "OILPRODM3"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Rate:",
+          "ProductID": "namespace:reference-data--ProductKind:Oil:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "OILPRODMBD"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass%20per%20volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Density:",
+          "ProductID": "namespace:reference-data--ProductKind:Oil:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "OILPRDDENS"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:t:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Mass:",
+          "ProductID": "namespace:reference-data--ProductKind:AssociatedGas:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "AGASPRODMA"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Volume:",
+          "ProductID": "namespace:reference-data--ProductKind:AssociatedGas:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "AGASPROKSM"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20ft3%2Fd:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Rate:",
+          "ProductID": "namespace:reference-data--ProductKind:AssociatedGas:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "AGASPROMMS"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:mass%20per%20volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Density:",
+          "ProductID": "namespace:reference-data--ProductKind:AssociatedGas:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "AGASPRODEN"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Volume:",
+          "ProductID": "namespace:reference-data--ProductKind:Water:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "WATPRODVOL"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Rate:",
+          "ProductID": "namespace:reference-data--ProductKind:Water:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "WATPRODMBD"
+        }
+      ]
+    }
+  },
+  "1": {
+    "id": "namespace:work-product-component--ProductionValues:FieldWaddockCross-MonProdHCL",
+    "kind": "osdu:wks:work-product-component--ProductionValues:2.0.0",
+    "version": 1562066009929332,
+    "acl": {
+      "owners": [
+        "someone@company.com"
+      ],
+      "viewers": [
+        "someone@company.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "Example legaltags"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ],
+      "status": "compliant"
+    },
+    "tags": {
+      "NameOfKey": "String value"
+    },
+    "ancestry": {
+      "parents": []
+    },
+    "meta": [
+      {
+        "kind": "Unit",
+        "name": "K",
+        "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+        "propertyNames": [
+          "MeasurementConditions.Temperature"
+        ]
+      },
+      {
+        "kind": "Unit",
+        "name": "Pa",
+        "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+        "propertyNames": [
+          "MeasurementConditions.Pressure"
+        ]
+      }
+    ],
+    "data": {
+      "Source": "North Sea NSTA Public site",
+      "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+      "IsExtendedLoad": true,
+      "IsDiscoverable": true,
+      "Name": "Example Name",
+      "Description": "Example Description",
+      "CreationDateTime": "2020-02-13T09:13:15.55Z",
+      "Tags": [
+        "Example Tags"
+      ],
+      "SubmitterName": "HCL resource name",
+      "BusinessActivities": [
+        "Example BusinessActivities"
+      ],
+      "AuthorIDs": [
+        "Example AuthorIDs"
+      ],
+      "ExtensionProperties": {},
+      "ReportingEntityID": "namespace:master-data--Field:Singleton:",
+      "StartDateTime": "2003-10-01",
+      "EndDateTime": "2004-02-01",
+      "NominalPeriodID": "namespace:reference-data--ReportingPeriod:Month:",
+      "QuantityMethodID": "namespace:reference-data--QuantityMethod:Allocated:",
+      "DurationContextID": "namespace:reference-data--DurationContext:CalendarDays:",
+      "VolumeFlowMeasurementTypeID": "namespace:reference-data--VolumeFlowMeasurementType:Injection:",
+      "ValueContext": [
+        {
+          "DowntimeEventID": "namespace:work-product-component--DowntimeEvent:SomeUniqueDowntimeEventID:",
+          "ContextType": "Downtime Event"
+        }
+      ],
+      "ReservoirModelScenarioID": null,
+      "AmendReasonID": null,
+      "MeasurementConditions": {
+        "Pressure": 101.325,
+        "Temperature": 273.15,
+        "IsStandardConditions": true,
+        "NonStandardConditionsReference": null
+      },
+      "Remarks": "Monthly production / injection for the Singleton field",
+      "ProductionMetricValues": [
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Volume:",
+          "ProductID": "namespace:reference-data--ProductKind:Water:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "INJWATVOL"
+        },
+        {
+          "UnitQuantityID": "namespace:reference-data--UnitQuantity:volume%20per%20time:",
+          "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:1E6%20bbl%2Fd:",
+          "PropertyID": "namespace:reference-data--ProductionPropertyType:Rate:",
+          "ProductID": "namespace:reference-data--ProductKind:Water:",
+          "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+          "DatasetID": "HCL-load-prod-data",
+          "DDMSDatasetID": "null",
+          "DatasetColumn": "INJWATMBD"
+        }
+      ]
+    }
+  }
+}

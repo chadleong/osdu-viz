@@ -1,0 +1,63 @@
+{
+  "id": "namespace:work-product-component--DataQualitySummary:work-product-component--WellLog:c2c79f1c-90ca-5c92-b8df-04dbe438f414",
+  "kind": "osdu:wks:work-product-component--DataQualitySummary:1.0.0",
+  "data": {
+    "EvaluatedRecordID": "namespace:work-product-component--WellLog:c2c79f1c-90ca-5c92-b8df-04dbe438f414:",
+    "EvaluatedKind": "osdu:wks:work-product-component--WellLog:1.5.0",
+    "DataQualitySummarySet": [
+      {
+        "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:6e658-f2a01-ffffffffffffffff:",
+        "DataQualityRuleSetName": "Base line RuleSet for WellLog",
+        "DataQualityID": "namespace:work-product-component--DataQuality:a8116688-1313-421c-9fdc-de9f75c3093c:",
+        "StartDateTime": "2023-10-26T07:15:51.518Z",
+        "TotalScore": 100,
+        "MethodID": "namespace:reference-data--QualityAssessmentMethod:AverageAssessment:",
+        "DimensionMetrics": [
+          {
+            "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Accuracy:",
+            "Score": 100.0
+          },
+          {
+            "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+            "Score": 100.0
+          }
+        ]
+      },
+      {
+        "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:4354knfdgdgjk3hjsdfh8:",
+        "DataQualityRuleSetName": "Gold RuleSet for WellLog",
+        "DataQualityID": "namespace:work-product-component--DataQuality:2d042b28-21b9-4eee-9d8e-42f800f6a627:",
+        "StartDateTime": "2023-10-30T07:15:51.518Z",
+        "TotalScore": 90,
+        "MethodID": "namespace:reference-data--QualityAssessmentMethod:AverageAssessment:",
+        "DimensionMetrics": [
+          {
+            "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Accuracy:",
+            "Score": 90.0
+          },
+          {
+            "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+            "Score": 90.0
+          }
+        ]
+      }
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@namespace.group"
+    ],
+    "owners": [
+      "data.default.owners@namespace.group"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "namespace-default-data-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  }
+}

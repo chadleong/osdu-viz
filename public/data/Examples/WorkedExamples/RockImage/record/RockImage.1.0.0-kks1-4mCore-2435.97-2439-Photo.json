@@ -1,0 +1,176 @@
+{
+  "id": "namespace:work-product-component--RockImage:73786a74-ef54-4aaf-a637-6141f405da78",
+  "kind": "osdu:wks:work-product-component--RockImage:1.3.1",
+  "version": 1562066012241213,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepthMeasuredDepth",
+        "BaseDepthMeasuredDepth",
+        "FormatInterval"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--File.Image.JPEG:Photo-624b918f-19b4-4e4d-a232-a309b9390989:"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "namespace:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "namespace:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "Example Name"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "Name": "Example Name",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {
+      "CoordinateQualityCheckRemarks": [
+        "Wgs84Coordinates copied from parent Wellbore ProjectedBottomHoleLocation."
+      ],
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81362197200383,
+                -19.781020115817476
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ],
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "namespace:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "BasinID": "namespace:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [],
+    "RockSampleIDs": [
+      "namespace:master-data--RockSample:KKS1-CORE2-2434.97-2435.97:",
+      "namespace:master-data--RockSample:KKS1-CORE2-2435.97-2437:",
+      "namespace:master-data--RockSample:KKS1-CORE2-2437-2438:",
+      "namespace:master-data--RockSample:KKS1-CORE2-2438-2439:"
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:KKS1:",
+    "CoringID": "namespace:master-data--Coring:SomeUniqueCoringID:",
+    "RockImageTypeID": "namespace:reference-data--RockImageType:Photograph:",
+    "TopDepthMeasuredDepth": 2434.97,
+    "BaseDepthMeasuredDepth": 2439.0,
+    "VerticalMeasurement": {
+      "VerticalMeasurementSourceID": "namespace:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalReferenceID": "ZDP",
+      "VerticalReferenceEntityID": "namespace:master-data--Wellbore:KKS1:",
+      "VerticalMeasurementDescription": "Vertical reference inherited from parent wellbore's ZDP."
+    },
+    "DepthShiftID": "namespace:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "AcquisitionDate": "2022-09-09",
+    "ServiceCompanyID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+    "ReferenceIdentifier": "JOB 112",
+    "Remark": "4x1m interval. Taken in lab.",
+    "FormatInterval": 1.0,
+    "TextualHeader": [
+      "File Size: 561 kB\nFile Type: JPEG\nMIME Type: image/jpeg\nImage Width: 1476\nImage Height: 1949\nEncoding Process: Baseline DCT, Huffman coding\nBits Per Sample: 8\nColor Components: 3\nX Resolution: 1\nY Resolution: 1\nSoftware: Google\nYCbCr Sub Sampling: YCbCr4:2:0 (2 2)"
+    ],
+    "LightingConditionID": "namespace:reference-data--ImageLightingCondition:Natural:",
+    "Magnification": 1.0,
+    "ExtensionProperties": {}
+  }
+}

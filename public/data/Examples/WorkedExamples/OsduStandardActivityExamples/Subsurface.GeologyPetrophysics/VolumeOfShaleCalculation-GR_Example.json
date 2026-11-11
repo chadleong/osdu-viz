@@ -1,0 +1,152 @@
+{
+  "id": "namespace:work-product-component--Activity:GeologyPetrophysics--VolumeOfShaleCalculation-GR",
+  "kind": "osdu:wks:work-product-component--Activity:1.4.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2024-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2024-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "Parameters[2].DataQuantityParameter",
+        "Parameters[3].DataQuantityParameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "gAPI",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"gAPI\",\"baseMeasurement\":{\"ancestry\":\"none\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:gAPI:",
+      "propertyNames": [
+        "Parameters[4].DataQuantityParameter",
+        "Parameters[5].DataQuantityParameter"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "OSDU Forum",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "VolumeOfShaleCalculation-GR example activity instance",
+    "Description": "Example activity record demonstrating the use of the 'VolumeOfShaleCalculation-GR' Activity Template.",
+    "CreationDateTime": "2024-12-16T11:46:20.163Z",
+    "LineageAssertions": [],
+    "ActivityTemplateID": "namespace:master-data--ActivityTemplate:Subsurface.GeologyPetrophysics--VolumeOfShaleCalculation-GR.1.1.0:",
+    "ParentProjectID": "namespace:master-data--Project:ExampleProject:",
+    "Parameters": [
+      {
+        "Title": "WellLog Set",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataObjectParameter": "namespace:work-product-component--WellLog:example-welllog-set:"
+      },
+      {
+        "Title": "Curve ID",
+        "Index": 0,
+        "Selection": "Default Curve ID value of 'GR'. Users can select and input another Curve ID value as required",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "StringParameter": "GR"
+      },
+      {
+        "Title": "Lower Percentile Distribution",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameter": 12345.6,
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:Euc:"
+      },
+      {
+        "Title": "Upper Percentile Distribution",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameter": 12345.6,
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:Euc:"
+      },
+      {
+        "Title": "Minimum Gamma Ray",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameter": 12345.6,
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:gAPI:"
+      },
+      {
+        "Title": "Maximum Gamma Ray",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Double:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameter": 12345.6,
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:gAPI:"
+      },
+      {
+        "Title": "IsClipped",
+        "Index": 0,
+        "Selection": "Default Is Clipped value of 'true'. Users can select and input another Boolean value e.g. 'false' as required",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Boolean:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "BooleanParameter": true
+      },
+      {
+        "Title": "Calculation Model",
+        "Selection": "Default Calculation Model value of 'Linear'. Users can select and input another Calculation Model method value as required",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataObjectParameter": "namespace:reference-data--VshCalculationModel:Linear:"
+      },
+      {
+        "Title": "Output WellLog Set",
+        "Index": 0,
+        "Selection": "Auto-generated example value",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "DataObjectParameter": "namespace:work-product-component--WellLog:example-output-welllog-set:"
+      },
+      {
+        "Title": "Output Vsh Curve ID",
+        "Index": 0,
+        "Selection": "Default Curve ID value of 'Vsh'. Users can select and input another Curve ID value as required",
+        "ParameterKindID": "namespace:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Output:",
+        "StringParameter": "Vsh"
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

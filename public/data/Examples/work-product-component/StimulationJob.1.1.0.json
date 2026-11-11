@@ -1,0 +1,686 @@
+{
+  "id": "namespace:work-product-component--StimulationJob:fd28afdb-7250-57ed-8a0b-e486c44dc821",
+  "kind": "osdu:wks:work-product-component--StimulationJob:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].FrictionCoefficientLaminar",
+        "MaterialCatalog[].ProppantAgents[].FrictionCoefficientTurbulent",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].ClustersPercent",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].LossOnIgnition",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].Roundness",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].SpecificGravity",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].Sphericity",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].TurbidityNTU",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].TurbidityFNU",
+        "PadPercent"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m2/kg",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m2/kg\",\"baseMeasurement\":{\"ancestry\":\"L2/M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m2%2Fkg:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].MassAbsorptionCoefficient"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].UnconfinedCompressiveStrength",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].CrushTestData[].Stress",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_5Point[].StressApplied"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].AbsoluteDensity",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].ApparentDensity",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].BulkDensity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/kg",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/kg\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fkg:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].AcidSolubility",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].CrushTestData[].Fines",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].SieveAnalysisData[].PercentRetained"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].MeanParticleDiameter",
+        "MaterialCatalog[].ProppantAgents[].ISO13503_2Properties[].MedianParticleDiameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "TD[API].m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"TD[API].m\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:TD%5BAPI%5D.m:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_5Point[].Conductivity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "TD[API]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"TD[API]\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:TD%5BAPI%5D:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_5Point[].Permeability"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "MaterialCatalog[].ProppantAgents[].ISO13503_5Point[].Temperature"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "degF",
+      "persistableReference": "{\"abcd\":{\"a\":2298.35,\"b\":5.0,\"c\":9.0,\"d\":0.0},\"symbol\":\"degF\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:degF:",
+      "propertyNames": [
+        "BHStaticTemperature",
+        "BHTreatingTemperature"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "FlowBackPressure",
+        "JobPressureMax",
+        "JobPressureAvg"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft3/d",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.028316846592,\"c\":86400.0,\"d\":0.0},\"symbol\":\"ft3/d\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft3%2Fd:",
+      "propertyNames": [
+        "FlowBackRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+      "propertyNames": [
+        "FlowBackVolume",
+        "MaterialUsed[].StdVolume",
+        "MaterialUsed[].Volume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/m3\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fm3:",
+      "propertyNames": [
+        "FluidEfficiency",
+        "MaterialUsed[].VolumeConcentration"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bbl/min",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.158987294928,\"c\":60.0,\"d\":0.0},\"symbol\":\"bbl/min\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bbl%2Fmin:",
+      "propertyNames": [
+        "FluidPumpingRateMax"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "hp",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":745.6998715822702,\"c\":1.0,\"d\":0.0},\"symbol\":\"hp\",\"baseMeasurement\":{\"ancestry\":\"L2M/T3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:hp:",
+      "propertyNames": [
+        "HhpOrdered",
+        "HhpUsed"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "gal[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.003785411784,\"c\":1.0,\"d\":0.0},\"symbol\":\"gal[US]\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:gal%5BUS%5D:",
+      "propertyNames": [
+        "JobTotalVolume",
+        "CleanTotalVolume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":1.0,\"d\":0.0},\"symbol\":\"lbm\",\"baseMeasurement\":{\"ancestry\":\"M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm:",
+      "propertyNames": [
+        "ProppantInFormationTotal",
+        "ProppantUsedTotal",
+        "MaterialUsed[].Mass"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "PumpTimeTotal"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm/gal[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":0.003785411784,\"d\":0.0},\"symbol\":\"lbm/gal[US]\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm%2Fgal%5BUS%5D:",
+      "propertyNames": [
+        "MaterialUsed[].Density"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm/min",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":60.0,\"d\":0.0},\"symbol\":\"lbm/min\",\"baseMeasurement\":{\"ancestry\":\"M/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbm%2Fmin:",
+      "propertyNames": [
+        "MaterialUsed[].MassFlowRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "MaterialUsed[].VolumetricFlowRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "OpenHoleLength"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "DDMSDatasets": [
+      "urn://wddms-3/uuid:20840361-adc0-4842-999b-5639bd07bb38",
+      "eml://rddms-1/dataspace('demo/Volve')/resqml20.obj_ContinuousProperty(1615d8d2-2a2d-482c-885e-14225b89e90c)"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "namespace:reference-data--ArtefactRole:AdaptedContent:",
+        "ResourceKind": "namespace:source_name:group_type--IndividualType:0.0.0",
+        "ResourceID": "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "Name": "Example Name",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "JobName": "Plug & Perf Chemical Frac",
+    "JobTypeID": "namespace:reference-data--StimJobType:Fracture.Slickwater:",
+    "WellboreID": "namespace:master-data--Wellbore:11000091175501:",
+    "WellActivityID": "namespace:master-data--WellActivity:110000911755.COM:",
+    "VerticalMeasurement": {
+      "VerticalReferenceEntityID": "namespace:master-data--Wellbore:11000091175501:",
+      "VerticalReferenceID": "DFE"
+    },
+    "WellboreTubularID": "namespace:master-data--TubularAssembly:7inProdLiner:",
+    "HoleSectionID": "namespace:master-data--HoleSection:11000091175501.6inHoleSect:",
+    "JobStartDateTime": "2020-05-01T07:00:00+0000",
+    "JobEndDateTime": "2020-05-04T21:00:00+0000",
+    "ArrivalDateTime": "2020-04-29T12:00:00+0000",
+    "MaterialCatalog": [
+      {
+        "Additives": [
+          {
+            "AdditiveName": "UNIFLAC",
+            "MaterialTypeID": "namespace:reference-data--StimMaterialType:Additive:",
+            "AdditiveKindID": "namespace:reference-data--StimAdditiveType:FluidLoss:",
+            "AdditiveType": "Universal fluid-loss additive",
+            "SupplierName": "SLB",
+            "SupplierCode": "UNIFLAC* L D168",
+            "AdditiveCode": "D168",
+            "ChemicalAbstractServiceNumber": "7647-14-5",
+            "Remarks": "Dry-blend in cement using solid\nUNIFLAC additives D167 and\nD167A"
+          }
+        ],
+        "ProppantAgents": [
+          {
+            "ProppantName": "70 Ottawa Sand",
+            "FrictionCoefficientLaminar": 12345.6,
+            "FrictionCoefficientTurbulent": 12345.6,
+            "MassAbsorptionCoefficient": 12345.6,
+            "MeshSizeHigh": 70,
+            "MeshSizeLow": 70,
+            "ProppantTypeID": "namespace:reference-data--StimProppantAgentType:Sand:",
+            "UnconfinedCompressiveStrength": 12345.6,
+            "ISO13503_2Properties": [
+              {
+                "AbsoluteDensity": 12345.6,
+                "AcidSolubility": 12345.6,
+                "ApparentDensity": 12345.6,
+                "BulkDensity": 12345.6,
+                "ClustersPercent": 12345.6,
+                "CrushTestData": [
+                  {
+                    "Fines": 12345.6,
+                    "Stress": 12345.6
+                  }
+                ],
+                "KValue": 2,
+                "LossOnIgnition": 12345.6,
+                "MeanParticleDiameter": 12345.6,
+                "MedianParticleDiameter": 12345.6,
+                "Roundness": 12345.6,
+                "SieveAnalysisData": [
+                  {
+                    "PercentRetained": 12345.6,
+                    "SieveNumber": 2
+                  }
+                ],
+                "SpecificGravity": 12345.6,
+                "Sphericity": 12345.6,
+                "TurbidityNTU": 12345.6,
+                "TurbidityFNU": 12345.6
+              }
+            ],
+            "ISO13503_5Point": [
+              {
+                "Conductivity": 12345.6,
+                "Permeability": 12345.6,
+                "StressApplied": 12345.6,
+                "Temperature": 12345.6
+              }
+            ],
+            "SupplierName": "ASTM Sands",
+            "SupplierID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "SupplierProductCode": "70OTTSAND",
+            "Remarks": "Example Remarks"
+          }
+        ]
+      }
+    ],
+    "BHStaticTemperature": 178.0,
+    "BHTreatingTemperature": 155.0,
+    "ContractorID": "namespace:master-data--Organisation:SLB:",
+    "FlowBackPressure": 2358.0,
+    "FlowBackRate": 3637.0,
+    "FlowBackVolume": 12345.6,
+    "FluidEfficiency": 0.98,
+    "FluidPumpingRateMax": 53.0,
+    "HhpOrdered": 200000.0,
+    "HhpUsed": 157535.0,
+    "JobPressureMax": 9421.65,
+    "JobPressureAvg": 7505.76,
+    "JobTotalVolume": 4228069.0,
+    "OperatorRepresentative": "Joe Bloggs",
+    "OperatorRepresentativeRemarks": "Well is ready for CT ops once Frac ops completed and stimulation services are R/O",
+    "PIDXCommodityCodeID": "namespace:reference-data--StimPIDXCommodityCode:71131000:",
+    "ProppantInFormationTotal": 6394508.0,
+    "ProppantUsedTotal": 6394508.0,
+    "PumpTimeTotal": 12345.6,
+    "StageCount": 27,
+    "Supervisor": "Marcel Schlumberger",
+    "MaterialUsed": [
+      {
+        "MaterialReferenceID": "70 Ottawa Sand",
+        "MaterialKindID": "namespace:reference-data--StimMaterialType:ProppantAgent:",
+        "Density": 22.15,
+        "Mass": 200000.0,
+        "MassFlowRate": 2000.0,
+        "StdVolume": 12345.6,
+        "Volume": 12345.6,
+        "VolumeConcentration": 12345.6,
+        "VolumetricFlowRate": 1500.0
+      }
+    ],
+    "WaterSource": "Sunshine Municipal",
+    "WaterManagementPlanIdentifier": "WMP-AA-BB-CC",
+    "OpenHoleLength": 7000.0,
+    "PadPercent": 1.0,
+    "IsCoiledTubingConveyed": false,
+    "CleanTotalVolume": 4100000.0,
+    "WellLog": [
+      "namespace:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:"
+    ],
+    "Remarks": "27 Stage Perf & Frac Ops",
+    "ExtensionProperties": {}
+  }
+}

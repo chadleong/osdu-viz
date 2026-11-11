@@ -1,0 +1,612 @@
+{
+  "id": "namespace:master-data--BHARun:8edbb259-e01e-4c25-afe9-b99ed1d2d376",
+  "kind": "osdu:wks:master-data--BHARun:1.2.0",
+  "version": 1635454819839,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "Name": "Drilling run",
+    "TubularID": "namespace:master-data--TubularAssembly:b9ccd054-4a46-4a84-8601-761edc69e0c9:1635454819316",
+    "StatusBhaID": "namespace:reference-data--BhaStatus:final:",
+    "StringRunNumber": 0.0,
+    "TripReasonID": "namespace:reference-data--ReasonTripType:none:",
+    "RunParameterPlans": [
+      {
+        "RunStartHoleMeasuredDepth": 9.144,
+        "RunEndHoleMeasuredDepth": 274.32,
+        "OperationParameterPlan": {
+          "RealizationStrategy": "linearInterpolation",
+          "TorqueOnBottomGroup": {
+            "MaximumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 13558.179483314,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13558.179483314,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                      "Description": "System default"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 13558.179483314,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 13558.179483314,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                      "Description": "System default"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumTorqueOnBottom": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                      "Description": "System default"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:J:",
+                      "Description": "System default"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "RPMGroup": {
+            "MaximumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 12.5663706143592,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.5663706143592,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 12.5663706143592,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 12.5663706143592,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 4.1887902047864,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.1887902047864,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 4.1887902047864,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    },
+                    {
+                      "Name": "Manual Input",
+                      "Value": 4.1887902047864,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedRPM": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 10.471975511966,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471975511966,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 10.471975511966,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 10.471975511966,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "ROPGroup": {
+            "MaximumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.0016933333333333336,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0016933333333333336,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.0016933333333333336,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0016933333333333336,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.0004233333333333334,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0004233333333333334,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.0004233333333333334,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0004233333333333334,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedROP": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.00127,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.00127,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.00127,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.00127,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "WOBGroup": {
+            "MaximumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 44482.216152605,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 44482.216152605,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 333616.621145,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 44482.216152605,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 44482.216152605,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 333616.621145,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.0,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.0,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedWOB": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 35585.772922084,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 35585.772922084,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 35585.772922084,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 35585.772922084,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:N:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "FlowratePumpGroup": {
+            "MaximumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.050472159999999995,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472159999999995,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.075708,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.050472159999999995,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.050472159999999995,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.075708,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                }
+              ]
+            },
+            "MinimumFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.037854,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0315451,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.037854,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.037854,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.0315451,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    },
+                    {
+                      "Name": "Tool Spec",
+                      "Value": 0.037854,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Comp#2: PowerPak A962M5640XP"
+                    }
+                  ]
+                }
+              ]
+            },
+            "RecommendedFlowratePump": {
+              "Point": [
+                {
+                  "ObservationMeasuredDepth": 9.144000000000005,
+                  "Value": 0.047317649999999996,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.047317649999999996,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                },
+                {
+                  "ObservationMeasuredDepth": 274.31999999999994,
+                  "Value": 0.047317649999999996,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                  "PointsSources": [
+                    {
+                      "Name": "Manual Input",
+                      "Value": 0.047317649999999996,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+                      "Description": "Batch Input"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "HoleSectionID": "namespace:master-data--HoleSection:341b6f97-8dc9-42bc-b825-0049d8753b51:1635454818831"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[].RunStartHoleMeasuredDepth",
+        "RunParameterPlans[].RunEndHoleMeasuredDepth",
+        "RunParameterPlans[].OperationParameterPlan.TorqueOnBottomGroup.MaximumTorqueOnBottom.Point[].ObservationMeasuredDepth",
+        "RunParameterPlans[].OperationParameterPlan.TorqueOnBottomGroup.MinimumTorqueOnBottom.Point[].ObservationMeasuredDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "J",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:J:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"J\",\"baseMeasurement\":{\"ancestry\":\"L2M/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MaximumTorqueOnBottom.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MaximumTorqueOnBottom.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MinimumTorqueOnBottom.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MinimumTorqueOnBottom.Point[].PointsSources[].Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/s\",\"baseMeasurement\":{\"ancestry\":\"A/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.MaximumRPM.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.MaximumRPM.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.MinimumRPM.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.MinimumRPM.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.RecommendedRPM.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.RecommendedRPM.Point[].PointsSources[].Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MaximumROP.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MaximumROP.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MinimumROP.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MinimumROP.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.RecommendedROP.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.RecommendedROP.Point[].PointsSources[].Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N\",\"baseMeasurement\":{\"ancestry\":\"LM/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MaximumWOB.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MaximumWOB.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MinimumWOB.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MinimumWOB.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.RecommendedWOB.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.RecommendedWOB.Point[].PointsSources[].Value"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MaximumFlowratePump.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MaximumFlowratePump.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MinimumFlowratePump.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MinimumFlowratePump.Point[].PointsSources[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.RecommendedFlowratePump.Point[].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.RecommendedFlowratePump.Point[].PointsSources[].Value"
+      ]
+    }
+  ]
+}

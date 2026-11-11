@@ -1,0 +1,107 @@
+{
+  "id": "partition-id:work-product-component--Activity:Synthetic-Example",
+  "kind": "osdu:wks:work-product-component--Activity:1.4.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2021-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2021-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Made-up Example",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "Calculate Synthetic",
+    "Description": "Example activity record demonstrating calculation of a synthetic trace",
+    "CreationDateTime": "2021-04-04T09:15:28.33Z",
+    "LineageAssertions": [],
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:",
+    "LastActivityState": {
+      "EffectiveDateTime": "2021-04-04T09:15:32.13Z",
+      "TerminationDateTime": "2021-04-04T09:12:32.13Z",
+      "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Completed:",
+      "Remark": "Success"
+    },
+    "Parameters": [
+      {
+        "Title": "Input Reflection Coefficients WellLog",
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "partition-id:work-product-component--WellLog:Impedance--RC:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Input Reflection Coefficients Curve Name",
+        "Selection": "Selected by end-user",
+        "StringParameter": "RC",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Input Ricker Wavelet WellLog",
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "partition-id:work-product-component--WellLog:Ricker40:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Input Ricker Wavelet Curve Name",
+        "Selection": "Selected by end-user",
+        "StringParameter": "Ricker40",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Output Synthetic Seismogram WellLog",
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "partition-id:work-product-component--WellLog:Synthetic:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Output:"
+      },
+      {
+        "Title": "Output Synthetic Seismogram Curve Name",
+        "Selection": "Default from ActivityTemplate",
+        "StringParameter": "Synthetic Seismogram",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Synthetics Sample Interval",
+        "Selection": "Selected by end-user",
+        "DataQuantityParameter": 0.5,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Integer:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:ms:"
+      }
+    ],
+    "PriorActivityIDs": [
+      "partition-id:work-product-component--Activity:Impedance--RC-Example:",
+      "partition-id:work-product-component--Activity:GenerateWavelet-Ricker40:"
+    ],
+    "ExtensionProperties": {}
+  }
+}

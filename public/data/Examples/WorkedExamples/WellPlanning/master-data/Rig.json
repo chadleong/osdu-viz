@@ -1,0 +1,30 @@
+{
+  "id": "osdu:master-data--Rig:3eb7eadb-439e-f0ed-918f-b8fbf091c75e",
+  "kind": "osdu:wks:master-data--Rig:1.2.0",
+  "version": 1635454817766,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "FacilityTypeID": "osdu:reference-data--FacilityType:Rig:",
+    "FacilityName": "DEF-Lower-Capacity",
+    "ExistenceKind": "osdu:reference-data--ExistenceKind:planned:",
+    "TypeRig": "osdu:reference-data--RigType:land:",
+    "ClassRig": "mobile",
+    "ExtensionProperties": {}
+  },
+  "meta": []
+}

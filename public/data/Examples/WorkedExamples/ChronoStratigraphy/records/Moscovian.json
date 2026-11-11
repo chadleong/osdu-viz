@@ -1,0 +1,43 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian.Moscovian",
+  "kind": "osdu:wks:reference-data--ChronoStratigraphy:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Moscovian",
+    "NameAlias": [
+      {
+        "AliasName": "Moscovian",
+        "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:UniqueIdentifier:",
+        "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:ICS:"
+      }
+    ],
+    "Description": "The Moscovian Age [315.2-307.0]",
+    "Code": "Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian.Moscovian",
+    "AttributionAuthority": "ICS https://stratigraphy.org",
+    "AttributionPublication": "https://github.com/CSIRO-enviro-informatics/interactive-geological-timescale/tree/master/src/assets",
+    "AgeBegin": 315.2,
+    "AgeEnd": 307,
+    "ChildCodes": [],
+    "Colour": "#AFD3CC",
+    "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Stage:",
+    "ParentIDs": [
+      "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian:"
+    ],
+    "Source": "Workbook Authoring/ChronoStratigraphy.1.0.0.xlsx; commit SHA 4aad0c73."
+  }
+}

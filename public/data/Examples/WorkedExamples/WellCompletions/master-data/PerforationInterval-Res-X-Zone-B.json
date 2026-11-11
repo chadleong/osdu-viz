@@ -1,0 +1,713 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "MasterData": [
+    {
+      "id": "partition-id:master-data--PerforationInterval:11000091175501.B.1",
+      "kind": "osdu:wks:master-data--PerforationInterval:1.2.0",
+      "version": 1,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-06T11:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2020-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "IntervalTopMD",
+            "IntervalBaseMD",
+            "IntervalLength",
+            "PenetrationDepth",
+            "CasingCollarLocatorMD",
+            "CCLTopShotDistance",
+            "FluidBeforeMD",
+            "FluidAfterMD",
+            "GaugeMD"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "in",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+          "propertyNames": [
+            "GunDiameter",
+            "GunSwellDiameter",
+            "EntranceHoleDiameter",
+            "CrushZoneDiameter"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "1/m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/m\",\"baseMeasurement\":{\"ancestry\":\"1/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fm:",
+          "propertyNames": [
+            "ShotDensity"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "degC",
+          "persistableReference": "{\"abcd\":{\"a\":273.15,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:degC:",
+          "propertyNames": [
+            "ReservoirTemperature"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "psi",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+          "propertyNames": [
+            "DuringPerfGaugePressure",
+            "InitialSurfPressure",
+            "FinalSurfPressure",
+            "MPPPressure",
+            "FrictionPressure"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m3/s",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fs:",
+          "propertyNames": [
+            "FluidLossBeforeRate",
+            "FluidLossAfterRate"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "NameAliases": [],
+        "GeoContexts": [],
+        "VersionCreationReason": "Example VersionCreationReason",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "Name": "Reservoir X Zone B Interval #1",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "PerforationJobID": "partition-id:master-data--PerforationJob:PerforationSampleJobID:",
+        "SequenceNumber": 1,
+        "ClusterRefNo": 1.1,
+        "IntervalDateTime": "2022-06-14T10:45:00.00Z",
+        "IntervalTypeID": "partition-id:reference-data--PerforationIntervalType:Abrasive-HP-FluidJet:",
+        "VerticalMeasurement": {
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IntervalTopMD": 5534.25,
+        "IntervalBaseMD": 5534.56,
+        "IntervalLength": 0.31,
+        "WirelineDiameterTypeID": "partition-id:reference-data--PerforationIntervalWLSize:0.082:",
+        "IntervalReasonTypeID": "partition-id:reference-data--PerforationIntervalReason:Production:",
+        "GunDiameter": 2.75,
+        "GunCarrierManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "GunCarrierTypeID": "partition-id:reference-data--PerforationGunCarrierType:HollowCarrier:",
+        "GunCarrierModelID": "partition-id:reference-data--PerforationGunCarrierModel:PortPlug:",
+        "GunCarrierCategoryTypeID": "partition-id:reference-data--PerforationGunCarrierCategory:Retrievable:",
+        "GunCarrierPhasing": "partition-id:reference-data--PerforationGunPhasingType:60-deg:",
+        "GunFiringHeadTypeID": "partition-id:reference-data--PerforationGunFiringHeadType:Hydraulic:",
+        "GunMetallurgyTypeID": "partition-id:reference-data--PerforationGunMetallurgyType:JST110Q:",
+        "ChargeManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "ChargeTypeID": "partition-id:reference-data--PerforationGunChargeType:RDX:",
+        "ChargeShapeID": "partition-id:reference-data--PerforationGunChargeShape:DeepPenetrating:",
+        "ChargeSize": "partition-id:reference-data--PerforationGunChargeSize:23:",
+        "GunSwellDiameter": 1.2,
+        "ShotDensity": 19.69,
+        "EntranceHoleDiameter": 7.5,
+        "PenetrationDepth": 0.4,
+        "IsAdditionalShot": false,
+        "Misfires": 0,
+        "ReservoirTemperature": 210.0,
+        "CasingCollarLocatorMD": 3770.0,
+        "CCLTopShotDistance": 100.61,
+        "FluidBeforeMD": 45.0,
+        "FluidAfterMD": 45.0,
+        "GaugeMD": 5100.0,
+        "BHPressureTypeID": "partition-id:reference-data--BottomHolePressureType:Gauge:",
+        "DuringPerfGaugePressure": 4651.0,
+        "InitialSurfPressure": 4000.0,
+        "FinalSurfPressure": 4775,
+        "MPPPressure": 4650.0,
+        "FluidLossBeforeRate": 0.0,
+        "FluidLossAfterRate": 0.0,
+        "FrictionFactor": 0.1,
+        "FrictionPressure": 100,
+        "DischargeCoefficient": 0.8,
+        "CrushZoneDiameter": 2.8,
+        "CrushDamageRatio": 0.7,
+        "TechnicalResult": "Good",
+        "IntervalComments": "Reservoir X, Zone B 1st Interval. All Shots Fired",
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--PerforationInterval:11000091175501.B.2",
+      "kind": "osdu:wks:master-data--PerforationInterval:1.2.0",
+      "version": 1,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-05T11:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2020-08-15T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "IntervalTopMD",
+            "IntervalBaseMD",
+            "IntervalLength",
+            "PenetrationDepth",
+            "CasingCollarLocatorMD",
+            "CCLTopShotDistance",
+            "FluidBeforeMD",
+            "FluidAfterMD",
+            "GaugeMD"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "in",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+          "propertyNames": [
+            "GunDiameter",
+            "GunSwellDiameter",
+            "EntranceHoleDiameter",
+            "CrushZoneDiameter"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "1/m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/m\",\"baseMeasurement\":{\"ancestry\":\"1/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fm:",
+          "propertyNames": [
+            "ShotDensity"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "degC",
+          "persistableReference": "{\"abcd\":{\"a\":273.15,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:degC:",
+          "propertyNames": [
+            "ReservoirTemperature"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "psi",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+          "propertyNames": [
+            "DuringPerfGaugePressure",
+            "InitialSurfPressure",
+            "FinalSurfPressure",
+            "MPPPressure",
+            "FrictionPressure"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m3/s",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fs:",
+          "propertyNames": [
+            "FluidLossBeforeRate",
+            "FluidLossAfterRate"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "NameAliases": [],
+        "GeoContexts": [],
+        "VersionCreationReason": "Example VersionCreationReason",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "Name": "Reservoir X Zone B Interval #2",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "PerforationJobID": "partition-id:master-data--PerforationJob:PerforationSampleJobID:",
+        "SequenceNumber": 2,
+        "ClusterRefNo": 1.2,
+        "IntervalDateTime": "2022-06-14T11:00:00.00Z",
+        "IntervalTypeID": "partition-id:reference-data--PerforationIntervalType:Abrasive-HP-FluidJet:",
+        "VerticalMeasurement": {
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IntervalTopMD": 5518.71,
+        "IntervalBaseMD": 5519.01,
+        "IntervalLength": 0.31,
+        "WirelineDiameterTypeID": "partition-id:reference-data--PerforationIntervalWLSize:0.082:",
+        "IntervalReasonTypeID": "partition-id:reference-data--PerforationIntervalReason:Production:",
+        "GunDiameter": 2.75,
+        "GunCarrierManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "GunCarrierTypeID": "partition-id:reference-data--PerforationGunCarrierType:HollowCarrier:",
+        "GunCarrierModelID": "partition-id:reference-data--PerforationGunCarrierModel:PortPlug:",
+        "GunCarrierCategoryTypeID": "partition-id:reference-data--PerforationGunCarrierCategory:Retrievable:",
+        "GunCarrierPhasing": "partition-id:reference-data--PerforationGunPhasingType:60-deg:",
+        "GunFiringHeadTypeID": "partition-id:reference-data--PerforationGunFiringHeadType:Hydraulic:",
+        "GunMetallurgyTypeID": "partition-id:reference-data--PerforationGunMetallurgyType:JST110Q:",
+        "ChargeManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "ChargeTypeID": "partition-id:reference-data--PerforationGunChargeType:RDX:",
+        "ChargeShapeID": "partition-id:reference-data--PerforationGunChargeShape:DeepPenetrating:",
+        "ChargeSize": "partition-id:reference-data--PerforationGunChargeSize:23:",
+        "GunSwellDiameter": 1.2,
+        "ShotDensity": 19.69,
+        "EntranceHoleDiameter": 7.5,
+        "PenetrationDepth": 0.4,
+        "IsAdditionalShot": false,
+        "Misfires": 0,
+        "ReservoirTemperature": 210.0,
+        "CasingCollarLocatorMD": 3770.0,
+        "CCLTopShotDistance": 100.31,
+        "FluidBeforeMD": 45.0,
+        "FluidAfterMD": 45.0,
+        "GaugeMD": 5100.0,
+        "BHPressureTypeID": "partition-id:reference-data--BottomHolePressureType:Gauge:",
+        "DuringPerfGaugePressure": 4601.0,
+        "InitialSurfPressure": 3980.0,
+        "FinalSurfPressure": 4705,
+        "MPPPressure": 4610.0,
+        "FluidLossBeforeRate": 0.0,
+        "FluidLossAfterRate": 0.0,
+        "FrictionFactor": 0.1,
+        "FrictionPressure": 100,
+        "DischargeCoefficient": 0.8,
+        "CrushZoneDiameter": 2.8,
+        "CrushDamageRatio": 0.7,
+        "TechnicalResult": "Good",
+        "IntervalComments": "Reservoir X, Zone B Interval 2. All Shots Fired",
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--PerforationInterval:11000091175501.B.3",
+      "kind": "osdu:wks:master-data--PerforationInterval:1.2.0",
+      "version": 1,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-05T11:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2020-08-15T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "IntervalTopMD",
+            "IntervalBaseMD",
+            "IntervalLength",
+            "PenetrationDepth",
+            "CasingCollarLocatorMD",
+            "CCLTopShotDistance",
+            "FluidBeforeMD",
+            "FluidAfterMD",
+            "GaugeMD"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "in",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+          "propertyNames": [
+            "GunDiameter",
+            "GunSwellDiameter",
+            "EntranceHoleDiameter",
+            "CrushZoneDiameter"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "1/m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/m\",\"baseMeasurement\":{\"ancestry\":\"1/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fm:",
+          "propertyNames": [
+            "ShotDensity"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "degC",
+          "persistableReference": "{\"abcd\":{\"a\":273.15,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:degC:",
+          "propertyNames": [
+            "ReservoirTemperature"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "psi",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+          "propertyNames": [
+            "DuringPerfGaugePressure",
+            "InitialSurfPressure",
+            "FinalSurfPressure",
+            "MPPPressure",
+            "FrictionPressure"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m3/s",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fs:",
+          "propertyNames": [
+            "FluidLossBeforeRate",
+            "FluidLossAfterRate"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "NameAliases": [],
+        "GeoContexts": [],
+        "VersionCreationReason": "Example VersionCreationReason",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "Name": "Reservoir X Zone B Interval #3",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "PerforationJobID": "partition-id:master-data--PerforationJob:PerforationSampleJobID:",
+        "SequenceNumber": 3,
+        "ClusterRefNo": 1.3,
+        "IntervalDateTime": "2022-06-14T11:15:00.00Z",
+        "IntervalTypeID": "partition-id:reference-data--PerforationIntervalType:Abrasive-HP-FluidJet:",
+        "VerticalMeasurement": {
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IntervalTopMD": 5502.86,
+        "IntervalBaseMD": 5503.16,
+        "IntervalLength": 0.31,
+        "WirelineDiameterTypeID": "partition-id:reference-data--PerforationIntervalWLSize:0.082:",
+        "IntervalReasonTypeID": "partition-id:reference-data--PerforationIntervalReason:Production:",
+        "GunDiameter": 2.75,
+        "GunCarrierManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "GunCarrierTypeID": "partition-id:reference-data--PerforationGunCarrierType:HollowCarrier:",
+        "GunCarrierModelID": "partition-id:reference-data--PerforationGunCarrierModel:PortPlug:",
+        "GunCarrierCategoryTypeID": "partition-id:reference-data--PerforationGunCarrierCategory:Retrievable:",
+        "GunCarrierPhasing": "partition-id:reference-data--PerforationGunPhasingType:60-deg:",
+        "GunFiringHeadTypeID": "partition-id:reference-data--PerforationGunFiringHeadType:Hydraulic:",
+        "GunMetallurgyTypeID": "partition-id:reference-data--PerforationGunMetallurgyType:JST110Q:",
+        "ChargeManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "ChargeTypeID": "partition-id:reference-data--PerforationGunChargeType:RDX:",
+        "ChargeShapeID": "partition-id:reference-data--PerforationGunChargeShape:DeepPenetrating:",
+        "ChargeSize": "partition-id:reference-data--PerforationGunChargeSize:23:",
+        "GunSwellDiameter": 1.2,
+        "ShotDensity": 19.69,
+        "EntranceHoleDiameter": 7.5,
+        "PenetrationDepth": 0.4,
+        "IsAdditionalShot": false,
+        "Misfires": 0,
+        "ReservoirTemperature": 210.0,
+        "CasingCollarLocatorMD": 3770.0,
+        "CCLTopShotDistance": 97.3,
+        "FluidBeforeMD": 45.0,
+        "FluidAfterMD": 45.0,
+        "GaugeMD": 5100.0,
+        "BHPressureTypeID": "partition-id:reference-data--BottomHolePressureType:Gauge:",
+        "DuringPerfGaugePressure": 4555.0,
+        "InitialSurfPressure": 3950.0,
+        "FinalSurfPressure": 4555,
+        "MPPPressure": 4555.0,
+        "FluidLossBeforeRate": 0.0,
+        "FluidLossAfterRate": 0.0,
+        "FrictionFactor": 0.1,
+        "FrictionPressure": 100,
+        "DischargeCoefficient": 0.8,
+        "CrushZoneDiameter": 2.8,
+        "CrushDamageRatio": 0.7,
+        "TechnicalResult": "Good",
+        "IntervalComments": "Reservoir X, Zone B Interval 3. All Shots Fired",
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--PerforationInterval:11000091175501.B.4",
+      "kind": "osdu:wks:master-data--PerforationInterval:1.2.0",
+      "version": 1,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-05T11:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2020-08-15T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "IntervalTopMD",
+            "IntervalBaseMD",
+            "IntervalLength",
+            "PenetrationDepth",
+            "CasingCollarLocatorMD",
+            "CCLTopShotDistance",
+            "FluidBeforeMD",
+            "FluidAfterMD",
+            "GaugeMD"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "in",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+          "propertyNames": [
+            "GunDiameter",
+            "GunSwellDiameter",
+            "EntranceHoleDiameter",
+            "CrushZoneDiameter"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "1/m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/m\",\"baseMeasurement\":{\"ancestry\":\"1/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fm:",
+          "propertyNames": [
+            "ShotDensity"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "degC",
+          "persistableReference": "{\"abcd\":{\"a\":273.15,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:degC:",
+          "propertyNames": [
+            "ReservoirTemperature"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "psi",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+          "propertyNames": [
+            "DuringPerfGaugePressure",
+            "InitialSurfPressure",
+            "FinalSurfPressure",
+            "MPPPressure",
+            "FrictionPressure"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m3/s",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fs:",
+          "propertyNames": [
+            "FluidLossBeforeRate",
+            "FluidLossAfterRate"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "NameAliases": [],
+        "GeoContexts": [],
+        "VersionCreationReason": "Example VersionCreationReason",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "Name": "Reservoir X Zone B Interval #4",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "PerforationJobID": "partition-id:master-data--PerforationJob:PerforationSampleJobID:",
+        "SequenceNumber": 4,
+        "ClusterRefNo": 1.4,
+        "IntervalDateTime": "2022-06-14T11:30:00.00Z",
+        "IntervalTypeID": "partition-id:reference-data--PerforationIntervalType:Abrasive-HP-FluidJet:",
+        "VerticalMeasurement": {
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IntervalTopMD": 5487.31,
+        "IntervalBaseMD": 5487.62,
+        "IntervalLength": 0.31,
+        "WirelineDiameterTypeID": "partition-id:reference-data--PerforationIntervalWLSize:0.082:",
+        "IntervalReasonTypeID": "partition-id:reference-data--PerforationIntervalReason:Production:",
+        "GunDiameter": 2.75,
+        "GunCarrierManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "GunCarrierTypeID": "partition-id:reference-data--PerforationGunCarrierType:HollowCarrier:",
+        "GunCarrierModelID": "partition-id:reference-data--PerforationGunCarrierModel:PortPlug:",
+        "GunCarrierCategoryTypeID": "partition-id:reference-data--PerforationGunCarrierCategory:Retrievable:",
+        "GunCarrierPhasing": "partition-id:reference-data--PerforationGunPhasingType:60-deg:",
+        "GunFiringHeadTypeID": "partition-id:reference-data--PerforationGunFiringHeadType:Hydraulic:",
+        "GunMetallurgyTypeID": "partition-id:reference-data--PerforationGunMetallurgyType:JST110Q:",
+        "ChargeManufacturerID": "partition-id:master-data--Organisation:Schlumberger:",
+        "ChargeTypeID": "partition-id:reference-data--PerforationGunChargeType:RDX:",
+        "ChargeShapeID": "partition-id:reference-data--PerforationGunChargeShape:DeepPenetrating:",
+        "ChargeSize": "partition-id:reference-data--PerforationGunChargeSize:23:",
+        "GunSwellDiameter": 1.2,
+        "ShotDensity": 19.69,
+        "EntranceHoleDiameter": 7.5,
+        "PenetrationDepth": 0.4,
+        "IsAdditionalShot": false,
+        "Misfires": 0,
+        "ReservoirTemperature": 210.0,
+        "CasingCollarLocatorMD": 3770.0,
+        "CCLTopShotDistance": 100.0,
+        "FluidBeforeMD": 45.0,
+        "FluidAfterMD": 45.0,
+        "GaugeMD": 5100.0,
+        "BHPressureTypeID": "partition-id:reference-data--BottomHolePressureType:Gauge:",
+        "DuringPerfGaugePressure": 3980.0,
+        "InitialSurfPressure": 3980.0,
+        "FinalSurfPressure": 4755,
+        "MPPPressure": 4610.0,
+        "FluidLossBeforeRate": 0.0,
+        "FluidLossAfterRate": 0.0,
+        "FrictionFactor": 0.1,
+        "FrictionPressure": 100,
+        "DischargeCoefficient": 0.8,
+        "CrushZoneDiameter": 2.8,
+        "CrushDamageRatio": 0.7,
+        "TechnicalResult": "Good",
+        "IntervalComments": "Reservoir X, Zone B Interval 4. All Shots Fired",
+        "ExtensionProperties": {}
+      }
+    }
+  ]
+}

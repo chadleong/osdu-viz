@@ -1,0 +1,336 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Pay.Thickness.Minimum.Net",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pay Thickness Minimum Net",
+        "NameAlias": [
+          {
+            "AliasName": "MinimumNetPayThickness",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "Represents the minimum net hydrocarbon thickness in the reservoir. Usually calculated by multiplying ReservoirGrossThickness * NetToGrossRatio * Porosity * HydrocarbonSaturation.",
+        "Code": "Pay.Thickness.Minimum.Net",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:what:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Pay:"
+          },
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Minimum:"
+          },
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:netgross:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Net:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:11b0dec4-d659-4444-9cd8-22ad103ebd30:",
+          "Name": "thickness"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:length:",
+        "Source": "Company A Extension",
+        "CommitDate": "2023-12-30T16:26:10+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Pay.Thickness.Maximum.Net",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Pay Thickness Maximum Net",
+        "NameAlias": [
+          {
+            "AliasName": "MaximumNetPayThickness",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "Represents the minimum net hydrocarbon thickness in the reservoir. Usually calculated by multiplying ReservoirGrossThickness * NetToGrossRatio * Porosity * HydrocarbonSaturation.",
+        "Code": "Pay.Thickness.Maximum.Net",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:what:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Pay:"
+          },
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Maximum:"
+          },
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:netgross:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Net:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:11b0dec4-d659-4444-9cd8-22ad103ebd30:",
+          "Name": "thickness"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:length:",
+        "Source": "Company A Extension",
+        "CommitDate": "2023-12-30T16:26:10+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Minimum",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Permeability Minimum",
+        "NameAlias": [
+          {
+            "AliasName": "MinimumPermeability",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "The minimum permeability found in the reservoir facies of this lithostratigraphic unit.; Measured minimum permeability for this interval. This may come from core or sidewall core, or it may be estimated from logs. This field may be either the minimum of all permeability measurements made on this sample, or it may be used when only one measurement is available. The minimum permeability in the netted portion of the interval.",
+        "Code": "Permeability.Minimum",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Minimum:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:a403d622-68b1-48d7-8b84-1d4e3f54e9ba:",
+          "Name": "permeability"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:permeability%20rock:",
+        "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.0.0.xlsx; commit SHA d2ab7643.",
+        "CommitDate": "2023-12-30T16:26:10+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Maximum",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Permeability Maximum",
+        "NameAlias": [
+          {
+            "AliasName": "MaximumPermeability",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "The maximum permeability found in the reservoir facies of this lithostratigraphic unit.; Measured maximum permeability for this interval. This may come from core or sidewall core, or it may be estimated from logs. This field may be either the maximum of all permeability measurements made on this sample, or it may be used when only one measurement is available. The maximum permeability in the netted portion of the interval.",
+        "Code": "Permeability.Maximum",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Maximum:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:a403d622-68b1-48d7-8b84-1d4e3f54e9ba:",
+          "Name": "permeability"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:permeability%20rock:",
+        "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.0.0.xlsx; commit SHA d2ab7643.",
+        "CommitDate": "2023-12-30T16:26:10+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Minimum",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Porosity Minimum",
+        "NameAlias": [
+          {
+            "AliasName": "MinimumPorosity",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "The minimum porosity is the minimum fraction porosity (ratio of void space to bulk volume of rock containing that void space) found in the reservoir rock. This quantity is the interpreted bulk porosity of the reservoir and is not corrected for water saturation.",
+        "Code": "Porosity.Minimum",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Minimum:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:69698278-5ad1-4512-bddc-8afed34bc3d8:",
+          "Name": "porosity"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:volume%20per%20volume:",
+        "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.0.0.xlsx; commit SHA 5f5312b4.",
+        "CommitDate": "2023-12-20T11:19:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Maximum",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Porosity Maximum",
+        "NameAlias": [
+          {
+            "AliasName": "MaximumPorosity",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "The maximum porosity is the maximum fraction porosity (ratio of void space to bulk volume of rock containing that void space) found in the reservoir rock. This quantity is the interpreted bulk porosity of the reservoir and is not corrected for water saturation.",
+        "Code": "Porosity.Maximum",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Maximum:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:69698278-5ad1-4512-bddc-8afed34bc3d8:",
+          "Name": "porosity"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:volume%20per%20volume:",
+        "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.0.0.xlsx; commit SHA 5f5312b4.",
+        "CommitDate": "2023-12-20T11:19:49+00:00"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--GeoLabelType:Temperature.Average",
+      "kind": "osdu:wks:reference-data--GeoLabelType:1.0.1",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "Temperature Average",
+        "NameAlias": [
+          {
+            "AliasName": "TemperatureAvg",
+            "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:DisplayName:"
+          }
+        ],
+        "Description": "Refers to the average temperature observed in the fluids or substances within an underground geological formation or reservoir. It can be determined through a combination of data, including downhole temperature measurements, rock properties, and modeling techniques.",
+        "Code": "Temperature.Average",
+        "ValueType": "number",
+        "FacetIDs": [
+          {
+            "FacetTypeID": "{{NAMESPACE}}:reference-data--FacetType:statistics:",
+            "FacetRoleID": "{{NAMESPACE}}:reference-data--FacetRole:Average:"
+          }
+        ],
+        "PropertyType": {
+          "PropertyTypeID": "{{NAMESPACE}}:reference-data--PropertyType:08260920-c22a-4000-af25-60a8f28e19f7:",
+          "Name": "temperature"
+        },
+        "UnitQuantityID": "{{NAMESPACE}}:reference-data--UnitQuantity:thermodynamic%20temperature:",
+        "Source": "Workbook ReferenceValues/Authoring/GeoLabelType.1.0.0.xlsx; commit SHA 5f5312b4.",
+        "CommitDate": "2023-12-20T11:19:49+00:00"
+      }
+    }
+  ]
+}

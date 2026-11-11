@@ -1,0 +1,141 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "Code": "5714",
+    "CodeAsNumber": 5714,
+    "CodeSpace": "EPSG",
+    "CoordinateReferenceSystemType": "VerticalCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6499
+      },
+      "Name": "Vertical CS. Axis: height (H). Orientation: up. UoM: m.",
+      "VerticalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:m:"
+    },
+    "Datum": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 5100
+      },
+      "Name": "Mean Sea Level"
+    },
+    "Description": "Not specific to any location or epoch.",
+    "ID": "Vertical:EPSG::5714",
+    "Kind": "vertical",
+    "Name": "MSL height",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4157
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1262
+        },
+        "BoundingBoxEastBoundLongitude": 180.0,
+        "BoundingBoxNorthBoundLatitude": 90.0,
+        "BoundingBoxSouthBoundLatitude": -90.0,
+        "BoundingBoxWestBoundLongitude": -180.0,
+        "Description": "World.",
+        "Name": "World"
+      },
+      "Name": "World",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1199
+        },
+        "Name": "Hydrography, drilling."
+      }
+    },
+    "RevisionDate": "2012-08-10T00:00:00+00:00",
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 4157
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1262
+          },
+          "BoundingBoxEastBoundLongitude": 180.0,
+          "BoundingBoxNorthBoundLatitude": 90.0,
+          "BoundingBoxSouthBoundLatitude": -90.0,
+          "BoundingBoxWestBoundLongitude": -180.0,
+          "Description": "World.",
+          "Name": "World"
+        },
+        "Name": "World",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1199
+          },
+          "Name": "Hydrography, drilling."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -180.0,
+                  -90.0
+                ],
+                [
+                  180.0,
+                  -90.0
+                ],
+                [
+                  180.0,
+                  90.0
+                ],
+                [
+                  -180.0,
+                  90.0
+                ],
+                [
+                  -180.0,
+                  -90.0
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "VERTCRS[\"MSL height\",VDATUM[\"Mean Sea Level\",ID[\"EPSG\",5100]],CS[vertical,1,ID[\"EPSG\",6499]],AXIS[\"Gravity-related height (H)\",up],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",5714]]"
+  }
+}

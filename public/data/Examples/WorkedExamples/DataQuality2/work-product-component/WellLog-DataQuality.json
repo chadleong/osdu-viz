@@ -1,0 +1,298 @@
+{
+  "id": "namespace:work-product-component--DataQuality:a8116688-1313-421c-9fdc-de9f75c1071b",
+  "kind": "osdu:wks:work-product-component--DataQuality:2.0.0",
+  "data": {
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "ExtensionProperties": {
+      "assessmentStatus": "osdu:reference-data--QualityAssessmentState:Passed:"
+    },
+    "EvaluatedRecordID": "namespace:work-product-component--WellLog:c2c79f1c-90ca-5c92-b8df-04dbe438f414:",
+    "EvaluatedKind": "osdu:wks:work-product-component--WellLog:1.5.0",
+    "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:6e658-f2a01-ffffffffffffffff:",
+    "StartDateTime": "2024-06-25T04:50:10Z",
+    "DataRules": [
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "legal.otherRelevantDataCountries",
+              "message": "Pattern valid for legal.otherRelevantDataCountries",
+              "hint": "",
+              "attributeValue": "US"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "acl.viewers",
+              "message": "Pattern valid for acl.viewers",
+              "hint": "",
+              "attributeValue": "data.default.viewers@namespace.group"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "acl.owners",
+              "message": "Pattern valid for acl.owners",
+              "hint": "",
+              "attributeValue": "data.default.owners@namespace.group"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "legal.status",
+              "message": "Pattern valid for legal.status",
+              "hint": "",
+              "attributeValue": "compliant"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "kind",
+              "message": "Pattern valid for kind",
+              "hint": "",
+              "attributeValue": "osdu:wks:work-product-component--WellLog:1.5.0"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "id",
+              "message": "Pattern valid for id",
+              "hint": "",
+              "attributeValue": "namespace:work-product-component--WellLog"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-4e61747572616c204b657920436865636b:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Natural Key Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Uniqueness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "data.Name",
+              "message": "Value of data.Name is unique",
+              "hint": "",
+              "attributeValue": "Example Name"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "acl",
+              "message": "Found required property acl",
+              "hint": "",
+              "attributeValue": "{viewers=[data.default.viewers@namespace.group], owners=[data.default.owners@namespace.group]}"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "kind",
+              "message": "Found required property kind",
+              "hint": "",
+              "attributeValue": "osdu:wks:work-product-component--WellLog:1.5.0"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "legal",
+              "message": "Found required property legal",
+              "hint": "",
+              "attributeValue": "{legaltags=[namespace-default-data-tag], status=compliant, otherRelevantDataCountries=[US]}"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "legal.otherRelevantDataCountries",
+              "message": "Found required property legal.otherRelevantDataCountries",
+              "hint": "",
+              "attributeValue": "[US]"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "acl.owners",
+              "message": "Found required property acl.owners",
+              "hint": "",
+              "attributeValue": "[data.default.owners@namespace.group]"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "acl.viewers",
+              "message": "Found required property acl.viewers",
+              "hint": "",
+              "attributeValue": "[data.default.viewers@namespace.group]"
+            }
+          }
+        ]
+      },
+      {
+        "DataQualityRuleID": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573:",
+        "DataRulePurposeTypeID": "namespace:reference-data--DataRulePurposeType:INFO:",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "DataQualityRuleStatusID": "namespace:reference-data--DataQualityRuleStatus:Active:",
+        "AssessmentResults": [
+          {
+            "QualityAssessmentStateID": "namespace:reference-data--QualityAssessmentState:Passed:",
+            "ExtensionProperties": {
+              "attribute": "legal.legaltags",
+              "message": "Found required property legal.legaltags",
+              "hint": "",
+              "attributeValue": "[namespace-default-data-tag]"
+            }
+          }
+        ]
+      }
+    ],
+    "MethodID": "namespace:reference-data--QualityAssessmentMethod:AverageAssessment:",
+    "TotalScore": 100.0,
+    "DimensionMetrics": [
+      {
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Accuracy:",
+        "Score": 100.0
+      },
+      {
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:",
+        "Score": 100.0
+      }
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@namespace.group"
+    ],
+    "owners": [
+      "data.default.owners@namespace.group"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "namespace-demo-legaltag"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  }
+}

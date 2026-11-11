@@ -1,0 +1,84 @@
+{
+  "id": "namespace:master-data--ActivityTemplate:SeismicProcessing-9f807479-29bf-4b39-a2a1-c1d89826c5fa",
+  "kind": "osdu:wks:master-data--ActivityTemplate:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "Seismic Processing",
+    "Description": "A template for a seismic processing work-step. This template is likely consisting of multiple child activity templates, which are not worked out here. The main purpose is to demonstrate the linking of activity templates via ActivityTemplateArc.",
+    "Source": "Ian Adams, Shell",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "VersionCreationReason": "Demonstrate workflow design",
+    "Parameters": [
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "Pre-stack Seismic data",
+        "DataObjectContentType": [
+          "work-product-component--SeismicTraceData"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "Pre-stack Navigation",
+        "DataObjectContentType": [
+          "work-product-component--SeismicLineGeometry"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": false,
+        "IsOutput": true,
+        "Title": "Post-stack Seismic",
+        "DataObjectContentType": [
+          "work-product-component--SeismicTraceData"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": false,
+        "IsOutput": true,
+        "Title": "Velocity Volume",
+        "DataObjectContentType": [
+          "work-product-component--SeismicTraceData"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

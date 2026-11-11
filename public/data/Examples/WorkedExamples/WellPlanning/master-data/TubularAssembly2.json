@@ -1,0 +1,40 @@
+{
+  "id": "partition-id:master-data--TubularAssembly:b821e627-44cd-4be7-8e24-0fc21bd63f87",
+  "kind": "osdu:ws:master-data--TubularAssembly:2.0.0",
+  "version": 1635454821643,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "ParentWellboreID": "osdu:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:",
+    "TubularAssemblyTypeID": "namespace:reference-data--TubularAssemblyType:drilling:",
+    "VerticalMeasurement": {
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+      "VerticalMeasurement": 1091.14
+    },
+    "ExtensionProperties": {
+      "NameWell": "Jorge_Well-01",
+      "NameWellbore": "Jorge_Well-01",
+      "Name": "12.25in Motor MWD BHA",
+      "ValveFloat": false,
+      "SourceNuclear": false
+    }
+  }
+}

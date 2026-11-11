@@ -1,0 +1,46 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic.Carboniferous",
+  "kind": "osdu:wks:reference-data--ChronoStratigraphy:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Carboniferous",
+    "NameAlias": [
+      {
+        "AliasName": "Carboniferous",
+        "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:UniqueIdentifier:",
+        "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:ICS:"
+      }
+    ],
+    "Description": "The Carboniferous Period [358.9-298.9]",
+    "Code": "Phanerozoic.Paleozoic.Carboniferous",
+    "AttributionAuthority": "ICS https://stratigraphy.org",
+    "AttributionPublication": "https://github.com/CSIRO-enviro-informatics/interactive-geological-timescale/tree/master/src/assets",
+    "AgeBegin": 358.9,
+    "AgeEnd": 298.9,
+    "ChildCodes": [
+      "Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian",
+      "Phanerozoic.Paleozoic.Carboniferous.Mississippian"
+    ],
+    "Colour": "#5FB6B5",
+    "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.System:",
+    "ParentIDs": [
+      "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic:"
+    ],
+    "Source": "Workbook Authoring/ChronoStratigraphy.1.0.0.xlsx; commit SHA 4aad0c73."
+  }
+}

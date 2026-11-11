@@ -1,0 +1,371 @@
+{
+  "id": "namespace:master-data--WellLogAcquisition:9cdfd40a-e3b7-506a-968d-0e327a4660df",
+  "kind": "osdu:wks:master-data--WellLogAcquisition:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ProjectSpecifications[0].ProjectSpecificationQuantity",
+        "Parameters[0].DataQuantityParameter",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SpatialLocation": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "ProjectID": "Example External Project Identifier",
+    "ProjectName": "Example ProjectName",
+    "Purpose": "Example Purpose",
+    "ProjectBeginDate": "2020-02-13T09:13:15.55Z",
+    "ProjectEndDate": "2020-02-13T09:13:15.55Z",
+    "FundsAuthorizations": [
+      {
+        "AuthorizationID": "Example AuthorizationID",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "FundsAmount": 12345.6,
+        "CurrencyID": "namespace:reference-data--Currency:AFN:"
+      }
+    ],
+    "ContractIDs": [
+      "namespace:master-data--Agreement:SomeUniqueAgreementID:"
+    ],
+    "Operator": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ContractorCrew": "Example ContractorCrew",
+        "ContractorTypeID": "namespace:reference-data--ContractorType:Record:"
+      }
+    ],
+    "Personnel": [
+      {
+        "PersonName": "Example PersonName",
+        "CompanyOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ProjectRoleID": "namespace:reference-data--ProjectRole:ProjMgr:"
+      }
+    ],
+    "ProjectSpecifications": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationQuantity": 12345.6,
+        "ProjectSpecificationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationIndicator": true,
+        "ProjectSpecificationText": "Example ProjectSpecificationText",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+        "ParameterTypeID": "namespace:reference-data--ParameterType:SlotName:"
+      }
+    ],
+    "ProjectStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectStateTypeID": "namespace:reference-data--ProjectStateType:Prop:"
+      }
+    ],
+    "ActivityTemplateID": "namespace:master-data--ActivityTemplate:SomeUniqueActivityTemplateID:",
+    "ParentProjectID": "namespace:master-data--AnyMasterData:SomeUniqueAnyMasterDataID:",
+    "Parameters": [
+      {
+        "Title": "Example Title",
+        "Index": 2,
+        "Selection": "Example Selection",
+        "Keys": [
+          {
+            "ObjectParameterKey": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+            "TimeIndexParameterKey": "11:13:15.55+02:00",
+            "ParameterKey": "Example Internal Parameter Key",
+            "IntegerParameterKey": 2,
+            "StringParameterKey": "Example String Parameter Key"
+          }
+        ],
+        "DataObjectParameter": "namespace:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "DataQuantityParameter": 12345.6,
+        "IntegerQuantityParameter": 2,
+        "StringParameter": "Example String Parameter",
+        "TimeIndexParameter": "2020-02-13T09:13:15.55Z",
+        "BooleanParameter": true,
+        "ParameterKindID": "namespace:reference-data--ParameterKind:Integer:",
+        "ParameterRoleID": "namespace:reference-data--ParameterRole:Input:",
+        "DataQuantityParameterUOMID": "namespace:reference-data--UnitOfMeasure:m:"
+      }
+    ],
+    "ActivityStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ActivityStatusID": "namespace:reference-data--ActivityStatus:Planned:",
+        "Remark": "Example Remark"
+      }
+    ],
+    "LastActivityState": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "ActivityStatusID": "namespace:reference-data--ActivityStatus:Planned:",
+      "Remark": "Example Remark"
+    },
+    "WellboreID": "namespace:master-data--Wellbore:SomeUniqueWellboreID:",
+    "VerticalMeasurement": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "VerticalMeasurement": 12345.6,
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "VerticalMeasurementTypeID": "namespace:reference-data--VerticalMeasurementType:ArbitraryPoint:",
+      "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "namespace:reference-data--VerticalMeasurementSource:DRL:",
+      "WellboreTVDTrajectoryID": "namespace:work-product-component--WellboreTrajectory:WellboreTrajectory-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+      "VerticalMeasurementUnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+      "VerticalReferenceID": "Example VerticalReferenceID",
+      "VerticalReferenceEntityID": "namespace:master-data--Rig:SomeUniqueRigID:",
+      "VerticalMeasurementDescription": "Example VerticalMeasurementDescription"
+    },
+    "LogRuns": [
+      {
+        "LogRunID": "Example LogRunID",
+        "GenericToolTypeIDs": [
+          "namespace:reference-data--WellLogToolClass:Acoustic:"
+        ],
+        "ToolMnemonicIDs": [
+          "namespace:reference-data--WellLogToolCode:BakerHughesInteq:3DEX:"
+        ],
+        "SamplingStart": 12345.6,
+        "SamplingStop": 12345.6,
+        "WellboreFluidTypeID": "namespace:reference-data--WellboreFluidType:Oil:",
+        "ConveyanceMethodID": "namespace:reference-data--ConveyanceMethod:ElectricWirelineConveyed:",
+        "SensorOffsetDocumentID": "namespace:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "ContractorCompanyID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "LogPasses": [
+          {
+            "LogPassID": "Example LogPassID",
+            "PassTypeID": "namespace:reference-data--WellLogPassType:Main:",
+            "LoggingDirectionID": "namespace:reference-data--WellLogDirection:Ascending:",
+            "IndexTypeID": "namespace:reference-data--WellLogSamplingDomainType:Depth:",
+            "SamplingInterval": 0.0254,
+            "IsRegularSamplingInterval": true,
+            "FlowingConditionID": "namespace:reference-data--WellLogFlowingCondition:NoFLow:",
+            "SamplingStart": 12345.6,
+            "SamplingStop": 12345.6,
+            "WellboreFluidTypeID": "namespace:reference-data--WellboreFluidType:Oil:",
+            "HoleTypeIDs": [
+              "namespace:reference-data--WellLogHoleType:OpenHole:"
+            ],
+            "Remarks": [
+              {
+                "RemarkSequenceNumber": 1,
+                "Remark": "Example Remark",
+                "RemarkSource": "Example Remark Source",
+                "RemarkDate": "2020-02-13"
+              }
+            ],
+            "SampleAcquisitionJobIDs": [
+              "namespace:master-data--SampleAcquisitionJob:SomeUniqueSampleAcquisitionJobID:"
+            ]
+          }
+        ]
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

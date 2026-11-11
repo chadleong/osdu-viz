@@ -1,0 +1,288 @@
+{
+  "id": "osdu:work-product-component--WellboreTrajectory:4b44b41a-6373-5373-8971-e16c99ec34f0",
+  "kind": "osdu:wks:work-product-component--WellboreTrajectory:1.4.0",
+  "version": 1635454826926,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "TopDepthMeasuredDepth": 0.0,
+    "BaseDepthMeasuredDepth": 0.0,
+    "AzimuthReferenceType": "namespace:reference-data--AzimuthReferenceType:gridnorth:",
+    "VerticalMeasurement": {},
+    "ExtensionProperties": {
+      "NameWell": "Jorge_Well-01",
+      "NameWellbore": "Jorge_Well-01",
+      "Name": "Jorge-Well01_Trajectory",
+      "ObjectGrowing": false,
+      "GridCorUsed": -0.03279294331749094,
+      "AziVertSect": 5.820434956537854,
+      "DispNsVertSectOrig": 0.0,
+      "DispEwVertSectOrig": 0.0,
+      "Definitive": false,
+      "Memory": false,
+      "FinalTraj": false,
+      "TrajectoryStation ": [
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 0.0,
+          "TVD": 0.0,
+          "Incl": 0.0,
+          "Azi": 5.820668889532809,
+          "DispNs": 0.0,
+          "DispEw": 0.0,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        },
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 1963.569818526752,
+          "TVD": 1963.569818526752,
+          "Incl": 0.0,
+          "Azi": 5.820668889532809,
+          "DispNs": 0.0,
+          "DispEw": 0.0,
+          "Dls": 0.0,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        },
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 2189.1003440220015,
+          "TVD": 2109.06872976323,
+          "Incl": 1.5497048163957166,
+          "Azi": 5.820668889532809,
+          "DispNs": 127.49390377277629,
+          "DispEw": -63.56677871265783,
+          "Dls": 0.006871375007851692,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        },
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 2303.277484807559,
+          "TVD": 2111.4767195730865,
+          "Incl": 1.5497048163957166,
+          "Azi": 5.820668889532809,
+          "DispNs": 229.65201131565783,
+          "DispEw": -114.50146361693228,
+          "Dls": 0.0,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        },
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 2303.319989746997,
+          "TVD": 2111.477616,
+          "Incl": 1.5497048163200293,
+          "Azi": 5.820376757171965,
+          "DispNs": 229.69003913675095,
+          "DispEw": -114.52043072281312,
+          "Dls": 0.0068713751697779876,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        },
+        {
+          "TypeTrajStation": "unknown",
+          "MD": 3335.0756571597562,
+          "TVD": 2133.2372880000003,
+          "Incl": 1.5497048163200293,
+          "Azi": 5.820376757171965,
+          "DispNs": 1152.7018523932104,
+          "DispEw": -575.0586663795541,
+          "Dls": 0.0,
+          "GravAccelCorUsed": false,
+          "MagXAxialCorUsed": false,
+          "SagCorUsed": false,
+          "MagDrlstrCorUsed": false,
+          "InfieldRefCorUsed": false,
+          "InterpolatedInfieldRefCorUsed": false,
+          "InHoleRefCorUsed": false,
+          "AxialMagInterferenceCorUsed": false,
+          "CosagCorUsed": false,
+          "MSACorUsed": false,
+          "GravTotalFieldReference": 9.79125785782753,
+          "MagTotalFieldReference": 4.760577045685139e-05,
+          "MagDipAngleReference": 1.0424213572825884,
+          "GeoModelUsed": "HDGM 2021",
+          "StatusTrajStation": "open",
+          "ExtensionProperties": {
+            "autoCalcGeoMag": true,
+            "dTimeGeoMagCalc": "2021-10-04T19:21:02.1650000Z",
+            "Declination": 0.1158949145216372
+          }
+        }
+      ]
+    }
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad:",
+      "propertyNames": [
+        "ExtensionProperties.TrajectoryStation[].GridCorUsed",
+        "ExtensionProperties.TrajectoryStation[].AziVertSect",
+        "ExtensionProperties.TrajectoryStation[].Incl",
+        "ExtensionProperties.TrajectoryStation[].Azi",
+        "ExtensionProperties.TrajectoryStation[].MagDipAngleReference",
+        "ExtensionProperties.TrajectoryStation[].Declination"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ExtensionProperties.DispNsVertSectOrig",
+        "ExtensionProperties.DispEwVertSectOrig",
+        "ExtensionProperties.TrajectoryStation[].MD",
+        "ExtensionProperties.TrajectoryStation[].TVD",
+        "ExtensionProperties.TrajectoryStation[].DispNs",
+        "ExtensionProperties.TrajectoryStation[].DispEw"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s2\",\"baseMeasurement\":{\"ancestry\":\"L/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m%2Fs2:",
+      "propertyNames": [
+        "ExtensionProperties.TrajectoryStation[].GravTotalFieldReference"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "T",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"T\",\"baseMeasurement\":{\"ancestry\":\"M/IT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:T:",
+      "propertyNames": [
+        "ExtensionProperties.TrajectoryStation[].MagTotalFieldReference"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/m\",\"baseMeasurement\":{\"ancestry\":\"A/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fm:",
+      "propertyNames": [
+        "ExtensionProperties.TrajectoryStation[].Dls"
+      ]
+    },
+    {
+      "kind": "DateTime",
+      "name": "UTC",
+      "persistableReference": "UTC",
+      "propertyNames": [
+        "ExtensionProperties.TrajectoryStation[].ExtensionProperties.dTimeGeoMagCalc"
+      ]
+    }
+  ]
+}

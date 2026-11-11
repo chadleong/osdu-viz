@@ -1,0 +1,87 @@
+{
+  "id": "partition-id:master-data--ActivityTemplateArc:RC-Synthetics",
+  "kind": "osdu:wks:master-data--ActivityTemplateArc:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "NameAliases": [],
+    "GeoContexts": [],
+    "SpatialLocation": {},
+    "VersionCreationReason": "Initial activity sequence definition",
+    "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "Name": "ReflectionCoefficients to Synthetics",
+    "Description": "Declare the output of Impedance-RC-Example as inout to Synthetic",
+    "OutputInputArcs": [
+      {
+        "ProducingActivityTemplateID": "partition-id:master-data--ActivityTemplate:Compute-Impedance-RC-example1:",
+        "ProducingParameterTitle": "WellLog with Reflection Coefficients Curve",
+        "ConsumingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:",
+        "ConsumingParameterTitle": "WellLog with Reflection Coefficients Curve"
+      },
+      {
+        "ProducingActivityTemplateID": "partition-id:master-data--ActivityTemplate:Compute-Impedance-RC-example1:",
+        "ProducingParameterTitle": "Reflection Coefficients Curve Name",
+        "ConsumingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:",
+        "ConsumingParameterTitle": "Reflection Coefficients Curve Name"
+      },
+      {
+        "ProducingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateWavelet:",
+        "ProducingParameterTitle": "WellLog with Wavelet",
+        "ConsumingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:",
+        "ConsumingParameterTitle": "WellLog with Wavelet"
+      },
+      {
+        "ProducingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateWavelet:",
+        "ProducingParameterTitle": "Wavelet Curve Name",
+        "ConsumingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:",
+        "ConsumingParameterTitle": "Wavelet Curve Name"
+      }
+    ],
+    "ActivityArcs": [
+      {
+        "PrecedingActivityTemplateID": "partition-id:master-data--ActivityTemplate:Compute-Impedance-RC-example1:",
+        "SucceedingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:"
+      },
+      {
+        "PrecedingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateWavelet:",
+        "SucceedingActivityTemplateID": "partition-id:master-data--ActivityTemplate:GenerateSynthetics-example1:"
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Erathem",
+  "kind": "osdu:wks:reference-data--StratigraphicColumnRankUnitType:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Erathem",
+    "NameAlias": [
+      {
+        "AliasName": "Era"
+      }
+    ],
+    "Description": "In stratigraphy, paleontology, geology, and geobiology an erathem is the total stratigraphic unit deposited during a certain corresponding span of time during an era in the geologic timescale.",
+    "Code": "Chronostratigraphic.Erathem",
+    "AttributionPublication": "https://en.wikipedia.org/wiki/Erathem",
+    "Rank": 1,
+    "StratigraphicRoleTypeID": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic:",
+    "Source": "Workbook Authoring/StratigraphicColumnRankUnitType.1.0.0.xlsx; commit SHA 71749e18."
+  }
+}

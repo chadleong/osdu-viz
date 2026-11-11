@@ -1,0 +1,302 @@
+{
+  "id": "partition-id:master-data--Coring:KKS1-SidewallCoring-1-26",
+  "kind": "osdu:wks:master-data--Coring:1.1.1",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepth",
+        "BottomDepth",
+        "SidewallCoring.SidewallCores[].Depth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "propertyNames": [
+        "CoreDiameter",
+        "SidewallCoring.SidewallCores[].RecoveredLength"
+      ]
+    }
+  ],
+  "data": {
+    "TechnicalAssuranceID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SpatialLocation": {
+      "CoordinateQualityCheckRemarks": [
+        "Wgs84Coordinates copied from parent Wellbore ProjectedBottomHoleLocation."
+      ],
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81362197200383,
+                -19.781020115817476
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ],
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Update after core descriptions finalized.",
+    "CoreIdentifier": "KKS1-Sidewall Coring 1-26",
+    "WellboreID": "partition-id:master-data--Wellbore:KKS1:",
+    "Name": "KKS1 Core #1",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "ZDP",
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:LOG:",
+      "VerticalMeasurementDescription": "Same vertical reference as wellbore ZDP, Measured Depth, Logger's Depth.",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:KKS1:"
+    },
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:SidewallCoringActivity:",
+    "Parameters": [
+      {
+        "Title": "Geologists",
+        "StringParameter": "M. Bilek, S. Broun, D. Hartney, D. van der Aa",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:"
+      },
+      {
+        "Title": "ToolString",
+        "DataObjectParameter": "partition-id:master-data--SidewallCoringToolString:MSCT-GR-ECRD:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Control:"
+      }
+    ],
+    "ServiceCompanyID": "partition-id:master-data--Organisation:Schlumberger:",
+    "TopDepth": 2361.3,
+    "BottomDepth": 2958.3,
+    "RunNumber": 5,
+    "CoreDiameter": 0.92,
+    "IsOriented": false,
+    "CoreRemarks": [
+      {
+        "RemarkID": "1",
+        "Remark": "Suite 1, Run 5. Twenty-six cores were cut and twenty-six were recovered (100% recovery) over the interval 2958.3 m to 2361.3 m.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, pages 595-597"
+      }
+    ],
+    "PreferredDepthShiftsID": "partition-id:work-product-component--WellLog:WellLog-2ed1f203-82eb-43b9-9ca3-6e4043ab1b8d:",
+    "CoringOperationDate": "2013-01-05",
+    "CoreRecoveredDate": "2013-01-05",
+    "SidewallCoring": {
+      "CoreTypeID": "partition-id:reference-data--SidewallCoreType:RotarySidewallCore:",
+      "SidewallCores": [
+        {
+          "SampleID": "1",
+          "RecoveredLength": 2.0,
+          "Depth": 2361.3,
+          "Description": "CLAYSTONE: (100%) dark grey to greyish black, soft to firm, sub-fissile, 5 to 10% calcareous clay, 5% carbonaceous material, trace to 5% micro micas, trace very fine disseminated pyrite."
+        },
+        {
+          "SampleID": "2",
+          "RecoveredLength": 2.0,
+          "Depth": 2409.0,
+          "Description": "CLAYSTONE:  (100%)  dark grey to greyish black, firm, sub-blocky to sub-fissile, 5% calcareous clay, 5% carbonaceous material, trace to 5% micro micas, trace very fine disseminated pyrite."
+        },
+        {
+          "SampleID": "3",
+          "RecoveredLength": 2.0,
+          "Depth": 2958.3,
+          "Description": "SANDSTONE: (100%) light olive grey, minor light grey to medium light grey, very soft to friable, fine to medium grained, predominantly fine grained, sub-angular, rare sub-rounded, sub-spherical, well to very well sorted, trace weak siliceous cement, trace argillaceous matrix, trace pinkish grey quartz grains, trace micro micas, trace carbonaceous (?) specks, good intergranular visual porosity."
+        },
+        {
+          "SampleID": "4",
+          "RecoveredLength": 2.0,
+          "Depth": 2946.0,
+          "Description": "CLAYSTONE:  (100%)  dark grey to greyish black, firm, sub-blocky to sub-fissile, 5 to 10% carbonaceous material, 5% micro micas, fine bedding laminations."
+        },
+        {
+          "SampleID": "5",
+          "RecoveredLength": 2.0,
+          "Depth": 2821.2,
+          "Description": "SANDSTONE:  (100%)  very light grey, firm, very fine to rare fine grained, sub-angular, sub-spherical to spherical, very well sorted, 5 to 10% white to very light grey argillaceous matrix (kaolinitic?), trace moderate silica cement, trace micro micas, trace dusky yellowish brown to brownish black lithic specks, nil to very poor intergranular visual porosity  "
+        },
+        {
+          "SampleID": "6",
+          "RecoveredLength": 2.0,
+          "Depth": 2735.9,
+          "Description": "SANDSTONE:  (100%)  light olive grey, minor medium light grey to medium grey, firm to friable, fine to medium grained, predominantly fine grained, sub-angular to trace angular, sub-spherical to rare sub-elongate, 1 to 5% moderate calcareous cement, trace moderate to weak siliceous cement, trace argillaceous matrix, trace micro micas, trace brownish black lithics, fair intergranular visual porosity, rare fair to good localised vuggy porosity."
+        },
+        {
+          "SampleID": "7",
+          "RecoveredLength": 2.0,
+          "Depth": 2726.0,
+          "Description": "CLAYSTONE:  (100%)  greyish black, soft to firm, sub fissile, trace to 3% calcareous clay, 5 to 10% carbonaceous material, 5% micro micas, trace very fine disseminated pyrite, trace soft sediment deformation structures."
+        },
+        {
+          "SampleID": "8",
+          "RecoveredLength": 2.0,
+          "Depth": 2647.5,
+          "Description": "SANDSTONE:  (100%)  light olive grey, soft to friable, fine to medium grained, sub-angular to rare angular, sub-spherical to sub-elongate, well sorted, trace to 5% light to medium light grey argillaceous matrix, trace weak calcareous cement, trace to 5% weak to rare moderate siliceous cement, trace pinkish grey quartz, trace orange grey quartz, trace carbonaceous (?) specks, trace greeenish grey to in parts light greenish grey crystalline lithics (NB: do not look like chlorite or glauconite) that are of a similar grain size as the surrounding quartz sand grains, fair to good intergranular visual porosity."
+        },
+        {
+          "SampleID": "9",
+          "RecoveredLength": 2.0,
+          "Depth": 2460.8,
+          "Description": "SANDSTONE:  (100%)  olive grey to light olive grey, minor medium grey, friable to firm, fine to trace very fine grains, sub-angular to rare angular, sub-spherical, very well \nsorted, 5% moderate siliceous cement, trace weak dolomitic (?) cement, trace carbonaceous specks, trace dark greenish grey lithics, poor to localised fair intergranular visual porosity."
+        },
+        {
+          "SampleID": "10",
+          "RecoveredLength": 2.0,
+          "Depth": 2631.5,
+          "Description": "SANDSTONE:  (10%)  light grey to medium light grey, light olive grey, firm, very fine to rare fine grained, sub-angular to sub-rounded, sub-spherical to spherical, very well sorted, 5% moderate siliceous cement, trace pyrite, trace micro micas, trace carbonaceous (?) specks, very fine micro-laminae, very poor intergranular visual porosity. \nCLAYSTONE:  (90%)  medium dark grey to minor dark grey, soft to firm, sub-fissile, 5 to 10% silt, trace to 5% very fine sand grains, 10 to 15% carbonaceous material, trace to 5% micro micas."
+        },
+        {
+          "SampleID": "11",
+          "RecoveredLength": 2.0,
+          "Depth": 2578.5,
+          "Description": "SANDSTONE:  (100%)  light olive grey, friable to firm, very fine to fine grained, sub-angular, sub-spherical to sub-elongate, well sorted, trace to 5% very light grey to light grey argillaceous matrix (kaolinitic ?), 5% moderate siliceous cement, trace weak dolomitic to calcareous cement, trace greyish black to medium dark grey lithic specks, very poor intergranular visual porosity."
+        },
+        {
+          "SampleID": "12",
+          "RecoveredLength": 2.0,
+          "Depth": 2573.0,
+          "Description": "SANDSTONE:  (5%)  light olive grey, firm to moderately hard, very fine grained, sub-angular, sub-spherical to spherical, 10% strong siliceous cement, trace to 5% micro micas, trace carbonaceous specks,   \nCLAYSTONE:  (95%)  dark grey, firm, sub-fissile to sub-blocky, trace silt, 10 to 15% carbonaceous material, trace to 5% micro micas, localised Claystone and Sandstone bedding lamination."
+        },
+        {
+          "SampleID": "13",
+          "RecoveredLength": 2.0,
+          "Depth": 2532.2,
+          "Description": "SANDSTONE:  (100%)  medium dark grey to olive grey, loose to very soft, fine to medium grained, sub-angular, sub-spherical to minor sub-elongate, well sorted, trace weak siliceous cement, trace carbonaceous material, trace dark greenish grey lithics, very good intergranular visual porosity."
+        },
+        {
+          "SampleID": "14",
+          "RecoveredLength": 2.0,
+          "Depth": 2520.5,
+          "Description": "CLAYSTONE:  (80%)  dark grey to medium dark grey, firm, sub-blocky, trace silt, trace to 5% micro micas, trace to 5% carbonaceous specks, very fine micro-laminations.\nSANDSTONE:  (20%)  light olive grey to light grey, firm, very fine grained, sub-angular, sub-spherical to spherical, very well sorted, 5 to 10% light grey argillaceous matrix, trace to 5% moderate siliceous cement, trace carbonaceous specks, trace micro micas, trace iron staining, very poor to nil visual intergranular porosity."
+        },
+        {
+          "SampleID": "15",
+          "RecoveredLength": 2.0,
+          "Depth": 2500.5,
+          "Description": "SANDSTONE:  (60%)  light olive grey, very light grey to medium light grey, friable to rare firm, very fine to fine grained, trace to 5% medium grained, sub-angular, sub-spherical to rare sub-elongate, moderately to well sorted, 5 to 10% very light grey to light grey argillaceous matrix (kaolinitic ?), 5% weak to moderate siliceous cement, trace to 5% micro micas, trace carbonaceous material, very finely micro-laminated, poor to rare fair intergranular visual porosity.\nCLAYSTONE:  (40%)  medium dark grey to brownish grey, dark grey in parts, soft to firm, sub-blocky to sub-fissile, 5 to 15% silt, trace to 10% very fine sand, 5 to 10% carbonaceous material, trace to 5% micro micas, gradational to Silty Claystone in parts, very finely micro-laminated."
+        },
+        {
+          "SampleID": "16",
+          "RecoveredLength": 2.0,
+          "Depth": 2487.7,
+          "Description": "CLAYSTONE:  (100%)  dark grey to minor medium dark grey, soft to firm, sub-fissile, trace silt, 5% micro micas, trace to 5% carbonaceous material."
+        },
+        {
+          "SampleID": "17",
+          "RecoveredLength": 2.0,
+          "Depth": 2475.5,
+          "Description": "SANDSTONE:  (100%)  light olive grey to olive grey, very soft to friable, very fine to medium grained, predominantly fine grained, sub-angular to rare sub-rounded, sub-spherical, moderately to well sorted, 1 to 2% weak siliceous cement, trace to 2% carbonaceous specks, trace lithics, fair to good inter-granular visual porosity."
+        },
+        {
+          "SampleID": "18",
+          "RecoveredLength": 2.0,
+          "Depth": 2465.5,
+          "Description": "CARBONACEOUS CLAYSTONE:  (100%)  greyish black, firm, sub-blocky to sub-fissile, 20 to 30% carbonaceous material, trace silt, trace micro micas, trace micro-pyrite."
+        },
+        {
+          "SampleID": "19",
+          "RecoveredLength": 2.0,
+          "Depth": 2446.1,
+          "Description": "SANDSTONE:  (100%)  light olive grey, very soft to friable, very fine to fine grained, predominantly fine grained, sub-angular to rare sub-rounded, sub-spherical to minor sub-elongate, well sorted, trace weak siliceous cement, trace white to very light grey argillaceous matrix, trace micro micas, trace carbonaceous specks (?), good intergranular visual porosity."
+        },
+        {
+          "SampleID": "20",
+          "RecoveredLength": 2.0,
+          "Depth": 2438.0,
+          "Description": "SANDSTONE:  (100%)  light grey to light olive grey, soft to friable, very fine to fine grained, predominantly fine grained, sub-angular, sub-spherical to minor sub-elongate, well sorted, trace weak siliceous cement, trace carbonaceous specks, trace lithics, good intergranular visual porosity."
+        },
+        {
+          "SampleID": "21",
+          "RecoveredLength": 2.0,
+          "Depth": 2418.7,
+          "Description": "SANDSTONE:  (100%)  light olive grey, moderately hard to in parts firm, fine to minor very fine grained, trace medium grains, sub-angular, sub-spherical to sub-elongate, predominantly well sorted, localised moderate sorting, 5% moderate siliceous cement, trace to 5% very light grey to light grey argillaceous matrix, trace to 5% coarse to granule sized clasts of coaly/carbonaceous material, trace lithics, fair to poor intergranular visual porosity."
+        },
+        {
+          "SampleID": "22",
+          "RecoveredLength": 2.0,
+          "Depth": 2417.5,
+          "Description": "SANDSTONE:  (100%)  olive grey to in parts medium dark grey, very soft to friable, fine grained, sub-angular to minor sub-rounded, sub-spherical, very well sorted, trace weak siliceous cement, trace carbonaceous material, good intergranular visual porosity."
+        },
+        {
+          "SampleID": "23",
+          "RecoveredLength": 2.0,
+          "Depth": 2416.2,
+          "Description": "SANDSTONE:  (100%)  olive grey to light olive grey, soft to friable, fine grained, sub-angular, sub-spherical to spherical, very well sorted, trace weak siliceous cement, trace carbonaceous material, trace moderate reddish orange quartz, good intergranular visual porosity."
+        },
+        {
+          "SampleID": "24",
+          "RecoveredLength": 2.0,
+          "Depth": 2415.1,
+          "Description": "SANDSTONE:  (100%)  olive grey to light olive grey, soft to friable, very fine to fine grained, predominantly fine grained, sub-angular, sub-spherical, very well to well sorted, trace weak siliceous cement, trace to 5% carbonaceous material that is in part preferentially developed along thin micro-laminations, trace micro pyrite, good intergranular visual porosity."
+        },
+        {
+          "SampleID": "25",
+          "RecoveredLength": 2.0,
+          "Depth": 2414.0,
+          "Description": "SANDSTONE:  (100%)  medium dark grey to olive grey, soft to friable, fine to minor medium grained, sub-angular, sub-spherical to trace sub-elongate, well sorted, trace to 2% weak to in parts moderate siliceous cement, trace argillaceous matrix, trace carbonaceous material, trace pinkish grey quartz, good visual intergranular porosity."
+        },
+        {
+          "SampleID": "26",
+          "RecoveredLength": 2.0,
+          "Depth": 2412.7,
+          "Description": "SANDSTONE:  (100%)  olive grey to medium dark grey, localised medium grey, soft to friable, fine to rare very fine grained, sub-angular, sub-spherical, well sorted, 2 to 5% weak to moderate calcareous cement, trace to 2% weak siliceous cement, trace very light to light grey argillaceous matrix, trace carbonaceous material, trace micro pyrite, fair to good intergranular visual porosity."
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "id": "partition-id:work-product-component--WellboreIntervalSet:15-3-7-Intervals-",
+  "kind": "osdu:wks:work-product-component--WellboreIntervalSet:1.3.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurement.VerticalMeasurement",
+        "Intervals[].StartMeasuredDepth",
+        "Intervals[].StartSubSeaVerticalDepth",
+        "Intervals[].StopMeasuredDepth",
+        "Intervals[].StopSubSeaVerticalDepth",
+        "IntervalProperties.ColumnValues[0].NumberColumn[]"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/m3\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fm3:",
+      "propertyNames": [
+        "IntervalProperties.ColumnValues[1].NumberColumn[]"
+      ]
+    }
+  ],
+  "data": {
+    "IsDiscoverable": true,
+    "Name": "Wellbore 15/3-7 Intervals from Gudrun Formation tops",
+    "Description": "WellboreIntervalSet with embedded ColumnBasedTable as property container.",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "GeoContexts": [
+      {
+        "FieldID": "partition-id:master-data--Field:Gudrun:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:NPD-4055:",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "KB Aug 2001",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:NPD-4055:"
+    },
+    "StratigraphicColumnRankInterpretationID": "partition-id:work-product-component--StratigraphicColumnRankInterpretation:Gudrun-Rank2-:",
+    "Intervals": [
+      {
+        "IntervalID": "1a6ee381-05ad-4147-b910-0e73afcae5a6",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Roedby-:"
+        ],
+        "StartMeasuredDepth": 3752.0,
+        "StartSubSeaVerticalDepth": 3733.93,
+        "StartIntervalName": "Top R\u00f8dby",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "f3b7116a-09ee-4d55-b92f-09864e811cd5",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Roedby-:",
+        "StopMeasuredDepth": 3867.0,
+        "StopSubSeaVerticalDepth": 3848.92,
+        "StopIntervalName": "Top Sola",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "816ee728-f026-4f7e-9594-146d3d41b274",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sola-:"
+      },
+      {
+        "IntervalID": "d361dc55-6ffd-4f11-a6f7-b4c922a9d352",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Sola-:"
+        ],
+        "StartMeasuredDepth": 3867.0,
+        "StartSubSeaVerticalDepth": 3848.92,
+        "StartIntervalName": "Top Sola",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "816ee728-f026-4f7e-9594-146d3d41b274",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sola-:",
+        "StopMeasuredDepth": 3895.0,
+        "StopSubSeaVerticalDepth": 3876.91,
+        "StopIntervalName": "Top \u00c5sgard",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "6ceea2d0-6238-4d65-bc87-8bc183e03180",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Aasgard-:"
+      },
+      {
+        "IntervalID": "9ce31454-3866-4fb1-afba-0bb8c0bb00d2",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Aasgard-:"
+        ],
+        "StartMeasuredDepth": 3895.0,
+        "StartSubSeaVerticalDepth": 3876.91,
+        "StartIntervalName": "Top \u00c5sgard",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "6ceea2d0-6238-4d65-bc87-8bc183e03180",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Aasgard-:",
+        "StopMeasuredDepth": 4049.0,
+        "StopSubSeaVerticalDepth": 4030.9,
+        "StopIntervalName": "Top Draupne",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "a580a3bb-c2db-4845-bbc1-050b417307c0",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Draupne-:"
+      },
+      {
+        "IntervalID": "ba829e6d-30e0-4375-906c-4e7c62c9f7ec",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Draupne-:"
+        ],
+        "StartMeasuredDepth": 4049.0,
+        "StartSubSeaVerticalDepth": 4030.9,
+        "StartIntervalName": "Top Draupne",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "a580a3bb-c2db-4845-bbc1-050b417307c0",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Draupne-:",
+        "StopMeasuredDepth": 4502.0,
+        "StopSubSeaVerticalDepth": 4483.85,
+        "StopIntervalName": "Top-Heather",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "7699229b-36e8-4aed-884f-a1e844e5b9d7",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Heather-:"
+      },
+      {
+        "IntervalID": "f9bed729-3500-4663-97aa-2e23e575bf6f",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Heather-:"
+        ],
+        "StartMeasuredDepth": 4502.0,
+        "StartSubSeaVerticalDepth": 4483.85,
+        "StartIntervalName": "Top Heather",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "7699229b-36e8-4aed-884f-a1e844e5b9d7",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Heather-:",
+        "StopMeasuredDepth": 4607.0,
+        "StopSubSeaVerticalDepth": 4588.84,
+        "StopIntervalName": "Top Hugin",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "a2be6ed2-c5dd-4d79-8bc7-a216ca133603",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Hugin-:"
+      },
+      {
+        "IntervalID": "980d7eea-51fc-42ea-b4c0-c6a29724f08a",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Heather-:"
+        ],
+        "StartMeasuredDepth": 4607.0,
+        "StartSubSeaVerticalDepth": 4588.84,
+        "StartIntervalName": "Top Hugin",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "a2be6ed2-c5dd-4d79-8bc7-a216ca133603",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Hugin-:",
+        "StopMeasuredDepth": 4793.0,
+        "StopSubSeaVerticalDepth": 4774.82,
+        "StopIntervalName": "Top Sleipner",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "435a81c8-0e48-4ed7-b9d7-16966b35c3f5",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sleipner-:"
+      },
+      {
+        "IntervalID": "5d2c2c5a-00bd-4ca7-961d-e4b3844cceef",
+        "GeologicUnitInterpretationIDs": [
+          "partition-id:work-product-component--StratigraphicUnitInterpretation:Sleipner-:"
+        ],
+        "StartMeasuredDepth": 4793.0,
+        "StartSubSeaVerticalDepth": 4774.82,
+        "StartIntervalName": "Top Sleipner",
+        "StartMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StartMarkerID": "435a81c8-0e48-4ed7-b9d7-16966b35c3f5",
+        "StartBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sleipner-:",
+        "StopMeasuredDepth": 4818.0,
+        "StopSubSeaVerticalDepth": 4799.82,
+        "StopIntervalName": "Total Depth",
+        "StopMarkerSetID": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-SingleRank-:",
+        "StopMarkerID": "435a81c8-0e48-4ed7-b9d7-16966b35c3f5",
+        "StopBoundaryInterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sleipner-:"
+      }
+    ],
+    "IntervalProperties": {
+      "KeyColumns": [
+        {
+          "ValueType": "string",
+          "ValueCount": 1,
+          "ColumnName": "IntervalID"
+        }
+      ],
+      "Columns": [
+        {
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:19ce24e5-bf65-4e59-9a1f-e1c8d34abb83:",
+            "Name": "apparent thickness"
+          }
+        },
+        {
+          "ValueType": "number",
+          "ValueCount": 1,
+          "UnitQuantityID": "partition-id:reference-data--UnitQuantity:UnitQuantity:volume%20per%20volume:",
+          "PropertyType": {
+            "PropertyTypeID": "partition-id:reference-data--PropertyType:85a39e16-0290-40ca-899d-dd20fed44b64:",
+            "Name": "neutron porosity"
+          }
+        }
+      ],
+      "ColumnSize": 7,
+      "ColumnValues": [
+        {
+          "StringColumn": [
+            "1a6ee381-05ad-4147-b910-0e73afcae5a6",
+            "d361dc55-6ffd-4f11-a6f7-b4c922a9d352",
+            "9ce31454-3866-4fb1-afba-0bb8c0bb00d2",
+            "ba829e6d-30e0-4375-906c-4e7c62c9f7ec",
+            "f9bed729-3500-4663-97aa-2e23e575bf6f",
+            "980d7eea-51fc-42ea-b4c0-c6a29724f08a",
+            "5d2c2c5a-00bd-4ca7-961d-e4b3844cceef"
+          ]
+        },
+        {
+          "NumberColumn": [
+            115.0,
+            28.0,
+            154.0,
+            453.0,
+            105.0,
+            186.0,
+            25.0
+          ]
+        },
+        {
+          "NumberColumn": [
+            0.0,
+            0.0,
+            0.0,
+            0.23,
+            0.26,
+            0.2,
+            0.25
+          ],
+          "UndefinedValueRows": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,95 @@
+
+@startuml
+skinparam object {
+    BackgroundColor<<master-data>> LightSalmon
+    BackgroundColor<<work-product-component>> Gold
+    BackgroundColor<<abstract>> LightSteelBlue
+    BackgroundColor<<reference-data>> Turquoise
+    BackgroundColor<<Abstraction>> LightSkyBlue
+    BackgroundColor<<error>> Red
+    BackgroundColor<<Activity>> LightSkyBlue
+    BackgroundColor<<ReferenceType>> LightSkyBlue
+    BackgroundColor<<WorkProductComponent>> LightSkyBlue
+    BackgroundColor<<Project>> LightSkyBlue
+    BackgroundColor<<Survey>> LightSkyBlue
+    BackgroundColor<<Dataset>> LightSkyBlue
+    BackgroundColor<<File>> LightSkyBlue
+    BackgroundColor<<FileCollection>> LightSkyBlue
+    packageStyle rectangle
+}
+skinparam map {
+    BackgroundColor<<master-data>> LightSalmon
+    BackgroundColor<<work-product-component>> Gold
+    BackgroundColor<<abstract>> LightSteelBlue
+    BackgroundColor<<reference-data>> Turquoise
+    BackgroundColor<<Abstraction>> LightSkyBlue
+    BackgroundColor<<error>> Red
+    BackgroundColor<<Activity>> LightSkyBlue
+    BackgroundColor<<ReferenceType>> LightSkyBlue
+    BackgroundColor<<WorkProductComponent>> LightSkyBlue
+    BackgroundColor<<Project>> LightSkyBlue
+    BackgroundColor<<Survey>> LightSkyBlue
+    BackgroundColor<<Dataset>> LightSkyBlue
+    BackgroundColor<<File>> LightSkyBlue
+    BackgroundColor<<FileCollection>> LightSkyBlue
+    packageStyle rectangle
+}
+
+map "**Activity:Impedance-RC-Example**" as A1 <<Activity>> {
+  1 => resample <i>Sonic</i>  and <i>Density</i>
+  2 => multiply <i>Sonic</i>  and <i>Density</i> to compute <i>Impedance</i>
+  3 => compute <i>ReflectionCoefficients</i>
+  4 => Persist <i>Impedance</i> and <i>ReflectionCoefficients</i> as WellLog
+}
+
+map "**WellLog:DT--RHOB**" as WL1 <<work-product-component>> {
+ DT => Sonic Curve, contained in WellLog.DT
+ WellLog.DT => WellLog instance containing DT
+ RHOB => Density Curve, contained in WellLog.RHOB
+ WellLog.RHOB => WellLog instance containing RHOB\nWellLog.DT and WellLog.RHOB are often identical
+}
+
+WL1 ..> A1
+WL1::DT --> A1::1
+WL1::RHOB --> A1::1
+
+map "**WellLog:Impedance--RC**" as WL2 <<work-product-component>> {
+ AIMP => Acoustic Impedance Curve, contained in WellLog
+ RC => Reflection Coefficients, contained in WellLog
+}
+
+A1::2 --> WL2::AIMP
+A1 ..> WL2
+
+map "**Activity:GenerateWavelet--Ricker40**" as A2 <<Activity>> {
+  1 => create <i>RickerWavelet</i>
+  2 => Persist <i>RickerWavelet</i> as WellLog
+}
+
+map "**WellLog:Ricker40**" as WL3 <<work-product-component>> {
+ Ricker => <i>RickerWavelet</i>, contained in WellLog
+  =>
+}
+A2::1 --> WL3::Ricker
+A2 ..> WL3
+
+map "**Activity:Synthetic-Example**" as A3 <<Activity>> {
+  1 => resample <i>ReflectionCoefficients</i> and <i>RickerWavelet</i>
+  2 => convolve <i>ReflectionCoefficients</i> with <i>RickerWavelet</i> to compute <i>Synthetic</i>
+  3 => Persist <i>Synthetic</i> as WellLog
+}
+WL2::RC --> A3::2
+WL3::Ricker --> A3::2
+WL2 ..> A3
+WL3 ..> A3
+
+map "**WellLog:Synthetic**" as WL4 <<work-product-component>> {
+ Synthetic => <i>Synthetic</i>, contained in WellLog
+ =>
+}
+
+A3::3 --> WL4::Synthetic
+A3 ..> WL4
+@enduml
+
+

@@ -1,0 +1,51 @@
+{
+  "id": "namespace:master-data--SurveyProgram:sp_4b44b41a-6373-5373-8971-e16c99ec34f0",
+  "kind": "osdu:wks:master-data--SurveyProgram:1.2.0",
+  "version": 1635454828206,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "SurveySections": [
+      {
+        "Sequence": 1.0,
+        "StartMeasuredDepth": 0.0,
+        "EndMeasuredDepth": 3358.957180325152,
+        "SurveyCompanyID": "namespace:master-data--Organisation:Schlumberger:",
+        "SurveyToolName": "NAL_MWD_2.0_DEG",
+        "SurveyToolTypeID": "namespace:reference-data--SurveyToolType:Unknown:",
+        "IsOverwrite": false,
+        "FrequencyMx": 30.48,
+        "SurveySectionExistenceKind": "actual"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "SurveySections[].StartMeasuredDepth",
+        "SurveySections[].EndMeasuredDepth",
+        "SurveySections[].FrequencyMx"
+      ]
+    }
+  ]
+}

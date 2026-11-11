@@ -1,0 +1,101 @@
+{
+  "id": "partition-id:master-data--SeismicAcquisitionSurvey:35218168-41d4-5e7a-a6d0-958ae8069385",
+  "kind": "osdu:wks:master-data--SeismicAcquisitionSurvey:1.4.0",
+  "data": {
+    "VersionCreationReason": "Initial version",
+    "ProjectName": "ACVME 1 VSP",
+    "Purpose": "Exploration",
+    "ProjectBeginDate": "2010-07-12",
+    "ProjectEndDate": "2010-07-19",
+    "Operator": "partition-id:master-data--Organisation:Chevron:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "partition-id:master-data--Organisation:Schlumberger:",
+        "ContractorTypeID": "partition-id:reference-data--ContractorType:Record:"
+      }
+    ],
+    "SeismicGeometryTypeID": "partition-id:reference-data--SeismicGeometryType:Borehole:",
+    "AcquisitionTypeID": "partition-id:reference-data--SeismicAcquisitionType:VSP:",
+    "OperatingEnvironmentID": "partition-id:reference-data--OperatingEnvironment:Offshore:",
+    "SampleInterval": 1.0,
+    "RecordLength": 5000.0,
+    "ShootingAzimuthAngle": 118,
+    "SourceConfigurations": [
+      {
+        "VesselName": "Atwood Eagle Rig",
+        "EnergySourceTypeID": "partition-id:reference-data--SeismicEnergySourceType:AirGun:",
+        "SourceArrayCount": 3,
+        "SourceArrayDepth": 5.7,
+        "SourceArrayVolume": 750.0,
+        "Remarks": "Delta G-Gun cluster with three airguns deployed from rig.  Minimum 5 shots per level."
+      }
+    ],
+    "ReceiverConfigurations": [
+      {
+        "VesselName": "Atwood Eagle Rig",
+        "ReceiverTypeID": "partition-id:reference-data--SeismicReceiverType:3-ComponentGeophone:",
+        "CableCount": 1,
+        "ReceiverCount": 8,
+        "ReceiverSpacingInterval": 15.1,
+        "ReceiverGroupSpacing": 120.0,
+        "Remarks": "This survey included Rig Source VSP measurements from 4700 m MD DF to seabed. The data were acquired using an 8 shuttle (15.12 m spacing) VSI downhole Tool",
+        "WellboreID": "partition-id:master-data--Wellbore:Acme-1:",
+        "WellboreReceiverMinDepth": 844.0,
+        "WellboreReceiverMaxDepth": 4700.0
+      }
+    ],
+    "ExtensionProperties": {}
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "SourceConfigurations[].SourceArrayDepth",
+        "ReceiverConfigurations[].ReceiverSpacingInterval",
+        "ReceiverConfigurations[].ReceiverGroupSpacing",
+        "ReceiverConfigurations[].WellboreReceiverMinDepth",
+        "ReceiverConfigurations[].WellboreReceiverMaxDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ms",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"ms\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+      "propertyNames": [
+        "SampleInterval",
+        "RecordLength",
+        "SourceConfigurations[].SourceArraySweepLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.6387064e-05,\"c\":1.0,\"d\":0.0},\"symbol\":\"in3\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in3:",
+      "propertyNames": [
+        "SourceConfigurations[].SourceArrayVolume"
+      ]
+    }
+  ],
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "partition-id:master-data--RockSample:kks1-Cuttings-2415-2420-A",
+  "kind": "osdu:wks:master-data--RockSample:1.1.1",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepth",
+        "BottomDepth",
+        "SampleInterval"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "g",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"g\",\"baseMeasurement\":{\"ancestry\":\"M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:g:",
+      "propertyNames": [
+        "SampleWeight"
+      ]
+    }
+  ],
+  "data": {
+    "TechnicalAssuranceID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SpatialLocation": {
+      "CoordinateQualityCheckRemarks": [
+        "Wgs84Coordinates copied from parent Wellbore ProjectedBottomHoleLocation."
+      ],
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81362197200383,
+                -19.781020115817476
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ],
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "RockSampleIdentifier": "KKS1-66-A",
+    "WellboreID": "partition-id:master-data--Wellbore:KKS1:",
+    "Name": "KKS1 Cuttings 2415 to 2420 m MDRT, Set A",
+    "SampleOwnerID": "partition-id:master-data--Organisation:ChevronAustraliaPtyLtd:",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "ZDP",
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalMeasurementDescription": "Same vertical reference as wellbore ZDP, Measured Depth, Drillers Depth.",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:KKS1:"
+    },
+    "LabSampleIdentifier": "66A",
+    "DataSource": "Kentish Knock South 1 Completion Report, page 18, page 661",
+    "SampleTypeID": "partition-id:reference-data--RockSampleType:CUTT:",
+    "TopDepth": 2415.0,
+    "BottomDepth": 2420.0,
+    "SampleInterval": 5,
+    "SampleWeight": 157.0,
+    "SampleAcquiredDate": "2012-12-18T12:00:00.00+08:00",
+    "AreCuttingsWashedAndDried": true,
+    "SampleStorageLocations": [
+      {
+        "StorageLocationDescription": "Example StorageLocationDescription",
+        "StorageFacilityID": "partition-id:master-data--StorageFacility:SomeUniqueStorageFacilityID:",
+        "StorageOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2013-02-02"
+      }
+    ],
+    "SampleRemarks": [
+      {
+        "RemarkID": "1",
+        "Remark": "Shaker not functioning properly for a short period of time.",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, made up, no evidence in report."
+      }
+    ],
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

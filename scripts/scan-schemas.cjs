@@ -177,6 +177,27 @@ console.log(`Schema bundle written to: ${bundleFile} (${(fs.statSync(bundleFile)
   console.log(`Guide index written to: ${out} (${entries.length} guides, ${(fs.statSync(out).size / 1024).toFixed(1)} KB)`)
 })()
 
+// Examples index: "<group>/<Name>.<ver>.json" for every worked example under public/data/Examples/<group>/,
+// so the tooltip only offers "Open Example" when one exists.
+;(function writeExamplesIndex() {
+  const dir = path.join(__dirname, "..", "public", "data", "Examples")
+  if (!fs.existsSync(dir)) {
+    console.log("No public/data/Examples folder, skipping examples index")
+    return
+  }
+  const entries = []
+  for (const g of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (!g.isDirectory() || g.name === "WorkedExamples") continue
+    for (const f of fs.readdirSync(path.join(dir, g.name))) {
+      if (/\.json$/i.test(f)) entries.push(`${g.name}/${f}`)
+    }
+  }
+  entries.sort()
+  const out = path.join(__dirname, "..", "public", "examples-index.json")
+  fs.writeFileSync(out, JSON.stringify(entries))
+  console.log(`Examples index written to: ${out} (${entries.length} examples)`)
+})()
+
 // Generate SEO Assets: robots.txt, sitemap.xml, site.webmanifest, and og-image.svg
 const publicDir = path.join(__dirname, "..", "public")
 const siteUrl = "https://osdu-viz.netlify.app"

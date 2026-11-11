@@ -1,0 +1,85 @@
+{
+  "id": "partition-id:reference-data--IndexPropertyPathConfiguration:wks:master-data--Well:1",
+  "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+  "acl": {
+    "owners": [
+      "default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+    ],
+    "viewers": [
+      "default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "opendes-default-legal"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "Well-IndexPropertyPathConfiguration",
+    "Description": "The index property list for master-data--Well:1., valid for all master-data--Well kinds for major version 1.",
+    "Code": "osdu:wks:master-data--Well:1.",
+    "AttributionAuthority": "OSDU",
+    "Configurations": [
+      {
+        "Name": "SpudDate",
+        "Policy": "ExtractFirstMatch",
+        "Paths": [
+          {
+            "ValueExtraction": {
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:reference-data--FacilityEventType:Spud:$"
+              ],
+              "RelatedConditionProperty": "data.FacilityEvents[].FacilityEventTypeID",
+              "ValuePath": "FacilityEvents[].EffectiveDateTime"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to discover and match or sort Wells by their spud date. I am aware that there are nuances, however, I am able to satisfied to query on a single FacilityEventType to look up value in the FacilityEvents array."
+      },
+      {
+        "Name": "WellUWI",
+        "Policy": "ExtractFirstMatch",
+        "Paths": [
+          {
+            "ValueExtraction": {
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:reference-data--AliasNameType:UniqueIdentifier:$",
+                "^[\\w\\-\\.]+:reference-data--AliasNameType:RegulatoryName:$",
+                "^[\\w\\-\\.]+:reference-data--AliasNameType:PreferredName:$",
+                "^[\\w\\-\\.]+:reference-data--AliasNameType:CommonName:$",
+                "^[\\w\\-\\.]+:reference-data--AliasNameType:ShortName:$"
+              ],
+              "RelatedConditionProperty": "data.NameAliases[].AliasNameTypeID",
+              "ValuePath": "NameAliases[].AliasName"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to discover and match Wells by their UWI. I am aware that this is not globally reliable, however, I am able to specify a prioritized AliasNameType list to look up value in the NameAliases array."
+      },
+      {
+        "Name": "CountryNames",
+        "Policy": "ExtractAllMatches",
+        "Paths": [
+          {
+            "RelatedObjectsSpec": {
+              "RelationshipDirection": "ChildToParent",
+              "RelatedObjectID": "data.GeoContexts[].GeoPoliticalEntityID",
+              "RelatedObjectKind": "osdu:wks:master-data--GeoPoliticalEntity:1.",
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:reference-data--GeoPoliticalEntityType:Country:$"
+              ],
+              "RelatedConditionProperty": "data.GeoContexts[].GeoTypeID"
+            },
+            "ValueExtraction": {
+              "ValuePath": "GeoPoliticalEntityName"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to find objects by a country name, with the understanding that an object may extend over country boundaries."
+      }
+    ]
+  }
+}

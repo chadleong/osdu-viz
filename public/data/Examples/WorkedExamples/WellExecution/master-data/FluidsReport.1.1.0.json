@@ -1,0 +1,289 @@
+{
+  "id": "osdu:master-data--FluidsReport:d9aea771-5221-4269-9a36-3dcba5480281",
+  "kind": "osdu:wks:master-data--FluidsReport:1.2.0",
+  "version": 1643651241535,
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "someone@company.com"
+    ],
+    "owners": [
+      "someone@company.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:actual:",
+    "StartDateTime": "2021-03-30T09:00:00+00:00",
+    "EndDateTime": "2021-03-30T21:00:00+00:00",
+    "Fluid": [
+      {
+        "Type": "namespace:reference-data--FluidType:OBM:",
+        "SampleLocation": "Suction",
+        "BrandName": "Supply Company Magic Mud",
+        "SampleDateTime": "2021-03-30T21:00:00+00:00",
+        "MeasuredDepth": 6403.860807721615,
+        "TVD": 2172.9235458470916,
+        "TemperatureFlowLine": -999.25,
+        "MudClass": "namespace:reference-data--MudClass:oilbased:",
+        "Density": 1815.370373850984,
+        "ViscosityFunnel": 73.0,
+        "TemperatureViscosity": 310.37222222222255,
+        "FilterCakeLtlp": -999.25,
+        "FiltrateLtlp": -999.25,
+        "FiltrateTemperatureHthp": 394.26111111111146,
+        "FiltratePressureHthp": -999.25,
+        "FiltrateHthp": 3.7999999999999996e-06,
+        "FilterCakeHthp": 0.0023812499999999997,
+        "SolidsPc": 0.34750000000000003,
+        "WaterPc": 0.13,
+        "OilPc": 0.5225,
+        "SandPc": -999.25,
+        "SolidsLowGravPc": 0.09731423993875947,
+        "SolidsHiGravPc": 0.23723281321231648,
+        "SolidsCalcPc": 0.33454705315107597,
+        "Pm": 8.499999999999999e-07,
+        "Chloride": 32.0,
+        "Calcium": -999.25,
+        "Lime": 3.1404507700658866,
+        "ElectStab": 687.0,
+        "CalciumChloride": 0.0,
+        "CompanyID": "namespace:master-data--Organisation:M-I%20SWACO:",
+        "MudEngineer": "Mud Engineer",
+        "Asg": 3.6636746504467905,
+        "SolCorPc": 0.33454705315107597,
+        "Carbonate": -999.25,
+        "Salt": 50.03038356018659,
+        "SodiumChloride": -999.25,
+        "SodiumChloridePc": -999.25,
+        "Rheometer": [
+          {
+            "TemperatureRheometer": 338.70555555555586,
+            "PressureRheometer": -999.25,
+            "RheometerViscosities": [
+              {
+                "Speed": 0.31415926535897953,
+                "Viscosity": 5.0
+              },
+              {
+                "Speed": 0.6283185307179591,
+                "Viscosity": 6.0
+              },
+              {
+                "Speed": 10.471975511965983,
+                "Viscosity": 17.0
+              },
+              {
+                "Speed": 20.943951023931966,
+                "Viscosity": 32.0
+              },
+              {
+                "Speed": 31.41592653589795,
+                "Viscosity": 46.0
+              },
+              {
+                "Speed": 62.8318530717959,
+                "Viscosity": 82.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Type": "namespace:reference-data--FluidType:OBM:",
+        "SampleLocation": "Suction",
+        "SampleDateTime": "2021-03-30T09:00:00+00:00",
+        "MeasuredDepth": 6403.860807721615,
+        "TVD": 2172.9235458470916,
+        "TemperatureFlowLine": -999.25,
+        "MudClass": "namespace:reference-data--MudClass:oilbased:",
+        "Density": 1803.3877311192944,
+        "ViscosityFunnel": 97.0,
+        "TemperatureViscosity": 298.70555555555586,
+        "FilterCakeLtlp": -999.25,
+        "FiltrateLtlp": -999.25,
+        "FiltrateTemperatureHthp": 394.26111111111146,
+        "FiltratePressureHthp": -999.25,
+        "FiltrateHthp": 3.7999999999999996e-06,
+        "FilterCakeHthp": 0.0023812499999999997,
+        "SolidsPc": 0.33,
+        "WaterPc": 0.14,
+        "OilPc": 0.53,
+        "SandPc": -999.25,
+        "SolidsLowGravPc": 0.08874265973004757,
+        "SolidsHiGravPc": 0.22848155134347206,
+        "SolidsCalcPc": 0.3172242110735196,
+        "Pm": 9e-07,
+        "Chloride": 32.0,
+        "Calcium": -999.25,
+        "Lime": 3.3251831683050566,
+        "ElectStab": 687.0,
+        "CalciumChloride": 0.0,
+        "CompanyID": "namespace:master-data--Organisation:M-I%20SWACO:",
+        "MudEngineer": "Mud Engineer",
+        "Asg": 3.6803788457867075,
+        "SolCorPc": 0.3172242110735196,
+        "Carbonate": -999.25,
+        "Salt": 50.03038356018659,
+        "SodiumChloride": -999.25,
+        "SodiumChloridePc": -999.25,
+        "Rheometer": [
+          {
+            "TemperatureRheometer": 338.70555555555586,
+            "PressureRheometer": -999.25,
+            "RheometerViscosities": [
+              {
+                "Speed": 0.31415926535897953,
+                "Viscosity": 6.0
+              },
+              {
+                "Speed": 0.6283185307179591,
+                "Viscosity": 7.0
+              },
+              {
+                "Speed": 10.471975511965983,
+                "Viscosity": 23.0
+              },
+              {
+                "Speed": 20.943951023931966,
+                "Viscosity": 39.0
+              },
+              {
+                "Speed": 31.41592653589795,
+                "Viscosity": 53.0
+              },
+              {
+                "Speed": 62.8318530717959,
+                "Viscosity": 88.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:68c473e1-13b0-421d-b3e7-205a2ad4ed00:1643651237834"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "Fluid[].MeasuredDepth",
+        "Fluid[].TVD",
+        "Fluid[].FilterCakeLtlp",
+        "Fluid[].FilterCakeHthp"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "Fluid[].TemperatureFlowLine",
+        "Fluid[].TemperatureViscosity",
+        "Fluid[].FiltrateTemperatureHthp",
+        "Fluid[].Rheometer[].TemperatureRheometer"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "Fluid[].Density",
+        "Fluid[].Chloride",
+        "Fluid[].Calcium",
+        "Fluid[].Lime",
+        "Fluid[].CalciumChloride",
+        "Fluid[].Carbonate",
+        "Fluid[].Salt",
+        "Fluid[].SodiumChloride"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "Fluid[].ViscosityFunnel"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3:",
+      "propertyNames": [
+        "Fluid[].FiltrateLtlp",
+        "Fluid[].FiltrateHthp",
+        "Fluid[].Pm"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "Fluid[].FiltratePressureHthp"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/m3\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fm3:",
+      "propertyNames": [
+        "Fluid[].SolidsPc",
+        "Fluid[].WaterPc",
+        "Fluid[].OilPc",
+        "Fluid[].SandPc",
+        "Fluid[].SolidsLowGravPc",
+        "Fluid[].SolidsHiGravPc",
+        "Fluid[].SolidsCalcPc",
+        "Fluid[].Asg",
+        "Fluid[].SolCorPc",
+        "Fluid[].SodiumChloridePc"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "V",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"V\",\"baseMeasurement\":{\"ancestry\":\"L2M/IT3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:V:",
+      "propertyNames": [
+        "Fluid[].ElectStab"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/s\",\"baseMeasurement\":{\"ancestry\":\"A/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+      "propertyNames": [
+        "Fluid[].Rheometer[].RheometerViscosities[].Speed"
+      ]
+    },
+    {
+      "kind": "DateTime",
+      "name": "UTC",
+      "persistableReference": "",
+      "propertyNames": [
+        "StartDateTime",
+        "EndDateTime",
+        "Fluid[].SampleDateTime"
+      ]
+    }
+  ]
+}

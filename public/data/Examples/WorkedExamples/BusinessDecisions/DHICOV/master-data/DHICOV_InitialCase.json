@@ -1,0 +1,520 @@
+{
+  "id": "partition-id:master-data--BusinessDecision:333f3bc7-0b23-58f1-8a6b-c26f28a5e3d3",
+  "kind": "osdu:wks:master-data--BusinessDecision:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2023-10-18T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ProjectSpecifications[0].ProjectSpecificationQuantity",
+        "Parameters[0].DataQuantityParameter"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "Name": "DHICOV_NorthAmericaGOM_InitialCase",
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "partition-id:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "partition-id:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "partition-id:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "partition-id:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SpatialLocation": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "partition-id:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "partition-id:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "partition-id:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "partition-id:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "partition-id:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "partition-id:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "ProjectID": "Example External Project Identifier",
+    "ProjectName": "Example ProjectName",
+    "Purpose": "Example Purpose",
+    "ProjectBeginDate": "2020-02-13T09:13:15.55Z",
+    "ProjectEndDate": "2020-02-13T09:13:15.55Z",
+    "FundsAuthorizations": [
+      {
+        "AuthorizationID": "Example AuthorizationID",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "FundsAmount": 12345.6,
+        "CurrencyID": "partition-id:reference-data--Currency:AFN:"
+      }
+    ],
+    "ContractIDs": [
+      "partition-id:master-data--Agreement:SomeUniqueAgreementID:"
+    ],
+    "Operator": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ContractorCrew": "Example ContractorCrew",
+        "ContractorTypeID": "partition-id:reference-data--ContractorType:Record:"
+      }
+    ],
+    "Personnel": [
+      {
+        "PersonName": "Example PersonName",
+        "CompanyOrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ProjectRoleID": "partition-id:reference-data--ProjectRole:ProjMgr:"
+      }
+    ],
+    "ProjectSpecifications": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationQuantity": 12345.6,
+        "ProjectSpecificationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationIndicator": true,
+        "ProjectSpecificationText": "Example ProjectSpecificationText",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "ParameterTypeID": "partition-id:reference-data--ParameterType:SlotName:"
+      }
+    ],
+    "ProjectStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectStateTypeID": "partition-id:reference-data--ProjectStateType:Prop:"
+      }
+    ],
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:DHICOV_InitialCase_Template:",
+    "ParentProjectID": "partition-id:master-data--AnyMasterData:SomeUniqueAnyMasterDataID:",
+    "Parameters": [
+      {
+        "Title": "Seismic Interpreter",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataObjectParameter": "partition-id:master-data--UserProfile:SusanInterpreterSME:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Expected AVO Class",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "StringParameter": "Class III"
+      },
+      {
+        "Title": "Trap Type",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "StringParameter": "Stratigraphic"
+      },
+      {
+        "Title": "Predicted Reservoir Age",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataObjectParameter": "partition-id:reference-data-ChronoStratigraphy:GTS2020.Phanerozoic.Mesozoic.Cretaceous.LateCretaceous:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:"
+      },
+      {
+        "Title": "Predrill Column Height",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataQuantityParameter": 200.0,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "Title": "Reservoir Thickness",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataQuantityParameter": 300.0,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "Title": "Reservoir Top Depth",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataQuantityParameter": 2064.0,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "Title": "Reservoir Base Depth",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataQuantityParameter": 2154.0,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "Title": "Water Depth",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "DataQuantityParameter": 1500.0,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Double:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "Title": "Seismic Volumes",
+        "Selection": "Required Project Activity Element for DHICOV",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "DataObjectParameter": "partition-id:work-product-component--PersistedCollection:28d3f85c-164d-428d-8686-2ea1e984f0dc:"
+      }
+    ],
+    "ActivityStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Planned:",
+        "Remark": "Example Remark"
+      }
+    ],
+    "LastActivityState": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Planned:",
+      "Remark": "Example Remark"
+    },
+    "RiskAssessmentDocument": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "RiskIDs": [
+      "partition-id:master-data--Risk:SomeUniqueRiskID:"
+    ],
+    "ApprovalStatusID": "partition-id:reference-data--DecisionApprovalStatus:Approved:",
+    "DecisionLevelID": "partition-id:reference-data--DecisionLevel:ManagementAuthority3:",
+    "DecisionDueDate": "2023-12-13",
+    "DecisionDate": "2023-12-13",
+    "Contributors": [
+      {
+        "UserProfileID": "partition-id:master-data--UserProfile:JohnyPrincipal:"
+      },
+      {
+        "UserProfileID": "partition-id:master-data--UserProfile:PattyChief:"
+      },
+      {
+        "UserProfileID": "partition-id:master-data--UserProfile:LindaSeniorPrincipal:"
+      },
+      {
+        "UserProfileID": "partition-id:master-data--UserProfile:GaryGeophysicsSME:"
+      }
+    ],
+    "DecisionOwners": [
+      {
+        "UserProfileID": "partition-id:master-data--UserProfile:MikeTheManager:"
+      }
+    ],
+    "DecisionMakers": [
+      {
+        "EmailAddress": "decisionmaker@company.com",
+        "PhoneNumber": "1-555-281-5555",
+        "RoleTypeID": "partition-id:reference-data--ContactRoleType:AccountOwner:",
+        "DataGovernanceRoleTypeID": "partition-id:reference-data--DataGovernanceRoleType:ExecutiveSponsor:",
+        "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:All:",
+        "Comment": "I make the best decisions because they are data driven!",
+        "OrganisationID": "partition-id:master-data--Organisation:SomeAmazingOrganisationID:",
+        "Name": "Example Name",
+        "UserProfileID": "partition-id:master-data--UserProfile:EricaExecutiveSponsor:"
+      }
+    ],
+    "DecisionQualities": {
+      "AppropriateFrame": {
+        "EvidenceAsText": "The most up to date trusted Seismic Volumes for Country X that should be used for DHI Analysis",
+        "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+      },
+      "DoableAlternatives": [
+        {
+          "SequenceNumber": 2,
+          "Triggers": [
+            {
+              "Condition": "Example Condition",
+              "Remarks": [
+                {
+                  "RemarkSequenceNumber": 1,
+                  "Remark": "Example Remark",
+                  "RemarkSource": "Example Remark Source",
+                  "RemarkDate": "2020-02-13"
+                }
+              ],
+              "WorkflowIDs": [
+                "partition-id:master-data--ActivityTemplate:SomeUniqueActivityTemplateID:"
+              ]
+            }
+          ],
+          "EvidenceAsText": "Example Evidence as Text",
+          "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+          "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+          "Remarks": [
+            {
+              "RemarkSequenceNumber": 1,
+              "Remark": "Example Remark",
+              "RemarkSource": "Example Remark Source",
+              "RemarkDate": "2020-02-13"
+            }
+          ],
+          "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+        }
+      ],
+      "InformationReliability": {
+        "EvidenceAsText": "Example Evidence as Text",
+        "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+      },
+      "TradeOffAnalysis": {
+        "EvidenceAsText": "Example Evidence as Text",
+        "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+      },
+      "ReasoningCorrectness": {
+        "EvidenceAsText": "Criteria as TEXT (FILL ME OUT)",
+        "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+      },
+      "CommitmentToAction": {
+        "EvidenceAsText": "Example Evidence as Text",
+        "EvidenceDocumentID": "partition-id:work-product-component--Document:Document-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "EvidenceDataCollectionID": "partition-id:work-product-component--PersistedCollection:PersistedCollection-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "AssessmentID": "partition-id:reference-data--AssessedDecisionQuality:Sufficient:"
+      }
+    },
+    "Remarks": [
+      {
+        "RemarkSequenceNumber": 1,
+        "Remark": "Example Remark",
+        "RemarkSource": "Example Remark Source",
+        "RemarkDate": "2020-02-13"
+      }
+    ],
+    "Triggers": [
+      {
+        "Condition": "Example Condition",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "Example Remark",
+            "RemarkSource": "Example Remark Source",
+            "RemarkDate": "2020-02-13"
+          }
+        ],
+        "WorkflowIDs": [
+          "partition-id:master-data--ActivityTemplate:SomeUniqueActivityTemplateID:"
+        ]
+      }
+    ],
+    "SelectedAlternativeSequenceNumber": 2,
+    "PriorActivityIDs": [
+      "partition-id:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:"
+    ],
+    "ExtensionProperties": {}
+  }
+}

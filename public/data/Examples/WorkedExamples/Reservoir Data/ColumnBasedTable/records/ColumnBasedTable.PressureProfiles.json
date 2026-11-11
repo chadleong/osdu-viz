@@ -1,0 +1,161 @@
+{
+  "id": "namespace:work-product-component--ColumnBasedTable:2b2b106a-bac2-42ad-b106-31ba76568f95",
+  "kind": "osdu:wks:work-product-component--ColumnBasedTable:1.4.0",
+  "version": 1705992256000334,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "Name": "Pressure Profiles",
+    "Description": "Pressure Profiles as function of TVD.",
+    "CreationDateTime": "2024-02-23T06:44:16.00Z",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:Norway:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Country:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:Gudrun:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "John Smith",
+    "BusinessActivities": [
+      "Flow Simulation"
+    ],
+    "AuthorIDs": [
+      "John Smith"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "namespace:any-group-type--work-product-component--Activity:eec1a13c-e96a-4215-9030-41d0e5e3c163:",
+        "LineageRelationshipType": "namespace:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "KeyColumns": [
+      {
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:4364b378-899a-403a-8401-b06abd4fc0cf:",
+          "Name": "depth"
+        },
+        "FacetIDs": [
+          {
+            "FacetTypeID": "namespace:reference-data--FacetType:direction:",
+            "FacetRoleID": "namespace:reference-data--FacetRole:TrueVertical:"
+          }
+        ],
+        "ColumnName": "True Vertical Depth"
+      }
+    ],
+    "Columns": [
+      {
+        "ValueType": "number",
+        "ValueCount": 5,
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:h:",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:time:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:96f00db8-5eb1-495f-9909-d8715254a924:",
+          "Name": "relative time"
+        },
+        "ColumnName": "Relative Time"
+      },
+      {
+        "ValueType": "number",
+        "ValueCount": 5,
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi:",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:pressure:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:e703be06-9568-4bc6-ab1c-db15dd012e77:",
+          "Name": "pressure"
+        },
+        "ColumnName": "Pressure over Time"
+      }
+    ],
+    "ColumnSize": 4,
+    "ColumnValues": [
+      {
+        "NumberColumn": [
+          2301,
+          2498,
+          2579,
+          2744
+        ]
+      },
+      {
+        "NumberColumn": [
+          0,
+          0.167,
+          1,
+          2,
+          8,
+          0,
+          0.2,
+          1.2,
+          2.5,
+          9,
+          0,
+          0.21,
+          1.3,
+          2.55,
+          9.3,
+          0,
+          0.22,
+          1.5,
+          2.7,
+          10.1
+        ]
+      },
+      {
+        "NumberColumn": [
+          2700,
+          2750,
+          2761,
+          2763,
+          2764,
+          2760,
+          2803,
+          2812,
+          2815,
+          2812,
+          2769,
+          2813,
+          2822,
+          2825,
+          2826,
+          2779,
+          2850,
+          2861,
+          2867,
+          2878
+        ]
+      }
+    ],
+    "ExtensionProperties": {}
+  },
+  "createTime": "2024-02-23T06:44:16.00Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2024-02-23T06:44:16.00Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": []
+}

@@ -1,0 +1,62 @@
+{
+  "SchemaKind": "osd:wks:content--SeismicHistogram:1.0.0",
+  "Name": "ST0202R08_PS_PSDM_RAW_PP_TIME.MIG_RAW.POST_Stack.3D.JS-017534",
+  "Description": "Example histogram for time-migrated trace data.",
+  "ExtensionProperties": {
+    "Kind": "abc:xyz:CustomKind:0.0.0",
+    "Custom": "Value"
+  },
+  "SeismicRecordID": "namespace:work-product-component--SeismicTraceData:ST0202R08-time-volume:",
+  "RangeAmplitudeMin": -32076.25,
+  "RangeAmplitudeMean": 0.000205,
+  "RangeAmplitudeMax": 32022.96,
+  "RangeAmplitudeRMS": 16035.45,
+  "AmplitudeUnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+  "TraceCountBinGrid": 232925,
+  "TraceCountFileCollection": 231839,
+  "TraceCountLive": 231762,
+  "Histograms": [
+    {
+      "Name": "32 bin histogram",
+      "Description": "Example Description",
+      "BucketMin": -32076.25,
+      "BucketMax": 32022.96,
+      "BucketSize": 15.65,
+      "BucketCount": 32,
+      "Buckets": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        3,
+        3,
+        2,
+        5,
+        3,
+        8,
+        15,
+        47,
+        64,
+        76,
+        89,
+        102,
+        170,
+        130,
+        91,
+        80,
+        67,
+        45,
+        31,
+        17,
+        9,
+        4,
+        5,
+        3,
+        1,
+        0,
+        1
+      ]
+    }
+  ]
+}

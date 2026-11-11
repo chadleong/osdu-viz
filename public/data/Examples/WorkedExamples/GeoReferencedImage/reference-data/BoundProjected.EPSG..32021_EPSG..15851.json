@@ -1,0 +1,155 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4267
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4267:",
+      "Name": "NAD27"
+    },
+    "Code": "32021079",
+    "CodeAsNumber": 32021079,
+    "CoordinateReferenceSystemType": "BoundCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4497
+      },
+      "Name": "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: ftUS.",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:"
+    },
+    "ID": "BoundProjected:EPSG::32021_EPSG::15851",
+    "Kind": "BoundProjected",
+    "Name": "NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+    "PreferredUsage": {
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 2238
+        },
+        "BoundingBoxEastBoundLongitude": -96.55,
+        "BoundingBoxNorthBoundLatitude": 47.83,
+        "BoundingBoxSouthBoundLatitude": 45.93,
+        "BoundingBoxWestBoundLongitude": -104.05,
+        "Description": "United States (USA) - North Dakota - counties of Adams; Barnes; Billings; Bowman; Burleigh; Cass; Dickey; Dunn; Emmons; Golden Valley; Grant; Hettinger; Kidder; La Moure; Logan; McIntosh; Mercer; Morton; Oliver; Ransom; Richland; Sargent; Sioux; Slope; Stark; Stutsman.",
+        "Name": "USA - North Dakota - SPCS - S"
+      },
+      "Name": "USA - North Dakota - SPCS - S (from coordinate reference system)",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1142
+        },
+        "Name": "Engineering survey, topographic mapping."
+      }
+    },
+    "Projection": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 13302
+      },
+      "Name": "North Dakota CS27 South zone"
+    },
+    "RevisionDate": "2022-02-05T21:32:28+00:00",
+    "SourceCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 32021
+      },
+      "Name": "NAD27 / North Dakota South",
+      "SourceCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::32021:"
+    },
+    "Transformation": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 15851
+      },
+      "Name": "NAD27 to WGS 84 (79)",
+      "TransformationID": "partition-id:reference-data--CoordinateTransformation:EPSG::15851:"
+    },
+    "Usages": [
+      {
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 2238
+          },
+          "BoundingBoxEastBoundLongitude": -96.55,
+          "BoundingBoxNorthBoundLatitude": 47.83,
+          "BoundingBoxSouthBoundLatitude": 45.93,
+          "BoundingBoxWestBoundLongitude": -104.05,
+          "Description": "United States (USA) - North Dakota - counties of Adams; Barnes; Billings; Bowman; Burleigh; Cass; Dickey; Dunn; Emmons; Golden Valley; Grant; Hettinger; Kidder; La Moure; Logan; McIntosh; Mercer; Morton; Oliver; Ransom; Richland; Sargent; Sioux; Slope; Stark; Stutsman.",
+          "Name": "USA - North Dakota - SPCS - S"
+        },
+        "Name": "USA - North Dakota - SPCS - S (from coordinate reference system)",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1142
+          },
+          "Name": "Engineering survey, topographic mapping."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -104.05,
+                  45.93
+                ],
+                [
+                  -96.55,
+                  45.93
+                ],
+                [
+                  -96.55,
+                  47.83
+                ],
+                [
+                  -104.05,
+                  47.83
+                ],
+                [
+                  -104.05,
+                  45.93
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "PROJCRS[\"NAD27 / North Dakota South\",BASEGEOGCRS[\"NAD27\",DATUM[\"North American Datum 1927\",ELLIPSOID[\"Clarke 1866\",6378206.4,294.978698213901,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7008]],ID[\"EPSG\",6267]],ID[\"EPSG\",4267]],CONVERSION[\"North Dakota CS27 South zone\",METHOD[\"Lambert Conic Conformal (2SP)\",ID[\"EPSG\",9802]],PARAMETER[\"Latitude of false origin\",45.6666666666669,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8821]],PARAMETER[\"Longitude of false origin\",-100.5,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8822]],PARAMETER[\"Latitude of 1st standard parallel\",46.1833333333336,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8823]],PARAMETER[\"Latitude of 2nd standard parallel\",47.4833333333336,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8824]],PARAMETER[\"Easting at false origin\",2000000,LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",8826]],PARAMETER[\"Northing at false origin\",0,LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",8827]],ID[\"EPSG\",13302]],CS[Cartesian,2,ID[\"EPSG\",4497]],AXIS[\"Easting (X)\",east],AXIS[\"Northing (Y)\",north],LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",32021]]"
+  }
+}

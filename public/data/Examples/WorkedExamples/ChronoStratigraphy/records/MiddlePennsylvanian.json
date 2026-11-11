@@ -1,0 +1,45 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian",
+  "kind": "osdu:wks:reference-data--ChronoStratigraphy:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Middle Pennsylvanian",
+    "NameAlias": [
+      {
+        "AliasName": "MiddlePennsylvanian",
+        "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:UniqueIdentifier:",
+        "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:ICS:"
+      }
+    ],
+    "Description": "The Middle Pennsylvanian Epoch Sub-Epoch [315.2-307.0]",
+    "Code": "Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian",
+    "AttributionAuthority": "ICS https://stratigraphy.org",
+    "AttributionPublication": "https://github.com/CSIRO-enviro-informatics/interactive-geological-timescale/tree/master/src/assets",
+    "AgeBegin": 315.2,
+    "AgeEnd": 307,
+    "ChildCodes": [
+      "Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian.MiddlePennsylvanian.Moscovian"
+    ],
+    "Colour": "#A1CFCC",
+    "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Series:",
+    "ParentIDs": [
+      "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic.Carboniferous.Pennsylvanian:"
+    ],
+    "Source": "Workbook Authoring/ChronoStratigraphy.1.0.0.xlsx; commit SHA 4aad0c73."
+  }
+}

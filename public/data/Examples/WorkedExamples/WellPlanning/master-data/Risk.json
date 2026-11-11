@@ -1,0 +1,62 @@
+{
+  "id": "namespace:master-data--Risk:537ec368-cef4-454b-a735-29ea839b0a75",
+  "kind": "osdu:wks:master-data--Risk:1.2.0",
+  "version": 1646080452191,
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "someone@company.com"
+    ],
+    "owners": [
+      "someone@company.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1646080398012",
+    "Preventions": [
+      {
+        "Name": "Unknown",
+        "Description": "",
+        "Status": "namespace:reference-data--RiskResponseStatus:Unknown:",
+        "Responsibles": []
+      }
+    ],
+    "ResidualSeverity": 3.0,
+    "ResidualProbability": 1.0,
+    "RiskCategoryID": "namespace:reference-data--RiskCategory:EquipmentFailure:",
+    "RiskSubCategoryID": "namespace:reference-data--RiskSubCategory:HoistingEquipmentFailure:",
+    "Name": "Top drive failure",
+    "RiskStartDepth": 0.0,
+    "RiskEndDepth": 0.0
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "dimensionless",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "ResidualSeverity",
+        "ResidualProbability"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "RiskStartDepth",
+        "RiskEndDepth"
+      ]
+    }
+  ]
+}

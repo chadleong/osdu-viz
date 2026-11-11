@@ -1,0 +1,84 @@
+{
+  "id": "namespace:reference-data--UnitOfMeasureConfiguration:Imperial-AppABC-John",
+  "kind": "osdu:wks:reference-data--UnitOfMeasureConfiguration:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "Imperial AppABC John",
+    "Description": "Customized for AppABC and personalized by John.",
+    "Code": "Imperial-AppABC-John",
+    "ParentConfigurationID": "namespace:reference-data--UnitOfMeasureConfiguration:Imperial-OperatorABC:",
+    "Configurations": [
+      {
+        "Name": "Depth",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:4364b378-899a-403a-8401-b06abd4fc0cf:",
+          "Name": "depth"
+        },
+        "PropertyNames": [
+          "*Depth*",
+          "*MD",
+          "*TVD",
+          "VerticalDatumOffset",
+          "*VerticalDelta"
+        ],
+        "DefaultUnitID": "namespace:reference-data--UnitOfMeasure:ft:",
+        "PreferredUnitIDs": [
+          "namespace:reference-data--UnitOfMeasure:ft:",
+          "namespace:reference-data--UnitOfMeasure:m:"
+        ],
+        "NumericFormatType": "f",
+        "NumericPrecision": 2
+      },
+      {
+        "Name": "Diameter",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:a391d150-5f9d-43ec-be44-b3e020e8e0b9:",
+          "Name": "inside diameter"
+        },
+        "PropertyNames": [
+          "TubularComponentNominalSize",
+          "*Diameter*"
+        ],
+        "DefaultUnitID": "namespace:reference-data--UnitOfMeasure:in:",
+        "PreferredUnitIDs": [
+          "namespace:reference-data--UnitOfMeasure:in:",
+          "namespace:reference-data--UnitOfMeasure:cm:",
+          "namespace:reference-data--UnitOfMeasure:mm:"
+        ],
+        "NumericFormatType": "f",
+        "NumericPrecision": 2
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

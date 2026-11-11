@@ -1,0 +1,152 @@
+{
+  "id": "partition-id:master-data--Well:KKS1",
+  "kind": "osdu:wks:master-data--Well:1.5.0",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "FacilityName": "Kentish Knock South 1",
+    "NameAliases": [
+      {
+        "AliasName": "KKS1",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Abbreviation:"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "InitialOperatorID": "partition-id:master-data--Organisation:Chevron%20Australia:",
+    "CurrentOperatorID": "partition-id:master-data--Organisation:Chevron%20Australia:",
+    "OperatingEnvironmentID": "partition-id:reference-data--OperatingEnvironment:OFF:",
+    "FacilityStates": [
+      {
+        "FacilityStateTypeID": "partition-id:reference-data--FacilityStateType:Closed:"
+      }
+    ],
+    "FacilityEvents": [
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Start:",
+        "EffectiveDateTime": "2012-12-03T02:30:00+08:00"
+      },
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Finish:",
+        "EffectiveDateTime": "2012-12-25T19:30:00+08:00"
+      }
+    ],
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:Well:",
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "ZDP",
+        "VerticalMeasurement": 28.7,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:VerticalCRS::EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "TD-Post-Drill",
+        "VerticalMeasurement": 3065.0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "ZDP"
+      },
+      {
+        "VerticalMeasurementID": "TD-TVD",
+        "VerticalMeasurement": 3064.5,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      }
+    ],
+    "DefaultVerticalMeasurementID": "ZDP",
+    "SpatialLocation": {
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::28349_EPSG::1150:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"28349001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28349\"},\"name\":\"GDA_1994_MGA_Zone_49\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"GDA_1994_MGA_Zone_49\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",10000000.0],PARAMETER[\\\"Central_Meridian\\\",111.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",28349]]\"},\"name\":\"GDA94 * EPSG-Aus / Map Grid of Australia zone 49 [28349,1150]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1150\"},\"name\":\"GDA_1994_To_WGS_1984\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"GDA_1994_To_WGS_1984\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",0.0],PARAMETER[\\\"Y_Axis_Translation\\\",0.0],PARAMETER[\\\"Z_Axis_Translation\\\",0.0],PARAMETER[\\\"X_Axis_Rotation\\\",0.0],PARAMETER[\\\"Y_Axis_Rotation\\\",0.0],PARAMETER[\\\"Z_Axis_Rotation\\\",0.0],PARAMETER[\\\"Scale_Difference\\\",0.0],OPERATIONACCURACY[3.2],AUTHORITY[\\\"EPSG\\\",1150]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                689960.85,
+                7811747.53
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81324757107716,
+                -19.7808907610266
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ]
+    }
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

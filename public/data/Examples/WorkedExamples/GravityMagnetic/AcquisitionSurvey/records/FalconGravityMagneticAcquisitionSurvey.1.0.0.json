@@ -1,0 +1,433 @@
+{
+  "id": "partition-id:master-data--GravityMagneticAcquisitionSurvey:Falcon-FAS1663",
+  "kind": "osdu:wks:master-data--GravityMagneticAcquisitionSurvey:1.0.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ProjectSpecifications[0].ProjectSpecificationQuantity",
+        "Parameters[0].DataQuantityParameter",
+        "AverageStationDistance",
+        "VerticalMeasurement.VerticalMeasurement",
+        "MovingPlatform.CalculatedLineLength",
+        "MovingPlatform.NominalLineLength",
+        "MovingPlatform.PrimaryLineSpacing",
+        "MovingPlatform.TieLineSpacing",
+        "MovingPlatform.FlyingHeightParameters.AverageFlyingHeight"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "km2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1000000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"km2\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:km2:",
+      "propertyNames": [
+        "AreaCalculated",
+        "AreaNominal"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "MovingPlatform.SamplingIntervalTime"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Australian NOPTA Database",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "NameAliases": [
+      {
+        "AliasName": "NT/P66",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "partition-id:master-data--Organisation:NOPTA:",
+        "EffectiveDateTime": "2023-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2023-02-13T09:13:15.55Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:P66:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Bonaparte:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:P66:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "partition-id:master-data--Play:P66A1:",
+        "GeoTypeID": "partition-id:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "partition-id:master-data--Prospect:P66A:",
+        "GeoTypeID": "partition-id:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SpatialLocation": {
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckRemarks": [
+        "Good as Gold"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::32752:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32752\"},\"name\":\"WGS_1984_UTM_Zone_52S\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"WGS_1984_UTM_Zone_52S\\\",GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",10000000.0],PARAMETER[\\\"Central_Meridian\\\",129.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",32752]]\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "geometry": {
+              "type": "AnyCrsPolygon",
+              "coordinates": [
+                [
+                  [
+                    451953.97,
+                    8471277
+                  ],
+                  [
+                    447406.47,
+                    8489704
+                  ],
+                  [
+                    445379,
+                    8507672
+                  ],
+                  [
+                    509149.88,
+                    8507727
+                  ],
+                  [
+                    509127.56,
+                    8443214
+                  ],
+                  [
+                    473154,
+                    8443201
+                  ],
+                  [
+                    468184.28,
+                    8452412
+                  ],
+                  [
+                    451953.97,
+                    8471277
+                  ]
+                ]
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    128.5554244464313,
+                    -13.827768104087594
+                  ],
+                  [
+                    128.51369076769933,
+                    -13.661073926184496
+                  ],
+                  [
+                    128.4952877854856,
+                    -13.498570668494214
+                  ],
+                  [
+                    129.08454821767512,
+                    -13.498566875843691
+                  ],
+                  [
+                    129.08455166491348,
+                    -14.081902627779284
+                  ],
+                  [
+                    128.7513170613719,
+                    -14.081906817108287
+                  ],
+                  [
+                    128.70538781909215,
+                    -13.998570519262502
+                  ],
+                  [
+                    128.5554244464313,
+                    -13.827768104087594
+                  ]
+                ]
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from WGS_1984_UTM_Zone_52S to GCS_WGS_1984; 8 points converted"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Initial loading into the OSDU Data Platform",
+    "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "partition-id:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "partition-id:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "partition-id:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "partition-id:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "partition-id:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "partition-id:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "partition-id:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "partition-id:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "partition-id:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2023-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "ProjectID": "Falcon NT/P66 FAS1663",
+    "ProjectName": "Falcon Airborne Gravity Gradiometry and Magnetic",
+    "Purpose": "Salt Modelling",
+    "ProjectBeginDate": "2004-06-10T09:13:15.55Z",
+    "ProjectEndDate": "2004-06-24T12:22:01.30Z",
+    "FundsAuthorizations": [
+      {
+        "AuthorizationID": "GoSpendBig",
+        "EffectiveDateTime": "2004-01-10T09:13:15.55Z",
+        "FundsAmount": 5000000,
+        "CurrencyID": "partition-id:reference-data--Currency:AUD:"
+      }
+    ],
+    "ContractIDs": [
+      "partition-id:master-data--Agreement:FugroFAS1663:"
+    ],
+    "Operator": "partition-id:master-data--Organisation:BHP:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "partition-id:master-data--Organisation:Fugro:",
+        "ContractorCrew": "Every man and his dog",
+        "ContractorTypeID": "partition-id:reference-data--ContractorType:Record:"
+      }
+    ],
+    "Personnel": [
+      {
+        "PersonName": "Fido",
+        "CompanyOrganisationID": "partition-id:master-data--Organisation:Fugro:",
+        "ProjectRoleID": "partition-id:reference-data--ProjectRole:ProjMgr:"
+      }
+    ],
+    "ProjectSpecifications": [
+      {
+        "EffectiveDateTime": "2004-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2005-02-13T09:13:15.55Z",
+        "ProjectSpecificationQuantity": 12345.6,
+        "ProjectSpecificationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationIndicator": true,
+        "ProjectSpecificationText": "Example ProjectSpecificationText",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "ParameterTypeID": "partition-id:reference-data--ParameterType:SlotName:"
+      }
+    ],
+    "ProjectStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectStateTypeID": "partition-id:reference-data--ProjectStateType:Prop:"
+      }
+    ],
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:SomeUniqueActivityTemplateID:",
+    "ParentProjectID": "partition-id:master-data--AnyMasterData:SomeUniqueAnyMasterDataID:",
+    "Parameters": [
+      {
+        "Title": "Example Title",
+        "Index": 2,
+        "Selection": "Example Selection",
+        "Keys": [
+          {
+            "ObjectParameterKey": "partition-id:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+            "TimeIndexParameterKey": "11:13:15.55+02:00",
+            "ParameterKey": "Example Internal Parameter Key",
+            "IntegerParameterKey": 2,
+            "StringParameterKey": "Example String Parameter Key"
+          }
+        ],
+        "IntegerQuantityParameter": 2,
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:Integer:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:",
+        "DataQuantityParameterUOMID": "partition-id:reference-data--UnitOfMeasure:m:"
+      }
+    ],
+    "ActivityStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Planned:",
+        "Remark": "Example Remark"
+      }
+    ],
+    "LastActivityState": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Planned:",
+      "Remark": "Example Remark"
+    },
+    "DataAcquisitionTypeIDs": [
+      "partition-id:reference-data--GravityMagneticDataAcquisitionType:GravityGradiometry:",
+      "partition-id:reference-data--GravityMagneticDataAcquisitionType:Magnetic:"
+    ],
+    "AcquisitionPlatformMethodID": "partition-id:reference-data--GravityMagneticAcquisitionPlatform:Airborne:",
+    "OperatingEnvironmentIDs": [
+      "partition-id:reference-data--OperatingEnvironment:Offshore:"
+    ],
+    "AreaCalculated": 7485,
+    "AreaNominal": 7485,
+    "AverageStationDistance": 60,
+    "EquipmentDetails": [
+      {
+        "Name": "Falcon Airborne Gravity Gradiometer",
+        "Manufacturer": "Lockheed Martin",
+        "Model": "Falcon Galileo AGG System",
+        "SerialNumber": "Example SerialNumber",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "The AGG System is based on existing gravity gradiometer technology and has\nbeen optimized for airborne mineral exploration. The system is capable of supporting surveying activities in areas ranging from 1,000 ft below sea level to 13,000 ft above sea level with aircraft speeds from 70 to 130 knots. The AGG data streams were digitally recorded at different rates on removable drives installed in the AGG electronics rack.",
+            "RemarkSource": "Acquisition Report",
+            "RemarkDate": "2023-09-28"
+          },
+          {
+            "RemarkSequenceNumber": 2,
+            "Remark": "The FALCON\u00ae Airborne Gravity Gradiometry (AGG) family of technologies has been jointly developed by Xcalibur Multiphysics, BHP, and Lockheed Martin over the last 20 years. This has led to the only AGG instrument that is specifically designed to deal with the rigors of high-resolution data collection in a dynamic airborne environment.",
+            "RemarkSource": "Xcalibur Multiphysics",
+            "RemarkDate": "2023-09-28"
+          }
+        ]
+      },
+      {
+        "Name": "Scintrex CS-2",
+        "Manufacturer": "Scintrex",
+        "Model": "CS-2 cesium",
+        "SerialNumber": "Example SerialNumber",
+        "Remarks": [
+          {
+            "RemarkSequenceNumber": 1,
+            "Remark": "The ground magnetometer is Geometrics G-823B cesium sensor sampling at 1Hz",
+            "RemarkSource": "Acquisition Report",
+            "RemarkDate": "2023-09-28"
+          },
+          {
+            "RemarkSequenceNumber": 2,
+            "Remark": "The airborne cesium magnetometer mounted within the stinger is a Scintrex CS-2 magnetometer having a noise envelope of 0.002nT pk-pk in 0.01-1Hz bandwidth.  The ground magnetometer is Geometrics G-823B cesium sensor sampling at 1Hz",
+            "RemarkSource": "Acquisition Report",
+            "RemarkDate": "2023-09-28"
+          }
+        ]
+      }
+    ],
+    "AcquisitionDateRange": {
+      "StartDate": "2004-06-10",
+      "EndDate": "2004-06-24"
+    },
+    "ServiceCompanyID": "partition-id:master-data--Organisation:Fugro:",
+    "Remarks": [
+      {
+        "RemarkSequenceNumber": 1,
+        "Remark": "Fugro Airborne Surveys Pty Ltd conducted a high-sensitivity aeromagnetic and gravity gradiometer survey over NT/P66 an offshore area on the Western Australia, Northern Territory border, under contract with BHP Billiton. The survey was flown from the Kununurra airport in Western Australia. ",
+        "RemarkSource": "Acquisition Report",
+        "RemarkDate": "2023-09-28"
+      }
+    ],
+    "VerticalMeasurement": {},
+    "MovingPlatform": {
+      "IsMovingPlatformSurvey": true,
+      "SamplingIntervalTime": 0.1,
+      "CalculatedLineLength": 7485000,
+      "NominalLineLength": 7485000,
+      "PrimaryLineSpacing": 500,
+      "TieLineSpacing": 10000,
+      "FlyingHeightParameters": {
+        "ClearanceMethodID": "partition-id:reference-data--AirborneClearanceMethod:Constant:",
+        "MeasurementInstrumentationIDs": [
+          "partition-id:reference-data--AirborneInstrumentation:Laser:",
+          "partition-id:reference-data--AirborneInstrumentation:Radar:",
+          "partition-id:reference-data--AirborneInstrumentation:GPS:"
+        ],
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "ExternalTopographicalInformation": "SRTM  v3",
+        "AverageFlyingHeight": 120
+      },
+      "SeismicAcquisitionSurveyID": "partition-id:master-data--SeismicAcquisitionSurvey:SomeUniqueSeismicAcquisitionSurveyID:",
+      "PlatformName": "Cessna 208B, Grand Caravan, registration VH-FAY"
+    },
+    "PrecedingTimeLapseSurveyID": "partition-id:master-data--GravityMagneticAcquisitionSurvey:SomeUniqueGravityMagneticAcquisitionSurveyID:",
+    "ExtensionProperties": {}
+  }
+}

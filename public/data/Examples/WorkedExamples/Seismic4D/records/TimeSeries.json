@@ -1,0 +1,51 @@
+{
+  "id": "namespace:work-product-component--TimeSeries:911bb71f-06ab-4deb-8e68-b8c9229dc76b",
+  "kind": "osdu:wks:work-product-component--TimeSeries:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "data.volve.owners@volve.volve-company.com"
+    ],
+    "viewers": [
+      "data.volve-shared.viewers@volve.volve-company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "ExampleLegalTag"
+    ],
+    "otherRelevantDataCountries": [
+      "NO",
+      "US"
+    ]
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Name": "Volve 4D",
+    "Description": "4D Seismic Volume Sequence for Volve",
+    "CreationDateTime": "2022-02-13T09:13:15.55Z",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "osdu:master-data--GeoPoliticalEntity:Norway_Country:",
+        "GeoTypeID": "osdu:reference-data--GeoPoliticalEntityType:Country:"
+      }
+    ],
+    "UTCDateTimeValues": [
+      "1996-08-15T00:00:00",
+      "2008-02-01T00:00:00"
+    ],
+    "ExtensionProperties": {}
+  }
+}

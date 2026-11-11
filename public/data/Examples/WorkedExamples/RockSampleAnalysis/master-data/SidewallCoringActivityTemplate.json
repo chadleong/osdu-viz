@@ -1,0 +1,61 @@
+{
+  "id": "namespace:master-data--ActivityTemplate:SidewallCoringActivity",
+  "kind": "osdu:wks:master-data--ActivityTemplate:1.2.0",
+  "meta": [],
+  "data": {
+    "Name": "Sidewall Coring ActivityTemplate",
+    "Description": "A template defining well-known parameters for a Sidewall Coring activity.",
+    "Source": "Operator defined example activity template",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Parameters": [
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "ToolString",
+        "DataObjectContentType": [
+          "master-data--SidewallCoringToolString"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:String:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "Geologists",
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      }
+    ],
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-02-16T14:56:34+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2022-02-16T14:56:34+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

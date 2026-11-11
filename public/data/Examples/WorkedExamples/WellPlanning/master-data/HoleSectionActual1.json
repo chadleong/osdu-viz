@@ -1,0 +1,58 @@
+{
+  "id": "namespace:master-data--HoleSection:341b6f97-8dc9-42bc-b825-0049d8753b51",
+  "kind": "osdu:wks:master-data--HoleSection:1.4.0",
+  "version": 1635454818831,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "VerticalMeasurement.VerticalReferenceID": "KB",
+    "StartDateTime": "2023-01-13T00:00:00+0000",
+    "EndDateTime": "2023-03-15T02:30:00+0000",
+    "DrillingActivityCode": "SURF",
+    "IsPilotHole": false,
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:",
+    "Name": "17-1/2\" Surface Hole Section",
+    "Size": 17.5,
+    "MeasuredDepthTop": 10,
+    "MeasuredDepthBase": 275,
+    "PlannedMeasuredDepthBase": 274.32,
+    "Comment": "16\" shoe set at 271.5m BRKB"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "MeasuredDepthBase",
+        "MeasuredDepthTop",
+        "PlannedMeasuredDepthBase",
+        "PlannedTrueVerticalDepthBase"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "Size"
+      ]
+    }
+  ]
+}

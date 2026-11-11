@@ -1,0 +1,50 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic.Paleozoic",
+  "kind": "osdu:wks:reference-data--ChronoStratigraphy:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Paleozoic",
+    "NameAlias": [
+      {
+        "AliasName": "Paleozoic",
+        "AliasNameTypeID": "{{NAMESPACE}}:reference-data--AliasNameType:UniqueIdentifier:",
+        "DefinitionOrganisationID": "{{NAMESPACE}}:reference-data--StandardsOrganisation:ICS:"
+      }
+    ],
+    "Description": "The Paleozoic Era [541.0-251.902]",
+    "Code": "Phanerozoic.Paleozoic",
+    "AttributionAuthority": "ICS https://stratigraphy.org",
+    "AttributionPublication": "https://github.com/CSIRO-enviro-informatics/interactive-geological-timescale/tree/master/src/assets",
+    "AgeBegin": 541,
+    "AgeEnd": 251.902,
+    "ChildCodes": [
+      "Phanerozoic.Paleozoic.Permian",
+      "Phanerozoic.Paleozoic.Carboniferous",
+      "Phanerozoic.Paleozoic.Devonian",
+      "Phanerozoic.Paleozoic.Silurian",
+      "Phanerozoic.Paleozoic.Ordovician",
+      "Phanerozoic.Paleozoic.Cambrian"
+    ],
+    "Colour": "#A3BC99",
+    "StratigraphicColumnRankUnitTypeID": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Erathem:",
+    "ParentIDs": [
+      "{{NAMESPACE}}:reference-data--ChronoStratigraphy:Phanerozoic:"
+    ],
+    "Source": "Workbook Authoring/ChronoStratigraphy.1.0.0.xlsx; commit SHA 4aad0c73."
+  }
+}

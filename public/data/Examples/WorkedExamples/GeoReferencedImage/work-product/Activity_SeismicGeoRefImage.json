@@ -1,0 +1,59 @@
+{
+  "id": "partition-id:work-product-component--Activity:SeismicGeoRefImage-d3ff5ea3-3070-51ec-aba2-d67370b1ed2b",
+  "kind": "osdu:wks:work-product-component--Activity:1.4.0",
+  "version": 1631610937000000,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Seismic Image Extraction",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "Seismic Image Extraction",
+    "CreationDateTime": "2021-09-14T09:08:15.55Z",
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:SeismicGeoRefImage-0001:",
+    "Parameters": [
+      {
+        "Title": "Input SeismicTraceData",
+        "Index": 0,
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "partition-id:work-product-component--SeismicTraceData:1f855537-dea8-5b2a-a6d6-63fc9a0bbac1:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "Extracted sections as geo-referenced Images",
+        "Index": 0,
+        "Selection": "Selected by end-user",
+        "DataObjectParameter": "partition-id:work-product-component--GeoReferencedImage:d1ab7738-7535-56ca-b726-2f95e0e2e522:",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:DataObject:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Output:"
+      }
+    ],
+    "PriorActivityIDs": [],
+    "ExtensionProperties": {}
+  }
+}

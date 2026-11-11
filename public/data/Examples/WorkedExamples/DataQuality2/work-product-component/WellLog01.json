@@ -1,0 +1,67 @@
+{
+  "id": "namespace:work-product-component--WellLog:c2c79f1c-90ca-5c92-b8df-04dbe438f414",
+  "kind": "osdu:wks:work-product-component--WellLog:1.5.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "Datasets": [
+      "namespace:dataset--AnyDataset:SomeUniqueAnyDatasetID:"
+    ],
+    "DDMSDatasets": [
+      "eml://rddms-1/dataspace('demo/Volve')/resqml20.obj_ContinuousProperty(1615d8d2-2a2d-482c-885e-14225b89e90c)"
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:SomeUniqueWellboreID:",
+    "WellLogClassID": "namespace:reference-data--WellLogClass:PetrophysicalLogs:",
+    "WellLogTypeID": "namespace:reference-data--LogType:Raw:",
+    "NullValue": "-999.25",
+    "LogServiceDateInterval": {
+      "StartDate": "2020-02-13T09:13:15.55Z",
+      "EndDate": "2020-02-13T09:13:15.55Z"
+    },
+    "Curves": [
+      {
+        "CurveID": "Example CurveID",
+        "DateStamp": "2020-02-13T09:13:15.55Z",
+        "CurveQuality": "Example CurveQuality",
+        "InterpreterName": "Example InterpreterName",
+        "IsRegularlySampled": true,
+        "NullValue": true,
+        "SamplingStart": 12345.6,
+        "SamplingStop": 12345.6,
+        "DepthUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "Mnemonic": "PRES_HDRB.BAR",
+        "LogCurveBusinessValueID": "namespace:reference-data--LogCurveBusinessValue:High:",
+        "LogCurveMainFamilyID": "namespace:reference-data--LogCurveMainFamily:Acoustic:",
+        "LogCurveFamilyID": "namespace:reference-data--LogCurveFamily:Acoustic%20Amplitude:",
+        "NumberOfColumns": 192,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "CBL Adjustment Factor, Resistivity Inversion Selection, Detector 1 Barite Constant"
+      }
+    ]
+  }
+}

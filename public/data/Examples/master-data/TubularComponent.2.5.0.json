@@ -1,0 +1,706 @@
+{
+  "id": "namespace:master-data--TubularComponent:6731c77e-e852-59c2-990b-8889431831df",
+  "kind": "osdu:wks:master-data--TubularComponent:2.5.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "in",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:in:",
+      "propertyNames": [
+        "TubularComponentNominalSize",
+        "MaximumOuterDiameter",
+        "DriftDiameter",
+        "InnerDiameter",
+        "TopConnOD",
+        "TopConnLength",
+        "Nozzles[].DiameterInside",
+        "Nozzles[].Length",
+        "Sensors[].OffsetBottom",
+        "Connections[].CXNOuterDiameter",
+        "Connections[].CXNInnerDiameter",
+        "BitRecord.DiameterBit",
+        "Stabiliser.BladeOuterDiameterMinimum",
+        "Stabiliser.BladeOuterDiameterMaximum",
+        "Stabiliser.LengthBlade",
+        "Stabiliser.LengthBladeGauge",
+        "Stabiliser.BladePadDiameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbf",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":1.0,\"d\":0.0},\"symbol\":\"lbf\",\"baseMeasurement\":{\"ancestry\":\"LM/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:lbf:",
+      "propertyNames": [
+        "TubularComponentNominalWeight",
+        "AxialLoadCapacity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "TubularComponentLength",
+        "TubularComponentTopMD",
+        "TubularComponentBaseMD",
+        "TubularComponentTopReportedTVD",
+        "TubularComponentBaseReportedTVD",
+        "JointLengthAverage",
+        "OutsideCouplingLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "TubularComponentTubingGradeStrength",
+        "TubularComponentTubingStrength",
+        "YoungsModulus",
+        "BurstPressure",
+        "CollapsePressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "PilotHoleSize",
+        "PackerSetDepthTVD",
+        "ShoeDepthTVD",
+        "BotConnOD",
+        "BotConnLength",
+        "Sensors[].MeasurementOffset",
+        "Connections[].OutsideConnectionLength",
+        "Connections[].InsideConnectionLength",
+        "Connections[].ThreadSize",
+        "Bend.BendOffset",
+        "BitRecord.DiameterPassThrough",
+        "BitRecord.DiameterPilot",
+        "HoleOpener.HoleOpenerDiameter",
+        "HoleOpener.HoleOpenerDiameterMaximum",
+        "HoleOpener.FishneckLength",
+        "Motor.ToolOffset",
+        "Motor.RotorNozzleDiameter",
+        "Motor.BearingBoxClearance",
+        "Motor.NozzleDiameter",
+        "RotarySteerableSystem.BendOffset",
+        "RotarySteerableSystem.HoleSizeMininum",
+        "RotarySteerableSystem.HoleSizeMaximum",
+        "RotarySteerableSystem.PadLength",
+        "RotarySteerableSystem.PadWidth",
+        "RotarySteerableSystem.PadOffset",
+        "RotarySteerableSystem.OpenPadOuterDiameter",
+        "RotarySteerableSystem.ClosePadOuterDiameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bbl/ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.158987294928,\"c\":0.3048,\"d\":0.0},\"symbol\":\"bbl/ft\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:bbl%2Fft:",
+      "propertyNames": [
+        "LinearCapacity",
+        "ClosedEndDisplacement"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N.m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N.m\",\"baseMeasurement\":{\"ancestry\":\"L2M/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N.m:",
+      "propertyNames": [
+        "MakeUpTorqueMin",
+        "MakeUpTorqueOpt",
+        "MakeUpTorqueMax",
+        "MakeUpTorqueAct",
+        "Connections[].YieldTorque",
+        "Connections[].MakeUpTorque"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "PoissonsRatio",
+        "HoleOpener.FlowRatePercent",
+        "HoleOpener.PluggedPercent",
+        "Motor.PressureLossFactor",
+        "RotarySteerableSystem.PressureLossFactor",
+        "Stabiliser.FictionFactor"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "Density"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dega",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":3.141592653589793,\"c\":180.0,\"d\":0.0},\"symbol\":\"dega\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:dega:",
+      "propertyNames": [
+        "Nozzles[].Orientation"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "Connections[].YieldStress",
+        "Connections[].LeakPressure",
+        "Motor.PressureLossCurve[].PressureLoss",
+        "PressureLoss.PressureLoss",
+        "RotarySteerableSystem.PressureLossCurve[].PressureLoss"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m2\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m2:",
+      "propertyNames": [
+        "Connections[].CriticalCrossSectionArea",
+        "HoleOpener.TotalFlowArea"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "in2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.00064516,\"c\":1.0,\"d\":0.0},\"symbol\":\"in2\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:in2:",
+      "propertyNames": [
+        "TotalFlowArea"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad:",
+      "propertyNames": [
+        "Bend.BendAngle",
+        "Motor.BendSettingAngleMinimum",
+        "Motor.BendSettingAngleMaximum",
+        "RotarySteerableSystem.BendAngle"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "USD",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1,\"c\":1,\"d\":0.0},\"symbol\":\"USD\",\"baseMeasurement\":{\"ancestry\":\"cost.USD\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:USD:",
+      "propertyNames": [
+        "BitRecord.Cost"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "BitRecord.HoursOnBit"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N\",\"baseMeasurement\":{\"ancestry\":\"LM/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N:",
+      "propertyNames": [
+        "Jar.UpSetForce",
+        "Jar.DownSetForce",
+        "Jar.UpTripForce",
+        "Jar.DownTripForce",
+        "Jar.PumpOpenForce",
+        "Jar.SealFrictionForce",
+        "MWDTool.UpSetForce",
+        "MWDTool.DownSetForce",
+        "MWDTool.UpTripForce",
+        "MWDTool.DownTripForce",
+        "MWDTool.PumpOpenForce",
+        "MWDTool.SealFrictionForce",
+        "RotarySteerableSystem.WobMaximum"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "Motor.FlowRateMinimum",
+        "Motor.FlowRateMaximum",
+        "Motor.PressureLossCurve[].FlowRate",
+        "PressureLoss.FlowRate",
+        "RotarySteerableSystem.DownlinkFlowrateMinimum",
+        "RotarySteerableSystem.DownlinkFlowrateMaximum",
+        "RotarySteerableSystem.FlowRateMinimum",
+        "RotarySteerableSystem.FlowRateMaximum",
+        "RotarySteerableSystem.PressureLossCurve[].FlowRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "Motor.OperatingTemperatureMaximum"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/s\",\"baseMeasurement\":{\"ancestry\":\"A/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+      "propertyNames": [
+        "RotarySteerableSystem.OperatingSpeed",
+        "RotarySteerableSystem.SpeedMaximum"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SpatialLocation": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "Name": "7\" N-80 26# TC-4S Casing Joints",
+    "ParentWellboreID": "namespace:master-data--Wellbore:11000091175501:",
+    "ParentAssemblyID": "namespace:master-data--TubularAssembly:11000091175501.7ProdLnr:",
+    "TubularComponentSequence": 25,
+    "TubularComponentNominalSize": 7.0,
+    "TubularComponentNominalSizeDescription": "7\"",
+    "TubularComponentNominalWeight": 26.0,
+    "TubularComponentLength": 2.5,
+    "MaximumOuterDiameter": 7.125,
+    "DriftDiameter": 6.151,
+    "InnerDiameter": 6.276,
+    "ManufacturerID": "namespace:master-data--Organisation:USSTUBULAR:",
+    "SupplierID": "namespace:master-data--Organisation:USSTUBULAR:",
+    "Model": "7inPupJt",
+    "SerialNumber": "7inN80Csg",
+    "SectionTypeID": "namespace:reference-data--TubularSectionType:CAS:",
+    "TubularComponentTypeID": "namespace:reference-data--TubularComponentType:PJ:",
+    "TubularComponentMaterialTypeID": "namespace:reference-data--TubularMaterialType:SteelCasingandTubing:",
+    "TubularComponentTubingGradeID": "namespace:reference-data--TubularComponentGrade:N-80Q:",
+    "TubularComponentTubingGradeStrength": 80000.0,
+    "TubularComponentTubingStrength": 80000.0,
+    "PilotHoleSize": 12345.6,
+    "TubularComponentBoxPinConfigID": "namespace:reference-data--TubularComponentPinBoxType:BoxPin:",
+    "TubularComponentTopConnectionTypeID": "namespace:reference-data--TubularComponentConnectionType:ABTC-4S:",
+    "TubularComponentBottomConnectionTypeID": "namespace:reference-data--TubularComponentConnectionType:ABTC-4S:",
+    "TubularComponentTopMD": 46.0,
+    "TubularComponentBaseMD": 9055.0,
+    "TubularComponentTopReportedTVD": 46.0,
+    "TubularComponentBaseReportedTVD": 8977.0,
+    "PackerSetDepthTVD": 12345.6,
+    "ShoeDepthTVD": 12345.6,
+    "NumJoints": 225,
+    "JointLengthAverage": 30.3,
+    "TopConnOD": 7.656,
+    "TopConnLength": 10.0,
+    "BotConnOD": 7.656,
+    "BotConnLength": 10.0,
+    "OutsideCouplingLength": 1.2,
+    "IsThreadLockUsed": true,
+    "LinearCapacity": 0.0302,
+    "ClosedEndDisplacement": 0.038,
+    "MakeUpTorqueMin": 3890.0,
+    "MakeUpTorqueOpt": 5190.0,
+    "MakeUpTorqueMax": 6490.0,
+    "MakeUpTorqueAct": 5200.0,
+    "YoungsModulus": 30000000.0,
+    "PoissonsRatio": 0.3,
+    "Density": 490.0,
+    "BurstPressure": 7240.0,
+    "CollapsePressure": 5410.0,
+    "InternalReference": "JT #s 2-226",
+    "AxialLoadCapacity": 603929.0,
+    "IsRadioActive": false,
+    "PartNumber": "USST-12345",
+    "VendorNumber": "USST-ABCDEFG",
+    "Nozzles": [
+      {
+        "NozzleID": "1",
+        "DiameterInside": 12.0,
+        "Length": 1.25,
+        "NozzleTypeID": "namespace:reference-data--TubularComponentNozzleType:Normal:",
+        "Orientation": 0.0,
+        "NozzleCount": 3
+      }
+    ],
+    "Sensors": [
+      {
+        "SensorTypeID": "namespace:reference-data--TubularComponentSensorType:GR:",
+        "ToolClassIDs": [
+          "namespace:reference-data--WellLogToolClass:GammaRay.Array:"
+        ],
+        "ToolCodeIDs": [
+          "namespace:reference-data--WellLogToolCode:BakerHughesInteq:GR:"
+        ],
+        "SensorMeasurementType": "GammaRay",
+        "OffsetBottom": 13.5,
+        "Comments": "BHI GR",
+        "MeasurementOffset": "11.5 in"
+      }
+    ],
+    "Connections": [
+      {
+        "CXNOuterDiameter": 5.0,
+        "CXNInnerDiameter": 4.276,
+        "OutsideConnectionLength": 12345.6,
+        "InsideConnectionLength": 12345.6,
+        "ThreadTypeID": "namespace:reference-data--TubularComponentConnectionType:CasingLanded:",
+        "ThreadSize": 12345.6,
+        "YieldStress": 12345.6,
+        "YieldTorque": 12345.6,
+        "PositionID": "namespace:reference-data--TubularComponentCXNPosition:Both:",
+        "CriticalCrossSectionArea": 12345.6,
+        "LeakPressure": 12345.6,
+        "MakeUpTorque": 12345.6
+      }
+    ],
+    "TotalFlowArea": 0.3313,
+    "Bend": {
+      "BendAngle": 12345.6,
+      "BendOffset": 12345.6
+    },
+    "BitRecord": {
+      "NumBit": "4.1",
+      "DiameterBit": 8.5,
+      "DiameterPassThrough": 12345.6,
+      "DiameterPilot": 12345.6,
+      "TypeBitID": "namespace:reference-data--BitType:PDC:",
+      "Cost": 12500.0,
+      "MfgCode": "QD506HX",
+      "IADCCode": "837",
+      "InitialConditionInnerID": "namespace:reference-data--BitDullInnerOuter:1:",
+      "InitialConditionOuterID": "namespace:reference-data--BitDullInnerOuter:0:",
+      "InitialConditionDullID": "namespace:reference-data--BitDullCode:WT:",
+      "InitialConditionLocationID": "namespace:reference-data--BitDullLocationCode:A:",
+      "InitialConditionBearingID": "namespace:reference-data--BitDullBearingCode:0:",
+      "InitialConditionGaugeID": "namespace:reference-data--BitDullGaugeCode:I:",
+      "InitialConditionOtherID": "namespace:reference-data--BitDullCode:O:",
+      "InitialConditionReasonID": "namespace:reference-data--BitReasonPulledCode:TD:",
+      "FinalConditionInnerID": "namespace:reference-data--BitDullInnerOuter:1:",
+      "FinalConditionOuterID": "namespace:reference-data--BitDullInnerOuter:0:",
+      "FinalConditionDullID": "namespace:reference-data--BitDullCode:WT:",
+      "FinalConditionLocationID": "namespace:reference-data--BitDullLocationCode:A:",
+      "FinalConditionBearingID": "namespace:reference-data--BitDullBearingCode:0:",
+      "FinalConditionGaugeID": "namespace:reference-data--BitDullGaugeCode:I:",
+      "FinalConditionOtherID": "namespace:reference-data--BitDullCode:O:",
+      "FinalConditionReasonID": "namespace:reference-data--BitReasonPulledCode:TD:",
+      "BitDullComments": "1-0-WT-A-0-I-O-TD",
+      "DriveType": "Motor",
+      "BitClass": "R",
+      "ReRunBitNumber": "1",
+      "HardAbrasiveFormationID": "namespace:reference-data--BitFormationType:Hard:",
+      "HoursOnBit": 266.0,
+      "Remarks": "Bit 4.1 pulled at 8-1/2 section TD. Bit was clean at surface graded by tool hand."
+    },
+    "HoleOpener": {
+      "HoleOpenerTypeID": "namespace:reference-data--HoleOpenerType:UnderReamer:",
+      "NumCutters": 2,
+      "HoleOpenerDiameter": 12345.6,
+      "HoleOpenerDiameterMaximum": 12345.6,
+      "FishneckLength": 12345.6,
+      "FlowRatePercent": 12345.6,
+      "TotalFlowArea": 12345.6,
+      "PluggedPercent": 12345.6
+    },
+    "Jar": {
+      "UpSetForce": 12345.6,
+      "DownSetForce": 12345.6,
+      "UpTripForce": 12345.6,
+      "DownTripForce": 12345.6,
+      "PumpOpenForce": 12345.6,
+      "SealFrictionForce": 12345.6,
+      "JarTypeID": "namespace:reference-data--JarType:Mechanical:",
+      "JarActionTypeID": "namespace:reference-data--JarActionType:Up:"
+    },
+    "Motor": {
+      "ToolOffset": 12345.6,
+      "PressureLossFactor": 12345.6,
+      "FlowRateMinimum": 12345.6,
+      "FlowRateMaximum": 12345.6,
+      "RotorNozzleDiameter": 12345.6,
+      "BearingBoxClearance": 12345.6,
+      "NumberRotorLobes": 2,
+      "NumberStatorLobes": 2,
+      "BearingTypeID": "namespace:reference-data--MudMotorBearingType:OilSeal:",
+      "OperatingTemperatureMaximum": 12345.6,
+      "IsRotorCatcherPresent": true,
+      "IsDumpValvePresent": true,
+      "NozzleDiameter": 12345.6,
+      "IsMotorRotatable": true,
+      "BendSettingAngleMinimum": 12345.6,
+      "BendSettingAngleMaximum": 12345.6,
+      "PressureLossCurve": [
+        {
+          "FlowRate": 12345.6,
+          "PressureLoss": 12345.6
+        }
+      ]
+    },
+    "MWDTool": {
+      "UpSetForce": 12345.6,
+      "DownSetForce": 12345.6,
+      "UpTripForce": 12345.6,
+      "DownTripForce": 12345.6,
+      "PumpOpenForce": 12345.6,
+      "SealFrictionForce": 12345.6,
+      "JarTypeID": "namespace:reference-data--JarType:Mechanical:",
+      "JarActionTypeID": "namespace:reference-data--JarActionType:Up:"
+    },
+    "PressureLoss": {
+      "FlowRate": 12345.6,
+      "PressureLoss": 12345.6
+    },
+    "RotarySteerableSystem": {
+      "BendAngle": 12345.6,
+      "BendOffset": 12345.6,
+      "DeflectionMethodID": "namespace:reference-data--RotarySteerableDeflectionMethod:Hybrid:",
+      "DownlinkFlowrateMinimum": 12345.6,
+      "DownlinkFlowrateMaximum": 12345.6,
+      "FlowRateMinimum": 12345.6,
+      "FlowRateMaximum": 12345.6,
+      "HoleSizeMininum": 12345.6,
+      "HoleSizeMaximum": 12345.6,
+      "OperatingSpeed": 12345.6,
+      "PressureLossFactor": 12345.6,
+      "SpeedMaximum": 12345.6,
+      "WobMaximum": 12345.6,
+      "PadCount": 2,
+      "PadLength": 12345.6,
+      "PadWidth": 12345.6,
+      "PadOffset": 12345.6,
+      "OpenPadOuterDiameter": 12345.6,
+      "ClosePadOuterDiameter": 12345.6,
+      "PressureLossCurve": [
+        {
+          "FlowRate": 12345.6,
+          "PressureLoss": 12345.6
+        }
+      ]
+    },
+    "Stabiliser": {
+      "StabiliserTypeID": "namespace:reference-data--StabiliserType:IntegralBladeStabilizer:",
+      "StabiliserBladeDesignTypeID": "namespace:reference-data--StabiliserBladeDesignType:SpiralBlade:",
+      "StabiliserOperatingDesignID": "namespace:reference-data--StabiliserOperatingDesign:Rotating:",
+      "BladeOuterDiameterMinimum": 12.25,
+      "BladeOuterDiameterMaximum": 12.25,
+      "NumberBlades": 3,
+      "LengthBlade": 24.0,
+      "LengthBladeGauge": 26.0,
+      "BladePadDiameter": 2.5,
+      "FictionFactor": 0.2
+    },
+    "ComponentCatalogueID": "namespace:reference-data--CasingComponentCatalog:PJ:",
+    "ExtensionProperties": {}
+  }
+}

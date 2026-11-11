@@ -1,0 +1,49 @@
+{
+  "id": "namespace:master-data--ColumnBasedTableTemplate:BuildUpPeriod_Properties_Template",
+  "kind": "namespace:wks:master-data--ColumnBasedTableTemplate:1.0.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "BuildUpPeriod_Properties",
+    "KeyColumns": [],
+    "Columns": [
+      {
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mD.m:",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:permeability%20length:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:16c1dab1-2a99-4fc4-8415-b721864900fc:",
+          "Name": "permeability length"
+        },
+        "ColumnName": "Permeability Thickness"
+      },
+      {
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fd2:",
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:%28volume%20per%20time%29%20per%20pressure:",
+        "PropertyType": {
+          "PropertyTypeID": "namespace:reference-data--PropertyType:8b144eaf-c447-4519-bb41-080577e4c92b:",
+          "Name": "productivity index"
+        },
+        "ColumnName": "Productivity Index"
+      }
+    ],
+    "Description": "ColumnBasedTableTemplate is used for recording the properties of Build Up Periods during WellborePressureTests."
+  }
+}

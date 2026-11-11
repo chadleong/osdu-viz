@@ -1,0 +1,172 @@
+{
+  "id": "partition-id:work-product-component--WellLog:DT-RHOB",
+  "kind": "osdu:wks:work-product-component--WellLog:1.5.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopMeasuredDepth",
+        "BottomMeasuredDepth",
+        "SamplingInterval",
+        "SamplingStart",
+        "SamplingStop",
+        "Curves[].TopDepth",
+        "Curves[].BaseDepth"
+      ]
+    }
+  ],
+  "data": {
+    "WellLogTypeID": "partition-id:reference-data--LogType:Raw:",
+    "WellboreID": "partition-id:master-data--Wellbore:1013:",
+    "Name": "1013_akm11_1978_comp.las",
+    "Description": "Inspired by https://community.opengroup.org/osdu/data/open-test-data/-/blob/master/rc--3.0.0/4-instances/TNO/work-products/well%20logs/load_log_1.0.0_1013_akm11_1978_comp_las.json",
+    "ServiceCompanyID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "HoleTypeLogging": "OPENHOLE",
+    "Datasets": [
+      "partition-id:dataset--File.LAS2:1013_akm11_1978_comp.las:"
+    ],
+    "DDMSDatasets": [
+      "urn://wddms-3/uuid:1ee950bc-f228-436a-a7f6-83b6db28148e"
+    ],
+    "LineageAssertions": [],
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 11.5,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5709:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:LOG:",
+      "VerticalMeasurementDescription": "Example for an absolute reference 11.5 m above Normaal Amsterdams Peil, EPSG 5709."
+    },
+    "SeismicReferenceElevation": {
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:SeismicReferenceDatum:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:LOG:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5709:",
+      "VerticalMeasurementDescription": "Example for an absolute reference at Normaal Amsterdams Peil, EPSG 5709."
+    },
+    "TopMeasuredDepth": 2182.0,
+    "BottomMeasuredDepth": 2481.0088,
+    "FrameIdentifier": "0",
+    "ReferenceCurveID": "MeasuredDepth",
+    "SamplingInterval": 0.0254,
+    "SamplingStart": 2182.0,
+    "SamplingStop": 2481.0,
+    "SamplingDomainTypeID": "partition-id:reference-data--WellLogSamplingDomainType:Depth:",
+    "CompanyID": "partition-id:master-data--Organisation:SomeUniqueOrganisationID:",
+    "CandidateReferenceCurveIDs": [
+      "MeasuredDepth",
+      "ElapsedLoggingTime",
+      "TravelTime"
+    ],
+    "ZeroTime": "2020-02-13T09:13:15.55Z",
+    "IsRegular": true,
+    "Curves": [
+      {
+        "CurveID": "MeasuredDepth",
+        "Mnemonic": "MD",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:m:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:MD:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Measured%20Depth:"
+      },
+      {
+        "CurveID": "GR",
+        "Mnemonic": "GR",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:GAPI:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:GR:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Gamma%20Ray:",
+        "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Gamma%20Ray:",
+        "TopDepth": 2182.0,
+        "BaseDepth": 2481.0
+      },
+      {
+        "CurveID": "DT",
+        "Mnemonic": "DT",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:us%2Fft:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:DT:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Acoustic%20Slowness:",
+        "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Slowness:",
+        "TopDepth": 2182.0,
+        "BaseDepth": 2481.0
+      },
+      {
+        "CurveID": "RHOB",
+        "Mnemonic": "RHOB",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:g%2Fcm3:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:RHOB:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Bulk%20Density:",
+        "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Density:",
+        "TopDepth": 2282.0,
+        "BaseDepth": 2460.0
+      },
+      {
+        "CurveID": "DensityCorrection",
+        "Mnemonic": "DRHO",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:g%2Fcm3:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:DRHO:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Bulk%20Density:",
+        "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Density:",
+        "TopDepth": 2282.0,
+        "BaseDepth": 2460.0
+      },
+      {
+        "CurveID": "NeutronPorosity",
+        "Mnemonic": "NPHI",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:m3%2Fm3:",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:NPHI:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Neutron%20Porosity:",
+        "LogCurveMainFamilyID": "partition-id:reference-data--LogCurveMainFamily:Porosity:",
+        "TopDepth": 2282.0,
+        "BaseDepth": 2460.0
+      },
+      {
+        "CurveID": "ElapsedLoggingTime",
+        "Mnemonic": "ETIM",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:ETIM:",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:us:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Time:"
+      },
+      {
+        "CurveID": "TravelTime",
+        "Mnemonic": "TIME",
+        "LogCurveTypeID": "partition-id:reference-data--LogCurveType:Schlumberger:TIME:",
+        "CurveUnit": "partition-id:reference-data--UnitOfMeasure:ms:",
+        "LogCurveFamilyID": "partition-id:reference-data--LogCurveFamily:Two-Way%20Time:"
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "id": "partition-id:work-product-component--WellboreMarkerSet:15-3-7-",
+  "kind": "osdu:wks:work-product-component--WellboreMarkerSet:1.5.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "Markers[].MarkerMeasuredDepth",
+        "Markers[].MarkerSubSeaVerticalDepth",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "Datasets": [
+      "partition_id:dataset--File.Generic.CSV:4ed93e20-7f2e-4fb7-b265-1bf1e3bd5b36:"
+    ],
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "Wellbore 15/3-7 Markers - Gudrun Stratigraphy; tops refer to multiple ranks, i.e., Groups and Formations.",
+    "Description": "From NPD Fact Pages",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "GeoContexts": [
+      {
+        "FieldID": "partition-id:master-data--Field:Gudrun:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:NPD-4055:",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "KB Aug 2001",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:NPD-4055:"
+    },
+    "AvailableMarkerProperties": [
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerName:",
+        "Name": "MarkerName"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerMeasuredDepth:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "MarkerMeasuredDepth"
+      }
+    ],
+    "StratigraphicColumnID": "partition-id:work-product-component--StratigraphicColumn:Gudrun:",
+    "Markers": [
+      {
+        "MarkerName": "Cromer Knoll",
+        "MarkerID": "9046ffcc-bb63-4d15-9e57-510ba246bdab",
+        "MarkerMeasuredDepth": 3752.0,
+        "MarkerSubSeaVerticalDepth": 3733.93,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Cromer Knoll",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Roedby-:"
+      },
+      {
+        "MarkerName": "Top R\u00f8dby",
+        "MarkerID": "f3b7116a-09ee-4d55-b92f-09864e811cd5",
+        "MarkerMeasuredDepth": 3752.0,
+        "MarkerSubSeaVerticalDepth": 3733.93,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "R\u00f8dby",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Roedby-:"
+      },
+      {
+        "MarkerName": "Top Sola",
+        "MarkerID": "816ee728-f026-4f7e-9594-146d3d41b274",
+        "MarkerMeasuredDepth": 3867.0,
+        "MarkerSubSeaVerticalDepth": 3848.92,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Sola",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sola-:"
+      },
+      {
+        "MarkerName": "Top \u00c5sgard",
+        "MarkerID": "6ceea2d0-6238-4d65-bc87-8bc183e03180",
+        "MarkerMeasuredDepth": 3895.0,
+        "MarkerSubSeaVerticalDepth": 3876.91,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "\u00c5sgard",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Aasgard-:"
+      },
+      {
+        "MarkerName": "Top Viking",
+        "MarkerID": "07bc43e7-a1cc-43b7-a0ef-bf9fb16e637b",
+        "MarkerMeasuredDepth": 4049.0,
+        "MarkerSubSeaVerticalDepth": 4030.9,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Viking",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Draupne-:"
+      },
+      {
+        "MarkerName": "Top Draupne",
+        "MarkerID": "a580a3bb-c2db-4845-bbc1-050b417307c0",
+        "MarkerMeasuredDepth": 4049.0,
+        "MarkerSubSeaVerticalDepth": 4030.9,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Draupne",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Draupne-:"
+      },
+      {
+        "MarkerName": "Top Heather",
+        "MarkerID": "7699229b-36e8-4aed-884f-a1e844e5b9d7",
+        "MarkerMeasuredDepth": 4502.0,
+        "MarkerSubSeaVerticalDepth": 4483.85,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Heather",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Heather-:"
+      },
+      {
+        "MarkerName": "Top Vestland",
+        "MarkerID": "6fea77dc-0132-48fe-b845-81e845d10b43",
+        "MarkerMeasuredDepth": 4607.0,
+        "MarkerSubSeaVerticalDepth": 4588.84,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Vestland",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Hugin-:"
+      },
+      {
+        "MarkerName": "Top Hugin",
+        "MarkerID": "a2be6ed2-c5dd-4d79-8bc7-a216ca133603",
+        "MarkerMeasuredDepth": 4607.0,
+        "MarkerSubSeaVerticalDepth": 4588.84,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Hugin",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Hugin-:"
+      },
+      {
+        "MarkerName": "Top Sleipner",
+        "MarkerID": "435a81c8-0e48-4ed7-b9d7-16966b35c3f5",
+        "MarkerMeasuredDepth": 4793.0,
+        "MarkerSubSeaVerticalDepth": 4774.82,
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Sleipner",
+        "InterpretationID": "partition-id:work-product-component--HorizonInterpretation:Top-Sleipner-:"
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

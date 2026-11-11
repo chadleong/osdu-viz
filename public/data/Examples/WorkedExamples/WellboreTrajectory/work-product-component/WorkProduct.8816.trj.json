@@ -1,0 +1,56 @@
+{
+  "id": "partition-id:work-product--WorkProduct:c2866d54-749a-42ed-80f8-f23cb6ff570b",
+  "kind": "osdu:wks:work-product--WorkProduct:1.0.0",
+  "version": 1621076020030443,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "Example Data Source",
+    "Components": [
+      "partition-id:work-product-component--WellboreTrajectory:0362ff79-26c2-440f-98a7-7aad2305022b:1621076020029332"
+    ],
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "Trajectory Computation Well/Wellbore 8816",
+    "Description": "Establishing a geo-referenced zero depth point for the trajectory computation; perform trajectory computation to create a completed WellboreTrajectory with GeoJSON artefacts.",
+    "CreationDateTime": "2021-02-16T10:53:40.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SubmitterName": "John Smith",
+    "BusinessActivities": [
+      "Trajectory Computation"
+    ],
+    "LineageAssertions": [],
+    "Annotations": [
+      "Trajectory Computation Activity"
+    ],
+    "ExtensionProperties": {}
+  }
+}

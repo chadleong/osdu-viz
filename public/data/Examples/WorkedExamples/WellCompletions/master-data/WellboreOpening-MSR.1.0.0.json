@@ -1,0 +1,765 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "MasterData": [
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.B.1",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T10:45:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone B Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.B.1",
+        "Description": "Reservoir X Zone B Stage #1",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T10:45:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone B Perforation Stage #1"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5534.25,
+        "MeasuredDepthBase": 5534.56,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.1:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneBID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.B.2",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T11:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone B Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.B.2",
+        "Description": "Reservoir X Zone B Stage #2",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T11:00:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone B Perforation Stage #2"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5518.71,
+        "MeasuredDepthBase": 5519.01,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.B.2:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneBID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.B.3",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T11:15:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone B Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.B.3",
+        "Description": "Reservoir X Zone B Stage #3",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T11:15:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone B Perforation Stage #3"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5502.86,
+        "MeasuredDepthBase": 5503.16,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.B.3:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneBID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.B.4",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T11:30:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone B Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.B.4",
+        "Description": "Reservoir X Zone B Stage #4",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T11:30:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone B Perforation Stage #4"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5487.31,
+        "MeasuredDepthBase": 5487.62,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.B.4:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneBID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.A.1",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T16:45:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone A Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.A.1",
+        "Description": "Reservoir X Zone A Stage #1",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T16:45:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone A Perforation Stage #1"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5471.46,
+        "MeasuredDepthBase": 5471.77,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.A.1:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneAID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.A.2",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T17:00:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone A Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.A.2",
+        "Description": "Reservoir X Zone A Stage #2",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T17:00:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone A Perforation Stage #2"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5455.92,
+        "MeasuredDepthBase": 5456.23,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.A.2:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneAID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.A.3",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T17:15:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone A Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.A.3",
+        "Description": "Reservoir X Zone A Stage #3",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T17:15:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone A Perforation Stage #3"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5440.07,
+        "MeasuredDepthBase": 5440.38,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.A.3:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneAID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    },
+    {
+      "id": "partition-id:master-data--WellboreOpening:11000091175501.A.4",
+      "kind": "osdu:wks:master-data--WellboreOpening:1.2.0",
+      "version": 1562066009929332,
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "tags": {
+        "NameOfKey": "String value"
+      },
+      "createTime": "2022-08-14T17:30:00.000Z",
+      "createUser": "some-user@some-company-cloud.com",
+      "modifyTime": "2022-08-16T11:00:00.000Z",
+      "modifyUser": "some-user@some-company-cloud.com",
+      "ancestry": {
+        "parents": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "VerticalMeasurement.VerticalMeasurement",
+            "MeasuredDepthTop",
+            "MeasuredDepthBase"
+          ]
+        }
+      ],
+      "data": {
+        "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+        "ResourceHostRegionIDs": [
+          "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+        ],
+        "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+        "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+        "Source": "Example Data Source",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:ACTUAL:",
+        "GeoContexts": [
+          {
+            "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+            "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+          }
+        ],
+        "VersionCreationReason": "Reservoir X Zone A Perforation",
+        "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+        "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+        "Name": "X.A.4",
+        "Description": "Reservoir X Zone A Stage #4",
+        "WellboreOpeningStates": [
+          {
+            "EffectiveDateTime": "2022-08-14T17:30:00.000",
+            "WellboreOpeningStateTypeID": "partition-id:reference-data--WellboreOpeningStateType:Open:",
+            "Remark": "Zone A Perforation Stage #4"
+          }
+        ],
+        "VerticalMeasurement": {
+          "EffectiveDateTime": "2022-06-08T10:00:00.00Z",
+          "VerticalMeasurement": 954.1,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+          "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+          "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+          "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+        },
+        "IsGravelPack": false,
+        "MeasuredDepthTop": 5424.22,
+        "MeasuredDepthBase": 5424.53,
+        "PerforationIntervalID": "partition-id:master-data--PerforationInterval:11000091175501.A.4:",
+        "IsolatedIntervalIDs": [
+          "partition-id:master-data--IsolatedInterval:11000091175501.1:"
+        ],
+        "ReservoirIDs": [
+          "partition-id:master-data--Reservoir:ReservoirXID:"
+        ],
+        "ReservoirSegmentIDs": [
+          "partition-id:master-data--ReservoirSegment:ReservoirXZoneAID:"
+        ],
+        "ExtensionProperties": {}
+      }
+    }
+  ]
+}

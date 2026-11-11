@@ -1,0 +1,30 @@
+{
+  "id": "partition-id:work-product--WorkProduct:SeismicManifestBasedLoading-230dc77a-7e0b-4080-903e-58053b6a652a",
+  "kind": "osdu:wks:work-product--WorkProduct:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "meta": [],
+  "data": {
+    "Source": "Volve Demo",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Components": [
+      "partition-id:work-product-component--SeismicTraceData:1f855537-dea8-5b2a-a6d6-63fc9a0bbac1:"
+    ],
+    "Name": "Manifest Loading Dataset ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "id": "partition-id:master-data--Wellbore:8816",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "version": 1621149020029332,
+  "acl": {
+    "owners": [
+      "ownergroup@testcompany.com"
+    ],
+    "viewers": [
+      "viewgroup@testcompany.com"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "NameAliases": [
+      {
+        "AliasName": "8816",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:UniqueIdentifier:"
+      },
+      {
+        "AliasName": "L15-FA-103",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Borehole%20Code:"
+      },
+      {
+        "AliasName": "L15-FA-103",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Borehole:"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:L15:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:L15b-A:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "InitialOperatorID": "partition-id:master-data--Organisation:NAM:",
+    "CurrentOperatorID": "partition-id:master-data--Organisation:Neptune%20Energy%20Netherlands%20B.V.:",
+    "OperatingEnvironmentID": "partition-id:reference-data--OperatingEnvironment:OFF:",
+    "FacilityName": "Example FacilityName",
+    "FacilityStates": [
+      {
+        "FacilityStateTypeID": "partition-id:reference-data--FacilityStateType:Technisch%20mislukt%20en%20sidetracked:"
+      }
+    ],
+    "FacilityEvents": [
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Start:",
+        "EffectiveDateTime": "1992-04-10T00:00:00"
+      },
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Finish:",
+        "EffectiveDateTime": "1992-06-11T00:00:00"
+      }
+    ],
+    "WellID": "partition-id:master-data--Well:8816:",
+    "FacilityTypeID": "namespace:reference-data--FacilityType:Wellbore:",
+    "SequenceNumber": 1,
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "Measured_From",
+        "VerticalMeasurement": 42.51,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "TD-Original",
+        "VerticalMeasurement": 2790.0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      },
+      {
+        "VerticalMeasurementID": "PBD",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "VerticalMeasurement": 1456,
+        "VerticalMeasurementTypeID": "namespace:reference-data--VerticalMeasurementType:PlugBackDepth:",
+        "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      },
+      {
+        "VerticalMeasurementID": "KB",
+        "VerticalMeasurement": 2596.72,
+        "VerticalMeasurementTypeID": "namespace:reference-data--VerticalMeasurementType:KellyBushing:",
+        "VerticalMeasurementPathID": "namespace:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      }
+    ],
+    "DefaultVerticalMeasurementID": "Measured_From",
+    "DrillingReasons": [
+      {
+        "LaheeClassID": "partition-id:reference-data--LaheeClass:Development:"
+      }
+    ],
+    "TrajectoryTypeID": "partition-id:reference-data--WellboreTrajectoryType:Gedevieerd:",
+    "PrimaryMaterialID": "partition-id:reference-data--MaterialType:FLR:",
+    "ProjectedBottomHoleLocation": {
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1133:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"23031001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23031\"},\"name\":\"ED_1950_UTM_Zone_31N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_UTM_Zone_31N\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",3.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23031]]\"},\"name\":\"ED50 * DMA-mean / UTM zone 31N [23031,1133]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1133\"},\"name\":\"ED_1950_To_WGS_1984_1\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_1\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Geocentric_Translation\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-87.0],PARAMETER[\\\"Y_Axis_Translation\\\",-98.0],PARAMETER[\\\"Z_Axis_Translation\\\",-121.0],AUTHORITY[\\\"EPSG\\\",1133]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                622814.1397135333,
+                5910169.953753791,
+                -2500.7606121688996
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.84256724021784,
+                53.32455542464951,
+                -2500.7606121688996
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_TM_5_NE to GCS_European_1950; 1 points converted",
+        "conversion from GCS_European_1950 to ED_1950_UTM_Zone_31N; 1 points converted",
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_1; 1 points successfully transformed"
+      ]
+    },
+    "DefinitiveTrajectoryID": "partition-id:work-product-component--WellboreTrajectory:0362ff79-26c2-440f-98a7-7aad2305022b:"
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

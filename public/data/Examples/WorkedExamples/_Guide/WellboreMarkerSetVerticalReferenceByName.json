@@ -1,0 +1,38 @@
+{
+  "id": "partition-id:work-product-component--WellboreMarkerSet:d5303b79-7904-5bfe-9c44-9a3ff41b6d6c",
+  "kind": "osdu:wks:work-product-component--WellboreMarkerSet:1.5.1",
+  "data": {
+    "WellboreID": "partition-id:master-data--Wellbore:AB1234-1:",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "KB-Reentry",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:AB1234-1:",
+      "VerticalMeasurement": 0
+    },
+    "Markers": [
+      {
+        "MarkerName": "OWC",
+        "MarkerMeasuredDepth": 12110.0
+      }
+    ]
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  },
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "Markers[].MarkerMeasuredDepth",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    }
+  ]
+}

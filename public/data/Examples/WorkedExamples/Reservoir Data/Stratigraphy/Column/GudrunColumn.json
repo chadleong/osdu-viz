@@ -1,0 +1,56 @@
+{
+  "id": "partition-id:work-product-component--StratigraphicColumn:Gudrun",
+  "kind": "osdu:wks:work-product-component--StratigraphicColumn:1.2.0",
+  "version": 1608119544929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "IsDiscoverable": true,
+    "Name": "Gudrun Stratigraphy",
+    "Tags": [
+      "Example Tags"
+    ],
+    "GeoContexts": [
+      {
+        "FieldID": "partition-id:master-data--Field:Gudrun:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "StratigraphicColumnRankInterpretationSet": [
+      "namespace-id:work-product-component--StratigraphicColumnRankInterpretation:Gudrun-ChronoStratigraphy-System-:",
+      "namespace-id:work-product-component--StratigraphicColumnRankInterpretation:Gudrun-ChronoStratigraphy-Series-:",
+      "namespace-id:work-product-component--StratigraphicColumnRankInterpretation:Gudrun-Rank1-:",
+      "namespace-id:work-product-component--StratigraphicColumnRankInterpretation:Gudrun-Rank2-:"
+    ],
+    "ValidationDate": "2011-03-01T11:46:20.163Z",
+    "ValueChainStatusType": "partition-id:reference-data--ValueChainStatusType:Production:",
+    "StratigraphicColumnValidityAreaType": "partition-id:reference-data--StratigraphicColumnValidityAreaType:field:",
+    "ExtensionProperties": {}
+  }
+}

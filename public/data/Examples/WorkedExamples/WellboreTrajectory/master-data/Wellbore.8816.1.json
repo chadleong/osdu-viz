@@ -1,0 +1,109 @@
+{
+  "id": "partition-id:master-data--Wellbore:8816",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "version": 1621059020029332,
+  "acl": {
+    "owners": [
+      "ownergroup@testcompany.com"
+    ],
+    "viewers": [
+      "viewgroup@testcompany.com"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "NameAliases": [
+      {
+        "AliasName": "8816",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:UWI:"
+      },
+      {
+        "AliasName": "L15-FA-103",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Borehole%20Code:"
+      },
+      {
+        "AliasName": "L15-FA-103",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Borehole:"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:L15:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:L15b-A:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "InitialOperatorID": "partition-id:master-data--Organisation:NAM:",
+    "CurrentOperatorID": "partition-id:master-data--Organisation:Neptune%20Energy%20Netherlands%20B.V.:",
+    "OperatingEnvironmentID": "partition-id:reference-data--OperatingEnvironment:OFF:",
+    "FacilityStates": [
+      {
+        "FacilityStateTypeID": "partition-id:reference-data--FacilityStateType:Technisch%20mislukt%20en%20sidetracked:"
+      }
+    ],
+    "FacilityEvents": [
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Start:",
+        "EffectiveDateTime": "1992-04-10T00:00:00"
+      },
+      {
+        "FacilityEventTypeID": "partition-id:reference-data--FacilityEventType:Drilling%20Finish:",
+        "EffectiveDateTime": "1992-06-11T00:00:00"
+      }
+    ],
+    "WellID": "partition-id:master-data--Well:8816:",
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:Wellbore:",
+    "SequenceNumber": 1,
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "Measured_From",
+        "VerticalMeasurement": 42.51,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "TD-Original",
+        "VerticalMeasurement": 2790.0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      },
+      {
+        "VerticalMeasurementID": "TVD",
+        "VerticalMeasurement": 2543.27,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalReferenceID": "Measured_From"
+      }
+    ],
+    "DefaultVerticalMeasurementID": "Measured_From",
+    "DrillingReasons": [
+      {
+        "LaheeClassID": "partition-id:reference-data--LaheeClass:Development:"
+      }
+    ],
+    "TrajectoryTypeID": "partition-id:reference-data--WellboreTrajectoryType:Gedevieerd:",
+    "PrimaryMaterialID": "partition-id:reference-data--MaterialType:FLR:"
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

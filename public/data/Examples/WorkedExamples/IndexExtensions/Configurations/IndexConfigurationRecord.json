@@ -1,0 +1,382 @@
+[
+  {
+    "id": "opendes:reference-data--IndexPropertyPathConfiguration:work-product-component--WellLog:1",
+    "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+    "acl": {
+      "owners": [
+        "data.default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+      ],
+      "viewers": [
+        "data.default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "opendes-default-legal"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ]
+    },
+    "data": {
+      "Name": "WellLogIndex-PropertyPathConfiguration",
+      "Description": "The index property list for WellLog:1., valid for all WellLog kinds for major version 1.",
+      "Code": "osdu:wks:work-product-component--WellLog:1.",
+      "AttributionAuthority": "OSDU",
+      "Configurations": [
+        {
+          "Name": "WellboreName",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultName"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "FacilityName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellLog instances by the wellbore's name value."
+        },
+        {
+          "Name": "SpatialLocation",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "ProjectedBottomHoleLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "GeographicBottomHoleLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "SpatialLocation"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellLog instances by spatial location."
+        },
+        {
+          "Name": "TechnicalAssuranceReviewerNames",
+          "Policy": "ExtractAllMatches",
+          "Paths": [
+            {
+              "ValueExtraction": {
+                "ValuePath": "TechnicalAssurances[].Reviewers[].Name"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellLog instances by the Technical Assurance reviewer name."
+        },
+        {
+          "Name": "TechnicalAssuranceReviewerOrganisationNames",
+          "Policy": "ExtractAllMatches",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Organisation:1.",
+                "RelatedObjectID": "TechnicalAssurances[].Reviewers[].OrganisationID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "OrganisationName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellLog instances by the Technical Assurance Organisation name."
+        }
+      ]
+    }
+  },
+  {
+    "id": "opendes:reference-data--IndexPropertyPathConfiguration:work-product-component--WellboreTrajectory:1",
+    "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+    "acl": {
+      "owners": [
+        "data.default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+      ],
+      "viewers": [
+        "data.default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "opendes-default-legal"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ]
+    },
+    "data": {
+      "Name": "WellboreTrajectory-IndexPropertyPathConfiguration",
+      "Description": "The index property list for WellboreTrajectory:1., valid for all WellboreTrajectory kinds for major version 1.",
+      "Code": "osdu:wks:work-product-component--WellboreTrajectory:1.",
+      "AttributionAuthority": "OSDU",
+      "Configurations": [
+        {
+          "Name": "WellboreName",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultName"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "FacilityName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellboreTrajectory instances by the wellbore's name value."
+        },
+        {
+          "Name": "SpatialLocation",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "ProjectedBottomHoleLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "GeographicBottomHoleLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "SpatialLocation"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellboreTrajectory instances by spatial location."
+        }
+      ]
+    }
+  },
+  {
+    "id": "opendes:reference-data--IndexPropertyPathConfiguration:work-product-component--WellboreMarkerSet:1",
+    "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+    "acl": {
+      "owners": [
+        "data.default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+      ],
+      "viewers": [
+        "data.default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "opendes-default-legal"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ]
+    },
+    "data": {
+      "Name": "WellboreMarkerSet-IndexPropertyPathConfiguration",
+      "Description": "The index property list for WellboreMarkerSet:1., valid for all WellboreMarkerSet kinds for major version 1.",
+      "Code": "osdu:wks:work-product-component--WellboreMarkerSet:1.",
+      "AttributionAuthority": "OSDU",
+      "Configurations": [
+        {
+          "Name": "WellboreName",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultName"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "FacilityName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellboreMarkerSet instances by the wellbore's name value."
+        },
+        {
+          "Name": "SpatialLocation",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "VirtualProperties.DefaultLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "ProjectedBottomHoleLocation"
+              }
+            },
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectKind": "osdu:wks:master-data--Wellbore:1.",
+                "RelatedObjectID": "data.WellboreID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "GeographicBottomHoleLocation"
+              }
+            },
+            {
+              "ValueExtraction": {
+                "ValuePath": "SpatialLocation"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover WellboreMarkerSet instances by spatial location."
+        }
+      ]
+    }
+  },
+  {
+    "id": "opendes:reference-data--IndexPropertyPathConfiguration:wks:master-data--Well:1",
+    "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+    "acl": {
+      "owners": [
+        "data.default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+      ],
+      "viewers": [
+        "data.default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+      ]
+    },
+    "legal": {
+      "legaltags": [
+        "opendes-default-legal"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ]
+    },
+    "data": {
+      "Name": "Well-IndexPropertyPathConfiguration",
+      "Description": "The index property list for master-data--Well:1., valid for all master-data--Well kinds for major version 1.",
+      "Code": "osdu:wks:master-data--Well:1.",
+      "AttributionAuthority": "OSDU",
+      "Configurations": [
+        {
+          "Name": "CountryNames",
+          "Policy": "ExtractAllMatches",
+          "Paths": [
+            {
+              "RelatedObjectsSpec": {
+                "RelatedObjectID": "GeoContexts[].GeoPoliticalEntityID",
+                "RelatedObjectKind": "osdu:wks:master-data--GeoPoliticalEntity:1.",
+                "RelatedConditionMatches": [
+                  "^[\\w\\-\\.]+:reference-data--GeoPoliticalEntityType:Country:"
+                ],
+                "RelatedConditionProperty": "data.GeoContexts[].GeoTypeID"
+              },
+              "ValueExtraction": {
+                "ValuePath": "GeoPoliticalEntityName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to find objects by a country name, with the understanding that an object may extend over country boundaries."
+        },
+        {
+          "Name": "WellUWI",
+          "Policy": "ExtractFirstMatch",
+          "Paths": [
+            {
+              "ValueExtraction": {
+                "RelatedConditionMatches": [
+                  "^[\\w\\-\\.]+:reference-data--AliasNameType:UniqueIdentifier:$",
+                  "^[\\w\\-\\.]+:reference-data--AliasNameType:RegulatoryName:$",
+                  "^[\\w\\-\\.]+:reference-data--AliasNameType:PreferredName:$",
+                  "^[\\w\\-\\.]+:reference-data--AliasNameType:CommonName:$",
+                  "^[\\w\\-\\.]+:reference-data--AliasNameType:ShortName:$"
+                ],
+                "RelatedConditionProperty": "data.NameAliases[].AliasNameTypeID",
+                "ValuePath": "NameAliases[].AliasName"
+              }
+            }
+          ],
+          "UseCase": "As a user I want to discover and match Wells by their UWI. I am aware that this is not globally reliable, however, I am able to specify a prioritized AliasNameType list to look up value in the NameAliases array."
+        }
+      ]
+    }
+  }
+]

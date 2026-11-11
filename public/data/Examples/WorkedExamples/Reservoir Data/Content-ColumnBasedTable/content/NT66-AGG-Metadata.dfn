@@ -1,0 +1,49 @@
+DEFN 1 ST=RECD,RT=PROJ; RT: A4
+DEFN 2 ST=RECD,RT=PROJ; PROJNAME: A26: NAME=projection name, POSC projection name
+DEFN 3 ST=RECD,RT=PROJ; ELLPSNAM: A11: NAME=ellipsoid name, POSC compliant ellipsoid name
+DEFN 4 ST=RECD,RT=PROJ; MAJ_AXIS: D8.0: UNIT=m, NAME=major_axis, Major axis in units relevant to the ellipsoid definition
+DEFN 5 ST=RECD,RT=PROJ; ECCENT: D14.11: NAME=eccentricity, 1/f inverse of flattening
+DEFN 6 ST=RECD,RT=PROJ; PRIMEMER: D2.0: UNIT=deg, NAME=prime_meridian,Location of prime meridian relativeto Greenwich
+DEFN 7 ST=RECD,RT=PROJ; PROJMETH: A24: NAME=projection_method, eg.Transverse Mercator, Lambert etc
+DEFN 8 ST=RECD,RT=PROJ; PARAM1: D2.0: NAME=Proj_par1
+DEFN 9 ST=RECD,RT=PROJ; PARAM2: D4.0: NAME=Proj_par2
+DEFN 10 ST=RECD,RT=PROJ; PARAM3: D7.4: NAME=Proj_par3
+DEFN 11 ST=RECD,RT=PROJ; PARAM4: D7.0: NAME=Proj_par4
+DEFN 12 ST=RECD,RT=PROJ; PARAM5: D9.0: NAME=Proj_par5
+DEFN   ST=RECD,RT=COMM;RT:A4;COMMENTS:A76
+DEFN 1 ST=RECD,RT=DATA;RT:A4;FLTLINE:F10.1:NAME=Line number
+DEFN 2 ST=RECD,RT=;ALTITUDE:F7.2:NULL=-99.99,UNIT=meters,NAME=Sensor Height above WGS84 ellipsoid with Geoid (EGM96) correcti
+DEFN 3 ST=RECD,RT=;Clearance_Bath:F18.2:NULL=-9999999999999.99,UNIT=meters,NAME=Aircraft Clearance above Bathymetry surface (m)
+DEFN 4 ST=RECD,RT=;DEM:F8.2:NULL=-999.99,UNIT=meters,NAME=Terrain Height above WGS84 ellipsoid with Geoid (EGM96) correct
+DEFN 5 ST=RECD,RT=;DRAPESURFACE_EQUIV_120M:F7.2:NULL=-99.99,UNIT=metres,NAME=Drape surface for equivalent source construction (m),120m const
+DEFN 6 ST=RECD,RT=;DRAPESURFACE_FOURIER_120M:F7.2:NULL=-99.99,UNIT=meters,NAME=Drape surface for fourier reconstruction (m), 120m above MSL (G
+DEFN 7 ST=RECD,RT=;EAST:F20.2:NULL=-999999999999999.99,UNIT=meters,NAME=WGS84 SUTM55 Easting
+DEFN 8 ST=RECD,RT=;FIDUCIAL:F14.1:NULL=-9999999999.9,UNIT=seconds,NAME=Fiducial (seconds)
+DEFN 9 ST=RECD,RT=;gD_EQUIV_2p2:F20.2:NULL=-999999999999999.99,UNIT=mGal    ,NAME=Equivalent source derived vertical gravity (mGal),density corre
+DEFN 10 ST=RECD,RT=;gD_EQUIV_2p2_120M_GG:F20.2:NULL=-999999999999999.99,UNIT=mGal    ,NAME=Equivalent source derived vertical gravity (mGal),density corre
+DEFN 11 ST=RECD,RT=;gD_FOURIER_0p0_1000_LWT_C120_ML:F20.2:NULL=-999999999999999.99,UNIT=mGal   ,NAME=Fourier derived vertical Gravity(mGal),Terrain Correction not a
+DEFN 12 ST=RECD,RT=;gD_FOURIER_2p2_1000_LWT_C120_ML:F20.2:NULL=-999999999999999.99,UNIT=mGal   ,NAME=Fourier derived vertical Gravity(mGal),Bathy density correction
+DEFN 13 ST=RECD,RT=;GDD_EQUIV_2p2:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=Equivalent source derived vertical gravity gradient(Eotvos),den
+DEFN 14 ST=RECD,RT=;GDD_EQUIV_2p2_120M_GG:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=Equivalent source derived vertical gravity gradient(Eotvos),den
+DEFN 15 ST=RECD,RT=;GDD_FOURIER_0p0_1000_LWT_C120_ML:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Fourier derived vertical gravity gradient(Eotvos),Terrain Corre
+DEFN 16 ST=RECD,RT=;GDD_FOURIER_2p2_1000_LWT_C120_ML:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=Fourier derived vertical gravity gradient(Eotvos),Bathy density
+DEFN 17 ST=RECD,RT=;GDD_SPATIAL_2p2_2000x2800:F20.2:NULL=-999999999999999.99,UNIT=Eotvos  ,NAME=Spatially derived vertical gravity gradient,density correction 
+DEFN 18 ST=RECD,RT=;GDD_SPATIAL_2p2_DT_2000x2800:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=1D Detrended Spatially derived vertical gravity gradient,densit
+DEFN 19 ST=RECD,RT=;GNE_EQUIV_2p2:F17.2:NULL=-999999999999.99,UNIT=Eotvos,NAME=Equivalent source derived Gne curvature gradient(Eotvos),densit
+DEFN 20 ST=RECD,RT=;GNE_EQUIV_2p2_120M_GG:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=Equivalent source derived Gne curvature gradient(Eotvos),densit
+DEFN 21 ST=RECD,RT=;GNE_FOURIER_0p0_1000_LWT_C120_ML:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Fourier derived Gne curvature gradient(Eotvos),Terrain Correcti
+DEFN 22 ST=RECD,RT=;GNE_FOURIER_2p2_1000_LWT_C120_ML:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Fourier derived Gne curvature gradient(Eotvos),Bathy density co
+DEFN 23 ST=RECD,RT=;GUV_EQUIV_2p2:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Equivalent source derived Guv curvature gradient(Eotvos),densit
+DEFN 24 ST=RECD,RT=;GUV_EQUIV_2p2_120M_GG:F20.2:NULL=-999999999999999.99,UNIT=Eotvos,NAME=Equivalent source derived Guv curvature gradient(Eotvos),densit
+DEFN 25 ST=RECD,RT=;GUV_FOURIER_0p0_1000_LWT_C120_ML:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Fourier derived Guv curvature gradient(Eotvos),Terrain Correcti
+DEFN 26 ST=RECD,RT=;GUV_FOURIER_2p2_1000_LWT_C120_ML:F6.2:NULL=-9.99,UNIT=Eotvos,NAME=Fourier derived Guv curvature gradient(Eotvos),Bathy density co
+DEFN 27 ST=RECD,RT=;LATITUDE:F10.6:NULL=-9.999999,UNIT=degrees,NAME=WGS84 Latitude
+DEFN 28 ST=RECD,RT=;LONGITUD:F10.6:NULL=-9.999999,UNIT=degrees,NAME=WGS84 Longitude
+DEFN 29 ST=RECD,RT=;NORTH:F11.2:NULL=-999999.99,UNIT=meters,NAME=WGS84 SUTM55 Northing
+DEFN 30 ST=RECD,RT=;ON_LINE:F11.0:NULL=-99999999.,UNIT=boolean,NAME=AGG on line indicator
+DEFN 31 ST=RECD,RT=;RADAR:F7.2:NULL=-99.99,UNIT=meters,NAME=Radar Altimeter (m)
+DEFN 32 ST=RECD,RT=;surf_grv_plus_trend:F20.2:NULL=-999999999999999.99,NAME=surf_grv_plus_trend
+DEFN 33 ST=RECD,RT=;T_DD:F5.1:NULL=-9.9,UNIT=Eotvos,NAME=SeaLevel Terrain effect calculated for DD(assumes density corre
+DEFN 34 ST=RECD,RT=;T_NE:F4.1:NULL=-.9,UNIT=Eotvos,NAME=SeaLevel Terrain effect calculated for NE(assumes density corre
+DEFN 35 ST=RECD,RT=;T_UV:F9.1:NULL=-99999.9,UNIT=Eotvos,NAME=SeaLevel Terrain effect calculated for UV(assumes density corre
+DEFN 36 ST=RECD,RT=;TURBULENCE:F6.2:NULL=-9.99,UNIT=milliG,NAME=Estimated vertical platform turbulence (mg);END DEFN

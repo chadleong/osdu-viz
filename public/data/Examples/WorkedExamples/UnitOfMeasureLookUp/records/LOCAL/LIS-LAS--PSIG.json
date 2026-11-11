@@ -1,0 +1,38 @@
+{
+  "id": "partition-id:reference-data--ExternalUnitOfMeasure:LIS-LAS::PSIG",
+  "kind": "osdu:wks:reference-data--ExternalUnitOfMeasure:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "pound per square inch (gauge)",
+    "ID": "PSIG",
+    "Code": "LIS-LAS::PSIG",
+    "AttributionAuthority": "Schlumberger",
+    "AttributionRevision": "2021-10-08T12:00:00Z",
+    "CoefficientA": 14.6959,
+    "CoefficientB": 6894.75729316836,
+    "CoefficientC": 1,
+    "CoefficientD": 0,
+    "CorrectToExternalUnitOfMeasureID": "partition-id:reference-data--ExternalUnitOfMeasure:LIS-LAS::PA:",
+    "ExternalUnitQuantityID": "partition-id:reference-data--ExternalUnitQuantity:SLB-OSDD::Pressure:",
+    "MapStateID": "partition-id:reference-data--CatalogMapStateType:conversion:",
+    "NamespaceID": "partition-id:reference-data--ExternalCatalogNamespace:LIS-LAS:",
+    "PersistableReference": "{\"scaleOffset\":{\"scale\":6894.75729316836,\"offset\":-14.6959},\"symbol\":\"PSIG\",\"baseMeasurement\":{\"ancestry\":\"Pressure\",\"type\":\"UM\"},\"type\":\"USO\"}",
+    "Source": "Workbook Published/ExternalUnitOfMeasure.1.0.0.xlsx; commit SHA 54e89405.",
+    "CommitDate": "2022-02-05T15:50:17+01:00"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "MasterData": [
+    {
+      "id": "osdu:master-data--SeismicAcquisitionSurvey:ST0202R08_Baseline",
+      "kind": "osdu:wks:master-data--SeismicAcquisitionSurvey:1.4.0",
+      "acl": {
+        "owners": [],
+        "viewers": []
+      },
+      "legal": {
+        "legaltags": [],
+        "otherRelevantDataCountries": []
+      },
+      "meta": [
+        {
+          "kind": "Unit",
+          "name": "s",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:s:",
+          "propertyNames": [
+            "RecordLength"
+          ]
+        },
+        {
+          "kind": "Unit",
+          "name": "m",
+          "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+          "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:m:",
+          "propertyNames": [
+            "ShotpointIncrementDistance",
+            "CableLength",
+            "CableSpacingDistance",
+            "MaxOffsetDistance"
+          ]
+        }
+      ],
+      "data": {
+        "GeoContexts": [
+          {
+            "GeoPoliticalEntityID": "osdu:master-data--GeoPoliticalEntity:Norway_Country:",
+            "GeoTypeID": "osdu:reference-data--GeoPoliticalEntityType:Country:"
+          }
+        ],
+        "ProjectName": "Volve 3D",
+        "Purpose": "Acquisition for the first 3D seismic survey for Volve",
+        "ProjectEndDate": "1999-06-15T00:00:00",
+        "Operator": "osdu:master-data--Organisation:Statoil:",
+        "Contractors": [
+          {
+            "ContractorOrganisationID": "osdu:master-data--Organisation:WesternGeco:",
+            "ContractorTypeID": "osdu:reference-data--ContractorType:Recording:"
+          }
+        ],
+        "SeismicGeometryTypeID": "osdu:reference-data--SeismicGeometryType:3D:",
+        "AcquisitionTypeID": "namespace:reference-data--SeismicAcquisitionType:3D:",
+        "OperatingEnvironmentID": "osdu:reference-data--OperatingEnvironment:Offshore:",
+        "EnergySourceTypeID": "osdu:reference-data--SeismicEnergySourceType:AirGun:",
+        "SampleInterval": 4.0,
+        "RecordLength": 10.2,
+        "CableCount": 4,
+        "CableLength": 6000.0,
+        "MaxOffsetDistance": 6000.0,
+        "FoldCount": 120,
+        "SourceConfigurations": [
+          {
+            "VesselName": "Geco Beta",
+            "ShotpointSpacing": 25.0,
+            "EnergySourceTypeID": "namespace:reference-data--SeismicEnergySourceType:AirGun:",
+            "SourceArrayCount": 2,
+            "SourceArraySpacing": 100.0,
+            "Remarks": "Source configuration description"
+          }
+        ],
+        "ReceiverConfigurations": [
+          {
+            "VesselName": "Geco Beta",
+            "CableCount": 2,
+            "CableLength": 6000.0,
+            "CableSpacing": 400.0,
+            "ReceiverTypeID": "namespace:reference-data--SeismicReceiverType:MarineStreamer:",
+            "ReceiverCount": 2,
+            "ReceiverGroupSpacing": 25.0,
+            "Remarks": "Example Remarks"
+          }
+        ],
+        "SpatialLocation": {
+          "AsIngestedCoordinates": {
+            "type": "AnyCrsFeatureCollection",
+            "CoordinateReferenceSystemID": "osdu:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+            "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"23031024\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23031\"},\"name\":\"ED_1950_UTM_Zone_31N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_UTM_Zone_31N\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",3.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23031]]\"},\"name\":\"ED50 * EPSG-Nor S62 2001 / UTM zone 31N [23031,1613]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1613\"},\"name\":\"ED_1950_To_WGS_1984_24\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_24\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-90.365],PARAMETER[\\\"Y_Axis_Translation\\\",-101.13],PARAMETER[\\\"Z_Axis_Translation\\\",-123.384],PARAMETER[\\\"X_Axis_Rotation\\\",0.333],PARAMETER[\\\"Y_Axis_Rotation\\\",0.077],PARAMETER[\\\"Z_Axis_Rotation\\\",0.894],PARAMETER[\\\"Scale_Difference\\\",1.994],AUTHORITY[\\\"EPSG\\\",1613]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+            "features": [
+              {
+                "type": "AnyCrsFeature",
+                "properties": {},
+                "geometry": {
+                  "type": "AnyCrsPolygon",
+                  "coordinates": [
+                    [
+                      [
+                        438727.125,
+                        6475514.5
+                      ],
+                      [
+                        439888.34375,
+                        6480172.0
+                      ],
+                      [
+                        432562.59375,
+                        6481998.5
+                      ],
+                      [
+                        431401.375,
+                        6477341.0
+                      ],
+                      [
+                        438727.125,
+                        6475514.5
+                      ]
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          "Wgs84Coordinates": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        1.9496878,
+                        58.4141503
+                      ],
+                      [
+                        1.9683366,
+                        58.4561357
+                      ],
+                      [
+                        1.8422866,
+                        58.4714655
+                      ],
+                      [
+                        1.8237804,
+                        58.4294624
+                      ],
+                      [
+                        1.9496878,
+                        58.4141503
+                      ]
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          "AppliedOperations": [
+            "AsIngestedCoordinates converted to Wgs84Coordinates: Input CRS EPSG 23031 (ED50 / UTM zone 31N) to Target CRS EPSG 4326 (WGS84) using CT EPSG 1613 (ED50 to WGS 84 (24) - Norway - offshore south of 62\u00b0N - North Sea.)"
+          ],
+          "SpatialParameterTypeID": "osdu:reference-data--SpatialParameterType:Outline:",
+          "SpatialGeometryTypeID": "osdu:reference-data--SpatialGeometryType:Polygon:"
+        }
+      }
+    }
+  ]
+}

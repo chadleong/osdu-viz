@@ -1,0 +1,240 @@
+{
+  "id": "partition-id:work-product-component--SeismicTraceData:TraceData-eda18a6e-5cfd-48e6-a82a-059c244a2cd0",
+  "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+  "version": 1691053931238536,
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": [],
+    "status": "compliant"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "ms",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+      "propertyNames": [
+        "SampleInterval",
+        "TraceLength",
+        "ShiftApplied"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "StartTime",
+        "EndTime"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m%2Fs:",
+      "propertyNames": [
+        "ReplacementVelocity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/(m2.s)",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/(m2.s)\",\"baseMeasurement\":{\"ancestry\":\"M/L2T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:kg%2F%28m2.s%29:",
+      "propertyNames": [
+        "RangeAmplitudeMax",
+        "RangeAmplitudeMin"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:rad:",
+      "propertyNames": [
+        "StackAngleRangeMax",
+        "StackAngleRangeMin",
+        "StackAzimuthRangeMax",
+        "StackAzimuthRangeMin",
+        "StackAngleRanges[].Minimum",
+        "StackAngleRanges[].Maximum",
+        "StackAzimuthRanges[].Minimum",
+        "StackAzimuthRanges[].Maximum"
+      ]
+    }
+  ],
+  "data": {
+    "Name": "ST0299-05005+MIG_FIN",
+    "Description": "Post Stack Migration 2D Volve Seismic:ST0299-05005+MIG_FIN",
+    "Source": "Equinor Volve Public Data",
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Datasets": [
+      "partition-id:dataset--FileCollection.SEGY:SEGY-4c0352ac-02b3-4602-a709-2f9eb3e1961c:",
+      "partition-id:dataset--File.SeismicLineGeometry:TraceNav-00ffa8a0-e867-4c6b-adde-cef94a9d80b0:"
+    ],
+    "GeoContexts": [
+      {
+        "BasinID": "partition-id:master-data--Basin:NorthSeaBasin:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:ContinentalShelf:"
+      }
+    ],
+    "SubmitterName": "Naufal Noori",
+    "SeismicLineGeometryID": "partition-id:work-product-component--SeismicLineGeometry:ST0299-CMP-05005:",
+    "PrincipalAcquisitionProjectID": "partition-id:master-data--SeismicAcquisitionSurvey:ST0299:",
+    "SeismicTraceDataDimensionalityTypeID": "partition-id:reference-data--SeismicTraceDataDimensionalityType:2D:",
+    "SeismicDomainTypeID": "partition-id:reference-data--SeismicDomainType:Time:",
+    "Seismic2DName": "ST0299-05005+MIG_FIN",
+    "SeismicMigrationTypeID": "partition-id:reference-data--SeismicMigrationType:PSTM:",
+    "SeismicStackingTypeID": "partition-id:reference-data--SeismicStackingType:Stk:",
+    "SeismicAttributeTypeID": "partition-id:reference-data--SeismicAttributeType:Amplitude:",
+    "SeismicFilteringTypeID": "partition-id:reference-data--SeismicFilteringType:Bandpass:",
+    "SeismicProcessingStageTypeID": "partition-id:reference-data--SeismicProcessingStageType:Migration:",
+    "SampleInterval": 1,
+    "SampleCount": 3001,
+    "StartTime": 0,
+    "EndTime": 3,
+    "TraceCount": 984,
+    "TraceLength": 3000.0,
+    "TraceDomainUOM": "partition-id:reference-data--UnitOfMeasure:ms:",
+    "FirstShotPoint": 953.5,
+    "LastShotPoint": 1445,
+    "FirstCMP": 2100,
+    "LastCMP": 3083,
+    "ShiftApplied": 4,
+    "Precision": {
+      "WordFormat": "partition-id:reference-data--WordFormatType:IBMFLOAT:",
+      "WordWidth": 4
+    },
+    "CoveragePercent": 4800,
+    "SeismicWaveTypeID": "partition-id:reference-data--SeismicWaveType:P:",
+    "SortOrderID": "partition-id:reference-data--SeismicTraceSortOrder:CMP.AbsoluteOffset:",
+    "ProcessingParameters": [
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:CMPInterval:",
+        "ProcessingParameterValue": "1"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:Fold:",
+        "ProcessingParameterValue": "48"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:GroupInterval:",
+        "ProcessingParameterValue": "12.5m"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:NumCMP:",
+        "ProcessingParameterValue": "1034"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:SamplingInterval:",
+        "ProcessingParameterValue": "1ms"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:StaticBulkTraceCorrection:",
+        "ProcessingParameterValue": "4ms"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:MinOffset:",
+        "ProcessingParameterValue": "35m"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:DatumTime:",
+        "ProcessingParameterValue": "0ms"
+      },
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:MaxTime:",
+        "ProcessingParameterValue": "3000ms"
+      }
+    ],
+    "SpatialArea": {
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"23031024\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23031\"},\"name\":\"ED_1950_UTM_Zone_31N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_UTM_Zone_31N\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",3.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23031]]\"},\"name\":\"ED50 * EPSG-Nor S62 2001 / UTM zone 31N [23031,1613]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1613\"},\"name\":\"ED_1950_To_WGS_1984_24\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_24\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-90.365],PARAMETER[\\\"Y_Axis_Translation\\\",-101.13],PARAMETER[\\\"Z_Axis_Translation\\\",-123.384],PARAMETER[\\\"X_Axis_Rotation\\\",0.333],PARAMETER[\\\"Y_Axis_Rotation\\\",0.077],PARAMETER[\\\"Z_Axis_Rotation\\\",0.894],PARAMETER[\\\"Scale_Difference\\\",1.994],OPERATIONACCURACY[1.0],AUTHORITY[\\\"EPSG\\\",1613]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsLineString",
+              "coordinates": [
+                [
+                  432054.44,
+                  6478112.12
+                ],
+                [
+                  433590.13,
+                  6478101.05
+                ],
+                [
+                  435127.32,
+                  6478074.76
+                ],
+                [
+                  436663.63,
+                  6478053.3
+                ],
+                [
+                  438192.52,
+                  6478032.15
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  58.436496389711294,
+                  1.8347200008844813
+                ],
+                [
+                  58.43663328945357,
+                  1.8610192189535797
+                ],
+                [
+                  58.43662834725304,
+                  1.887348701357437
+                ],
+                [
+                  58.436661242707956,
+                  1.9136618317010137
+                ],
+                [
+                  58.43669047131003,
+                  1.9398479275540108
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "Conversion from ED_1950_UTM_Zone_31N to GCS_WGS_1984"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:LineString:"
+    },
+    "TextualFileHeader": [
+      "C 1 CLIENT STATOIL      COMPANY FUGRO-SURVEY LTD.                               C 2 LINE  ST0299-05005 AREA NOCS 15/9                                           C 3 REEL NO           DAY-START OF REEL         YEAR    OBSERVER                C 4 INSTRUMENT MFG            MODEL TTS 2       SERIAL NO -                     C 5 DATA TRACES/RECORD 96     AUXILIARY TRACES/RECORD      CDP FOLD 48          C 6 SAMPLE INTERVAL 1MS    SAMPLES/TRACE 3000  BITS/IN  BYTES/SAMPLE            C 7 RECORDING FORMAT SEG-D  FORMAT THIS REEL SEG-Y  MEASUREMENT SYSTEM TELEDYNE C 8 SAMPLE CODE 32 BIT FLOATING PT     FIXED PT     FIXED PT-GAIN   CORRELATED  C 9 GAIN  TYPE  FIXED    BINARY      FLOATING POINT     OTHER                   C10 FILTERS: ALIAS  HZ  NOTCH     HZ  BAND  HZ  SLOPE  53/18 DB/OC              C11 SOURCE: SLEEVE GUN       NUMBER/POINT        POINT INTERVAL                 C12 PATTERN:                           LENGTH        WIDTH                      C13 SWEEP: START     HZ  END     HZ  LENGTH      MS  CHANNEL NO     TYPE        C14 TAPER: START LENGTH       MS  END LENGTH       MS  TYPE                     C15 SPREAD: OFFSET 35 M     MAX DISTANCE  1235 M    GROUP INTERVAL 12.5 M       C16 GEOPHONES: 16 PER GROUP     SPACING  12.5 M    FREQUENCY  MFG  MODEL        C17     PATTERN:                           LENGTH        WIDTH                  C18 TRACES SORTED BY: RECORD     CDP     OTHER                                  C19 AMPLITUDE RECOVERY: NONE      SPHERICAL DIV       AGC    OTHER              C20 MAP PROJECTION  UTM 001      ZONE ID 31N    COORDINATE UNITS METERS         C21 PROCESSING CONTRACTOR FUGRO  OFFICE OSLO    DATE AUGUST 2002                C22 PROCESSING HISTORY FINAL SCALED MIGRATED STACK                              C23 1)REFORMAT, 96 CHANNELS, 1 MS SAMPLING RATE, 2) TRACE EDIT                  C24 3)SWELL NOISE SUPPRESSION,                                                  C25 4)SPHERICAL DIVERGENCE COMPENSATION                                         C26 5)PARABOLIC RADON DEMULTIPLE,                                               C27 6)VELOCITY ANALYSIS EVERY 500M, 7)NMO,MUTE,STACK, & SHIFT (+4MS),           C28 8)FXDECON, 9)FX MIGR.(100% OF STACKING VEL.), 10)TV FILTER,                 C29 11)SCALING NONE, 14)NAV IN HEADERS/OUTPUT IN SEG-Y FORMAT.                  C30 AQUISITION: M/V GEO SEARCHER                                                C31 RECORDING: 8058 (SEGD) 96 CH, 1 MS, 2000 MS                                 C32 FIELD FILTERS: LOW-CUT 8 HZ, HIGH-CUT 411 HZ  140 CU INCH SOURCE            C33 VERSION ON THIS TAPE: FINAL MIGRATED STACK.                                 C34 SHOTPOINT / CDP RELATION,  SP: 1001-1445 / CDP: 2100-3083                   C35 SHOTPOINT / CDP RELATION,  CDP = 2SP + 193                                  C36 SURVEY NAME ST0299 VOLVE SITE SURVEY, LINE NAME ST0299-05005                C37 GEODETIC DATUM ED50(NOR) PROJECTION UTM ZONE 31N CENTRAL MERID.3 0 0.000E   C38 FALSE EASTING: 500000.00E  SPHEROID INT. ORIGO GRID ROTATION IN SECONDS     C39 LOC. OF FIRST FULL FOLD CDP FOR FIRST SHOT 1001 IS CDP NO.2195              C40 END EBCDIC                                                                  "
+    ]
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "id": "partition-id:work-product-component--WellboreMarkerSet:d5303b79-7904-5bfe-9c44-9a3ff41b6d6c",
+  "kind": "osdu:wks:work-product-component--WellboreMarkerSet:1.5.1",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "ft[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1200.0,\"c\":3937.0,\"d\":0.0},\"symbol\":\"ft[US]\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+      "propertyNames": [
+        "Markers[].MarkerMeasuredDepth",
+        "Markers[].MarkerSubSeaVerticalDepth",
+        "Markers[].PositiveVerticalDelta",
+        "Markers[].NegativeVerticalDelta",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dega",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":3.141592653589793,\"c\":180.0,\"d\":0.0},\"symbol\":\"dega\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:dega:",
+      "propertyNames": [
+        "Markers[].SurfaceDipAngle",
+        "Markers[].SurfaceDipAzimuth"
+      ]
+    }
+  ],
+  "data": {
+    "Datasets": [
+      "partition_id:dataset--File.Generic.CSV:4ed93e20-7f2e-4fb7-b265-1bf1e3bd5b36:"
+    ],
+    "IsExtendedLoad": false,
+    "IsDiscoverable": true,
+    "Name": "USA Stratigraphy",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:Confirmed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32012_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32012079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32012\"},\"name\":\"NAD_1927_StatePlane_New_Mexico_East_FIPS_3001\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_New_Mexico_East_FIPS_3001\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-104.333333333333],PARAMETER[\\\"Scale_Factor\\\",0.999909090909091],PARAMETER[\\\"Latitude_Of_Origin\\\",31.0],UNIT[\\\"Foot_US\\\",0.304800609601219],AUTHORITY[\\\"EPSG\\\",32012]]\"},\"name\":\"NAD27 * OGP-Usa Conus / New Mexico CS27 East zone [32012,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"abcd\":{\"a\":0.0,\"b\":1200.0,\"c\":3937.0,\"d\":0.0},\"symbol\":\"ft[US]\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsMultiPoint",
+              "coordinates": [
+                [
+                  493056.7,
+                  493055.811,
+                  -9800
+                ],
+                [
+                  766937.22,
+                  766939.557,
+                  -10000
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          493055.811,
+          766937.22,
+          -10000.0,
+          493056.7,
+          766939.557,
+          -9800.0
+        ]
+      },
+      "Wgs84Coordinates": {
+        "features": [
+          {
+            "geometry": {
+              "coordinates": [
+                [
+                  -104.35652742826903,
+                  33.10846882734614,
+                  -2987.045974091948
+                ],
+                [
+                  -104.35653033329845,
+                  33.10847525015146,
+                  -3048.006096012192
+                ]
+              ],
+              "type": "MultiPoint",
+              "bbox": [
+                -104.35653033329845,
+                33.10846882734614,
+                -3048.006096012192,
+                -104.35652742826903,
+                33.10847525015146,
+                -2987.045974091948
+              ]
+            },
+            "properties": {},
+            "type": "Feature",
+            "bbox": [
+              -104.35653033329845,
+              33.10846882734614,
+              -3048.006096012192,
+              -104.35652742826903,
+              33.10847525015146,
+              -2987.045974091948
+            ]
+          }
+        ],
+        "properties": {},
+        "type": "FeatureCollection",
+        "bbox": [
+          -104.35653033329845,
+          33.10846882734614,
+          -3048.006096012192,
+          -104.35652742826903,
+          33.10847525015146,
+          -2987.045974091948
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from NAD_1927_StatePlane_New_Mexico_East_FIPS_3001 to GCS_North_American_1927; 2 points converted",
+        "transformation GCS_North_American_1927 to GCS_WGS_1984 using NAD_1927_To_WGS_1984_79_CONUS; 2 points successfully transformed",
+        "Z-axis unit conversion from ft[US] to m"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Point:"
+    },
+    "GeoContexts": [
+      {
+        "BasinID": "partition-id:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:ArcWrenchOceanContinent:"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "WellboreID": "partition-id:master-data--Wellbore:300251234500:",
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 200.0,
+      "VerticalMeasurementTypeID": "partition_id:reference-data--VerticalMeasurementType:KellyBushing:",
+      "VerticalMeasurementPathID": "partition_id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+      "VerticalCRSID": "partition_id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+      "VerticalReferenceID": "KB Feb 2020 New Drill"
+    },
+    "AvailableMarkerProperties": [
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:WellboreID:",
+        "Name": "WellboreID"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerNameSet:",
+        "Name": "MarkerNameSet"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerNameSetType:",
+        "Name": "MarkerNameSetType"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerAbbreviation:",
+        "Name": "MarkerAbbreviation"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerShortName:",
+        "Name": "MarkerShortName"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerName:",
+        "Name": "MarkerName"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:FeatureType:",
+        "Name": "FeatureType"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:FeatureName:",
+        "Name": "FeatureName"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerStratUnitRemark:",
+        "Name": "MarkerStratUnitRemark"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:GeologicalAge:",
+        "Name": "GeologicalAge"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerTypeID:",
+        "Name": "MarkerTypeID"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:OrdinalSequenceNumber:",
+        "Name": "OrdinalSequenceNumber"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerActiveIndicator:",
+        "Name": "MarkerActiveIndicator"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:CertifiedIndicator:",
+        "Name": "CertifiedIndicator"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAngle:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "SurfaceDipAngle"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAngleUOM:",
+        "Name": "SurfaceDipAngleUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAngleOUOM:",
+        "Name": "SurfaceDipAngleOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAzimuth:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "SurfaceDipAzimuth"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAzimuthUOM:",
+        "Name": "SurfaceDipAzimuthUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:SurfaceDipAzimuthOUOM:",
+        "Name": "SurfaceDipAzimuthOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:AzimuthNorthType:",
+        "Name": "AzimuthNorthType"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:AzimuthHorizontalCRS:",
+        "Name": "AzimuthHorizontalCRS"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:DominantLithology:",
+        "Name": "DominantLithology"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerInterpreter:",
+        "Name": "MarkerInterpreter"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:OverturnedIndicator:",
+        "Name": "OverturnedIndicator"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerDate:",
+        "Name": "MarkerDate"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerMeasuredDepth:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "MarkerMeasuredDepth"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerMeasuredDepthUOM:",
+        "Name": "MarkerMeasuredDepthUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerMeasuredDepthOUOM:",
+        "Name": "MarkerMeasuredDepthOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerTVD:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "MarkerTVD"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerTVDUOM:",
+        "Name": "MarkerTVDUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerTVDOUOM:",
+        "Name": "MarkerTVDOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:Quality:",
+        "Name": "Quality"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerPickRemark:",
+        "Name": "MarkerPickRemark"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:RepeatMarkerIndicator:",
+        "Name": "RepeatMarkerIndicator"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:Source:",
+        "Name": "Source"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerInterpretationMethod:",
+        "Name": "MarkerInterpretationMethod"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkersObservationNumber:",
+        "Name": "MarkersObservationNumber"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:ExistenceKind:",
+        "Name": "ExistenceKind"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:PositiveVerticalDelta:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "PositiveVerticalDelta"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:PositiveVerticalDeltaUOM:",
+        "Name": "PositiveVerticalDeltaUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:PositiveVerticalDeltaOUOM:",
+        "Name": "PositiveVerticalDeltaOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:NegativeVerticalDelta:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "NegativeVerticalDelta"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:NegativeVerticalDeltaUOM:",
+        "Name": "NegativeVerticalDeltaUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:NegativeVerticalDeltaOUOM:",
+        "Name": "NegativeVerticalDeltaOUOM"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:VerticalMeasurementPath:",
+        "Name": "VerticalMeasurementPath"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:VerticalMeasurementType:",
+        "Name": "VerticalMeasurementType"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:VerticalCRS:",
+        "Name": "VerticalCRS"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:WellboreVerticalMeasurementID:",
+        "Name": "WellboreVerticalMeasurementID"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerX:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "MarkerX"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerY:",
+        "MarkerPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:",
+        "Name": "MarkerY"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:MarkerXYCRS:",
+        "Name": "MarkerXYCRS"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:WPCName:",
+        "Name": "WPCName"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:WPCDescription:",
+        "Name": "WPCDescription"
+      },
+      {
+        "MarkerPropertyTypeID": "partition-id:reference-data--MarkerPropertyType:WPCOriginalCreationDateTime:",
+        "Name": "WPCOriginalCreationDateTime"
+      }
+    ],
+    "Markers": [
+      {
+        "MarkerID": "4bbfe8fd-fcab-53ec-8e0a-0ae68bf64949",
+        "MarkerName": "TopBoneSpring",
+        "MarkerMeasuredDepth": 10220.0,
+        "MarkerSubSeaVerticalDepth": 9800.0,
+        "MarkerDate": "2020-Feb-2",
+        "MarkerObservationNumber": 1,
+        "MarkerInterpreter": "Jane_Smith",
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Bone Spring",
+        "PositiveVerticalDelta": 5.2,
+        "NegativeVerticalDelta": 4,
+        "SurfaceDipAngle": 3.0,
+        "SurfaceDipAzimuth": 170.0,
+        "GeologicalAge": "Leonardian"
+      },
+      {
+        "MarkerID": "ae684765-65ba-509e-ac57-65ab84b5315e",
+        "MarkerName": "TopWolfcamp",
+        "MarkerMeasuredDepth": 10430.0,
+        "MarkerSubSeaVerticalDepth": 10000,
+        "MarkerDate": "2020-Feb-2",
+        "MarkerObservationNumber": 2,
+        "MarkerInterpreter": "Jane_Smith",
+        "MarkerTypeID": "partition-id:reference-data--MarkerType:Lithostratigraphy:",
+        "FeatureTypeID": "partition-id:reference-data--FeatureType:Top:",
+        "FeatureName": "Wolfcamp",
+        "PositiveVerticalDelta": 7,
+        "NegativeVerticalDelta": 10.1,
+        "SurfaceDipAngle": 0.0,
+        "GeologicalAge": "Wolfcampian"
+      }
+    ],
+    "ExtensionProperties": {
+      "some": []
+    }
+  }
+}

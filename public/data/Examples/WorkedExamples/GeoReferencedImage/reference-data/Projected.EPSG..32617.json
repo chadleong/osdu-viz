@@ -1,0 +1,148 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::32617",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4326
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4326:",
+      "Name": "WGS 84"
+    },
+    "Code": "32617",
+    "CodeAsNumber": 32617,
+    "CodeSpace": "EPSG",
+    "CoordinateReferenceSystemType": "ProjectedCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4400
+      },
+      "Name": "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: m.",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:m:"
+    },
+    "Datum": {},
+    "ID": "Projected:EPSG::32617",
+    "Kind": "projected",
+    "Name": "WGS 84 / UTM zone 17N",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32617\"},\"name\":\"WGS_1984_UTM_Zone_17N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"WGS_1984_UTM_Zone_17N\\\",GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-81.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",32617]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 7528
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 2032
+        },
+        "BoundingBoxEastBoundLongitude": -78.0,
+        "BoundingBoxNorthBoundLatitude": 84.0,
+        "BoundingBoxSouthBoundLatitude": 0.0,
+        "BoundingBoxWestBoundLongitude": -84.0,
+        "Description": "Between 84\u00b0W and 78\u00b0W, northern hemisphere between equator and 84\u00b0N, onshore and offshore. Bahamas. Ecuador - north of equator. Canada - Nunavut; Ontario; Quebec. Cayman Islands. Colombia. Costa Rica. Cuba. Jamaica. Nicaragua. Panama. United States (USA).",
+        "Name": "World - N hemisphere - 84\u00b0W to 78\u00b0W - by country"
+      },
+      "Name": "World - N hemisphere - 84\u00b0W to 78\u00b0W - by country",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1142
+        },
+        "Name": "Engineering survey, topographic mapping."
+      }
+    },
+    "Projection": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 16017
+      },
+      "Name": "UTM zone 17N"
+    },
+    "RevisionDate": "2020-03-14T00:00:00+00:00",
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 7528
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 2032
+          },
+          "BoundingBoxEastBoundLongitude": -78.0,
+          "BoundingBoxNorthBoundLatitude": 84.0,
+          "BoundingBoxSouthBoundLatitude": 0.0,
+          "BoundingBoxWestBoundLongitude": -84.0,
+          "Description": "Between 84\u00b0W and 78\u00b0W, northern hemisphere between equator and 84\u00b0N, onshore and offshore. Bahamas. Ecuador - north of equator. Canada - Nunavut; Ontario; Quebec. Cayman Islands. Colombia. Costa Rica. Cuba. Jamaica. Nicaragua. Panama. United States (USA).",
+          "Name": "World - N hemisphere - 84\u00b0W to 78\u00b0W - by country"
+        },
+        "Name": "World - N hemisphere - 84\u00b0W to 78\u00b0W - by country",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1142
+          },
+          "Name": "Engineering survey, topographic mapping."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -84.0,
+                  0.0
+                ],
+                [
+                  -78.0,
+                  0.0
+                ],
+                [
+                  -78.0,
+                  84.0
+                ],
+                [
+                  -84.0,
+                  84.0
+                ],
+                [
+                  -84.0,
+                  0.0
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "PROJCRS[\"WGS 84 / UTM zone 17N\",BASEGEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\",ID[\"EPSG\",1166]],MEMBER[\"World Geodetic System 1984 (G730)\",ID[\"EPSG\",1152]],MEMBER[\"World Geodetic System 1984 (G873)\",ID[\"EPSG\",1153]],MEMBER[\"World Geodetic System 1984 (G1150)\",ID[\"EPSG\",1154]],MEMBER[\"World Geodetic System 1984 (G1674)\",ID[\"EPSG\",1155]],MEMBER[\"World Geodetic System 1984 (G1762)\",ID[\"EPSG\",1156]],MEMBER[\"World Geodetic System 1984 (G2139)\",ID[\"EPSG\",1309]],MEMBER[\"World Geodetic System 1984 (G2296)\",ID[\"EPSG\",1383]],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7030]],ENSEMBLEACCURACY[2],ID[\"EPSG\",6326]],ID[\"EPSG\",4326]],CONVERSION[\"UTM zone 17N\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",-81,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.9996,SCALEUNIT[\"unity\",1,ID[\"EPSG\",9201]],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8807]],ID[\"EPSG\",16017]],CS[Cartesian,2,ID[\"EPSG\",4400]],AXIS[\"Easting (E)\",east],AXIS[\"Northing (N)\",north],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",32617]]"
+  }
+}

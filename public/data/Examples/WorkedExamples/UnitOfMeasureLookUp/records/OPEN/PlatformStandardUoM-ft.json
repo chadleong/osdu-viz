@@ -1,0 +1,68 @@
+{
+  "id": "partition-id:reference-data--UnitOfMeasure:ft",
+  "kind": "osdu:wks:reference-data--UnitOfMeasure:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "foot",
+    "NameAlias": [
+      {
+        "AliasName": "9002",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Energistics.EPSG:"
+      },
+      {
+        "AliasName": "ft",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Energistics.OpenSpirit:"
+      },
+      {
+        "AliasName": "ft",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Energistics.POSC:"
+      },
+      {
+        "AliasName": "ft",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Energistics.RP66_V1:"
+      },
+      {
+        "AliasName": "ft",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Energistics.RP66_V2:"
+      }
+    ],
+    "ID": "ft",
+    "InactiveIndicator": false,
+    "Description": "International foot",
+    "Code": "ft",
+    "AttributionAuthority": "Energistics",
+    "AttributionPublication": "Energistics Unit of Measure Dictionary V1.0",
+    "AttributionRevision": "1.0",
+    "CoefficientA": 0,
+    "CoefficientB": 0.3048,
+    "CoefficientC": 1,
+    "CoefficientD": 0,
+    "IsBaseUnit": false,
+    "PersistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+    "UnitDimensionCode": "L",
+    "UnitDimensionName": "length",
+    "UnitQuantityID": "partition-id:reference-data--UnitQuantity:L:",
+    "Source": "Workbook Published/UnitOfMeasure.1.0.0.xlsx; commit SHA 4b3c8e86.",
+    "CommitDate": "2021-10-30T16:40:06+02:00"
+  }
+}

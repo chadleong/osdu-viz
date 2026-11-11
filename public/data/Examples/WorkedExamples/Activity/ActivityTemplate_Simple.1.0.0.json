@@ -1,0 +1,75 @@
+{
+  "id": "namespace:master-data--ActivityTemplate:SimpleExample-44d649a3-8d8b-532c-8b77-b10f589a876b",
+  "kind": "osdu:wks:master-data--ActivityTemplate:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "Simple Reservoir Volume Calculation.",
+    "Description": "A simple work-step describing the inputs and output of a volume calculation",
+    "Source": "Operator defined example activity template",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "VersionCreationReason": "Example revision",
+    "Parameters": [
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "Horizon Above Contact",
+        "DataObjectContentType": [
+          "work-product-component--SeismicHorizon"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "Title": "Contact Depth",
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "PropertyType": {
+          "Name": "depth",
+          "PropertyTypeID": "namespace:reference-data--PropertyType:4364b378-899a-403a-8401-b06abd4fc0cf:"
+        }
+      },
+      {
+        "AllowedParameterKind": "namespace:reference-data--ParameterKind:Double:",
+        "IsInput": false,
+        "IsOutput": true,
+        "Title": "Volume above Contact",
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "PropertyType": {
+          "Name": "Volume",
+          "PropertyTypeID": "namespace:reference-data--PropertyType:2dc6dc83-e1f9-48f6-87f2-57bcdd42738b:"
+        }
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "namespace:work-product-component--WellLog:e332b40a-1a7d-4f5f-9256-be275501928c",
+  "kind": "osdu:wks:work-product-component--WellLog:1.5.0",
+  "version": 1562066009929332,
+  "acl": {
+    "viewers": [
+      "data.mastertotal.viewers@osduprod-opendes.dataservices.energy"
+    ],
+    "owners": [
+      "data.mastertotal.owners@osduprod-opendes.dataservices.energy"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-mastertotal-legal-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "FR"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopMeasuredDepth",
+        "BottomMeasuredDepth",
+        "VerticalMeasurement.VerticalMeasurement",
+        "Curves[0].TopDepth",
+        "Curves[0].BaseDepth"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "Equinor",
+    "Datasets": [
+      "namespace:dataset--File.Generic:4bd8cedb-9e5e-4dfb-b877-b79dd2bc8133:"
+    ],
+    "Name": "FM_PRESS_COMPUTED_MWD_1.LAS",
+    "Description": "Processed WellLogs from Volve 15_9-F-1 Well Pressure Tests ",
+    "CreationDateTime": "2013-08-19:12:00.55Z",
+    "WellboreID": "namespace:master-data--Wellbore:WB15-9-F-1:",
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 866.2,
+      "VerticalMeasurementPathID": "osduprod-opendes:reference-data--VerticalMeasurementPath:ELEV:",
+      "VerticalMeasurementTypeID": "osduprod-opendes:reference-data--VerticalMeasurementType:RT:",
+      "VerticalMeasurementDescription": "RT",
+      "VerticalCRSID": "osduprod-opendes:reference-data--CoordinateReferenceSystem:VerticalCRS::EPSG::3855:",
+      "VerticalMeasurementUnitOfMeasureID": "osduprod-opendes:reference-data--UnitOfMeasure:m:"
+    },
+    "WellLogTypeID": "namespace:reference-data--LogType:Interpreted:",
+    "TopMeasuredDepth": 3332.4,
+    "BottomMeasuredDepth": 3462.6,
+    "LogActivity": "Pressure Test Processing",
+    "LoggingService": "MWD",
+    "LoggingDirection": "downward",
+    "PassNumber": 1,
+    "Curves": [
+      {
+        "CurveID": "PRES_FORM",
+        "NullValue": true,
+        "Interpolate": false,
+        "TopDepth": 3332.4,
+        "BaseDepth": 3462.6,
+        "DepthUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnit": "namespace:reference-data--UnitOfMeasure:bar:",
+        "Mnemonic": "PRES_FORM",
+        "LogCurveTypeID": "namespace:reference-data--LogCurveType:FPres:",
+        "LogCurveMainFamilyID": "namespace:reference-data--LogCurveMainFamily:Pressure:",
+        "LogCurveFamilyID": "namespace:reference-data--LogCurveFamily:Formation%20Pressure:",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "Processed Formation Pressure"
+      },
+      {
+        "CurveID": "PRES_MOB",
+        "NullValue": true,
+        "Interpolate": false,
+        "TopDepth": 3332.4,
+        "BaseDepth": 3462.6,
+        "DepthUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnit": "namespace:reference-data--UnitOfMeasure:mD%2fcP:",
+        "Mnemonic": "PRES_MOB",
+        "LogCurveTypeID": "namespace:reference-data--LogCurveType:FPres:",
+        "LogCurveMainFamilyID": "namespace:reference-data--LogCurveMainFamily:Pressure:",
+        "LogCurveFamilyID": "namespace:reference-data--LogCurveFamily:Mobility:",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "Processed Formation Pressure Mobility"
+      },
+      {
+        "CurveID": "PRESS_QUAL",
+        "NullValue": true,
+        "Interpolate": false,
+        "TopDepth": 3332.4,
+        "BaseDepth": 3462.6,
+        "DepthUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnit": "namespace:reference-data--UnitOfMeasure:euclid:",
+        "Mnemonic": "PRESS_QUAL",
+        "LogCurveTypeID": "namespace:reference-data--LogCurveType:BUQC:",
+        "LogCurveMainFamilyID": "namespace:reference-data--LogCurveMainFamily:Pressure:",
+        "LogCurveFamilyID": "namespace:reference-data--LogCurveFamily:Quality%20Indicator%20%2d%20Pressure:",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "Processed Formation Pressure Quality"
+      },
+      {
+        "CurveID": "PRESS_TST_NO",
+        "NullValue": true,
+        "Interpolate": false,
+        "TopDepth": 3332.4,
+        "BaseDepth": 3462.6,
+        "DepthUnit": "namespace:reference-data--UnitOfMeasure:m:",
+        "CurveUnit": "namespace:reference-data--UnitOfMeasure:euclid:",
+        "Mnemonic": "PRESS_TST_NO",
+        "LogCurveTypeID": "namespace:reference-data--LogCurveType:BakerHughesInteq:Best%20Test%20%23:",
+        "LogCurveMainFamilyID": "namespace:reference-data--LogCurveMainFamily:Pressure:",
+        "LogCurveFamilyID": "namespace:reference-data--LogCurveFamily:Test%20Number:",
+        "NumberOfColumns": 1,
+        "CurveSampleTypeID": "namespace:reference-data--CurveSampleType:float:",
+        "CurveDescription": "Processed Formation Pressure Source Test Number"
+      }
+    ],
+    "ReferenceCurveID": "Depth",
+    "SamplingStart": 3332.4,
+    "SamplingStop": 3462.6,
+    "SamplingDomainTypeID": "namespace:reference-data--WellLogSamplingDomainType:Depth:",
+    "IsRegular": false,
+    "ExtensionProperties": {}
+  }
+}

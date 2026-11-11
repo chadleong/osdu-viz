@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam class {
+    BackgroundColor<<SchemaUpgradeChain>> LightSalmon
+    BackgroundColor<<SchemaUpgradeSpecification>> Gold
+    BackgroundColor<<kind>> LightSkyBlue
+}
+
+class "Chain WellboreMarkerSet,1,0,0" <<SchemaUpgradeChain>>
+class "Chain WellboreMarkerSet,1,1,0" <<SchemaUpgradeChain>>
+class "Chain WellboreMarkerSet,1,2,0" <<SchemaUpgradeChain>>
+class "Chain WellboreMarkerSet,1,2,1" <<SchemaUpgradeChain>>
+
+class "Kind WellboreMarkerSet,1,0,0" <<kind>>
+class "Kind WellboreMarkerSet,1,1,0" <<kind>>
+class "Kind WellboreMarkerSet,1,2,0" <<kind>>
+class "Kind WellboreMarkerSet,1,2,1" <<kind>>
+
+class "Spec WellboreMarkerSet,1,1,0" <<SchemaUpgradeSpecification>>
+class "Spec WellboreMarkerSet,1,2,0" <<SchemaUpgradeSpecification>>
+class "Spec WellboreMarkerSet,1,2,1" <<SchemaUpgradeSpecification>>
+
+"Chain WellboreMarkerSet,1,0,0" .down. "Kind WellboreMarkerSet,1,0,0"
+"Chain WellboreMarkerSet,1,1,0" .down. "Kind WellboreMarkerSet,1,1,0"
+"Chain WellboreMarkerSet,1,2,0" .down. "Kind WellboreMarkerSet,1,2,0"
+"Chain WellboreMarkerSet,1,2,1" .down. "Kind WellboreMarkerSet,1,2,1"
+
+"Kind WellboreMarkerSet,1,0,0" .right. "Kind WellboreMarkerSet,1,1,0"
+"Kind WellboreMarkerSet,1,1,0" .right. "Kind WellboreMarkerSet,1,2,0"
+"Kind WellboreMarkerSet,1,2,0" .right. "Kind WellboreMarkerSet,1,2,1"
+
+"Kind WellboreMarkerSet,1,0,0" -down-> "Spec WellboreMarkerSet,1,1,0"
+"Spec WellboreMarkerSet,1,1,0" -up-> "Kind WellboreMarkerSet,1,1,0"
+"Kind WellboreMarkerSet,1,1,0" -down-> "Spec WellboreMarkerSet,1,2,0"
+"Spec WellboreMarkerSet,1,2,0" -up-> "Kind WellboreMarkerSet,1,2,0"
+"Kind WellboreMarkerSet,1,2,0" -down-> "Spec WellboreMarkerSet,1,2,1"
+"Spec WellboreMarkerSet,1,2,1" -up-> "Kind WellboreMarkerSet,1,2,1"
+
+
+@enduml

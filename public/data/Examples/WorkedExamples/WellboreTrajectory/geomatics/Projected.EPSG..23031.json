@@ -1,0 +1,149 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::23031",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4230
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4230:",
+      "Name": "ED50"
+    },
+    "Code": "23031",
+    "CodeAsNumber": 23031,
+    "CodeSpace": "EPSG",
+    "CoordinateReferenceSystemType": "ProjectedCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4400
+      },
+      "Name": "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: m.",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:m:"
+    },
+    "Datum": {},
+    "ID": "Projected:EPSG::23031",
+    "Kind": "projected",
+    "Name": "ED50 / UTM zone 31N",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23031\"},\"name\":\"ED_1950_UTM_Zone_31N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_UTM_Zone_31N\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",3.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23031]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6394
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1634
+        },
+        "BoundingBoxEastBoundLongitude": 6.01,
+        "BoundingBoxNorthBoundLatitude": 82.45,
+        "BoundingBoxSouthBoundLatitude": 38.56,
+        "BoundingBoxWestBoundLongitude": 0.0,
+        "Description": "Europe - between 0\u00b0E and 6\u00b0E - Andorra; Denmark (North Sea); Germany offshore; Netherlands offshore; Norway including Svalbard - onshore and offshore; Spain - onshore (mainland and Balearic Islands); United Kingdom (UKCS) offshore.",
+        "Name": "Europe - 0\u00b0E to 6\u00b0E and ED50 by country"
+      },
+      "Name": "Europe - 0\u00b0E to 6\u00b0E and ED50 by country",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1142
+        },
+        "Name": "Engineering survey, topographic mapping."
+      }
+    },
+    "Projection": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 16031
+      },
+      "Name": "UTM zone 31N"
+    },
+    "RevisionDate": "2005-05-27T00:00:00+00:00",
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 6394
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1634
+          },
+          "BoundingBoxEastBoundLongitude": 6.01,
+          "BoundingBoxNorthBoundLatitude": 82.45,
+          "BoundingBoxSouthBoundLatitude": 38.56,
+          "BoundingBoxWestBoundLongitude": 0.0,
+          "Description": "Europe - between 0\u00b0E and 6\u00b0E - Andorra; Denmark (North Sea); Germany offshore; Netherlands offshore; Norway including Svalbard - onshore and offshore; Spain - onshore (mainland and Balearic Islands); United Kingdom (UKCS) offshore.",
+          "Name": "Europe - 0\u00b0E to 6\u00b0E and ED50 by country"
+        },
+        "Name": "Europe - 0\u00b0E to 6\u00b0E and ED50 by country",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1142
+          },
+          "Name": "Engineering survey, topographic mapping."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  0.0,
+                  38.56
+                ],
+                [
+                  6.01,
+                  38.56
+                ],
+                [
+                  6.01,
+                  82.45
+                ],
+                [
+                  0.0,
+                  82.45
+                ],
+                [
+                  0.0,
+                  38.56
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "PROJCRS[\"ED50 / UTM zone 31N\",BASEGEOGCRS[\"ED50\",DATUM[\"European Datum 1950\",ELLIPSOID[\"International 1924\",6378388,297,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7022]],ID[\"EPSG\",6230]],ID[\"EPSG\",4230]],CONVERSION[\"UTM zone 31N\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",3,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.9996,SCALEUNIT[\"unity\",1,ID[\"EPSG\",9201]],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8807]],ID[\"EPSG\",16031]],CS[Cartesian,2,ID[\"EPSG\",4400]],AXIS[\"Easting (E)\",east],AXIS[\"Northing (N)\",north],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",23031]]"
+  }
+}

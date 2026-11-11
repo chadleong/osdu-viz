@@ -1,0 +1,52 @@
+{
+  "id": "partition-id:master-data--Organisation:UI",
+  "kind": "osdu:wks:master-data--Organisation:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "NameAliases": [
+      {
+        "AliasName": "UI",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:Acronym:"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:AU:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:Region:"
+      }
+    ],
+    "OrganisationID": "1",
+    "OrganisationName": "Prelude-xxxx",
+    "InternalOrganisationIndicator": true,
+    "OrganisationTypeID": "partition-id:reference-data--OrganisationType:OrganisationUnit:",
+    "ExtensionProperties": {}
+  }
+}

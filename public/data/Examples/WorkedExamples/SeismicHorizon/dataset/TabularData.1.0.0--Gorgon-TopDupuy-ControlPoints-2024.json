@@ -1,0 +1,104 @@
+{
+  "id": "partition-id:dataset--File.TabularData:Gorgon-TopDupuy-ControlPoints-2024",
+  "kind": "osdu:wks:dataset--File.TabularData:1.0.0",
+  "version": 1709107200000000,
+  "acl": {
+    "owners": [
+      "data.manager@operator.com.au"
+    ],
+    "viewers": [
+      "data.manager@operator.com.au",
+      "geoscience.team@operator.com.au"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "partition-id-public-aus-dataset-8234567"
+    ],
+    "otherRelevantDataCountries": [
+      "AU"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "FileType": "CSV",
+    "DataType": "Seismic Control Points",
+    "Horizon": "Top Dupuy"
+  },
+  "createTime": "2024-02-28T09:15:00.000Z",
+  "createUser": "chris.hough@operator.com.au",
+  "modifyTime": "2024-02-28T16:30:00.000Z",
+  "modifyUser": "chris.hough@operator.com.au",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AUWest:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AUWest:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Seismic Interpretation Project - Gorgon 2024",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Name": "Top Dupuy Formation - Control Points CSV",
+    "Description": "CSV file containing sparse seed point coordinates (X, Y, Z) for Top Dupuy Formation horizon. Exported from Petrel interpretation project. Columns: X (Easting in meters, GDA94 MGA Zone 50), Y (Northing in meters), Z (TVDSS in meters below MSL). Total 30 control points covering Gorgon field development area.",
+    "TotalSize": "875",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:text%2Fcsv:",
+    "SchemaFormatTypeID": "partition-id:reference-data--SchemaFormatType:CSV:",
+    "Endian": "LITTLE",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://partition-id-seismic-data/interpretation/gorgon-2024/horizons/TopDupuy_ControlPoints.csv",
+        "PreloadFilePath": "s3://partition-id-staging/seismic-interpretation/gorgon/TopDupuy_seeds_2024-02-28.csv",
+        "PreloadFileCreateUser": "chris.hough@operator.com.au",
+        "PreloadFileCreateDate": "2024-02-28T09:15:00.000Z",
+        "PreloadFileModifyUser": "chris.hough@operator.com.au",
+        "PreloadFileModifyDate": "2024-02-28T16:30:00.000Z",
+        "Name": "TopDupuy_ControlPoints.csv",
+        "FileSize": "875",
+        "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:text%2Fcsv:",
+        "Checksum": "a7f8c9d4e3b2a1f6d5c4b3a2e1f0d9c8",
+        "ChecksumAlgorithm": "SHA-256"
+      }
+    },
+    "Checksum": "a7f8c9d4e3b2a1f6d5c4b3a2e1f0d9c8",
+    "ColumnBasedTableTypeID": "partition-id:reference-data--ColumnBasedTableType:SpatialControlPoints:",
+    "KeyColumns": [],
+    "Columns": [
+      {
+        "ValueType": "number",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "PropertyType": {
+          "PropertyTypeID": "partition-id:reference-data--PropertyType:620cec71-5ce3-4ea5-9120-833756b427d7:",
+          "Name": "x coordinate"
+        },
+        "ColumnName": "X"
+      },
+      {
+        "ValueType": "number",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "PropertyType": {
+          "PropertyTypeID": "partition-id:reference-data--PropertyType:cfcfdb04-02c1-4262-b66b-459b0aab3e8e:",
+          "Name": "y coordinate"
+        },
+        "ColumnName": "Y"
+      },
+      {
+        "ValueType": "number",
+        "UnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "PropertyType": {
+          "PropertyTypeID": "partition-id:reference-data--PropertyType:8f4fbd79-87c9-4232-8934-f663e2fbf538:",
+          "Name": "subsea vertical depth"
+        },
+        "ColumnName": "Z"
+      }
+    ],
+    "ColumnNamesInFirstRow": true,
+    "ColumnSeparator": ",",
+    "NumberOfRowsToSkip": 0,
+    "CommentIndicator": "#",
+    "ExtensionProperties": {}
+  }
+}

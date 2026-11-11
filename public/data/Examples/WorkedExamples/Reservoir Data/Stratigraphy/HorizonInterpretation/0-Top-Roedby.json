@@ -1,0 +1,51 @@
+{
+  "id": "partition-id:work-product-component--HorizonInterpretation:Top-Roedby-",
+  "kind": "osdu:wks:work-product-component--HorizonInterpretation:1.2.0",
+  "version": 1608119544929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "IsDiscoverable": true,
+    "Name": "Top R\u00f8dby",
+    "Description": "Top R\u00f8dby boundary surface interpretation.",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "GeoContexts": [
+      {
+        "FieldID": "partition-id:master-data--Field:Gudrun:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "OlderPossibleAge": 66.0,
+    "YoungerPossibleAge": 66.0,
+    "FeatureID": "partition-id:work-product-component--LocalBoundaryFeature:Top-Roedby-:",
+    "FeatureName": "Top R\u00f8dby",
+    "isConformableAbove": true,
+    "isConformableBelow": true,
+    "StratigraphicRoleTypeID": "partition-id:reference-data--StratigraphicRoleType:Lithostratigraphic:",
+    "SequenceStratigraphySurfaceTypeID": "partition-id:reference-data--SequenceStratigraphySurfaceType:MaximumFlooding:",
+    "ExtensionProperties": {}
+  }
+}

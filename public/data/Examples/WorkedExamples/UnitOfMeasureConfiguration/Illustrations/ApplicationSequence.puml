@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber 100
+actor User
+actor Application
+User -> Application: launches
+activate Application
+Application -> Storage: Request 'last app-context'
+activate Storage
+alt success
+  Storage --> Application: returns last 'app-context'
+  Application -> Storage: request <i>UnitOfMeasureConfiguration</i>\n by id
+  Storage --> Application: returns previously selected\n<i>UnitOfMeasureConfiguration</i>
+else no context found
+  autonumber 200
+  Storage --> Application: No context found
+  deactivate
+  Application -> Search: search for <i>UnitOfMeasureConfiguration</i>\nwith conditions, e.g. default configurations
+  activate Search
+  Search --> Application: returns zero or more\n<i>UnitOfMeasureConfiguration</i>
+  deactivate
+end
+Application --> User: show UI
+...
+autonumber 300
+User -> Application: change\ndisplay units
+Application --> User: update\npresentation
+User -> Application: set as new default
+...
+autonumber 400
+User -> Application: close
+Application -> Storage: update <i>UnitOfMeasureConfiguration</i>\nwith updated personalised\ndisplay unit
+activate Storage
+Application -> Storage: update 'last app-context'
+destroy Application
+deactivate
+deactivate
+@enduml

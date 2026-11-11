@@ -1,0 +1,32 @@
+{
+  "id": "namespace:master-data--WellPlanningWellbore:wp_wellbore_bfa6c73d-4b12-4980-be91-80ce7cdb3291",
+  "kind": "osdu:wks:master-data--WellPlanningWellbore:1.4.0",
+  "version": 1635454817166,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "WellPlanningWellID": "namespace:master-data--WellPlanningWell:wp_well_920c7e6d-1e9f-496d-ba4f-fe5bf5503d57:1635454816060",
+    "SurveyProgramIDs": [
+      "namespace:master-data--SurveyProgram:sp_4b44b41a-6373-5373-8971-e16c99ec34f0:1635454828206"
+    ],
+    "TargetID": "namespace:master-data--GeometricTargetSet:056af576-8040-4ef9-9c88-f933f02a753a:1635454828841",
+    "WellboreMarkerSetID": "namespace:work-product-component--WellboreMarkerSet:019bf7c3-feb9-49e9-afb5-aa88a7175f3f:1635454827754",
+    "PPFGDatasetID": "namespace:work-product-component--PPFGDataset:ppfg_bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454829421"
+  }
+}

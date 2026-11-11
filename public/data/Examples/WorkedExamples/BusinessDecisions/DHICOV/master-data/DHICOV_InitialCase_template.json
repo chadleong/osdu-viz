@@ -1,0 +1,147 @@
+{
+  "id": "partition-id:master-data--ActivityTemplate:DHICOV_InitialCase_Template",
+  "kind": "osdu:wks:master-data--ActivityTemplate:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "createTime": "2021-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2021-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Name": "DHI COV Initial Case Template",
+    "Description": "The direct hydrocarbon indicator initial case for chance of validity.",
+    "Source": "RockNRG LLC",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "VersionCreationReason": "Demonstrate DHICOV initial case",
+    "Parameters": [
+      {
+        "Title": "Seismic Interpreter",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "DataObjectContentType": [
+          "master-data--UserProfile"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Expected AVO Class",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:String:",
+        "Constraint": "This value should be a reference value list but is not available yet. Please use as if this was reference value list controlled.",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Trap Type",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:String:",
+        "Constraint": "This value should be a reference value list but is not available yet. Please use as if this was reference value list controlled.",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Predicted Reservoir Age",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "DataObjectContentType": [
+          "reference-data--ChronoStratigraphy"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Predrill Column Height",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:"
+      },
+      {
+        "Title": "Reservoir Thickness",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:"
+      },
+      {
+        "Title": "Reservoir Top Depth",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:"
+      },
+      {
+        "Title": "Reservoir Base Depth",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:"
+      },
+      {
+        "Title": "Water Depth",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:Double:",
+        "IsInput": true,
+        "IsOutput": false,
+        "MaxOccurs": 1,
+        "MinOccurs": 1,
+        "UnitQuantityID": "partition-id:reference-data--UnitQuantity:length:"
+      },
+      {
+        "Title": "WellLog with Synthetic Seismogram Curve",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": false,
+        "IsOutput": true,
+        "DataObjectContentType": [
+          "work-product-component--WellLog"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      },
+      {
+        "Title": "Seismic Volumes",
+        "AllowedParameterKind": "partition-id:reference-data--ParameterKind:DataObject:",
+        "IsInput": true,
+        "IsOutput": false,
+        "DataObjectContentType": [
+          "work-product-component--PersistedCollection"
+        ],
+        "MaxOccurs": 1,
+        "MinOccurs": 1
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23095_EPSG::1133",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4230
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4230:",
+      "Name": "ED50"
+    },
+    "Code": "23095001",
+    "CodeAsNumber": 23095001,
+    "CoordinateReferenceSystemType": "BoundCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4400
+      },
+      "Name": "Cartesian 2D CS. Axes: easting, northing (E,N). Orientations: east, north. UoM: m.",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:m:"
+    },
+    "ID": "BoundProjected:EPSG::23095_EPSG::1133",
+    "Kind": "BoundProjected",
+    "Name": "ED50 * DMA-mean / TM 5 NE [23095,1133]",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"23095001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23095\"},\"name\":\"ED_1950_TM_5_NE\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_TM_5_NE\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",5.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23095]]\"},\"name\":\"ED50 * DMA-mean / TM 5 NE [23095,1133]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1133\"},\"name\":\"ED_1950_To_WGS_1984_1\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_1\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Geocentric_Translation\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-87.0],PARAMETER[\\\"Y_Axis_Translation\\\",-98.0],PARAMETER[\\\"Z_Axis_Translation\\\",-121.0],OPERATIONACCURACY[10.0],AUTHORITY[\\\"EPSG\\\",1133]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+    "PreferredUsage": {
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1630
+        },
+        "BoundingBoxEastBoundLongitude": 6.41,
+        "BoundingBoxNorthBoundLatitude": 55.77,
+        "BoundingBoxSouthBoundLatitude": 51.45,
+        "BoundingBoxWestBoundLongitude": 2.53,
+        "Description": "Netherlands - offshore North Sea.",
+        "Name": "Netherlands - offshore"
+      },
+      "Name": "Netherlands - offshore (from coordinate reference system)",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1136
+        },
+        "Name": "Oil and gas exploration and production."
+      }
+    },
+    "Projection": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 16405
+      },
+      "Name": "TM 5 NE"
+    },
+    "RevisionDate": "2022-04-02T00:00:00+00:00",
+    "SourceCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 23095
+      },
+      "Name": "ED50 / TM 5 NE",
+      "SourceCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::23095:"
+    },
+    "Transformation": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 1133
+      },
+      "Name": "ED50 to WGS 84 (1)",
+      "TransformationID": "partition-id:reference-data--CoordinateTransformation:EPSG::1133:"
+    },
+    "Usages": [
+      {
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1630
+          },
+          "BoundingBoxEastBoundLongitude": 6.41,
+          "BoundingBoxNorthBoundLatitude": 55.77,
+          "BoundingBoxSouthBoundLatitude": 51.45,
+          "BoundingBoxWestBoundLongitude": 2.53,
+          "Description": "Netherlands - offshore North Sea.",
+          "Name": "Netherlands - offshore"
+        },
+        "Name": "Netherlands - offshore (from coordinate reference system)",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1136
+          },
+          "Name": "Oil and gas exploration and production."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  2.53,
+                  51.45
+                ],
+                [
+                  6.41,
+                  51.45
+                ],
+                [
+                  6.41,
+                  55.77
+                ],
+                [
+                  2.53,
+                  55.77
+                ],
+                [
+                  2.53,
+                  51.45
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "OGCWellKnownText2": "PROJCRS[\"ED50 / TM 5 NE\",BASEGEOGCRS[\"ED50\",DATUM[\"European Datum 1950\",ELLIPSOID[\"International 1924\",6378388,297,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7022]],ID[\"EPSG\",6230]],ID[\"EPSG\",4230]],CONVERSION[\"TM 5 NE\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",5,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.9996,SCALEUNIT[\"unity\",1,ID[\"EPSG\",9201]],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8807]],ID[\"EPSG\",16405]],CS[Cartesian,2,ID[\"EPSG\",4400]],AXIS[\"Easting (E)\",east],AXIS[\"Northing (N)\",north],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",23095]]"
+  }
+}

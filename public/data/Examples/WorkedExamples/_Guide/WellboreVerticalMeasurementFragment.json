@@ -1,0 +1,66 @@
+{
+  "id": "partition-id:master-data--Wellbore:AB1234-1",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "WellID": "partition_id:master-data--Well:AB1234:",
+    "FacilityTypeID": "partition_id:reference-data--FacilityType:Wellbore:",
+    "SequenceNumber": 1,
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "KB-Original",
+        "VerticalMeasurement": 380.2,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:KellyBushing:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "GL-Original",
+        "VerticalMeasurement": 303.7,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:GroundLevel:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "TD-Original",
+        "VerticalMeasurement": 12479.0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+        "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:DRL:",
+        "VerticalReferenceID": "KB-Original",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:AB1234-1:"
+      },
+      {
+        "VerticalMeasurementID": "KB-Reentry",
+        "VerticalMeasurement": 378.5,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:KellyBushing:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "EffectiveDateTime": "2019-11-16"
+      }
+    ],
+    "DefaultVerticalMeasurementID": "KB-Original"
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

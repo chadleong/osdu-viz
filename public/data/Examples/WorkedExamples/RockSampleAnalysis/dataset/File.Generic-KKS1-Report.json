@@ -1,0 +1,26 @@
+{
+  "id": "partition-id:dataset--File.Generic:WellCompletionReport-KentishKnockSouth1-WA-365-P--R1",
+  "kind": "osdu:wks:dataset--File.Generic:1.0.1",
+  "data": {
+    "Name": "Kentish Knock South 1, Initial Well Completion Report Carnarvon Basin: WA-365-P (R1)",
+    "Description": "Compiled By: Reservoir Management Services; Document ID: ABU130500045; Issue Date: 2013-07-30.",
+    "TotalSize": "111433500",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fpdf:",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://chevron-data/wcr/Carnarvon/Kentish_Knock_South_1_WCR_Basic_Data_Rev_0.pdf",
+        "PreloadFilePath": "https://gitlab.opengroup.org/osdu/subcommittees/data-def/projects/Petrophysics/docs/-/blob/master/Design%20Documents/Kentish%20Knock%20South%201%20-%20Example%20Well/Kentish_Knock_South_1_WCR_Basic_Data_Rev_0.pdf",
+        "Name": "Kentish_Knock_South_1_WCR_Basic_Data_Rev_0.pdf",
+        "FileSize": "111433500"
+      }
+    }
+  },
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-11-11
+
+### Added
+- "Open Example" action in the schema side panel, next to "Open JSON": opens the worked example for that schema version from `public/data/Examples` in a new tab. It only appears when an example exists.
+- `npm run scan` now also writes `public/examples-index.json` (the list of available examples).
+
 ## [2.0.0] - 2026-11-06
 
 Major release: the build toolchain moves to Vite 8, Vitest 5 and TypeScript 7 (Node 20.19+ / 22.12+ required), and the app gains a built-in guides viewer and reverse-reference ("referenced by") navigation.

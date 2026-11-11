@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.System",
+  "kind": "osdu:wks:reference-data--StratigraphicColumnRankUnitType:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "System",
+    "NameAlias": [
+      {
+        "AliasName": "Period"
+      }
+    ],
+    "Description": "A system in stratigraphy is a unit of rock layers that were laid down together within the same corresponding geological period. The associated period is a chronological time unit, a part of the geological time scale, while the system is a unit of chronostratigraphy. Systems are unrelated to lithostratigraphy, which subdivides rock layers on their lithology. Systems are subdivisions of erathems and are themselves divided into series and stages.",
+    "Code": "Chronostratigraphic.System",
+    "AttributionPublication": "https://en.wikipedia.org/wiki/System_(stratigraphy)",
+    "Rank": 2,
+    "StratigraphicRoleTypeID": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic:",
+    "Source": "Workbook Authoring/StratigraphicColumnRankUnitType.1.0.0.xlsx; commit SHA 71749e18."
+  }
+}

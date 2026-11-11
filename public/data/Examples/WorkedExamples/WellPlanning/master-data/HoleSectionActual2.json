@@ -1,0 +1,57 @@
+{
+  "id": "namespace:master-data--HoleSection:494566fd-8058-4f59-bae2-03953ac2707c",
+  "kind": "osdu:wks:master-data--HoleSection:1.4.0",
+  "version": 1635454821002,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "VerticalMeasurement.VerticalReferenceID": "KB",
+    "StartDateTime": "2023-01-16T06:00:00+0000",
+    "EndDateTime": "2023-03-21T09:45:00+0000",
+    "DrillingActivityCode": "INT",
+    "IsPilotHole": false,
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:",
+    "Name": "12-1/4\" Intermediate Hole Section",
+    "Size": 12.25,
+    "MeasuredDepthTop": 175,
+    "MeasuredDepthBase": 1075,
+    "PlannedMeasuredDepthBase": 1066.8,
+    "Comment": "FIT conducted at 278m - successful. 9-5/8\" shoe set at 1071m BRKB"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "MeasuredDepthBase",
+        "MeasuredDepthTop",
+        "PlannedMeasuredDepthBase",
+        "PlannedTrueVerticalDepthBase"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "Size"
+      ]
+    }
+  ]
+}

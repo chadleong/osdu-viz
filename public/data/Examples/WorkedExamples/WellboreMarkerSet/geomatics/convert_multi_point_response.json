@@ -1,0 +1,60 @@
+{
+  "successCount": 2,
+  "totalCount": 2,
+  "featureCollection": {
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -104.35652742826903,
+              33.10846882734614,
+              -2987.045974091948
+            ],
+            [
+              -104.35653033329845,
+              33.10847525015146,
+              -3048.006096012192
+            ]
+          ],
+          "type": "MultiPoint",
+          "bbox": [
+            -104.35653033329845,
+            33.10846882734614,
+            -3048.006096012192,
+            -104.35652742826903,
+            33.10847525015146,
+            -2987.045974091948
+          ]
+        },
+        "properties": {},
+        "type": "Feature",
+        "bbox": [
+          -104.35653033329845,
+          33.10846882734614,
+          -3048.006096012192,
+          -104.35652742826903,
+          33.10847525015146,
+          -2987.045974091948
+        ]
+      }
+    ],
+    "properties": null,
+    "persistableReferenceCrs": null,
+    "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+    "type": "FeatureCollection",
+    "bbox": [
+      -104.35653033329845,
+      33.10846882734614,
+      -3048.006096012192,
+      -104.35652742826903,
+      33.10847525015146,
+      -2987.045974091948
+    ]
+  },
+  "operationsApplied": [
+    "conversion from NAD_1927_StatePlane_New_Mexico_East_FIPS_3001 to GCS_North_American_1927; 2 points converted",
+    "transformation GCS_North_American_1927 to GCS_WGS_1984 using NAD_1927_To_WGS_1984_79_CONUS; 2 points successfully transformed",
+    "Z-axis unit conversion from ft[US] to m"
+  ]
+}

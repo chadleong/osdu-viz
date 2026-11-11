@@ -1,0 +1,156 @@
+{
+  "id": "partition-id:master-data--ConnectedSourceDataJob:77f02eed-9c3a-5795-8eda-84d91cbb2614",
+  "kind": "osdu:wks:master-data--ConnectedSourceDataJob:1.9.0",
+  "version": 1628353249929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2021-08-07T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2021-08-07T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "NameAliases": [],
+    "GeoContexts": [],
+    "VersionCreationReason": "Synchronization 2021-08-07",
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:ConnectedDataSourceJob-ActivityTemplate-001:",
+    "Parameters": [
+      {
+        "Title": "ConnectedSourceSchemaAuthority",
+        "Selection": "Legacy parameter setting: from osdu:wks:master-data--ConnectedSourceDataJob:1.9.0 to the more convenient property data.ConnectedSourceSchemaAuthority should be used/populated.",
+        "StringParameter": "osdu",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "FetchStartDateTime",
+        "Selection": "Legacy parameter setting: from osdu:wks:master-data--ConnectedSourceDataJob:1.9.0 to the more convenient property data.FetchStartDateTime should be used/populated.",
+        "StringParameter": "2020-02-01T09:28:56.321-10:00",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Output:"
+      },
+      {
+        "Title": "FetchEndDateTime",
+        "Selection": "Legacy parameter setting: from osdu:wks:master-data--ConnectedSourceDataJob:1.9.0 to the more convenient property data.FetchEndDateTime should be used/populated.",
+        "StringParameter": "2020-02-01T09:28:56.321-10:00",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Output:"
+      }
+    ],
+    "ActivityStates": [],
+    "LastActivityState": {
+      "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+      "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+      "ActivityStatusID": "partition-id:reference-data--ActivityStatus:Planned:",
+      "Remark": "Not sure this is relevant to EDS - but it can hold 'activity' lifecycle information."
+    },
+    "Name": "TGS Gulf of Mexico Well Logs",
+    "ConnectedSourceRegistryEntryID": "partition-id:master-data--ConnectedSourceRegistryEntry:0ae7be1c-5df7-5656-98c3-f7c5509a7dfa:",
+    "ActiveIndicator": true,
+    "FetchKind": "osdu:wks:master--Wellbore:1.0.0",
+    "Filter": "Curves.CurveType='GR'",
+    "ConnectedSourceDataPartitionID": "osdu",
+    "ScheduleUTC": "0 13 * * 1",
+    "OnIngestionDataPartitionID": "osdu",
+    "Workflows": [
+      {
+        "Tag": "FETCH",
+        "Handler": "EDS_DAG_fetch_comprehensive",
+        "Parameters": [
+          {
+            "Name": "someparametername",
+            "Value": "valueofparameter"
+          },
+          {
+            "Name": "someparametername2",
+            "Value": "valueofparameter2"
+          }
+        ],
+        "Url": "https://www.tgs.com/osdu/indexSearch",
+        "SecuritySchemeName": "TGS_Main"
+      },
+      {
+        "Tag": "INGEST",
+        "Handler": "EDS_DAG_ingest_preprocessing",
+        "Parameters": [
+          {
+            "Name": "someparametername",
+            "Value": "valueofparameter"
+          },
+          {
+            "Name": "someparametername2",
+            "Value": "valueofparameter2"
+          }
+        ],
+        "Url": "null",
+        "SecuritySchemeName": "null"
+      }
+    ],
+    "OnIngestionLegalTags": {
+      "legaltags": [
+        "Example legaltags"
+      ],
+      "otherRelevantDataCountries": [
+        "US"
+      ],
+      "status": "compliant"
+    },
+    "OnIngestionAcl": {
+      "owners": [
+        "osdudatamanagers@mycompany.com",
+        "osduadmins@mycompany.com"
+      ],
+      "viewers": [
+        "osdupublic@mmycompany.com"
+      ]
+    },
+    "LastSuccessfulRunDateUTC": "2021-08-07T16:20:40.321Z",
+    "LimitRecords": 10000,
+    "FailedRecords": [
+      "partition-id:master-data--Well:999627606747:",
+      "partition-id:master-data--Well:999759740759:"
+    ],
+    "OnIngestionSchemaAuthority": "osdu",
+    "CreateTimeMax": "2021-08-07T16:20:15.215Z",
+    "ConnectedSourceSchemaAuthority": "osdu",
+    "FetchStartDateTime": "2021-08-07T16:02:33.985Z",
+    "FetchEndDateTime": "2021-08-07T16:20:13.895Z",
+    "ParentDataMappingDummyMasterIDs": [
+      "master-data--Well:DummyWell",
+      "master-data--Wellbore:DummyWellbore"
+    ],
+    "IsDummyParentMappingEnabled": true,
+    "EdsIngestWaitTime": 60.0,
+    "TriggerNaturalizationDAG": false,
+    "ExtensionProperties": {}
+  }
+}

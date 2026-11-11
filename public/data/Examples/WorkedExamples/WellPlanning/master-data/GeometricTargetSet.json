@@ -1,0 +1,187 @@
+{
+  "id": "namespace:master-data--GeometricTargetSet:056af576-8040-4ef9-9c88-f933f02a753a",
+  "kind": "osdu:wks:master-data--GeometricTargetSet:1.1.0",
+  "version": 1635454828841,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "WellboreName": "Jorge_Well-01",
+    "Targets": [
+      {
+        "Name": "Target # 1",
+        "Type": "namespace:reference-data--TargetType:unknown:",
+        "Location": {
+          "AsIngestedCoordinates": {
+            "type": "AnyCrsFeatureCollection",
+            "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32039_EPSG::15851:",
+            "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+            "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32039079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32039\"},\"name\":\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.3333333333333],PARAMETER[\\\"Standard_Parallel_1\\\",30.11666666666667],PARAMETER[\\\"Standard_Parallel_2\\\",31.88333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",29.66666666666667],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32039]]\"},\"name\":\"NAD27 * OGP-Usa Conus / Texas CS27 Central zone [32039,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+            "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+            "persistableReferenceUnitZ": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "features": [
+              {
+                "type": "AnyCrsFeature",
+                "geometry": {
+                  "type": "AnyCrsPoint",
+                  "coordinates": [
+                    870321.0000000008,
+                    912834.6299999874,
+                    -1119.353616
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "Wgs84Coordinates": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -103.98303847043874,
+                    32.125617879844235,
+                    -1119.353616
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "AppliedOperations": [
+            "conversion from NAD_1927_StatePlane_Texas_Central_FIPS_4203 to GCS_North_American_1927; 1 points converted",
+            "transformation GCS_North_American_1927 to GCS_WGS_1984 using NAD_1927_To_WGS_1984_79_CONUS; 1 points successfully transformed",
+            "No unit conversion for Z-axis"
+          ]
+        },
+        "Geometry": {
+          "Shape": "namespace:reference-data--TargetShape:Point:"
+        }
+      },
+      {
+        "Name": "Target #2",
+        "Type": "namespace:reference-data--TargetType:unknown:",
+        "Location": {
+          "AsIngestedCoordinates": {
+            "type": "AnyCrsFeatureCollection",
+            "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32039_EPSG::15851:",
+            "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+            "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32039079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32039\"},\"name\":\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.3333333333333],PARAMETER[\\\"Standard_Parallel_1\\\",30.11666666666667],PARAMETER[\\\"Standard_Parallel_2\\\",31.88333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",29.66666666666667],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32039]]\"},\"name\":\"NAD27 * OGP-Usa Conus / Texas CS27 Central zone [32039,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+            "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+            "persistableReferenceUnitZ": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "features": [
+              {
+                "type": "AnyCrsFeature",
+                "geometry": {
+                  "type": "AnyCrsPoint",
+                  "coordinates": [
+                    868809.9399999961,
+                    915863.0999999959,
+                    -1141.113288
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "Wgs84Coordinates": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -103.98823788528102,
+                    32.13380095986883,
+                    -1141.113288
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "AppliedOperations": [
+            "conversion from NAD_1927_StatePlane_Texas_Central_FIPS_4203 to GCS_North_American_1927; 1 points converted",
+            "transformation GCS_North_American_1927 to GCS_WGS_1984 using NAD_1927_To_WGS_1984_79_CONUS; 1 points successfully transformed",
+            "No unit conversion for Z-axis"
+          ]
+        },
+        "Geometry": {
+          "Shape": "namespace:reference-data--TargetShape:Point:"
+        }
+      },
+      {
+        "Name": "CP_SNudge (Katy Nov_USL_KF5.pet)",
+        "Type": "namespace:reference-data--TargetType:unknown:",
+        "Location": {
+          "AsIngestedCoordinates": {
+            "type": "AnyCrsFeatureCollection",
+            "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32039_EPSG::15851:",
+            "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+            "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32039079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32039\"},\"name\":\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_Texas_Central_FIPS_4203\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.3333333333333],PARAMETER[\\\"Standard_Parallel_1\\\",30.11666666666667],PARAMETER[\\\"Standard_Parallel_2\\\",31.88333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",29.66666666666667],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32039]]\"},\"name\":\"NAD27 * OGP-Usa Conus / Texas CS27 Central zone [32039,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+            "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+            "persistableReferenceUnitZ": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "features": [
+              {
+                "type": "AnyCrsFeature",
+                "geometry": {
+                  "type": "AnyCrsPoint",
+                  "coordinates": [
+                    870602.7699999982,
+                    912115.1999999942,
+                    -399.800064
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "Wgs84Coordinates": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -103.98205262630643,
+                    32.12366695084148,
+                    -399.800064
+                  ]
+                },
+                "properties": {}
+              }
+            ]
+          },
+          "AppliedOperations": [
+            "conversion from NAD_1927_StatePlane_Texas_Central_FIPS_4203 to GCS_North_American_1927; 1 points converted",
+            "transformation GCS_North_American_1927 to GCS_WGS_1984 using NAD_1927_To_WGS_1984_79_CONUS; 1 points successfully transformed",
+            "No unit conversion for Z-axis"
+          ]
+        },
+        "Geometry": {
+          "Shape": "namespace:reference-data--TargetShape:Point:"
+        }
+      }
+    ]
+  }
+}

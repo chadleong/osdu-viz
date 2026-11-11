@@ -6,6 +6,7 @@ import { buildPropertyTree, type TreeNode } from "../utils/propertyTree"
 import { groupKey } from "../utils/schemaVersions"
 import { guideHash } from "../utils/guides"
 import { isDeprecated } from "../utils/deprecated"
+import { loadExamplesIndex, exampleKey, exampleUrl } from "../utils/examples"
 import { loadReferenceValues, toReferenceValues, type ReferenceValue } from "../utils/referenceValues"
 
 type PropertyInfo = {
@@ -423,6 +424,19 @@ export function PropertyTooltip({
   // Nested properties section: expanded by default, collapsible; reset when the tooltip shows a different node
   const [nestedOpen, setNestedOpen] = useState(true)
   useEffect(() => setNestedOpen(true), [node])
+  const [exampleHref, setExampleHref] = useState<string | null>(null)
+  useEffect(() => {
+    let cancelled = false
+    setExampleHref(null)
+    const key = exampleKey(filePath)
+    if (!key) return
+    loadExamplesIndex().then((set) => {
+      if (!cancelled && set.has(key)) setExampleHref(exampleUrl(key))
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [filePath])
   const [guidesOpen, setGuidesOpen] = useState(false)
   useEffect(() => setGuidesOpen(false), [node])
   const [refByOpen, setRefByOpen] = useState(false)
@@ -643,6 +657,14 @@ export function PropertyTooltip({
                 Open
               </button>
             </li>
+            {exampleHref && (
+              <li className="list-row">
+                <span className="k">Open Example</span>
+                <button className="btn" onClick={() => window.open(exampleHref, "_blank")}>
+                  Open
+                </button>
+              </li>
+            )}
           </ul>
         </div>
         <div className="tooltip-section">

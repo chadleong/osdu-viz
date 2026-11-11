@@ -1,0 +1,78 @@
+{
+  "id": "partition-id:reference-data--IndexPropertyPathConfiguration:wks:master-data--Wellbore:1",
+  "kind": "osdu:wks:reference-data--IndexPropertyPathConfiguration:1.0.0",
+  "acl": {
+    "owners": [
+      "default.owners@opendes.enterprisedata.cloud.slb-ds.com"
+    ],
+    "viewers": [
+      "default.viewers@opendes.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "opendes-default-legal"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "Wellbore-IndexPropertyPathConfiguration",
+    "Description": "The index property list for master-data--Wellbore:1., valid for all master-data--Wellbore kinds for major version 1.",
+    "Code": "osdu:wks:master-data--Wellbore:1.",
+    "AttributionAuthority": "OSDU",
+    "Configurations": [
+      {
+        "Name": "SpudDate",
+        "Policy": "ExtractFirstMatch",
+        "Paths": [
+          {
+            "ValueExtraction": {
+              "RelatedConditionMatches": [
+                "^[\\w\\-\\.]+:reference-data--FacilityEventType:Spud:$"
+              ],
+              "RelatedConditionProperty": "data.FacilityEvents[].FacilityEventTypeID",
+              "ValuePath": "FacilityEvents[].EffectiveDateTime"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to discover and match or sort Wellbores by their spud date. I am aware that there are nuances, however, I am able to satisfied to query on a single FacilityEventType to look up value in the FacilityEvents array."
+      },
+      {
+        "Name": "WellUWI",
+        "Policy": "ExtractFirstMatch",
+        "Paths": [
+          {
+            "RelatedObjectsSpec": {
+              "RelationshipDirection": "ChildToParent",
+              "RelatedObjectID": "data.WellID",
+              "RelatedObjectKind": "osdu:wks:master-data--Well:1."
+            },
+            "ValueExtraction": {
+              "ValuePath": "WellUWI"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to discover and match Wellbores by their parent's UWI. I am aware that this is not globally reliable, however, I have arrived at a reasonable UWI selection at the parent Well."
+      },
+      {
+        "Name": "WellLogCurveMnemonics",
+        "Policy": "ExtractAllMatches",
+        "Paths": [
+          {
+            "RelatedObjectsSpec": {
+              "RelationshipDirection": "ParentToChildren",
+              "RelatedObjectID": "data.WellboreID",
+              "RelatedObjectKind": "osdu:wks:work-product-component--WellLog:1."
+            },
+            "ValueExtraction": {
+              "ValuePath": "Curves[].Mnemonic"
+            }
+          }
+        ],
+        "UseCase": "As a user I want to find Wellbores by well log mnemonics."
+      }
+    ]
+  }
+}

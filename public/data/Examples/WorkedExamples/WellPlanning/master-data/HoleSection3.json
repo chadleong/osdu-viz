@@ -1,0 +1,43 @@
+{
+  "id": "namespace:master-data--HoleSection:da97410e-b8fb-447e-848b-dbe88ca442b3",
+  "kind": "osdu:wks:master-data--HoleSection:1.4.0",
+  "version": 1635454823310,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "Name": "0.216 m",
+    "Size": 0.21589999999999998,
+    "Comment": "PRODUCTION",
+    "MeasuredDepthTop": 1066.8,
+    "MeasuredDepthBase": 3304.374898
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "MeasuredDepthBase",
+        "MeasuredDepthTop",
+        "Size"
+      ]
+    }
+  ]
+}

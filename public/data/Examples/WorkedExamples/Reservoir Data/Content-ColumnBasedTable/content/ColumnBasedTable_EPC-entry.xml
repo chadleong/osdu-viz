@@ -1,0 +1,79 @@
+
+<ColumnBasedTable xmlns="http://www.energistics.org/energyml/data/commonv2" xmlns:ns2="http://www.energistics.org/energyml/data/witsmlv2" uuid="8174a3e5-4377-40c9-9e02-8196859827dd" schemaVersion="2.3">
+    <Citation>
+        <Title>My_NT66_AGG_AUSTRALIA</Title>
+        <Originator>Geosiris user</Originator>
+        <Creation>2024-11-09T10:22:14.740Z</Creation>
+        <Format>Geosiris WebStudio</Format>
+        <Editor>JFR</Editor>
+        <LastUpdate>2024-11-11T11:28:59.607Z</LastUpdate>
+        <Description>Example_of_ Column Based table using Huge Data Arrays</Description>
+    </Citation>
+    <Column>
+        <Description>Sensor Height above WGS84 ellipsoid with Geoid (EGM96) correction</Description>
+        <Title>ALTITUDE</Title>
+        <Uom>m</Uom>
+        <ValueCountPerRow>1</ValueCountPerRow>
+        <PropertyKind>
+            <Uuid>0f590cc0-e6fb-4c9c-bbca-07693970a516</Uuid>
+            <QualifiedType>eml23.PropertyKind</QualifiedType>
+            <Title>Elevation</Title>
+        </PropertyKind>
+        <Values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="FloatingPointExternalArray">
+            <ArrayFloatingPointType>arrayOfFloat32BE</ArrayFloatingPointType>
+            <CountPerValue>31</CountPerValue>
+            <Values>
+                <ExternalDataArrayPart>
+                    <Count>31</Count>
+                    <PathInExternalFile>/RESQML/8174a3e5-4377-40c9-9e02-8196859827dd/ALTITUDE</PathInExternalFile>
+                    <URI>NT66_AGG_AUSTRALIA.h5</URI>
+                    <MimeType>application/x-hdf5</MimeType>
+                </ExternalDataArrayPart>
+            </Values>
+        </Values>
+    </Column>
+    <Column>
+        <Description>Aircraft Clearance above Bathymetry surface (m)</Description>
+        <Title>Clearance_Bath</Title>
+        <Uom>m</Uom>
+        <ValueCountPerRow>1</ValueCountPerRow>
+        <PropertyKind>
+            <Uuid>0f590cc0-e6fb-4c9c-bbca-07693970a516</Uuid>
+            <QualifiedType>eml23.PropertyKind</QualifiedType>
+            <Title>Elevation</Title>
+        </PropertyKind>
+        <Values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="FloatingPointExternalArray">
+            <ArrayFloatingPointType>arrayOfFloat32LE</ArrayFloatingPointType>
+            <CountPerValue>31</CountPerValue>
+            <Values>
+                <ExternalDataArrayPart>
+                    <PathInExternalFile>/RESQML/8174a3e5-4377-40c9-9e02-8196859827dd/Clearance_Bath</PathInExternalFile>
+                    <URI>NT66_AGG_AUSTRALIA.h5</URI>
+                    <MimeType>application/x-hdf5</MimeType>
+                </ExternalDataArrayPart>
+            </Values>
+        </Values>
+    </Column>
+    <Column>
+        <Description>Terrain Height above WGS84 ellipsoid with Geoid (EGM96) correct</Description>
+        <Title>DEM</Title>
+        <Uom>m</Uom>
+        <ValueCountPerRow>1</ValueCountPerRow>
+        <PropertyKind>
+            <Uuid>0f590cc0-e6fb-4c9c-bbca-07693970a516</Uuid>
+            <QualifiedType>eml23.PropertyKind</QualifiedType>
+            <Title>Elevation</Title>
+        </PropertyKind>
+        <Values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="FloatingPointExternalArray">
+            <ArrayFloatingPointType>arrayOfFloat32LE</ArrayFloatingPointType>
+            <CountPerValue>31</CountPerValue>
+            <Values>
+                <ExternalDataArrayPart>
+                    <PathInExternalFile>/RESQML/8174a3e5-4377-40c9-9e02-8196859827dd/DEM</PathInExternalFile>
+                    <URI>NT66_AGG_AUSTRALIA.h5</URI>
+                    <MimeType>application/x-hdf5</MimeType>
+                </ExternalDataArrayPart>
+            </Values>
+        </Values>
+    </Column>
+</ColumnBasedTable>

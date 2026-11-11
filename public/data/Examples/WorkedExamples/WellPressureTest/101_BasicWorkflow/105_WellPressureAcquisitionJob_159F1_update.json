@@ -1,0 +1,130 @@
+{
+  "id": "namespace:master-data--WellPressureTestAcquisitionJob:586a50bb-c5fb-5498-82fa-1ea1b2af9907",
+  "kind": "osdu:wks:master-data--WellPressureTestAcquisitionJob:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "viewers": [
+      "data.mastertotal.viewers@osduprod-opendes.dataservices.energy"
+    ],
+    "owners": [
+      "data.mastertotal.owners@osduprod-opendes.dataservices.energy"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "osdu-mastertotal-legal-tag"
+    ],
+    "otherRelevantDataCountries": [
+      "FR"
+    ],
+    "status": "compliant"
+  },
+  "createUser": "44adf31d-25cc-468d-aee0-7f3b7fcf100f",
+  "createTime": "2023-04-07T13:59:27.411Z",
+  "modifyUser": "44adf31d-25cc-468d-aee0-7f3b7fcf100f",
+  "modifyTime": "2023-07-19T02:02:24.084Z",
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ProjectSpecifications[0].ProjectSpecificationQuantity",
+        "Parameters[0].DataQuantityParameter",
+        "PressureTestsAcquisitionRuns[].PressureTestsAcquisitionStations[].PressurePointMeasuredDepth",
+        "PressureTestsAcquisitionRuns[0].DepthReferenceSystem.VerticalMeasurement"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "TotalEnergiesHQ-MDM",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "WellboreID": "namespace:master-data--Wellbore:WB15-9-F-1:",
+    "ReferencePressureProcessedLogID": "namespace:work-product-component--WellLog:e332b40a-1a7d-4f5f-9256-be275501928c:",
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:NOR:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Country:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:Volve:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "ProjectID": "Example External Project Identifier",
+    "ProjectName": "WellPressureTestAcquisition 15_9-F-1",
+    "Purpose": "Example Purpose",
+    "ProjectBeginDate": "2013-08-18T21:42:06.411Z",
+    "ProjectEndDate": "2013-08-19T00:43:15.411Z",
+    "Operator": "namespace:master-data--Organisation:Statoil:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "namespace:master-data--Organisation:BakerHugues:"
+      }
+    ],
+    "Remarks": "Example Remarks",
+    "PressureTestsAcquisitionRuns": [
+      {
+        "RunIdentifier": 1,
+        "RunName": "Run #4",
+        "InstalledProbeTypeIDs": [
+          "namespace:reference-data--WellPressureTestProbeType:TestTrak:"
+        ],
+        "InstalledGaugeTypeIDs": [
+          "namespace:reference-data--WellPressureTestGaugeType:DD_Pressure:",
+          "namespace:reference-data--WellPressureTestGaugeType:DD_Volume:",
+          "namespace:reference-data--WellPressureTestGaugeType:Temperature:"
+        ],
+        "ConveyanceMethodIDs": [
+          "namespace:reference-data--ConveyanceMethod:MWD:"
+        ],
+        "ToolStringDescription": "TTK",
+        "RunStartDate": "2013-08-18T21:42:06.411Z",
+        "RunEndDate": "2013-08-19T00:43:15.411Z",
+        "PressureTestCategoryID": [
+          "namespace:reference-data--WellPressureTestCategory:Formation_Test:"
+        ],
+        "PressureTestsAcquisitionStations": [
+          {
+            "StationIdentifier": 1,
+            "PressurePointMeasuredDepth": 3462.6
+          },
+          {
+            "StationIdentifier": 2,
+            "PressurePointMeasuredDepth": 3451.9
+          },
+          {
+            "StationIdentifier": 3,
+            "PressurePointMeasuredDepth": 3360.8
+          },
+          {
+            "StationIdentifier": 4,
+            "PressurePointMeasuredDepth": 3337.2
+          },
+          {
+            "StationIdentifier": 5,
+            "PressurePointMeasuredDepth": 3332.4
+          },
+          {
+            "StationIdentifier": 6,
+            "PressurePointMeasuredDepth": 3320.8
+          }
+        ],
+        "ToolNameID": "namespace:reference-data--WellPressureTestToolName:SomeUniqueWellPressureTestToolNameID:",
+        "DepthReferenceSystem": {
+          "VerticalMeasurement": 866.2,
+          "VerticalMeasurementPathID": "osduprod-opendes:reference-data--VerticalMeasurementPath:ELEV:",
+          "VerticalMeasurementTypeID": "osduprod-opendes:reference-data--VerticalMeasurementType:RT:",
+          "VerticalMeasurementDescription": "RT",
+          "VerticalCRSID": "osduprod-opendes:reference-data--CoordinateReferenceSystem:VerticalCRS::EPSG::3855:",
+          "VerticalMeasurementUnitOfMeasureID": "osduprod-opendes:reference-data--UnitOfMeasure:m:"
+        }
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

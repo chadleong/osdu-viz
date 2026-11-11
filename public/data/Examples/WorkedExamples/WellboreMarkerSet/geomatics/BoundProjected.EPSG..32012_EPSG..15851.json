@@ -1,0 +1,155 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32012_EPSG::15851",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4267
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4267:",
+      "Name": "NAD27"
+    },
+    "Code": "32012079",
+    "CodeAsNumber": 32012079,
+    "CoordinateReferenceSystemType": "BoundCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4497
+      },
+      "Name": "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: ftUS.",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:ft%5BUS%5D:"
+    },
+    "ID": "BoundProjected:EPSG::32012_EPSG::15851",
+    "Kind": "BoundProjected",
+    "Name": "NAD27 * OGP-Usa Conus / New Mexico CS27 East zone [32012,15851]",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32012079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32012\"},\"name\":\"NAD_1927_StatePlane_New_Mexico_East_FIPS_3001\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_New_Mexico_East_FIPS_3001\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-104.3333333333333],PARAMETER[\\\"Scale_Factor\\\",0.9999090909090909],PARAMETER[\\\"Latitude_Of_Origin\\\",31.0],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32012]]\"},\"name\":\"NAD27 * OGP-Usa Conus / New Mexico CS27 East zone [32012,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+    "PreferredUsage": {
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 2228
+        },
+        "BoundingBoxEastBoundLongitude": -102.99,
+        "BoundingBoxNorthBoundLatitude": 37.0,
+        "BoundingBoxSouthBoundLatitude": 32.0,
+        "BoundingBoxWestBoundLongitude": -105.72,
+        "Description": "United States (USA) - New Mexico - counties of Chaves; Colfax; Curry; De Baca; Eddy; Guadalupe; Harding; Lea; Mora; Quay; Roosevelt; San Miguel; Union.",
+        "Name": "USA - New Mexico - SPCS - E"
+      },
+      "Name": "USA - New Mexico - SPCS - E (from coordinate reference system)",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1142
+        },
+        "Name": "Engineering survey, topographic mapping."
+      }
+    },
+    "Projection": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 13001
+      },
+      "Name": "New Mexico CS27 East zone"
+    },
+    "RevisionDate": "2022-02-05T21:32:28+00:00",
+    "SourceCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 32012
+      },
+      "Name": "NAD27 / New Mexico East",
+      "SourceCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Projected:EPSG::32012:"
+    },
+    "Transformation": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 15851
+      },
+      "Name": "NAD27 to WGS 84 (79)",
+      "TransformationID": "partition-id:reference-data--CoordinateTransformation:EPSG::15851:"
+    },
+    "Usages": [
+      {
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 2228
+          },
+          "BoundingBoxEastBoundLongitude": -102.99,
+          "BoundingBoxNorthBoundLatitude": 37.0,
+          "BoundingBoxSouthBoundLatitude": 32.0,
+          "BoundingBoxWestBoundLongitude": -105.72,
+          "Description": "United States (USA) - New Mexico - counties of Chaves; Colfax; Curry; De Baca; Eddy; Guadalupe; Harding; Lea; Mora; Quay; Roosevelt; San Miguel; Union.",
+          "Name": "USA - New Mexico - SPCS - E"
+        },
+        "Name": "USA - New Mexico - SPCS - E (from coordinate reference system)",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1142
+          },
+          "Name": "Engineering survey, topographic mapping."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -105.72,
+                  32.0
+                ],
+                [
+                  -102.99,
+                  32.0
+                ],
+                [
+                  -102.99,
+                  37.0
+                ],
+                [
+                  -105.72,
+                  37.0
+                ],
+                [
+                  -105.72,
+                  32.0
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "PROJCRS[\"NAD27 / New Mexico East\",BASEGEOGCRS[\"NAD27\",DATUM[\"North American Datum 1927\",ELLIPSOID[\"Clarke 1866\",6378206.4,294.978698213901,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7008]],ID[\"EPSG\",6267]],ID[\"EPSG\",4267]],CONVERSION[\"New Mexico CS27 East zone\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",31,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",-104.333333333334,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.999909091,SCALEUNIT[\"unity\",1,ID[\"EPSG\",9201]],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",8807]],ID[\"EPSG\",13001]],CS[Cartesian,2,ID[\"EPSG\",4497]],AXIS[\"Easting (X)\",east],AXIS[\"Northing (Y)\",north],LENGTHUNIT[\"US survey foot\",0.304800609601219,ID[\"EPSG\",9003]],ID[\"EPSG\",32012]]"
+  }
+}

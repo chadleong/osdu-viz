@@ -1,0 +1,43 @@
+{
+  "id": "partition-id:master-data--Well:WellOffshore-1",
+  "kind": "osdu:wks:master-data--Well:1.5.0",
+  "data": {
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:Well:",
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "MSL EPSG:5714",
+        "VerticalMeasurement": 0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  }
+}

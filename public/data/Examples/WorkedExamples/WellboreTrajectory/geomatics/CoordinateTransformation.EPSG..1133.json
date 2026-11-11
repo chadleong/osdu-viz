@@ -1,0 +1,150 @@
+{
+  "id": "partition-id:reference-data--CoordinateTransformation:EPSG::1133",
+  "kind": "osdu:wks:reference-data--CoordinateTransformation:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "Accuracy": 10.0,
+    "Code": "1133",
+    "CodeAsNumber": 1133,
+    "CodeSpace": "EPSG",
+    "CoordinateTransformationType": "Transformation",
+    "CoordTfmVersion": "DMA-mean",
+    "ID": "EPSG::1133",
+    "Method": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 9603
+      },
+      "Name": "Geocentric translations (geog2D domain)"
+    },
+    "Name": "ED50 to WGS 84 (1)",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1133\"},\"name\":\"ED_1950_To_WGS_1984_1\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_1\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Geocentric_Translation\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-87.0],PARAMETER[\\\"Y_Axis_Translation\\\",-98.0],PARAMETER[\\\"Z_Axis_Translation\\\",-121.0],OPERATIONACCURACY[10.0],AUTHORITY[\\\"EPSG\\\",1133]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 8054
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 2420
+        },
+        "BoundingBoxEastBoundLongitude": 31.59,
+        "BoundingBoxNorthBoundLatitude": 71.21,
+        "BoundingBoxSouthBoundLatitude": 34.88,
+        "BoundingBoxWestBoundLongitude": -9.56,
+        "Description": "Austria; Belgium; Denmark; Finland; Faroe islands; France; Germany (west); Gibraltar; Greece; Italy; Luxembourg; Netherlands; Norway; Portugal; Spain; Sweden; Switzerland.",
+        "Name": "Europe - west (DMA ED50 mean)"
+      },
+      "Name": "Europe - west (DMA ED50 mean)",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1160
+        },
+        "Name": "Military survey."
+      }
+    },
+    "RevisionDate": "2020-03-14T00:00:00+00:00",
+    "SourceCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4230
+      },
+      "Name": "ED50",
+      "SourceCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4230:"
+    },
+    "TargetCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4326
+      },
+      "Name": "WGS 84",
+      "TargetCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4326:"
+    },
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 8054
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 2420
+          },
+          "BoundingBoxEastBoundLongitude": 31.59,
+          "BoundingBoxNorthBoundLatitude": 71.21,
+          "BoundingBoxSouthBoundLatitude": 34.88,
+          "BoundingBoxWestBoundLongitude": -9.56,
+          "Description": "Austria; Belgium; Denmark; Finland; Faroe islands; France; Germany (west); Gibraltar; Greece; Italy; Luxembourg; Netherlands; Norway; Portugal; Spain; Sweden; Switzerland.",
+          "Name": "Europe - west (DMA ED50 mean)"
+        },
+        "Name": "Europe - west (DMA ED50 mean)",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1160
+          },
+          "Name": "Military survey."
+        }
+      }
+    ],
+    "Variant": 1,
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -9.56,
+                  34.88
+                ],
+                [
+                  31.59,
+                  34.88
+                ],
+                [
+                  31.59,
+                  71.21
+                ],
+                [
+                  -9.56,
+                  71.21
+                ],
+                [
+                  -9.56,
+                  34.88
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateTransformation.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "COORDINATEOPERATION[\"ED50 to WGS 84 (1)\",VERSION[\"DMA-mean\"],SOURCECRS[GEOGCRS[\"ED50\",DATUM[\"European Datum 1950\",ELLIPSOID[\"International 1924\",6378388,297,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7022]],ID[\"EPSG\",6230]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4230]]],TARGETCRS[GEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\",ID[\"EPSG\",1166]],MEMBER[\"World Geodetic System 1984 (G730)\",ID[\"EPSG\",1152]],MEMBER[\"World Geodetic System 1984 (G873)\",ID[\"EPSG\",1153]],MEMBER[\"World Geodetic System 1984 (G1150)\",ID[\"EPSG\",1154]],MEMBER[\"World Geodetic System 1984 (G1674)\",ID[\"EPSG\",1155]],MEMBER[\"World Geodetic System 1984 (G1762)\",ID[\"EPSG\",1156]],MEMBER[\"World Geodetic System 1984 (G2139)\",ID[\"EPSG\",1309]],MEMBER[\"World Geodetic System 1984 (G2296)\",ID[\"EPSG\",1383]],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7030]],ENSEMBLEACCURACY[2],ID[\"EPSG\",6326]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4326]]],METHOD[\"Geocentric translations (geog2D domain)\",ID[\"EPSG\",9603]],PARAMETER[\"X-axis translation\",-87,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8605]],PARAMETER[\"Y-axis translation\",-98,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8606]],PARAMETER[\"Z-axis translation\",-121,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",8607]],OPERATIONACCURACY[10],ID[\"EPSG\",1133]]"
+  }
+}

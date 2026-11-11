@@ -1,0 +1,81 @@
+{
+  "id": "partition-id:master-data--Wellbore:WellboreOffshore-1",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "data": {
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:Wellbore:",
+    "WellID": "partition-id:master-data--Well:WellOffshore-1:",
+    "SequenceNumber": 1,
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "MSL EPSG:5714",
+        "VerticalMeasurement": 0,
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+      },
+      {
+        "VerticalMeasurementID": "DF 25 m",
+        "VerticalMeasurement": 25.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:WellboreOffshore-1:",
+        "VerticalReferenceID": "MSL EPSG:5714"
+      },
+      {
+        "VerticalMeasurementID": "SF 76.5 m",
+        "VerticalMeasurement": 76.5,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:Seafloor:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:WellboreOffshore-1:",
+        "VerticalReferenceID": "MSL EPSG:5714"
+      },
+      {
+        "VerticalMeasurementID": "TD TVDVRS",
+        "VerticalMeasurement": 1300.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:WellboreOffshore-1:",
+        "VerticalReferenceID": "MSL EPSG:5714"
+      },
+      {
+        "VerticalMeasurementID": "TD TVDZDP",
+        "VerticalMeasurement": 1325.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:WellboreOffshore-1:",
+        "VerticalReferenceID": "DF 25 m"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  }
+}

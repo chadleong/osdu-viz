@@ -1,0 +1,243 @@
+{
+  "id": "partition-id:work-product-component--WellboreTrajectory:0362ff79-26c2-440f-98a7-7aad2305022b",
+  "kind": "osdu:wks:work-product-component--WellboreTrajectory:1.4.0",
+  "version": 1621076020029332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "ancestry": {
+    "parents": [
+      "partition-id:work-product-component--WellboreTrajectory:cdbb127d-2864-4913-af98-ac2d5a06d344:1621068020029332"
+    ]
+  },
+  "data": {
+    "Name": "8816.completed.csv",
+    "Description": "Wellbore Trajectory completed.",
+    "LineageAssertions": [
+      {
+        "ID": "partition-id:work-product-component--WellboreTrajectory:cdbb127d-2864-4913-af98-ac2d5a06d344:1621068020029332",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      },
+      {
+        "ID": "partition-id:master-data--Well:8816:1621065020029332",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Reference:"
+      },
+      {
+        "ID": "partition-id:master-data--Wellbore:8816:1621059020029332",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Reference:"
+      }
+    ],
+    "Datasets": [
+      "partition-id:dataset--File.Generic.CSV:77a75f58-ea1d-4f90-a4ba-e93004f81e33:"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "partition-id:reference-data--ArtefactRole:ConvertedContent:",
+        "ResourceKind": "osdu:wks:dataset--File.GeoJSON:1.0.1",
+        "ResourceID": "partition-id:dataset--File.GeoJSON:ed47e511-0150-441d-b21a-c7c3fdab33bc:"
+      },
+      {
+        "RoleID": "partition-id:reference-data--ArtefactRole:ConvertedContent:",
+        "ResourceKind": "osdu:wks:dataset--File.GeoJSON:1.0.1",
+        "ResourceID": "partition-id:dataset--File.GeoJSON:6023513a-c5e0-498d-bafa-b77f476c2503:"
+      }
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:8816:",
+    "TopDepthMeasuredDepth": 22.0,
+    "BaseDepthMeasuredDepth": 2790.0,
+    "AzimuthReferenceType": "partition-id:reference-data--AzimuthReferenceType:GridNorth:",
+    "ProjectedCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23095_EPSG::1133:",
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 42.51,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+    },
+    "AvailableTrajectoryStationProperties": [
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:MD:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "md"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:AzimuthGN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "azimuthGN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:AzimuthTN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "azimuthTN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Inclination:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "inclination"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:DX-TN:",
+        "Name": "dxTN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:DY-TN:",
+        "Name": "dyTN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:X:",
+        "Name": "x"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Y:",
+        "Name": "y"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:ElevationMSL:",
+        "Name": "z"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Wgs84Longitude:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "wgs84Longitude"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Wgs84Latitude:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "wgs84Latitude"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:DLS:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:1%2F30%20dega%2Fm:",
+        "Name": "dls"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:IsOriginal:",
+        "Name": "original"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:TVD:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "dz"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:DX-GN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "DX-GN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:DY-GN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "DY-GN"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:TVDSS:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "TVDSS"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Wgs84DeltaLatitude:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "Wgs84DeltaLatitude"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Wgs84DeltaLongitude:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "Wgs84DeltaLongitude"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:ClosureDistancePrj:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "ClosureDistanceProjected"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:ClosureDistanceDirectionPrj:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "ClosureDistanceDirectionProjected"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:ClosureDistanceTrueNorth:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "ClosureDistanceTrueNorth"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:ClosureDistanceDirectionTN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "ClosureDistanceDirectionTrueNorth"
+      }
+    ],
+    "AppliedOperations": [
+      "derived TN from GN azimuth by grid convergence 359.865323",
+      "Using SLB Drilling's trajectory computation engine",
+      "Performed trajectory calculation for each of the 117 input survey station.",
+      "computation method: AzimuthalEquidistant",
+      "conversion from 'Azimuthal Equidistant Lng=4.83209241;Lat=53.33031266' to 'GCS_European_1950'",
+      "conversion from 'GCS_European_1950' to 'ED_1950_TM_5_NE'",
+      "to WGS 84: conversion from ED_1950_TM_5_NE to GCS_European_1950; 117 points converted",
+      "to WGS 84: transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_1; 117 points successfully transformed"
+    ],
+    "ExtrapolatedMeasuredDepth": 2790.0,
+    "ExtrapolatedMeasuredDepthRemark": "Example Extrapolated Measured Depth Remark",
+    "AppliedOperationsDateTime": "2023-01-15T09:22:56.00Z",
+    "AppliedOperationsUser": "John Smith",
+    "AppliedOperationsRemarks": "Used OSDU core services; ",
+    "StartDateTime": "1992-04-12T11:00:00.00Z",
+    "EndDateTime": "1992-04-12T13:00:00.00Z",
+    "SurfaceGridConvergence": 0.134677422,
+    "SurfaceScaleFactor": 0.999601429,
+    "Tortuosity": 0.327
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ExtrapolatedMeasuredDepth",
+        "TopDepthMeasuredDepth",
+        "BaseDepthMeasuredDepth",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dega",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":3.141592653589793,\"c\":180.0,\"d\":0.0},\"symbol\":\"dega\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:dega:",
+      "propertyNames": [
+        "SurfaceGridConvergence"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "SurfaceScaleFactor"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dega/m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":3.141592653589793,\"c\":180.0,\"d\":0.0},\"symbol\":\"dega/m\",\"baseMeasurement\":{\"ancestry\":\"A/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:dega%2Fm:",
+      "propertyNames": [
+        "Tortuosity"
+      ]
+    }
+  ]
+}

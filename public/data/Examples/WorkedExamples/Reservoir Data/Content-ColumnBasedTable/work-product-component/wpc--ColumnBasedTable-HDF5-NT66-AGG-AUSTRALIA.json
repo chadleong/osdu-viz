@@ -1,0 +1,303 @@
+{
+  "id": "namespace:work-product-component--ColumnBasedTable:NT66-AGG-AUSTRALIA-FileCollection.HDF5-1fd4fc40-11f1-4244-b684-d2e7676fec8e",
+  "kind": "osdu:wks:work-product-component--ColumnBasedTable:1.4.0",
+  "version": 1732294179929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "data": {
+    "Name": "NT66-AGG-AUSTRALIA, content in File.HDF5",
+    "Description": "Example of a Column Based Table using potentially very large data arrays.",
+    "CreationDateTime": "2024-11-25T09:13:15.55Z",
+    "Datasets": [
+      "namespace:dataset--File.HDF5:content--HDF5-acfff0bf-ffd1-4d9f-a11e-c16d1b53095c:"
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:Australia:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Country:"
+      }
+    ],
+    "MasterDataID": "namespace:master-data--GravityMagneticAcquisitionSurvey:Falcon-FAS1663:",
+    "SubmitterName": "Chris Hough",
+    "BusinessActivities": [
+      "Gravity and Magnetic Acquisition"
+    ],
+    "AuthorIDs": [
+      "Chris Hough"
+    ],
+    "ColumnBasedTableType": "namespace:reference-data--ColumnBasedTableType:AdHoc:",
+    "KeyColumns": [],
+    "Columns": [
+      {
+        "ColumnName": "ALTITUDE",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "Clearance_Bath",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DEM",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_EQUIV_120M",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "DRAPESURFACE_FOURIER_120M",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "EASTING",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "FIDUCIAL",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:time:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_EQUIV_2p2_120M_GG",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_0p0_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_FOURIER_2p2_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_2000x2800",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GDD_SPATIAL_2p2_DT_2000x2800",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_EQUIV_2p2_120M_GG",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_0p0_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GNE_FOURIER_2p2_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_EQUIV_2p2_120M_GG",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_0p0_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "GUV_FOURIER_2p2_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "LATITUDE",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:plane%20angle:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:dega:"
+      },
+      {
+        "ColumnName": "LONGITUD",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:plane%20angle:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:dega:"
+      },
+      {
+        "ColumnName": "NORTHING",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "ON_LINE",
+        "ValueType": "boolean",
+        "ValueCount": 1
+      },
+      {
+        "ColumnName": "RADAR",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:length:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:"
+      },
+      {
+        "ColumnName": "T_DD",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "T_NE",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "T_UV",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:reciprocal%20time%20squared:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:eotvos:"
+      },
+      {
+        "ColumnName": "TURBULENCE",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_EQUIV_2p2_120M_GG",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_FOURIER_0p0_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "gD_FOURIER_2p2_1000_LWT_C120_ML",
+        "ValueType": "number",
+        "ValueCount": 1,
+        "UnitQuantityID": "namespace:reference-data--UnitQuantity:linear%20acceleration:",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:mGal:"
+      },
+      {
+        "ColumnName": "surf_grv_plus_trend",
+        "ValueType": "number",
+        "ValueCount": 1
+      }
+    ],
+    "ColumnSize": 32,
+    "ColumnValues": [],
+    "ExtensionProperties": {}
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": []
+}

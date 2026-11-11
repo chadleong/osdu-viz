@@ -1,0 +1,60 @@
+{
+  "id": "partition-id:dataset--File.SeismicHistogram:486b349b-0455-5a45-a3ca-17581bddaa0f",
+  "kind": "osdu:wks:dataset--File.SeismicHistogram:1.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "Source": "SEG-Y Scanning",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Active:",
+    "Name": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH Histogram",
+    "Description": "As originally delivered by ACME.com.",
+    "TotalSize": "876",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fjson:",
+    "SchemaFormatTypeID": "partition-id:reference-data--SchemaFormatType:OSDU-ContentSchema:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://default_bucket/r1/data/provided/documents/d3ab924a-ac24-4e99-a3b6-7280770362a1.json",
+        "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/SeismicHistogram.json",
+        "PreloadFileCreateUser": "somebody@acme.org",
+        "PreloadFileCreateDate": "2019-12-16T11:46:20.163Z",
+        "PreloadFileModifyUser": "somebody.else@acme.org",
+        "PreloadFileModifyDate": "2019-12-20T17:20:05.356Z",
+        "Name": "SeismicHistogram.json",
+        "FileSize": "876",
+        "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fjson:",
+        "Checksum": "0c16a9a122a5f61236bcc88e6801e3ef0de470573aa2b3ec91d7c5782d412818",
+        "ChecksumAlgorithm": "SHA-256"
+      }
+    },
+    "ContentSchemaKind": "osdu:wks:content--SeismicHistogram:1.0.0",
+    "ExtensionProperties": {}
+  }
+}

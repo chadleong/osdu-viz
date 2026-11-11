@@ -1,0 +1,57 @@
+{
+  "id": "namespace:master-data--HoleSection:da97410e-b8fb-447e-848b-dbe88ca442b3",
+  "kind": "osdu:wks:master-data--HoleSection:1.4.0",
+  "version": 1635454823310,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "VerticalMeasurement.VerticalReferenceID": "KB",
+    "StartDateTime": "2023-01-22T17:30:00+0000",
+    "EndDateTime": "2023-03-23T21:45:00+0000",
+    "DrillingActivityCode": "PROD",
+    "IsPilotHole": false,
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:",
+    "Name": "8-1/2\" Production Hole Section",
+    "Size": 8.5,
+    "MeasuredDepthTop": 1075,
+    "MeasuredDepthBase": 3315,
+    "PlannedMeasuredDepthBase": 3304.4,
+    "Comment": "FIT conducted at 1078m - successful. Drilled into Big Formation at 3310m BRKB"
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "MeasuredDepthBase",
+        "MeasuredDepthTop",
+        "PlannedMeasuredDepthBase",
+        "PlannedTrueVerticalDepthBase"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:in:",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.0254,\"c\":1.0,\"d\":0.0},\"symbol\":\"in\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "propertyNames": [
+        "Size"
+      ]
+    }
+  ]
+}

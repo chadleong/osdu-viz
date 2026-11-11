@@ -1,0 +1,168 @@
+{
+  "id": "partition-id:master-data--PerforationJob:SampleJobID-Zone-A",
+  "kind": "osdu:wks:master-data--PerforationJob:1.2.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2022-08-06T11:00:00.000Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-08-16T11:00:00.000Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurement.VerticalMeasurement",
+        "ReservoirTVD",
+        "AnnulusFluidTopTVD",
+        "PerfJobMDTop",
+        "PerfJobMDBase",
+        "PerfGrossIntervalLength",
+        "PerfNetIntervalLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "degC",
+      "persistableReference": "{\"abcd\":{\"a\":273.15,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:degC:",
+      "propertyNames": [
+        "BottomHoleTemperature"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "SurfacePressureInitial",
+        "ReservoirPressureEstimated",
+        "AnticipatedReservoirPressure",
+        "HydrostaticReservoirPressureDifference",
+        "FinalSurfacePressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "lbm/gal[US]",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.45359237,\"c\":0.003785411784,\"d\":0.0},\"symbol\":\"lbm/gal[US]\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:lbm%2Fgal%5BUS%5D:",
+      "propertyNames": [
+        "AnnulusFluidDensity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "AfterPillFluidLossRate",
+        "PostJobFluidLossRate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "bbl",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.158987294928,\"c\":1.0,\"d\":0.0},\"symbol\":\"bbl\",\"baseMeasurement\":{\"ancestry\":\"L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:bbl:",
+      "propertyNames": [
+        "PillVolume"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "1/m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"1/m\",\"baseMeasurement\":{\"ancestry\":\"1/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:1%2Fm:",
+      "propertyNames": [
+        "ShotDensityAverage"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "partition-id:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "partition-id:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "NameAliases": [],
+    "GeoContexts": [],
+    "VersionCreationReason": "Example VersionCreationReason",
+    "TechnicalAssuranceTypeID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "WellboreID": "partition-id:master-data--Wellbore:11000091175501:",
+    "Name": "Plug & Perf Reservoir X, Zone A",
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 954.1,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:DrillFloor:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+    },
+    "WellboreTubularID": "partition-id:master-data--TubularAssembly:TubularAssembly-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "ContractorID": "partition-id:master-data--Organisation:Schlumberger:",
+    "ContractorSupervisor": "Joe Bloggs",
+    "MethodID": "partition-id:reference-data--PerforationIntervalType:JetPerforate:",
+    "ConveyedMethodID": "partition-id:reference-data--PerforationConveyedMethod:ElecLine:",
+    "IsTractorUsed": false,
+    "JobStartDateTime": "2022-06-14T16:31:00.000Z",
+    "JobEndDateTime": "2022-06-14T17:57:00.000Z",
+    "BottomHoleTemperature": 218.0,
+    "SurfacePressureInitial": 14.5,
+    "ReservoirTVD": 5530.0,
+    "ReservoirPressureEstimated": 4800.0,
+    "AnticipatedReservoirPressure": 4800.0,
+    "AnnulusFluidTypeID": "partition-id:reference-data--AnnularFluidType:CACL2WATER:",
+    "AnnulusFluidDensity": 9.81,
+    "AnnulusFluidTopTVD": 200.0,
+    "Underbalanced": false,
+    "HydrostaticReservoirPressureDifference": 14227.0,
+    "FinalSurfacePressure": 4695.0,
+    "SurfacePressureFinalDateTime": "2022-06-14T18:15:00.00Z",
+    "AfterPillFluidLossRate": 0.0,
+    "PostJobFluidLossRate": 0.0,
+    "PillVolume": 10.0,
+    "PillTypeID": "partition-id:reference-data--PerforationPillType:HydroxyethylCellulose:",
+    "ReferenceLogDate": "2022-04-12T00:00:00.00Z",
+    "ReferenceLogID": "partition-id:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "ReferenceLogDescription": "GR-SP Log 1 20220412",
+    "PerfJobMDTop": 5424.22,
+    "PerfJobMDBase": 5471.77,
+    "PerfGrossIntervalLength": 47.55,
+    "PerfNetIntervalLength": 1.22,
+    "NoIntervals": 4,
+    "TotalShots": 24,
+    "ShotDensityAverage": 19.69,
+    "CentralizationMethodID": "partition-id:reference-data--PerforationCentralizationMethodType:None:",
+    "Comment": "Perforate Zone A as follows: 17951' - 17952', 17900' - 17901', 17848' - 17849', 17796' - 17797'",
+    "ExtensionProperties": {}
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "namespace:dataset--FileCollection.EPC:9c8a3989-9dea-490f-b05c-c3e504efeff4",
+  "kind": "osdu:wks:dataset--FileCollection.EPC:1.0.2",
+  "version": 1732294169929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Completed:",
+    "ResourceSecurityClassification": "namespace:reference-data--ResourceSecurityClassification:Public:",
+    "Source": "Chris Hough",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "NT66-AGG-Data",
+    "Description": "As originally delivered by GeoSiris.",
+    "TotalSize": "87091",
+    "SchemaFormatTypeID": "namespace:reference-data--SchemaFormatType:Energistics.EPC:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "EPCFile": {
+        "FileSource": "s3://default_bucket/r1/data/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.epc",
+        "PreloadFilePath": "https://community.opengroup.org/osdu/data/data-definitions/-/tree/master/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.epc",
+        "PreloadFileCreateUser": "somebody@acme.org",
+        "PreloadFileCreateDate": "2024-11-25T11:46:20.163Z",
+        "PreloadFileModifyUser": "somebody.else@acme.org",
+        "PreloadFileModifyDate": "2024-11-25T17:20:05.356Z",
+        "Name": "NT66_AGG_AUSTRALIA.epc",
+        "FileSize": "3795",
+        "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:application%2Fx-epc%2Bzip:",
+        "Checksum": "d4846a3b0b4d06b72508b7a31f0aff46",
+        "ChecksumAlgorithm": "MD5"
+      },
+      "EPCExternalParts": [
+        {
+          "FileSource": "s3://default_bucket/r1/data/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.h5",
+          "PreloadFilePath": "https://community.opengroup.org/osdu/data/data-definitions/-/tree/master/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.h5",
+          "PreloadFileCreateUser": "somebody@acme.org",
+          "PreloadFileCreateDate": "2024-11-25T11:46:20.163Z",
+          "PreloadFileModifyUser": "somebody.else@acme.org",
+          "PreloadFileModifyDate": "2024-11-25T17:20:05.356Z",
+          "Name": "NT66_AGG_AUSTRALIA.h5",
+          "FileSize": "83296",
+          "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:application%2Fx-hdf5:",
+          "Checksum": "6be6d8a6f309135fd3be8747a08dee25",
+          "ChecksumAlgorithm": "MD5"
+        }
+      ]
+    },
+    "ExtensionProperties": {}
+  }
+}

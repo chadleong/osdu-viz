@@ -1,0 +1,53 @@
+{
+  "SchemaKind": "osdu:wks:content--DdmsFootprint:1.0.0",
+  "Name": "Reservoir DDMS",
+  "Description": "The data footprint declared by the Reservoir DDMS as capability.",
+  "ExtensionProperties": {},
+  "DdmsVersion": "DDMS Version 1.1",
+  "DocumentationURL": "https://community.opengroup.org/osdu/platform/domain-data-mgmt-services/reservoir/home/-/blob/main/README.md",
+  "CoveredItems": [
+    {
+      "WKS": "osdu:wks:work-product-component--Activity:1.",
+      "ContentTypes": [
+        "resqml20.obj_Activity",
+        "eml23.Activity"
+      ]
+    },
+    {
+      "WKS": "osdu:wks:master-data--ActivityTemplate:1.",
+      "ContentTypes": [
+        "resqml20.obj_ActivityTemplate",
+        "eml23.ActivityTemplate"
+      ]
+    }
+  ],
+  "AuthorityToContentTypes": [
+    {
+      "Authority": "Energistics RESQML",
+      "Description": "RESQML 2.0.1",
+      "AuthorityURL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-000-000-titlepage.html",
+      "ContentTypeURLs": [
+        {
+          "ContentType": "resqml20.obj_Activity",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-292-0-R-sv2010.html"
+        },
+        {
+          "ContentType": "resqml20.obj_ActivityTemplate",
+          "URL": "https://docs.energistics.org/#RESQML/RESQML_TOPICS/RESQML-500-293-0-R-sv2010.html"
+        }
+      ]
+    },
+    {
+      "Authority": "Energistics EML",
+      "Description": "EML 2.3, not published yet",
+      "ContentTypeURLs": [
+        {
+          "ContentType": "eml23.Activity"
+        },
+        {
+          "ContentType": "eml23.ActivityTemplate"
+        }
+      ]
+    }
+  ]
+}

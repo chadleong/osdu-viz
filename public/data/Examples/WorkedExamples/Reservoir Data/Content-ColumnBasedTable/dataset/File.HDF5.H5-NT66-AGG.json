@@ -1,0 +1,66 @@
+{
+  "id": "namespace:dataset--File.HDF5:content--HDF5-acfff0bf-ffd1-4d9f-a11e-c16d1b53095c",
+  "kind": "osdu:wks:dataset--File.HDF5:1.1.0",
+  "version": 1736173309456123,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2025-01-06T14:21:49+00:00",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2025-01-06T14:21:49+00:00",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "ResourceSecurityClassification": "namespace:reference-data--ResourceSecurityClassification:Public:",
+    "Source": "Chris Hough",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Actual:",
+    "Name": "NT66-AGG-Data",
+    "Description": "As originally delivered by TerraNexus, converted by Jean Fran\u00e7ois Rainaud.",
+    "TotalSize": "83296",
+    "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:application%2Fx-hdf5:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://default_bucket/r1/data/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.h5",
+        "PreloadFilePath": "https://community.opengroup.org/osdu/data/data-definitions/-/tree/master/Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/content/NT66_AGG_AUSTRALIA.h5",
+        "PreloadFileCreateUser": "somebody@acme.org",
+        "PreloadFileCreateDate": "2025-01-06T14:21:49+00:00",
+        "PreloadFileModifyUser": "somebody.else@acme.org",
+        "PreloadFileModifyDate": "2025-01-06T14:21:49+00:00",
+        "Name": "NT66_AGG_AUSTRALIA.h5",
+        "FileSize": "83296",
+        "EncodingFormatTypeID": "namespace:reference-data--EncodingFormatType:application%2Fx-hdf5:",
+        "Checksum": "6be6d8a6f309135fd3be8747a08dee25",
+        "ChecksumAlgorithm": "MD5"
+      }
+    },
+    "Checksum": "068ae640de896024a4a71027e05771c5",
+    "ExtensionProperties": {}
+  }
+}

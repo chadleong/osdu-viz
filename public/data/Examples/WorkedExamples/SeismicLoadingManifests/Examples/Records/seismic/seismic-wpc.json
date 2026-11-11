@@ -1,0 +1,284 @@
+{
+  "id": "partition-id:work-product-component--SeismicTraceData:1f855537-dea8-5b2a-a6d6-63fc9a0bbac1",
+  "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+  "version": 1605873241000221,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"USO\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "StartDepth",
+        "EndDepth",
+        "TraceLength"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ms",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"ms\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+      "propertyNames": [
+        "StartTime",
+        "EndTime"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"USO\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m%2Fs:",
+      "propertyNames": [
+        "ReplacementVelocity"
+      ]
+    }
+  ],
+  "data": {
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+    "Datasets": [
+      "partition-id:dataset--FileCollection.SEGY:eba9adc4-f274-4cea-9df8-abc9916bb4fd:"
+    ],
+    "DDMSDatasets": [
+      "urn://sddms-v4/openvds/c7b49f00-e6de-4992-9614-326a06876034"
+    ],
+    "Artefacts": [
+      {
+        "RoleID": "partition-id:reference-data--ArtefactRole:OpenVDSDataSet:",
+        "ResourceKind": "osdu:wks:dataset--FileCollection.Bluware.OpenVDS:1.1.1",
+        "ResourceID": "partition-id:dataset--FileCollection.Bluware.OpenVDS:c7b49f00-e6de-4992-9614-326a06876034:"
+      },
+      {
+        "RoleID": "partition-id:reference-data--ArtefactRole:ContentMetadata:",
+        "ResourceKind": "osdu:wks:dataset--File.SeismicHistogram:1.0.1",
+        "ResourceID": "partition-id:dataset--File.SeismicHistogram:486b349b-0455-5a45-a3ca-17581bddaa0f:"
+      }
+    ],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Name": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH",
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {},
+    "SpatialArea": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:ExampleQuantitativeAccuracyBand:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:ExampleQualitativeSpatialAccuracyType:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:ExampleSpatialParameterType:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:ExampleSpatialGeometryType:"
+    },
+    "GeoContexts": [
+      {
+        "BasinID": "partition-id:master-data--Basin:ExampleBasin:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:ExampleBasinType:"
+      }
+    ],
+    "SubmitterName": "Example SubmitterName",
+    "BusinessActivities": [
+      "Example BusinessActivities"
+    ],
+    "AuthorIDs": [
+      "Example AuthorIDs"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "partition-id:any-group-type--AnyIndividualType:SomeUniqueAnyIndividualTypeID:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "LiveTraceOutline": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "partition-id:reference-data--QuantitativeAccuracyBand:ExampleQuantitativeAccuracyBand:",
+      "QualitativeSpatialAccuracyTypeID": "partition-id:reference-data--QualitativeSpatialAccuracyType:ExampleQualitativeSpatialAccuracyType:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+        "VerticalCoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"23031024\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"23031\"},\"name\":\"ED_1950_UTM_Zone_31N\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"ED_1950_UTM_Zone_31N\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",3.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",23031]]\"},\"name\":\"ED50 * EPSG-Nor S62 2001 / UTM zone 31N [23031,1613]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1613\"},\"name\":\"ED_1950_To_WGS_1984_24\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"ED_1950_To_WGS_1984_24\\\",GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",-90.365],PARAMETER[\\\"Y_Axis_Translation\\\",-101.13],PARAMETER[\\\"Z_Axis_Translation\\\",-123.384],PARAMETER[\\\"X_Axis_Rotation\\\",0.333],PARAMETER[\\\"Y_Axis_Rotation\\\",0.077],PARAMETER[\\\"Z_Axis_Rotation\\\",0.894],PARAMETER[\\\"Scale_Difference\\\",1.994],OPERATIONACCURACY[1.0],AUTHORITY[\\\"EPSG\\\",1613]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPolygon",
+              "coordinates": [
+                [
+                  [
+                    438727.0,
+                    6475514.4
+                  ],
+                  [
+                    431401.3,
+                    6477341.0
+                  ],
+                  [
+                    432562.5,
+                    6481998.4
+                  ],
+                  [
+                    439888.3,
+                    6480171.9
+                  ],
+                  [
+                    438727.0,
+                    6475514.4
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          431401.3,
+          6475514.4,
+          439888.3,
+          6481998.4
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    1.823767236,
+                    58.42946998
+                  ],
+                  [
+                    1.949673713,
+                    58.4141567
+                  ],
+                  [
+                    1.968324105,
+                    58.45614207
+                  ],
+                  [
+                    1.84227351,
+                    58.47147214
+                  ],
+                  [
+                    1.823767236,
+                    58.42946998
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "bbox": [
+          1.823767236,
+          58.4141567,
+          1.968324105,
+          58.45614207
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 5 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 5 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "partition-id:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "partition-id:reference-data--SpatialGeometryType:Polygon:"
+    },
+    "BinGridID": "partition-id:work-product-component--SeismicBinGrid:ExampleSeismicBinGrid-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "HorizontalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+    "Preferred3DInterpretationSetID": "partition-id:master-data--Seismic3DInterpretationSet:ExampleSeismic3DInterpretationSurvey:",
+    "Preferred2DInterpretationSetID": "partition-id:master-data--Seismic2DInterpretationSet:ExampleSeismic2DInterpretationSurvey:",
+    "Seismic2DName": "",
+    "SeismicAttributeTypeID": "partition-id:reference-data--SeismicAttributeType:ExampleSeismicAttributeType:",
+    "SeismicProcessingStageTypeID": "partition-id:reference-data--SeismicProcessingStageType:ExampleSeismicProcessingStageType:",
+    "PrincipalAcquisitionProjectID": "partition-id:master-data--SeismicAcquisitionSurvey:ST0202R08:",
+    "ProcessingProjectID": "partition-id:master-data--SeismicProcessingProject:ST0202R08:",
+    "SeismicTraceDataDimensionalityTypeID": "partition-id:reference-data--SeismicTraceDataDimensionalityType:3D:",
+    "SeismicDomainTypeID": "partition-id:reference-data--SeismicDomainType:Depth:",
+    "SeismicMigrationTypeID": "partition-id:reference-data--SeismicMigrationType:PSDM-Kirch:",
+    "SeismicStackingTypeID": "partition-id:reference-data--SeismicStackingType:Full:",
+    "SeismicFilteringTypeID": "partition-id:reference-data--SeismicFilteringType:Taup:",
+    "SeismicPhaseID": "partition-id:reference-data--SeismicPhase:ZeroPhase:",
+    "SeismicPolarityID": "partition-id:reference-data--SeismicPolarity:PositiveSEG:",
+    "SampleInterval": 5.0,
+    "SampleCount": 901,
+    "Difference": false,
+    "StartTime": 0.0,
+    "EndTime": 4090.0,
+    "StartDepth": 0.0,
+    "EndDepth": 4500.0,
+    "TraceCount": 232925,
+    "TraceLength": 4500.0,
+    "TraceDomainUOM": "partition-id:reference-data--UnitOfMeasure:m:",
+    "InlineMin": 9985.0,
+    "InlineMax": 10369.0,
+    "CrosslineMin": 1932.0,
+    "CrosslineMax": 2536.0,
+    "InlineIncrement": 1.0,
+    "CrosslineIncrement": 1.0,
+    "VerticalDatumOffset": 0,
+    "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+    "ReplacementVelocity": 1480.0,
+    "ShiftApplied": 0,
+    "Precision": {
+      "WordFormat": "partition-id:reference-data--WordFormatType:IEEE_FLOAT:",
+      "WordWidth": 4
+    },
+    "ProcessingParameters": [
+      {
+        "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:ExampleProcessingParameterType:",
+        "ProcessingParameterValue": "Example ProcessingParameterValue"
+      }
+    ],
+    "CoveragePercent": 12345.6,
+    "TextualFileHeader": [
+      "C35 HEADER WORD POSITIONS:C36 INLINE: 189-192             ;  X-LINE: 193-196;C37 BINX (CDPX): 181-184,        BINY (CDPY): 185-188,C38 MERID.: 3.0E,SPHEROID: INT.;  ROTATION (AMS): 1245600000"
+    ],
+    "RangeAmplitudeMax": 12345.6,
+    "RangeAmplitudeMin": 12345.6,
+    "StackAngleRangeMax": 12345.6,
+    "StackAngleRangeMin": 12345.6,
+    "StackAzimuthRangeMax": 12345.6,
+    "StackAzimuthRangeMin": 12345.6,
+    "StackOffsetRangeMax": 12345.6,
+    "StackOffsetRangeMin": 12345.6,
+    "SeismicWaveTypeID": "partition-id:reference-data--SeismicWaveType:ExampleSeismicWaveType:",
+    "ExtensionProperties": {}
+  }
+}

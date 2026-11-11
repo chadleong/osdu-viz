@@ -1,0 +1,42 @@
+{
+  "id": "partition-id:reference-data--ExternalCatalogNamespace:LIS-LAS",
+  "kind": "osdu:wks:reference-data--ExternalCatalogNamespace:1.0.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "LIS-LAS",
+    "NameAlias": [
+      {
+        "AliasName": "LIS",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:Schlumberger:"
+      },
+      {
+        "AliasName": "LAS",
+        "AliasNameTypeID": "partition-id:reference-data--AliasNameType:IndustryCode:",
+        "DefinitionOrganisationID": "partition-id:reference-data--StandardsOrganisation:CWLS:"
+      }
+    ],
+    "Description": "A namespace for legacy unit of measure symbols frequently used in conjunction with LIS and LAS datasets.",
+    "Code": "LIS-LAS",
+    "AttributionAuthority": "Schlumberger",
+    "AttributionPublication": "Oilfield Services Data Dictionary",
+    "AttributionRevision": "Extraction September 2021",
+    "Source": "Workbook Published/ExternalCatalogNamespace.1.0.0.xlsx; commit SHA 54e89405.",
+    "CommitDate": "2022-02-05T15:50:17+01:00"
+  }
+}

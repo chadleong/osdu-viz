@@ -1,0 +1,34 @@
+{
+  "id": "{{NAMESPACE}}:reference-data--StratigraphicColumnRankUnitType:Chronostratigraphic.Eonothem",
+  "kind": "osdu:wks:reference-data--StratigraphicColumnRankUnitType:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "data": {
+    "Name": "Eonothem",
+    "NameAlias": [
+      {
+        "AliasName": "Eon"
+      }
+    ],
+    "Description": "In stratigraphy and geology, an eonothem is the totality of rock strata laid down in the stratigraphic record deposited during a certain eon of the continuous geologic timescale.",
+    "Code": "Chronostratigraphic.Eonothem",
+    "AttributionPublication": "https://en.wikipedia.org/wiki/Eonothem",
+    "Rank": 0,
+    "StratigraphicRoleTypeID": "{{NAMESPACE}}:reference-data--StratigraphicRoleType:Chronostratigraphic:",
+    "Source": "Workbook Authoring/StratigraphicColumnRankUnitType.1.0.0.xlsx; commit SHA 71749e18."
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "id": "namespace:master-data--BHARun:a828c845-101a-5ca0-a729-84fe19cf8841",
+  "kind": "osdu:wks:master-data--BHARun:2.1.0",
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "ProjectSpecifications[0].ProjectSpecificationQuantity",
+        "RunParameterPlans[].RunStartHoleMeasuredDepth",
+        "RunParameterPlans[].RunEndHoleMeasuredDepth",
+        "RunParameterPlans[].OperationParameterPlan.TorqueOnBottomGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.TorqueOnBottomGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.TorqueOnBottomGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueOnBottomGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.SurfaceRPMGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.RPMGroup.DownHoleRPMGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.ROPGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.ROPGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.ROPGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.ROPGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.WOBGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.WOBGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.WOBGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.WOBGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.FlowratePumpGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.FlowratePumpGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.FlowratePumpGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.FlowratePumpGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.TorqueAtSurfaceGroup.MaximumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.MaximumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.MaximumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.TorqueAtSurfaceGroup.MinimumParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.MinimumParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.MinimumParameter[0].PointsSources[0].Value",
+        "RunParameterPlans[].OperationParameterPlan.TorqueAtSurfaceGroup.RecommendedParameter[].ObservationMeasuredDepth",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.RecommendedParameter[0].Value",
+        "RunParameterPlans[0].OperationParameterPlan.TorqueAtSurfaceGroup.RecommendedParameter[0].PointsSources[0].Value",
+        "MeasuredDepthRunStart",
+        "MeasuredDepthRunStop",
+        "HoleDiameter"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/m\",\"baseMeasurement\":{\"ancestry\":\"A/L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fm:",
+      "propertyNames": [
+        "Dogleg",
+        "MaximumDogleg",
+        "PlannedDogleg"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg\",\"baseMeasurement\":{\"ancestry\":\"M\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg:",
+      "propertyNames": [
+        "WtAboveJar",
+        "WtBelowJar"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"s\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:s:",
+      "propertyNames": [
+        "DrillingParams[].BitRunTIme",
+        "DrillingParams[].TimeHolding",
+        "DrillingParams[].TimeSteering",
+        "DrillingParams[].TimeDrillingRotating",
+        "DrillingParams[].TimeDrillingSliding",
+        "DrillingParams[].TimeCirculating",
+        "DrillingParams[].TimeReaming"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "ft",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.3048,\"c\":1.0,\"d\":0.0},\"symbol\":\"ft\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:ft:",
+      "propertyNames": [
+        "DrillingParams[].RunStartHoleMeasuredDepth",
+        "DrillingParams[].RunEndHoleMeasuredDepth",
+        "DrillingParams[].DistanceDrilledRotating",
+        "DrillingParams[].DistanceDrilledSliding",
+        "DrillingParams[].DistanceReamed",
+        "DrillingParams[].DistanceHolding",
+        "DrillingParams[].DistanceSteering"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N\",\"baseMeasurement\":{\"ancestry\":\"LM/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N:",
+      "propertyNames": [
+        "DrillingParams[].RotatingHookload",
+        "DrillingParams[].OverPull",
+        "DrillingParams[].SlackOff",
+        "DrillingParams[].HookloadUp",
+        "DrillingParams[].HookloadDown",
+        "DrillingParams[].WeightAboveJar",
+        "DrillingParams[].WeightBelowJar",
+        "DrillingParams[].AverageWOB",
+        "DrillingParams[].MaximumWOB",
+        "DrillingParams[].MinimumWOB",
+        "DrillingParams[].AverageWOBDownhole"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "N.m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"N.m\",\"baseMeasurement\":{\"ancestry\":\"L2M/T2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:N.m:",
+      "propertyNames": [
+        "DrillingParams[].AverageTorqueOnBottom",
+        "DrillingParams[].MaximumTorqueOnBottom",
+        "DrillingParams[].MinimumTorqueOnBottom",
+        "DrillingParams[].AverageTorqueOffBottom",
+        "DrillingParams[].AverageTorqueDownhole"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "kg/m3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"kg/m3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:kg%2Fm3:",
+      "propertyNames": [
+        "DrillingParams[].WeightMud"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m3/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m3/s\",\"baseMeasurement\":{\"ancestry\":\"L3/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m3%2Fs:",
+      "propertyNames": [
+        "DrillingParams[].AverageFlowratePump",
+        "DrillingParams[].MaximumFlowratePump",
+        "DrillingParams[].MinimumFlowratePump",
+        "DrillingParams[].MinimumBitFlowrate",
+        "DrillingParams[].MaximumBitFlowrate",
+        "DrillingParams[].AverageBitFlowrate"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m%2Fs:",
+      "propertyNames": [
+        "DrillingParams[].AverageVelocityBitNozzle"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "W",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"W\",\"baseMeasurement\":{\"ancestry\":\"L2M/T3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:W:",
+      "propertyNames": [
+        "DrillingParams[].PowerBit"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Pa",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Pa\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:Pa:",
+      "propertyNames": [
+        "DrillingParams[].PressureDropBit",
+        "DrillingParams[].MinimumPumpPressure",
+        "DrillingParams[].MaximumPumpPressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad/s",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad/s\",\"baseMeasurement\":{\"ancestry\":\"A/T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad%2Fs:",
+      "propertyNames": [
+        "DrillingParams[].AverageRpm",
+        "DrillingParams[].MaximumRpm",
+        "DrillingParams[].MinimumRpm",
+        "DrillingParams[].AverageRpmDownhole",
+        "DrillingParams[].AverageROP",
+        "DrillingParams[].MaximumROP",
+        "DrillingParams[].MinimumROP"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "rad",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"rad\",\"baseMeasurement\":{\"ancestry\":\"A\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:rad:",
+      "propertyNames": [
+        "DrillingParams[].AzimuthTop",
+        "DrillingParams[].AzimuthBottom",
+        "DrillingParams[].InclinationStart",
+        "DrillingParams[].MaximumInclination",
+        "DrillingParams[].MinimumInclination",
+        "DrillingParams[].InclinationStop"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "DrillingParams[].MaximumMudTemperatureDownhole"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "DrillingParams[].AveragePumpPressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "h",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":3600.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"h\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:h:",
+      "propertyNames": [
+        "TripTimeIn",
+        "TripTimeOut"
+      ]
+    }
+  ],
+  "data": {
+    "ResourceHomeRegionID": "namespace:reference-data--OSDURegion:AWSEastUSA:",
+    "ResourceHostRegionIDs": [
+      "namespace:reference-data--OSDURegion:AWSEastUSA:"
+    ],
+    "ResourceCurationStatus": "namespace:reference-data--ResourceCurationStatus:Created:",
+    "ResourceLifecycleStatus": "namespace:reference-data--ResourceLifecycleStatus:Loading:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:Prototype:",
+    "NameAliases": [
+      {
+        "AliasName": "Example AliasName",
+        "AliasNameTypeID": "namespace:reference-data--AliasNameType:RegulatoryIdentifier:",
+        "DefinitionOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z"
+      }
+    ],
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "namespace:master-data--GeoPoliticalEntity:SomeUniqueGeoPoliticalEntityID:",
+        "GeoTypeID": "namespace:reference-data--GeoPoliticalEntityType:Area:"
+      },
+      {
+        "BasinID": "namespace:master-data--Basin:SomeUniqueBasinID:",
+        "GeoTypeID": "namespace:reference-data--BasinType:ArcWrenchOceanContinent:"
+      },
+      {
+        "FieldID": "namespace:master-data--Field:SomeUniqueFieldID:",
+        "GeoTypeID": "Field"
+      },
+      {
+        "PlayID": "namespace:master-data--Play:SomeUniquePlayID:",
+        "GeoTypeID": "namespace:reference-data--PlayType:CarbonCaptureAndStorage:"
+      },
+      {
+        "ProspectID": "namespace:master-data--Prospect:SomeUniqueProspectID:",
+        "GeoTypeID": "namespace:reference-data--ProspectType:Structural.Anticline:"
+      }
+    ],
+    "SpatialLocation": {
+      "SpatialLocationCoordinatesDate": "2020-02-13T09:13:15.55Z",
+      "QuantitativeAccuracyBandID": "namespace:reference-data--QuantitativeAccuracyBand:Length.LessThan1m:",
+      "QualitativeSpatialAccuracyTypeID": "namespace:reference-data--QualitativeSpatialAccuracyType:Assumed:",
+      "CoordinateQualityCheckPerformedBy": "Example CoordinateQualityCheckPerformedBy",
+      "CoordinateQualityCheckDateTime": "2020-02-13T09:13:15.55Z",
+      "CoordinateQualityCheckRemarks": [
+        "Example CoordinateQualityCheckRemarks"
+      ],
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::32021_EPSG::15851:",
+        "VerticalCoordinateReferenceSystemID": "namespace:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:",
+        "VerticalUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"32021079\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"32021\"},\"name\":\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"NAD_1927_StatePlane_North_Dakota_South_FIPS_3302\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Lambert_Conformal_Conic\\\"],PARAMETER[\\\"False_Easting\\\",2000000.0],PARAMETER[\\\"False_Northing\\\",0.0],PARAMETER[\\\"Central_Meridian\\\",-100.5],PARAMETER[\\\"Standard_Parallel_1\\\",46.18333333333333],PARAMETER[\\\"Standard_Parallel_2\\\",47.48333333333333],PARAMETER[\\\"Latitude_Of_Origin\\\",45.66666666666666],UNIT[\\\"Foot_US\\\",0.3048006096012192],AUTHORITY[\\\"EPSG\\\",32021]]\"},\"name\":\"NAD27 * OGP-Usa Conus / North Dakota CS27 South zone [32021,15851]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "persistableReferenceVerticalCrs": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"5714\"},\"name\":\"MSL_Height\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"VERTCS[\\\"MSL_Height\\\",VDATUM[\\\"Mean_Sea_Level\\\"],PARAMETER[\\\"Vertical_Shift\\\",0.0],PARAMETER[\\\"Direction\\\",1.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",5714]]\"}",
+        "persistableReferenceUnitZ": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"Length\",\"type\":\"UM\"},\"type\":\"USO\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "properties": {},
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                12345.6,
+                12345.6
+              ],
+              "bbox": [
+                12345.6,
+                12345.6,
+                12345.6,
+                12345.6
+              ]
+            },
+            "bbox": [
+              12345.6,
+              12345.6,
+              12345.6,
+              12345.6
+            ]
+          }
+        ],
+        "bbox": [
+          12345.6,
+          12345.6,
+          12345.6,
+          12345.6
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from ED_1950_UTM_Zone_31N to GCS_European_1950; 1 points converted",
+        "transformation GCS_European_1950 to GCS_WGS_1984 using ED_1950_To_WGS_1984_24; 1 points successfully transformed"
+      ],
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Point:"
+    },
+    "VersionCreationReason": "Example VersionCreationReason",
+    "TechnicalAssurances": [
+      {
+        "TechnicalAssuranceTypeID": "namespace:reference-data--TechnicalAssuranceType:Trusted:",
+        "Reviewers": [
+          {
+            "RoleTypeID": "namespace:reference-data--ContactRoleType:AccountOwner:",
+            "DataGovernanceRoleTypeID": "namespace:reference-data--DataGovernanceRoleType:SME:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "OrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+            "Name": "John Smith"
+          }
+        ],
+        "AcceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicProcessing:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicProcessor:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicProcessingQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:6a433d16-07c8-4f4d-9ddc-5608e2ec4234:1562066077849221",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:Exploration:"
+          }
+        ],
+        "UnacceptableUsage": [
+          {
+            "WorkflowUsageTypeID": "namespace:reference-data--WorkflowUsageType:SeismicInterpretation:",
+            "WorkflowPersonaTypeID": "namespace:reference-data--WorkflowPersonaType:SeismicInterpreter:",
+            "DataQualityRuleSetID": "namespace:reference-data--DataQualityRuleSet:SeismicInterpretationQCRuleSet:",
+            "DataQualityID": "namespace:work-product-component--DataQuality:d79bf97c-ff7c-4b82-89b5-c88520c15017:1562066009929332",
+            "ValueChainStatusTypeID": "namespace:reference-data--ValueChainStatusType:FieldDevelopment:"
+          }
+        ],
+        "EffectiveDate": "2020-02-13",
+        "Comment": "This is free form text from reviewer, e.g. restrictions on use"
+      }
+    ],
+    "ProjectID": "Example External Project Identifier",
+    "ProjectName": "Example ProjectName",
+    "Purpose": "Example Purpose",
+    "ProjectBeginDate": "2020-02-13T09:13:15.55Z",
+    "ProjectEndDate": "2020-02-13T09:13:15.55Z",
+    "FundsAuthorizations": [
+      {
+        "AuthorizationID": "Example AuthorizationID",
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "FundsAmount": 12345.6,
+        "CurrencyID": "namespace:reference-data--Currency:AFN:"
+      }
+    ],
+    "ContractIDs": [
+      "namespace:master-data--Agreement:SomeUniqueAgreementID:"
+    ],
+    "Operator": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+    "Contractors": [
+      {
+        "ContractorOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ContractorCrew": "Example ContractorCrew",
+        "ContractorTypeID": "namespace:reference-data--ContractorType:Record:"
+      }
+    ],
+    "Personnel": [
+      {
+        "PersonName": "Example PersonName",
+        "CompanyOrganisationID": "namespace:master-data--Organisation:SomeUniqueOrganisationID:",
+        "ProjectRoleID": "namespace:reference-data--ProjectRole:ProjMgr:"
+      }
+    ],
+    "ProjectSpecifications": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationQuantity": 12345.6,
+        "ProjectSpecificationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectSpecificationIndicator": true,
+        "ProjectSpecificationText": "Example ProjectSpecificationText",
+        "UnitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+        "ParameterTypeID": "namespace:reference-data--ParameterType:SlotName:"
+      }
+    ],
+    "ProjectStates": [
+      {
+        "EffectiveDateTime": "2020-02-13T09:13:15.55Z",
+        "TerminationDateTime": "2020-02-13T09:13:15.55Z",
+        "ProjectStateTypeID": "namespace:reference-data--ProjectStateType:Prop:"
+      }
+    ],
+    "WellboreID": "namespace:master-data--Wellbore:11000091175501:",
+    "Name": "BHA #1 - 36\" Surface",
+    "TubularID": "namespace:master-data--TubularAssembly:BHA_1:",
+    "HoleSectionID": "namespace:master-data--HoleSection:36_in:",
+    "FluidsProgramReference": {
+      "FluidsProgramID": "namespace:master-data--FluidsProgram:123456:",
+      "FluidIntervalIdentifiers": [
+        "surface-section",
+        "intermediate-section"
+      ]
+    },
+    "VerticalMeasurement": {
+      "VerticalReferenceEntityID": "namespace:master-data--Well:110000911755:",
+      "VerticalReferenceID": "5iePi"
+    },
+    "ActivityStartDateTime": "2024-04-20T08:00:00+0000",
+    "ActivityStopDateTime": "2024-04-23T21:45:00+0000",
+    "DrillingStartDateTime": "2024-04-20T16:00:00+0000",
+    "DrillingStopDateTime": "2024-04-23T16:30:00+0000",
+    "Dogleg": 1.4,
+    "MaximumDogleg": 2.5,
+    "StatusBhaID": "namespace:reference-data--BhaStatus:Final:",
+    "BitRunNumber": "1",
+    "StringRunNumber": 1.0,
+    "TripReasonID": "namespace:reference-data--ReasonTripType:TD:",
+    "ObjectiveBha": "Drill 36\" Surface Hole Section",
+    "RunParameterPlans": [
+      {
+        "RunStartHoleMeasuredDepth": 12345.6,
+        "RunEndHoleMeasuredDepth": 12345.6,
+        "OperationParameterPlan": {
+          "RealizationStrategy": "linearInterpolation",
+          "TorqueOnBottomGroup": {
+            "MaximumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "MinimumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "RecommendedParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ]
+          },
+          "RPMGroup": {
+            "SurfaceRPMGroup": {
+              "MaximumParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ],
+              "MinimumParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ],
+              "RecommendedParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ]
+            },
+            "DownHoleRPMGroup": {
+              "MaximumParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ],
+              "MinimumParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ],
+              "RecommendedParameter": [
+                {
+                  "ObservationMeasuredDepth": 12345.6,
+                  "Value": 12345.6,
+                  "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                  "PointsSources": [
+                    {
+                      "Name": "Example Name",
+                      "Value": 12345.6,
+                      "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                      "Description": "Example Description"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "ROPGroup": {
+            "MaximumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "MinimumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "RecommendedParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ]
+          },
+          "WOBGroup": {
+            "MaximumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "MinimumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "RecommendedParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ]
+          },
+          "FlowratePumpGroup": {
+            "MaximumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "MinimumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "RecommendedParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ]
+          },
+          "TorqueAtSurfaceGroup": {
+            "MaximumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "MinimumParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ],
+            "RecommendedParameter": [
+              {
+                "ObservationMeasuredDepth": 12345.6,
+                "Value": 12345.6,
+                "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                "PointsSources": [
+                  {
+                    "Name": "Example Name",
+                    "Value": 12345.6,
+                    "ValueUnitID": "namespace:reference-data--UnitOfMeasure:m:",
+                    "Description": "Example Description"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "MeasuredDepthRunStart": 1250.0,
+    "MeasuredDepthRunStop": 2100.0,
+    "HoleDiameter": 36.0,
+    "WtAboveJar": 23.0,
+    "WtBelowJar": 21.0,
+    "DrillingParams": [
+      {
+        "BitRunTIme": "26.4 hrs",
+        "RunStartHoleMeasuredDepth": 18866.0,
+        "RunEndHoleMeasuredDepth": 18935.0,
+        "RotatingHookload": 175.0,
+        "OverPull": 12345.6,
+        "SlackOff": 140.0,
+        "HookloadUp": 230.0,
+        "HookloadDown": 12345.6,
+        "AverageTorqueOnBottom": 15000.0,
+        "MaximumTorqueOnBottom": 12345.6,
+        "MinimumTorqueOnBottom": 12345.6,
+        "AverageTorqueOffBottom": 10000.0,
+        "AverageTorqueDownhole": 12345.6,
+        "WeightAboveJar": 12345.6,
+        "WeightBelowJar": 12345.6,
+        "WeightMud": 11.3,
+        "AverageFlowratePump": 12345.6,
+        "MaximumFlowratePump": 289.0,
+        "MinimumFlowratePump": 12345.6,
+        "AverageVelocityBitNozzle": 12345.6,
+        "PowerBit": 12345.6,
+        "PressureDropBit": 12345.6,
+        "TimeHolding": 0.0,
+        "TimeSteering": 0.0,
+        "TimeDrillingRotating": 1.34,
+        "TimeDrillingSliding": 1.34,
+        "TimeCirculating": 0.0,
+        "TimeReaming": 0.0,
+        "DistanceDrilledRotating": 69.0,
+        "DistanceDrilledSliding": 0.0,
+        "DistanceReamed": 0.0,
+        "DistanceHolding": 0.0,
+        "DistanceSteering": 0.0,
+        "AverageRpm": 100.0,
+        "MaximumRpm": 12345.6,
+        "MinimumRpm": 12345.6,
+        "AverageRpmDownhole": 255.0,
+        "AverageROP": 52.3,
+        "MaximumROP": 12345.6,
+        "MinimumROP": 12345.6,
+        "AverageWOB": 20.0,
+        "MaximumWOB": 12345.6,
+        "MinimumWOB": 12345.6,
+        "AverageWOBDownhole": 12345.6,
+        "AzimuthTop": 12345.6,
+        "AzimuthBottom": 12345.6,
+        "InclinationStart": 12345.6,
+        "MaximumInclination": 89.5,
+        "MinimumInclination": 89.3,
+        "InclinationStop": 89.3,
+        "MaximumMudTemperatureDownhole": 350.0,
+        "MinimumPumpPressure": 12345.6,
+        "MaximumPumpPressure": 12345.6,
+        "AveragePumpPressure": 6100.0,
+        "MinimumBitFlowrate": 12345.6,
+        "MaximumBitFlowrate": 12345.6,
+        "AverageBitFlowrate": 12345.6,
+        "MudClass": "namespace:reference-data--MudClass:water%20based:",
+        "Comments": "Example Comments"
+      }
+    ],
+    "IsLeftInHole": false,
+    "IsNuclearSource": false,
+    "TripTimeIn": 6.0,
+    "TripTimeOut": 6.0,
+    "PredictedPerformanceDescription": "36\" Hole estimated to be drilled in 12.5 hours, ROP of 40ft/hr.",
+    "ActualPerformanceDescription": "BHA #1 drilled XX ft hole at ROP = 11 ft/hr",
+    "PlannedDogleg": 1.4,
+    "RunComment": "Required to wash BHA around collars and stabilizer when POOH.",
+    "ExtensionProperties": {}
+  }
+}

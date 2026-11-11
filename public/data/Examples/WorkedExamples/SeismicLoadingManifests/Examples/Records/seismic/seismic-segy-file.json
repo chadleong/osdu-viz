@@ -1,0 +1,99 @@
+{
+  "id": "partition-id:dataset--FileCollection.SEGY:eba9adc4-f274-4cea-9df8-abc9916bb4fd",
+  "kind": "osdu:wks:dataset--FileCollection.SEGY:1.3.0",
+  "version": 1605860768554777,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "ancestry": {
+    "parents": []
+  },
+  "meta": [],
+  "data": {
+    "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+    "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+    "Source": "Example Data Source",
+    "ExistenceKind": "partition-id:reference-data--ExistenceKind:Prototype:",
+    "Name": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH",
+    "Description": "As originally delivered by ACME.com.",
+    "TotalSize": "13245217273",
+    "SchemaFormatTypeID": "partition-id:reference-data--SchemaFormatType:SEG-Y:",
+    "Endian": "BIG",
+    "DatasetProperties": {
+      "FileCollectionPath": "s3://default_bucket/opendes/data/vds-dataset/",
+      "IndexFilePath": "s3://default_bucket/opendes/data/vds-dataset/vds-dataset.index",
+      "FileSourceInfos": [
+        {
+          "FileSource": "s3://default_bucket/opendes/data/vds-dataset/vds-file-1",
+          "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/vds-file-1",
+          "Name": "vds-file-1",
+          "FileSize": "439452464"
+        },
+        {
+          "FileSource": "s3://default_bucket/opendes/data/vds-dataset/vds-file-2",
+          "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/vds-file-2",
+          "Name": "vds-file-2",
+          "FileSize": "433645463"
+        }
+      ],
+      "Checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "VectorHeaderMapping": [
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:Inline:",
+        "Position": 189,
+        "ScalarIndicator": "NOSCALE",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:Crossline:",
+        "Position": 193,
+        "ScalarIndicator": "NOSCALE",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:CMPY:",
+        "Position": 181,
+        "ScalarIndicator": "OVERRIDE",
+        "ScalarOverride": -100,
+        "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:CMPX:",
+        "Position": 185,
+        "ScalarIndicator": "OVERRIDE",
+        "ScalarOverride": -100,
+        "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+        "WordWidth": 4
+      },
+      {
+        "KeyName": "partition-id:reference-data--HeaderKeyName:STARTTIME:",
+        "Position": 109,
+        "ScalarIndicator": "NOSCALE",
+        "UoM": "partition-id:reference-data--UnitOfMeasure:ms:",
+        "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+        "WordWidth": 2
+      }
+    ],
+    "ExtensionProperties": {}
+  }
+}

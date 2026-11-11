@@ -1,0 +1,117 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "{{NAMESPACE}}:reference-data--UnitQuantity:1%2FT2",
+      "kind": "osdu:wks:reference-data--UnitQuantity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "reciprocal time squared",
+        "ID": "1/T2",
+        "InactiveIndicator": false,
+        "Code": "1/T2",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "OSDU extension to Energistics Unit of Measure Dictionary V1.0",
+        "AttributionRevision": "1.0",
+        "BaseForConversion": "1/s2",
+        "ParentUnitQuantity": "1/T2",
+        "PersistableReference": "{\"ancestry\":\"1/T2\",\"type\":\"UM\"}",
+        "UnitDimension": "1/T2",
+        "Source": "Workbook Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/reference-data/UnitQuantity.json"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UnitQuantity:reciprocal%20time%20squared",
+      "kind": "osdu:wks:reference-data--UnitQuantity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "reciprocal time squared",
+        "NameAlias": [],
+        "ID": "reciprocal time squared",
+        "InactiveIndicator": false,
+        "Code": "reciprocal time squared",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "OSDU extension to Energistics Unit of Measure Dictionary V1.0",
+        "AttributionRevision": "1.0",
+        "BaseForConversion": "1/s2",
+        "MemberUnits": [
+          "1/s2",
+          "eotvos"
+        ],
+        "ParentUnitQuantity": "1/T2",
+        "PersistableReference": "{\"ancestry\":\"1/T2.reciprocal time squared\",\"type\":\"UM\"}",
+        "UnitDimension": "1/T2",
+        "Source": "Workbook Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/reference-data/UnitQuantity.json"
+      }
+    },
+    {
+      "id": "{{NAMESPACE}}:reference-data--UnitQuantity:linear%20acceleration%20density",
+      "kind": "osdu:wks:reference-data--UnitQuantity:1.0.0",
+      "acl": {
+        "owners": [
+          "{{DATA_OWNERS_GROUP}}"
+        ],
+        "viewers": [
+          "{{DATA_VIEWERS_GROUP}}"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "{{LEGAL_TAG}}"
+        ],
+        "otherRelevantDataCountries": [
+          "{{ISO_3166_ALPHA_2_CODE}}"
+        ]
+      },
+      "data": {
+        "Name": "linear acceleration density",
+        "NameAlias": [],
+        "ID": "linear acceleration density",
+        "InactiveIndicator": false,
+        "Code": "linear acceleration density",
+        "AttributionAuthority": "OSDU",
+        "AttributionPublication": "OSDU extension to Energistics Unit of Measure Dictionary V1.0",
+        "AttributionRevision": "1.0",
+        "BaseForConversion": "1/s2",
+        "MemberUnits": [
+          "1/s2",
+          "eotvos"
+        ],
+        "ParentUnitQuantity": "1/T2",
+        "PersistableReference": "{\"ancestry\":\"1/T2.linear acceleration density\",\"type\":\"UM\"}",
+        "UnitDimension": "1/T2",
+        "Source": "Workbook Examples/WorkedExamples/Reservoir Data/Content-ColumnBasedTable/reference-data/UnitQuantity.json"
+      }
+    }
+  ]
+}

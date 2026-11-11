@@ -1,0 +1,82 @@
+{
+  "id": "partition-id:master-data--Wellbore:DemoWellbore",
+  "kind": "osdu:wks:master-data--Wellbore:1.5.1",
+  "data": {
+    "FacilityTypeID": "partition-id:reference-data--FacilityType:Wellbore:",
+    "WellID": "partition-id:master-data--Well:WellOnshore-1:",
+    "SequenceNumber": 1,
+    "VerticalMeasurements": [
+      {
+        "VerticalMeasurementID": "NAVD88 EPSG:5703",
+        "VerticalMeasurement": 0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:Energistics:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5703:"
+      },
+      {
+        "VerticalMeasurementID": "GL 984.25 ft",
+        "VerticalMeasurement": 0.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ft:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:GroundLevel:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Well:WellOnshore-1:",
+        "VerticalReferenceID": "GL 984.25 ft"
+      },
+      {
+        "VerticalMeasurementID": "RT 10 m",
+        "VerticalMeasurement": 10.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Well:WellOnshore-1:",
+        "VerticalReferenceID": "GL 984.25 ft"
+      },
+      {
+        "VerticalMeasurementID": "TD TVDVRS",
+        "VerticalMeasurement": 1200.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Well:WellOnshore-1:",
+        "VerticalReferenceID": "NAVD88 EPSG:5703"
+      },
+      {
+        "VerticalMeasurementID": "TD TVDZDP",
+        "VerticalMeasurement": 1510.0,
+        "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:TotalDepth:",
+        "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalDepth:",
+        "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:DemoWellbore:",
+        "VerticalReferenceID": "RT 10 m"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition_id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "VerticalMeasurements[].VerticalMeasurement"
+      ]
+    }
+  ],
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  }
+}

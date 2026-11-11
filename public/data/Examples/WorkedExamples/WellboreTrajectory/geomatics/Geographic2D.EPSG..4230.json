@@ -1,0 +1,140 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4230",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "Code": "4230",
+    "CodeAsNumber": 4230,
+    "CodeSpace": "EPSG",
+    "CoordinateReferenceSystemType": "GeodeticCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6422
+      },
+      "Name": "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degree",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:dega:"
+    },
+    "Datum": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6230
+      },
+      "Name": "European Datum 1950"
+    },
+    "ID": "Geographic2D:EPSG::4230",
+    "Kind": "geographic 2D",
+    "Name": "ED50",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"4230\"},\"name\":\"GCS_European_1950\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGCS[\\\"GCS_European_1950\\\",DATUM[\\\"D_European_1950\\\",SPHEROID[\\\"International_1924\\\",6378388.0,297.0]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433],AUTHORITY[\\\"EPSG\\\",4230]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 3112
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1296
+        },
+        "BoundingBoxEastBoundLongitude": 48.61,
+        "BoundingBoxNorthBoundLatitude": 84.73,
+        "BoundingBoxSouthBoundLatitude": 25.71,
+        "BoundingBoxWestBoundLongitude": -16.1,
+        "Description": "Europe - west: Andorra; Cyprus; Denmark - onshore and offshore; Faroe Islands - onshore; France - offshore; Germany - offshore North Sea; Gibraltar; Greece - offshore; Israel - offshore; Italy including San Marino and Vatican City State; Ireland offshore; Malta; Netherlands - offshore; North Sea; Norway including Svalbard - onshore and offshore; Portugal - mainland - offshore; Spain - onshore; Turkey - onshore and offshore; United Kingdom UKCS offshore east of 6\u00b0W including Channel Islands (Guernsey and Jersey). Egypt - Western Desert; Iraq - onshore; Jordan.",
+        "Name": "Europe - ED50 by country"
+      },
+      "Name": "Europe - ED50 by country",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1027
+        },
+        "Name": "Geodesy."
+      }
+    },
+    "RevisionDate": "2004-10-23T00:00:00+00:00",
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 3112
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1296
+          },
+          "BoundingBoxEastBoundLongitude": 48.61,
+          "BoundingBoxNorthBoundLatitude": 84.73,
+          "BoundingBoxSouthBoundLatitude": 25.71,
+          "BoundingBoxWestBoundLongitude": -16.1,
+          "Description": "Europe - west: Andorra; Cyprus; Denmark - onshore and offshore; Faroe Islands - onshore; France - offshore; Germany - offshore North Sea; Gibraltar; Greece - offshore; Israel - offshore; Italy including San Marino and Vatican City State; Ireland offshore; Malta; Netherlands - offshore; North Sea; Norway including Svalbard - onshore and offshore; Portugal - mainland - offshore; Spain - onshore; Turkey - onshore and offshore; United Kingdom UKCS offshore east of 6\u00b0W including Channel Islands (Guernsey and Jersey). Egypt - Western Desert; Iraq - onshore; Jordan.",
+          "Name": "Europe - ED50 by country"
+        },
+        "Name": "Europe - ED50 by country",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1027
+          },
+          "Name": "Geodesy."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -16.1,
+                  25.71
+                ],
+                [
+                  48.61,
+                  25.71
+                ],
+                [
+                  48.61,
+                  84.73
+                ],
+                [
+                  -16.1,
+                  84.73
+                ],
+                [
+                  -16.1,
+                  25.71
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "GEOGCRS[\"ED50\",DATUM[\"European Datum 1950\",ELLIPSOID[\"International 1924\",6378388,297,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7022]],ID[\"EPSG\",6230]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4230]]"
+  }
+}

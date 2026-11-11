@@ -1,0 +1,51 @@
+{
+  "id": "namespace:master-data--WellActivityProgram:d928d59e-c58a-452e-9c2b-e1743ff7a517",
+  "kind": "osdu:wks:master-data--WellActivityProgram:1.2.0",
+  "version": 1646080456132,
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "someone@company.com"
+    ],
+    "owners": [
+      "someone@company.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "RigID": "namespace:master-data--Rig:3eb7eadb-439e-f0ed-918f-b8fbf091c75e:1646080400945",
+    "Phases": [
+      {
+        "TypeID": "namespace:reference-data--WellActivityPhaseType:Primary:",
+        "WellActivityPlanID": "namespace:master-data--ActivityPlan:1ab94d56-12c1-4406-bdd4-911be2ce21ac:1646080455072",
+        "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1646080398012",
+        "RiskIDs": [
+          "namespace:master-data--Risk:db7697ae-27e2-414d-a487-b79863c81d2f:1646080420775",
+          "namespace:master-data--Risk:dfe532ed-11eb-4771-a96d-62263bd81106:1646080451725",
+          "namespace:master-data--Risk:537ec368-cef4-454b-a735-29ea839b0a75:1646080452191",
+          "namespace:master-data--Risk:c2c6b607-53ad-4412-b588-5eff7f3a5c54:1646080452597",
+          "namespace:master-data--Risk:96058261-d41a-4d6d-bae0-3cfddb7e6c13:1646080452928",
+          "namespace:master-data--Risk:c7ae46a0-4e30-46ce-acba-ecb22110859c:1646080453554",
+          "namespace:master-data--Risk:dae638f8-b3c0-4c0c-a21d-edad4fb1f165:1646080453863",
+          "namespace:master-data--Risk:6388af58-0b70-4acf-9b36-d51b25c3dcf9:1646080454192",
+          "namespace:master-data--Risk:c3ec9d97-248d-415c-a8bd-3ee8653746ad:1646080454511"
+        ],
+        "BHARunIDs": [
+          "namespace:master-data--BHARun:8edbb259-e01e-4c25-afe9-b99ed1d2d376:1646080404015",
+          "namespace:master-data--BHARun:efb3865e-da7b-4c75-ba62-edd7b95c81ed:1646080407025",
+          "namespace:master-data--BHARun:4ca984f6-dd40-473d-bd78-42494c8f948e:1646080411604",
+          "namespace:master-data--BHARun:74c7e8ac-e8ab-4a0f-ba24-39ac0f59596c:1646080412781"
+        ],
+        "WellboreArchitectureID": "namespace:master-data--WellboreArchitecture:wa_bfa6c73d-4b12-4980-be91-80ce7cdb3291:1646080413992"
+      }
+    ],
+    "TypeID": "namespace:reference-data--WellActivityProgramType:Primary:"
+  }
+}

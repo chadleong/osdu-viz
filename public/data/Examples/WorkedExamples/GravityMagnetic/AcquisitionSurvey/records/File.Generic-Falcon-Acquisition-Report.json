@@ -1,0 +1,26 @@
+{
+  "id": "partition-id:dataset--File.Generic:Falcon_SurveyAcquisitionReport_NT-P66",
+  "kind": "osdu:wks:dataset--File.Generic:1.0.1",
+  "data": {
+    "Name": "Falcon Airborne Gravity Gradiometer and Magnetic Geophysical Survey",
+    "Description": "Acquisition and Processing Report; NT/P66; Survey Flown June 2004; FAS Job# 1663.",
+    "TotalSize": "56939200",
+    "EncodingFormatTypeID": "partition-id:reference-data--EncodingFormatType:application%2Fpdf:",
+    "DatasetProperties": {
+      "FileSourceInfo": {
+        "FileSource": "s3://bhp-data/wcr/NT/P66/Falcon_Acquisition_Final_Report_1663.doc",
+        "PreloadFilePath": "https://gitlab.opengroup.org/osdu/subcommittees/data-def/projects/seismic/docs/-/blob/master/Design%20Documents/GravityMagnetic/Falcon_Acquisition_Final_Report_1663.pdf",
+        "Name": "Falcon_Airborne_Gravity_Gradiometer_Magnetic_Geophysical_SurveyAcquisition_Job1663.pdf",
+        "FileSize": "56939200"
+      }
+    }
+  },
+  "acl": {
+    "owners": [],
+    "viewers": []
+  },
+  "legal": {
+    "legaltags": [],
+    "otherRelevantDataCountries": []
+  }
+}

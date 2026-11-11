@@ -1,0 +1,153 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "partition-id:reference-data--CoordinateTransformation:EPSG::15851",
+      "kind": "osdu:wks:reference-data--CoordinateTransformation:1.2.0",
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      },
+      "data": {
+        "Accuracy": 5.0,
+        "Code": "15851",
+        "CodeAsNumber": 15851,
+        "CodeSpace": "EPSG",
+        "CoordinateTransformationType": "Transformation",
+        "CoordTfmVersion": "OGP-Usa Conus",
+        "ID": "EPSG::15851",
+        "Method": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 9613
+          },
+          "Name": "NADCON"
+        },
+        "Name": "NAD27 to WGS 84 (79)",
+        "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"15851\"},\"name\":\"NAD_1927_To_WGS_1984_79_CONUS\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"NAD_1927_To_WGS_1984_79_CONUS\\\",GEOGCS[\\\"GCS_North_American_1927\\\",DATUM[\\\"D_North_American_1927\\\",SPHEROID[\\\"Clarke_1866\\\",6378206.4,294.9786982]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"NADCON\\\"],PARAMETER[\\\"Dataset_conus\\\",0.0],OPERATIONACCURACY[5.0],AUTHORITY[\\\"EPSG\\\",15851]]\"}",
+        "OGCWellKnownText2": "COORDINATEOPERATION[\"NAD27 to WGS 84 (79)\",VERSION[\"OGP-Usa Conus\"],SOURCECRS[GEOGCRS[\"NAD27\",DATUM[\"North American Datum 1927\",ELLIPSOID[\"Clarke 1866\",6378206.4,294.978698213901,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7008]],ID[\"EPSG\",6267]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4267]]],TARGETCRS[GEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\",ID[\"EPSG\",1166]],MEMBER[\"World Geodetic System 1984 (G730)\",ID[\"EPSG\",1152]],MEMBER[\"World Geodetic System 1984 (G873)\",ID[\"EPSG\",1153]],MEMBER[\"World Geodetic System 1984 (G1150)\",ID[\"EPSG\",1154]],MEMBER[\"World Geodetic System 1984 (G1674)\",ID[\"EPSG\",1155]],MEMBER[\"World Geodetic System 1984 (G1762)\",ID[\"EPSG\",1156]],MEMBER[\"World Geodetic System 1984 (G2139)\",ID[\"EPSG\",1309]],MEMBER[\"World Geodetic System 1984 (G2296)\",ID[\"EPSG\",1383]],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7030]],ENSEMBLEACCURACY[2],ID[\"EPSG\",6326]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4326]]],METHOD[\"NADCON\",ID[\"EPSG\",9613]],PARAMETERFILE[\"Latitude difference file\",\"conus.las\",ID[\"EPSG\",8657]],PARAMETERFILE[\"Longitude difference file\",\"conus.los\",ID[\"EPSG\",8658]],OPERATIONACCURACY[5],ID[\"EPSG\",15851]]",
+        "PreferredUsage": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 11862
+          },
+          "Extent": {
+            "AuthorityCode": {
+              "Authority": "EPSG",
+              "Code": 2374
+            },
+            "BoundingBoxEastBoundLongitude": -65.69,
+            "BoundingBoxNorthBoundLatitude": 49.38,
+            "BoundingBoxSouthBoundLatitude": 23.81,
+            "BoundingBoxWestBoundLongitude": -129.16,
+            "Description": "United States (USA) - CONUS including EEZ - onshore and offshore - Alabama; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Gulf of Mexico (GoM) OCS.",
+            "Name": "USA - CONUS including EEZ"
+          },
+          "Name": "USA - CONUS including EEZ",
+          "Scope": {
+            "AuthorityCode": {
+              "Authority": "EPSG",
+              "Code": 1252
+            },
+            "Name": "(null/copy) Approximation for medium and low accuracy applications assuming equality between plate-fixed static and earth-fixed dynamic CRSs, ignoring static/dynamic CRS differences."
+          }
+        },
+        "RevisionDate": "2021-09-10T00:00:00+00:00",
+        "SourceCRS": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 4267
+          },
+          "Name": "NAD27",
+          "SourceCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4267:"
+        },
+        "TargetCRS": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 4326
+          },
+          "Name": "WGS 84",
+          "TargetCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4326:"
+        },
+        "Usages": [
+          {
+            "AuthorityCode": {
+              "Authority": "EPSG",
+              "Code": 11862
+            },
+            "Extent": {
+              "AuthorityCode": {
+                "Authority": "EPSG",
+                "Code": 2374
+              },
+              "BoundingBoxEastBoundLongitude": -65.69,
+              "BoundingBoxNorthBoundLatitude": 49.38,
+              "BoundingBoxSouthBoundLatitude": 23.81,
+              "BoundingBoxWestBoundLongitude": -129.16,
+              "Description": "United States (USA) - CONUS including EEZ - onshore and offshore - Alabama; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Gulf of Mexico (GoM) OCS.",
+              "Name": "USA - CONUS including EEZ"
+            },
+            "Name": "USA - CONUS including EEZ",
+            "Scope": {
+              "AuthorityCode": {
+                "Authority": "EPSG",
+                "Code": 1252
+              },
+              "Name": "(null/copy) Approximation for medium and low accuracy applications assuming equality between plate-fixed static and earth-fixed dynamic CRSs, ignoring static/dynamic CRS differences."
+            }
+          }
+        ],
+        "Variant": 79,
+        "Wgs84Coordinates": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {},
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -129.16,
+                      23.81
+                    ],
+                    [
+                      -65.69,
+                      23.81
+                    ],
+                    [
+                      -65.69,
+                      49.38
+                    ],
+                    [
+                      -129.16,
+                      49.38
+                    ],
+                    [
+                      -129.16,
+                      23.81
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

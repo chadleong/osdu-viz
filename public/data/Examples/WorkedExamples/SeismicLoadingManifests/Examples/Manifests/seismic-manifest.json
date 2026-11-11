@@ -1,0 +1,219 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [],
+  "MasterData": [],
+  "Data": {
+    "WorkProduct": {
+      "kind": "osdu:wks:work-product--WorkProduct:1.0.0",
+      "acl": {
+        "owners": [
+          "someone@company.com"
+        ],
+        "viewers": [
+          "someone@company.com"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "Example legaltags"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ]
+      },
+      "meta": [],
+      "data": {
+        "Source": "Equinor",
+        "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+        "Components": [
+          "surrogate-key:wpc-1"
+        ],
+        "Name": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH",
+        "Description": "ST0202R08-PS_PSDM_FULL_OFFSET_DEPTH.MIG_FIN.POST_STACK.3D.JS-017534.segy"
+      }
+    },
+    "WorkProductComponents": [
+      {
+        "id": "surrogate-key:wpc-1",
+        "kind": "osdu:wks:work-product-component--SeismicTraceData:1.8.0",
+        "acl": {
+          "owners": [
+            "someone@company.com"
+          ],
+          "viewers": [
+            "someone@company.com"
+          ]
+        },
+        "legal": {
+          "legaltags": [
+            "Example legaltags"
+          ],
+          "otherRelevantDataCountries": [
+            "US"
+          ]
+        },
+        "meta": [
+          {
+            "kind": "Unit",
+            "name": "ms",
+            "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.001,\"c\":1.0,\"d\":0.0},\"symbol\":\"ms\",\"baseMeasurement\":{\"ancestry\":\"T\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+            "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:ms:",
+            "propertyNames": [
+              "StartTime",
+              "EndTime",
+              "TraceLength",
+              "SampleInterval"
+            ]
+          },
+          {
+            "kind": "Unit",
+            "name": "m/s",
+            "persistableReference": "{\"scaleOffset\":{\"scale\":1.0,\"offset\":0.0},\"symbol\":\"m/s\",\"baseMeasurement\":{\"ancestry\":\"L/T\",\"type\":\"UM\"},\"type\":\"USO\"}",
+            "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m%2Fs:",
+            "propertyNames": [
+              "ReplacementVelocity"
+            ]
+          }
+        ],
+        "data": {
+          "Source": "Example Data Source",
+          "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+          "Datasets": [
+            "surrogate-key:file-1"
+          ],
+          "BinGridID": "partition-id:work-product-component--SeismicBinGrid:ExampleSeismicBinGrid-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+          "HorizontalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23031_EPSG::1613:",
+          "Preferred3DInterpretationSetID": "partition-id:master-data--Seismic3DInterpretationSet:ExampleSeismic3DInterpretationSurvey:",
+          "Preferred2DInterpretationSetID": "partition-id:master-data--Seismic2DInterpretationSet:ExampleSeismic2DInterpretationSurvey:",
+          "SeismicAttributeTypeID": "partition-id:reference-data--SeismicAttributeType:ExampleSeismicAttributeType:",
+          "SeismicProcessingStageTypeID": "partition-id:reference-data--SeismicProcessingStageType:ExampleSeismicProcessingStageType:",
+          "PrincipalAcquisitionProjectID": "partition-id:master-data--SeismicAcquisitionSurvey:ST0202R08:",
+          "ProcessingProjectID": "partition-id:master-data--SeismicProcessingProject:ST0202R08:",
+          "SeismicTraceDataDimensionalityTypeID": "partition-id:reference-data--SeismicTraceDataDimensionalityType:3D:",
+          "SeismicMigrationTypeID": "partition-id:reference-data--SeismicMigrationType:PSDM-Kirch:",
+          "SeismicStackingTypeID": "partition-id:reference-data--SeismicStackingType:Full:",
+          "SeismicFilteringTypeID": "partition-id:reference-data--SeismicFilteringType:Taup:",
+          "SeismicPhaseID": "partition-id:reference-data--SeismicPhase:ZeroPhase:",
+          "SeismicPolarityID": "partition-id:reference-data--SeismicPolarity:PositiveSEG:",
+          "Difference": false,
+          "StartTime": 0.0,
+          "EndTime": 10200.0,
+          "TraceLength": 10200.0,
+          "SampleInterval": 4.0,
+          "SampleCount": 2551,
+          "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:MeanSeaLevel:",
+          "ReplacementVelocity": 1450.0,
+          "ShiftApplied": 0.0,
+          "Precision": {
+            "WordFormat": "partition-id:reference-data--WordFormatType:IEEE_FLOAT:",
+            "WordWidth": 4
+          },
+          "ProcessingParameters": [
+            {
+              "ProcessingParameterTypeID": "partition-id:reference-data--ProcessingParameterType:ExampleProcessingParameterType:",
+              "ProcessingParameterValue": "Example ProcessingParameterValue"
+            }
+          ],
+          "SeismicWaveTypeID": "partition-id:reference-data--SeismicWaveType:ExampleSeismicWaveType:",
+          "ExtensionProperties": {}
+        }
+      }
+    ],
+    "Datasets": [
+      {
+        "id": "surrogate-key:file-1",
+        "kind": "osdu:wks:dataset--FileCollection.SEGY:1.3.0",
+        "acl": {
+          "owners": [
+            "someone@company.com"
+          ],
+          "viewers": [
+            "someone@company.com"
+          ]
+        },
+        "legal": {
+          "legaltags": [
+            "Example legaltags"
+          ],
+          "otherRelevantDataCountries": [
+            "US"
+          ]
+        },
+        "data": {
+          "ExistenceKind": "partition-id:reference-data--ExistenceKind:Actual:",
+          "ResourceCurationStatus": "partition-id:reference-data--ResourceCurationStatus:CREATED:",
+          "ResourceLifecycleStatus": "partition-id:reference-data--ResourceLifecycleStatus:LOADING:",
+          "Source": "Example Data Source",
+          "Name": "Dataset X221/15",
+          "Description": "As originally delivered by ACME.com.",
+          "TotalSize": "13245217273",
+          "SchemaFormatTypeID": "partition-id:reference-data--SchemaFormatType:SEG-Y:",
+          "SEGYRevision": "rev 0",
+          "Endian": "BIG",
+          "DatasetProperties": {
+            "FileCollectionPath": "s3://default_bucket/opendes/data/vds-dataset/",
+            "IndexFilePath": "s3://default_bucket/opendes/data/vds-dataset/vds-dataset.index",
+            "FileSourceInfos": [
+              {
+                "FileSource": "s3://default_bucket/opendes/data/vds-dataset/vds-file-1",
+                "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/vds-file-1",
+                "Name": "vds-file-1",
+                "FileSize": "439452464"
+              },
+              {
+                "FileSource": "s3://default_bucket/opendes/data/vds-dataset/vds-file-2",
+                "PreloadFilePath": "s3://staging-area/r7/raw-data/provided/documents/vds-file-2",
+                "Name": "vds-file-2",
+                "FileSize": "433645463"
+              }
+            ],
+            "Checksum": "d41d8cd98f00b204e9800998ecf8427e"
+          },
+          "VectorHeaderMapping": [
+            {
+              "KeyName": "partition-id:reference-data--HeaderKeyName:Inline:",
+              "Position": 189,
+              "ScalarIndicator": "NOSCALE",
+              "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+              "WordWidth": 4
+            },
+            {
+              "KeyName": "partition-id:reference-data--HeaderKeyName:Crossline:",
+              "Position": 193,
+              "ScalarIndicator": "NOSCALE",
+              "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+              "WordWidth": 4
+            },
+            {
+              "KeyName": "partition-id:reference-data--HeaderKeyName:CMPY:",
+              "Position": 181,
+              "ScalarIndicator": "OVERRIDE",
+              "ScalarOverride": -100,
+              "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+              "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+              "WordWidth": 4
+            },
+            {
+              "KeyName": "partition-id:reference-data--HeaderKeyName:CMPX:",
+              "Position": 185,
+              "ScalarIndicator": "OVERRIDE",
+              "ScalarOverride": -100,
+              "UoM": "partition-id:reference-data--UnitOfMeasure:m:",
+              "WordFormat": "partition-id:reference-data--WordFormatType:UINT:",
+              "WordWidth": 4
+            },
+            {
+              "KeyName": "partition-id:reference-data--HeaderKeyName:STARTTIME:",
+              "Position": 109,
+              "ScalarIndicator": "NOSCALE",
+              "UoM": "partition-id:reference-data--UnitOfMeasure:ms:",
+              "WordFormat": "partition-id:reference-data--WordFormatType:INT:",
+              "WordWidth": 2
+            }
+          ],
+          "ExtensionProperties": {}
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "partition-id:work-product-component--WellboreTrajectory:cdbb127d-2864-4913-af98-ac2d5a06d344",
+  "kind": "osdu:wks:work-product-component--WellboreTrajectory:1.4.0",
+  "version": 1621068020029332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "data": {
+    "Name": "8816.csv",
+    "Description": "Wellbore Trajectory; the column with name HorizontalCRS contains the EPSG code for the 'grid', in which the column Azimuth is computed.",
+    "Datasets": [
+      "partition-id:dataset--File.Generic.CSV:7dee8cae-886a-4c68-b520-4eb26546e0cb:"
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:8816:",
+    "TopDepthMeasuredDepth": 22.0,
+    "BaseDepthMeasuredDepth": 2790.0,
+    "AzimuthReferenceType": "partition-id:reference-data--AzimuthReferenceType:GridNorth:",
+    "ProjectedCRSID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::23095_EPSG::1133:",
+    "VerticalMeasurement": {
+      "VerticalMeasurement": 42.51,
+      "VerticalMeasurementTypeID": "partition-id:reference-data--VerticalMeasurementType:RotaryTable:",
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:TrueVerticalHeight:",
+      "VerticalMeasurementUnitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "VerticalCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Vertical:EPSG::5714:"
+    },
+    "AvailableTrajectoryStationProperties": [
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:MD:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:m:",
+        "Name": "MeasuredDepth"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:AzimuthGN:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "Azimuth"
+      },
+      {
+        "TrajectoryStationPropertyTypeID": "partition-id:reference-data--TrajectoryStationPropertyType:Inclination:",
+        "StationPropertyUnitID": "partition-id:reference-data--UnitOfMeasure:dega:",
+        "Name": "Inclination"
+      },
+      {
+        "Name": "UWBI"
+      },
+      {
+        "Name": "AzimuthReference"
+      },
+      {
+        "Name": "HorizontalCRS"
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepthMeasuredDepth",
+        "BaseDepthMeasuredDepth",
+        "VerticalMeasurement.VerticalMeasurement"
+      ]
+    }
+  ]
+}

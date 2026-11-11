@@ -1,0 +1,148 @@
+{
+  "id": "partition-id:reference-data--CoordinateReferenceSystem:Geographic2D:EPSG::4326",
+  "kind": "osdu:wks:reference-data--CoordinateReferenceSystem:1.2.0",
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "data": {
+    "BaseCRS": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 4979
+      },
+      "BaseCRSID": "partition-id:reference-data--CoordinateReferenceSystem:Geographic3D:EPSG::4979:",
+      "Name": "WGS 84"
+    },
+    "Code": "4326",
+    "CodeAsNumber": 4326,
+    "CodeSpace": "EPSG",
+    "CoordinateReferenceSystemType": "GeodeticCRS",
+    "CoordinateSystem": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6422
+      },
+      "Name": "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degree",
+      "HorizontalAxisUnitID": "partition-id:reference-data--UnitOfMeasure:dega:"
+    },
+    "Datum": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 6326
+      },
+      "Name": "World Geodetic System 1984 ensemble"
+    },
+    "ID": "Geographic2D:EPSG::4326",
+    "Kind": "geographic 2D",
+    "Name": "WGS 84",
+    "PersistableReference": "{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"4326\"},\"name\":\"GCS_WGS_1984\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433],AUTHORITY[\\\"EPSG\\\",4326]]\"}",
+    "PreferredUsage": {
+      "AuthorityCode": {
+        "Authority": "EPSG",
+        "Code": 3202
+      },
+      "Extent": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1262
+        },
+        "BoundingBoxEastBoundLongitude": 180.0,
+        "BoundingBoxNorthBoundLatitude": 90.0,
+        "BoundingBoxSouthBoundLatitude": -90.0,
+        "BoundingBoxWestBoundLongitude": -180.0,
+        "Description": "World.",
+        "Name": "World"
+      },
+      "Name": "World",
+      "Scope": {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 1183
+        },
+        "Name": "Horizontal component of 3D system."
+      }
+    },
+    "RevisionDate": "2020-03-14T00:00:00+00:00",
+    "Usages": [
+      {
+        "AuthorityCode": {
+          "Authority": "EPSG",
+          "Code": 3202
+        },
+        "Extent": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1262
+          },
+          "BoundingBoxEastBoundLongitude": 180.0,
+          "BoundingBoxNorthBoundLatitude": 90.0,
+          "BoundingBoxSouthBoundLatitude": -90.0,
+          "BoundingBoxWestBoundLongitude": -180.0,
+          "Description": "World.",
+          "Name": "World"
+        },
+        "Name": "World",
+        "Scope": {
+          "AuthorityCode": {
+            "Authority": "EPSG",
+            "Code": 1183
+          },
+          "Name": "Horizontal component of 3D system."
+        }
+      }
+    ],
+    "Wgs84Coordinates": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -180.0,
+                  -90.0
+                ],
+                [
+                  180.0,
+                  -90.0
+                ],
+                [
+                  180.0,
+                  90.0
+                ],
+                [
+                  -180.0,
+                  90.0
+                ],
+                [
+                  -180.0,
+                  -90.0
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Source": "Workbook Resources/IOGP/Manifests/reference-data/CoordinateReferenceSystem.1.1.0.json; commit SHA a046fbd2.",
+    "CommitDate": "2022-04-02T14:45:12+02:00",
+    "OGCWellKnownText2": "GEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\",ID[\"EPSG\",1166]],MEMBER[\"World Geodetic System 1984 (G730)\",ID[\"EPSG\",1152]],MEMBER[\"World Geodetic System 1984 (G873)\",ID[\"EPSG\",1153]],MEMBER[\"World Geodetic System 1984 (G1150)\",ID[\"EPSG\",1154]],MEMBER[\"World Geodetic System 1984 (G1674)\",ID[\"EPSG\",1155]],MEMBER[\"World Geodetic System 1984 (G1762)\",ID[\"EPSG\",1156]],MEMBER[\"World Geodetic System 1984 (G2139)\",ID[\"EPSG\",1309]],MEMBER[\"World Geodetic System 1984 (G2296)\",ID[\"EPSG\",1383]],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]],ID[\"EPSG\",7030]],ENSEMBLEACCURACY[2],ID[\"EPSG\",6326]],CS[ellipsoidal,2,ID[\"EPSG\",6422]],AXIS[\"Geodetic latitude (Lat)\",north],AXIS[\"Geodetic longitude (Lon)\",east],ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9102]],ID[\"EPSG\",4326]]"
+  }
+}

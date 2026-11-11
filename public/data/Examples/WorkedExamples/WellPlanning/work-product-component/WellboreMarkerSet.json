@@ -1,0 +1,86 @@
+{
+  "id": "osdu:work-product-component--WellboreMarkerSet:019bf7c3-feb9-49e9-afb5-aa88a7175f3f",
+  "kind": "osdu:wks:work-product-component--WellboreMarkerSet:1.5.1",
+  "version": 1635454827754,
+  "legal": {
+    "legaltags": [
+      "slb-osdu-dev-sis-internal-hq-public-usa-dataset-1"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ]
+  },
+  "acl": {
+    "viewers": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ],
+    "owners": [
+      "data.default.viewers@slb-osdu-dev-sis-internal-hq.enterprisedata.cloud.slb-ds.com"
+    ]
+  },
+  "data": {
+    "ExistenceKind": "namespace:reference-data--ExistenceKind:planned:",
+    "WellboreID": "namespace:master-data--Wellbore:bfa6c73d-4b12-4980-be91-80ce7cdb3291:1635454816654",
+    "Markers": [
+      {
+        "MarkerName": "Formation A",
+        "MarkerSubSeaVerticalDepth": 243.84
+      },
+      {
+        "MarkerName": "Formation B",
+        "MarkerSubSeaVerticalDepth": 335.28000000000003
+      },
+      {
+        "MarkerName": "Formation C",
+        "MarkerSubSeaVerticalDepth": 457.20000000000005
+      },
+      {
+        "MarkerName": "Formation D",
+        "MarkerSubSeaVerticalDepth": 609.6
+      },
+      {
+        "MarkerName": "Formation E",
+        "MarkerSubSeaVerticalDepth": 762.0
+      },
+      {
+        "MarkerName": "Formation F",
+        "MarkerSubSeaVerticalDepth": 975.36
+      },
+      {
+        "MarkerName": "Formation G",
+        "MarkerSubSeaVerticalDepth": 1158.24
+      },
+      {
+        "MarkerName": "Formation H",
+        "MarkerSubSeaVerticalDepth": 1402.0800000000002
+      },
+      {
+        "MarkerName": "Formation I",
+        "MarkerSubSeaVerticalDepth": 1584.96
+      },
+      {
+        "MarkerName": "Formation J",
+        "MarkerSubSeaVerticalDepth": 1798.3200000000002
+      },
+      {
+        "MarkerName": "Formation K",
+        "MarkerSubSeaVerticalDepth": 2097.3288000000002
+      },
+      {
+        "MarkerName": "Formation L",
+        "MarkerSubSeaVerticalDepth": 2111.3496
+      }
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "namespace:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "Markers[].MarkerSubSeaVerticalDepth"
+      ]
+    }
+  ]
+}

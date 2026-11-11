@@ -1,0 +1,253 @@
+{
+  "id": "partition-id:work-product-component--RockSampleAnalysis:KK1-Core1-10A",
+  "kind": "osdu:wks:work-product-component--RockSampleAnalysis:1.3.1",
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "RoutineCoreAnalysis.RCAMeasurements[].Conditions.Pressure"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "K",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"K\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:K:",
+      "propertyNames": [
+        "RoutineCoreAnalysis.RCAMeasurements[].Conditions.Temperature"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "TopDepth",
+        "BottomDepth"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "mD",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1e-15,\"c\":1.01325,\"d\":0.0},\"symbol\":\"mD\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:mD:",
+      "propertyNames": [
+        "RoutineCoreAnalysis.RCAMeasurements[].Permeability"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "%",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.01,\"c\":1.0,\"d\":0.0},\"symbol\":\"%\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:%25:",
+      "propertyNames": [
+        "RoutineCoreAnalysis.RCAMeasurements[].Porosity"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "g/cm3",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"g/cm3\",\"baseMeasurement\":{\"ancestry\":\"M/L3\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "partition-id:reference-data--UnitOfMeasure:g%2Fcm3:",
+      "propertyNames": [
+        "RoutineCoreAnalysis.GrainDensity"
+      ]
+    }
+  ],
+  "data": {
+    "TechnicalAssuranceID": "partition-id:reference-data--TechnicalAssuranceType:Certified:",
+    "Datasets": [
+      "partition-id:dataset--File.Generic:WellCompletionReport-KentishKnockSouth1-WA-365-P--R1:"
+    ],
+    "Artefacts": [],
+    "IsExtendedLoad": true,
+    "IsDiscoverable": true,
+    "Description": "Example Description",
+    "CreationDateTime": "2020-02-13T09:13:15.55Z",
+    "Tags": [
+      "Example Tags"
+    ],
+    "SpatialPoint": {
+      "AsIngestedCoordinates": {
+        "type": "AnyCrsFeatureCollection",
+        "CoordinateReferenceSystemID": "partition-id:reference-data--CoordinateReferenceSystem:BoundProjected:EPSG::28349_EPSG::1150:",
+        "persistableReferenceCrs": "{\"authCode\":{\"auth\":\"OSDU\",\"code\":\"28349001\"},\"lateBoundCRS\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"28349\"},\"name\":\"GDA_1994_MGA_Zone_49\",\"type\":\"LBC\",\"ver\":\"PE_10_9_1\",\"wkt\":\"PROJCS[\\\"GDA_1994_MGA_Zone_49\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],PROJECTION[\\\"Transverse_Mercator\\\"],PARAMETER[\\\"False_Easting\\\",500000.0],PARAMETER[\\\"False_Northing\\\",10000000.0],PARAMETER[\\\"Central_Meridian\\\",111.0],PARAMETER[\\\"Scale_Factor\\\",0.9996],PARAMETER[\\\"Latitude_Of_Origin\\\",0.0],UNIT[\\\"Meter\\\",1.0],AUTHORITY[\\\"EPSG\\\",28349]]\"},\"name\":\"GDA94 * EPSG-Aus / Map Grid of Australia zone 49 [28349,1150]\",\"singleCT\":{\"authCode\":{\"auth\":\"EPSG\",\"code\":\"1150\"},\"name\":\"GDA_1994_To_WGS_1984\",\"type\":\"ST\",\"ver\":\"PE_10_9_1\",\"wkt\":\"GEOGTRAN[\\\"GDA_1994_To_WGS_1984\\\",GEOGCS[\\\"GCS_GDA_1994\\\",DATUM[\\\"D_GDA_1994\\\",SPHEROID[\\\"GRS_1980\\\",6378137.0,298.257222101]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]],METHOD[\\\"Position_Vector\\\"],PARAMETER[\\\"X_Axis_Translation\\\",0.0],PARAMETER[\\\"Y_Axis_Translation\\\",0.0],PARAMETER[\\\"Z_Axis_Translation\\\",0.0],PARAMETER[\\\"X_Axis_Rotation\\\",0.0],PARAMETER[\\\"Y_Axis_Rotation\\\",0.0],PARAMETER[\\\"Z_Axis_Rotation\\\",0.0],PARAMETER[\\\"Scale_Difference\\\",0.0],OPERATIONACCURACY[3.2],AUTHORITY[\\\"EPSG\\\",1150]]\"},\"type\":\"EBC\",\"ver\":\"PE_10_9_1\"}",
+        "features": [
+          {
+            "type": "AnyCrsFeature",
+            "geometry": {
+              "type": "AnyCrsPoint",
+              "coordinates": [
+                689960.85,
+                7811747.53
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                112.81324757107716,
+                -19.7808907610266
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      },
+      "AppliedOperations": [
+        "conversion from GDA_1994_MGA_Zone_49 to GCS_GDA_1994; 1 points converted",
+        "transformation GCS_GDA_1994 to GCS_WGS_1984 using GDA_1994_To_WGS_1984; 1 points successfully transformed"
+      ]
+    },
+    "GeoContexts": [
+      {
+        "GeoPoliticalEntityID": "partition-id:master-data--GeoPoliticalEntity:3298:",
+        "GeoTypeID": "partition-id:reference-data--GeoPoliticalEntityType:BlockID:"
+      },
+      {
+        "BasinID": "partition-id:master-data--Basin:Carnarvon:",
+        "GeoTypeID": "partition-id:reference-data--BasinType:PassiveMargin:"
+      },
+      {
+        "FieldID": "partition-id:master-data--Field:Gorgon:",
+        "GeoTypeID": "Field"
+      }
+    ],
+    "SubmitterName": "Core Laboratories Australia",
+    "BusinessActivities": [
+      "Rock Sample Analysis"
+    ],
+    "AuthorIDs": [
+      "James Brown, Core Laboratories"
+    ],
+    "LineageAssertions": [
+      {
+        "ID": "partition-id:work-product-component--Document:WellCompletionReport-KentishKnockSouth1-WA-365-P--R1:",
+        "LineageRelationshipType": "partition-id:reference-data--LineageRelationshipType:Direct:"
+      }
+    ],
+    "WellboreID": "partition-id:master-data--Wellbore:KKS1:",
+    "CoringID": "partition-id:master-data--Coring:KKS1-Core-1:",
+    "RockSampleID": "partition-id:master-data--RockSample:KKS1-Core1-Sample-10A:",
+    "Name": "10A",
+    "VerticalMeasurement": {
+      "VerticalReferenceID": "ZDP",
+      "VerticalMeasurement": 0.0,
+      "VerticalMeasurementPathID": "partition-id:reference-data--VerticalMeasurementPath:MeasuredDepth:",
+      "VerticalMeasurementSourceID": "partition-id:reference-data--VerticalMeasurementSource:DRL:",
+      "VerticalMeasurementDescription": "Same vertical reference as wellbore ZDP, Measured Depth, Drillers Depth.",
+      "VerticalReferenceEntityID": "partition-id:master-data--Wellbore:KKS1:"
+    },
+    "AnalysisDate": "2012-12-29",
+    "TopDepth": 2423.26,
+    "BottomDepth": 2423.26,
+    "DepthShiftsID": "partition-id:work-product-component--WellLog:WellLog-911bb71f-06ab-4deb-8e68-b8c9229dc76b:",
+    "SampleOrientationID": "partition-id:reference-data--SampleOrientationType:Horizontal:",
+    "AnalysisTypeIDs": [
+      "partition-id:reference-data--RockSampleAnalysisType:RoutineCoreAnalysis:"
+    ],
+    "RoutineCoreAnalysis": {
+      "GrainDensity": 2.643,
+      "GrainDensityMeasurementTypeID": "partition-id:reference-data--GrainDensityMeasurementType:BoylesLaw:",
+      "RCAMeasurements": [
+        {
+          "Conditions": {
+            "Pressure": 800,
+            "Temperature": 12345.6,
+            "PressureMeasurementTypeID": "partition-id:reference-data--PressureMeasurementType:Overburden:",
+            "OtherConditions": []
+          },
+          "Permeability": 4410.0,
+          "PermeabilityMeasurementTypeID": "partition-id:reference-data--PermeabilityMeasurementType:Gas:",
+          "Porosity": 35.7,
+          "PorosityMeasurementTypeID": "partition-id:reference-data--PorosityMeasurementType:HeliumInjection:",
+          "OtherMeasurements": []
+        },
+        {
+          "Conditions": {
+            "Pressure": 1280,
+            "PressureMeasurementTypeID": "partition-id:reference-data--PressureMeasurementType:Overburden:",
+            "OtherConditions": []
+          },
+          "Permeability": 4340.0,
+          "PermeabilityMeasurementTypeID": "partition-id:reference-data--PermeabilityMeasurementType:Gas:",
+          "Porosity": 35.4,
+          "PorosityMeasurementTypeID": "partition-id:reference-data--PorosityMeasurementType:HeliumInjection:",
+          "OtherMeasurements": []
+        }
+      ]
+    },
+    "ActivityTemplateID": "partition-id:master-data--ActivityTemplate:RoutineCoreAnalysis-0001:",
+    "Parameters": [
+      {
+        "Title": "SampleCleaning",
+        "Index": 0,
+        "StringParameter": "Hot solvent: tetrahydrofuran, toluene & methanol",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "SampleDrying",
+        "Index": 0,
+        "StringParameter": "Convection oven @ 105 degC",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      },
+      {
+        "Title": "SamplePreparationDescription",
+        "Index": 0,
+        "StringParameter": "Horizontal samples (Suffix A) plugs were drilled and trimmed using chilled Nitrogen gas every 0.30m for routine core analysis (most of the samples were sleeved in nickel with steel screens). The horizontal plugs were cleaned of residual hydrocarbons and salts using warm THF, warm toluene and warm methanol respectively. Hydrocarbon removal was confirmed by gas chromatography analysis of the toluene, while salt removal was indicated by a negative reaction to silver nitrate in the methanol. After cleaning, the samples were dried in a convection oven at 105\u00b0C to a constant weight +/- 0.02 g. After drying, the samples were cooled down to room temperature in a desiccator, prior to analysis.",
+        "ParameterKindID": "partition-id:reference-data--ParameterKind:String:",
+        "ParameterRoleID": "partition-id:reference-data--ParameterRole:Input:"
+      }
+    ],
+    "Remarks": [
+      {
+        "RemarkID": "Remark 1",
+        "Remark": "Mounted",
+        "RemarkSource": "Kentish Knock South 1 Completion Report, page 453."
+      }
+    ],
+    "ExtensionProperties": {}
+  },
+  "version": 1562066009929332,
+  "acl": {
+    "owners": [
+      "someone@company.com"
+    ],
+    "viewers": [
+      "someone@company.com"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "Example legaltags"
+    ],
+    "otherRelevantDataCountries": [
+      "US"
+    ],
+    "status": "compliant"
+  },
+  "tags": {
+    "NameOfKey": "String value"
+  },
+  "createTime": "2020-12-16T11:46:20.163Z",
+  "createUser": "some-user@some-company-cloud.com",
+  "modifyTime": "2020-12-16T11:52:24.477Z",
+  "modifyUser": "some-user@some-company-cloud.com",
+  "ancestry": {
+    "parents": []
+  }
+}

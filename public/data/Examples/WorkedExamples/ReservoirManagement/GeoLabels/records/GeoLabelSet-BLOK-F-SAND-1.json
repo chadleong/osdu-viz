@@ -1,0 +1,303 @@
+{
+  "id": "namespace:work-product-component--GeoLabelSet:3770c1da-d22c-574f-8bbf-b507264f3d9d",
+  "kind": "osdu:wks:work-product-component--GeoLabelSet:1.1.0",
+  "acl": {
+    "owners": [
+      "{{DATA_OWNERS_GROUP}}"
+    ],
+    "viewers": [
+      "{{DATA_VIEWERS_GROUP}}"
+    ]
+  },
+  "legal": {
+    "legaltags": [
+      "{{LEGAL_TAG}}"
+    ],
+    "otherRelevantDataCountries": [
+      "{{ISO_3166_ALPHA_2_CODE}}"
+    ]
+  },
+  "meta": [
+    {
+      "kind": "Unit",
+      "name": "km2",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1000000.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"km2\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:km2:",
+      "propertyNames": [
+        "LabelAndValues[0].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "m",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"m\",\"baseMeasurement\":{\"ancestry\":\"L\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:m:",
+      "propertyNames": [
+        "LabelAndValues[15].ValueAsNumber",
+        "LabelAndValues[16].ValueAsNumber",
+        "LabelAndValues[17].ValueAsNumber",
+        "LabelAndValues[18].ValueAsNumber",
+        "LabelAndValues[19].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "Euc",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"Euc\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:Euc:",
+      "propertyNames": [
+        "LabelAndValues[20].ValueAsNumber",
+        "LabelAndValues[22].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "degC",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":273.15,\"c\":1.0,\"d\":0.0},\"symbol\":\"degC\",\"baseMeasurement\":{\"ancestry\":\"K\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:degC:",
+      "propertyNames": [
+        "LabelAndValues[21].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "mD",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.000000000000001,\"c\":1.01325,\"d\":0.0},\"symbol\":\"mD\",\"baseMeasurement\":{\"ancestry\":\"L2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:mD:",
+      "propertyNames": [
+        "LabelAndValues[23].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "%",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":0.01,\"c\":1.0,\"d\":0.0},\"symbol\":\"%\",\"baseMeasurement\":{\"ancestry\":\"1\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:%:",
+      "propertyNames": [
+        "LabelAndValues[24].ValueAsNumber",
+        "LabelAndValues[29].ValueAsNumber",
+        "LabelAndValues[30].ValueAsNumber",
+        "LabelAndValues[31].ValueAsNumber",
+        "LabelAndValues[32].ValueAsNumber",
+        "LabelAndValues[33].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "dAPI",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":1.0,\"c\":1.0,\"d\":0.0},\"symbol\":\"dAPI\",\"baseMeasurement\":{\"ancestry\":\"none\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:dAPI:",
+      "propertyNames": [
+        "LabelAndValues[27].ValueAsNumber"
+      ]
+    },
+    {
+      "kind": "Unit",
+      "name": "psi",
+      "persistableReference": "{\"abcd\":{\"a\":0.0,\"b\":4.4482216152605,\"c\":0.00064516,\"d\":0.0},\"symbol\":\"psi\",\"baseMeasurement\":{\"ancestry\":\"M/LT2\",\"type\":\"UM\"},\"type\":\"UAD\"}",
+      "unitOfMeasureID": "osdu:reference-data--UnitOfMeasure:psi:",
+      "propertyNames": [
+        "LabelAndValues[28].ValueAsNumber"
+      ]
+    }
+  ],
+  "data": {
+    "Name": "BLOK-F-SAND-1 GeoLabelSet",
+    "Description": "Example GeoLabelSet for BLOK-F-SAND-1",
+    "LabelledEntityID": "{{NAMESPACE}}:master-data--ReservoirSegment:BLOCK-F-SAND-1:",
+    "LabelAndValues": [
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Area:",
+        "ValueAsNumber": 60.97
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:GeologicalAgeName:",
+        "ValueAsString": "Lower Cretaceous"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:GeologicalAgeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-Chronostratigraphy:Phanerozoic.Mesozoic.Cretaceous.LowerCretaceous:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:GeologicalDuration:",
+        "ValueAsNumber": 65.3
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:ReservoirTectonicSettingTypeID:",
+        "ValueAsString": "{{NAMESPACE}}:reference-data--TectonicSettingType:ForelandThrustBelt:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:SealDepositionalTectonicSettingTypeID:",
+        "ValueAsString": "{{NAMESPACE}}:reference-data--TectonicSettingType:PassiveMargin:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:SourceRockDepositionalTectonicSettingTypeID:",
+        "ValueAsString": "{{NAMESPACE}}:reference-data--TectonicSettingType:PassiveMargin:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:TrappingMechanismTypeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-ReservoirTrappingMechanismType:Stratigraphic:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:ReservoirTectonicStressRegimeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-TectonicSettingType:Extensional:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:DominantLithologyID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-LithologyType:Sedimentite.Clastic.Sandstone:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:DominantSealLithologyID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-LithologyType:Sedimentite.Evaporite.Salt:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:DominantSourceRockLithologyID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-LithologyType:Sedimentite.Coal:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:PrimaryEnvironmentOfDepositionID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-DepositionalGrossEnvironment:ClasticDeepMarine:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:SecondaryEnvironmentOfDepositionID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-DepositionalSubEnvironment:LowerSlope:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:TertiaryEnvironmentOfDepositionID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-DepositionalSubEnvironment:StructurallyConfinedChannelComplex:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:HCTypeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-WellProductType:Oil:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:HCSubTypeID:",
+        "ValueAsRelatedID": "{{NAMESPACE}}:reference-date-WellProductType:Oil.Heavy:"
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:UnitTop.Depth.TrueVertical:",
+        "ValueAsNumber": 1500.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Thickness.Average.Gross:",
+        "ValueAsNumber": 365.76
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Hydrocarbon.Height.Total:",
+        "ValueAsNumber": 150
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Gas.Height:",
+        "ValueAsNumber": 100
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.Height:",
+        "ValueAsNumber": 50
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:NetToGrossRatio:",
+        "ValueAsNumber": 0.67
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Temperature.Maximum:",
+        "ValueAsNumber": 160
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.Maturity.Average:",
+        "ValueAsNumber": 55.48
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Permeability.Average:",
+        "ValueAsNumber": 0.6
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Porosity.Average:",
+        "ValueAsNumber": 25.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:IsFractured:",
+        "ValueAsBoolean": true
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:IsOverpressured:",
+        "ValueAsBoolean": false
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Oil.ApiGravity:",
+        "ValueAsNumber": 9.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Pressure.Initial:",
+        "ValueAsNumber": 10800
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:Water.Saturation.Initial.Average:",
+        "ValueAsNumber": 40
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:HydrogenSulphideContent:",
+        "ValueAsNumber": 8.0
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:MethaneContent:",
+        "ValueAsNumber": 0.01
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:NitrogenContent:",
+        "ValueAsNumber": 5
+      },
+      {
+        "LabelTypeID": "{{NAMESPACE}}:reference-data--GeoLabelType:CarbonDioxideContent:",
+        "ValueAsNumber": 13.4
+      }
+    ],
+    "SpatialArea": {
+      "Wgs84Coordinates": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "coordinates": [
+                [
+                  [
+                    -75.03249772035784,
+                    36.06610913491761
+                  ],
+                  [
+                    -75.03249772035784,
+                    35.84984299286968
+                  ],
+                  [
+                    -74.72846795239404,
+                    35.844242050990516
+                  ],
+                  [
+                    -74.72846795239404,
+                    35.980419282101565
+                  ],
+                  [
+                    -74.91963818528026,
+                    35.98414686537339
+                  ],
+                  [
+                    -74.92424469691656,
+                    36.06610913491761
+                  ],
+                  [
+                    -75.03249772035784,
+                    36.06610913491761
+                  ]
+                ]
+              ],
+              "type": "Polygon"
+            }
+          }
+        ]
+      },
+      "SpatialParameterTypeID": "namespace:reference-data--SpatialParameterType:Outline:",
+      "SpatialGeometryTypeID": "namespace:reference-data--SpatialGeometryType:Polygon:"
+    }
+  }
+}

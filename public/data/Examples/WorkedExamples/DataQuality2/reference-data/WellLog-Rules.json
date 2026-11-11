@@ -1,0 +1,92 @@
+{
+  "kind": "osdu:wks:Manifest:1.0.0",
+  "ReferenceData": [
+    {
+      "id": "namespace:reference-data--DataQualityRule:6c6962-5061747465726e20436865636b",
+      "kind": "osdu:wks:reference-data--DataQualityRule:1.1.0",
+      "data": {
+        "Source": "Alloy",
+        "AttributionAuthority": "Alloy",
+        "ID": "Pattern Check",
+        "Code": "Pattern Check",
+        "DataRuleStatement": "Pattern Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:"
+      },
+      "acl": {
+        "viewers": [
+          "data.default.viewers@namespace.group"
+        ],
+        "owners": [
+          "data.default.owners@namespace.group"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "namespace-demo-legaltag"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      }
+    },
+    {
+      "id": "namespace:reference-data--DataQualityRule:6c6962-4e61747572616c204b657920436865636b",
+      "kind": "osdu:wks:reference-data--DataQualityRule:1.1.0",
+      "data": {
+        "Source": "Alloy",
+        "AttributionAuthority": "Alloy",
+        "ID": "Natural Key Check",
+        "Code": "Natural Key Check",
+        "DataRuleStatement": "Natural Key Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Uniqueness:"
+      },
+      "acl": {
+        "viewers": [
+          "data.default.viewers@namespace.group"
+        ],
+        "owners": [
+          "data.default.owners@namespace.group"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "namespace-demo-legaltag"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      }
+    },
+    {
+      "id": "namespace:reference-data--DataQualityRule:6c6962-52657175697265642050726f70657274696573",
+      "kind": "osdu:wks:reference-data--DataQualityRule:1.1.0",
+      "data": {
+        "Source": "Alloy",
+        "AttributionAuthority": "Alloy",
+        "ID": "Required Properties Check",
+        "Code": "Required Properties Check",
+        "DataRuleStatement": "Required Properties Check",
+        "DataRuleDimensionTypeID": "namespace:reference-data--DataRuleDimensionType:Completeness:"
+      },
+      "acl": {
+        "viewers": [
+          "data.default.viewers@namespace.group"
+        ],
+        "owners": [
+          "data.default.owners@namespace.group"
+        ]
+      },
+      "legal": {
+        "legaltags": [
+          "namespace-demo-legaltag"
+        ],
+        "otherRelevantDataCountries": [
+          "US"
+        ],
+        "status": "compliant"
+      }
+    }
+  ]
+}
