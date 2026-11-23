@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2026-11-23
+
+### Added
+- "Compare" button next to "Guides": compares two versions of a schema side by side and highlights what changed.
+  - **Properties** view: one row per property (abstract schemas pulled in via `$ref` are expanded), marked added, removed or changed. Changed fields (type, `$ref`, relationship, required, deprecated, title, description, pattern, format, enum) are highlighted, with the exact characters that differ marked.
+  - **JSON** view: a line-by-line diff of the two schema files, with changed characters highlighted. Unchanged stretches are collapsed and can be expanded.
+  - "Changes only" toggle, a swap button, counts of added/removed/changed items, and "Open in graph" for each side.
+  - Pick the schema with the main search box: while Compare is open, choosing a schema there compares it with its previous version.
+  - Opening Compare while a schema is on screen starts with that version against the one before it. The comparison is in the URL (`#/compare/master-data/Well?from=1.0.0&to=1.5.0`), so it can be shared.
+
 ## [2.1.0] - 2026-11-11
 
 ### Added

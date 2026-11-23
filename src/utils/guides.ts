@@ -17,6 +17,8 @@ export const DEFAULT_GUIDE = "README.md"
 export type Route =
   | { view: "guides"; path: string; anchor?: string }
   | { view: "schema"; ref: string }
+  /** "#/compare/<group>/<Name>?from=<ver>&to=<ver>" (all parts optional) */
+  | { view: "compare"; ref?: string; from?: string; to?: string }
 
 export function parseRoute(hash: string): Route | null {
   const h = hash.replace(/^#/, "")
@@ -33,6 +35,17 @@ export function parseRoute(hash: string): Route | null {
     const anchor = new URLSearchParams(query).get("a") || undefined
     return { view: "guides", path, anchor }
   }
+  if (h === "/compare" || h.startsWith("/compare/") || h.startsWith("/compare?")) {
+    const [pathPart, query = ""] = h.slice("/compare".length).split("?")
+    const q = new URLSearchParams(query)
+    let ref: string | undefined
+    try {
+      ref = decodeURIComponent(pathPart.replace(/^\//, "")) || undefined
+    } catch {
+      ref = pathPart.replace(/^\//, "") || undefined
+    }
+    return { view: "compare", ref, from: q.get("from") || undefined, to: q.get("to") || undefined }
+  }
   if (h.startsWith("/schema/")) {
     try {
       return { view: "schema", ref: decodeURIComponent(h.slice("/schema/".length)) }
@@ -47,6 +60,14 @@ const encodePath = (p: string) => p.split("/").map(encodeURIComponent).join("/")
 
 export const guideHash = (path: string, anchor?: string) =>
   `#/guides/${encodePath(path)}${anchor ? `?a=${encodeURIComponent(anchor)}` : ""}`
+
+export function compareHash(ref?: string, from?: string, to?: string) {
+  const q = new URLSearchParams()
+  if (from) q.set("from", from)
+  if (to) q.set("to", to)
+  const qs = q.toString()
+  return `#/compare${ref ? `/${encodePath(ref)}` : ""}${qs ? `?${qs}` : ""}`
+}
 
 export const schemaHash = (ref: string) => `#/schema/${encodePath(ref)}`
 

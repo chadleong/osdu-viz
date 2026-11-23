@@ -6,18 +6,19 @@ import { buildReverseRefs } from "./utils/referencedBy"
 import type { ReferrerItem } from "./components/Tooltip"
 import type { SchemaModel } from "./types"
 import { findBestMatch } from "./utils/schemaMatch"
-import { groupVersions, groupKey, compareVersions, versionOf } from "./utils/schemaVersions"
+import { groupVersions, groupKey, groupRef, compareVersions, versionOf } from "./utils/schemaVersions"
 import { getNodeColors } from "./utils/nodeColors"
 import { parseSchemaFiles } from "./utils/localSchemas"
 import { idbGetAll, idbPutMany } from "./utils/schemaCache"
 import { useTheme } from "./hooks/useTheme"
 import ThemeToggle from "./components/ThemeToggle"
-import { parseRoute, guideHash, schemaFromGuideName, DEFAULT_GUIDE, type GuideEntry, type Route } from "./utils/guides"
+import { parseRoute, guideHash, compareHash, schemaFromGuideName, DEFAULT_GUIDE, type GuideEntry, type Route } from "./utils/guides"
 import type { GuideLink } from "./components/Tooltip"
 import pkg from "../package.json"
 
 // Loaded on demand: pulls in the markdown renderer and sanitizer
 const GuidesViewer = lazy(() => import("./components/GuidesViewer"))
+const CompareView = lazy(() => import("./components/CompareView"))
 
 export default function App() {
   const { theme, toggleTheme } = useTheme()
@@ -54,6 +55,7 @@ export default function App() {
       .catch(() => {})
   }, [])
   const guidesActive = route?.view === "guides"
+  const compareActive = route?.view === "compare"
   const publicBase = ((import.meta.env.BASE_URL as string) || "/").replace(/\/?$/, "/")
 
   // Close dropdown when clicking outside — attach a capture-phase pointerdown listener while dropdown is open
@@ -500,6 +502,47 @@ export default function App() {
   const outdatedLatest =
     selectedModel && selectedGroup && selectedGroup.latest.path !== selectedModel.path ? selectedGroup.latest : null
 
+  // Compare view: fetch a schema file on demand when the background bundle has not delivered it yet
+  const loadSchemaJson = async (path: string) => {
+    if (index[path]) return
+    try {
+      const res = await fetch(publicUrl(path))
+      if (res.ok) {
+        const s = await res.json()
+        setIndex((prev) => ({ ...prev, [path]: s }))
+      }
+    } catch (e) {
+      console.warn("Failed to fetch schema for comparison:", path, e)
+    }
+  }
+
+  // Compare a schema version against the one before it
+  const compareHashFor = (model: SchemaModel) => {
+    const vs = groupByKey.get(groupKey(model))?.versions || [model]
+    const at = vs.findIndex((v) => v.path === model.path)
+    const older = vs[at + 1] || vs[at] || model
+    return compareHash(groupRef(model), versionOf(older), versionOf(model))
+  }
+
+  // Open the compare view, starting with the schema on screen (if any)
+  const openCompare = () => {
+    window.location.hash = selectedModel ? compareHashFor(selectedModel) : compareHash()
+  }
+
+  // While comparing, the search box shows the compared schema
+  const compareRef = route?.view === "compare" ? route.ref : undefined
+  useEffect(() => {
+    if (!compareRef) return
+    const k = "/" + compareRef.toLowerCase()
+    const g = groups.find((x) => x.key.endsWith(k))
+    if (g) setSearchTerm(g.latest.title)
+  }, [compareRef, groups])
+
+  const leaveRoute = () => {
+    setRoute(null)
+    window.history.replaceState(null, "", window.location.pathname + window.location.search)
+  }
+
   // Switch to another version of the current schema without resetting the navigation trail
   const handleVersionSwitch = async (path: string) => {
     const target = selectedGroup?.versions.find((v) => v.path === path)
@@ -515,6 +558,8 @@ export default function App() {
     setSelectedModel(fullModel)
     setSearchTerm(fullModel.title)
     setShowDropdown(false)
+    // In the compare view the search box picks the schema to compare
+    if (compareActive) window.location.replace(compareHashFor(fullModel))
   }
 
   const handleSchemaSelect = async (schemaId: string) => {
@@ -645,12 +690,12 @@ export default function App() {
                   setShowDropdown(true)
                 }}
                 onFocus={() => setShowDropdown(true)}
-                placeholder="Search schemas..."
+                placeholder={compareActive ? "Search a schema to compare..." : "Search schemas..."}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-24"
                 style={{
                   boxSizing: "border-box",
                   // leave room for the wider version dropdown
-                  paddingRight: selectedGroup && selectedGroup.versions.length > 1 ? 152 : undefined,
+                  paddingRight: !compareActive && selectedGroup && selectedGroup.versions.length > 1 ? 152 : undefined,
                 }}
               />
               {/* Carat icon */}
@@ -668,7 +713,7 @@ export default function App() {
                 ▼
               </span>
               {/* Selected version badge inside the input */}
-              {selectedModel && selectedGroup && selectedGroup.versions.length > 1 ? (
+              {compareActive ? null : selectedModel && selectedGroup && selectedGroup.versions.length > 1 ? (
                 <select
                   className="version-badge"
                   aria-label="Schema version"
@@ -816,21 +861,22 @@ export default function App() {
             </a>
           </div>
 
-          {/* Switch between the schema graph and the guides */}
+          {/* Switch between the schema graph, the guides and the version comparison */}
           <button
-            onClick={() => {
-              if (guidesActive) {
-                setRoute(null)
-                window.history.replaceState(null, "", window.location.pathname + window.location.search)
-              } else {
-                window.location.hash = guideHash(DEFAULT_GUIDE)
-              }
-            }}
+            onClick={() => (guidesActive ? leaveRoute() : (window.location.hash = guideHash(DEFAULT_GUIDE)))}
             aria-pressed={guidesActive}
             title={guidesActive ? "Back to the schema graph" : "Browse the Schema Usage Guide, migration guides and release reports"}
             className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
           >
             {guidesActive ? "← Graph" : "Guides"}
+          </button>
+          <button
+            onClick={() => (compareActive ? leaveRoute() : openCompare())}
+            aria-pressed={compareActive}
+            title={compareActive ? "Back to the schema graph" : "Compare two versions of a schema side by side"}
+            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+          >
+            {compareActive ? "← Graph" : "Compare"}
           </button>
 
           {/* Light / dark background toggle (top right) */}
@@ -843,6 +889,17 @@ export default function App() {
         {route?.view === "guides" ? (
           <Suspense fallback={<div className="text-center text-gray-600" style={{ marginTop: 64 }}>Loading guides...</div>}>
             <GuidesViewer entries={guideEntries} path={route.path} anchor={route.anchor} base={publicBase} />
+          </Suspense>
+        ) : route?.view === "compare" ? (
+          <Suspense fallback={<div className="text-center text-gray-600" style={{ marginTop: 64 }}>Loading compare...</div>}>
+            <CompareView
+              groups={groups}
+              index={index}
+              loadSchema={loadSchemaJson}
+              schemaRef={route.ref}
+              from={route.from}
+              to={route.to}
+            />
           </Suspense>
         ) : selectedModel && selectedModel.schema ? (
           <div style={{ position: "relative", height: "100%" }}>

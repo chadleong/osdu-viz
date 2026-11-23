@@ -26,6 +26,15 @@ export function compareVersions(a?: string, b?: string): number {
   return 0
 }
 
+/** "/data/Generated/master-data/Well.1.5.0.min.json" -> "master-data/Well" */
+export function groupRef(m: Pick<SchemaModel, "path">): string {
+  return m.path
+    .split("/")
+    .slice(-2)
+    .join("/")
+    .replace(/\.\d+(?:\.\d+)*(?:\.min)?\.json$/i, "")
+}
+
 export type SchemaGroup = {
   key: string
   /** Newest version first. */
