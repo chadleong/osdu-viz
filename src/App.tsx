@@ -524,6 +524,9 @@ export default function App() {
     return compareHash(groupRef(model), versionOf(older), versionOf(model))
   }
 
+  // Nothing to compare when the schema on screen has a single version
+  const noVersions = !compareActive && !!selectedModel && (selectedGroup?.versions.length ?? 1) < 2
+
   // Open the compare view, starting with the schema on screen (if any)
   const openCompare = () => {
     window.location.hash = selectedModel ? compareHashFor(selectedModel) : compareHash()
@@ -873,8 +876,16 @@ export default function App() {
           <button
             onClick={() => (compareActive ? leaveRoute() : openCompare())}
             aria-pressed={compareActive}
-            title={compareActive ? "Back to the schema graph" : "Compare two versions of a schema side by side"}
+            disabled={noVersions}
+            title={
+              compareActive
+                ? "Back to the schema graph"
+                : noVersions
+                  ? `${selectedModel!.title} has only one version, so there is nothing to compare`
+                  : "Compare two versions of a schema side by side"
+            }
             className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+            style={noVersions ? { opacity: 0.5, cursor: "not-allowed" } : undefined}
           >
             {compareActive ? "← Graph" : "Compare"}
           </button>
